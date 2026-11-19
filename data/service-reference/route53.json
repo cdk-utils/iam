@@ -170,6 +170,21 @@
       }
     },
     {
+      "Name": "CreateIpGuardrailPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "CreateKeySigningKey",
       "Annotations": {
         "Properties": {
@@ -209,6 +224,27 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateResourceRecordSetProtections",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hostedzone"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -397,6 +433,21 @@
       }
     },
     {
+      "Name": "DeleteIpGuardrailPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DeleteKeySigningKey",
       "Annotations": {
         "Properties": {
@@ -436,6 +487,27 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteResourceRecordSetProtections",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hostedzone"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -819,6 +891,21 @@
       }
     },
     {
+      "Name": "GetIpGuardrailPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GetQueryLoggingConfig",
       "Annotations": {
         "Properties": {
@@ -1081,6 +1168,21 @@
       }
     },
     {
+      "Name": "ListIpGuardrailPolicies",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListQueryLoggingConfigs",
       "Annotations": {
         "Properties": {
@@ -1099,6 +1201,27 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListResourceRecordSetProtections",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hostedzone"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -1382,6 +1505,21 @@
       }
     },
     {
+      "Name": "UpdateIpGuardrailPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "UpdateTrafficPolicyComment",
       "Annotations": {
         "Properties": {
@@ -1612,6 +1750,22 @@
       ]
     },
     {
+      "Name": "CreateResourceRecordSetProtections",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateResourceRecordSetProtections",
+          "Service": "route53"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53",
+          "Method": "create_resource_record_set_protections",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "CreateReusableDelegationSet",
       "AuthorizedActions": [
         {
@@ -1783,6 +1937,22 @@
         {
           "Name": "route53",
           "Method": "delete_query_logging_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResourceRecordSetProtections",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResourceRecordSetProtections",
+          "Service": "route53"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53",
+          "Method": "delete_resource_record_set_protections",
           "Package": "Boto3"
         }
       ]
@@ -2327,6 +2497,22 @@
         {
           "Name": "route53",
           "Method": "list_query_logging_configs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListResourceRecordSetProtections",
+      "AuthorizedActions": [
+        {
+          "Name": "ListResourceRecordSetProtections",
+          "Service": "route53"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53",
+          "Method": "list_resource_record_set_protections",
           "Package": "Boto3"
         }
       ]

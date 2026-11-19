@@ -3,6 +3,52 @@
   "ServiceName": "Kinesis",
   "Actions": [
     {
+      "Name": "AcknowledgeDeadLetterQueueRecords",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "queue",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "AcknowledgeQueueRecords",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "queue",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "AddTagsToStream",
       "Annotations": {
         "Properties": {
@@ -59,19 +105,69 @@
       }
     },
     {
+      "Name": "AssociateStreamsWithQueue",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "stream",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "CreateChannel",
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
-          "IsTaggingOnly": true,
+          "IsTaggingOnly": false,
           "IsWrite": true
         }
       },
       "Resources": [
         {
           "Name": "channel",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:ResourceTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateQueue",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "queue",
           "ConditionKeys": [
             "aws:RequestTag/${TagKey}",
             "aws:ResourceTag/${TagKey}",
@@ -159,6 +255,30 @@
       }
     },
     {
+      "Name": "DeleteQueue",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "queue",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DeleteResourcePolicy",
       "Annotations": {
         "Properties": {
@@ -172,6 +292,12 @@
       "Resources": [
         {
           "Name": "consumer",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "queue",
           "ConditionKeys": [
             "aws:ResourceTag/${TagKey}"
           ]
@@ -290,6 +416,30 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DescribeQueue",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "queue",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -439,6 +589,12 @@
           ]
         },
         {
+          "Name": "queue",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
           "Name": "stream",
           "ConditionKeys": [
             "aws:ResourceTag/${TagKey}"
@@ -535,6 +691,22 @@
       }
     },
     {
+      "Name": "ListQueues",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListShards",
       "Annotations": {
         "Properties": {
@@ -618,6 +790,12 @@
         },
         {
           "Name": "consumer",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "queue",
           "ConditionKeys": [
             "aws:ResourceTag/${TagKey}"
           ]
@@ -749,7 +927,59 @@
           ]
         },
         {
+          "Name": "queue",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
           "Name": "stream",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ReceiveDeadLetterQueueRecords",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "queue",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ReceiveQueueRecords",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "queue",
           "ConditionKeys": [
             "aws:ResourceTag/${TagKey}"
           ]
@@ -808,6 +1038,29 @@
       ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RestoreDeadLetterQueueRecords",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "queue",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
       }
     },
@@ -942,6 +1195,14 @@
           ]
         },
         {
+          "Name": "queue",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:ResourceTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        },
+        {
           "Name": "stream",
           "ConditionKeys": [
             "aws:RequestTag/${TagKey}",
@@ -976,6 +1237,13 @@
         },
         {
           "Name": "consumer",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        },
+        {
+          "Name": "queue",
           "ConditionKeys": [
             "aws:ResourceTag/${TagKey}",
             "aws:TagKeys"
@@ -1035,6 +1303,29 @@
       }
     },
     {
+      "Name": "UpdateDeadLetterQueueRecordsVisibility",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "queue",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "UpdateMaxRecordSize",
       "Annotations": {
         "Properties": {
@@ -1048,6 +1339,53 @@
       "Resources": [
         {
           "Name": "stream",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateQueue",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "queue",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateQueueRecordsVisibility",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "queue",
           "ConditionKeys": [
             "aws:ResourceTag/${TagKey}"
           ]
@@ -1179,6 +1517,38 @@
   ],
   "Operations": [
     {
+      "Name": "AcknowledgeDeadLetterQueueRecords",
+      "AuthorizedActions": [
+        {
+          "Name": "AcknowledgeDeadLetterQueueRecords",
+          "Service": "kinesis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesis",
+          "Method": "acknowledge_dead_letter_queue_records",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AcknowledgeQueueRecords",
+      "AuthorizedActions": [
+        {
+          "Name": "AcknowledgeQueueRecords",
+          "Service": "kinesis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesis",
+          "Method": "acknowledge_queue_records",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "AddTagsToStream",
       "AuthorizedActions": [
         {
@@ -1223,6 +1593,30 @@
         {
           "Name": "kinesis",
           "Method": "create_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateQueue",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateStreamsWithQueue",
+          "Service": "kinesis"
+        },
+        {
+          "Name": "CreateQueue",
+          "Service": "kinesis"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "kinesis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesis",
+          "Method": "create_queue",
           "Package": "Boto3"
         }
       ]
@@ -1275,6 +1669,22 @@
         {
           "Name": "kinesis",
           "Method": "delete_channel",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteQueue",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteQueue",
+          "Service": "kinesis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesis",
+          "Method": "delete_queue",
           "Package": "Boto3"
         }
       ]
@@ -1371,6 +1781,22 @@
         {
           "Name": "kinesis",
           "Method": "describe_limits",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeQueue",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeQueue",
+          "Service": "kinesis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesis",
+          "Method": "describe_queue",
           "Package": "Boto3"
         }
       ]
@@ -1536,6 +1962,22 @@
       ]
     },
     {
+      "Name": "ListQueues",
+      "AuthorizedActions": [
+        {
+          "Name": "ListQueues",
+          "Service": "kinesis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesis",
+          "Method": "list_queues",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListShards",
       "AuthorizedActions": [
         {
@@ -1680,6 +2122,38 @@
       ]
     },
     {
+      "Name": "ReceiveDeadLetterQueueRecords",
+      "AuthorizedActions": [
+        {
+          "Name": "ReceiveDeadLetterQueueRecords",
+          "Service": "kinesis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesis",
+          "Method": "receive_dead_letter_queue_records",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ReceiveQueueRecords",
+      "AuthorizedActions": [
+        {
+          "Name": "ReceiveQueueRecords",
+          "Service": "kinesis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesis",
+          "Method": "receive_queue_records",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "RegisterStreamConsumer",
       "AuthorizedActions": [
         {
@@ -1711,6 +2185,22 @@
         {
           "Name": "kinesis",
           "Method": "remove_tags_from_stream",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RestoreDeadLetterQueueRecords",
+      "AuthorizedActions": [
+        {
+          "Name": "RestoreDeadLetterQueueRecords",
+          "Service": "kinesis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesis",
+          "Method": "restore_dead_letter_queue_records",
           "Package": "Boto3"
         }
       ]
@@ -1844,6 +2334,22 @@
       ]
     },
     {
+      "Name": "UpdateDeadLetterQueueRecordsVisibility",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateDeadLetterQueueRecordsVisibility",
+          "Service": "kinesis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesis",
+          "Method": "update_dead_letter_queue_records_visibility",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "UpdateMaxRecordSize",
       "AuthorizedActions": [
         {
@@ -1855,6 +2361,38 @@
         {
           "Name": "kinesis",
           "Method": "update_max_record_size",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateQueue",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateQueue",
+          "Service": "kinesis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesis",
+          "Method": "update_queue",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateQueueRecordsVisibility",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateQueueRecordsVisibility",
+          "Service": "kinesis"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "kinesis",
+          "Method": "update_queue_records_visibility",
           "Package": "Boto3"
         }
       ]
@@ -1947,6 +2485,15 @@
       "Name": "kmsKey",
       "ARNFormats": [
         "arn:${Partition}:kms:${Region}:${Account}:key/${KeyId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "queue",
+      "ARNFormats": [
+        "arn:${Partition}:kinesis:${Region}:${Account}:queue/${QueueId}"
       ],
       "ConditionKeys": [
         "aws:ResourceTag/${TagKey}"

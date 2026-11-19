@@ -2643,6 +2643,7 @@ export class RDSOperations {
 	/** IAM actions required for the ModifyDBInstance API call. */
 	static readonly ModifyDBInstance: string[] = [
 		"rds:AddTagsToResource",
+		"rds:CreateTenantDatabase",
 		"rds:ModifyDBInstance",
 		"iam:PassRole",
 	];

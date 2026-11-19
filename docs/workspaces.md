@@ -1364,6 +1364,7 @@ new workspaces.WorkSpacesActions()
 | <code><a href="#@cdk_utils/iam.workspaces.WorkSpacesActions.property.AcceptAccountLinkInvitation">AcceptAccountLinkInvitation</a></code> | <code>string</code> | [Write] workspaces:AcceptAccountLinkInvitation. |
 | <code><a href="#@cdk_utils/iam.workspaces.WorkSpacesActions.property.actionGetAccountLink">actionGetAccountLink</a></code> | <code>string</code> | [Read] workspaces:GetAccountLink. |
 | <code><a href="#@cdk_utils/iam.workspaces.WorkSpacesActions.property.actionGetTroubleshootingRecommendation">actionGetTroubleshootingRecommendation</a></code> | <code>string</code> | [Read] workspaces:GetTroubleshootingRecommendation. |
+| <code><a href="#@cdk_utils/iam.workspaces.WorkSpacesActions.property.actionGetWorkspaceProactiveRecommendation">actionGetWorkspaceProactiveRecommendation</a></code> | <code>string</code> | [Read] workspaces:GetWorkspaceProactiveRecommendation. |
 | <code><a href="#@cdk_utils/iam.workspaces.WorkSpacesActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
 | <code><a href="#@cdk_utils/iam.workspaces.WorkSpacesActions.property.AllPermissionManagementActions">AllPermissionManagementActions</a></code> | <code>string[]</code> | All permission-management-level actions. |
 | <code><a href="#@cdk_utils/iam.workspaces.WorkSpacesActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
@@ -1434,6 +1435,8 @@ new workspaces.WorkSpacesActions()
 | <code><a href="#@cdk_utils/iam.workspaces.WorkSpacesActions.property.ListAccountLinks">ListAccountLinks</a></code> | <code>string</code> | [List] workspaces:ListAccountLinks. |
 | <code><a href="#@cdk_utils/iam.workspaces.WorkSpacesActions.property.ListAvailableManagementCidrRanges">ListAvailableManagementCidrRanges</a></code> | <code>string</code> | [List] workspaces:ListAvailableManagementCidrRanges. |
 | <code><a href="#@cdk_utils/iam.workspaces.WorkSpacesActions.property.ListTroubleshootingRecommendations">ListTroubleshootingRecommendations</a></code> | <code>string</code> | [Read] workspaces:ListTroubleshootingRecommendations. |
+| <code><a href="#@cdk_utils/iam.workspaces.WorkSpacesActions.property.ListWorkspaceProactiveRecommendationResources">ListWorkspaceProactiveRecommendationResources</a></code> | <code>string</code> | [Read] workspaces:ListWorkspaceProactiveRecommendationResources. |
+| <code><a href="#@cdk_utils/iam.workspaces.WorkSpacesActions.property.ListWorkspaceProactiveRecommendations">ListWorkspaceProactiveRecommendations</a></code> | <code>string</code> | [Read] workspaces:ListWorkspaceProactiveRecommendations. |
 | <code><a href="#@cdk_utils/iam.workspaces.WorkSpacesActions.property.MigrateWorkspace">MigrateWorkspace</a></code> | <code>string</code> | [Write] workspaces:MigrateWorkspace. |
 | <code><a href="#@cdk_utils/iam.workspaces.WorkSpacesActions.property.ModifyAccount">ModifyAccount</a></code> | <code>string</code> | [Write] workspaces:ModifyAccount. |
 | <code><a href="#@cdk_utils/iam.workspaces.WorkSpacesActions.property.ModifyCertificateBasedAuthProperties">ModifyCertificateBasedAuthProperties</a></code> | <code>string</code> | [Write] workspaces:ModifyCertificateBasedAuthProperties. |
@@ -1506,6 +1509,18 @@ public readonly actionGetTroubleshootingRecommendation: string;
 - *Type:* string
 
 [Read] workspaces:GetTroubleshootingRecommendation.
+
+---
+
+##### `actionGetWorkspaceProactiveRecommendation`<sup>Required</sup> <a name="actionGetWorkspaceProactiveRecommendation" id="@cdk_utils/iam.workspaces.WorkSpacesActions.property.actionGetWorkspaceProactiveRecommendation"></a>
+
+```typescript
+public readonly actionGetWorkspaceProactiveRecommendation: string;
+```
+
+- *Type:* string
+
+[Read] workspaces:GetWorkspaceProactiveRecommendation.
 
 ---
 
@@ -2346,6 +2361,30 @@ public readonly ListTroubleshootingRecommendations: string;
 - *Type:* string
 
 [Read] workspaces:ListTroubleshootingRecommendations.
+
+---
+
+##### `ListWorkspaceProactiveRecommendationResources`<sup>Required</sup> <a name="ListWorkspaceProactiveRecommendationResources" id="@cdk_utils/iam.workspaces.WorkSpacesActions.property.ListWorkspaceProactiveRecommendationResources"></a>
+
+```typescript
+public readonly ListWorkspaceProactiveRecommendationResources: string;
+```
+
+- *Type:* string
+
+[Read] workspaces:ListWorkspaceProactiveRecommendationResources.
+
+---
+
+##### `ListWorkspaceProactiveRecommendations`<sup>Required</sup> <a name="ListWorkspaceProactiveRecommendations" id="@cdk_utils/iam.workspaces.WorkSpacesActions.property.ListWorkspaceProactiveRecommendations"></a>
+
+```typescript
+public readonly ListWorkspaceProactiveRecommendations: string;
+```
+
+- *Type:* string
+
+[Read] workspaces:ListWorkspaceProactiveRecommendations.
 
 ---
 

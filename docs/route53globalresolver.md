@@ -243,6 +243,126 @@ Defaults to "aws".
 
 ---
 
+### Route53globalresolverCoreNetworkEndpointArnComponents <a name="Route53globalresolverCoreNetworkEndpointArnComponents" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverCoreNetworkEndpointArnComponents"></a>
+
+Parsed components of a core-network-endpoint ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverCoreNetworkEndpointArnComponents.Initializer"></a>
+
+```typescript
+import { route53globalresolver } from '@cdk_utils/iam'
+
+const route53globalresolverCoreNetworkEndpointArnComponents: route53globalresolver.Route53globalresolverCoreNetworkEndpointArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverCoreNetworkEndpointArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverCoreNetworkEndpointArnComponents.property.id">id</a></code> | <code>string</code> | The Id component. |
+| <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverCoreNetworkEndpointArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverCoreNetworkEndpointArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverCoreNetworkEndpointArnComponents.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+The Id component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverCoreNetworkEndpointArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+### Route53globalresolverCoreNetworkEndpointArnProps <a name="Route53globalresolverCoreNetworkEndpointArnProps" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverCoreNetworkEndpointArnProps"></a>
+
+Properties for building a core-network-endpoint ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverCoreNetworkEndpointArnProps.Initializer"></a>
+
+```typescript
+import { route53globalresolver } from '@cdk_utils/iam'
+
+const route53globalresolverCoreNetworkEndpointArnProps: route53globalresolver.Route53globalresolverCoreNetworkEndpointArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverCoreNetworkEndpointArnProps.property.id">id</a></code> | <code>string</code> | The Id component of the ARN. |
+| <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverCoreNetworkEndpointArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverCoreNetworkEndpointArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverCoreNetworkEndpointArnProps.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+The Id component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverCoreNetworkEndpointArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverCoreNetworkEndpointArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
 ### Route53globalresolverDNSViewArnComponents <a name="Route53globalresolverDNSViewArnComponents" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverDNSViewArnComponents"></a>
 
 Parsed components of a dns-view ARN.
@@ -631,6 +751,7 @@ new route53globalresolver.Route53globalresolverActions()
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.actionGetAccessSource">actionGetAccessSource</a></code> | <code>string</code> | [Read] route53globalresolver:GetAccessSource. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.actionGetAccessToken">actionGetAccessToken</a></code> | <code>string</code> | [Read] route53globalresolver:GetAccessToken. |
+| <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.actionGetCoreNetworkEndpoint">actionGetCoreNetworkEndpoint</a></code> | <code>string</code> | [Read] route53globalresolver:GetCoreNetworkEndpoint. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.actionGetDNSView">actionGetDNSView</a></code> | <code>string</code> | [Read] route53globalresolver:GetDNSView. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.actionGetFirewallDomainList">actionGetFirewallDomainList</a></code> | <code>string</code> | [Read] route53globalresolver:GetFirewallDomainList. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.actionGetFirewallRule">actionGetFirewallRule</a></code> | <code>string</code> | [Read] route53globalresolver:GetFirewallRule. |
@@ -649,12 +770,14 @@ new route53globalresolver.Route53globalresolverActions()
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.BatchUpdateFirewallRule">BatchUpdateFirewallRule</a></code> | <code>string</code> | [Write] route53globalresolver:BatchUpdateFirewallRule. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.CreateAccessSource">CreateAccessSource</a></code> | <code>string</code> | [Write] route53globalresolver:CreateAccessSource. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.CreateAccessToken">CreateAccessToken</a></code> | <code>string</code> | [Write] route53globalresolver:CreateAccessToken. |
+| <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.CreateCoreNetworkEndpoint">CreateCoreNetworkEndpoint</a></code> | <code>string</code> | [Write] route53globalresolver:CreateCoreNetworkEndpoint. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.CreateDNSView">CreateDNSView</a></code> | <code>string</code> | [Write] route53globalresolver:CreateDNSView. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.CreateFirewallDomainList">CreateFirewallDomainList</a></code> | <code>string</code> | [Write] route53globalresolver:CreateFirewallDomainList. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.CreateFirewallRule">CreateFirewallRule</a></code> | <code>string</code> | [Write] route53globalresolver:CreateFirewallRule. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.CreateGlobalResolver">CreateGlobalResolver</a></code> | <code>string</code> | [Write] route53globalresolver:CreateGlobalResolver. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.DeleteAccessSource">DeleteAccessSource</a></code> | <code>string</code> | [Write] route53globalresolver:DeleteAccessSource. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.DeleteAccessToken">DeleteAccessToken</a></code> | <code>string</code> | [Write] route53globalresolver:DeleteAccessToken. |
+| <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.DeleteCoreNetworkEndpoint">DeleteCoreNetworkEndpoint</a></code> | <code>string</code> | [Write] route53globalresolver:DeleteCoreNetworkEndpoint. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.DeleteDNSView">DeleteDNSView</a></code> | <code>string</code> | [Write] route53globalresolver:DeleteDNSView. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.DeleteFirewallDomainList">DeleteFirewallDomainList</a></code> | <code>string</code> | [Write] route53globalresolver:DeleteFirewallDomainList. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.DeleteFirewallRule">DeleteFirewallRule</a></code> | <code>string</code> | [Write] route53globalresolver:DeleteFirewallRule. |
@@ -665,6 +788,7 @@ new route53globalresolver.Route53globalresolverActions()
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.ImportFirewallDomains">ImportFirewallDomains</a></code> | <code>string</code> | [Write] route53globalresolver:ImportFirewallDomains. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.ListAccessSources">ListAccessSources</a></code> | <code>string</code> | [List] route53globalresolver:ListAccessSources. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.ListAccessTokens">ListAccessTokens</a></code> | <code>string</code> | [List] route53globalresolver:ListAccessTokens. |
+| <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.ListCoreNetworkEndpoints">ListCoreNetworkEndpoints</a></code> | <code>string</code> | [List] route53globalresolver:ListCoreNetworkEndpoints. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.ListDNSViews">ListDNSViews</a></code> | <code>string</code> | [List] route53globalresolver:ListDNSViews. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.ListFirewallDomainLists">ListFirewallDomainLists</a></code> | <code>string</code> | [List] route53globalresolver:ListFirewallDomainLists. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.ListFirewallDomains">ListFirewallDomains</a></code> | <code>string</code> | [Read] route53globalresolver:ListFirewallDomains. |
@@ -672,12 +796,14 @@ new route53globalresolver.Route53globalresolverActions()
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.ListGlobalResolvers">ListGlobalResolvers</a></code> | <code>string</code> | [List] route53globalresolver:ListGlobalResolvers. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.ListHostedZoneAssociations">ListHostedZoneAssociations</a></code> | <code>string</code> | [List] route53globalresolver:ListHostedZoneAssociations. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.ListManagedFirewallDomainLists">ListManagedFirewallDomainLists</a></code> | <code>string</code> | [List] route53globalresolver:ListManagedFirewallDomainLists. |
+| <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.ListSharedDNSViews">ListSharedDNSViews</a></code> | <code>string</code> | [List] route53globalresolver:ListSharedDNSViews. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Write] route53globalresolver:ListTagsForResource. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] route53globalresolver:TagResource. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] route53globalresolver:UntagResource. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.UpdateAccessSource">UpdateAccessSource</a></code> | <code>string</code> | [Write] route53globalresolver:UpdateAccessSource. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.UpdateAccessToken">UpdateAccessToken</a></code> | <code>string</code> | [Write] route53globalresolver:UpdateAccessToken. |
+| <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.UpdateCoreNetworkEndpoint">UpdateCoreNetworkEndpoint</a></code> | <code>string</code> | [Write] route53globalresolver:UpdateCoreNetworkEndpoint. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.UpdateDNSView">UpdateDNSView</a></code> | <code>string</code> | [Write] route53globalresolver:UpdateDNSView. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.UpdateFirewallDomains">UpdateFirewallDomains</a></code> | <code>string</code> | [Write] route53globalresolver:UpdateFirewallDomains. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.UpdateFirewallRule">UpdateFirewallRule</a></code> | <code>string</code> | [Write] route53globalresolver:UpdateFirewallRule. |
@@ -707,6 +833,18 @@ public readonly actionGetAccessToken: string;
 - *Type:* string
 
 [Read] route53globalresolver:GetAccessToken.
+
+---
+
+##### `actionGetCoreNetworkEndpoint`<sup>Required</sup> <a name="actionGetCoreNetworkEndpoint" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.actionGetCoreNetworkEndpoint"></a>
+
+```typescript
+public readonly actionGetCoreNetworkEndpoint: string;
+```
+
+- *Type:* string
+
+[Read] route53globalresolver:GetCoreNetworkEndpoint.
 
 ---
 
@@ -926,6 +1064,18 @@ public readonly CreateAccessToken: string;
 
 ---
 
+##### `CreateCoreNetworkEndpoint`<sup>Required</sup> <a name="CreateCoreNetworkEndpoint" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.CreateCoreNetworkEndpoint"></a>
+
+```typescript
+public readonly CreateCoreNetworkEndpoint: string;
+```
+
+- *Type:* string
+
+[Write] route53globalresolver:CreateCoreNetworkEndpoint.
+
+---
+
 ##### `CreateDNSView`<sup>Required</sup> <a name="CreateDNSView" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.CreateDNSView"></a>
 
 ```typescript
@@ -995,6 +1145,18 @@ public readonly DeleteAccessToken: string;
 - *Type:* string
 
 [Write] route53globalresolver:DeleteAccessToken.
+
+---
+
+##### `DeleteCoreNetworkEndpoint`<sup>Required</sup> <a name="DeleteCoreNetworkEndpoint" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.DeleteCoreNetworkEndpoint"></a>
+
+```typescript
+public readonly DeleteCoreNetworkEndpoint: string;
+```
+
+- *Type:* string
+
+[Write] route53globalresolver:DeleteCoreNetworkEndpoint.
 
 ---
 
@@ -1118,6 +1280,18 @@ public readonly ListAccessTokens: string;
 
 ---
 
+##### `ListCoreNetworkEndpoints`<sup>Required</sup> <a name="ListCoreNetworkEndpoints" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.ListCoreNetworkEndpoints"></a>
+
+```typescript
+public readonly ListCoreNetworkEndpoints: string;
+```
+
+- *Type:* string
+
+[List] route53globalresolver:ListCoreNetworkEndpoints.
+
+---
+
 ##### `ListDNSViews`<sup>Required</sup> <a name="ListDNSViews" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.ListDNSViews"></a>
 
 ```typescript
@@ -1202,6 +1376,18 @@ public readonly ListManagedFirewallDomainLists: string;
 
 ---
 
+##### `ListSharedDNSViews`<sup>Required</sup> <a name="ListSharedDNSViews" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.ListSharedDNSViews"></a>
+
+```typescript
+public readonly ListSharedDNSViews: string;
+```
+
+- *Type:* string
+
+[List] route53globalresolver:ListSharedDNSViews.
+
+---
+
 ##### `ListTagsForResource`<sup>Required</sup> <a name="ListTagsForResource" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.ListTagsForResource"></a>
 
 ```typescript
@@ -1271,6 +1457,18 @@ public readonly UpdateAccessToken: string;
 - *Type:* string
 
 [Write] route53globalresolver:UpdateAccessToken.
+
+---
+
+##### `UpdateCoreNetworkEndpoint`<sup>Required</sup> <a name="UpdateCoreNetworkEndpoint" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverActions.property.UpdateCoreNetworkEndpoint"></a>
+
+```typescript
+public readonly UpdateCoreNetworkEndpoint: string;
+```
+
+- *Type:* string
+
+[Write] route53globalresolver:UpdateCoreNetworkEndpoint.
 
 ---
 
@@ -1420,6 +1618,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverConditions.property.AWS_TAG_KEYS">AWS_TAG_KEYS</a></code> | <code>string</code> | Condition key: aws:TagKeys (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverConditions.property.CreateAccessSourceConditionKeys">CreateAccessSourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateAccessSource action. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverConditions.property.CreateAccessTokenConditionKeys">CreateAccessTokenConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateAccessToken action. |
+| <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverConditions.property.CreateCoreNetworkEndpointConditionKeys">CreateCoreNetworkEndpointConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateCoreNetworkEndpoint action. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverConditions.property.CreateDNSViewConditionKeys">CreateDNSViewConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateDNSView action. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverConditions.property.CreateFirewallDomainListConditionKeys">CreateFirewallDomainListConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateFirewallDomainList action. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverConditions.property.CreateGlobalResolverConditionKeys">CreateGlobalResolverConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateGlobalResolver action. |
@@ -1485,6 +1684,18 @@ public readonly CreateAccessTokenConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CreateAccessToken action.
+
+---
+
+##### `CreateCoreNetworkEndpointConditionKeys`<sup>Required</sup> <a name="CreateCoreNetworkEndpointConditionKeys" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverConditions.property.CreateCoreNetworkEndpointConditionKeys"></a>
+
+```typescript
+public readonly CreateCoreNetworkEndpointConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateCoreNetworkEndpoint action.
 
 ---
 
@@ -1578,12 +1789,14 @@ new route53globalresolver.Route53globalresolverOperations()
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.BatchUpdateFirewallRule">BatchUpdateFirewallRule</a></code> | <code>string[]</code> | IAM actions required for the BatchUpdateFirewallRule API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.CreateAccessSource">CreateAccessSource</a></code> | <code>string[]</code> | IAM actions required for the CreateAccessSource API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.CreateAccessToken">CreateAccessToken</a></code> | <code>string[]</code> | IAM actions required for the CreateAccessToken API call. |
+| <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.CreateCoreNetworkEndpoint">CreateCoreNetworkEndpoint</a></code> | <code>string[]</code> | IAM actions required for the CreateCoreNetworkEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.CreateDNSView">CreateDNSView</a></code> | <code>string[]</code> | IAM actions required for the CreateDNSView API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.CreateFirewallDomainList">CreateFirewallDomainList</a></code> | <code>string[]</code> | IAM actions required for the CreateFirewallDomainList API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.CreateFirewallRule">CreateFirewallRule</a></code> | <code>string[]</code> | IAM actions required for the CreateFirewallRule API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.CreateGlobalResolver">CreateGlobalResolver</a></code> | <code>string[]</code> | IAM actions required for the CreateGlobalResolver API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.DeleteAccessSource">DeleteAccessSource</a></code> | <code>string[]</code> | IAM actions required for the DeleteAccessSource API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.DeleteAccessToken">DeleteAccessToken</a></code> | <code>string[]</code> | IAM actions required for the DeleteAccessToken API call. |
+| <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.DeleteCoreNetworkEndpoint">DeleteCoreNetworkEndpoint</a></code> | <code>string[]</code> | IAM actions required for the DeleteCoreNetworkEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.DeleteDNSView">DeleteDNSView</a></code> | <code>string[]</code> | IAM actions required for the DeleteDNSView API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.DeleteFirewallDomainList">DeleteFirewallDomainList</a></code> | <code>string[]</code> | IAM actions required for the DeleteFirewallDomainList API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.DeleteFirewallRule">DeleteFirewallRule</a></code> | <code>string[]</code> | IAM actions required for the DeleteFirewallRule API call. |
@@ -1594,6 +1807,7 @@ new route53globalresolver.Route53globalresolverOperations()
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.ImportFirewallDomains">ImportFirewallDomains</a></code> | <code>string[]</code> | IAM actions required for the ImportFirewallDomains API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.ListAccessSources">ListAccessSources</a></code> | <code>string[]</code> | IAM actions required for the ListAccessSources API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.ListAccessTokens">ListAccessTokens</a></code> | <code>string[]</code> | IAM actions required for the ListAccessTokens API call. |
+| <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.ListCoreNetworkEndpoints">ListCoreNetworkEndpoints</a></code> | <code>string[]</code> | IAM actions required for the ListCoreNetworkEndpoints API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.ListDNSViews">ListDNSViews</a></code> | <code>string[]</code> | IAM actions required for the ListDNSViews API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.ListFirewallDomainLists">ListFirewallDomainLists</a></code> | <code>string[]</code> | IAM actions required for the ListFirewallDomainLists API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.ListFirewallDomains">ListFirewallDomains</a></code> | <code>string[]</code> | IAM actions required for the ListFirewallDomains API call. |
@@ -1605,6 +1819,7 @@ new route53globalresolver.Route53globalresolverOperations()
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.opGetAccessSource">opGetAccessSource</a></code> | <code>string[]</code> | IAM actions required for the GetAccessSource API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.opGetAccessToken">opGetAccessToken</a></code> | <code>string[]</code> | IAM actions required for the GetAccessToken API call. |
+| <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.opGetCoreNetworkEndpoint">opGetCoreNetworkEndpoint</a></code> | <code>string[]</code> | IAM actions required for the GetCoreNetworkEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.opGetDNSView">opGetDNSView</a></code> | <code>string[]</code> | IAM actions required for the GetDNSView API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.opGetFirewallDomainList">opGetFirewallDomainList</a></code> | <code>string[]</code> | IAM actions required for the GetFirewallDomainList API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.opGetFirewallRule">opGetFirewallRule</a></code> | <code>string[]</code> | IAM actions required for the GetFirewallRule API call. |
@@ -1615,6 +1830,7 @@ new route53globalresolver.Route53globalresolverOperations()
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.UpdateAccessSource">UpdateAccessSource</a></code> | <code>string[]</code> | IAM actions required for the UpdateAccessSource API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.UpdateAccessToken">UpdateAccessToken</a></code> | <code>string[]</code> | IAM actions required for the UpdateAccessToken API call. |
+| <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.UpdateCoreNetworkEndpoint">UpdateCoreNetworkEndpoint</a></code> | <code>string[]</code> | IAM actions required for the UpdateCoreNetworkEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.UpdateDNSView">UpdateDNSView</a></code> | <code>string[]</code> | IAM actions required for the UpdateDNSView API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.UpdateFirewallDomains">UpdateFirewallDomains</a></code> | <code>string[]</code> | IAM actions required for the UpdateFirewallDomains API call. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.UpdateFirewallRule">UpdateFirewallRule</a></code> | <code>string[]</code> | IAM actions required for the UpdateFirewallRule API call. |
@@ -1695,6 +1911,18 @@ IAM actions required for the CreateAccessToken API call.
 
 ---
 
+##### `CreateCoreNetworkEndpoint`<sup>Required</sup> <a name="CreateCoreNetworkEndpoint" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.CreateCoreNetworkEndpoint"></a>
+
+```typescript
+public readonly CreateCoreNetworkEndpoint: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateCoreNetworkEndpoint API call.
+
+---
+
 ##### `CreateDNSView`<sup>Required</sup> <a name="CreateDNSView" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.CreateDNSView"></a>
 
 ```typescript
@@ -1764,6 +1992,18 @@ public readonly DeleteAccessToken: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteAccessToken API call.
+
+---
+
+##### `DeleteCoreNetworkEndpoint`<sup>Required</sup> <a name="DeleteCoreNetworkEndpoint" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.DeleteCoreNetworkEndpoint"></a>
+
+```typescript
+public readonly DeleteCoreNetworkEndpoint: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteCoreNetworkEndpoint API call.
 
 ---
 
@@ -1884,6 +2124,18 @@ public readonly ListAccessTokens: string[];
 - *Type:* string[]
 
 IAM actions required for the ListAccessTokens API call.
+
+---
+
+##### `ListCoreNetworkEndpoints`<sup>Required</sup> <a name="ListCoreNetworkEndpoints" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.ListCoreNetworkEndpoints"></a>
+
+```typescript
+public readonly ListCoreNetworkEndpoints: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListCoreNetworkEndpoints API call.
 
 ---
 
@@ -2019,6 +2271,18 @@ IAM actions required for the GetAccessToken API call.
 
 ---
 
+##### `opGetCoreNetworkEndpoint`<sup>Required</sup> <a name="opGetCoreNetworkEndpoint" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.opGetCoreNetworkEndpoint"></a>
+
+```typescript
+public readonly opGetCoreNetworkEndpoint: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetCoreNetworkEndpoint API call.
+
+---
+
 ##### `opGetDNSView`<sup>Required</sup> <a name="opGetDNSView" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.opGetDNSView"></a>
 
 ```typescript
@@ -2139,6 +2403,18 @@ IAM actions required for the UpdateAccessToken API call.
 
 ---
 
+##### `UpdateCoreNetworkEndpoint`<sup>Required</sup> <a name="UpdateCoreNetworkEndpoint" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.UpdateCoreNetworkEndpoint"></a>
+
+```typescript
+public readonly UpdateCoreNetworkEndpoint: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateCoreNetworkEndpoint API call.
+
+---
+
 ##### `UpdateDNSView`<sup>Required</sup> <a name="UpdateDNSView" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverOperations.property.UpdateDNSView"></a>
 
 ```typescript
@@ -2223,16 +2499,19 @@ new route53globalresolver.Route53globalresolverResources()
 | --- | --- |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverResources.accessSource">accessSource</a></code> | Builds an ARN for the access-source resource. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverResources.accessToken">accessToken</a></code> | Builds an ARN for the access-token resource. |
+| <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverResources.coreNetworkEndpoint">coreNetworkEndpoint</a></code> | Builds an ARN for the core-network-endpoint resource. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverResources.dnsView">dnsView</a></code> | Builds an ARN for the dns-view resource. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverResources.firewallDomainList">firewallDomainList</a></code> | Builds an ARN for the firewall-domain-list resource. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverResources.globalResolver">globalResolver</a></code> | Builds an ARN for the global-resolver resource. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverResources.isValidAccessSourceArn">isValidAccessSourceArn</a></code> | Validates whether a string is a valid ARN for the access-source resource. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverResources.isValidAccessTokenArn">isValidAccessTokenArn</a></code> | Validates whether a string is a valid ARN for the access-token resource. |
+| <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverResources.isValidCoreNetworkEndpointArn">isValidCoreNetworkEndpointArn</a></code> | Validates whether a string is a valid ARN for the core-network-endpoint resource. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverResources.isValidDNSViewArn">isValidDNSViewArn</a></code> | Validates whether a string is a valid ARN for the dns-view resource. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverResources.isValidFirewallDomainListArn">isValidFirewallDomainListArn</a></code> | Validates whether a string is a valid ARN for the firewall-domain-list resource. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverResources.isValidGlobalResolverArn">isValidGlobalResolverArn</a></code> | Validates whether a string is a valid ARN for the global-resolver resource. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverResources.parseAccessSourceArn">parseAccessSourceArn</a></code> | Parses a access-source ARN into its components. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverResources.parseAccessTokenArn">parseAccessTokenArn</a></code> | Parses a access-token ARN into its components. |
+| <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverResources.parseCoreNetworkEndpointArn">parseCoreNetworkEndpointArn</a></code> | Parses a core-network-endpoint ARN into its components. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverResources.parseDNSViewArn">parseDNSViewArn</a></code> | Parses a dns-view ARN into its components. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverResources.parseFirewallDomainListArn">parseFirewallDomainListArn</a></code> | Parses a firewall-domain-list ARN into its components. |
 | <code><a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverResources.parseGlobalResolverArn">parseGlobalResolverArn</a></code> | Parses a global-resolver ARN into its components. |
@@ -2268,6 +2547,22 @@ Builds an ARN for the access-token resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverResources.accessToken.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverAccessTokenArnProps">Route53globalresolverAccessTokenArnProps</a>
+
+---
+
+##### `coreNetworkEndpoint` <a name="coreNetworkEndpoint" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverResources.coreNetworkEndpoint"></a>
+
+```typescript
+import { route53globalresolver } from '@cdk_utils/iam'
+
+route53globalresolver.Route53globalresolverResources.coreNetworkEndpoint(props: Route53globalresolverCoreNetworkEndpointArnProps)
+```
+
+Builds an ARN for the core-network-endpoint resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverResources.coreNetworkEndpoint.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.route53globalresolver.Route53globalresolverCoreNetworkEndpointArnProps">Route53globalresolverCoreNetworkEndpointArnProps</a>
 
 ---
 
@@ -2351,6 +2646,22 @@ Validates whether a string is a valid ARN for the access-token resource.
 
 ---
 
+##### `isValidCoreNetworkEndpointArn` <a name="isValidCoreNetworkEndpointArn" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverResources.isValidCoreNetworkEndpointArn"></a>
+
+```typescript
+import { route53globalresolver } from '@cdk_utils/iam'
+
+route53globalresolver.Route53globalresolverResources.isValidCoreNetworkEndpointArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the core-network-endpoint resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverResources.isValidCoreNetworkEndpointArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `isValidDNSViewArn` <a name="isValidDNSViewArn" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverResources.isValidDNSViewArn"></a>
 
 ```typescript
@@ -2426,6 +2737,22 @@ route53globalresolver.Route53globalresolverResources.parseAccessTokenArn(arn: st
 Parses a access-token ARN into its components.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverResources.parseAccessTokenArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseCoreNetworkEndpointArn` <a name="parseCoreNetworkEndpointArn" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverResources.parseCoreNetworkEndpointArn"></a>
+
+```typescript
+import { route53globalresolver } from '@cdk_utils/iam'
+
+route53globalresolver.Route53globalresolverResources.parseCoreNetworkEndpointArn(arn: string)
+```
+
+Parses a core-network-endpoint ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.route53globalresolver.Route53globalresolverResources.parseCoreNetworkEndpointArn.parameter.arn"></a>
 
 - *Type:* string
 

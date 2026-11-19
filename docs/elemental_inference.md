@@ -920,27 +920,40 @@ new elemental_inference.ElementalInferenceOperations()
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.AssociateFeed">AssociateFeed</a></code> | <code>string[]</code> | IAM actions required for the AssociateFeed API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.CreateDictionary">CreateDictionary</a></code> | <code>string[]</code> | IAM actions required for the CreateDictionary API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.CreateFeed">CreateFeed</a></code> | <code>string[]</code> | IAM actions required for the CreateFeed API call. |
+| <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.CreateFunction">CreateFunction</a></code> | <code>string[]</code> | IAM actions required for the CreateFunction API call. |
+| <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.CreateQuestionSet">CreateQuestionSet</a></code> | <code>string[]</code> | IAM actions required for the CreateQuestionSet API call. |
+| <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.CreateQuestionSetVersion">CreateQuestionSetVersion</a></code> | <code>string[]</code> | IAM actions required for the CreateQuestionSetVersion API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.CreateScheduleAction">CreateScheduleAction</a></code> | <code>string[]</code> | IAM actions required for the CreateScheduleAction API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.DeleteDictionary">DeleteDictionary</a></code> | <code>string[]</code> | IAM actions required for the DeleteDictionary API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.DeleteFeed">DeleteFeed</a></code> | <code>string[]</code> | IAM actions required for the DeleteFeed API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.DeleteFeedPolicy">DeleteFeedPolicy</a></code> | <code>string[]</code> | IAM actions required for the DeleteFeedPolicy API call. |
+| <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.DeleteFunction">DeleteFunction</a></code> | <code>string[]</code> | IAM actions required for the DeleteFunction API call. |
+| <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.DeleteQuestionSet">DeleteQuestionSet</a></code> | <code>string[]</code> | IAM actions required for the DeleteQuestionSet API call. |
+| <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.DeleteQuestionSetVersion">DeleteQuestionSetVersion</a></code> | <code>string[]</code> | IAM actions required for the DeleteQuestionSetVersion API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.DeleteScheduleAction">DeleteScheduleAction</a></code> | <code>string[]</code> | IAM actions required for the DeleteScheduleAction API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.DisassociateFeed">DisassociateFeed</a></code> | <code>string[]</code> | IAM actions required for the DisassociateFeed API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.ExportDictionaryEntries">ExportDictionaryEntries</a></code> | <code>string[]</code> | IAM actions required for the ExportDictionaryEntries API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.ListDictionaries">ListDictionaries</a></code> | <code>string[]</code> | IAM actions required for the ListDictionaries API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.ListFeeds">ListFeeds</a></code> | <code>string[]</code> | IAM actions required for the ListFeeds API call. |
+| <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.ListFunctions">ListFunctions</a></code> | <code>string[]</code> | IAM actions required for the ListFunctions API call. |
+| <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.ListQuestionSets">ListQuestionSets</a></code> | <code>string[]</code> | IAM actions required for the ListQuestionSets API call. |
+| <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.ListQuestionSetVersions">ListQuestionSetVersions</a></code> | <code>string[]</code> | IAM actions required for the ListQuestionSetVersions API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.ListScheduleActions">ListScheduleActions</a></code> | <code>string[]</code> | IAM actions required for the ListScheduleActions API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.opGetDictionary">opGetDictionary</a></code> | <code>string[]</code> | IAM actions required for the GetDictionary API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.opGetFeed">opGetFeed</a></code> | <code>string[]</code> | IAM actions required for the GetFeed API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.opGetFeedPolicy">opGetFeedPolicy</a></code> | <code>string[]</code> | IAM actions required for the GetFeedPolicy API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.opGetFixture">opGetFixture</a></code> | <code>string[]</code> | IAM actions required for the GetFixture API call. |
+| <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.opGetFunction">opGetFunction</a></code> | <code>string[]</code> | IAM actions required for the GetFunction API call. |
+| <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.opGetQuestionSet">opGetQuestionSet</a></code> | <code>string[]</code> | IAM actions required for the GetQuestionSet API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.PutFeedPolicy">PutFeedPolicy</a></code> | <code>string[]</code> | IAM actions required for the PutFeedPolicy API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.SearchFixtures">SearchFixtures</a></code> | <code>string[]</code> | IAM actions required for the SearchFixtures API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.UpdateDictionary">UpdateDictionary</a></code> | <code>string[]</code> | IAM actions required for the UpdateDictionary API call. |
 | <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.UpdateFeed">UpdateFeed</a></code> | <code>string[]</code> | IAM actions required for the UpdateFeed API call. |
+| <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.UpdateFunction">UpdateFunction</a></code> | <code>string[]</code> | IAM actions required for the UpdateFunction API call. |
+| <code><a href="#@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.UpdateQuestionSet">UpdateQuestionSet</a></code> | <code>string[]</code> | IAM actions required for the UpdateQuestionSet API call. |
 
 ---
 
@@ -977,6 +990,42 @@ public readonly CreateFeed: string[];
 - *Type:* string[]
 
 IAM actions required for the CreateFeed API call.
+
+---
+
+##### `CreateFunction`<sup>Required</sup> <a name="CreateFunction" id="@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.CreateFunction"></a>
+
+```typescript
+public readonly CreateFunction: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateFunction API call.
+
+---
+
+##### `CreateQuestionSet`<sup>Required</sup> <a name="CreateQuestionSet" id="@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.CreateQuestionSet"></a>
+
+```typescript
+public readonly CreateQuestionSet: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateQuestionSet API call.
+
+---
+
+##### `CreateQuestionSetVersion`<sup>Required</sup> <a name="CreateQuestionSetVersion" id="@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.CreateQuestionSetVersion"></a>
+
+```typescript
+public readonly CreateQuestionSetVersion: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateQuestionSetVersion API call.
 
 ---
 
@@ -1025,6 +1074,42 @@ public readonly DeleteFeedPolicy: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteFeedPolicy API call.
+
+---
+
+##### `DeleteFunction`<sup>Required</sup> <a name="DeleteFunction" id="@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.DeleteFunction"></a>
+
+```typescript
+public readonly DeleteFunction: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteFunction API call.
+
+---
+
+##### `DeleteQuestionSet`<sup>Required</sup> <a name="DeleteQuestionSet" id="@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.DeleteQuestionSet"></a>
+
+```typescript
+public readonly DeleteQuestionSet: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteQuestionSet API call.
+
+---
+
+##### `DeleteQuestionSetVersion`<sup>Required</sup> <a name="DeleteQuestionSetVersion" id="@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.DeleteQuestionSetVersion"></a>
+
+```typescript
+public readonly DeleteQuestionSetVersion: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteQuestionSetVersion API call.
 
 ---
 
@@ -1085,6 +1170,42 @@ public readonly ListFeeds: string[];
 - *Type:* string[]
 
 IAM actions required for the ListFeeds API call.
+
+---
+
+##### `ListFunctions`<sup>Required</sup> <a name="ListFunctions" id="@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.ListFunctions"></a>
+
+```typescript
+public readonly ListFunctions: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListFunctions API call.
+
+---
+
+##### `ListQuestionSets`<sup>Required</sup> <a name="ListQuestionSets" id="@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.ListQuestionSets"></a>
+
+```typescript
+public readonly ListQuestionSets: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListQuestionSets API call.
+
+---
+
+##### `ListQuestionSetVersions`<sup>Required</sup> <a name="ListQuestionSetVersions" id="@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.ListQuestionSetVersions"></a>
+
+```typescript
+public readonly ListQuestionSetVersions: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListQuestionSetVersions API call.
 
 ---
 
@@ -1160,6 +1281,30 @@ IAM actions required for the GetFixture API call.
 
 ---
 
+##### `opGetFunction`<sup>Required</sup> <a name="opGetFunction" id="@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.opGetFunction"></a>
+
+```typescript
+public readonly opGetFunction: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetFunction API call.
+
+---
+
+##### `opGetQuestionSet`<sup>Required</sup> <a name="opGetQuestionSet" id="@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.opGetQuestionSet"></a>
+
+```typescript
+public readonly opGetQuestionSet: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetQuestionSet API call.
+
+---
+
 ##### `PutFeedPolicy`<sup>Required</sup> <a name="PutFeedPolicy" id="@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.PutFeedPolicy"></a>
 
 ```typescript
@@ -1229,6 +1374,30 @@ public readonly UpdateFeed: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateFeed API call.
+
+---
+
+##### `UpdateFunction`<sup>Required</sup> <a name="UpdateFunction" id="@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.UpdateFunction"></a>
+
+```typescript
+public readonly UpdateFunction: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateFunction API call.
+
+---
+
+##### `UpdateQuestionSet`<sup>Required</sup> <a name="UpdateQuestionSet" id="@cdk_utils/iam.elemental_inference.ElementalInferenceOperations.property.UpdateQuestionSet"></a>
+
+```typescript
+public readonly UpdateQuestionSet: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateQuestionSet API call.
 
 ---
 

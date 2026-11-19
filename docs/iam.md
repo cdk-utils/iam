@@ -52,6 +52,8 @@ new iam.IAMActions()
 | <code><a href="#@cdk_utils/iam.iam.IAMActions.property.actionGetOutboundWebIdentityFederationInfo">actionGetOutboundWebIdentityFederationInfo</a></code> | <code>string</code> | [Read] iam:GetOutboundWebIdentityFederationInfo. |
 | <code><a href="#@cdk_utils/iam.iam.IAMActions.property.actionGetPolicy">actionGetPolicy</a></code> | <code>string</code> | [Read] iam:GetPolicy. |
 | <code><a href="#@cdk_utils/iam.iam.IAMActions.property.actionGetPolicyVersion">actionGetPolicyVersion</a></code> | <code>string</code> | [Read] iam:GetPolicyVersion. |
+| <code><a href="#@cdk_utils/iam.iam.IAMActions.property.actionGetRequestAuthorizationDetails">actionGetRequestAuthorizationDetails</a></code> | <code>string</code> | [Read] iam:GetRequestAuthorizationDetails. |
+| <code><a href="#@cdk_utils/iam.iam.IAMActions.property.actionGetRequestAuthorizationPolicy">actionGetRequestAuthorizationPolicy</a></code> | <code>string</code> | [Read] iam:GetRequestAuthorizationPolicy. |
 | <code><a href="#@cdk_utils/iam.iam.IAMActions.property.actionGetRole">actionGetRole</a></code> | <code>string</code> | [Read] iam:GetRole. |
 | <code><a href="#@cdk_utils/iam.iam.IAMActions.property.actionGetRolePolicy">actionGetRolePolicy</a></code> | <code>string</code> | [Read] iam:GetRolePolicy. |
 | <code><a href="#@cdk_utils/iam.iam.IAMActions.property.actionGetRoleTemplateVersion">actionGetRoleTemplateVersion</a></code> | <code>string</code> | [Read] iam:GetRoleTemplateVersion. |
@@ -512,6 +514,30 @@ public readonly actionGetPolicyVersion: string;
 - *Type:* string
 
 [Read] iam:GetPolicyVersion.
+
+---
+
+##### `actionGetRequestAuthorizationDetails`<sup>Required</sup> <a name="actionGetRequestAuthorizationDetails" id="@cdk_utils/iam.iam.IAMActions.property.actionGetRequestAuthorizationDetails"></a>
+
+```typescript
+public readonly actionGetRequestAuthorizationDetails: string;
+```
+
+- *Type:* string
+
+[Read] iam:GetRequestAuthorizationDetails.
+
+---
+
+##### `actionGetRequestAuthorizationPolicy`<sup>Required</sup> <a name="actionGetRequestAuthorizationPolicy" id="@cdk_utils/iam.iam.IAMActions.property.actionGetRequestAuthorizationPolicy"></a>
+
+```typescript
+public readonly actionGetRequestAuthorizationPolicy: string;
+```
+
+- *Type:* string
+
+[Read] iam:GetRequestAuthorizationPolicy.
 
 ---
 
@@ -4113,6 +4139,7 @@ new iam.IAMOperations()
 | <code><a href="#@cdk_utils/iam.iam.IAMOperations.property.opGetPolicy">opGetPolicy</a></code> | <code>string[]</code> | IAM actions required for the GetPolicy API call. |
 | <code><a href="#@cdk_utils/iam.iam.IAMOperations.property.opGetPolicyVersion">opGetPolicyVersion</a></code> | <code>string[]</code> | IAM actions required for the GetPolicyVersion API call. |
 | <code><a href="#@cdk_utils/iam.iam.IAMOperations.property.opGetRequestAuthorizationDetails">opGetRequestAuthorizationDetails</a></code> | <code>string[]</code> | IAM actions required for the GetRequestAuthorizationDetails API call. |
+| <code><a href="#@cdk_utils/iam.iam.IAMOperations.property.opGetRequestAuthorizationPolicy">opGetRequestAuthorizationPolicy</a></code> | <code>string[]</code> | IAM actions required for the GetRequestAuthorizationPolicy API call. |
 | <code><a href="#@cdk_utils/iam.iam.IAMOperations.property.opGetRole">opGetRole</a></code> | <code>string[]</code> | IAM actions required for the GetRole API call. |
 | <code><a href="#@cdk_utils/iam.iam.IAMOperations.property.opGetRolePolicy">opGetRolePolicy</a></code> | <code>string[]</code> | IAM actions required for the GetRolePolicy API call. |
 | <code><a href="#@cdk_utils/iam.iam.IAMOperations.property.opGetRoleTemplateVersion">opGetRoleTemplateVersion</a></code> | <code>string[]</code> | IAM actions required for the GetRoleTemplateVersion API call. |
@@ -5603,6 +5630,18 @@ public readonly opGetRequestAuthorizationDetails: string[];
 - *Type:* string[]
 
 IAM actions required for the GetRequestAuthorizationDetails API call.
+
+---
+
+##### `opGetRequestAuthorizationPolicy`<sup>Required</sup> <a name="opGetRequestAuthorizationPolicy" id="@cdk_utils/iam.iam.IAMOperations.property.opGetRequestAuthorizationPolicy"></a>
+
+```typescript
+public readonly opGetRequestAuthorizationPolicy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetRequestAuthorizationPolicy API call.
 
 ---
 

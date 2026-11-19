@@ -47,6 +47,31 @@
       }
     },
     {
+      "Name": "ApproveTimeOff",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "connect:InstanceId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "user"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "AssociateAnalyticsDataSet",
       "ActionConditionKeys": [
         "connect:InstanceId"
@@ -805,6 +830,31 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CancelTimeOff",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "connect:InstanceId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "user"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -1696,6 +1746,30 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateTimeOff",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "connect:InstanceId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "user"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -4704,6 +4778,30 @@
       }
     },
     {
+      "Name": "GetTimeOff",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "connect:InstanceId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "user"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GetTrafficDistribution",
       "ActionConditionKeys": [
         "aws:ResourceTag/${TagKey}"
@@ -6027,8 +6125,8 @@
         }
       ],
       "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -6597,6 +6695,31 @@
       }
     },
     {
+      "Name": "PutTimeOffBalance",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "connect:InstanceId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "user"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "PutUserStatus",
       "ActionConditionKeys": [
         "aws:ResourceTag/${TagKey}",
@@ -6625,6 +6748,31 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "RejectTimeOff",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "connect:InstanceId"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "user"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -9137,6 +9285,34 @@
       }
     },
     {
+      "Name": "UpdateOutboundEmailContactMessage",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "connect:Channel",
+        "connect:ContactAssociationId",
+        "connect:InstanceId",
+        "connect:UserArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "contact"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
+      }
+    },
+    {
       "Name": "UpdateParticipantAuthentication",
       "ActionConditionKeys": [
         "connect:InstanceId"
@@ -10282,6 +10458,22 @@
       ]
     },
     {
+      "Name": "ApproveTimeOff",
+      "AuthorizedActions": [
+        {
+          "Name": "ApproveTimeOff",
+          "Service": "connect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectscheduling",
+          "Method": "approve_time_off",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "AssociateAnalyticsDataSet",
       "AuthorizedActions": [
         {
@@ -10745,6 +10937,22 @@
         {
           "Name": "connectparticipant",
           "Method": "cancel_participant_authentication",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CancelTimeOff",
+      "AuthorizedActions": [
+        {
+          "Name": "CancelTimeOff",
+          "Service": "connect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectscheduling",
+          "Method": "cancel_time_off",
           "Package": "Boto3"
         }
       ]
@@ -11402,6 +11610,16 @@
       ]
     },
     {
+      "Name": "CreateTimeOff",
+      "SDK": [
+        {
+          "Name": "connectscheduling",
+          "Method": "create_time_off",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "CreateTrafficDistributionGroup",
       "AuthorizedActions": [
         {
@@ -11585,6 +11803,16 @@
         {
           "Name": "connect",
           "Method": "deactivate_evaluation_form",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAllEntitySessions",
+      "SDK": [
+        {
+          "Name": "connect",
+          "Method": "delete_all_entity_sessions",
           "Package": "Boto3"
         }
       ]
@@ -13385,6 +13613,16 @@
       ]
     },
     {
+      "Name": "GetTimeOff",
+      "SDK": [
+        {
+          "Name": "connectscheduling",
+          "Method": "get_time_off",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetTrafficDistribution",
       "AuthorizedActions": [
         {
@@ -14659,6 +14897,22 @@
       ]
     },
     {
+      "Name": "PutTimeOffBalance",
+      "AuthorizedActions": [
+        {
+          "Name": "PutTimeOffBalance",
+          "Service": "connect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectscheduling",
+          "Method": "put_time_off_balance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "PutUserStatus",
       "AuthorizedActions": [
         {
@@ -14670,6 +14924,22 @@
         {
           "Name": "connect",
           "Method": "put_user_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RejectTimeOff",
+      "AuthorizedActions": [
+        {
+          "Name": "RejectTimeOff",
+          "Service": "connect"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "connectscheduling",
+          "Method": "reject_time_off",
           "Package": "Boto3"
         }
       ]
@@ -16282,6 +16552,12 @@
     },
     {
       "Name": "UpdateOutboundEmailContactMessage",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateOutboundEmailContactMessage",
+          "Service": "connect"
+        }
+      ],
       "SDK": [
         {
           "Name": "connect",

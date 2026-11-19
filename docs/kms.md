@@ -1206,6 +1206,7 @@ new kms.KMSConditions()
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.messageType">messageType</a></code> | Generates a condition block for `kms:MessageType`. |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.multiRegion">multiRegion</a></code> | Generates a condition block for `kms:MultiRegion`. |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.multiRegionKeyType">multiRegionKeyType</a></code> | Generates a condition block for `kms:MultiRegionKeyType`. |
+| <code><a href="#@cdk_utils/iam.kms.KMSConditions.policyName">policyName</a></code> | Generates a condition block for `kms:PolicyName`. |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.primaryRegion">primaryRegion</a></code> | Generates a condition block for `kms:PrimaryRegion`. |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.recipientAttestationImageSha384">recipientAttestationImageSha384</a></code> | Generates a condition block for `kms:RecipientAttestation:ImageSha384`. |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.recipientAttestationNitroTpmpcr0">recipientAttestationNitroTpmpcr0</a></code> | Generates a condition block for `kms:RecipientAttestation:NitroTPMPCR0`. |
@@ -1263,6 +1264,7 @@ new kms.KMSConditions()
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.recipientAttestationPcr6">recipientAttestationPcr6</a></code> | Generates a condition block for `kms:RecipientAttestation:PCR6`. |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.recipientAttestationPcr7">recipientAttestationPcr7</a></code> | Generates a condition block for `kms:RecipientAttestation:PCR7`. |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.recipientAttestationPcr8">recipientAttestationPcr8</a></code> | Generates a condition block for `kms:RecipientAttestation:PCR8`. |
+| <code><a href="#@cdk_utils/iam.kms.KMSConditions.recipientAttestationPcr8ServiceName">recipientAttestationPcr8ServiceName</a></code> | Generates a condition block for `kms:RecipientAttestation:PCR8:ServiceName`. |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.recipientAttestationPcr9">recipientAttestationPcr9</a></code> | Generates a condition block for `kms:RecipientAttestation:PCR9`. |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.reEncryptOnSameKey">reEncryptOnSameKey</a></code> | Generates a condition block for `kms:ReEncryptOnSameKey`. |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.replicaRegion">replicaRegion</a></code> | Generates a condition block for `kms:ReplicaRegion`. |
@@ -1663,6 +1665,22 @@ kms.KMSConditions.multiRegionKeyType(value: string)
 Generates a condition block for `kms:MultiRegionKeyType`.
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.kms.KMSConditions.multiRegionKeyType.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `policyName` <a name="policyName" id="@cdk_utils/iam.kms.KMSConditions.policyName"></a>
+
+```typescript
+import { kms } from '@cdk_utils/iam'
+
+kms.KMSConditions.policyName(value: string)
+```
+
+Generates a condition block for `kms:PolicyName`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.kms.KMSConditions.policyName.parameter.value"></a>
 
 - *Type:* string
 
@@ -2580,6 +2598,22 @@ Generates a condition block for `kms:RecipientAttestation:PCR8`.
 
 ---
 
+##### `recipientAttestationPcr8ServiceName` <a name="recipientAttestationPcr8ServiceName" id="@cdk_utils/iam.kms.KMSConditions.recipientAttestationPcr8ServiceName"></a>
+
+```typescript
+import { kms } from '@cdk_utils/iam'
+
+kms.KMSConditions.recipientAttestationPcr8ServiceName(value: string)
+```
+
+Generates a condition block for `kms:RecipientAttestation:PCR8:ServiceName`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.kms.KMSConditions.recipientAttestationPcr8ServiceName.parameter.value"></a>
+
+- *Type:* string
+
+---
+
 ##### `recipientAttestationPcr9` <a name="recipientAttestationPcr9" id="@cdk_utils/iam.kms.KMSConditions.recipientAttestationPcr9"></a>
 
 ```typescript
@@ -2939,6 +2973,7 @@ Generates a condition block for `kms:WrappingKeySpec`.
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.MESSAGE_TYPE">MESSAGE_TYPE</a></code> | <code>string</code> | Condition key: kms:MessageType (String). |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.MULTI_REGION">MULTI_REGION</a></code> | <code>string</code> | Condition key: kms:MultiRegion (Bool). |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.MULTI_REGION_KEY_TYPE">MULTI_REGION_KEY_TYPE</a></code> | <code>string</code> | Condition key: kms:MultiRegionKeyType (String). |
+| <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.POLICY_NAME">POLICY_NAME</a></code> | <code>string</code> | Condition key: kms:PolicyName (String). |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.PRIMARY_REGION">PRIMARY_REGION</a></code> | <code>string</code> | Condition key: kms:PrimaryRegion (String). |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.PutKeyPolicyConditionKeys">PutKeyPolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutKeyPolicy action. |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.RE_ENCRYPT_ON_SAME_KEY">RE_ENCRYPT_ON_SAME_KEY</a></code> | <code>string</code> | Condition key: kms:ReEncryptOnSameKey (Bool). |
@@ -2998,6 +3033,7 @@ Generates a condition block for `kms:WrappingKeySpec`.
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.RECIPIENT_ATTESTATION_PCR6">RECIPIENT_ATTESTATION_PCR6</a></code> | <code>string</code> | Condition key: kms:RecipientAttestation:PCR6 (String). |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.RECIPIENT_ATTESTATION_PCR7">RECIPIENT_ATTESTATION_PCR7</a></code> | <code>string</code> | Condition key: kms:RecipientAttestation:PCR7 (String). |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.RECIPIENT_ATTESTATION_PCR8">RECIPIENT_ATTESTATION_PCR8</a></code> | <code>string</code> | Condition key: kms:RecipientAttestation:PCR8 (String). |
+| <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.RECIPIENT_ATTESTATION_PCR8_SERVICE_NAME">RECIPIENT_ATTESTATION_PCR8_SERVICE_NAME</a></code> | <code>string</code> | Condition key: kms:RecipientAttestation:PCR8:ServiceName (String). |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.RECIPIENT_ATTESTATION_PCR9">RECIPIENT_ATTESTATION_PCR9</a></code> | <code>string</code> | Condition key: kms:RecipientAttestation:PCR9 (String). |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.ReEncryptFromConditionKeys">ReEncryptFromConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ReEncryptFrom action. |
 | <code><a href="#@cdk_utils/iam.kms.KMSConditions.property.ReEncryptToConditionKeys">ReEncryptToConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ReEncryptTo action. |
@@ -3823,6 +3859,18 @@ Condition key: kms:MultiRegionKeyType (String).
 
 ---
 
+##### `POLICY_NAME`<sup>Required</sup> <a name="POLICY_NAME" id="@cdk_utils/iam.kms.KMSConditions.property.POLICY_NAME"></a>
+
+```typescript
+public readonly POLICY_NAME: string;
+```
+
+- *Type:* string
+
+Condition key: kms:PolicyName (String).
+
+---
+
 ##### `PRIMARY_REGION`<sup>Required</sup> <a name="PRIMARY_REGION" id="@cdk_utils/iam.kms.KMSConditions.property.PRIMARY_REGION"></a>
 
 ```typescript
@@ -4528,6 +4576,18 @@ public readonly RECIPIENT_ATTESTATION_PCR8: string;
 - *Type:* string
 
 Condition key: kms:RecipientAttestation:PCR8 (String).
+
+---
+
+##### `RECIPIENT_ATTESTATION_PCR8_SERVICE_NAME`<sup>Required</sup> <a name="RECIPIENT_ATTESTATION_PCR8_SERVICE_NAME" id="@cdk_utils/iam.kms.KMSConditions.property.RECIPIENT_ATTESTATION_PCR8_SERVICE_NAME"></a>
+
+```typescript
+public readonly RECIPIENT_ATTESTATION_PCR8_SERVICE_NAME: string;
+```
+
+- *Type:* string
+
+Condition key: kms:RecipientAttestation:PCR8:ServiceName (String).
 
 ---
 

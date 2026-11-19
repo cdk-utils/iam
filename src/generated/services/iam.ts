@@ -205,6 +205,12 @@ export class IAMActions {
 	static readonly actionGetPolicy = "iam:GetPolicy";
 	/** [Read] iam:GetPolicyVersion */
 	static readonly actionGetPolicyVersion = "iam:GetPolicyVersion";
+	/** [Read] iam:GetRequestAuthorizationDetails */
+	static readonly actionGetRequestAuthorizationDetails =
+		"iam:GetRequestAuthorizationDetails";
+	/** [Read] iam:GetRequestAuthorizationPolicy */
+	static readonly actionGetRequestAuthorizationPolicy =
+		"iam:GetRequestAuthorizationPolicy";
 	/** [Read] iam:GetRole */
 	static readonly actionGetRole = "iam:GetRole";
 	/** [Read] iam:GetRolePolicy */
@@ -458,6 +464,8 @@ export class IAMActions {
 		IAMActions.actionGetOutboundWebIdentityFederationInfo,
 		IAMActions.actionGetPolicy,
 		IAMActions.actionGetPolicyVersion,
+		IAMActions.actionGetRequestAuthorizationDetails,
+		IAMActions.actionGetRequestAuthorizationPolicy,
 		IAMActions.actionGetRole,
 		IAMActions.actionGetRolePolicy,
 		IAMActions.actionGetRoleTemplateVersion,
@@ -1769,7 +1777,13 @@ export class IAMOperations {
 	/** IAM actions required for the GetPolicyVersion API call. */
 	static readonly opGetPolicyVersion: string[] = ["iam:GetPolicyVersion"];
 	/** IAM actions required for the GetRequestAuthorizationDetails API call. */
-	static readonly opGetRequestAuthorizationDetails: string[] = [];
+	static readonly opGetRequestAuthorizationDetails: string[] = [
+		"iam:GetRequestAuthorizationDetails",
+	];
+	/** IAM actions required for the GetRequestAuthorizationPolicy API call. */
+	static readonly opGetRequestAuthorizationPolicy: string[] = [
+		"iam:GetRequestAuthorizationPolicy",
+	];
 	/** IAM actions required for the GetRole API call. */
 	static readonly opGetRole: string[] = ["iam:GetRole"];
 	/** IAM actions required for the GetRolePolicy API call. */

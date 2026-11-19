@@ -17,6 +17,8 @@ export class ConnectActions {
 	/** [Write] connect:AdminGetEmergencyAccessToken */
 	static readonly AdminGetEmergencyAccessToken =
 		"connect:AdminGetEmergencyAccessToken";
+	/** [Write] connect:ApproveTimeOff */
+	static readonly ApproveTimeOff = "connect:ApproveTimeOff";
 	/** [Write] connect:AssociateAnalyticsDataSet */
 	static readonly AssociateAnalyticsDataSet =
 		"connect:AssociateAnalyticsDataSet";
@@ -94,6 +96,8 @@ export class ConnectActions {
 	/** [Write] connect:BatchUpdateDataTableValue */
 	static readonly BatchUpdateDataTableValue =
 		"connect:BatchUpdateDataTableValue";
+	/** [Write] connect:CancelTimeOff */
+	static readonly CancelTimeOff = "connect:CancelTimeOff";
 	/** [Write] connect:ClaimPhoneNumber */
 	static readonly ClaimPhoneNumber = "connect:ClaimPhoneNumber";
 	/** [Write] connect:CompleteAttachedFileUpload */
@@ -170,6 +174,8 @@ export class ConnectActions {
 	static readonly CreateSecurityProfile = "connect:CreateSecurityProfile";
 	/** [Write] connect:CreateTaskTemplate */
 	static readonly CreateTaskTemplate = "connect:CreateTaskTemplate";
+	/** [Write] connect:CreateTimeOff */
+	static readonly CreateTimeOff = "connect:CreateTimeOff";
 	/** [Write] connect:CreateTrafficDistributionGroup */
 	static readonly CreateTrafficDistributionGroup =
 		"connect:CreateTrafficDistributionGroup";
@@ -443,6 +449,8 @@ export class ConnectActions {
 	static readonly actionGetPromptFile = "connect:GetPromptFile";
 	/** [Read] connect:GetTaskTemplate */
 	static readonly actionGetTaskTemplate = "connect:GetTaskTemplate";
+	/** [Read] connect:GetTimeOff */
+	static readonly actionGetTimeOff = "connect:GetTimeOff";
 	/** [List] connect:GetTrafficDistribution */
 	static readonly actionGetTrafficDistribution =
 		"connect:GetTrafficDistribution";
@@ -617,8 +625,12 @@ export class ConnectActions {
 	static readonly MonitorContact = "connect:MonitorContact";
 	/** [Write] connect:PauseContact */
 	static readonly PauseContact = "connect:PauseContact";
+	/** [Write] connect:PutTimeOffBalance */
+	static readonly PutTimeOffBalance = "connect:PutTimeOffBalance";
 	/** [Write] connect:PutUserStatus */
 	static readonly PutUserStatus = "connect:PutUserStatus";
+	/** [Write] connect:RejectTimeOff */
+	static readonly RejectTimeOff = "connect:RejectTimeOff";
 	/** [Write] connect:ReleasePhoneNumber */
 	static readonly ReleasePhoneNumber = "connect:ReleasePhoneNumber";
 	/** [Write] connect:ReplicateInstance */
@@ -829,6 +841,9 @@ export class ConnectActions {
 	/** [Write] connect:UpdateNotificationContent */
 	static readonly UpdateNotificationContent =
 		"connect:UpdateNotificationContent";
+	/** [Write] connect:UpdateOutboundEmailContactMessage */
+	static readonly UpdateOutboundEmailContactMessage =
+		"connect:UpdateOutboundEmailContactMessage";
 	/** [Write] connect:UpdateParticipantAuthentication */
 	static readonly UpdateParticipantAuthentication =
 		"connect:UpdateParticipantAuthentication";
@@ -978,6 +993,7 @@ export class ConnectActions {
 		ConnectActions.actionGetMetricDataV2,
 		ConnectActions.actionGetPromptFile,
 		ConnectActions.actionGetTaskTemplate,
+		ConnectActions.actionGetTimeOff,
 		ConnectActions.ListNotifications,
 		ConnectActions.ListRealtimeContactAnalysisSegments,
 		ConnectActions.ListTagsForResource,
@@ -1011,6 +1027,7 @@ export class ConnectActions {
 	static readonly AllWriteActions: string[] = [
 		ConnectActions.ActivateEvaluationForm,
 		ConnectActions.AdminGetEmergencyAccessToken,
+		ConnectActions.ApproveTimeOff,
 		ConnectActions.AssociateAnalyticsDataSet,
 		ConnectActions.AssociateApprovedOrigin,
 		ConnectActions.AssociateBot,
@@ -1037,6 +1054,7 @@ export class ConnectActions {
 		ConnectActions.BatchDisassociateAnalyticsDataSet,
 		ConnectActions.BatchPutContact,
 		ConnectActions.BatchUpdateDataTableValue,
+		ConnectActions.CancelTimeOff,
 		ConnectActions.ClaimPhoneNumber,
 		ConnectActions.CompleteAttachedFileUpload,
 		ConnectActions.CreateAgentStatus,
@@ -1070,6 +1088,7 @@ export class ConnectActions {
 		ConnectActions.CreateRule,
 		ConnectActions.CreateSecurityProfile,
 		ConnectActions.CreateTaskTemplate,
+		ConnectActions.CreateTimeOff,
 		ConnectActions.CreateTrafficDistributionGroup,
 		ConnectActions.CreateUseCase,
 		ConnectActions.CreateUser,
@@ -1140,7 +1159,9 @@ export class ConnectActions {
 		ConnectActions.ImportWorkspaceMedia,
 		ConnectActions.MonitorContact,
 		ConnectActions.PauseContact,
+		ConnectActions.PutTimeOffBalance,
 		ConnectActions.PutUserStatus,
+		ConnectActions.RejectTimeOff,
 		ConnectActions.ReleasePhoneNumber,
 		ConnectActions.ReplicateInstance,
 		ConnectActions.ResumeContact,
@@ -1204,6 +1225,7 @@ export class ConnectActions {
 		ConnectActions.UpdateMetricContent,
 		ConnectActions.UpdateMetricMetadata,
 		ConnectActions.UpdateNotificationContent,
+		ConnectActions.UpdateOutboundEmailContactMessage,
 		ConnectActions.UpdateParticipantAuthentication,
 		ConnectActions.UpdateParticipantRoleConfig,
 		ConnectActions.UpdatePhoneNumber,
@@ -4342,6 +4364,8 @@ export class ConnectOperations {
 	static readonly ActivateEvaluationForm: string[] = [
 		"connect:ActivateEvaluationForm",
 	];
+	/** IAM actions required for the ApproveTimeOff API call. */
+	static readonly ApproveTimeOff: string[] = ["connect:ApproveTimeOff"];
 	/** IAM actions required for the AssociateAnalyticsDataSet API call. */
 	static readonly AssociateAnalyticsDataSet: string[] = [
 		"connect:AssociateAnalyticsDataSet",
@@ -4448,6 +4472,8 @@ export class ConnectOperations {
 	];
 	/** IAM actions required for the CancelParticipantAuthentication API call. */
 	static readonly CancelParticipantAuthentication: string[] = [];
+	/** IAM actions required for the CancelTimeOff API call. */
+	static readonly CancelTimeOff: string[] = ["connect:CancelTimeOff"];
 	/** IAM actions required for the ClaimPhoneNumber API call. */
 	static readonly ClaimPhoneNumber: string[] = [
 		"connect:ClaimPhoneNumber",
@@ -4603,6 +4629,8 @@ export class ConnectOperations {
 	];
 	/** IAM actions required for the CreateTestCase API call. */
 	static readonly CreateTestCase: string[] = ["connect:TagResource"];
+	/** IAM actions required for the CreateTimeOff API call. */
+	static readonly CreateTimeOff: string[] = [];
 	/** IAM actions required for the CreateTrafficDistributionGroup API call. */
 	static readonly CreateTrafficDistributionGroup: string[] = [
 		"connect:CreateTrafficDistributionGroup",
@@ -4648,6 +4676,8 @@ export class ConnectOperations {
 	static readonly DeactivateEvaluationForm: string[] = [
 		"connect:DeactivateEvaluationForm",
 	];
+	/** IAM actions required for the DeleteAllEntitySessions API call. */
+	static readonly DeleteAllEntitySessions: string[] = [];
 	/** IAM actions required for the DeleteAttachedFile API call. */
 	static readonly DeleteAttachedFile: string[] = ["connect:DeleteAttachedFile"];
 	/** IAM actions required for the DeleteContactData API call. */
@@ -5012,6 +5042,8 @@ export class ConnectOperations {
 	static readonly opGetTaskTemplate: string[] = ["connect:GetTaskTemplate"];
 	/** IAM actions required for the GetTestCaseExecutionSummary API call. */
 	static readonly opGetTestCaseExecutionSummary: string[] = [];
+	/** IAM actions required for the GetTimeOff API call. */
+	static readonly opGetTimeOff: string[] = [];
 	/** IAM actions required for the GetTrafficDistribution API call. */
 	static readonly opGetTrafficDistribution: string[] = [
 		"connect:GetTrafficDistribution",
@@ -5277,8 +5309,12 @@ export class ConnectOperations {
 	static readonly MonitorContact: string[] = ["connect:MonitorContact"];
 	/** IAM actions required for the PauseContact API call. */
 	static readonly PauseContact: string[] = ["connect:PauseContact"];
+	/** IAM actions required for the PutTimeOffBalance API call. */
+	static readonly PutTimeOffBalance: string[] = ["connect:PutTimeOffBalance"];
 	/** IAM actions required for the PutUserStatus API call. */
 	static readonly PutUserStatus: string[] = ["connect:PutUserStatus"];
+	/** IAM actions required for the RejectTimeOff API call. */
+	static readonly RejectTimeOff: string[] = ["connect:RejectTimeOff"];
 	/** IAM actions required for the ReleasePhoneNumber API call. */
 	static readonly ReleasePhoneNumber: string[] = ["connect:ReleasePhoneNumber"];
 	/** IAM actions required for the ReplicateInstance API call. */
@@ -5639,7 +5675,9 @@ export class ConnectOperations {
 		"connect:UpdateNotificationContent",
 	];
 	/** IAM actions required for the UpdateOutboundEmailContactMessage API call. */
-	static readonly UpdateOutboundEmailContactMessage: string[] = [];
+	static readonly UpdateOutboundEmailContactMessage: string[] = [
+		"connect:UpdateOutboundEmailContactMessage",
+	];
 	/** IAM actions required for the UpdateParticipantAuthentication API call. */
 	static readonly UpdateParticipantAuthentication: string[] = [
 		"connect:UpdateParticipantAuthentication",
@@ -5792,6 +5830,11 @@ export class ConnectConditions {
 	static readonly ActivateEvaluationFormConditionKeys: string[] = [
 		"connect:InstanceId",
 	];
+	/** Condition keys applicable to the ApproveTimeOff action. */
+	static readonly ApproveTimeOffConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"connect:InstanceId",
+	];
 	/** Condition keys applicable to the AssociateAnalyticsDataSet action. */
 	static readonly AssociateAnalyticsDataSetConditionKeys: string[] = [
 		"connect:InstanceId",
@@ -5929,6 +5972,11 @@ export class ConnectConditions {
 		"connect:ExpressionValue",
 		"connect:InstanceId",
 		"connect:PrimaryAttribute/${PrimaryAttribute}",
+	];
+	/** Condition keys applicable to the CancelTimeOff action. */
+	static readonly CancelTimeOffConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"connect:InstanceId",
 	];
 	/** Condition keys applicable to the ClaimPhoneNumber action. */
 	static readonly ClaimPhoneNumberConditionKeys: string[] = [
@@ -6102,6 +6150,11 @@ export class ConnectConditions {
 	static readonly CreateSecurityProfileConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
+		"connect:InstanceId",
+	];
+	/** Condition keys applicable to the CreateTimeOff action. */
+	static readonly CreateTimeOffConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
 		"connect:InstanceId",
 	];
 	/** Condition keys applicable to the CreateTrafficDistributionGroup action. */
@@ -6672,6 +6725,11 @@ export class ConnectConditions {
 		"aws:ResourceTag/${TagKey}",
 		"connect:InstanceId",
 	];
+	/** Condition keys applicable to the GetTimeOff action. */
+	static readonly actionGetTimeOffConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"connect:InstanceId",
+	];
 	/** Condition keys applicable to the GetTrafficDistribution action. */
 	static readonly actionGetTrafficDistributionConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
@@ -6954,8 +7012,18 @@ export class ConnectConditions {
 		"aws:ResourceTag/${TagKey}",
 		"connect:InstanceId",
 	];
+	/** Condition keys applicable to the PutTimeOffBalance action. */
+	static readonly PutTimeOffBalanceConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"connect:InstanceId",
+	];
 	/** Condition keys applicable to the PutUserStatus action. */
 	static readonly PutUserStatusConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"connect:InstanceId",
+	];
+	/** Condition keys applicable to the RejectTimeOff action. */
+	static readonly RejectTimeOffConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"connect:InstanceId",
 	];
@@ -7423,6 +7491,14 @@ export class ConnectConditions {
 	static readonly UpdateNotificationContentConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"connect:InstanceId",
+	];
+	/** Condition keys applicable to the UpdateOutboundEmailContactMessage action. */
+	static readonly UpdateOutboundEmailContactMessageConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"connect:Channel",
+		"connect:ContactAssociationId",
+		"connect:InstanceId",
+		"connect:UserArn",
 	];
 	/** Condition keys applicable to the UpdateParticipantAuthentication action. */
 	static readonly UpdateParticipantAuthenticationConditionKeys: string[] = [

@@ -37,6 +37,11 @@ export class KinesisanalyticsActions {
 	/** [Write] kinesisanalytics:CreateApplicationSnapshot */
 	static readonly CreateApplicationSnapshot =
 		"kinesisanalytics:CreateApplicationSnapshot";
+	/** [Write] kinesisanalytics:CreateSnapshot */
+	static readonly CreateSnapshot = "kinesisanalytics:CreateSnapshot";
+	/** [Write] kinesisanalytics:CreateSystemSnapshot */
+	static readonly CreateSystemSnapshot =
+		"kinesisanalytics:CreateSystemSnapshot";
 	/** [Write] kinesisanalytics:DeleteApplication */
 	static readonly DeleteApplication = "kinesisanalytics:DeleteApplication";
 	/** [Write] kinesisanalytics:DeleteApplicationCloudWatchLoggingOption */
@@ -57,6 +62,8 @@ export class KinesisanalyticsActions {
 	/** [Write] kinesisanalytics:DeleteApplicationVpcConfiguration */
 	static readonly DeleteApplicationVpcConfiguration =
 		"kinesisanalytics:DeleteApplicationVpcConfiguration";
+	/** [Write] kinesisanalytics:DeleteSnapshot */
+	static readonly DeleteSnapshot = "kinesisanalytics:DeleteSnapshot";
 	/** [Read] kinesisanalytics:DescribeApplication */
 	static readonly DescribeApplication = "kinesisanalytics:DescribeApplication";
 	/** [Read] kinesisanalytics:DescribeApplicationOperation */
@@ -68,11 +75,20 @@ export class KinesisanalyticsActions {
 	/** [Read] kinesisanalytics:DescribeApplicationVersion */
 	static readonly DescribeApplicationVersion =
 		"kinesisanalytics:DescribeApplicationVersion";
+	/** [Read] kinesisanalytics:DescribeSnapshot */
+	static readonly DescribeSnapshot = "kinesisanalytics:DescribeSnapshot";
+	/** [Read] kinesisanalytics:DescribeSnapshotOperation */
+	static readonly DescribeSnapshotOperation =
+		"kinesisanalytics:DescribeSnapshotOperation";
 	/** [Read] kinesisanalytics:DiscoverInputSchema */
 	static readonly DiscoverInputSchema = "kinesisanalytics:DiscoverInputSchema";
+	/** [Write] kinesisanalytics:ExportSnapshot */
+	static readonly ExportSnapshot = "kinesisanalytics:ExportSnapshot";
 	/** [Read] kinesisanalytics:GetApplicationState */
 	static readonly actionGetApplicationState =
 		"kinesisanalytics:GetApplicationState";
+	/** [Write] kinesisanalytics:ImportSnapshot */
+	static readonly ImportSnapshot = "kinesisanalytics:ImportSnapshot";
 	/** [Read] kinesisanalytics:ListApplicationOperations */
 	static readonly ListApplicationOperations =
 		"kinesisanalytics:ListApplicationOperations";
@@ -84,8 +100,15 @@ export class KinesisanalyticsActions {
 		"kinesisanalytics:ListApplicationVersions";
 	/** [List] kinesisanalytics:ListApplications */
 	static readonly ListApplications = "kinesisanalytics:ListApplications";
+	/** [List] kinesisanalytics:ListSnapshotOperations */
+	static readonly ListSnapshotOperations =
+		"kinesisanalytics:ListSnapshotOperations";
+	/** [List] kinesisanalytics:ListSnapshots */
+	static readonly ListSnapshots = "kinesisanalytics:ListSnapshots";
 	/** [Read] kinesisanalytics:ListTagsForResource */
 	static readonly ListTagsForResource = "kinesisanalytics:ListTagsForResource";
+	/** [Read] kinesisanalytics:RestoreFromSnapshot */
+	static readonly RestoreFromSnapshot = "kinesisanalytics:RestoreFromSnapshot";
 	/** [Write] kinesisanalytics:RollbackApplication */
 	static readonly RollbackApplication = "kinesisanalytics:RollbackApplication";
 	/** [Write] kinesisanalytics:StartApplication */
@@ -109,12 +132,15 @@ export class KinesisanalyticsActions {
 		KinesisanalyticsActions.DescribeApplicationOperation,
 		KinesisanalyticsActions.DescribeApplicationSnapshot,
 		KinesisanalyticsActions.DescribeApplicationVersion,
+		KinesisanalyticsActions.DescribeSnapshot,
+		KinesisanalyticsActions.DescribeSnapshotOperation,
 		KinesisanalyticsActions.DiscoverInputSchema,
 		KinesisanalyticsActions.actionGetApplicationState,
 		KinesisanalyticsActions.ListApplicationOperations,
 		KinesisanalyticsActions.ListApplicationSnapshots,
 		KinesisanalyticsActions.ListApplicationVersions,
 		KinesisanalyticsActions.ListTagsForResource,
+		KinesisanalyticsActions.RestoreFromSnapshot,
 	];
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
@@ -126,6 +152,8 @@ export class KinesisanalyticsActions {
 		KinesisanalyticsActions.AddApplicationVpcConfiguration,
 		KinesisanalyticsActions.CreateApplication,
 		KinesisanalyticsActions.CreateApplicationSnapshot,
+		KinesisanalyticsActions.CreateSnapshot,
+		KinesisanalyticsActions.CreateSystemSnapshot,
 		KinesisanalyticsActions.DeleteApplication,
 		KinesisanalyticsActions.DeleteApplicationCloudWatchLoggingOption,
 		KinesisanalyticsActions.DeleteApplicationInputProcessingConfiguration,
@@ -133,6 +161,9 @@ export class KinesisanalyticsActions {
 		KinesisanalyticsActions.DeleteApplicationReferenceDataSource,
 		KinesisanalyticsActions.DeleteApplicationSnapshot,
 		KinesisanalyticsActions.DeleteApplicationVpcConfiguration,
+		KinesisanalyticsActions.DeleteSnapshot,
+		KinesisanalyticsActions.ExportSnapshot,
+		KinesisanalyticsActions.ImportSnapshot,
 		KinesisanalyticsActions.RollbackApplication,
 		KinesisanalyticsActions.StartApplication,
 		KinesisanalyticsActions.StopApplication,
@@ -142,6 +173,8 @@ export class KinesisanalyticsActions {
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [
 		KinesisanalyticsActions.ListApplications,
+		KinesisanalyticsActions.ListSnapshotOperations,
+		KinesisanalyticsActions.ListSnapshots,
 	];
 	/** All permission-management-level actions. */
 	static readonly AllPermissionManagementActions: string[] = [];
@@ -180,8 +213,38 @@ export interface KinesisanalyticsApplicationArnComponents {
 	readonly applicationName: string;
 }
 
+/**
+ * Properties for building a snapshot ARN.
+ */
+export interface KinesisanalyticsSnapshotArnProps {
+	/** The SnapshotName component of the ARN. */
+	readonly snapshotName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a snapshot ARN.
+ */
+export interface KinesisanalyticsSnapshotArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SnapshotName component. */
+	readonly snapshotName: string;
+}
+
 const ApplicationArnRegex =
 	/^arn:(?<partition>[^:]+):kinesisanalytics:(?<region>[^:]*):(?<account>[^:]*):application\/(?<applicationName>[^:/?]+)$/;
+const SnapshotArnRegex =
+	/^arn:(?<partition>[^:]+):kinesisanalytics:(?<region>[^:]*):(?<account>[^:]*):snapshot\/(?<snapshotName>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for kinesisanalytics resources.
@@ -217,6 +280,37 @@ export class KinesisanalyticsResources {
 			region: match.groups.region,
 			account: match.groups.account,
 			applicationName: match.groups!.applicationName,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the snapshot resource.
+	 */
+	static snapshot(props: KinesisanalyticsSnapshotArnProps): string {
+		return `arn:${props.partition ?? "aws"}:kinesisanalytics:${props.region ?? "*"}:${props.account ?? "*"}:snapshot/${props.snapshotName}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the snapshot resource.
+	 */
+	static isValidSnapshotArn(arn: string): boolean {
+		return SnapshotArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a snapshot ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseSnapshotArn(arn: string): KinesisanalyticsSnapshotArnComponents {
+		const match = SnapshotArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid snapshot ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			snapshotName: match.groups!.snapshotName,
 		};
 	}
 }
@@ -265,6 +359,11 @@ export class KinesisanalyticsOperations {
 	static readonly CreateApplicationSnapshot: string[] = [
 		"kinesisanalytics:CreateApplicationSnapshot",
 	];
+	/** IAM actions required for the CreateSnapshot API call. */
+	static readonly CreateSnapshot: string[] = [
+		"kinesisanalytics:CreateSnapshot",
+		"kinesisanalytics:TagResource",
+	];
 	/** IAM actions required for the DeleteApplication API call. */
 	static readonly DeleteApplication: string[] = [
 		"kinesisanalytics:DeleteApplication",
@@ -293,6 +392,10 @@ export class KinesisanalyticsOperations {
 	static readonly DeleteApplicationVpcConfiguration: string[] = [
 		"kinesisanalytics:DeleteApplicationVpcConfiguration",
 	];
+	/** IAM actions required for the DeleteSnapshot API call. */
+	static readonly DeleteSnapshot: string[] = [
+		"kinesisanalytics:DeleteSnapshot",
+	];
 	/** IAM actions required for the DescribeApplication API call. */
 	static readonly DescribeApplication: string[] = [
 		"kinesisanalytics:DescribeApplication",
@@ -309,9 +412,24 @@ export class KinesisanalyticsOperations {
 	static readonly DescribeApplicationVersion: string[] = [
 		"kinesisanalytics:DescribeApplicationVersion",
 	];
+	/** IAM actions required for the DescribeSnapshot API call. */
+	static readonly DescribeSnapshot: string[] = [
+		"kinesisanalytics:DescribeSnapshot",
+	];
+	/** IAM actions required for the DescribeSnapshotOperation API call. */
+	static readonly DescribeSnapshotOperation: string[] = [
+		"kinesisanalytics:DescribeSnapshotOperation",
+	];
 	/** IAM actions required for the DiscoverInputSchema API call. */
 	static readonly DiscoverInputSchema: string[] = [
 		"kinesisanalytics:DiscoverInputSchema",
+		"iam:PassRole",
+	];
+	/** IAM actions required for the ExportSnapshot API call. */
+	static readonly ExportSnapshot: string[] = [];
+	/** IAM actions required for the ImportSnapshot API call. */
+	static readonly ImportSnapshot: string[] = [
+		"kinesisanalytics:ImportSnapshot",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the ListApplicationOperations API call. */
@@ -330,6 +448,12 @@ export class KinesisanalyticsOperations {
 	static readonly ListApplications: string[] = [
 		"kinesisanalytics:ListApplications",
 	];
+	/** IAM actions required for the ListSnapshotOperations API call. */
+	static readonly ListSnapshotOperations: string[] = [
+		"kinesisanalytics:ListSnapshotOperations",
+	];
+	/** IAM actions required for the ListSnapshots API call. */
+	static readonly ListSnapshots: string[] = ["kinesisanalytics:ListSnapshots"];
 	/** IAM actions required for the ListTagsForResource API call. */
 	static readonly ListTagsForResource: string[] = [
 		"kinesisanalytics:ListTagsForResource",
@@ -367,6 +491,16 @@ export class KinesisanalyticsOperations {
 export class KinesisanalyticsConditions {
 	/** Condition keys applicable to the CreateApplication action. */
 	static readonly CreateApplicationConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the CreateSnapshot action. */
+	static readonly CreateSnapshotConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the ImportSnapshot action. */
+	static readonly ImportSnapshotConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];

@@ -606,9 +606,11 @@ new account_access.AccountAccessOperations()
 | <code><a href="#@cdk_utils/iam.account_access.AccountAccessOperations.property.DeleteEntitlement">DeleteEntitlement</a></code> | <code>string[]</code> | IAM actions required for the DeleteEntitlement API call. |
 | <code><a href="#@cdk_utils/iam.account_access.AccountAccessOperations.property.ListApplications">ListApplications</a></code> | <code>string[]</code> | IAM actions required for the ListApplications API call. |
 | <code><a href="#@cdk_utils/iam.account_access.AccountAccessOperations.property.ListEntitlements">ListEntitlements</a></code> | <code>string[]</code> | IAM actions required for the ListEntitlements API call. |
+| <code><a href="#@cdk_utils/iam.account_access.AccountAccessOperations.property.ListRoles">ListRoles</a></code> | <code>string[]</code> | IAM actions required for the ListRoles API call. |
 | <code><a href="#@cdk_utils/iam.account_access.AccountAccessOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.account_access.AccountAccessOperations.property.opGetApplication">opGetApplication</a></code> | <code>string[]</code> | IAM actions required for the GetApplication API call. |
 | <code><a href="#@cdk_utils/iam.account_access.AccountAccessOperations.property.opGetEntitlement">opGetEntitlement</a></code> | <code>string[]</code> | IAM actions required for the GetEntitlement API call. |
+| <code><a href="#@cdk_utils/iam.account_access.AccountAccessOperations.property.opGetRoleCredentials">opGetRoleCredentials</a></code> | <code>string[]</code> | IAM actions required for the GetRoleCredentials API call. |
 | <code><a href="#@cdk_utils/iam.account_access.AccountAccessOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.account_access.AccountAccessOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 
@@ -686,6 +688,18 @@ IAM actions required for the ListEntitlements API call.
 
 ---
 
+##### `ListRoles`<sup>Required</sup> <a name="ListRoles" id="@cdk_utils/iam.account_access.AccountAccessOperations.property.ListRoles"></a>
+
+```typescript
+public readonly ListRoles: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListRoles API call.
+
+---
+
 ##### `ListTagsForResource`<sup>Required</sup> <a name="ListTagsForResource" id="@cdk_utils/iam.account_access.AccountAccessOperations.property.ListTagsForResource"></a>
 
 ```typescript
@@ -719,6 +733,18 @@ public readonly opGetEntitlement: string[];
 - *Type:* string[]
 
 IAM actions required for the GetEntitlement API call.
+
+---
+
+##### `opGetRoleCredentials`<sup>Required</sup> <a name="opGetRoleCredentials" id="@cdk_utils/iam.account_access.AccountAccessOperations.property.opGetRoleCredentials"></a>
+
+```typescript
+public readonly opGetRoleCredentials: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetRoleCredentials API call.
 
 ---
 

@@ -1331,7 +1331,9 @@ new billing.BillingOperations()
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.opGetEnterpriseSupportContractDetails">opGetEnterpriseSupportContractDetails</a></code> | <code>string[]</code> | IAM actions required for the GetEnterpriseSupportContractDetails API call. |
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.opGetResourcePolicy">opGetResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the GetResourcePolicy API call. |
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.RedeemCredits">RedeemCredits</a></code> | <code>string[]</code> | IAM actions required for the RedeemCredits API call. |
+| <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.SplitCredit">SplitCredit</a></code> | <code>string[]</code> | IAM actions required for the SplitCredit API call. |
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
+| <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.TransferCredit">TransferCredit</a></code> | <code>string[]</code> | IAM actions required for the TransferCredit API call. |
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.UpdateBillingPreferences">UpdateBillingPreferences</a></code> | <code>string[]</code> | IAM actions required for the UpdateBillingPreferences API call. |
 | <code><a href="#@cdk_utils/iam.billing.BillingOperations.property.UpdateBillingView">UpdateBillingView</a></code> | <code>string[]</code> | IAM actions required for the UpdateBillingView API call. |
@@ -1674,6 +1676,18 @@ IAM actions required for the RedeemCredits API call.
 
 ---
 
+##### `SplitCredit`<sup>Required</sup> <a name="SplitCredit" id="@cdk_utils/iam.billing.BillingOperations.property.SplitCredit"></a>
+
+```typescript
+public readonly SplitCredit: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the SplitCredit API call.
+
+---
+
 ##### `TagResource`<sup>Required</sup> <a name="TagResource" id="@cdk_utils/iam.billing.BillingOperations.property.TagResource"></a>
 
 ```typescript
@@ -1683,6 +1697,18 @@ public readonly TagResource: string[];
 - *Type:* string[]
 
 IAM actions required for the TagResource API call.
+
+---
+
+##### `TransferCredit`<sup>Required</sup> <a name="TransferCredit" id="@cdk_utils/iam.billing.BillingOperations.property.TransferCredit"></a>
+
+```typescript
+public readonly TransferCredit: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the TransferCredit API call.
 
 ---
 

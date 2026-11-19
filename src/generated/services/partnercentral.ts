@@ -32,11 +32,22 @@ export class PartnercentralActions {
 	/** [Write] partnercentral:AssociateBenefitApplicationResource */
 	static readonly AssociateBenefitApplicationResource =
 		"partnercentral:AssociateBenefitApplicationResource";
+	/** [Write] partnercentral:AssociateBusinessPlan */
+	static readonly AssociateBusinessPlan =
+		"partnercentral:AssociateBusinessPlan";
 	/** [Write] partnercentral:AssociateOpportunity */
 	static readonly AssociateOpportunity = "partnercentral:AssociateOpportunity";
+	/** [Write] partnercentral:BatchCreateCampaignAsset */
+	static readonly BatchCreateCampaignAsset =
+		"partnercentral:BatchCreateCampaignAsset";
 	/** [Write] partnercentral:CancelBenefitApplication */
 	static readonly CancelBenefitApplication =
 		"partnercentral:CancelBenefitApplication";
+	/** [Write] partnercentral:CancelBusinessPlan */
+	static readonly CancelBusinessPlan = "partnercentral:CancelBusinessPlan";
+	/** [Write] partnercentral:CancelBusinessPlanSubmissionTask */
+	static readonly CancelBusinessPlanSubmissionTask =
+		"partnercentral:CancelBusinessPlanSubmissionTask";
 	/** [Write] partnercentral:CancelChannelHandshake */
 	static readonly CancelChannelHandshake =
 		"partnercentral:CancelChannelHandshake";
@@ -53,6 +64,11 @@ export class PartnercentralActions {
 		"partnercentral:CreateBenefitApplication";
 	/** [Write] partnercentral:CreateBusinessPlan */
 	static readonly CreateBusinessPlan = "partnercentral:CreateBusinessPlan";
+	/** [Write] partnercentral:CreateBusinessPlanItem */
+	static readonly CreateBusinessPlanItem =
+		"partnercentral:CreateBusinessPlanItem";
+	/** [Write] partnercentral:CreateCampaign */
+	static readonly CreateCampaign = "partnercentral:CreateCampaign";
 	/** [Write] partnercentral:CreateChannelHandshake */
 	static readonly CreateChannelHandshake =
 		"partnercentral:CreateChannelHandshake";
@@ -65,6 +81,12 @@ export class PartnercentralActions {
 	/** [Write] partnercentral:CreateConnectionInvitation */
 	static readonly CreateConnectionInvitation =
 		"partnercentral:CreateConnectionInvitation";
+	/** [Write] partnercentral:CreateCustomerAccount */
+	static readonly CreateCustomerAccount =
+		"partnercentral:CreateCustomerAccount";
+	/** [Write] partnercentral:CreateDataSubscription */
+	static readonly CreateDataSubscription =
+		"partnercentral:CreateDataSubscription";
 	/** [Write] partnercentral:CreateEngagement */
 	static readonly CreateEngagement = "partnercentral:CreateEngagement";
 	/** [Write] partnercentral:CreateEngagementContext */
@@ -97,6 +119,28 @@ export class PartnercentralActions {
 	/** [Write] partnercentral:CreateRevenueAttribution */
 	static readonly CreateRevenueAttribution =
 		"partnercentral:CreateRevenueAttribution";
+	/** [Write] partnercentral:CreateSocialConnectionAuthorizationUrl */
+	static readonly CreateSocialConnectionAuthorizationUrl =
+		"partnercentral:CreateSocialConnectionAuthorizationUrl";
+	/** [Write] partnercentral:DeactivateCampaignAsset */
+	static readonly DeactivateCampaignAsset =
+		"partnercentral:DeactivateCampaignAsset";
+	/** [Write] partnercentral:DeleteBusinessPlanAttachment */
+	static readonly DeleteBusinessPlanAttachment =
+		"partnercentral:DeleteBusinessPlanAttachment";
+	/** [Write] partnercentral:DeleteBusinessPlanItem */
+	static readonly DeleteBusinessPlanItem =
+		"partnercentral:DeleteBusinessPlanItem";
+	/** [Write] partnercentral:DeleteCampaign */
+	static readonly DeleteCampaign = "partnercentral:DeleteCampaign";
+	/** [Write] partnercentral:DeleteCampaignAsset */
+	static readonly DeleteCampaignAsset = "partnercentral:DeleteCampaignAsset";
+	/** [Write] partnercentral:DeleteCustomerAccount */
+	static readonly DeleteCustomerAccount =
+		"partnercentral:DeleteCustomerAccount";
+	/** [Write] partnercentral:DeleteDataSubscription */
+	static readonly DeleteDataSubscription =
+		"partnercentral:DeleteDataSubscription";
 	/** [Write] partnercentral:DeleteProgramManagementAccount */
 	static readonly DeleteProgramManagementAccount =
 		"partnercentral:DeleteProgramManagementAccount";
@@ -105,12 +149,18 @@ export class PartnercentralActions {
 	/** [Write] partnercentral:DeleteResourceSnapshotJob */
 	static readonly DeleteResourceSnapshotJob =
 		"partnercentral:DeleteResourceSnapshotJob";
+	/** [Write] partnercentral:DeleteSocialConnection */
+	static readonly DeleteSocialConnection =
+		"partnercentral:DeleteSocialConnection";
 	/** [Write] partnercentral:DisassociateAwsTrainingCertificationEmailDomain */
 	static readonly DisassociateAwsTrainingCertificationEmailDomain =
 		"partnercentral:DisassociateAwsTrainingCertificationEmailDomain";
 	/** [Write] partnercentral:DisassociateBenefitApplicationResource */
 	static readonly DisassociateBenefitApplicationResource =
 		"partnercentral:DisassociateBenefitApplicationResource";
+	/** [Write] partnercentral:DisassociateBusinessPlan */
+	static readonly DisassociateBusinessPlan =
+		"partnercentral:DisassociateBusinessPlan";
 	/** [Write] partnercentral:DisassociateOpportunity */
 	static readonly DisassociateOpportunity =
 		"partnercentral:DisassociateOpportunity";
@@ -132,6 +182,37 @@ export class PartnercentralActions {
 		"partnercentral:GetBenefitApplication";
 	/** [Read] partnercentral:GetBusinessPlan */
 	static readonly actionGetBusinessPlan = "partnercentral:GetBusinessPlan";
+	/** [Read] partnercentral:GetBusinessPlanAttachment */
+	static readonly actionGetBusinessPlanAttachment =
+		"partnercentral:GetBusinessPlanAttachment";
+	/** [Read] partnercentral:GetBusinessPlanAttachmentImportTask */
+	static readonly actionGetBusinessPlanAttachmentImportTask =
+		"partnercentral:GetBusinessPlanAttachmentImportTask";
+	/** [Read] partnercentral:GetBusinessPlanItem */
+	static readonly actionGetBusinessPlanItem =
+		"partnercentral:GetBusinessPlanItem";
+	/** [Read] partnercentral:GetBusinessPlanItemSchema */
+	static readonly actionGetBusinessPlanItemSchema =
+		"partnercentral:GetBusinessPlanItemSchema";
+	/** [Read] partnercentral:GetBusinessPlanSettings */
+	static readonly actionGetBusinessPlanSettings =
+		"partnercentral:GetBusinessPlanSettings";
+	/** [Read] partnercentral:GetBusinessPlanSubmissionTask */
+	static readonly actionGetBusinessPlanSubmissionTask =
+		"partnercentral:GetBusinessPlanSubmissionTask";
+	/** [Read] partnercentral:GetCampaign */
+	static readonly actionGetCampaign = "partnercentral:GetCampaign";
+	/** [Read] partnercentral:GetCampaignAsset */
+	static readonly actionGetCampaignAsset = "partnercentral:GetCampaignAsset";
+	/** [Read] partnercentral:GetCampaignAssetActivationTask */
+	static readonly actionGetCampaignAssetActivationTask =
+		"partnercentral:GetCampaignAssetActivationTask";
+	/** [Read] partnercentral:GetCampaignAssetExportTask */
+	static readonly actionGetCampaignAssetExportTask =
+		"partnercentral:GetCampaignAssetExportTask";
+	/** [Read] partnercentral:GetCampaignTemplate */
+	static readonly actionGetCampaignTemplate =
+		"partnercentral:GetCampaignTemplate";
 	/** [Read] partnercentral:GetCollaborationChannel */
 	static readonly actionGetCollaborationChannel =
 		"partnercentral:GetCollaborationChannel";
@@ -143,6 +224,21 @@ export class PartnercentralActions {
 	/** [Read] partnercentral:GetConnectionPreferences */
 	static readonly actionGetConnectionPreferences =
 		"partnercentral:GetConnectionPreferences";
+	/** [Read] partnercentral:GetCustomerAccount */
+	static readonly actionGetCustomerAccount =
+		"partnercentral:GetCustomerAccount";
+	/** [Read] partnercentral:GetCustomerAccountBulkJob */
+	static readonly actionGetCustomerAccountBulkJob =
+		"partnercentral:GetCustomerAccountBulkJob";
+	/** [Read] partnercentral:GetCustomerAccountBulkJobReportUrl */
+	static readonly actionGetCustomerAccountBulkJobReportUrl =
+		"partnercentral:GetCustomerAccountBulkJobReportUrl";
+	/** [Read] partnercentral:GetCustomerAccountStatistics */
+	static readonly actionGetCustomerAccountStatistics =
+		"partnercentral:GetCustomerAccountStatistics";
+	/** [Read] partnercentral:GetDataSubscription */
+	static readonly actionGetDataSubscription =
+		"partnercentral:GetDataSubscription";
 	/** [Read] partnercentral:GetEngagement */
 	static readonly actionGetEngagement = "partnercentral:GetEngagement";
 	/** [Read] partnercentral:GetEngagementInvitation */
@@ -156,6 +252,9 @@ export class PartnercentralActions {
 		"partnercentral:GetMarketplaceRevenueShareAllocation";
 	/** [Read] partnercentral:GetOpportunity */
 	static readonly actionGetOpportunity = "partnercentral:GetOpportunity";
+	/** [Read] partnercentral:GetOpportunityBulkJobReportUrl */
+	static readonly actionGetOpportunityBulkJobReportUrl =
+		"partnercentral:GetOpportunityBulkJobReportUrl";
 	/** [Read] partnercentral:GetPartner */
 	static readonly actionGetPartner = "partnercentral:GetPartner";
 	/** [Read] partnercentral:GetPartnerCentralContentDocument */
@@ -169,6 +268,9 @@ export class PartnercentralActions {
 		"partnercentral:GetPartnerDashboard";
 	/** [Read] partnercentral:GetPartnerProfile */
 	static readonly actionGetPartnerProfile = "partnercentral:GetPartnerProfile";
+	/** [Read] partnercentral:GetPartnerReportingData */
+	static readonly actionGetPartnerReportingData =
+		"partnercentral:GetPartnerReportingData";
 	/** [Read] partnercentral:GetProfileUpdateTask */
 	static readonly actionGetProfileUpdateTask =
 		"partnercentral:GetProfileUpdateTask";
@@ -220,8 +322,30 @@ export class PartnercentralActions {
 		"partnercentral:ListBenefitApplications";
 	/** [List] partnercentral:ListBenefits */
 	static readonly ListBenefits = "partnercentral:ListBenefits";
+	/** [List] partnercentral:ListBusinessPlanAssociations */
+	static readonly ListBusinessPlanAssociations =
+		"partnercentral:ListBusinessPlanAssociations";
+	/** [List] partnercentral:ListBusinessPlanAttachmentImportTasks */
+	static readonly ListBusinessPlanAttachmentImportTasks =
+		"partnercentral:ListBusinessPlanAttachmentImportTasks";
+	/** [List] partnercentral:ListBusinessPlanAttachments */
+	static readonly ListBusinessPlanAttachments =
+		"partnercentral:ListBusinessPlanAttachments";
+	/** [List] partnercentral:ListBusinessPlanHistory */
+	static readonly ListBusinessPlanHistory =
+		"partnercentral:ListBusinessPlanHistory";
+	/** [List] partnercentral:ListBusinessPlanItems */
+	static readonly ListBusinessPlanItems =
+		"partnercentral:ListBusinessPlanItems";
+	/** [List] partnercentral:ListBusinessPlanSubmissionTasks */
+	static readonly ListBusinessPlanSubmissionTasks =
+		"partnercentral:ListBusinessPlanSubmissionTasks";
 	/** [List] partnercentral:ListBusinessPlans */
 	static readonly ListBusinessPlans = "partnercentral:ListBusinessPlans";
+	/** [List] partnercentral:ListCampaignAssets */
+	static readonly ListCampaignAssets = "partnercentral:ListCampaignAssets";
+	/** [List] partnercentral:ListCampaigns */
+	static readonly ListCampaigns = "partnercentral:ListCampaigns";
 	/** [List] partnercentral:ListChannelHandshakes */
 	static readonly ListChannelHandshakes =
 		"partnercentral:ListChannelHandshakes";
@@ -233,12 +357,23 @@ export class PartnercentralActions {
 		"partnercentral:ListConnectionInvitations";
 	/** [List] partnercentral:ListConnections */
 	static readonly ListConnections = "partnercentral:ListConnections";
+	/** [List] partnercentral:ListCustomerAccountBulkJobResults */
+	static readonly ListCustomerAccountBulkJobResults =
+		"partnercentral:ListCustomerAccountBulkJobResults";
+	/** [List] partnercentral:ListCustomerAccountBulkJobs */
+	static readonly ListCustomerAccountBulkJobs =
+		"partnercentral:ListCustomerAccountBulkJobs";
+	/** [List] partnercentral:ListDataSubscriptions */
+	static readonly ListDataSubscriptions =
+		"partnercentral:ListDataSubscriptions";
 	/** [List] partnercentral:ListEngagementByAcceptingInvitationTasks */
 	static readonly ListEngagementByAcceptingInvitationTasks =
 		"partnercentral:ListEngagementByAcceptingInvitationTasks";
 	/** [List] partnercentral:ListEngagementFromOpportunityTasks */
 	static readonly ListEngagementFromOpportunityTasks =
 		"partnercentral:ListEngagementFromOpportunityTasks";
+	/** [List] partnercentral:ListEngagementGroups */
+	static readonly ListEngagementGroups = "partnercentral:ListEngagementGroups";
 	/** [List] partnercentral:ListEngagementInvitations */
 	static readonly ListEngagementInvitations =
 		"partnercentral:ListEngagementInvitations";
@@ -258,6 +393,12 @@ export class PartnercentralActions {
 		"partnercentral:ListMarketplaceRevenueShares";
 	/** [List] partnercentral:ListOpportunities */
 	static readonly ListOpportunities = "partnercentral:ListOpportunities";
+	/** [List] partnercentral:ListOpportunityBulkJobResults */
+	static readonly ListOpportunityBulkJobResults =
+		"partnercentral:ListOpportunityBulkJobResults";
+	/** [List] partnercentral:ListOpportunityBulkJobs */
+	static readonly ListOpportunityBulkJobs =
+		"partnercentral:ListOpportunityBulkJobs";
 	/** [List] partnercentral:ListOpportunityFromEngagementTasks */
 	static readonly ListOpportunityFromEngagementTasks =
 		"partnercentral:ListOpportunityFromEngagementTasks";
@@ -288,6 +429,9 @@ export class PartnercentralActions {
 	/** [List] partnercentral:ListRevenueAttributions */
 	static readonly ListRevenueAttributions =
 		"partnercentral:ListRevenueAttributions";
+	/** [List] partnercentral:ListSocialConnections */
+	static readonly ListSocialConnections =
+		"partnercentral:ListSocialConnections";
 	/** [List] partnercentral:ListSolutions */
 	static readonly ListSolutions = "partnercentral:ListSolutions";
 	/** [Read] partnercentral:ListTagsForResource */
@@ -297,6 +441,9 @@ export class PartnercentralActions {
 		"partnercentral:PutAllianceLeadContact";
 	/** [Write] partnercentral:PutBusinessPlan */
 	static readonly PutBusinessPlan = "partnercentral:PutBusinessPlan";
+	/** [Write] partnercentral:PutBusinessPlanSettings */
+	static readonly PutBusinessPlanSettings =
+		"partnercentral:PutBusinessPlanSettings";
 	/** [Write] partnercentral:PutProfileVisibility */
 	static readonly PutProfileVisibility = "partnercentral:PutProfileVisibility";
 	/** [Write] partnercentral:PutSellingSystemSettings */
@@ -314,6 +461,14 @@ export class PartnercentralActions {
 	/** [Write] partnercentral:RejectEngagementInvitation */
 	static readonly RejectEngagementInvitation =
 		"partnercentral:RejectEngagementInvitation";
+	/** [List] partnercentral:SearchCampaignTemplates */
+	static readonly SearchCampaignTemplates =
+		"partnercentral:SearchCampaignTemplates";
+	/** [List] partnercentral:SearchCustomerAccounts */
+	static readonly SearchCustomerAccounts =
+		"partnercentral:SearchCustomerAccounts";
+	/** [List] partnercentral:SearchEngagements */
+	static readonly SearchEngagements = "partnercentral:SearchEngagements";
 	/** [List] partnercentral:SearchOpportunities */
 	static readonly SearchOpportunities = "partnercentral:SearchOpportunities";
 	/** [List] partnercentral:SearchPartnerCentralContent */
@@ -325,12 +480,30 @@ export class PartnercentralActions {
 	/** [Write] partnercentral:SendEmailVerificationCode */
 	static readonly SendEmailVerificationCode =
 		"partnercentral:SendEmailVerificationCode";
+	/** [Write] partnercentral:StartBusinessPlanAttachmentImportTask */
+	static readonly StartBusinessPlanAttachmentImportTask =
+		"partnercentral:StartBusinessPlanAttachmentImportTask";
+	/** [Write] partnercentral:StartBusinessPlanSubmissionTask */
+	static readonly StartBusinessPlanSubmissionTask =
+		"partnercentral:StartBusinessPlanSubmissionTask";
+	/** [Write] partnercentral:StartCampaignAssetActivationTask */
+	static readonly StartCampaignAssetActivationTask =
+		"partnercentral:StartCampaignAssetActivationTask";
+	/** [Write] partnercentral:StartCampaignAssetExportTask */
+	static readonly StartCampaignAssetExportTask =
+		"partnercentral:StartCampaignAssetExportTask";
+	/** [Write] partnercentral:StartCustomerAccountBulkJob */
+	static readonly StartCustomerAccountBulkJob =
+		"partnercentral:StartCustomerAccountBulkJob";
 	/** [Write] partnercentral:StartEngagementByAcceptingInvitationTask */
 	static readonly StartEngagementByAcceptingInvitationTask =
 		"partnercentral:StartEngagementByAcceptingInvitationTask";
 	/** [Write] partnercentral:StartEngagementFromOpportunityTask */
 	static readonly StartEngagementFromOpportunityTask =
 		"partnercentral:StartEngagementFromOpportunityTask";
+	/** [Write] partnercentral:StartOpportunityBulkJob */
+	static readonly StartOpportunityBulkJob =
+		"partnercentral:StartOpportunityBulkJob";
 	/** [Write] partnercentral:StartOpportunityFromEngagementTask */
 	static readonly StartOpportunityFromEngagementTask =
 		"partnercentral:StartOpportunityFromEngagementTask";
@@ -369,12 +542,27 @@ export class PartnercentralActions {
 	/** [Write] partnercentral:UpdateBenefitApplication */
 	static readonly UpdateBenefitApplication =
 		"partnercentral:UpdateBenefitApplication";
+	/** [Write] partnercentral:UpdateBusinessPlan */
+	static readonly UpdateBusinessPlan = "partnercentral:UpdateBusinessPlan";
+	/** [Write] partnercentral:UpdateBusinessPlanItem */
+	static readonly UpdateBusinessPlanItem =
+		"partnercentral:UpdateBusinessPlanItem";
+	/** [Write] partnercentral:UpdateCampaign */
+	static readonly UpdateCampaign = "partnercentral:UpdateCampaign";
+	/** [Write] partnercentral:UpdateCampaignAsset */
+	static readonly UpdateCampaignAsset = "partnercentral:UpdateCampaignAsset";
 	/** [Write] partnercentral:UpdateConnectionPreferences */
 	static readonly UpdateConnectionPreferences =
 		"partnercentral:UpdateConnectionPreferences";
+	/** [Write] partnercentral:UpdateCustomerAccount */
+	static readonly UpdateCustomerAccount =
+		"partnercentral:UpdateCustomerAccount";
 	/** [Write] partnercentral:UpdateEngagementContext */
 	static readonly UpdateEngagementContext =
 		"partnercentral:UpdateEngagementContext";
+	/** [Write] partnercentral:UpdateMarketplaceRevenueShare */
+	static readonly UpdateMarketplaceRevenueShare =
+		"partnercentral:UpdateMarketplaceRevenueShare";
 	/** [Write] partnercentral:UpdateMarketplaceRevenueShareAllocation */
 	static readonly UpdateMarketplaceRevenueShareAllocation =
 		"partnercentral:UpdateMarketplaceRevenueShareAllocation";
@@ -399,20 +587,38 @@ export class PartnercentralActions {
 		PartnercentralActions.actionGetBenefitAllocation,
 		PartnercentralActions.actionGetBenefitApplication,
 		PartnercentralActions.actionGetBusinessPlan,
+		PartnercentralActions.actionGetBusinessPlanAttachment,
+		PartnercentralActions.actionGetBusinessPlanAttachmentImportTask,
+		PartnercentralActions.actionGetBusinessPlanItem,
+		PartnercentralActions.actionGetBusinessPlanItemSchema,
+		PartnercentralActions.actionGetBusinessPlanSettings,
+		PartnercentralActions.actionGetBusinessPlanSubmissionTask,
+		PartnercentralActions.actionGetCampaign,
+		PartnercentralActions.actionGetCampaignAsset,
+		PartnercentralActions.actionGetCampaignAssetActivationTask,
+		PartnercentralActions.actionGetCampaignAssetExportTask,
+		PartnercentralActions.actionGetCampaignTemplate,
 		PartnercentralActions.actionGetCollaborationChannel,
 		PartnercentralActions.actionGetConnection,
 		PartnercentralActions.actionGetConnectionInvitation,
 		PartnercentralActions.actionGetConnectionPreferences,
+		PartnercentralActions.actionGetCustomerAccount,
+		PartnercentralActions.actionGetCustomerAccountBulkJob,
+		PartnercentralActions.actionGetCustomerAccountBulkJobReportUrl,
+		PartnercentralActions.actionGetCustomerAccountStatistics,
+		PartnercentralActions.actionGetDataSubscription,
 		PartnercentralActions.actionGetEngagement,
 		PartnercentralActions.actionGetEngagementInvitation,
 		PartnercentralActions.actionGetMarketplaceRevenueShare,
 		PartnercentralActions.actionGetMarketplaceRevenueShareAllocation,
 		PartnercentralActions.actionGetOpportunity,
+		PartnercentralActions.actionGetOpportunityBulkJobReportUrl,
 		PartnercentralActions.actionGetPartner,
 		PartnercentralActions.actionGetPartnerCentralContentDocument,
 		PartnercentralActions.actionGetPartnerCentralContentMetadata,
 		PartnercentralActions.actionGetPartnerDashboard,
 		PartnercentralActions.actionGetPartnerProfile,
+		PartnercentralActions.actionGetPartnerReportingData,
 		PartnercentralActions.actionGetProfileUpdateTask,
 		PartnercentralActions.actionGetProfileVisibility,
 		PartnercentralActions.actionGetProgramManagementAccount,
@@ -441,18 +647,26 @@ export class PartnercentralActions {
 		PartnercentralActions.AssignOpportunity,
 		PartnercentralActions.AssociateAwsTrainingCertificationEmailDomain,
 		PartnercentralActions.AssociateBenefitApplicationResource,
+		PartnercentralActions.AssociateBusinessPlan,
 		PartnercentralActions.AssociateOpportunity,
+		PartnercentralActions.BatchCreateCampaignAsset,
 		PartnercentralActions.CancelBenefitApplication,
+		PartnercentralActions.CancelBusinessPlan,
+		PartnercentralActions.CancelBusinessPlanSubmissionTask,
 		PartnercentralActions.CancelChannelHandshake,
 		PartnercentralActions.CancelConnection,
 		PartnercentralActions.CancelConnectionInvitation,
 		PartnercentralActions.CancelProfileUpdateTask,
 		PartnercentralActions.CreateBenefitApplication,
 		PartnercentralActions.CreateBusinessPlan,
+		PartnercentralActions.CreateBusinessPlanItem,
+		PartnercentralActions.CreateCampaign,
 		PartnercentralActions.CreateChannelHandshake,
 		PartnercentralActions.CreateCollaborationChannelMembers,
 		PartnercentralActions.CreateCollaborationChannelRequest,
 		PartnercentralActions.CreateConnectionInvitation,
+		PartnercentralActions.CreateCustomerAccount,
+		PartnercentralActions.CreateDataSubscription,
 		PartnercentralActions.CreateEngagement,
 		PartnercentralActions.CreateEngagementContext,
 		PartnercentralActions.CreateEngagementInvitation,
@@ -465,15 +679,26 @@ export class PartnercentralActions {
 		PartnercentralActions.CreateResourceSnapshot,
 		PartnercentralActions.CreateResourceSnapshotJob,
 		PartnercentralActions.CreateRevenueAttribution,
+		PartnercentralActions.CreateSocialConnectionAuthorizationUrl,
+		PartnercentralActions.DeactivateCampaignAsset,
+		PartnercentralActions.DeleteBusinessPlanAttachment,
+		PartnercentralActions.DeleteBusinessPlanItem,
+		PartnercentralActions.DeleteCampaign,
+		PartnercentralActions.DeleteCampaignAsset,
+		PartnercentralActions.DeleteCustomerAccount,
+		PartnercentralActions.DeleteDataSubscription,
 		PartnercentralActions.DeleteProgramManagementAccount,
 		PartnercentralActions.DeleteRelationship,
 		PartnercentralActions.DeleteResourceSnapshotJob,
+		PartnercentralActions.DeleteSocialConnection,
 		PartnercentralActions.DisassociateAwsTrainingCertificationEmailDomain,
 		PartnercentralActions.DisassociateBenefitApplicationResource,
+		PartnercentralActions.DisassociateBusinessPlan,
 		PartnercentralActions.DisassociateOpportunity,
 		PartnercentralActions.EnrollInPartnerPath,
 		PartnercentralActions.PutAllianceLeadContact,
 		PartnercentralActions.PutBusinessPlan,
+		PartnercentralActions.PutBusinessPlanSettings,
 		PartnercentralActions.PutProfileVisibility,
 		PartnercentralActions.PutSellingSystemSettings,
 		PartnercentralActions.RecallBenefitApplication,
@@ -481,8 +706,14 @@ export class PartnercentralActions {
 		PartnercentralActions.RejectConnectionInvitation,
 		PartnercentralActions.RejectEngagementInvitation,
 		PartnercentralActions.SendEmailVerificationCode,
+		PartnercentralActions.StartBusinessPlanAttachmentImportTask,
+		PartnercentralActions.StartBusinessPlanSubmissionTask,
+		PartnercentralActions.StartCampaignAssetActivationTask,
+		PartnercentralActions.StartCampaignAssetExportTask,
+		PartnercentralActions.StartCustomerAccountBulkJob,
 		PartnercentralActions.StartEngagementByAcceptingInvitationTask,
 		PartnercentralActions.StartEngagementFromOpportunityTask,
+		PartnercentralActions.StartOpportunityBulkJob,
 		PartnercentralActions.StartOpportunityFromEngagementTask,
 		PartnercentralActions.StartProfileUpdateTask,
 		PartnercentralActions.StartProspectingFromEngagementTask,
@@ -495,8 +726,14 @@ export class PartnercentralActions {
 		PartnercentralActions.SubmitBenefitApplication,
 		PartnercentralActions.SubmitOpportunity,
 		PartnercentralActions.UpdateBenefitApplication,
+		PartnercentralActions.UpdateBusinessPlan,
+		PartnercentralActions.UpdateBusinessPlanItem,
+		PartnercentralActions.UpdateCampaign,
+		PartnercentralActions.UpdateCampaignAsset,
 		PartnercentralActions.UpdateConnectionPreferences,
+		PartnercentralActions.UpdateCustomerAccount,
 		PartnercentralActions.UpdateEngagementContext,
+		PartnercentralActions.UpdateMarketplaceRevenueShare,
 		PartnercentralActions.UpdateMarketplaceRevenueShareAllocation,
 		PartnercentralActions.UpdateOpportunity,
 		PartnercentralActions.UpdateProgramManagementAccount,
@@ -509,18 +746,32 @@ export class PartnercentralActions {
 		PartnercentralActions.ListBenefitAllocations,
 		PartnercentralActions.ListBenefitApplications,
 		PartnercentralActions.ListBenefits,
+		PartnercentralActions.ListBusinessPlanAssociations,
+		PartnercentralActions.ListBusinessPlanAttachmentImportTasks,
+		PartnercentralActions.ListBusinessPlanAttachments,
+		PartnercentralActions.ListBusinessPlanHistory,
+		PartnercentralActions.ListBusinessPlanItems,
+		PartnercentralActions.ListBusinessPlanSubmissionTasks,
 		PartnercentralActions.ListBusinessPlans,
+		PartnercentralActions.ListCampaignAssets,
+		PartnercentralActions.ListCampaigns,
 		PartnercentralActions.ListChannelHandshakes,
 		PartnercentralActions.ListCollaborationChannels,
 		PartnercentralActions.ListConnectionInvitations,
 		PartnercentralActions.ListConnections,
+		PartnercentralActions.ListCustomerAccountBulkJobResults,
+		PartnercentralActions.ListCustomerAccountBulkJobs,
+		PartnercentralActions.ListDataSubscriptions,
 		PartnercentralActions.ListEngagementByAcceptingInvitationTasks,
 		PartnercentralActions.ListEngagementFromOpportunityTasks,
+		PartnercentralActions.ListEngagementGroups,
 		PartnercentralActions.ListEngagementInvitations,
 		PartnercentralActions.ListEngagements,
 		PartnercentralActions.ListMarketplaceRevenueShareAllocations,
 		PartnercentralActions.ListMarketplaceRevenueShares,
 		PartnercentralActions.ListOpportunities,
+		PartnercentralActions.ListOpportunityBulkJobResults,
+		PartnercentralActions.ListOpportunityBulkJobs,
 		PartnercentralActions.ListOpportunityFromEngagementTasks,
 		PartnercentralActions.ListPartnerCentralContent,
 		PartnercentralActions.ListPartnerPaths,
@@ -532,7 +783,11 @@ export class PartnercentralActions {
 		PartnercentralActions.ListResourceSnapshots,
 		PartnercentralActions.ListRevenueAttributionAllocations,
 		PartnercentralActions.ListRevenueAttributions,
+		PartnercentralActions.ListSocialConnections,
 		PartnercentralActions.ListSolutions,
+		PartnercentralActions.SearchCampaignTemplates,
+		PartnercentralActions.SearchCustomerAccounts,
+		PartnercentralActions.SearchEngagements,
 		PartnercentralActions.SearchOpportunities,
 		PartnercentralActions.SearchPartnerCentralContent,
 		PartnercentralActions.SearchPartnerProfiles,
@@ -640,6 +895,70 @@ export interface PartnercentralBenefitApplicationArnComponents {
 	readonly catalog: string;
 	/** The Identifier component. */
 	readonly identifier: string;
+}
+
+/**
+ * Properties for building a BusinessPlan ARN.
+ */
+export interface PartnercentralBusinessPlanArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The Identifier component of the ARN. */
+	readonly identifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a BusinessPlan ARN.
+ */
+export interface PartnercentralBusinessPlanArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The Identifier component. */
+	readonly identifier: string;
+}
+
+/**
+ * Properties for building a Campaign ARN.
+ */
+export interface PartnercentralCampaignArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The CampaignId component of the ARN. */
+	readonly campaignId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Campaign ARN.
+ */
+export interface PartnercentralCampaignArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The CampaignId component. */
+	readonly campaignId: string;
 }
 
 /**
@@ -767,6 +1086,70 @@ export interface PartnercentralConnectionPreferencesArnComponents {
 }
 
 /**
+ * Properties for building a CustomerAccount ARN.
+ */
+export interface PartnercentralCustomerAccountArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The Identifier component of the ARN. */
+	readonly identifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a CustomerAccount ARN.
+ */
+export interface PartnercentralCustomerAccountArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The Identifier component. */
+	readonly identifier: string;
+}
+
+/**
+ * Properties for building a CustomerAccountBulkJob ARN.
+ */
+export interface PartnercentralCustomerAccountBulkJobArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The Identifier component of the ARN. */
+	readonly identifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a CustomerAccountBulkJob ARN.
+ */
+export interface PartnercentralCustomerAccountBulkJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The Identifier component. */
+	readonly identifier: string;
+}
+
+/**
  * Properties for building a Dashboard ARN.
  */
 export interface PartnercentralDashboardArnProps {
@@ -796,6 +1179,70 @@ export interface PartnercentralDashboardArnComponents {
 	readonly tableId: string;
 	/** The DashboardId component. */
 	readonly dashboardId: string;
+}
+
+/**
+ * Properties for building a DataSubscription ARN.
+ */
+export interface PartnercentralDataSubscriptionArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The Domain component of the ARN. */
+	readonly domain: string;
+	/** The DataSubscriptionId component of the ARN. */
+	readonly dataSubscriptionId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a DataSubscription ARN.
+ */
+export interface PartnercentralDataSubscriptionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The Domain component. */
+	readonly domain: string;
+	/** The DataSubscriptionId component. */
+	readonly dataSubscriptionId: string;
+}
+
+/**
+ * Properties for building a Dataset ARN.
+ */
+export interface PartnercentralDatasetArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The Domain component of the ARN. */
+	readonly domain: string;
+	/** The DatasetName component of the ARN. */
+	readonly datasetName: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Dataset ARN.
+ */
+export interface PartnercentralDatasetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The Domain component. */
+	readonly domain: string;
+	/** The DatasetName component. */
+	readonly datasetName: string;
 }
 
 /**
@@ -831,13 +1278,45 @@ export interface PartnercentralEngagementArnComponents {
 }
 
 /**
+ * Properties for building a EngagementGroup ARN.
+ */
+export interface PartnercentralEngagementGroupArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The Identifier component of the ARN. */
+	readonly identifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a EngagementGroup ARN.
+ */
+export interface PartnercentralEngagementGroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The Identifier component. */
+	readonly identifier: string;
+}
+
+/**
  * Properties for building a MarketplaceRevenueShare ARN.
  */
 export interface PartnercentralMarketplaceRevenueShareArnProps {
 	/** The Catalog component of the ARN. */
 	readonly catalog: string;
-	/** The MarketplaceProductId component of the ARN. */
-	readonly marketplaceProductId: string;
+	/** The MarketplaceRevenueShareId component of the ARN. */
+	readonly marketplaceRevenueShareId: string;
 	/** AWS region. Defaults to "*". */
 	readonly region?: string;
 	/** AWS account ID. Defaults to "*". */
@@ -858,8 +1337,8 @@ export interface PartnercentralMarketplaceRevenueShareArnComponents {
 	readonly account: string;
 	/** The Catalog component. */
 	readonly catalog: string;
-	/** The MarketplaceProductId component. */
-	readonly marketplaceProductId: string;
+	/** The MarketplaceRevenueShareId component. */
+	readonly marketplaceRevenueShareId: string;
 }
 
 /**
@@ -882,6 +1361,38 @@ export interface PartnercentralOpportunityArnProps {
  * Parsed components of a Opportunity ARN.
  */
 export interface PartnercentralOpportunityArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The Identifier component. */
+	readonly identifier: string;
+}
+
+/**
+ * Properties for building a OpportunityBulkJob ARN.
+ */
+export interface PartnercentralOpportunityBulkJobArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The Identifier component of the ARN. */
+	readonly identifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a OpportunityBulkJob ARN.
+ */
+export interface PartnercentralOpportunityBulkJobArnComponents {
 	/** AWS partition. */
 	readonly partition: string;
 	/** AWS region. */
@@ -1139,6 +1650,38 @@ export interface PartnercentralRevenueAttributionArnComponents {
 }
 
 /**
+ * Properties for building a SocialConnection ARN.
+ */
+export interface PartnercentralSocialConnectionArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The SocialConnectionId component of the ARN. */
+	readonly socialConnectionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a SocialConnection ARN.
+ */
+export interface PartnercentralSocialConnectionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The SocialConnectionId component. */
+	readonly socialConnectionId: string;
+}
+
+/**
  * Properties for building a Solution ARN.
  */
 export interface PartnercentralSolutionArnProps {
@@ -1304,6 +1847,10 @@ const BenefitAllocationArnRegex =
 	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/benefit-allocation\/(?<identifier>[^:/?]+)$/;
 const BenefitApplicationArnRegex =
 	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/benefit-application\/(?<identifier>[^:/?]+)$/;
+const BusinessPlanArnRegex =
+	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/business-plan\/(?<identifier>[^:/?]+)$/;
+const CampaignArnRegex =
+	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/campaign\/(?<campaignId>[^:/?]+)$/;
 const ChannelHandshakeArnRegex =
 	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/channel-handshake\/(?<identifier>[^:/?]+)$/;
 const ConnectionArnRegex =
@@ -1312,14 +1859,26 @@ const ConnectionInvitationArnRegex =
 	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*)::catalog\/(?<catalog>[^:/?]+)\/connection-invitation\/(?<identifier>[^:/?]+)$/;
 const ConnectionPreferencesArnRegex =
 	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/connection-preferences$/;
+const CustomerAccountArnRegex =
+	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/customer-account\/(?<identifier>[^:/?]+)$/;
+const CustomerAccountBulkJobArnRegex =
+	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/customer-account-bulk-job\/(?<identifier>[^:/?]+)$/;
 const DashboardArnRegex =
 	/^arn:(?<partition>[^:]+):partnercentral::(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/ReportingData\/(?<tableId>[^:/?]+)\/Dashboard\/(?<dashboardId>[^:/?]+)$/;
+const DataSubscriptionArnRegex =
+	/^arn:(?<partition>[^:]+):partnercentral::(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/ReportingData\/(?<domain>[^:/?]+)\/DataSubscription\/(?<dataSubscriptionId>[^:/?]+)$/;
+const DatasetArnRegex =
+	/^arn:(?<partition>[^:]+):partnercentral::(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/ReportingData\/(?<domain>[^:/?]+)\/Dataset\/(?<datasetName>[^:/?]+)$/;
 const EngagementArnRegex =
 	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*)::catalog\/(?<catalog>[^:/?]+)\/engagement\/(?<identifier>[^:/?]+)$/;
+const EngagementGroupArnRegex =
+	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*)::catalog\/(?<catalog>[^:/?]+)\/engagement-group\/(?<identifier>[^:/?]+)$/;
 const MarketplaceRevenueShareArnRegex =
-	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/marketplace-revenue-share\/(?<marketplaceProductId>[^:/?]+)$/;
+	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/marketplace-revenue-share\/(?<marketplaceRevenueShareId>[^:/?]+)$/;
 const OpportunityArnRegex =
 	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/opportunity\/(?<identifier>[^:/?]+)$/;
+const OpportunityBulkJobArnRegex =
+	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/opportunity-bulk-job\/(?<identifier>[^:/?]+)$/;
 const OpportunityFromEngagementTaskArnRegex =
 	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*)::catalog\/(?<catalog>[^:/?]+)\/opportunity-from-engagement-task\/(?<taskId>[^:/?]+)$/;
 const PartnerArnRegex =
@@ -1334,6 +1893,8 @@ const ResourceSnapshotArnRegex =
 	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/engagement\/(?<engagementIdentifier>[^:/?]+)\/resource\/(?<resourceType>[^:/?]+)\/(?<resourceIdentifier>[^:/?]+)\/template\/(?<templateIdentifier>[^:/?]+)\/resource-snapshot\/(?<snapshotRevision>[^:/?]+)$/;
 const RevenueAttributionArnRegex =
 	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/revenue-attribution\/(?<revenueAttributionId>[^:/?]+)$/;
+const SocialConnectionArnRegex =
+	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/social-connection\/(?<socialConnectionId>[^:/?]+)$/;
 const SolutionArnRegex =
 	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/solution\/(?<identifier>[^:/?]+)$/;
 const EngagementByAcceptingInvitationTaskArnRegex =
@@ -1450,6 +2011,72 @@ export class PartnercentralResources {
 			account: match.groups.account,
 			catalog: match.groups!.catalog,
 			identifier: match.groups!.identifier,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the BusinessPlan resource.
+	 */
+	static businessPlan(props: PartnercentralBusinessPlanArnProps): string {
+		return `arn:${props.partition ?? "aws"}:partnercentral:${props.region ?? "*"}:${props.account ?? "*"}:catalog/${props.catalog}/business-plan/${props.identifier}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the BusinessPlan resource.
+	 */
+	static isValidBusinessPlanArn(arn: string): boolean {
+		return BusinessPlanArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a BusinessPlan ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseBusinessPlanArn(
+		arn: string,
+	): PartnercentralBusinessPlanArnComponents {
+		const match = BusinessPlanArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid BusinessPlan ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			catalog: match.groups!.catalog,
+			identifier: match.groups!.identifier,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the Campaign resource.
+	 */
+	static campaign(props: PartnercentralCampaignArnProps): string {
+		return `arn:${props.partition ?? "aws"}:partnercentral:${props.region ?? "*"}:${props.account ?? "*"}:catalog/${props.catalog}/campaign/${props.campaignId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the Campaign resource.
+	 */
+	static isValidCampaignArn(arn: string): boolean {
+		return CampaignArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a Campaign ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseCampaignArn(arn: string): PartnercentralCampaignArnComponents {
+		const match = CampaignArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid Campaign ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			catalog: match.groups!.catalog,
+			campaignId: match.groups!.campaignId,
 		};
 	}
 
@@ -1595,6 +2222,76 @@ export class PartnercentralResources {
 	}
 
 	/**
+	 * Builds an ARN for the CustomerAccount resource.
+	 */
+	static customerAccount(props: PartnercentralCustomerAccountArnProps): string {
+		return `arn:${props.partition ?? "aws"}:partnercentral:${props.region ?? "*"}:${props.account ?? "*"}:catalog/${props.catalog}/customer-account/${props.identifier}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the CustomerAccount resource.
+	 */
+	static isValidCustomerAccountArn(arn: string): boolean {
+		return CustomerAccountArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a CustomerAccount ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseCustomerAccountArn(
+		arn: string,
+	): PartnercentralCustomerAccountArnComponents {
+		const match = CustomerAccountArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid CustomerAccount ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			catalog: match.groups!.catalog,
+			identifier: match.groups!.identifier,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the CustomerAccountBulkJob resource.
+	 */
+	static customerAccountBulkJob(
+		props: PartnercentralCustomerAccountBulkJobArnProps,
+	): string {
+		return `arn:${props.partition ?? "aws"}:partnercentral:${props.region ?? "*"}:${props.account ?? "*"}:catalog/${props.catalog}/customer-account-bulk-job/${props.identifier}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the CustomerAccountBulkJob resource.
+	 */
+	static isValidCustomerAccountBulkJobArn(arn: string): boolean {
+		return CustomerAccountBulkJobArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a CustomerAccountBulkJob ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseCustomerAccountBulkJobArn(
+		arn: string,
+	): PartnercentralCustomerAccountBulkJobArnComponents {
+		const match = CustomerAccountBulkJobArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid CustomerAccountBulkJob ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			catalog: match.groups!.catalog,
+			identifier: match.groups!.identifier,
+		};
+	}
+
+	/**
 	 * Builds an ARN for the Dashboard resource.
 	 */
 	static dashboard(props: PartnercentralDashboardArnProps): string {
@@ -1623,6 +2320,74 @@ export class PartnercentralResources {
 			catalog: match.groups!.catalog,
 			tableId: match.groups!.tableId,
 			dashboardId: match.groups!.dashboardId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the DataSubscription resource.
+	 */
+	static dataSubscription(
+		props: PartnercentralDataSubscriptionArnProps,
+	): string {
+		return `arn:${props.partition ?? "aws"}:partnercentral::${props.account ?? "*"}:catalog/${props.catalog}/ReportingData/${props.domain}/DataSubscription/${props.dataSubscriptionId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the DataSubscription resource.
+	 */
+	static isValidDataSubscriptionArn(arn: string): boolean {
+		return DataSubscriptionArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a DataSubscription ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseDataSubscriptionArn(
+		arn: string,
+	): PartnercentralDataSubscriptionArnComponents {
+		const match = DataSubscriptionArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid DataSubscription ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			account: match.groups.account,
+			catalog: match.groups!.catalog,
+			domain: match.groups!.domain,
+			dataSubscriptionId: match.groups!.dataSubscriptionId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the Dataset resource.
+	 */
+	static dataset(props: PartnercentralDatasetArnProps): string {
+		return `arn:${props.partition ?? "aws"}:partnercentral::${props.account ?? "*"}:catalog/${props.catalog}/ReportingData/${props.domain}/Dataset/${props.datasetName}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the Dataset resource.
+	 */
+	static isValidDatasetArn(arn: string): boolean {
+		return DatasetArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a Dataset ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseDatasetArn(arn: string): PartnercentralDatasetArnComponents {
+		const match = DatasetArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid Dataset ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			account: match.groups.account,
+			catalog: match.groups!.catalog,
+			domain: match.groups!.domain,
+			datasetName: match.groups!.datasetName,
 		};
 	}
 
@@ -1661,12 +2426,46 @@ export class PartnercentralResources {
 	}
 
 	/**
+	 * Builds an ARN for the EngagementGroup resource.
+	 */
+	static engagementGroup(props: PartnercentralEngagementGroupArnProps): string {
+		return `arn:${props.partition ?? "aws"}:partnercentral:${props.region ?? "*"}::catalog/${props.catalog}/engagement-group/${props.identifier}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the EngagementGroup resource.
+	 */
+	static isValidEngagementGroupArn(arn: string): boolean {
+		return EngagementGroupArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a EngagementGroup ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseEngagementGroupArn(
+		arn: string,
+	): PartnercentralEngagementGroupArnComponents {
+		const match = EngagementGroupArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid EngagementGroup ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			catalog: match.groups!.catalog,
+			identifier: match.groups!.identifier,
+		};
+	}
+
+	/**
 	 * Builds an ARN for the MarketplaceRevenueShare resource.
 	 */
 	static marketplaceRevenueShare(
 		props: PartnercentralMarketplaceRevenueShareArnProps,
 	): string {
-		return `arn:${props.partition ?? "aws"}:partnercentral:${props.region ?? "*"}:${props.account ?? "*"}:catalog/${props.catalog}/marketplace-revenue-share/${props.marketplaceProductId}`;
+		return `arn:${props.partition ?? "aws"}:partnercentral:${props.region ?? "*"}:${props.account ?? "*"}:catalog/${props.catalog}/marketplace-revenue-share/${props.marketplaceRevenueShareId}`;
 	}
 
 	/**
@@ -1692,7 +2491,7 @@ export class PartnercentralResources {
 			region: match.groups.region,
 			account: match.groups.account,
 			catalog: match.groups!.catalog,
-			marketplaceProductId: match.groups!.marketplaceProductId,
+			marketplaceRevenueShareId: match.groups!.marketplaceRevenueShareId,
 		};
 	}
 
@@ -1720,6 +2519,42 @@ export class PartnercentralResources {
 		const match = OpportunityArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid Opportunity ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			catalog: match.groups!.catalog,
+			identifier: match.groups!.identifier,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the OpportunityBulkJob resource.
+	 */
+	static opportunityBulkJob(
+		props: PartnercentralOpportunityBulkJobArnProps,
+	): string {
+		return `arn:${props.partition ?? "aws"}:partnercentral:${props.region ?? "*"}:${props.account ?? "*"}:catalog/${props.catalog}/opportunity-bulk-job/${props.identifier}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the OpportunityBulkJob resource.
+	 */
+	static isValidOpportunityBulkJobArn(arn: string): boolean {
+		return OpportunityBulkJobArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a OpportunityBulkJob ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseOpportunityBulkJobArn(
+		arn: string,
+	): PartnercentralOpportunityBulkJobArnComponents {
+		const match = OpportunityBulkJobArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid OpportunityBulkJob ARN: ${arn}`);
 		}
 		return {
 			partition: match.groups.partition,
@@ -1978,6 +2813,42 @@ export class PartnercentralResources {
 			account: match.groups.account,
 			catalog: match.groups!.catalog,
 			revenueAttributionId: match.groups!.revenueAttributionId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the SocialConnection resource.
+	 */
+	static socialConnection(
+		props: PartnercentralSocialConnectionArnProps,
+	): string {
+		return `arn:${props.partition ?? "aws"}:partnercentral:${props.region ?? "*"}:${props.account ?? "*"}:catalog/${props.catalog}/social-connection/${props.socialConnectionId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the SocialConnection resource.
+	 */
+	static isValidSocialConnectionArn(arn: string): boolean {
+		return SocialConnectionArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a SocialConnection ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseSocialConnectionArn(
+		arn: string,
+	): PartnercentralSocialConnectionArnComponents {
+		const match = SocialConnectionArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid SocialConnection ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			catalog: match.groups!.catalog,
+			socialConnectionId: match.groups!.socialConnectionId,
 		};
 	}
 
@@ -2579,6 +3450,7 @@ export class PartnercentralOperations {
 	];
 	/** IAM actions required for the StartOpportunityFromEngagementTask API call. */
 	static readonly StartOpportunityFromEngagementTask: string[] = [
+		"partnercentral:CreateEngagementContext",
 		"partnercentral:CreateOpportunity",
 		"partnercentral:CreateResourceSnapshot",
 		"partnercentral:CreateResourceSnapshotJob",
@@ -2705,10 +3577,19 @@ export class PartnercentralConditions {
 		"partnercentral:FulfillmentTypes",
 		"partnercentral:Programs",
 	];
+	/** Condition keys applicable to the AssociateBusinessPlan action. */
+	static readonly AssociateBusinessPlanConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"partnercentral:Catalog",
+	];
 	/** Condition keys applicable to the AssociateOpportunity action. */
 	static readonly AssociateOpportunityConditionKeys: string[] = [
 		"partnercentral:Catalog",
 		"partnercentral:RelatedEntityType",
+	];
+	/** Condition keys applicable to the BatchCreateCampaignAsset action. */
+	static readonly BatchCreateCampaignAssetConditionKeys: string[] = [
+		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the CancelBenefitApplication action. */
 	static readonly CancelBenefitApplicationConditionKeys: string[] = [
@@ -2716,6 +3597,18 @@ export class PartnercentralConditions {
 		"partnercentral:Catalog",
 		"partnercentral:FulfillmentTypes",
 		"partnercentral:Programs",
+	];
+	/** Condition keys applicable to the CancelBusinessPlan action. */
+	static readonly CancelBusinessPlanConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"partnercentral:AllowAwsEngagement",
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the CancelBusinessPlanSubmissionTask action. */
+	static readonly CancelBusinessPlanSubmissionTaskConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"partnercentral:AllowAwsEngagement",
+		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the CancelChannelHandshake action. */
 	static readonly CancelChannelHandshakeConditionKeys: string[] = [
@@ -2745,6 +3638,28 @@ export class PartnercentralConditions {
 		"partnercentral:FulfillmentTypes",
 		"partnercentral:Programs",
 	];
+	/** Condition keys applicable to the CreateBusinessPlan action. */
+	static readonly CreateBusinessPlanConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:ResourceTag/${TagKey}",
+		"aws:TagKeys",
+		"partnercentral:AllowAwsEngagement",
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the CreateBusinessPlanItem action. */
+	static readonly CreateBusinessPlanItemConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"partnercentral:AllowAwsEngagement",
+		"partnercentral:BusinessPlanItemStage",
+		"partnercentral:BusinessPlanItemType",
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the CreateCampaign action. */
+	static readonly CreateCampaignConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+		"partnercentral:Catalog",
+	];
 	/** Condition keys applicable to the CreateChannelHandshake action. */
 	static readonly CreateChannelHandshakeConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
@@ -2755,6 +3670,18 @@ export class PartnercentralConditions {
 	];
 	/** Condition keys applicable to the CreateConnectionInvitation action. */
 	static readonly CreateConnectionInvitationConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the CreateCustomerAccount action. */
+	static readonly CreateCustomerAccountConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the CreateDataSubscription action. */
+	static readonly CreateDataSubscriptionConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the CreateEngagement action. */
@@ -2821,6 +3748,44 @@ export class PartnercentralConditions {
 		"aws:TagKeys",
 		"partnercentral:Catalog",
 	];
+	/** Condition keys applicable to the CreateSocialConnectionAuthorizationUrl action. */
+	static readonly CreateSocialConnectionAuthorizationUrlConditionKeys: string[] =
+		["partnercentral:Catalog"];
+	/** Condition keys applicable to the DeactivateCampaignAsset action. */
+	static readonly DeactivateCampaignAssetConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the DeleteBusinessPlanAttachment action. */
+	static readonly DeleteBusinessPlanAttachmentConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"partnercentral:AllowAwsEngagement",
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the DeleteBusinessPlanItem action. */
+	static readonly DeleteBusinessPlanItemConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"partnercentral:AllowAwsEngagement",
+		"partnercentral:BusinessPlanItemStage",
+		"partnercentral:BusinessPlanItemType",
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the DeleteCampaign action. */
+	static readonly DeleteCampaignConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the DeleteCampaignAsset action. */
+	static readonly DeleteCampaignAssetConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the DeleteCustomerAccount action. */
+	static readonly DeleteCustomerAccountConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the DeleteDataSubscription action. */
+	static readonly DeleteDataSubscriptionConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"partnercentral:Catalog",
+	];
 	/** Condition keys applicable to the DeleteProgramManagementAccount action. */
 	static readonly DeleteProgramManagementAccountConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
@@ -2835,6 +3800,10 @@ export class PartnercentralConditions {
 	static readonly DeleteResourceSnapshotJobConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
+	/** Condition keys applicable to the DeleteSocialConnection action. */
+	static readonly DeleteSocialConnectionConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
 	/** Condition keys applicable to the DisassociateAwsTrainingCertificationEmailDomain action. */
 	static readonly DisassociateAwsTrainingCertificationEmailDomainConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}", "partnercentral:Catalog"];
@@ -2846,6 +3815,11 @@ export class PartnercentralConditions {
 			"partnercentral:FulfillmentTypes",
 			"partnercentral:Programs",
 		];
+	/** Condition keys applicable to the DisassociateBusinessPlan action. */
+	static readonly DisassociateBusinessPlanConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"partnercentral:Catalog",
+	];
 	/** Condition keys applicable to the DisassociateOpportunity action. */
 	static readonly DisassociateOpportunityConditionKeys: string[] = [
 		"partnercentral:Catalog",
@@ -2880,6 +3854,58 @@ export class PartnercentralConditions {
 		"partnercentral:FulfillmentTypes",
 		"partnercentral:Programs",
 	];
+	/** Condition keys applicable to the GetBusinessPlan action. */
+	static readonly actionGetBusinessPlanConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the GetBusinessPlanAttachment action. */
+	static readonly actionGetBusinessPlanAttachmentConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the GetBusinessPlanAttachmentImportTask action. */
+	static readonly actionGetBusinessPlanAttachmentImportTaskConditionKeys: string[] =
+		["aws:ResourceTag/${TagKey}", "partnercentral:Catalog"];
+	/** Condition keys applicable to the GetBusinessPlanItem action. */
+	static readonly actionGetBusinessPlanItemConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"partnercentral:BusinessPlanItemStage",
+		"partnercentral:BusinessPlanItemType",
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the GetBusinessPlanItemSchema action. */
+	static readonly actionGetBusinessPlanItemSchemaConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the GetBusinessPlanSettings action. */
+	static readonly actionGetBusinessPlanSettingsConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the GetBusinessPlanSubmissionTask action. */
+	static readonly actionGetBusinessPlanSubmissionTaskConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the GetCampaign action. */
+	static readonly actionGetCampaignConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the GetCampaignAsset action. */
+	static readonly actionGetCampaignAssetConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the GetCampaignAssetActivationTask action. */
+	static readonly actionGetCampaignAssetActivationTaskConditionKeys: string[] =
+		["partnercentral:Catalog"];
+	/** Condition keys applicable to the GetCampaignAssetExportTask action. */
+	static readonly actionGetCampaignAssetExportTaskConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the GetCampaignTemplate action. */
+	static readonly actionGetCampaignTemplateConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
 	/** Condition keys applicable to the GetConnection action. */
 	static readonly actionGetConnectionConditionKeys: string[] = [
 		"partnercentral:Catalog",
@@ -2890,6 +3916,26 @@ export class PartnercentralConditions {
 	];
 	/** Condition keys applicable to the GetConnectionPreferences action. */
 	static readonly actionGetConnectionPreferencesConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the GetCustomerAccount action. */
+	static readonly actionGetCustomerAccountConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the GetCustomerAccountBulkJob action. */
+	static readonly actionGetCustomerAccountBulkJobConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the GetCustomerAccountBulkJobReportUrl action. */
+	static readonly actionGetCustomerAccountBulkJobReportUrlConditionKeys: string[] =
+		["partnercentral:Catalog"];
+	/** Condition keys applicable to the GetCustomerAccountStatistics action. */
+	static readonly actionGetCustomerAccountStatisticsConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the GetDataSubscription action. */
+	static readonly actionGetDataSubscriptionConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the GetEngagement action. */
@@ -2911,6 +3957,9 @@ export class PartnercentralConditions {
 	static readonly actionGetOpportunityConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
+	/** Condition keys applicable to the GetOpportunityBulkJobReportUrl action. */
+	static readonly actionGetOpportunityBulkJobReportUrlConditionKeys: string[] =
+		["partnercentral:Catalog"];
 	/** Condition keys applicable to the GetPartner action. */
 	static readonly actionGetPartnerConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
@@ -2924,6 +3973,10 @@ export class PartnercentralConditions {
 		["partnercentral:Catalog"];
 	/** Condition keys applicable to the GetPartnerDashboard action. */
 	static readonly actionGetPartnerDashboardConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the GetPartnerReportingData action. */
+	static readonly actionGetPartnerReportingDataConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the GetProfileUpdateTask action. */
@@ -3001,6 +4054,41 @@ export class PartnercentralConditions {
 		"partnercentral:FulfillmentTypes",
 		"partnercentral:Programs",
 	];
+	/** Condition keys applicable to the ListBusinessPlanAssociations action. */
+	static readonly ListBusinessPlanAssociationsConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the ListBusinessPlanAttachmentImportTasks action. */
+	static readonly ListBusinessPlanAttachmentImportTasksConditionKeys: string[] =
+		["partnercentral:Catalog"];
+	/** Condition keys applicable to the ListBusinessPlanAttachments action. */
+	static readonly ListBusinessPlanAttachmentsConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the ListBusinessPlanHistory action. */
+	static readonly ListBusinessPlanHistoryConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the ListBusinessPlanItems action. */
+	static readonly ListBusinessPlanItemsConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the ListBusinessPlanSubmissionTasks action. */
+	static readonly ListBusinessPlanSubmissionTasksConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the ListBusinessPlans action. */
+	static readonly ListBusinessPlansConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the ListCampaignAssets action. */
+	static readonly ListCampaignAssetsConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the ListCampaigns action. */
+	static readonly ListCampaignsConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
 	/** Condition keys applicable to the ListChannelHandshakes action. */
 	static readonly ListChannelHandshakesConditionKeys: string[] = [
 		"partnercentral:Catalog",
@@ -3014,11 +4102,27 @@ export class PartnercentralConditions {
 	static readonly ListConnectionsConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
+	/** Condition keys applicable to the ListCustomerAccountBulkJobResults action. */
+	static readonly ListCustomerAccountBulkJobResultsConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the ListCustomerAccountBulkJobs action. */
+	static readonly ListCustomerAccountBulkJobsConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the ListDataSubscriptions action. */
+	static readonly ListDataSubscriptionsConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
 	/** Condition keys applicable to the ListEngagementByAcceptingInvitationTasks action. */
 	static readonly ListEngagementByAcceptingInvitationTasksConditionKeys: string[] =
 		["partnercentral:Catalog"];
 	/** Condition keys applicable to the ListEngagementFromOpportunityTasks action. */
 	static readonly ListEngagementFromOpportunityTasksConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the ListEngagementGroups action. */
+	static readonly ListEngagementGroupsConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the ListEngagementInvitations action. */
@@ -3046,6 +4150,14 @@ export class PartnercentralConditions {
 	];
 	/** Condition keys applicable to the ListOpportunities action. */
 	static readonly ListOpportunitiesConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the ListOpportunityBulkJobResults action. */
+	static readonly ListOpportunityBulkJobResultsConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the ListOpportunityBulkJobs action. */
+	static readonly ListOpportunityBulkJobsConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the ListOpportunityFromEngagementTasks action. */
@@ -3088,6 +4200,10 @@ export class PartnercentralConditions {
 	static readonly ListRevenueAttributionsConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
+	/** Condition keys applicable to the ListSocialConnections action. */
+	static readonly ListSocialConnectionsConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
 	/** Condition keys applicable to the ListSolutions action. */
 	static readonly ListSolutionsConditionKeys: string[] = [
 		"partnercentral:Catalog",
@@ -3103,6 +4219,10 @@ export class PartnercentralConditions {
 	/** Condition keys applicable to the PutAllianceLeadContact action. */
 	static readonly PutAllianceLeadContactConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the PutBusinessPlanSettings action. */
+	static readonly PutBusinessPlanSettingsConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the PutProfileVisibility action. */
@@ -3134,6 +4254,18 @@ export class PartnercentralConditions {
 	static readonly RejectEngagementInvitationConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
+	/** Condition keys applicable to the SearchCampaignTemplates action. */
+	static readonly SearchCampaignTemplatesConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the SearchCustomerAccounts action. */
+	static readonly SearchCustomerAccountsConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the SearchEngagements action. */
+	static readonly SearchEngagementsConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
 	/** Condition keys applicable to the SearchOpportunities action. */
 	static readonly SearchOpportunitiesConditionKeys: string[] = [
 		"partnercentral:Catalog",
@@ -3144,6 +4276,31 @@ export class PartnercentralConditions {
 	];
 	/** Condition keys applicable to the SendEmailVerificationCode action. */
 	static readonly SendEmailVerificationCodeConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the StartBusinessPlanAttachmentImportTask action. */
+	static readonly StartBusinessPlanAttachmentImportTaskConditionKeys: string[] =
+		[
+			"aws:ResourceTag/${TagKey}",
+			"partnercentral:AllowAwsEngagement",
+			"partnercentral:Catalog",
+		];
+	/** Condition keys applicable to the StartBusinessPlanSubmissionTask action. */
+	static readonly StartBusinessPlanSubmissionTaskConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"partnercentral:AllowAwsEngagement",
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the StartCampaignAssetActivationTask action. */
+	static readonly StartCampaignAssetActivationTaskConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the StartCampaignAssetExportTask action. */
+	static readonly StartCampaignAssetExportTaskConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the StartCustomerAccountBulkJob action. */
+	static readonly StartCustomerAccountBulkJobConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the StartEngagementByAcceptingInvitationTask action. */
@@ -3159,6 +4316,10 @@ export class PartnercentralConditions {
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the StartOpportunityBulkJob action. */
+	static readonly StartOpportunityBulkJobConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the StartOpportunityFromEngagementTask action. */
@@ -3236,12 +4397,42 @@ export class PartnercentralConditions {
 		"partnercentral:FulfillmentTypes",
 		"partnercentral:Programs",
 	];
+	/** Condition keys applicable to the UpdateBusinessPlan action. */
+	static readonly UpdateBusinessPlanConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"partnercentral:AllowAwsEngagement",
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the UpdateBusinessPlanItem action. */
+	static readonly UpdateBusinessPlanItemConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"partnercentral:AllowAwsEngagement",
+		"partnercentral:BusinessPlanItemStage",
+		"partnercentral:BusinessPlanItemType",
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the UpdateCampaign action. */
+	static readonly UpdateCampaignConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the UpdateCampaignAsset action. */
+	static readonly UpdateCampaignAssetConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
 	/** Condition keys applicable to the UpdateConnectionPreferences action. */
 	static readonly UpdateConnectionPreferencesConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
+	/** Condition keys applicable to the UpdateCustomerAccount action. */
+	static readonly UpdateCustomerAccountConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
 	/** Condition keys applicable to the UpdateEngagementContext action. */
 	static readonly UpdateEngagementContextConditionKeys: string[] = [
+		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the UpdateMarketplaceRevenueShare action. */
+	static readonly UpdateMarketplaceRevenueShareConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
 	/** Condition keys applicable to the UpdateMarketplaceRevenueShareAllocation action. */
@@ -3276,6 +4467,14 @@ export class PartnercentralConditions {
 	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
 	static readonly AWS_TAG_KEYS = "aws:TagKeys";
+	/** Condition key: partnercentral:AllowAwsEngagement (String) */
+	static readonly ALLOW_AWS_ENGAGEMENT = "partnercentral:AllowAwsEngagement";
+	/** Condition key: partnercentral:BusinessPlanItemStage (String) */
+	static readonly BUSINESS_PLAN_ITEM_STAGE =
+		"partnercentral:BusinessPlanItemStage";
+	/** Condition key: partnercentral:BusinessPlanItemType (String) */
+	static readonly BUSINESS_PLAN_ITEM_TYPE =
+		"partnercentral:BusinessPlanItemType";
 	/** Condition key: partnercentral:Catalog (String) */
 	static readonly CATALOG = "partnercentral:Catalog";
 	/** Condition key: partnercentral:ChannelHandshakeType (String) */
@@ -3309,6 +4508,33 @@ export class PartnercentralConditions {
 	 */
 	static tagKeys(values: string[]): Record<string, Record<string, string[]>> {
 		return { "ForAllValues:StringEquals": { "aws:TagKeys": values } };
+	}
+
+	/**
+	 * Generates a condition block for `partnercentral:AllowAwsEngagement`.
+	 */
+	static allowAWSEngagement(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "partnercentral:AllowAwsEngagement": value } };
+	}
+
+	/**
+	 * Generates a condition block for `partnercentral:BusinessPlanItemStage`.
+	 */
+	static businessPlanItemStage(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "partnercentral:BusinessPlanItemStage": value } };
+	}
+
+	/**
+	 * Generates a condition block for `partnercentral:BusinessPlanItemType`.
+	 */
+	static businessPlanItemType(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "partnercentral:BusinessPlanItemType": value } };
 	}
 
 	/**

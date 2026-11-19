@@ -35,6 +35,13 @@ export class TransformActions {
 		"transform:GetAgentRuntimeConfiguration";
 	/** [Read] transform:GetConnector */
 	static readonly actionGetConnector = "transform:GetConnector";
+	/** [Read] transform:GetPartner */
+	static readonly actionGetPartner = "transform:GetPartner";
+	/** [Read] transform:GetPartnerByAccountId */
+	static readonly actionGetPartnerByAccountId =
+		"transform:GetPartnerByAccountId";
+	/** [Read] transform:GetPartnerByArn */
+	static readonly actionGetPartnerByArn = "transform:GetPartnerByArn";
 	/** [Read] transform:GetWebAppUrl */
 	static readonly actionGetWebAppUrl = "transform:GetWebAppUrl";
 	/** [Read] transform:ListAgents */
@@ -48,8 +55,12 @@ export class TransformActions {
 	/** [Write] transform:PutAgentRuntimeConfiguration */
 	static readonly PutAgentRuntimeConfiguration =
 		"transform:PutAgentRuntimeConfiguration";
+	/** [Write] transform:PutPartner */
+	static readonly PutPartner = "transform:PutPartner";
 	/** [Write] transform:RejectConnector */
 	static readonly RejectConnector = "transform:RejectConnector";
+	/** [Write] transform:RemovePartner */
+	static readonly RemovePartner = "transform:RemovePartner";
 	/** [Tagging] transform:TagResource */
 	static readonly TagResource = "transform:TagResource";
 	/** [Tagging] transform:UntagResource */
@@ -67,6 +78,9 @@ export class TransformActions {
 		TransformActions.actionGetAgent,
 		TransformActions.actionGetAgentRuntimeConfiguration,
 		TransformActions.actionGetConnector,
+		TransformActions.actionGetPartner,
+		TransformActions.actionGetPartnerByAccountId,
+		TransformActions.actionGetPartnerByArn,
 		TransformActions.actionGetWebAppUrl,
 		TransformActions.ListAgents,
 		TransformActions.ListTagsForResource,
@@ -80,7 +94,9 @@ export class TransformActions {
 		TransformActions.DeleteConnector,
 		TransformActions.DeleteProfile,
 		TransformActions.PutAgentRuntimeConfiguration,
+		TransformActions.PutPartner,
 		TransformActions.RejectConnector,
+		TransformActions.RemovePartner,
 		TransformActions.UpdateAccountSettings,
 		TransformActions.UpdateAgentAccess,
 		TransformActions.UpdateProfile,

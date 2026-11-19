@@ -1686,6 +1686,7 @@ new config.ConfigActions()
 | <code><a href="#@cdk_utils/iam.config.ConfigActions.property.actionGetResourceEvaluationSummary">actionGetResourceEvaluationSummary</a></code> | <code>string</code> | [Read] config:GetResourceEvaluationSummary. |
 | <code><a href="#@cdk_utils/iam.config.ConfigActions.property.actionGetStoredQuery">actionGetStoredQuery</a></code> | <code>string</code> | [Read] config:GetStoredQuery. |
 | <code><a href="#@cdk_utils/iam.config.ConfigActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
+| <code><a href="#@cdk_utils/iam.config.ConfigActions.property.AllowVendedLogDeliveryForResource">AllowVendedLogDeliveryForResource</a></code> | <code>string</code> | [PermissionManagement] config:AllowVendedLogDeliveryForResource. |
 | <code><a href="#@cdk_utils/iam.config.ConfigActions.property.AllPermissionManagementActions">AllPermissionManagementActions</a></code> | <code>string[]</code> | All permission-management-level actions. |
 | <code><a href="#@cdk_utils/iam.config.ConfigActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
 | <code><a href="#@cdk_utils/iam.config.ConfigActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
@@ -2025,6 +2026,18 @@ public readonly AllListActions: string[];
 - *Type:* string[]
 
 All list-level actions.
+
+---
+
+##### `AllowVendedLogDeliveryForResource`<sup>Required</sup> <a name="AllowVendedLogDeliveryForResource" id="@cdk_utils/iam.config.ConfigActions.property.AllowVendedLogDeliveryForResource"></a>
+
+```typescript
+public readonly AllowVendedLogDeliveryForResource: string;
+```
+
+- *Type:* string
+
+[PermissionManagement] config:AllowVendedLogDeliveryForResource.
 
 ---
 
@@ -3170,6 +3183,7 @@ Generates a condition block for `aws:TagKeys`.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.config.ConfigConditions.property.AllowVendedLogDeliveryForResourceConditionKeys">AllowVendedLogDeliveryForResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the AllowVendedLogDeliveryForResource action. |
 | <code><a href="#@cdk_utils/iam.config.ConfigConditions.property.AWS_REQUEST_TAG">AWS_REQUEST_TAG</a></code> | <code>string</code> | Condition key: aws:RequestTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.config.ConfigConditions.property.AWS_RESOURCE_TAG">AWS_RESOURCE_TAG</a></code> | <code>string</code> | Condition key: aws:ResourceTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.config.ConfigConditions.property.AWS_TAG_KEYS">AWS_TAG_KEYS</a></code> | <code>string</code> | Condition key: aws:TagKeys (ArrayOfString). |
@@ -3187,6 +3201,18 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.config.ConfigConditions.property.PutThirdPartyServiceLinkedConfigurationRecorderConditionKeys">PutThirdPartyServiceLinkedConfigurationRecorderConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutThirdPartyServiceLinkedConfigurationRecorder action. |
 | <code><a href="#@cdk_utils/iam.config.ConfigConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
 | <code><a href="#@cdk_utils/iam.config.ConfigConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
+
+---
+
+##### `AllowVendedLogDeliveryForResourceConditionKeys`<sup>Required</sup> <a name="AllowVendedLogDeliveryForResourceConditionKeys" id="@cdk_utils/iam.config.ConfigConditions.property.AllowVendedLogDeliveryForResourceConditionKeys"></a>
+
+```typescript
+public readonly AllowVendedLogDeliveryForResourceConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the AllowVendedLogDeliveryForResource action.
 
 ---
 

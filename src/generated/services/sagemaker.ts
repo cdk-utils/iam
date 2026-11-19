@@ -138,6 +138,8 @@ export class SageMakerActions {
 	/** [Write] sagemaker:CreateInferenceRecommendationsJob */
 	static readonly CreateInferenceRecommendationsJob =
 		"sagemaker:CreateInferenceRecommendationsJob";
+	/** [Write] sagemaker:CreateInferenceRouter */
+	static readonly CreateInferenceRouter = "sagemaker:CreateInferenceRouter";
 	/** [Write] sagemaker:CreateJob */
 	static readonly CreateJob = "sagemaker:CreateJob";
 	/** [Write] sagemaker:CreateLabelingJob */
@@ -279,6 +281,8 @@ export class SageMakerActions {
 	static readonly DeleteEndpoint = "sagemaker:DeleteEndpoint";
 	/** [Write] sagemaker:DeleteEndpointConfig */
 	static readonly DeleteEndpointConfig = "sagemaker:DeleteEndpointConfig";
+	/** [PermissionManagement] sagemaker:DeleteEndpointPolicy */
+	static readonly DeleteEndpointPolicy = "sagemaker:DeleteEndpointPolicy";
 	/** [Write] sagemaker:DeleteExperiment */
 	static readonly DeleteExperiment = "sagemaker:DeleteExperiment";
 	/** [Write] sagemaker:DeleteFeatureGroup */
@@ -309,6 +313,8 @@ export class SageMakerActions {
 	/** [Write] sagemaker:DeleteInferenceExperiment */
 	static readonly DeleteInferenceExperiment =
 		"sagemaker:DeleteInferenceExperiment";
+	/** [Write] sagemaker:DeleteInferenceRouter */
+	static readonly DeleteInferenceRouter = "sagemaker:DeleteInferenceRouter";
 	/** [Write] sagemaker:DeleteJob */
 	static readonly DeleteJob = "sagemaker:DeleteJob";
 	/** [Write] sagemaker:DeleteLineageGroupPolicy */
@@ -479,6 +485,8 @@ export class SageMakerActions {
 	/** [Read] sagemaker:DescribeInferenceRecommendationsJob */
 	static readonly DescribeInferenceRecommendationsJob =
 		"sagemaker:DescribeInferenceRecommendationsJob";
+	/** [Read] sagemaker:DescribeInferenceRouter */
+	static readonly DescribeInferenceRouter = "sagemaker:DescribeInferenceRouter";
 	/** [Read] sagemaker:DescribeJob */
 	static readonly DescribeJob = "sagemaker:DescribeJob";
 	/** [Read] sagemaker:DescribeJobSchemaVersion */
@@ -599,6 +607,8 @@ export class SageMakerActions {
 	/** [Read] sagemaker:GetDeviceRegistration */
 	static readonly actionGetDeviceRegistration =
 		"sagemaker:GetDeviceRegistration";
+	/** [Read] sagemaker:GetEndpointPolicy */
+	static readonly actionGetEndpointPolicy = "sagemaker:GetEndpointPolicy";
 	/** [Read] sagemaker:GetLineageGroupPolicy */
 	static readonly actionGetLineageGroupPolicy =
 		"sagemaker:GetLineageGroupPolicy";
@@ -632,6 +642,11 @@ export class SageMakerActions {
 	/** [Read] sagemaker:InvokeEndpointWithResponseStream */
 	static readonly InvokeEndpointWithResponseStream =
 		"sagemaker:InvokeEndpointWithResponseStream";
+	/** [Read] sagemaker:InvokeInferenceRouter */
+	static readonly InvokeInferenceRouter = "sagemaker:InvokeInferenceRouter";
+	/** [Read] sagemaker:InvokeInferenceRouterAsync */
+	static readonly InvokeInferenceRouterAsync =
+		"sagemaker:InvokeInferenceRouterAsync";
 	/** [List] sagemaker:ListAIBenchmarkJobs */
 	static readonly ListAIBenchmarkJobs = "sagemaker:ListAIBenchmarkJobs";
 	/** [List] sagemaker:ListAIRecommendationJobs */
@@ -726,6 +741,8 @@ export class SageMakerActions {
 	/** [List] sagemaker:ListInferenceRecommendationsJobs */
 	static readonly ListInferenceRecommendationsJobs =
 		"sagemaker:ListInferenceRecommendationsJobs";
+	/** [List] sagemaker:ListInferenceRouters */
+	static readonly ListInferenceRouters = "sagemaker:ListInferenceRouters";
 	/** [List] sagemaker:ListJobSchemaVersions */
 	static readonly ListJobSchemaVersions = "sagemaker:ListJobSchemaVersions";
 	/** [List] sagemaker:ListJobs */
@@ -845,6 +862,8 @@ export class SageMakerActions {
 	static readonly ListWorkforces = "sagemaker:ListWorkforces";
 	/** [List] sagemaker:ListWorkteams */
 	static readonly ListWorkteams = "sagemaker:ListWorkteams";
+	/** [PermissionManagement] sagemaker:PutEndpointPolicy */
+	static readonly PutEndpointPolicy = "sagemaker:PutEndpointPolicy";
 	/** [Write] sagemaker:PutLineageGroupPolicy */
 	static readonly PutLineageGroupPolicy = "sagemaker:PutLineageGroupPolicy";
 	/** [Write] sagemaker:PutModelPackageGroupPolicy */
@@ -1013,6 +1032,8 @@ export class SageMakerActions {
 	/** [Write] sagemaker:UpdateInferenceExperiment */
 	static readonly UpdateInferenceExperiment =
 		"sagemaker:UpdateInferenceExperiment";
+	/** [Write] sagemaker:UpdateInferenceRouter */
+	static readonly UpdateInferenceRouter = "sagemaker:UpdateInferenceRouter";
 	/** [Write] sagemaker:UpdateMlflowApp */
 	static readonly UpdateMlflowApp = "sagemaker:UpdateMlflowApp";
 	/** [Write] sagemaker:UpdateMlflowTrackingServer */
@@ -1110,6 +1131,7 @@ export class SageMakerActions {
 		SageMakerActions.DescribeInferenceComponent,
 		SageMakerActions.DescribeInferenceExperiment,
 		SageMakerActions.DescribeInferenceRecommendationsJob,
+		SageMakerActions.DescribeInferenceRouter,
 		SageMakerActions.DescribeJob,
 		SageMakerActions.DescribeJobSchemaVersion,
 		SageMakerActions.DescribeLabelingJob,
@@ -1152,6 +1174,7 @@ export class SageMakerActions {
 		SageMakerActions.actionGetDeployments,
 		SageMakerActions.actionGetDeviceFleetReport,
 		SageMakerActions.actionGetDeviceRegistration,
+		SageMakerActions.actionGetEndpointPolicy,
 		SageMakerActions.actionGetLineageGroupPolicy,
 		SageMakerActions.actionGetModelPackageGroupPolicy,
 		SageMakerActions.actionGetRecord,
@@ -1164,6 +1187,8 @@ export class SageMakerActions {
 		SageMakerActions.InvokeEndpoint,
 		SageMakerActions.InvokeEndpointAsync,
 		SageMakerActions.InvokeEndpointWithResponseStream,
+		SageMakerActions.InvokeInferenceRouter,
+		SageMakerActions.InvokeInferenceRouterAsync,
 		SageMakerActions.RenderUiTemplate,
 		SageMakerActions.Search,
 		SageMakerActions.SearchTrainingPlanOfferings,
@@ -1219,6 +1244,7 @@ export class SageMakerActions {
 		SageMakerActions.CreateInferenceComponent,
 		SageMakerActions.CreateInferenceExperiment,
 		SageMakerActions.CreateInferenceRecommendationsJob,
+		SageMakerActions.CreateInferenceRouter,
 		SageMakerActions.CreateJob,
 		SageMakerActions.CreateLabelingJob,
 		SageMakerActions.CreateLineageGroupPolicy,
@@ -1293,6 +1319,7 @@ export class SageMakerActions {
 		SageMakerActions.DeleteImageVersion,
 		SageMakerActions.DeleteInferenceComponent,
 		SageMakerActions.DeleteInferenceExperiment,
+		SageMakerActions.DeleteInferenceRouter,
 		SageMakerActions.DeleteJob,
 		SageMakerActions.DeleteLineageGroupPolicy,
 		SageMakerActions.DeleteMlflowApp,
@@ -1405,6 +1432,7 @@ export class SageMakerActions {
 		SageMakerActions.UpdateInferenceComponent,
 		SageMakerActions.UpdateInferenceComponentRuntimeConfig,
 		SageMakerActions.UpdateInferenceExperiment,
+		SageMakerActions.UpdateInferenceRouter,
 		SageMakerActions.UpdateMlflowApp,
 		SageMakerActions.UpdateMlflowTrackingServer,
 		SageMakerActions.UpdateModelCard,
@@ -1473,6 +1501,7 @@ export class SageMakerActions {
 		SageMakerActions.ListInferenceExperiments,
 		SageMakerActions.ListInferenceRecommendationsJobSteps,
 		SageMakerActions.ListInferenceRecommendationsJobs,
+		SageMakerActions.ListInferenceRouters,
 		SageMakerActions.ListJobSchemaVersions,
 		SageMakerActions.ListJobs,
 		SageMakerActions.ListLabelingJobs,
@@ -1529,7 +1558,10 @@ export class SageMakerActions {
 		SageMakerActions.QueryLineage,
 	];
 	/** All permission-management-level actions. */
-	static readonly AllPermissionManagementActions: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [
+		SageMakerActions.DeleteEndpointPolicy,
+		SageMakerActions.PutEndpointPolicy,
+	];
 	/** All tagging-level actions. */
 	static readonly AllTaggingActions: string[] = [
 		SageMakerActions.AddTags,
@@ -2627,6 +2659,34 @@ export interface SageMakerInferenceRecommendationsJobArnComponents {
 	readonly account: string;
 	/** The InferenceRecommendationsJobName component. */
 	readonly inferenceRecommendationsJobName: string;
+}
+
+/**
+ * Properties for building a inference-router ARN.
+ */
+export interface SageMakerInferenceRouterArnProps {
+	/** The InferenceRouterName component of the ARN. */
+	readonly inferenceRouterName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a inference-router ARN.
+ */
+export interface SageMakerInferenceRouterArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The InferenceRouterName component. */
+	readonly inferenceRouterName: string;
 }
 
 /**
@@ -3737,6 +3797,8 @@ const InferenceExperimentArnRegex =
 	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):inference-experiment\/(?<inferenceExperimentName>[^:/?]+)$/;
 const InferenceRecommendationsJobArnRegex =
 	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):inference-recommendations-job\/(?<inferenceRecommendationsJobName>[^:/?]+)$/;
+const InferenceRouterArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):inference-router\/(?<inferenceRouterName>[^:/?]+)$/;
 const JobArnRegex =
 	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):job\/(?<jobCategory>[^:/?]+)\/(?<jobName>[^:/?]+)$/;
 const LabelingJobArnRegex =
@@ -5055,6 +5117,39 @@ export class SageMakerResources {
 	}
 
 	/**
+	 * Builds an ARN for the inference-router resource.
+	 */
+	static inferenceRouter(props: SageMakerInferenceRouterArnProps): string {
+		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:inference-router/${props.inferenceRouterName}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the inference-router resource.
+	 */
+	static isValidInferenceRouterArn(arn: string): boolean {
+		return InferenceRouterArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a inference-router ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseInferenceRouterArn(
+		arn: string,
+	): SageMakerInferenceRouterArnComponents {
+		const match = InferenceRouterArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid inference-router ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			inferenceRouterName: match.groups!.inferenceRouterName,
+		};
+	}
+
+	/**
 	 * Builds an ARN for the job resource.
 	 */
 	static job(props: SageMakerJobArnProps): string {
@@ -6354,6 +6449,8 @@ export class SageMakerOperations {
 		"iam:PassRole",
 		"sagemaker:UpdateClusterSoftware",
 	];
+	/** IAM actions required for the CreateClusterExtension API call. */
+	static readonly CreateClusterExtension: string[] = ["sagemaker:AddTags"];
 	/** IAM actions required for the CreateClusterSchedulerConfig API call. */
 	static readonly CreateClusterSchedulerConfig: string[] = [
 		"sagemaker:AddTags",
@@ -6479,6 +6576,11 @@ export class SageMakerOperations {
 		"sagemaker:AddTags",
 		"sagemaker:CreateInferenceRecommendationsJob",
 		"iam:PassRole",
+	];
+	/** IAM actions required for the CreateInferenceRouter API call. */
+	static readonly CreateInferenceRouter: string[] = [
+		"sagemaker:AddTags",
+		"sagemaker:CreateInferenceRouter",
 	];
 	/** IAM actions required for the CreateJob API call. */
 	static readonly CreateJob: string[] = [
@@ -6706,6 +6808,8 @@ export class SageMakerOperations {
 	static readonly DeleteAssociation: string[] = ["sagemaker:DeleteAssociation"];
 	/** IAM actions required for the DeleteCluster API call. */
 	static readonly DeleteCluster: string[] = ["sagemaker:DeleteCluster"];
+	/** IAM actions required for the DeleteClusterExtension API call. */
+	static readonly DeleteClusterExtension: string[] = [];
 	/** IAM actions required for the DeleteClusterSchedulerConfig API call. */
 	static readonly DeleteClusterSchedulerConfig: string[] = [
 		"sagemaker:DeleteClusterSchedulerConfig",
@@ -6741,6 +6845,10 @@ export class SageMakerOperations {
 	/** IAM actions required for the DeleteEndpointConfig API call. */
 	static readonly DeleteEndpointConfig: string[] = [
 		"sagemaker:DeleteEndpointConfig",
+	];
+	/** IAM actions required for the DeleteEndpointPolicy API call. */
+	static readonly DeleteEndpointPolicy: string[] = [
+		"sagemaker:DeleteEndpointPolicy",
 	];
 	/** IAM actions required for the DeleteExperiment API call. */
 	static readonly DeleteExperiment: string[] = ["sagemaker:DeleteExperiment"];
@@ -6781,6 +6889,10 @@ export class SageMakerOperations {
 	/** IAM actions required for the DeleteInferenceExperiment API call. */
 	static readonly DeleteInferenceExperiment: string[] = [
 		"sagemaker:DeleteInferenceExperiment",
+	];
+	/** IAM actions required for the DeleteInferenceRouter API call. */
+	static readonly DeleteInferenceRouter: string[] = [
+		"sagemaker:DeleteInferenceRouter",
 	];
 	/** IAM actions required for the DeleteJob API call. */
 	static readonly DeleteJob: string[] = ["sagemaker:DeleteJob"];
@@ -6910,10 +7022,14 @@ export class SageMakerOperations {
 	static readonly DescribeClusterEvent: string[] = [
 		"sagemaker:DescribeClusterEvent",
 	];
+	/** IAM actions required for the DescribeClusterExtension API call. */
+	static readonly DescribeClusterExtension: string[] = [];
 	/** IAM actions required for the DescribeClusterNode API call. */
 	static readonly DescribeClusterNode: string[] = [
 		"sagemaker:DescribeClusterNode",
 	];
+	/** IAM actions required for the DescribeClusterOperation API call. */
+	static readonly DescribeClusterOperation: string[] = [];
 	/** IAM actions required for the DescribeClusterSchedulerConfig API call. */
 	static readonly DescribeClusterSchedulerConfig: string[] = [
 		"sagemaker:DescribeClusterSchedulerConfig",
@@ -7001,6 +7117,10 @@ export class SageMakerOperations {
 	/** IAM actions required for the DescribeInferenceRecommendationsJob API call. */
 	static readonly DescribeInferenceRecommendationsJob: string[] = [
 		"sagemaker:DescribeInferenceRecommendationsJob",
+	];
+	/** IAM actions required for the DescribeInferenceRouter API call. */
+	static readonly DescribeInferenceRouter: string[] = [
+		"sagemaker:DescribeInferenceRouter",
 	];
 	/** IAM actions required for the DescribeJob API call. */
 	static readonly DescribeJob: string[] = ["sagemaker:DescribeJob"];
@@ -7168,6 +7288,10 @@ export class SageMakerOperations {
 	static readonly opGetDeviceFleetReport: string[] = [];
 	/** IAM actions required for the GetDeviceRegistration API call. */
 	static readonly opGetDeviceRegistration: string[] = [];
+	/** IAM actions required for the GetEndpointPolicy API call. */
+	static readonly opGetEndpointPolicy: string[] = [
+		"sagemaker:GetEndpointPolicy",
+	];
 	/** IAM actions required for the GetLineageGroupPolicy API call. */
 	static readonly opGetLineageGroupPolicy: string[] = [
 		"sagemaker:GetLineageGroupPolicy",
@@ -7205,7 +7329,10 @@ export class SageMakerOperations {
 		"iam:PassRole",
 	];
 	/** IAM actions required for the InvokeEndpoint API call. */
-	static readonly InvokeEndpoint: string[] = ["sagemaker:InvokeEndpoint"];
+	static readonly InvokeEndpoint: string[] = [
+		"sagemaker:CallWithBearerToken",
+		"sagemaker:InvokeEndpoint",
+	];
 	/** IAM actions required for the InvokeEndpointAsync API call. */
 	static readonly InvokeEndpointAsync: string[] = [
 		"sagemaker:InvokeEndpointAsync",
@@ -7215,6 +7342,10 @@ export class SageMakerOperations {
 		"sagemaker:CallWithBearerToken",
 		"sagemaker:InvokeEndpoint",
 	];
+	/** IAM actions required for the InvokeInferenceRouter API call. */
+	static readonly InvokeInferenceRouter: string[] = [];
+	/** IAM actions required for the InvokeInferenceRouterAsync API call. */
+	static readonly InvokeInferenceRouterAsync: string[] = [];
 	/** IAM actions required for the ListAIBenchmarkJobs API call. */
 	static readonly ListAIBenchmarkJobs: string[] = [
 		"sagemaker:ListAIBenchmarkJobs",
@@ -7251,8 +7382,14 @@ export class SageMakerOperations {
 	];
 	/** IAM actions required for the ListClusterEvents API call. */
 	static readonly ListClusterEvents: string[] = ["sagemaker:ListClusterEvents"];
+	/** IAM actions required for the ListClusterExtensionVersions API call. */
+	static readonly ListClusterExtensionVersions: string[] = [];
+	/** IAM actions required for the ListClusterExtensions API call. */
+	static readonly ListClusterExtensions: string[] = [];
 	/** IAM actions required for the ListClusterNodes API call. */
 	static readonly ListClusterNodes: string[] = ["sagemaker:ListClusterNodes"];
+	/** IAM actions required for the ListClusterOperations API call. */
+	static readonly ListClusterOperations: string[] = [];
 	/** IAM actions required for the ListClusterSchedulerConfigs API call. */
 	static readonly ListClusterSchedulerConfigs: string[] = [
 		"sagemaker:ListClusterSchedulerConfigs",
@@ -7334,6 +7471,10 @@ export class SageMakerOperations {
 	/** IAM actions required for the ListInferenceRecommendationsJobs API call. */
 	static readonly ListInferenceRecommendationsJobs: string[] = [
 		"sagemaker:ListInferenceRecommendationsJobs",
+	];
+	/** IAM actions required for the ListInferenceRouters API call. */
+	static readonly ListInferenceRouters: string[] = [
+		"sagemaker:ListInferenceRouters",
 	];
 	/** IAM actions required for the ListJobSchemaVersions API call. */
 	static readonly ListJobSchemaVersions: string[] = [
@@ -7491,6 +7632,8 @@ export class SageMakerOperations {
 	static readonly ListWorkforces: string[] = ["sagemaker:ListWorkforces"];
 	/** IAM actions required for the ListWorkteams API call. */
 	static readonly ListWorkteams: string[] = ["sagemaker:ListWorkteams"];
+	/** IAM actions required for the PutEndpointPolicy API call. */
+	static readonly PutEndpointPolicy: string[] = ["sagemaker:PutEndpointPolicy"];
 	/** IAM actions required for the PutModelPackageGroupPolicy API call. */
 	static readonly PutModelPackageGroupPolicy: string[] = [
 		"sagemaker:PutModelPackageGroupPolicy",
@@ -7658,6 +7801,8 @@ export class SageMakerOperations {
 		"sagemaker:UpdateCluster",
 		"sagemaker:UpdateClusterSoftware",
 	];
+	/** IAM actions required for the UpdateClusterExtension API call. */
+	static readonly UpdateClusterExtension: string[] = [];
 	/** IAM actions required for the UpdateClusterSchedulerConfig API call. */
 	static readonly UpdateClusterSchedulerConfig: string[] = [
 		"sagemaker:UpdateClusterSchedulerConfig",
@@ -7729,6 +7874,10 @@ export class SageMakerOperations {
 	/** IAM actions required for the UpdateInferenceExperiment API call. */
 	static readonly UpdateInferenceExperiment: string[] = [
 		"sagemaker:UpdateInferenceExperiment",
+	];
+	/** IAM actions required for the UpdateInferenceRouter API call. */
+	static readonly UpdateInferenceRouter: string[] = [
+		"sagemaker:UpdateInferenceRouter",
 	];
 	/** IAM actions required for the UpdateMlflowApp API call. */
 	static readonly UpdateMlflowApp: string[] = ["sagemaker:UpdateMlflowApp"];
@@ -8067,6 +8216,11 @@ export class SageMakerConditions {
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
+	/** Condition keys applicable to the CreateInferenceRouter action. */
+	static readonly CreateInferenceRouterConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateJob action. */
 	static readonly CreateJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
@@ -8343,7 +8497,12 @@ export class SageMakerConditions {
 	];
 	/** Condition keys applicable to the InvokeEndpoint action. */
 	static readonly InvokeEndpointConditionKeys: string[] = [
+		"sagemaker:SourceInferenceRouterArn",
 		"sagemaker:TargetModel",
+	];
+	/** Condition keys applicable to the InvokeEndpointAsync action. */
+	static readonly InvokeEndpointAsyncConditionKeys: string[] = [
+		"sagemaker:SourceInferenceRouterArn",
 	];
 	/** Condition keys applicable to the PutRecord action. */
 	static readonly PutRecordConditionKeys: string[] = [
@@ -8579,6 +8738,9 @@ export class SageMakerConditions {
 		"sagemaker:ServerlessMaxConcurrency";
 	/** Condition key: sagemaker:ServerlessMemorySize (Numeric) */
 	static readonly SERVERLESS_MEMORY_SIZE = "sagemaker:ServerlessMemorySize";
+	/** Condition key: sagemaker:SourceInferenceRouterArn (ARN) */
+	static readonly SOURCE_INFERENCE_ROUTER_ARN =
+		"sagemaker:SourceInferenceRouterArn";
 	/** Condition key: sagemaker:SpaceSharingType (String) */
 	static readonly SPACE_SHARING_TYPE = "sagemaker:SpaceSharingType";
 	/** Condition key: sagemaker:StudioLifecycleConfigArns (ArrayOfARN) */
@@ -9105,6 +9267,15 @@ export class SageMakerConditions {
 		value: number,
 	): Record<string, Record<string, number>> {
 		return { NumericEquals: { "sagemaker:ServerlessMemorySize": value } };
+	}
+
+	/**
+	 * Generates a condition block for `sagemaker:SourceInferenceRouterArn`.
+	 */
+	static sourceInferenceRouterARN(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { ArnEquals: { "sagemaker:SourceInferenceRouterArn": value } };
 	}
 
 	/**

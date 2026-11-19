@@ -1672,6 +1672,8 @@ export class ElastiCacheConditions {
 	static readonly ENGINE_TYPE = "elasticache:EngineType";
 	/** Condition key: elasticache:EngineVersion (String) */
 	static readonly ENGINE_VERSION = "elasticache:EngineVersion";
+	/** Condition key: elasticache:IntegrationType (String) */
+	static readonly INTEGRATION_TYPE = "elasticache:IntegrationType";
 	/** Condition key: elasticache:KmsKeyId (String) */
 	static readonly KMS_KEY_ID = "elasticache:KmsKeyId";
 	/** Condition key: elasticache:MaximumDataStorage (Numeric) */
@@ -1806,6 +1808,15 @@ export class ElastiCacheConditions {
 	 */
 	static engineVersion(value: string): Record<string, Record<string, string>> {
 		return { StringEquals: { "elasticache:EngineVersion": value } };
+	}
+
+	/**
+	 * Generates a condition block for `elasticache:IntegrationType`.
+	 */
+	static integrationType(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "elasticache:IntegrationType": value } };
 	}
 
 	/**

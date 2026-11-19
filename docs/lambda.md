@@ -1787,6 +1787,502 @@ Defaults to "*".
 
 ---
 
+### LambdaRuntimeAliasArnComponents <a name="LambdaRuntimeAliasArnComponents" id="@cdk_utils/iam.lambda.LambdaRuntimeAliasArnComponents"></a>
+
+Parsed components of a runtimeAlias ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.lambda.LambdaRuntimeAliasArnComponents.Initializer"></a>
+
+```typescript
+import { lambda } from '@cdk_utils/iam'
+
+const lambdaRuntimeAliasArnComponents: lambda.LambdaRuntimeAliasArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaRuntimeAliasArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaRuntimeAliasArnComponents.property.name">name</a></code> | <code>string</code> | The Name component. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaRuntimeAliasArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaRuntimeAliasArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaRuntimeAliasArnComponents.property.runtimeName">runtimeName</a></code> | <code>string</code> | The RuntimeName component. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.lambda.LambdaRuntimeAliasArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdk_utils/iam.lambda.LambdaRuntimeAliasArnComponents.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+The Name component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.lambda.LambdaRuntimeAliasArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.lambda.LambdaRuntimeAliasArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+##### `runtimeName`<sup>Required</sup> <a name="runtimeName" id="@cdk_utils/iam.lambda.LambdaRuntimeAliasArnComponents.property.runtimeName"></a>
+
+```typescript
+public readonly runtimeName: string;
+```
+
+- *Type:* string
+
+The RuntimeName component.
+
+---
+
+### LambdaRuntimeAliasArnProps <a name="LambdaRuntimeAliasArnProps" id="@cdk_utils/iam.lambda.LambdaRuntimeAliasArnProps"></a>
+
+Properties for building a runtimeAlias ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.lambda.LambdaRuntimeAliasArnProps.Initializer"></a>
+
+```typescript
+import { lambda } from '@cdk_utils/iam'
+
+const lambdaRuntimeAliasArnProps: lambda.LambdaRuntimeAliasArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaRuntimeAliasArnProps.property.name">name</a></code> | <code>string</code> | The Name component of the ARN. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaRuntimeAliasArnProps.property.runtimeName">runtimeName</a></code> | <code>string</code> | The RuntimeName component of the ARN. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaRuntimeAliasArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaRuntimeAliasArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaRuntimeAliasArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdk_utils/iam.lambda.LambdaRuntimeAliasArnProps.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+The Name component of the ARN.
+
+---
+
+##### `runtimeName`<sup>Required</sup> <a name="runtimeName" id="@cdk_utils/iam.lambda.LambdaRuntimeAliasArnProps.property.runtimeName"></a>
+
+```typescript
+public readonly runtimeName: string;
+```
+
+- *Type:* string
+
+The RuntimeName component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.lambda.LambdaRuntimeAliasArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.lambda.LambdaRuntimeAliasArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.lambda.LambdaRuntimeAliasArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
+### LambdaRuntimeArnComponents <a name="LambdaRuntimeArnComponents" id="@cdk_utils/iam.lambda.LambdaRuntimeArnComponents"></a>
+
+Parsed components of a runtime ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.lambda.LambdaRuntimeArnComponents.Initializer"></a>
+
+```typescript
+import { lambda } from '@cdk_utils/iam'
+
+const lambdaRuntimeArnComponents: lambda.LambdaRuntimeArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaRuntimeArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaRuntimeArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaRuntimeArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaRuntimeArnComponents.property.runtimeName">runtimeName</a></code> | <code>string</code> | The RuntimeName component. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.lambda.LambdaRuntimeArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.lambda.LambdaRuntimeArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.lambda.LambdaRuntimeArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+##### `runtimeName`<sup>Required</sup> <a name="runtimeName" id="@cdk_utils/iam.lambda.LambdaRuntimeArnComponents.property.runtimeName"></a>
+
+```typescript
+public readonly runtimeName: string;
+```
+
+- *Type:* string
+
+The RuntimeName component.
+
+---
+
+### LambdaRuntimeArnProps <a name="LambdaRuntimeArnProps" id="@cdk_utils/iam.lambda.LambdaRuntimeArnProps"></a>
+
+Properties for building a runtime ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.lambda.LambdaRuntimeArnProps.Initializer"></a>
+
+```typescript
+import { lambda } from '@cdk_utils/iam'
+
+const lambdaRuntimeArnProps: lambda.LambdaRuntimeArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaRuntimeArnProps.property.runtimeName">runtimeName</a></code> | <code>string</code> | The RuntimeName component of the ARN. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaRuntimeArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaRuntimeArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaRuntimeArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `runtimeName`<sup>Required</sup> <a name="runtimeName" id="@cdk_utils/iam.lambda.LambdaRuntimeArnProps.property.runtimeName"></a>
+
+```typescript
+public readonly runtimeName: string;
+```
+
+- *Type:* string
+
+The RuntimeName component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.lambda.LambdaRuntimeArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.lambda.LambdaRuntimeArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.lambda.LambdaRuntimeArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
+### LambdaRuntimeVersionArnComponents <a name="LambdaRuntimeVersionArnComponents" id="@cdk_utils/iam.lambda.LambdaRuntimeVersionArnComponents"></a>
+
+Parsed components of a runtimeVersion ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.lambda.LambdaRuntimeVersionArnComponents.Initializer"></a>
+
+```typescript
+import { lambda } from '@cdk_utils/iam'
+
+const lambdaRuntimeVersionArnComponents: lambda.LambdaRuntimeVersionArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaRuntimeVersionArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaRuntimeVersionArnComponents.property.name">name</a></code> | <code>string</code> | The Name component. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaRuntimeVersionArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaRuntimeVersionArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaRuntimeVersionArnComponents.property.runtimeName">runtimeName</a></code> | <code>string</code> | The RuntimeName component. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.lambda.LambdaRuntimeVersionArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdk_utils/iam.lambda.LambdaRuntimeVersionArnComponents.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+The Name component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.lambda.LambdaRuntimeVersionArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.lambda.LambdaRuntimeVersionArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+##### `runtimeName`<sup>Required</sup> <a name="runtimeName" id="@cdk_utils/iam.lambda.LambdaRuntimeVersionArnComponents.property.runtimeName"></a>
+
+```typescript
+public readonly runtimeName: string;
+```
+
+- *Type:* string
+
+The RuntimeName component.
+
+---
+
+### LambdaRuntimeVersionArnProps <a name="LambdaRuntimeVersionArnProps" id="@cdk_utils/iam.lambda.LambdaRuntimeVersionArnProps"></a>
+
+Properties for building a runtimeVersion ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.lambda.LambdaRuntimeVersionArnProps.Initializer"></a>
+
+```typescript
+import { lambda } from '@cdk_utils/iam'
+
+const lambdaRuntimeVersionArnProps: lambda.LambdaRuntimeVersionArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaRuntimeVersionArnProps.property.name">name</a></code> | <code>string</code> | The Name component of the ARN. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaRuntimeVersionArnProps.property.runtimeName">runtimeName</a></code> | <code>string</code> | The RuntimeName component of the ARN. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaRuntimeVersionArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaRuntimeVersionArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaRuntimeVersionArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdk_utils/iam.lambda.LambdaRuntimeVersionArnProps.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+The Name component of the ARN.
+
+---
+
+##### `runtimeName`<sup>Required</sup> <a name="runtimeName" id="@cdk_utils/iam.lambda.LambdaRuntimeVersionArnProps.property.runtimeName"></a>
+
+```typescript
+public readonly runtimeName: string;
+```
+
+- *Type:* string
+
+The RuntimeName component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.lambda.LambdaRuntimeVersionArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.lambda.LambdaRuntimeVersionArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.lambda.LambdaRuntimeVersionArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### LambdaWebFunctionArnComponents <a name="LambdaWebFunctionArnComponents" id="@cdk_utils/iam.lambda.LambdaWebFunctionArnComponents"></a>
 
 Parsed components of a webFunction ARN.
@@ -2335,7 +2831,10 @@ new lambda.LambdaActions()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.actionGetPolicy">actionGetPolicy</a></code> | <code>string</code> | [Read] lambda:GetPolicy. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.actionGetProvisionedConcurrencyConfig">actionGetProvisionedConcurrencyConfig</a></code> | <code>string</code> | [Read] lambda:GetProvisionedConcurrencyConfig. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.actionGetResourcePolicy">actionGetResourcePolicy</a></code> | <code>string</code> | [Read] lambda:GetResourcePolicy. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.actionGetRuntime">actionGetRuntime</a></code> | <code>string</code> | [Read] lambda:GetRuntime. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.actionGetRuntimeAlias">actionGetRuntimeAlias</a></code> | <code>string</code> | [Read] lambda:GetRuntimeAlias. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.actionGetRuntimeManagementConfig">actionGetRuntimeManagementConfig</a></code> | <code>string</code> | [Read] lambda:GetRuntimeManagementConfig. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.actionGetRuntimeVersion">actionGetRuntimeVersion</a></code> | <code>string</code> | [Read] lambda:GetRuntimeVersion. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.actionGetWebAccountSettings">actionGetWebAccountSettings</a></code> | <code>string</code> | [Read] lambda:GetWebAccountSettings. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.actionGetWebFunction">actionGetWebFunction</a></code> | <code>string</code> | [Read] lambda:GetWebFunction. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.actionGetWebFunctionEndpoint">actionGetWebFunctionEndpoint</a></code> | <code>string</code> | [Read] lambda:GetWebFunctionEndpoint. |
@@ -2347,6 +2846,8 @@ new lambda.LambdaActions()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.AssociateRuntimeAlias">AssociateRuntimeAlias</a></code> | <code>string</code> | [Write] lambda:AssociateRuntimeAlias. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.AssociateRuntimeVersion">AssociateRuntimeVersion</a></code> | <code>string</code> | [Write] lambda:AssociateRuntimeVersion. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.CheckpointDurableExecution">CheckpointDurableExecution</a></code> | <code>string</code> | [Write] lambda:CheckpointDurableExecution. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.ConnectMicrovm">ConnectMicrovm</a></code> | <code>string</code> | [Write] lambda:ConnectMicrovm. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.CreateAlias">CreateAlias</a></code> | <code>string</code> | [Write] lambda:CreateAlias. |
@@ -2359,12 +2860,16 @@ new lambda.LambdaActions()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.CreateMicrovmImage">CreateMicrovmImage</a></code> | <code>string</code> | [Write] lambda:CreateMicrovmImage. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.CreateMicrovmShellAuthToken">CreateMicrovmShellAuthToken</a></code> | <code>string</code> | [Write] lambda:CreateMicrovmShellAuthToken. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.CreateNetworkConnector">CreateNetworkConnector</a></code> | <code>string</code> | [Write] lambda:CreateNetworkConnector. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.CreateRuntime">CreateRuntime</a></code> | <code>string</code> | [Write] lambda:CreateRuntime. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.CreateRuntimeAlias">CreateRuntimeAlias</a></code> | <code>string</code> | [Write] lambda:CreateRuntimeAlias. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.CreateRuntimeVersion">CreateRuntimeVersion</a></code> | <code>string</code> | [Write] lambda:CreateRuntimeVersion. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.CreateWebFunction">CreateWebFunction</a></code> | <code>string</code> | [Write] lambda:CreateWebFunction. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.CreateWebFunctionEndpoint">CreateWebFunctionEndpoint</a></code> | <code>string</code> | [Write] lambda:CreateWebFunctionEndpoint. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.CreateWebFunctionRevision">CreateWebFunctionRevision</a></code> | <code>string</code> | [Write] lambda:CreateWebFunctionRevision. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.DeleteAlias">DeleteAlias</a></code> | <code>string</code> | [Write] lambda:DeleteAlias. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.DeleteCapacityProvider">DeleteCapacityProvider</a></code> | <code>string</code> | [Write] lambda:DeleteCapacityProvider. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.DeleteCodeSigningConfig">DeleteCodeSigningConfig</a></code> | <code>string</code> | [Write] lambda:DeleteCodeSigningConfig. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.DeleteDurableExecution">DeleteDurableExecution</a></code> | <code>string</code> | [Write] lambda:DeleteDurableExecution. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.DeleteEventSourceMapping">DeleteEventSourceMapping</a></code> | <code>string</code> | [Write] lambda:DeleteEventSourceMapping. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.DeleteFunction">DeleteFunction</a></code> | <code>string</code> | [Write] lambda:DeleteFunction. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.DeleteFunctionCodeSigningConfig">DeleteFunctionCodeSigningConfig</a></code> | <code>string</code> | [Write] lambda:DeleteFunctionCodeSigningConfig. |
@@ -2377,6 +2882,9 @@ new lambda.LambdaActions()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.DeleteNetworkConnector">DeleteNetworkConnector</a></code> | <code>string</code> | [Write] lambda:DeleteNetworkConnector. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.DeleteProvisionedConcurrencyConfig">DeleteProvisionedConcurrencyConfig</a></code> | <code>string</code> | [Write] lambda:DeleteProvisionedConcurrencyConfig. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.DeleteResourcePolicy">DeleteResourcePolicy</a></code> | <code>string</code> | [PermissionManagement] lambda:DeleteResourcePolicy. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.DeleteRuntime">DeleteRuntime</a></code> | <code>string</code> | [Write] lambda:DeleteRuntime. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.DeleteRuntimeAlias">DeleteRuntimeAlias</a></code> | <code>string</code> | [Write] lambda:DeleteRuntimeAlias. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.DeleteRuntimeVersion">DeleteRuntimeVersion</a></code> | <code>string</code> | [Write] lambda:DeleteRuntimeVersion. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.DeleteWebFunction">DeleteWebFunction</a></code> | <code>string</code> | [Write] lambda:DeleteWebFunction. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.DeleteWebFunctionEndpoint">DeleteWebFunctionEndpoint</a></code> | <code>string</code> | [Write] lambda:DeleteWebFunctionEndpoint. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.DeleteWebFunctionRevision">DeleteWebFunctionRevision</a></code> | <code>string</code> | [Write] lambda:DeleteWebFunctionRevision. |
@@ -2407,6 +2915,9 @@ new lambda.LambdaActions()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.ListNetworkConnectors">ListNetworkConnectors</a></code> | <code>string</code> | [List] lambda:ListNetworkConnectors. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.ListNetworkConnectorVersions">ListNetworkConnectorVersions</a></code> | <code>string</code> | [List] lambda:ListNetworkConnectorVersions. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.ListProvisionedConcurrencyConfigs">ListProvisionedConcurrencyConfigs</a></code> | <code>string</code> | [List] lambda:ListProvisionedConcurrencyConfigs. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.ListRuntimeAliases">ListRuntimeAliases</a></code> | <code>string</code> | [List] lambda:ListRuntimeAliases. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.ListRuntimes">ListRuntimes</a></code> | <code>string</code> | [List] lambda:ListRuntimes. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.ListRuntimeVersions">ListRuntimeVersions</a></code> | <code>string</code> | [List] lambda:ListRuntimeVersions. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.ListTags">ListTags</a></code> | <code>string</code> | [Read] lambda:ListTags. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.ListVersionsByFunction">ListVersionsByFunction</a></code> | <code>string</code> | [List] lambda:ListVersionsByFunction. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.ListWebFunctionEndpoints">ListWebFunctionEndpoints</a></code> | <code>string</code> | [List] lambda:ListWebFunctionEndpoints. |
@@ -2414,6 +2925,7 @@ new lambda.LambdaActions()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.ListWebFunctions">ListWebFunctions</a></code> | <code>string</code> | [List] lambda:ListWebFunctions. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.PassCapacityProvider">PassCapacityProvider</a></code> | <code>string</code> | [Write] lambda:PassCapacityProvider. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.PassNetworkConnector">PassNetworkConnector</a></code> | <code>string</code> | [Write] lambda:PassNetworkConnector. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.PauseDurableExecution">PauseDurableExecution</a></code> | <code>string</code> | [Write] lambda:PauseDurableExecution. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.PublishLayerVersion">PublishLayerVersion</a></code> | <code>string</code> | [Write] lambda:PublishLayerVersion. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.PublishVersion">PublishVersion</a></code> | <code>string</code> | [Write] lambda:PublishVersion. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.PutFunctionCodeSigningConfig">PutFunctionCodeSigningConfig</a></code> | <code>string</code> | [Write] lambda:PutFunctionCodeSigningConfig. |
@@ -2426,6 +2938,8 @@ new lambda.LambdaActions()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.PutRuntimeManagementConfig">PutRuntimeManagementConfig</a></code> | <code>string</code> | [Write] lambda:PutRuntimeManagementConfig. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.RemoveLayerVersionPermission">RemoveLayerVersionPermission</a></code> | <code>string</code> | [PermissionManagement] lambda:RemoveLayerVersionPermission. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.RemovePermission">RemovePermission</a></code> | <code>string</code> | [PermissionManagement] lambda:RemovePermission. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.RestoreRuntime">RestoreRuntime</a></code> | <code>string</code> | [Write] lambda:RestoreRuntime. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.ResumeDurableExecution">ResumeDurableExecution</a></code> | <code>string</code> | [Write] lambda:ResumeDurableExecution. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.ResumeMicrovm">ResumeMicrovm</a></code> | <code>string</code> | [Write] lambda:ResumeMicrovm. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.RunMicrovm">RunMicrovm</a></code> | <code>string</code> | [Write] lambda:RunMicrovm. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.SendDurableExecutionCallbackFailure">SendDurableExecutionCallbackFailure</a></code> | <code>string</code> | [Write] lambda:SendDurableExecutionCallbackFailure. |
@@ -2449,6 +2963,9 @@ new lambda.LambdaActions()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.UpdateMicrovmImage">UpdateMicrovmImage</a></code> | <code>string</code> | [Write] lambda:UpdateMicrovmImage. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.UpdateMicrovmImageVersion">UpdateMicrovmImageVersion</a></code> | <code>string</code> | [Write] lambda:UpdateMicrovmImageVersion. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.UpdateNetworkConnector">UpdateNetworkConnector</a></code> | <code>string</code> | [Write] lambda:UpdateNetworkConnector. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.UpdateRuntime">UpdateRuntime</a></code> | <code>string</code> | [Write] lambda:UpdateRuntime. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.UpdateRuntimeAlias">UpdateRuntimeAlias</a></code> | <code>string</code> | [Write] lambda:UpdateRuntimeAlias. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.UpdateRuntimeVersion">UpdateRuntimeVersion</a></code> | <code>string</code> | [Write] lambda:UpdateRuntimeVersion. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaActions.property.UpdateWebFunctionEndpoint">UpdateWebFunctionEndpoint</a></code> | <code>string</code> | [Write] lambda:UpdateWebFunctionEndpoint. |
 
 ---
@@ -2765,6 +3282,30 @@ public readonly actionGetResourcePolicy: string;
 
 ---
 
+##### `actionGetRuntime`<sup>Required</sup> <a name="actionGetRuntime" id="@cdk_utils/iam.lambda.LambdaActions.property.actionGetRuntime"></a>
+
+```typescript
+public readonly actionGetRuntime: string;
+```
+
+- *Type:* string
+
+[Read] lambda:GetRuntime.
+
+---
+
+##### `actionGetRuntimeAlias`<sup>Required</sup> <a name="actionGetRuntimeAlias" id="@cdk_utils/iam.lambda.LambdaActions.property.actionGetRuntimeAlias"></a>
+
+```typescript
+public readonly actionGetRuntimeAlias: string;
+```
+
+- *Type:* string
+
+[Read] lambda:GetRuntimeAlias.
+
+---
+
 ##### `actionGetRuntimeManagementConfig`<sup>Required</sup> <a name="actionGetRuntimeManagementConfig" id="@cdk_utils/iam.lambda.LambdaActions.property.actionGetRuntimeManagementConfig"></a>
 
 ```typescript
@@ -2774,6 +3315,18 @@ public readonly actionGetRuntimeManagementConfig: string;
 - *Type:* string
 
 [Read] lambda:GetRuntimeManagementConfig.
+
+---
+
+##### `actionGetRuntimeVersion`<sup>Required</sup> <a name="actionGetRuntimeVersion" id="@cdk_utils/iam.lambda.LambdaActions.property.actionGetRuntimeVersion"></a>
+
+```typescript
+public readonly actionGetRuntimeVersion: string;
+```
+
+- *Type:* string
+
+[Read] lambda:GetRuntimeVersion.
 
 ---
 
@@ -2906,6 +3459,30 @@ public readonly AllWriteActions: string[];
 - *Type:* string[]
 
 All write-level actions.
+
+---
+
+##### `AssociateRuntimeAlias`<sup>Required</sup> <a name="AssociateRuntimeAlias" id="@cdk_utils/iam.lambda.LambdaActions.property.AssociateRuntimeAlias"></a>
+
+```typescript
+public readonly AssociateRuntimeAlias: string;
+```
+
+- *Type:* string
+
+[Write] lambda:AssociateRuntimeAlias.
+
+---
+
+##### `AssociateRuntimeVersion`<sup>Required</sup> <a name="AssociateRuntimeVersion" id="@cdk_utils/iam.lambda.LambdaActions.property.AssociateRuntimeVersion"></a>
+
+```typescript
+public readonly AssociateRuntimeVersion: string;
+```
+
+- *Type:* string
+
+[Write] lambda:AssociateRuntimeVersion.
 
 ---
 
@@ -3053,6 +3630,42 @@ public readonly CreateNetworkConnector: string;
 
 ---
 
+##### `CreateRuntime`<sup>Required</sup> <a name="CreateRuntime" id="@cdk_utils/iam.lambda.LambdaActions.property.CreateRuntime"></a>
+
+```typescript
+public readonly CreateRuntime: string;
+```
+
+- *Type:* string
+
+[Write] lambda:CreateRuntime.
+
+---
+
+##### `CreateRuntimeAlias`<sup>Required</sup> <a name="CreateRuntimeAlias" id="@cdk_utils/iam.lambda.LambdaActions.property.CreateRuntimeAlias"></a>
+
+```typescript
+public readonly CreateRuntimeAlias: string;
+```
+
+- *Type:* string
+
+[Write] lambda:CreateRuntimeAlias.
+
+---
+
+##### `CreateRuntimeVersion`<sup>Required</sup> <a name="CreateRuntimeVersion" id="@cdk_utils/iam.lambda.LambdaActions.property.CreateRuntimeVersion"></a>
+
+```typescript
+public readonly CreateRuntimeVersion: string;
+```
+
+- *Type:* string
+
+[Write] lambda:CreateRuntimeVersion.
+
+---
+
 ##### `CreateWebFunction`<sup>Required</sup> <a name="CreateWebFunction" id="@cdk_utils/iam.lambda.LambdaActions.property.CreateWebFunction"></a>
 
 ```typescript
@@ -3122,6 +3735,18 @@ public readonly DeleteCodeSigningConfig: string;
 - *Type:* string
 
 [Write] lambda:DeleteCodeSigningConfig.
+
+---
+
+##### `DeleteDurableExecution`<sup>Required</sup> <a name="DeleteDurableExecution" id="@cdk_utils/iam.lambda.LambdaActions.property.DeleteDurableExecution"></a>
+
+```typescript
+public readonly DeleteDurableExecution: string;
+```
+
+- *Type:* string
+
+[Write] lambda:DeleteDurableExecution.
 
 ---
 
@@ -3266,6 +3891,42 @@ public readonly DeleteResourcePolicy: string;
 - *Type:* string
 
 [PermissionManagement] lambda:DeleteResourcePolicy.
+
+---
+
+##### `DeleteRuntime`<sup>Required</sup> <a name="DeleteRuntime" id="@cdk_utils/iam.lambda.LambdaActions.property.DeleteRuntime"></a>
+
+```typescript
+public readonly DeleteRuntime: string;
+```
+
+- *Type:* string
+
+[Write] lambda:DeleteRuntime.
+
+---
+
+##### `DeleteRuntimeAlias`<sup>Required</sup> <a name="DeleteRuntimeAlias" id="@cdk_utils/iam.lambda.LambdaActions.property.DeleteRuntimeAlias"></a>
+
+```typescript
+public readonly DeleteRuntimeAlias: string;
+```
+
+- *Type:* string
+
+[Write] lambda:DeleteRuntimeAlias.
+
+---
+
+##### `DeleteRuntimeVersion`<sup>Required</sup> <a name="DeleteRuntimeVersion" id="@cdk_utils/iam.lambda.LambdaActions.property.DeleteRuntimeVersion"></a>
+
+```typescript
+public readonly DeleteRuntimeVersion: string;
+```
+
+- *Type:* string
+
+[Write] lambda:DeleteRuntimeVersion.
 
 ---
 
@@ -3629,6 +4290,42 @@ public readonly ListProvisionedConcurrencyConfigs: string;
 
 ---
 
+##### `ListRuntimeAliases`<sup>Required</sup> <a name="ListRuntimeAliases" id="@cdk_utils/iam.lambda.LambdaActions.property.ListRuntimeAliases"></a>
+
+```typescript
+public readonly ListRuntimeAliases: string;
+```
+
+- *Type:* string
+
+[List] lambda:ListRuntimeAliases.
+
+---
+
+##### `ListRuntimes`<sup>Required</sup> <a name="ListRuntimes" id="@cdk_utils/iam.lambda.LambdaActions.property.ListRuntimes"></a>
+
+```typescript
+public readonly ListRuntimes: string;
+```
+
+- *Type:* string
+
+[List] lambda:ListRuntimes.
+
+---
+
+##### `ListRuntimeVersions`<sup>Required</sup> <a name="ListRuntimeVersions" id="@cdk_utils/iam.lambda.LambdaActions.property.ListRuntimeVersions"></a>
+
+```typescript
+public readonly ListRuntimeVersions: string;
+```
+
+- *Type:* string
+
+[List] lambda:ListRuntimeVersions.
+
+---
+
 ##### `ListTags`<sup>Required</sup> <a name="ListTags" id="@cdk_utils/iam.lambda.LambdaActions.property.ListTags"></a>
 
 ```typescript
@@ -3710,6 +4407,18 @@ public readonly PassNetworkConnector: string;
 - *Type:* string
 
 [Write] lambda:PassNetworkConnector.
+
+---
+
+##### `PauseDurableExecution`<sup>Required</sup> <a name="PauseDurableExecution" id="@cdk_utils/iam.lambda.LambdaActions.property.PauseDurableExecution"></a>
+
+```typescript
+public readonly PauseDurableExecution: string;
+```
+
+- *Type:* string
+
+[Write] lambda:PauseDurableExecution.
 
 ---
 
@@ -3854,6 +4563,30 @@ public readonly RemovePermission: string;
 - *Type:* string
 
 [PermissionManagement] lambda:RemovePermission.
+
+---
+
+##### `RestoreRuntime`<sup>Required</sup> <a name="RestoreRuntime" id="@cdk_utils/iam.lambda.LambdaActions.property.RestoreRuntime"></a>
+
+```typescript
+public readonly RestoreRuntime: string;
+```
+
+- *Type:* string
+
+[Write] lambda:RestoreRuntime.
+
+---
+
+##### `ResumeDurableExecution`<sup>Required</sup> <a name="ResumeDurableExecution" id="@cdk_utils/iam.lambda.LambdaActions.property.ResumeDurableExecution"></a>
+
+```typescript
+public readonly ResumeDurableExecution: string;
+```
+
+- *Type:* string
+
+[Write] lambda:ResumeDurableExecution.
 
 ---
 
@@ -4130,6 +4863,42 @@ public readonly UpdateNetworkConnector: string;
 - *Type:* string
 
 [Write] lambda:UpdateNetworkConnector.
+
+---
+
+##### `UpdateRuntime`<sup>Required</sup> <a name="UpdateRuntime" id="@cdk_utils/iam.lambda.LambdaActions.property.UpdateRuntime"></a>
+
+```typescript
+public readonly UpdateRuntime: string;
+```
+
+- *Type:* string
+
+[Write] lambda:UpdateRuntime.
+
+---
+
+##### `UpdateRuntimeAlias`<sup>Required</sup> <a name="UpdateRuntimeAlias" id="@cdk_utils/iam.lambda.LambdaActions.property.UpdateRuntimeAlias"></a>
+
+```typescript
+public readonly UpdateRuntimeAlias: string;
+```
+
+- *Type:* string
+
+[Write] lambda:UpdateRuntimeAlias.
+
+---
+
+##### `UpdateRuntimeVersion`<sup>Required</sup> <a name="UpdateRuntimeVersion" id="@cdk_utils/iam.lambda.LambdaActions.property.UpdateRuntimeVersion"></a>
+
+```typescript
+public readonly UpdateRuntimeVersion: string;
+```
+
+- *Type:* string
+
+[Write] lambda:UpdateRuntimeVersion.
 
 ---
 
@@ -4462,6 +5231,7 @@ Generates a condition block for `lambda:VpcIds`.
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.CreateFunctionUrlConfigConditionKeys">CreateFunctionUrlConfigConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateFunctionUrlConfig action. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.CreateMicrovmImageConditionKeys">CreateMicrovmImageConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateMicrovmImage action. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.CreateNetworkConnectorConditionKeys">CreateNetworkConnectorConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateNetworkConnector action. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.CreateRuntimeConditionKeys">CreateRuntimeConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateRuntime action. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.CreateWebFunctionConditionKeys">CreateWebFunctionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateWebFunction action. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.CreateWebFunctionEndpointConditionKeys">CreateWebFunctionEndpointConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateWebFunctionEndpoint action. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaConditions.property.DeleteEventSourceMappingConditionKeys">DeleteEventSourceMappingConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteEventSourceMapping action. |
@@ -4673,6 +5443,18 @@ public readonly CreateNetworkConnectorConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CreateNetworkConnector action.
+
+---
+
+##### `CreateRuntimeConditionKeys`<sup>Required</sup> <a name="CreateRuntimeConditionKeys" id="@cdk_utils/iam.lambda.LambdaConditions.property.CreateRuntimeConditionKeys"></a>
+
+```typescript
+public readonly CreateRuntimeConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateRuntime action.
 
 ---
 
@@ -5086,12 +5868,16 @@ new lambda.LambdaOperations()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.CreateMicrovmImage">CreateMicrovmImage</a></code> | <code>string[]</code> | IAM actions required for the CreateMicrovmImage API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.CreateMicrovmShellAuthToken">CreateMicrovmShellAuthToken</a></code> | <code>string[]</code> | IAM actions required for the CreateMicrovmShellAuthToken API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.CreateNetworkConnector">CreateNetworkConnector</a></code> | <code>string[]</code> | IAM actions required for the CreateNetworkConnector API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.CreateRuntime">CreateRuntime</a></code> | <code>string[]</code> | IAM actions required for the CreateRuntime API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.CreateRuntimeAlias">CreateRuntimeAlias</a></code> | <code>string[]</code> | IAM actions required for the CreateRuntimeAlias API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.CreateRuntimeVersion">CreateRuntimeVersion</a></code> | <code>string[]</code> | IAM actions required for the CreateRuntimeVersion API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.CreateWebFunction">CreateWebFunction</a></code> | <code>string[]</code> | IAM actions required for the CreateWebFunction API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.CreateWebFunctionEndpoint">CreateWebFunctionEndpoint</a></code> | <code>string[]</code> | IAM actions required for the CreateWebFunctionEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.CreateWebFunctionRevision">CreateWebFunctionRevision</a></code> | <code>string[]</code> | IAM actions required for the CreateWebFunctionRevision API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteAlias">DeleteAlias</a></code> | <code>string[]</code> | IAM actions required for the DeleteAlias API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteCapacityProvider">DeleteCapacityProvider</a></code> | <code>string[]</code> | IAM actions required for the DeleteCapacityProvider API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteCodeSigningConfig">DeleteCodeSigningConfig</a></code> | <code>string[]</code> | IAM actions required for the DeleteCodeSigningConfig API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteDurableExecution">DeleteDurableExecution</a></code> | <code>string[]</code> | IAM actions required for the DeleteDurableExecution API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteEventSourceMapping">DeleteEventSourceMapping</a></code> | <code>string[]</code> | IAM actions required for the DeleteEventSourceMapping API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteFunction">DeleteFunction</a></code> | <code>string[]</code> | IAM actions required for the DeleteFunction API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteFunctionCodeSigningConfig">DeleteFunctionCodeSigningConfig</a></code> | <code>string[]</code> | IAM actions required for the DeleteFunctionCodeSigningConfig API call. |
@@ -5104,6 +5890,9 @@ new lambda.LambdaOperations()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteNetworkConnector">DeleteNetworkConnector</a></code> | <code>string[]</code> | IAM actions required for the DeleteNetworkConnector API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteProvisionedConcurrencyConfig">DeleteProvisionedConcurrencyConfig</a></code> | <code>string[]</code> | IAM actions required for the DeleteProvisionedConcurrencyConfig API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteResourcePolicy">DeleteResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the DeleteResourcePolicy API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteRuntime">DeleteRuntime</a></code> | <code>string[]</code> | IAM actions required for the DeleteRuntime API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteRuntimeAlias">DeleteRuntimeAlias</a></code> | <code>string[]</code> | IAM actions required for the DeleteRuntimeAlias API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteRuntimeVersion">DeleteRuntimeVersion</a></code> | <code>string[]</code> | IAM actions required for the DeleteRuntimeVersion API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteWebFunction">DeleteWebFunction</a></code> | <code>string[]</code> | IAM actions required for the DeleteWebFunction API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteWebFunctionEndpoint">DeleteWebFunctionEndpoint</a></code> | <code>string[]</code> | IAM actions required for the DeleteWebFunctionEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.DeleteWebFunctionRevision">DeleteWebFunctionRevision</a></code> | <code>string[]</code> | IAM actions required for the DeleteWebFunctionRevision API call. |
@@ -5132,6 +5921,9 @@ new lambda.LambdaOperations()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.ListNetworkConnectors">ListNetworkConnectors</a></code> | <code>string[]</code> | IAM actions required for the ListNetworkConnectors API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.ListNetworkConnectorVersions">ListNetworkConnectorVersions</a></code> | <code>string[]</code> | IAM actions required for the ListNetworkConnectorVersions API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.ListProvisionedConcurrencyConfigs">ListProvisionedConcurrencyConfigs</a></code> | <code>string[]</code> | IAM actions required for the ListProvisionedConcurrencyConfigs API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.ListRuntimeAliases">ListRuntimeAliases</a></code> | <code>string[]</code> | IAM actions required for the ListRuntimeAliases API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.ListRuntimes">ListRuntimes</a></code> | <code>string[]</code> | IAM actions required for the ListRuntimes API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.ListRuntimeVersions">ListRuntimeVersions</a></code> | <code>string[]</code> | IAM actions required for the ListRuntimeVersions API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.ListTags">ListTags</a></code> | <code>string[]</code> | IAM actions required for the ListTags API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.ListVersionsByFunction">ListVersionsByFunction</a></code> | <code>string[]</code> | IAM actions required for the ListVersionsByFunction API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.ListWebFunctionEndpoints">ListWebFunctionEndpoints</a></code> | <code>string[]</code> | IAM actions required for the ListWebFunctionEndpoints API call. |
@@ -5165,11 +5957,15 @@ new lambda.LambdaOperations()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetPolicy">opGetPolicy</a></code> | <code>string[]</code> | IAM actions required for the GetPolicy API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetProvisionedConcurrencyConfig">opGetProvisionedConcurrencyConfig</a></code> | <code>string[]</code> | IAM actions required for the GetProvisionedConcurrencyConfig API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetResourcePolicy">opGetResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the GetResourcePolicy API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetRuntime">opGetRuntime</a></code> | <code>string[]</code> | IAM actions required for the GetRuntime API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetRuntimeAlias">opGetRuntimeAlias</a></code> | <code>string[]</code> | IAM actions required for the GetRuntimeAlias API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetRuntimeManagementConfig">opGetRuntimeManagementConfig</a></code> | <code>string[]</code> | IAM actions required for the GetRuntimeManagementConfig API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetRuntimeVersion">opGetRuntimeVersion</a></code> | <code>string[]</code> | IAM actions required for the GetRuntimeVersion API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetWebAccountSettings">opGetWebAccountSettings</a></code> | <code>string[]</code> | IAM actions required for the GetWebAccountSettings API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetWebFunction">opGetWebFunction</a></code> | <code>string[]</code> | IAM actions required for the GetWebFunction API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetWebFunctionEndpoint">opGetWebFunctionEndpoint</a></code> | <code>string[]</code> | IAM actions required for the GetWebFunctionEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.opGetWebFunctionRevision">opGetWebFunctionRevision</a></code> | <code>string[]</code> | IAM actions required for the GetWebFunctionRevision API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.PauseDurableExecution">PauseDurableExecution</a></code> | <code>string[]</code> | IAM actions required for the PauseDurableExecution API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.PublishLayerVersion">PublishLayerVersion</a></code> | <code>string[]</code> | IAM actions required for the PublishLayerVersion API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.PublishVersion">PublishVersion</a></code> | <code>string[]</code> | IAM actions required for the PublishVersion API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.PutFunctionCodeSigningConfig">PutFunctionCodeSigningConfig</a></code> | <code>string[]</code> | IAM actions required for the PutFunctionCodeSigningConfig API call. |
@@ -5183,6 +5979,8 @@ new lambda.LambdaOperations()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.RemoveEventSource">RemoveEventSource</a></code> | <code>string[]</code> | IAM actions required for the RemoveEventSource API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.RemoveLayerVersionPermission">RemoveLayerVersionPermission</a></code> | <code>string[]</code> | IAM actions required for the RemoveLayerVersionPermission API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.RemovePermission">RemovePermission</a></code> | <code>string[]</code> | IAM actions required for the RemovePermission API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.RestoreRuntime">RestoreRuntime</a></code> | <code>string[]</code> | IAM actions required for the RestoreRuntime API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.ResumeDurableExecution">ResumeDurableExecution</a></code> | <code>string[]</code> | IAM actions required for the ResumeDurableExecution API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.ResumeMicrovm">ResumeMicrovm</a></code> | <code>string[]</code> | IAM actions required for the ResumeMicrovm API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.RunMicrovm">RunMicrovm</a></code> | <code>string[]</code> | IAM actions required for the RunMicrovm API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.SendDurableExecutionCallbackFailure">SendDurableExecutionCallbackFailure</a></code> | <code>string[]</code> | IAM actions required for the SendDurableExecutionCallbackFailure API call. |
@@ -5204,6 +6002,9 @@ new lambda.LambdaOperations()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.UpdateMicrovmImage">UpdateMicrovmImage</a></code> | <code>string[]</code> | IAM actions required for the UpdateMicrovmImage API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.UpdateMicrovmImageVersion">UpdateMicrovmImageVersion</a></code> | <code>string[]</code> | IAM actions required for the UpdateMicrovmImageVersion API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.UpdateNetworkConnector">UpdateNetworkConnector</a></code> | <code>string[]</code> | IAM actions required for the UpdateNetworkConnector API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.UpdateRuntime">UpdateRuntime</a></code> | <code>string[]</code> | IAM actions required for the UpdateRuntime API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.UpdateRuntimeAlias">UpdateRuntimeAlias</a></code> | <code>string[]</code> | IAM actions required for the UpdateRuntimeAlias API call. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.UpdateRuntimeVersion">UpdateRuntimeVersion</a></code> | <code>string[]</code> | IAM actions required for the UpdateRuntimeVersion API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.UpdateWebFunctionEndpoint">UpdateWebFunctionEndpoint</a></code> | <code>string[]</code> | IAM actions required for the UpdateWebFunctionEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaOperations.property.UploadFunction">UploadFunction</a></code> | <code>string[]</code> | IAM actions required for the UploadFunction API call. |
 
@@ -5377,6 +6178,42 @@ IAM actions required for the CreateNetworkConnector API call.
 
 ---
 
+##### `CreateRuntime`<sup>Required</sup> <a name="CreateRuntime" id="@cdk_utils/iam.lambda.LambdaOperations.property.CreateRuntime"></a>
+
+```typescript
+public readonly CreateRuntime: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateRuntime API call.
+
+---
+
+##### `CreateRuntimeAlias`<sup>Required</sup> <a name="CreateRuntimeAlias" id="@cdk_utils/iam.lambda.LambdaOperations.property.CreateRuntimeAlias"></a>
+
+```typescript
+public readonly CreateRuntimeAlias: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateRuntimeAlias API call.
+
+---
+
+##### `CreateRuntimeVersion`<sup>Required</sup> <a name="CreateRuntimeVersion" id="@cdk_utils/iam.lambda.LambdaOperations.property.CreateRuntimeVersion"></a>
+
+```typescript
+public readonly CreateRuntimeVersion: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateRuntimeVersion API call.
+
+---
+
 ##### `CreateWebFunction`<sup>Required</sup> <a name="CreateWebFunction" id="@cdk_utils/iam.lambda.LambdaOperations.property.CreateWebFunction"></a>
 
 ```typescript
@@ -5446,6 +6283,18 @@ public readonly DeleteCodeSigningConfig: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteCodeSigningConfig API call.
+
+---
+
+##### `DeleteDurableExecution`<sup>Required</sup> <a name="DeleteDurableExecution" id="@cdk_utils/iam.lambda.LambdaOperations.property.DeleteDurableExecution"></a>
+
+```typescript
+public readonly DeleteDurableExecution: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteDurableExecution API call.
 
 ---
 
@@ -5590,6 +6439,42 @@ public readonly DeleteResourcePolicy: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteResourcePolicy API call.
+
+---
+
+##### `DeleteRuntime`<sup>Required</sup> <a name="DeleteRuntime" id="@cdk_utils/iam.lambda.LambdaOperations.property.DeleteRuntime"></a>
+
+```typescript
+public readonly DeleteRuntime: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteRuntime API call.
+
+---
+
+##### `DeleteRuntimeAlias`<sup>Required</sup> <a name="DeleteRuntimeAlias" id="@cdk_utils/iam.lambda.LambdaOperations.property.DeleteRuntimeAlias"></a>
+
+```typescript
+public readonly DeleteRuntimeAlias: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteRuntimeAlias API call.
+
+---
+
+##### `DeleteRuntimeVersion`<sup>Required</sup> <a name="DeleteRuntimeVersion" id="@cdk_utils/iam.lambda.LambdaOperations.property.DeleteRuntimeVersion"></a>
+
+```typescript
+public readonly DeleteRuntimeVersion: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteRuntimeVersion API call.
 
 ---
 
@@ -5926,6 +6811,42 @@ public readonly ListProvisionedConcurrencyConfigs: string[];
 - *Type:* string[]
 
 IAM actions required for the ListProvisionedConcurrencyConfigs API call.
+
+---
+
+##### `ListRuntimeAliases`<sup>Required</sup> <a name="ListRuntimeAliases" id="@cdk_utils/iam.lambda.LambdaOperations.property.ListRuntimeAliases"></a>
+
+```typescript
+public readonly ListRuntimeAliases: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListRuntimeAliases API call.
+
+---
+
+##### `ListRuntimes`<sup>Required</sup> <a name="ListRuntimes" id="@cdk_utils/iam.lambda.LambdaOperations.property.ListRuntimes"></a>
+
+```typescript
+public readonly ListRuntimes: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListRuntimes API call.
+
+---
+
+##### `ListRuntimeVersions`<sup>Required</sup> <a name="ListRuntimeVersions" id="@cdk_utils/iam.lambda.LambdaOperations.property.ListRuntimeVersions"></a>
+
+```typescript
+public readonly ListRuntimeVersions: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListRuntimeVersions API call.
 
 ---
 
@@ -6325,6 +7246,30 @@ IAM actions required for the GetResourcePolicy API call.
 
 ---
 
+##### `opGetRuntime`<sup>Required</sup> <a name="opGetRuntime" id="@cdk_utils/iam.lambda.LambdaOperations.property.opGetRuntime"></a>
+
+```typescript
+public readonly opGetRuntime: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetRuntime API call.
+
+---
+
+##### `opGetRuntimeAlias`<sup>Required</sup> <a name="opGetRuntimeAlias" id="@cdk_utils/iam.lambda.LambdaOperations.property.opGetRuntimeAlias"></a>
+
+```typescript
+public readonly opGetRuntimeAlias: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetRuntimeAlias API call.
+
+---
+
 ##### `opGetRuntimeManagementConfig`<sup>Required</sup> <a name="opGetRuntimeManagementConfig" id="@cdk_utils/iam.lambda.LambdaOperations.property.opGetRuntimeManagementConfig"></a>
 
 ```typescript
@@ -6334,6 +7279,18 @@ public readonly opGetRuntimeManagementConfig: string[];
 - *Type:* string[]
 
 IAM actions required for the GetRuntimeManagementConfig API call.
+
+---
+
+##### `opGetRuntimeVersion`<sup>Required</sup> <a name="opGetRuntimeVersion" id="@cdk_utils/iam.lambda.LambdaOperations.property.opGetRuntimeVersion"></a>
+
+```typescript
+public readonly opGetRuntimeVersion: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetRuntimeVersion API call.
 
 ---
 
@@ -6382,6 +7339,18 @@ public readonly opGetWebFunctionRevision: string[];
 - *Type:* string[]
 
 IAM actions required for the GetWebFunctionRevision API call.
+
+---
+
+##### `PauseDurableExecution`<sup>Required</sup> <a name="PauseDurableExecution" id="@cdk_utils/iam.lambda.LambdaOperations.property.PauseDurableExecution"></a>
+
+```typescript
+public readonly PauseDurableExecution: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the PauseDurableExecution API call.
 
 ---
 
@@ -6538,6 +7507,30 @@ public readonly RemovePermission: string[];
 - *Type:* string[]
 
 IAM actions required for the RemovePermission API call.
+
+---
+
+##### `RestoreRuntime`<sup>Required</sup> <a name="RestoreRuntime" id="@cdk_utils/iam.lambda.LambdaOperations.property.RestoreRuntime"></a>
+
+```typescript
+public readonly RestoreRuntime: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the RestoreRuntime API call.
+
+---
+
+##### `ResumeDurableExecution`<sup>Required</sup> <a name="ResumeDurableExecution" id="@cdk_utils/iam.lambda.LambdaOperations.property.ResumeDurableExecution"></a>
+
+```typescript
+public readonly ResumeDurableExecution: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ResumeDurableExecution API call.
 
 ---
 
@@ -6793,6 +7786,42 @@ IAM actions required for the UpdateNetworkConnector API call.
 
 ---
 
+##### `UpdateRuntime`<sup>Required</sup> <a name="UpdateRuntime" id="@cdk_utils/iam.lambda.LambdaOperations.property.UpdateRuntime"></a>
+
+```typescript
+public readonly UpdateRuntime: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateRuntime API call.
+
+---
+
+##### `UpdateRuntimeAlias`<sup>Required</sup> <a name="UpdateRuntimeAlias" id="@cdk_utils/iam.lambda.LambdaOperations.property.UpdateRuntimeAlias"></a>
+
+```typescript
+public readonly UpdateRuntimeAlias: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateRuntimeAlias API call.
+
+---
+
+##### `UpdateRuntimeVersion`<sup>Required</sup> <a name="UpdateRuntimeVersion" id="@cdk_utils/iam.lambda.LambdaOperations.property.UpdateRuntimeVersion"></a>
+
+```typescript
+public readonly UpdateRuntimeVersion: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateRuntimeVersion API call.
+
+---
+
 ##### `UpdateWebFunctionEndpoint`<sup>Required</sup> <a name="UpdateWebFunctionEndpoint" id="@cdk_utils/iam.lambda.LambdaOperations.property.UpdateWebFunctionEndpoint"></a>
 
 ```typescript
@@ -6857,6 +7886,9 @@ new lambda.LambdaResources()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaResources.isValidLayerVersionArn">isValidLayerVersionArn</a></code> | Validates whether a string is a valid ARN for the layerVersion resource. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaResources.isValidMicrovmImageArn">isValidMicrovmImageArn</a></code> | Validates whether a string is a valid ARN for the microvmImage resource. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaResources.isValidNetworkConnectorArn">isValidNetworkConnectorArn</a></code> | Validates whether a string is a valid ARN for the networkConnector resource. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaResources.isValidRuntimeAliasArn">isValidRuntimeAliasArn</a></code> | Validates whether a string is a valid ARN for the runtimeAlias resource. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaResources.isValidRuntimeArn">isValidRuntimeArn</a></code> | Validates whether a string is a valid ARN for the runtime resource. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaResources.isValidRuntimeVersionArn">isValidRuntimeVersionArn</a></code> | Validates whether a string is a valid ARN for the runtimeVersion resource. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaResources.isValidWebFunctionArn">isValidWebFunctionArn</a></code> | Validates whether a string is a valid ARN for the webFunction resource. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaResources.isValidWebFunctionEndpointArn">isValidWebFunctionEndpointArn</a></code> | Validates whether a string is a valid ARN for the webFunctionEndpoint resource. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaResources.isValidWebFunctionRevisionArn">isValidWebFunctionRevisionArn</a></code> | Validates whether a string is a valid ARN for the webFunctionRevision resource. |
@@ -6875,9 +7907,15 @@ new lambda.LambdaResources()
 | <code><a href="#@cdk_utils/iam.lambda.LambdaResources.parseLayerVersionArn">parseLayerVersionArn</a></code> | Parses a layerVersion ARN into its components. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaResources.parseMicrovmImageArn">parseMicrovmImageArn</a></code> | Parses a microvmImage ARN into its components. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaResources.parseNetworkConnectorArn">parseNetworkConnectorArn</a></code> | Parses a networkConnector ARN into its components. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaResources.parseRuntimeAliasArn">parseRuntimeAliasArn</a></code> | Parses a runtimeAlias ARN into its components. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaResources.parseRuntimeArn">parseRuntimeArn</a></code> | Parses a runtime ARN into its components. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaResources.parseRuntimeVersionArn">parseRuntimeVersionArn</a></code> | Parses a runtimeVersion ARN into its components. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaResources.parseWebFunctionArn">parseWebFunctionArn</a></code> | Parses a webFunction ARN into its components. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaResources.parseWebFunctionEndpointArn">parseWebFunctionEndpointArn</a></code> | Parses a webFunctionEndpoint ARN into its components. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaResources.parseWebFunctionRevisionArn">parseWebFunctionRevisionArn</a></code> | Parses a webFunctionRevision ARN into its components. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaResources.runtime">runtime</a></code> | Builds an ARN for the runtime resource. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaResources.runtimeAlias">runtimeAlias</a></code> | Builds an ARN for the runtimeAlias resource. |
+| <code><a href="#@cdk_utils/iam.lambda.LambdaResources.runtimeVersion">runtimeVersion</a></code> | Builds an ARN for the runtimeVersion resource. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaResources.webFunction">webFunction</a></code> | Builds an ARN for the webFunction resource. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaResources.webFunctionEndpoint">webFunctionEndpoint</a></code> | Builds an ARN for the webFunctionEndpoint resource. |
 | <code><a href="#@cdk_utils/iam.lambda.LambdaResources.webFunctionRevision">webFunctionRevision</a></code> | Builds an ARN for the webFunctionRevision resource. |
@@ -7172,6 +8210,54 @@ Validates whether a string is a valid ARN for the networkConnector resource.
 
 ---
 
+##### `isValidRuntimeAliasArn` <a name="isValidRuntimeAliasArn" id="@cdk_utils/iam.lambda.LambdaResources.isValidRuntimeAliasArn"></a>
+
+```typescript
+import { lambda } from '@cdk_utils/iam'
+
+lambda.LambdaResources.isValidRuntimeAliasArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the runtimeAlias resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.lambda.LambdaResources.isValidRuntimeAliasArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidRuntimeArn` <a name="isValidRuntimeArn" id="@cdk_utils/iam.lambda.LambdaResources.isValidRuntimeArn"></a>
+
+```typescript
+import { lambda } from '@cdk_utils/iam'
+
+lambda.LambdaResources.isValidRuntimeArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the runtime resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.lambda.LambdaResources.isValidRuntimeArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidRuntimeVersionArn` <a name="isValidRuntimeVersionArn" id="@cdk_utils/iam.lambda.LambdaResources.isValidRuntimeVersionArn"></a>
+
+```typescript
+import { lambda } from '@cdk_utils/iam'
+
+lambda.LambdaResources.isValidRuntimeVersionArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the runtimeVersion resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.lambda.LambdaResources.isValidRuntimeVersionArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `isValidWebFunctionArn` <a name="isValidWebFunctionArn" id="@cdk_utils/iam.lambda.LambdaResources.isValidWebFunctionArn"></a>
 
 ```typescript
@@ -7460,6 +8546,54 @@ Parses a networkConnector ARN into its components.
 
 ---
 
+##### `parseRuntimeAliasArn` <a name="parseRuntimeAliasArn" id="@cdk_utils/iam.lambda.LambdaResources.parseRuntimeAliasArn"></a>
+
+```typescript
+import { lambda } from '@cdk_utils/iam'
+
+lambda.LambdaResources.parseRuntimeAliasArn(arn: string)
+```
+
+Parses a runtimeAlias ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.lambda.LambdaResources.parseRuntimeAliasArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseRuntimeArn` <a name="parseRuntimeArn" id="@cdk_utils/iam.lambda.LambdaResources.parseRuntimeArn"></a>
+
+```typescript
+import { lambda } from '@cdk_utils/iam'
+
+lambda.LambdaResources.parseRuntimeArn(arn: string)
+```
+
+Parses a runtime ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.lambda.LambdaResources.parseRuntimeArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseRuntimeVersionArn` <a name="parseRuntimeVersionArn" id="@cdk_utils/iam.lambda.LambdaResources.parseRuntimeVersionArn"></a>
+
+```typescript
+import { lambda } from '@cdk_utils/iam'
+
+lambda.LambdaResources.parseRuntimeVersionArn(arn: string)
+```
+
+Parses a runtimeVersion ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.lambda.LambdaResources.parseRuntimeVersionArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `parseWebFunctionArn` <a name="parseWebFunctionArn" id="@cdk_utils/iam.lambda.LambdaResources.parseWebFunctionArn"></a>
 
 ```typescript
@@ -7505,6 +8639,54 @@ Parses a webFunctionRevision ARN into its components.
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.lambda.LambdaResources.parseWebFunctionRevisionArn.parameter.arn"></a>
 
 - *Type:* string
+
+---
+
+##### `runtime` <a name="runtime" id="@cdk_utils/iam.lambda.LambdaResources.runtime"></a>
+
+```typescript
+import { lambda } from '@cdk_utils/iam'
+
+lambda.LambdaResources.runtime(props: LambdaRuntimeArnProps)
+```
+
+Builds an ARN for the runtime resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.lambda.LambdaResources.runtime.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.lambda.LambdaRuntimeArnProps">LambdaRuntimeArnProps</a>
+
+---
+
+##### `runtimeAlias` <a name="runtimeAlias" id="@cdk_utils/iam.lambda.LambdaResources.runtimeAlias"></a>
+
+```typescript
+import { lambda } from '@cdk_utils/iam'
+
+lambda.LambdaResources.runtimeAlias(props: LambdaRuntimeAliasArnProps)
+```
+
+Builds an ARN for the runtimeAlias resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.lambda.LambdaResources.runtimeAlias.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.lambda.LambdaRuntimeAliasArnProps">LambdaRuntimeAliasArnProps</a>
+
+---
+
+##### `runtimeVersion` <a name="runtimeVersion" id="@cdk_utils/iam.lambda.LambdaResources.runtimeVersion"></a>
+
+```typescript
+import { lambda } from '@cdk_utils/iam'
+
+lambda.LambdaResources.runtimeVersion(props: LambdaRuntimeVersionArnProps)
+```
+
+Builds an ARN for the runtimeVersion resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.lambda.LambdaResources.runtimeVersion.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.lambda.LambdaRuntimeVersionArnProps">LambdaRuntimeVersionArnProps</a>
 
 ---
 

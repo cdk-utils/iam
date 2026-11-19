@@ -631,6 +631,10 @@ export class CasesResources {
  * API operation to required IAM actions mapping for cases.
  */
 export class CasesOperations {
+	/** IAM actions required for the BatchCreateRelatedItem API call. */
+	static readonly BatchCreateRelatedItem: string[] = [
+		"cases:CreateRelatedItem",
+	];
 	/** IAM actions required for the BatchGetCaseRule API call. */
 	static readonly BatchGetCaseRule: string[] = ["cases:BatchGetCaseRule"];
 	/** IAM actions required for the BatchGetField API call. */
@@ -639,6 +643,8 @@ export class CasesOperations {
 	static readonly BatchPutFieldOptions: string[] = [
 		"cases:BatchPutFieldOptions",
 	];
+	/** IAM actions required for the BatchUpdateCase API call. */
+	static readonly BatchUpdateCase: string[] = ["cases:UpdateCase"];
 	/** IAM actions required for the CreateCase API call. */
 	static readonly CreateCase: string[] = [
 		"cases:CreateCase",
@@ -682,6 +688,8 @@ export class CasesOperations {
 	static readonly opGetDomain: string[] = ["cases:GetDomain"];
 	/** IAM actions required for the GetLayout API call. */
 	static readonly opGetLayout: string[] = ["cases:GetLayout"];
+	/** IAM actions required for the GetMergeCasesStatus API call. */
+	static readonly opGetMergeCasesStatus: string[] = [];
 	/** IAM actions required for the GetTemplate API call. */
 	static readonly opGetTemplate: string[] = ["cases:GetTemplate"];
 	/** IAM actions required for the ListCaseRules API call. */
@@ -712,6 +720,8 @@ export class CasesOperations {
 	static readonly SearchCases: string[] = ["cases:SearchCases"];
 	/** IAM actions required for the SearchRelatedItems API call. */
 	static readonly SearchRelatedItems: string[] = ["cases:SearchRelatedItems"];
+	/** IAM actions required for the StartMergeCases API call. */
+	static readonly StartMergeCases: string[] = [];
 	/** IAM actions required for the TagResource API call. */
 	static readonly TagResource: string[] = ["cases:TagResource"];
 	/** IAM actions required for the UntagResource API call. */

@@ -1892,6 +1892,26 @@
       }
     },
     {
+      "Name": "ResumePentestJob",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "AgentSpace"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "StartCodeRemediation",
       "Annotations": {
         "Properties": {
@@ -3717,6 +3737,16 @@
         {
           "Name": "securityagent",
           "Method": "list_threats",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ResumePentestJob",
+      "SDK": [
+        {
+          "Name": "securityagent",
+          "Method": "resume_pentest_job",
           "Package": "Boto3"
         }
       ]

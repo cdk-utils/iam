@@ -525,6 +525,154 @@ Defaults to "*".
 
 ---
 
+### KinesisQueueArnComponents <a name="KinesisQueueArnComponents" id="@cdk_utils/iam.kinesis.KinesisQueueArnComponents"></a>
+
+Parsed components of a queue ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.kinesis.KinesisQueueArnComponents.Initializer"></a>
+
+```typescript
+import { kinesis } from '@cdk_utils/iam'
+
+const kinesisQueueArnComponents: kinesis.KinesisQueueArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisQueueArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisQueueArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisQueueArnComponents.property.queueId">queueId</a></code> | <code>string</code> | The QueueId component. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisQueueArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.kinesis.KinesisQueueArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.kinesis.KinesisQueueArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `queueId`<sup>Required</sup> <a name="queueId" id="@cdk_utils/iam.kinesis.KinesisQueueArnComponents.property.queueId"></a>
+
+```typescript
+public readonly queueId: string;
+```
+
+- *Type:* string
+
+The QueueId component.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.kinesis.KinesisQueueArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### KinesisQueueArnProps <a name="KinesisQueueArnProps" id="@cdk_utils/iam.kinesis.KinesisQueueArnProps"></a>
+
+Properties for building a queue ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.kinesis.KinesisQueueArnProps.Initializer"></a>
+
+```typescript
+import { kinesis } from '@cdk_utils/iam'
+
+const kinesisQueueArnProps: kinesis.KinesisQueueArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisQueueArnProps.property.queueId">queueId</a></code> | <code>string</code> | The QueueId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisQueueArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisQueueArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisQueueArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `queueId`<sup>Required</sup> <a name="queueId" id="@cdk_utils/iam.kinesis.KinesisQueueArnProps.property.queueId"></a>
+
+```typescript
+public readonly queueId: string;
+```
+
+- *Type:* string
+
+The QueueId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.kinesis.KinesisQueueArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.kinesis.KinesisQueueArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.kinesis.KinesisQueueArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### KinesisStreamArnComponents <a name="KinesisStreamArnComponents" id="@cdk_utils/iam.kinesis.KinesisStreamArnComponents"></a>
 
 Parsed components of a stream ARN.
@@ -699,6 +847,8 @@ new kinesis.KinesisActions()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.AcknowledgeDeadLetterQueueRecords">AcknowledgeDeadLetterQueueRecords</a></code> | <code>string</code> | [Write] kinesis:AcknowledgeDeadLetterQueueRecords. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.AcknowledgeQueueRecords">AcknowledgeQueueRecords</a></code> | <code>string</code> | [Write] kinesis:AcknowledgeQueueRecords. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.actionGetRecords">actionGetRecords</a></code> | <code>string</code> | [Read] kinesis:GetRecords. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.actionGetResourcePolicy">actionGetResourcePolicy</a></code> | <code>string</code> | [Read] kinesis:GetResourcePolicy. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.actionGetShardIterator">actionGetShardIterator</a></code> | <code>string</code> | [Read] kinesis:GetShardIterator. |
@@ -709,16 +859,20 @@ new kinesis.KinesisActions()
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.AssociateStreamsWithChannel">AssociateStreamsWithChannel</a></code> | <code>string</code> | [Write] kinesis:AssociateStreamsWithChannel. |
-| <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.CreateChannel">CreateChannel</a></code> | <code>string</code> | [Tagging] kinesis:CreateChannel. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.AssociateStreamsWithQueue">AssociateStreamsWithQueue</a></code> | <code>string</code> | [Write] kinesis:AssociateStreamsWithQueue. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.CreateChannel">CreateChannel</a></code> | <code>string</code> | [Write] kinesis:CreateChannel. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.CreateQueue">CreateQueue</a></code> | <code>string</code> | [Write] kinesis:CreateQueue. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.CreateStream">CreateStream</a></code> | <code>string</code> | [Write] kinesis:CreateStream. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.DecreaseStreamRetentionPeriod">DecreaseStreamRetentionPeriod</a></code> | <code>string</code> | [Write] kinesis:DecreaseStreamRetentionPeriod. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.DeleteChannel">DeleteChannel</a></code> | <code>string</code> | [Write] kinesis:DeleteChannel. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.DeleteQueue">DeleteQueue</a></code> | <code>string</code> | [Write] kinesis:DeleteQueue. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.DeleteResourcePolicy">DeleteResourcePolicy</a></code> | <code>string</code> | [Write] kinesis:DeleteResourcePolicy. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.DeleteStream">DeleteStream</a></code> | <code>string</code> | [Write] kinesis:DeleteStream. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.DeregisterStreamConsumer">DeregisterStreamConsumer</a></code> | <code>string</code> | [Write] kinesis:DeregisterStreamConsumer. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.DescribeAccountSettings">DescribeAccountSettings</a></code> | <code>string</code> | [Read] kinesis:DescribeAccountSettings. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.DescribeChannel">DescribeChannel</a></code> | <code>string</code> | [Read] kinesis:DescribeChannel. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.DescribeLimits">DescribeLimits</a></code> | <code>string</code> | [Read] kinesis:DescribeLimits. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.DescribeQueue">DescribeQueue</a></code> | <code>string</code> | [Read] kinesis:DescribeQueue. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.DescribeStream">DescribeStream</a></code> | <code>string</code> | [Read] kinesis:DescribeStream. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.DescribeStreamConsumer">DescribeStreamConsumer</a></code> | <code>string</code> | [Read] kinesis:DescribeStreamConsumer. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.DescribeStreamSummary">DescribeStreamSummary</a></code> | <code>string</code> | [Read] kinesis:DescribeStreamSummary. |
@@ -727,6 +881,7 @@ new kinesis.KinesisActions()
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.IncreaseStreamRetentionPeriod">IncreaseStreamRetentionPeriod</a></code> | <code>string</code> | [Write] kinesis:IncreaseStreamRetentionPeriod. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.InjectApiError">InjectApiError</a></code> | <code>string</code> | [Write] kinesis:InjectApiError. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.ListChannels">ListChannels</a></code> | <code>string</code> | [List] kinesis:ListChannels. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.ListQueues">ListQueues</a></code> | <code>string</code> | [List] kinesis:ListQueues. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.ListShards">ListShards</a></code> | <code>string</code> | [List] kinesis:ListShards. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.ListStreamConsumers">ListStreamConsumers</a></code> | <code>string</code> | [List] kinesis:ListStreamConsumers. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.ListStreams">ListStreams</a></code> | <code>string</code> | [List] kinesis:ListStreams. |
@@ -736,8 +891,11 @@ new kinesis.KinesisActions()
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.PutRecord">PutRecord</a></code> | <code>string</code> | [Write] kinesis:PutRecord. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.PutRecords">PutRecords</a></code> | <code>string</code> | [Write] kinesis:PutRecords. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.PutResourcePolicy">PutResourcePolicy</a></code> | <code>string</code> | [Write] kinesis:PutResourcePolicy. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.ReceiveDeadLetterQueueRecords">ReceiveDeadLetterQueueRecords</a></code> | <code>string</code> | [Read] kinesis:ReceiveDeadLetterQueueRecords. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.ReceiveQueueRecords">ReceiveQueueRecords</a></code> | <code>string</code> | [Read] kinesis:ReceiveQueueRecords. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.RegisterStreamConsumer">RegisterStreamConsumer</a></code> | <code>string</code> | [Write] kinesis:RegisterStreamConsumer. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.RemoveTagsFromStream">RemoveTagsFromStream</a></code> | <code>string</code> | [Tagging] kinesis:RemoveTagsFromStream. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.RestoreDeadLetterQueueRecords">RestoreDeadLetterQueueRecords</a></code> | <code>string</code> | [Write] kinesis:RestoreDeadLetterQueueRecords. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.SplitShard">SplitShard</a></code> | <code>string</code> | [Write] kinesis:SplitShard. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.StartStreamEncryption">StartStreamEncryption</a></code> | <code>string</code> | [Write] kinesis:StartStreamEncryption. |
@@ -747,11 +905,38 @@ new kinesis.KinesisActions()
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] kinesis:UntagResource. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.UpdateAccountSettings">UpdateAccountSettings</a></code> | <code>string</code> | [Write] kinesis:UpdateAccountSettings. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.UpdateChannel">UpdateChannel</a></code> | <code>string</code> | [Write] kinesis:UpdateChannel. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.UpdateDeadLetterQueueRecordsVisibility">UpdateDeadLetterQueueRecordsVisibility</a></code> | <code>string</code> | [Write] kinesis:UpdateDeadLetterQueueRecordsVisibility. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.UpdateMaxRecordSize">UpdateMaxRecordSize</a></code> | <code>string</code> | [Write] kinesis:UpdateMaxRecordSize. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.UpdateQueue">UpdateQueue</a></code> | <code>string</code> | [Write] kinesis:UpdateQueue. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.UpdateQueueRecordsVisibility">UpdateQueueRecordsVisibility</a></code> | <code>string</code> | [Write] kinesis:UpdateQueueRecordsVisibility. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.UpdateShardCount">UpdateShardCount</a></code> | <code>string</code> | [Write] kinesis:UpdateShardCount. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.UpdateStreamMode">UpdateStreamMode</a></code> | <code>string</code> | [Write] kinesis:UpdateStreamMode. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.UpdateStreamRecordDistributionStrategy">UpdateStreamRecordDistributionStrategy</a></code> | <code>string</code> | [Write] kinesis:UpdateStreamRecordDistributionStrategy. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisActions.property.UpdateStreamWarmThroughput">UpdateStreamWarmThroughput</a></code> | <code>string</code> | [Write] kinesis:UpdateStreamWarmThroughput. |
+
+---
+
+##### `AcknowledgeDeadLetterQueueRecords`<sup>Required</sup> <a name="AcknowledgeDeadLetterQueueRecords" id="@cdk_utils/iam.kinesis.KinesisActions.property.AcknowledgeDeadLetterQueueRecords"></a>
+
+```typescript
+public readonly AcknowledgeDeadLetterQueueRecords: string;
+```
+
+- *Type:* string
+
+[Write] kinesis:AcknowledgeDeadLetterQueueRecords.
+
+---
+
+##### `AcknowledgeQueueRecords`<sup>Required</sup> <a name="AcknowledgeQueueRecords" id="@cdk_utils/iam.kinesis.KinesisActions.property.AcknowledgeQueueRecords"></a>
+
+```typescript
+public readonly AcknowledgeQueueRecords: string;
+```
+
+- *Type:* string
+
+[Write] kinesis:AcknowledgeQueueRecords.
 
 ---
 
@@ -875,6 +1060,18 @@ public readonly AssociateStreamsWithChannel: string;
 
 ---
 
+##### `AssociateStreamsWithQueue`<sup>Required</sup> <a name="AssociateStreamsWithQueue" id="@cdk_utils/iam.kinesis.KinesisActions.property.AssociateStreamsWithQueue"></a>
+
+```typescript
+public readonly AssociateStreamsWithQueue: string;
+```
+
+- *Type:* string
+
+[Write] kinesis:AssociateStreamsWithQueue.
+
+---
+
 ##### `CreateChannel`<sup>Required</sup> <a name="CreateChannel" id="@cdk_utils/iam.kinesis.KinesisActions.property.CreateChannel"></a>
 
 ```typescript
@@ -883,7 +1080,19 @@ public readonly CreateChannel: string;
 
 - *Type:* string
 
-[Tagging] kinesis:CreateChannel.
+[Write] kinesis:CreateChannel.
+
+---
+
+##### `CreateQueue`<sup>Required</sup> <a name="CreateQueue" id="@cdk_utils/iam.kinesis.KinesisActions.property.CreateQueue"></a>
+
+```typescript
+public readonly CreateQueue: string;
+```
+
+- *Type:* string
+
+[Write] kinesis:CreateQueue.
 
 ---
 
@@ -920,6 +1129,18 @@ public readonly DeleteChannel: string;
 - *Type:* string
 
 [Write] kinesis:DeleteChannel.
+
+---
+
+##### `DeleteQueue`<sup>Required</sup> <a name="DeleteQueue" id="@cdk_utils/iam.kinesis.KinesisActions.property.DeleteQueue"></a>
+
+```typescript
+public readonly DeleteQueue: string;
+```
+
+- *Type:* string
+
+[Write] kinesis:DeleteQueue.
 
 ---
 
@@ -992,6 +1213,18 @@ public readonly DescribeLimits: string;
 - *Type:* string
 
 [Read] kinesis:DescribeLimits.
+
+---
+
+##### `DescribeQueue`<sup>Required</sup> <a name="DescribeQueue" id="@cdk_utils/iam.kinesis.KinesisActions.property.DescribeQueue"></a>
+
+```typescript
+public readonly DescribeQueue: string;
+```
+
+- *Type:* string
+
+[Read] kinesis:DescribeQueue.
 
 ---
 
@@ -1088,6 +1321,18 @@ public readonly ListChannels: string;
 - *Type:* string
 
 [List] kinesis:ListChannels.
+
+---
+
+##### `ListQueues`<sup>Required</sup> <a name="ListQueues" id="@cdk_utils/iam.kinesis.KinesisActions.property.ListQueues"></a>
+
+```typescript
+public readonly ListQueues: string;
+```
+
+- *Type:* string
+
+[List] kinesis:ListQueues.
 
 ---
 
@@ -1199,6 +1444,30 @@ public readonly PutResourcePolicy: string;
 
 ---
 
+##### `ReceiveDeadLetterQueueRecords`<sup>Required</sup> <a name="ReceiveDeadLetterQueueRecords" id="@cdk_utils/iam.kinesis.KinesisActions.property.ReceiveDeadLetterQueueRecords"></a>
+
+```typescript
+public readonly ReceiveDeadLetterQueueRecords: string;
+```
+
+- *Type:* string
+
+[Read] kinesis:ReceiveDeadLetterQueueRecords.
+
+---
+
+##### `ReceiveQueueRecords`<sup>Required</sup> <a name="ReceiveQueueRecords" id="@cdk_utils/iam.kinesis.KinesisActions.property.ReceiveQueueRecords"></a>
+
+```typescript
+public readonly ReceiveQueueRecords: string;
+```
+
+- *Type:* string
+
+[Read] kinesis:ReceiveQueueRecords.
+
+---
+
 ##### `RegisterStreamConsumer`<sup>Required</sup> <a name="RegisterStreamConsumer" id="@cdk_utils/iam.kinesis.KinesisActions.property.RegisterStreamConsumer"></a>
 
 ```typescript
@@ -1220,6 +1489,18 @@ public readonly RemoveTagsFromStream: string;
 - *Type:* string
 
 [Tagging] kinesis:RemoveTagsFromStream.
+
+---
+
+##### `RestoreDeadLetterQueueRecords`<sup>Required</sup> <a name="RestoreDeadLetterQueueRecords" id="@cdk_utils/iam.kinesis.KinesisActions.property.RestoreDeadLetterQueueRecords"></a>
+
+```typescript
+public readonly RestoreDeadLetterQueueRecords: string;
+```
+
+- *Type:* string
+
+[Write] kinesis:RestoreDeadLetterQueueRecords.
 
 ---
 
@@ -1331,6 +1612,18 @@ public readonly UpdateChannel: string;
 
 ---
 
+##### `UpdateDeadLetterQueueRecordsVisibility`<sup>Required</sup> <a name="UpdateDeadLetterQueueRecordsVisibility" id="@cdk_utils/iam.kinesis.KinesisActions.property.UpdateDeadLetterQueueRecordsVisibility"></a>
+
+```typescript
+public readonly UpdateDeadLetterQueueRecordsVisibility: string;
+```
+
+- *Type:* string
+
+[Write] kinesis:UpdateDeadLetterQueueRecordsVisibility.
+
+---
+
 ##### `UpdateMaxRecordSize`<sup>Required</sup> <a name="UpdateMaxRecordSize" id="@cdk_utils/iam.kinesis.KinesisActions.property.UpdateMaxRecordSize"></a>
 
 ```typescript
@@ -1340,6 +1633,30 @@ public readonly UpdateMaxRecordSize: string;
 - *Type:* string
 
 [Write] kinesis:UpdateMaxRecordSize.
+
+---
+
+##### `UpdateQueue`<sup>Required</sup> <a name="UpdateQueue" id="@cdk_utils/iam.kinesis.KinesisActions.property.UpdateQueue"></a>
+
+```typescript
+public readonly UpdateQueue: string;
+```
+
+- *Type:* string
+
+[Write] kinesis:UpdateQueue.
+
+---
+
+##### `UpdateQueueRecordsVisibility`<sup>Required</sup> <a name="UpdateQueueRecordsVisibility" id="@cdk_utils/iam.kinesis.KinesisActions.property.UpdateQueueRecordsVisibility"></a>
+
+```typescript
+public readonly UpdateQueueRecordsVisibility: string;
+```
+
+- *Type:* string
+
+[Write] kinesis:UpdateQueueRecordsVisibility.
 
 ---
 
@@ -1641,17 +1958,22 @@ new kinesis.KinesisOperations()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.AcknowledgeDeadLetterQueueRecords">AcknowledgeDeadLetterQueueRecords</a></code> | <code>string[]</code> | IAM actions required for the AcknowledgeDeadLetterQueueRecords API call. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.AcknowledgeQueueRecords">AcknowledgeQueueRecords</a></code> | <code>string[]</code> | IAM actions required for the AcknowledgeQueueRecords API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.AddTagsToStream">AddTagsToStream</a></code> | <code>string[]</code> | IAM actions required for the AddTagsToStream API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.CreateChannel">CreateChannel</a></code> | <code>string[]</code> | IAM actions required for the CreateChannel API call. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.CreateQueue">CreateQueue</a></code> | <code>string[]</code> | IAM actions required for the CreateQueue API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.CreateStream">CreateStream</a></code> | <code>string[]</code> | IAM actions required for the CreateStream API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.DecreaseStreamRetentionPeriod">DecreaseStreamRetentionPeriod</a></code> | <code>string[]</code> | IAM actions required for the DecreaseStreamRetentionPeriod API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.DeleteChannel">DeleteChannel</a></code> | <code>string[]</code> | IAM actions required for the DeleteChannel API call. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.DeleteQueue">DeleteQueue</a></code> | <code>string[]</code> | IAM actions required for the DeleteQueue API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.DeleteResourcePolicy">DeleteResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the DeleteResourcePolicy API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.DeleteStream">DeleteStream</a></code> | <code>string[]</code> | IAM actions required for the DeleteStream API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.DeregisterStreamConsumer">DeregisterStreamConsumer</a></code> | <code>string[]</code> | IAM actions required for the DeregisterStreamConsumer API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.DescribeAccountSettings">DescribeAccountSettings</a></code> | <code>string[]</code> | IAM actions required for the DescribeAccountSettings API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.DescribeChannel">DescribeChannel</a></code> | <code>string[]</code> | IAM actions required for the DescribeChannel API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.DescribeLimits">DescribeLimits</a></code> | <code>string[]</code> | IAM actions required for the DescribeLimits API call. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.DescribeQueue">DescribeQueue</a></code> | <code>string[]</code> | IAM actions required for the DescribeQueue API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.DescribeStream">DescribeStream</a></code> | <code>string[]</code> | IAM actions required for the DescribeStream API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.DescribeStreamConsumer">DescribeStreamConsumer</a></code> | <code>string[]</code> | IAM actions required for the DescribeStreamConsumer API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.DescribeStreamSummary">DescribeStreamSummary</a></code> | <code>string[]</code> | IAM actions required for the DescribeStreamSummary API call. |
@@ -1659,6 +1981,7 @@ new kinesis.KinesisOperations()
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.EnableEnhancedMonitoring">EnableEnhancedMonitoring</a></code> | <code>string[]</code> | IAM actions required for the EnableEnhancedMonitoring API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.IncreaseStreamRetentionPeriod">IncreaseStreamRetentionPeriod</a></code> | <code>string[]</code> | IAM actions required for the IncreaseStreamRetentionPeriod API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.ListChannels">ListChannels</a></code> | <code>string[]</code> | IAM actions required for the ListChannels API call. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.ListQueues">ListQueues</a></code> | <code>string[]</code> | IAM actions required for the ListQueues API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.ListShards">ListShards</a></code> | <code>string[]</code> | IAM actions required for the ListShards API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.ListStreamConsumers">ListStreamConsumers</a></code> | <code>string[]</code> | IAM actions required for the ListStreamConsumers API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.ListStreams">ListStreams</a></code> | <code>string[]</code> | IAM actions required for the ListStreams API call. |
@@ -1671,8 +1994,11 @@ new kinesis.KinesisOperations()
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.PutRecord">PutRecord</a></code> | <code>string[]</code> | IAM actions required for the PutRecord API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.PutRecords">PutRecords</a></code> | <code>string[]</code> | IAM actions required for the PutRecords API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.PutResourcePolicy">PutResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the PutResourcePolicy API call. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.ReceiveDeadLetterQueueRecords">ReceiveDeadLetterQueueRecords</a></code> | <code>string[]</code> | IAM actions required for the ReceiveDeadLetterQueueRecords API call. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.ReceiveQueueRecords">ReceiveQueueRecords</a></code> | <code>string[]</code> | IAM actions required for the ReceiveQueueRecords API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.RegisterStreamConsumer">RegisterStreamConsumer</a></code> | <code>string[]</code> | IAM actions required for the RegisterStreamConsumer API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.RemoveTagsFromStream">RemoveTagsFromStream</a></code> | <code>string[]</code> | IAM actions required for the RemoveTagsFromStream API call. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.RestoreDeadLetterQueueRecords">RestoreDeadLetterQueueRecords</a></code> | <code>string[]</code> | IAM actions required for the RestoreDeadLetterQueueRecords API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.SplitShard">SplitShard</a></code> | <code>string[]</code> | IAM actions required for the SplitShard API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.StartStreamEncryption">StartStreamEncryption</a></code> | <code>string[]</code> | IAM actions required for the StartStreamEncryption API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.StopStreamEncryption">StopStreamEncryption</a></code> | <code>string[]</code> | IAM actions required for the StopStreamEncryption API call. |
@@ -1681,11 +2007,38 @@ new kinesis.KinesisOperations()
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.UpdateAccountSettings">UpdateAccountSettings</a></code> | <code>string[]</code> | IAM actions required for the UpdateAccountSettings API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.UpdateChannel">UpdateChannel</a></code> | <code>string[]</code> | IAM actions required for the UpdateChannel API call. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.UpdateDeadLetterQueueRecordsVisibility">UpdateDeadLetterQueueRecordsVisibility</a></code> | <code>string[]</code> | IAM actions required for the UpdateDeadLetterQueueRecordsVisibility API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.UpdateMaxRecordSize">UpdateMaxRecordSize</a></code> | <code>string[]</code> | IAM actions required for the UpdateMaxRecordSize API call. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.UpdateQueue">UpdateQueue</a></code> | <code>string[]</code> | IAM actions required for the UpdateQueue API call. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.UpdateQueueRecordsVisibility">UpdateQueueRecordsVisibility</a></code> | <code>string[]</code> | IAM actions required for the UpdateQueueRecordsVisibility API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.UpdateShardCount">UpdateShardCount</a></code> | <code>string[]</code> | IAM actions required for the UpdateShardCount API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.UpdateStreamMode">UpdateStreamMode</a></code> | <code>string[]</code> | IAM actions required for the UpdateStreamMode API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.UpdateStreamRecordDistributionStrategy">UpdateStreamRecordDistributionStrategy</a></code> | <code>string[]</code> | IAM actions required for the UpdateStreamRecordDistributionStrategy API call. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisOperations.property.UpdateStreamWarmThroughput">UpdateStreamWarmThroughput</a></code> | <code>string[]</code> | IAM actions required for the UpdateStreamWarmThroughput API call. |
+
+---
+
+##### `AcknowledgeDeadLetterQueueRecords`<sup>Required</sup> <a name="AcknowledgeDeadLetterQueueRecords" id="@cdk_utils/iam.kinesis.KinesisOperations.property.AcknowledgeDeadLetterQueueRecords"></a>
+
+```typescript
+public readonly AcknowledgeDeadLetterQueueRecords: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the AcknowledgeDeadLetterQueueRecords API call.
+
+---
+
+##### `AcknowledgeQueueRecords`<sup>Required</sup> <a name="AcknowledgeQueueRecords" id="@cdk_utils/iam.kinesis.KinesisOperations.property.AcknowledgeQueueRecords"></a>
+
+```typescript
+public readonly AcknowledgeQueueRecords: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the AcknowledgeQueueRecords API call.
 
 ---
 
@@ -1710,6 +2063,18 @@ public readonly CreateChannel: string[];
 - *Type:* string[]
 
 IAM actions required for the CreateChannel API call.
+
+---
+
+##### `CreateQueue`<sup>Required</sup> <a name="CreateQueue" id="@cdk_utils/iam.kinesis.KinesisOperations.property.CreateQueue"></a>
+
+```typescript
+public readonly CreateQueue: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateQueue API call.
 
 ---
 
@@ -1746,6 +2111,18 @@ public readonly DeleteChannel: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteChannel API call.
+
+---
+
+##### `DeleteQueue`<sup>Required</sup> <a name="DeleteQueue" id="@cdk_utils/iam.kinesis.KinesisOperations.property.DeleteQueue"></a>
+
+```typescript
+public readonly DeleteQueue: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteQueue API call.
 
 ---
 
@@ -1818,6 +2195,18 @@ public readonly DescribeLimits: string[];
 - *Type:* string[]
 
 IAM actions required for the DescribeLimits API call.
+
+---
+
+##### `DescribeQueue`<sup>Required</sup> <a name="DescribeQueue" id="@cdk_utils/iam.kinesis.KinesisOperations.property.DescribeQueue"></a>
+
+```typescript
+public readonly DescribeQueue: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeQueue API call.
 
 ---
 
@@ -1902,6 +2291,18 @@ public readonly ListChannels: string[];
 - *Type:* string[]
 
 IAM actions required for the ListChannels API call.
+
+---
+
+##### `ListQueues`<sup>Required</sup> <a name="ListQueues" id="@cdk_utils/iam.kinesis.KinesisOperations.property.ListQueues"></a>
+
+```typescript
+public readonly ListQueues: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListQueues API call.
 
 ---
 
@@ -2049,6 +2450,30 @@ IAM actions required for the PutResourcePolicy API call.
 
 ---
 
+##### `ReceiveDeadLetterQueueRecords`<sup>Required</sup> <a name="ReceiveDeadLetterQueueRecords" id="@cdk_utils/iam.kinesis.KinesisOperations.property.ReceiveDeadLetterQueueRecords"></a>
+
+```typescript
+public readonly ReceiveDeadLetterQueueRecords: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ReceiveDeadLetterQueueRecords API call.
+
+---
+
+##### `ReceiveQueueRecords`<sup>Required</sup> <a name="ReceiveQueueRecords" id="@cdk_utils/iam.kinesis.KinesisOperations.property.ReceiveQueueRecords"></a>
+
+```typescript
+public readonly ReceiveQueueRecords: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ReceiveQueueRecords API call.
+
+---
+
 ##### `RegisterStreamConsumer`<sup>Required</sup> <a name="RegisterStreamConsumer" id="@cdk_utils/iam.kinesis.KinesisOperations.property.RegisterStreamConsumer"></a>
 
 ```typescript
@@ -2070,6 +2495,18 @@ public readonly RemoveTagsFromStream: string[];
 - *Type:* string[]
 
 IAM actions required for the RemoveTagsFromStream API call.
+
+---
+
+##### `RestoreDeadLetterQueueRecords`<sup>Required</sup> <a name="RestoreDeadLetterQueueRecords" id="@cdk_utils/iam.kinesis.KinesisOperations.property.RestoreDeadLetterQueueRecords"></a>
+
+```typescript
+public readonly RestoreDeadLetterQueueRecords: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the RestoreDeadLetterQueueRecords API call.
 
 ---
 
@@ -2169,6 +2606,18 @@ IAM actions required for the UpdateChannel API call.
 
 ---
 
+##### `UpdateDeadLetterQueueRecordsVisibility`<sup>Required</sup> <a name="UpdateDeadLetterQueueRecordsVisibility" id="@cdk_utils/iam.kinesis.KinesisOperations.property.UpdateDeadLetterQueueRecordsVisibility"></a>
+
+```typescript
+public readonly UpdateDeadLetterQueueRecordsVisibility: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateDeadLetterQueueRecordsVisibility API call.
+
+---
+
 ##### `UpdateMaxRecordSize`<sup>Required</sup> <a name="UpdateMaxRecordSize" id="@cdk_utils/iam.kinesis.KinesisOperations.property.UpdateMaxRecordSize"></a>
 
 ```typescript
@@ -2178,6 +2627,30 @@ public readonly UpdateMaxRecordSize: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateMaxRecordSize API call.
+
+---
+
+##### `UpdateQueue`<sup>Required</sup> <a name="UpdateQueue" id="@cdk_utils/iam.kinesis.KinesisOperations.property.UpdateQueue"></a>
+
+```typescript
+public readonly UpdateQueue: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateQueue API call.
+
+---
+
+##### `UpdateQueueRecordsVisibility`<sup>Required</sup> <a name="UpdateQueueRecordsVisibility" id="@cdk_utils/iam.kinesis.KinesisOperations.property.UpdateQueueRecordsVisibility"></a>
+
+```typescript
+public readonly UpdateQueueRecordsVisibility: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateQueueRecordsVisibility API call.
 
 ---
 
@@ -2256,12 +2729,15 @@ new kinesis.KinesisResources()
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisResources.isValidChannelArn">isValidChannelArn</a></code> | Validates whether a string is a valid ARN for the channel resource. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisResources.isValidConsumerArn">isValidConsumerArn</a></code> | Validates whether a string is a valid ARN for the consumer resource. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisResources.isValidKMSKeyArn">isValidKMSKeyArn</a></code> | Validates whether a string is a valid ARN for the kmsKey resource. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisResources.isValidQueueArn">isValidQueueArn</a></code> | Validates whether a string is a valid ARN for the queue resource. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisResources.isValidStreamArn">isValidStreamArn</a></code> | Validates whether a string is a valid ARN for the stream resource. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisResources.kmsKey">kmsKey</a></code> | Builds an ARN for the kmsKey resource. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisResources.parseChannelArn">parseChannelArn</a></code> | Parses a channel ARN into its components. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisResources.parseConsumerArn">parseConsumerArn</a></code> | Parses a consumer ARN into its components. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisResources.parseKMSKeyArn">parseKMSKeyArn</a></code> | Parses a kmsKey ARN into its components. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisResources.parseQueueArn">parseQueueArn</a></code> | Parses a queue ARN into its components. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisResources.parseStreamArn">parseStreamArn</a></code> | Parses a stream ARN into its components. |
+| <code><a href="#@cdk_utils/iam.kinesis.KinesisResources.queue">queue</a></code> | Builds an ARN for the queue resource. |
 | <code><a href="#@cdk_utils/iam.kinesis.KinesisResources.stream">stream</a></code> | Builds an ARN for the stream resource. |
 
 ---
@@ -2341,6 +2817,22 @@ kinesis.KinesisResources.isValidKMSKeyArn(arn: string)
 Validates whether a string is a valid ARN for the kmsKey resource.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.kinesis.KinesisResources.isValidKMSKeyArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidQueueArn` <a name="isValidQueueArn" id="@cdk_utils/iam.kinesis.KinesisResources.isValidQueueArn"></a>
+
+```typescript
+import { kinesis } from '@cdk_utils/iam'
+
+kinesis.KinesisResources.isValidQueueArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the queue resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.kinesis.KinesisResources.isValidQueueArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -2426,6 +2918,22 @@ Parses a kmsKey ARN into its components.
 
 ---
 
+##### `parseQueueArn` <a name="parseQueueArn" id="@cdk_utils/iam.kinesis.KinesisResources.parseQueueArn"></a>
+
+```typescript
+import { kinesis } from '@cdk_utils/iam'
+
+kinesis.KinesisResources.parseQueueArn(arn: string)
+```
+
+Parses a queue ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.kinesis.KinesisResources.parseQueueArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `parseStreamArn` <a name="parseStreamArn" id="@cdk_utils/iam.kinesis.KinesisResources.parseStreamArn"></a>
 
 ```typescript
@@ -2439,6 +2947,22 @@ Parses a stream ARN into its components.
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.kinesis.KinesisResources.parseStreamArn.parameter.arn"></a>
 
 - *Type:* string
+
+---
+
+##### `queue` <a name="queue" id="@cdk_utils/iam.kinesis.KinesisResources.queue"></a>
+
+```typescript
+import { kinesis } from '@cdk_utils/iam'
+
+kinesis.KinesisResources.queue(props: KinesisQueueArnProps)
+```
+
+Builds an ARN for the queue resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.kinesis.KinesisResources.queue.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.kinesis.KinesisQueueArnProps">KinesisQueueArnProps</a>
 
 ---
 

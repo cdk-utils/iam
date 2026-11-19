@@ -1704,6 +1704,7 @@ new route53resolver.Route53resolverActions()
 | <code><a href="#@cdk_utils/iam.route53resolver.Route53resolverActions.property.ListFirewallConfigs">ListFirewallConfigs</a></code> | <code>string</code> | [List] route53resolver:ListFirewallConfigs. |
 | <code><a href="#@cdk_utils/iam.route53resolver.Route53resolverActions.property.ListFirewallDomainLists">ListFirewallDomainLists</a></code> | <code>string</code> | [List] route53resolver:ListFirewallDomainLists. |
 | <code><a href="#@cdk_utils/iam.route53resolver.Route53resolverActions.property.ListFirewallDomains">ListFirewallDomains</a></code> | <code>string</code> | [List] route53resolver:ListFirewallDomains. |
+| <code><a href="#@cdk_utils/iam.route53resolver.Route53resolverActions.property.ListFirewallRuleDomains">ListFirewallRuleDomains</a></code> | <code>string</code> | [List] route53resolver:ListFirewallRuleDomains. |
 | <code><a href="#@cdk_utils/iam.route53resolver.Route53resolverActions.property.ListFirewallRuleGroupAssociations">ListFirewallRuleGroupAssociations</a></code> | <code>string</code> | [List] route53resolver:ListFirewallRuleGroupAssociations. |
 | <code><a href="#@cdk_utils/iam.route53resolver.Route53resolverActions.property.ListFirewallRuleGroups">ListFirewallRuleGroups</a></code> | <code>string</code> | [List] route53resolver:ListFirewallRuleGroups. |
 | <code><a href="#@cdk_utils/iam.route53resolver.Route53resolverActions.property.ListFirewallRules">ListFirewallRules</a></code> | <code>string</code> | [List] route53resolver:ListFirewallRules. |
@@ -2297,6 +2298,18 @@ public readonly ListFirewallDomains: string;
 - *Type:* string
 
 [List] route53resolver:ListFirewallDomains.
+
+---
+
+##### `ListFirewallRuleDomains`<sup>Required</sup> <a name="ListFirewallRuleDomains" id="@cdk_utils/iam.route53resolver.Route53resolverActions.property.ListFirewallRuleDomains"></a>
+
+```typescript
+public readonly ListFirewallRuleDomains: string;
+```
+
+- *Type:* string
+
+[List] route53resolver:ListFirewallRuleDomains.
 
 ---
 

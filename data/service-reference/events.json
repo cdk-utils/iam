@@ -1889,6 +1889,10 @@
         {
           "Name": "CreateArchive",
           "Service": "events"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "events"
         }
       ],
       "SDK": [
@@ -2892,6 +2896,10 @@
       "AuthorizedActions": [
         {
           "Name": "StartReplay",
+          "Service": "events"
+        },
+        {
+          "Name": "TagResource",
           "Service": "events"
         }
       ],

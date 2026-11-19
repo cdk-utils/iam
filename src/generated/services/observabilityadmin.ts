@@ -15,6 +15,8 @@ export class ObservabilityadminActions {
 	/** [Write] observabilityadmin:CreateCentralizationRuleForOrganization */
 	static readonly CreateCentralizationRuleForOrganization =
 		"observabilityadmin:CreateCentralizationRuleForOrganization";
+	/** [Write] observabilityadmin:CreateConnector */
+	static readonly CreateConnector = "observabilityadmin:CreateConnector";
 	/** [Write] observabilityadmin:CreateDatasetIntegration */
 	static readonly CreateDatasetIntegration =
 		"observabilityadmin:CreateDatasetIntegration";
@@ -33,6 +35,8 @@ export class ObservabilityadminActions {
 	/** [Write] observabilityadmin:DeleteCentralizationRuleForOrganization */
 	static readonly DeleteCentralizationRuleForOrganization =
 		"observabilityadmin:DeleteCentralizationRuleForOrganization";
+	/** [Write] observabilityadmin:DeleteConnector */
+	static readonly DeleteConnector = "observabilityadmin:DeleteConnector";
 	/** [Write] observabilityadmin:DeleteDatasetIntegration */
 	static readonly DeleteDatasetIntegration =
 		"observabilityadmin:DeleteDatasetIntegration";
@@ -51,6 +55,14 @@ export class ObservabilityadminActions {
 	/** [Read] observabilityadmin:GetCentralizationRuleForOrganization */
 	static readonly actionGetCentralizationRuleForOrganization =
 		"observabilityadmin:GetCentralizationRuleForOrganization";
+	/** [Read] observabilityadmin:GetConnector */
+	static readonly actionGetConnector = "observabilityadmin:GetConnector";
+	/** [Read] observabilityadmin:GetConnectorTelemetryManifest */
+	static readonly actionGetConnectorTelemetryManifest =
+		"observabilityadmin:GetConnectorTelemetryManifest";
+	/** [Read] observabilityadmin:GetConnectorTelemetrySetup */
+	static readonly actionGetConnectorTelemetrySetup =
+		"observabilityadmin:GetConnectorTelemetrySetup";
 	/** [Read] observabilityadmin:GetDatasetIntegration */
 	static readonly actionGetDatasetIntegration =
 		"observabilityadmin:GetDatasetIntegration";
@@ -75,9 +87,14 @@ export class ObservabilityadminActions {
 	/** [Read] observabilityadmin:GetTelemetryRuleForOrganization */
 	static readonly actionGetTelemetryRuleForOrganization =
 		"observabilityadmin:GetTelemetryRuleForOrganization";
+	/** [Read] observabilityadmin:GetThirdPartyTelemetryEnrichment */
+	static readonly actionGetThirdPartyTelemetryEnrichment =
+		"observabilityadmin:GetThirdPartyTelemetryEnrichment";
 	/** [List] observabilityadmin:ListCentralizationRulesForOrganization */
 	static readonly ListCentralizationRulesForOrganization =
 		"observabilityadmin:ListCentralizationRulesForOrganization";
+	/** [List] observabilityadmin:ListConnectors */
+	static readonly ListConnectors = "observabilityadmin:ListConnectors";
 	/** [List] observabilityadmin:ListDatasetIntegrations */
 	static readonly ListDatasetIntegrations =
 		"observabilityadmin:ListDatasetIntegrations";
@@ -87,6 +104,9 @@ export class ObservabilityadminActions {
 	/** [Read] observabilityadmin:ListResourceTelemetryForOrganization */
 	static readonly ListResourceTelemetryForOrganization =
 		"observabilityadmin:ListResourceTelemetryForOrganization";
+	/** [Read] observabilityadmin:ListResourcesByConnector */
+	static readonly ListResourcesByConnector =
+		"observabilityadmin:ListResourcesByConnector";
 	/** [List] observabilityadmin:ListS3TableIntegrations */
 	static readonly ListS3TableIntegrations =
 		"observabilityadmin:ListS3TableIntegrations";
@@ -101,6 +121,12 @@ export class ObservabilityadminActions {
 	/** [List] observabilityadmin:ListTelemetryRulesForOrganization */
 	static readonly ListTelemetryRulesForOrganization =
 		"observabilityadmin:ListTelemetryRulesForOrganization";
+	/** [List] observabilityadmin:ListThirdPartyTelemetryEnrichments */
+	static readonly ListThirdPartyTelemetryEnrichments =
+		"observabilityadmin:ListThirdPartyTelemetryEnrichments";
+	/** [Write] observabilityadmin:PutConnectorTelemetryManifest */
+	static readonly PutConnectorTelemetryManifest =
+		"observabilityadmin:PutConnectorTelemetryManifest";
 	/** [Write] observabilityadmin:StartTelemetryEnrichment */
 	static readonly StartTelemetryEnrichment =
 		"observabilityadmin:StartTelemetryEnrichment";
@@ -110,6 +136,12 @@ export class ObservabilityadminActions {
 	/** [Write] observabilityadmin:StartTelemetryEvaluationForOrganization */
 	static readonly StartTelemetryEvaluationForOrganization =
 		"observabilityadmin:StartTelemetryEvaluationForOrganization";
+	/** [Write] observabilityadmin:StartTelemetryPipelineRefresh */
+	static readonly StartTelemetryPipelineRefresh =
+		"observabilityadmin:StartTelemetryPipelineRefresh";
+	/** [Write] observabilityadmin:StartThirdPartyTelemetryEnrichment */
+	static readonly StartThirdPartyTelemetryEnrichment =
+		"observabilityadmin:StartThirdPartyTelemetryEnrichment";
 	/** [Write] observabilityadmin:StopTelemetryEnrichment */
 	static readonly StopTelemetryEnrichment =
 		"observabilityadmin:StopTelemetryEnrichment";
@@ -119,6 +151,9 @@ export class ObservabilityadminActions {
 	/** [Write] observabilityadmin:StopTelemetryEvaluationForOrganization */
 	static readonly StopTelemetryEvaluationForOrganization =
 		"observabilityadmin:StopTelemetryEvaluationForOrganization";
+	/** [Write] observabilityadmin:StopThirdPartyTelemetryEnrichment */
+	static readonly StopThirdPartyTelemetryEnrichment =
+		"observabilityadmin:StopThirdPartyTelemetryEnrichment";
 	/** [Tagging] observabilityadmin:TagResource */
 	static readonly TagResource = "observabilityadmin:TagResource";
 	/** [Read] observabilityadmin:TestTelemetryPipeline */
@@ -148,6 +183,9 @@ export class ObservabilityadminActions {
 	/** All read-level actions. */
 	static readonly AllReadActions: string[] = [
 		ObservabilityadminActions.actionGetCentralizationRuleForOrganization,
+		ObservabilityadminActions.actionGetConnector,
+		ObservabilityadminActions.actionGetConnectorTelemetryManifest,
+		ObservabilityadminActions.actionGetConnectorTelemetrySetup,
 		ObservabilityadminActions.actionGetDatasetIntegration,
 		ObservabilityadminActions.actionGetS3TableIntegration,
 		ObservabilityadminActions.actionGetTelemetryEnrichmentStatus,
@@ -156,31 +194,39 @@ export class ObservabilityadminActions {
 		ObservabilityadminActions.actionGetTelemetryPipeline,
 		ObservabilityadminActions.actionGetTelemetryRule,
 		ObservabilityadminActions.actionGetTelemetryRuleForOrganization,
+		ObservabilityadminActions.actionGetThirdPartyTelemetryEnrichment,
 		ObservabilityadminActions.ListResourceTelemetry,
 		ObservabilityadminActions.ListResourceTelemetryForOrganization,
+		ObservabilityadminActions.ListResourcesByConnector,
 		ObservabilityadminActions.TestTelemetryPipeline,
 		ObservabilityadminActions.ValidateTelemetryPipelineConfiguration,
 	];
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
 		ObservabilityadminActions.CreateCentralizationRuleForOrganization,
+		ObservabilityadminActions.CreateConnector,
 		ObservabilityadminActions.CreateDatasetIntegration,
 		ObservabilityadminActions.CreateS3TableIntegration,
 		ObservabilityadminActions.CreateTelemetryPipeline,
 		ObservabilityadminActions.CreateTelemetryRule,
 		ObservabilityadminActions.CreateTelemetryRuleForOrganization,
 		ObservabilityadminActions.DeleteCentralizationRuleForOrganization,
+		ObservabilityadminActions.DeleteConnector,
 		ObservabilityadminActions.DeleteDatasetIntegration,
 		ObservabilityadminActions.DeleteS3TableIntegration,
 		ObservabilityadminActions.DeleteTelemetryPipeline,
 		ObservabilityadminActions.DeleteTelemetryRule,
 		ObservabilityadminActions.DeleteTelemetryRuleForOrganization,
+		ObservabilityadminActions.PutConnectorTelemetryManifest,
 		ObservabilityadminActions.StartTelemetryEnrichment,
 		ObservabilityadminActions.StartTelemetryEvaluation,
 		ObservabilityadminActions.StartTelemetryEvaluationForOrganization,
+		ObservabilityadminActions.StartTelemetryPipelineRefresh,
+		ObservabilityadminActions.StartThirdPartyTelemetryEnrichment,
 		ObservabilityadminActions.StopTelemetryEnrichment,
 		ObservabilityadminActions.StopTelemetryEvaluation,
 		ObservabilityadminActions.StopTelemetryEvaluationForOrganization,
+		ObservabilityadminActions.StopThirdPartyTelemetryEnrichment,
 		ObservabilityadminActions.UpdateCentralizationRuleForOrganization,
 		ObservabilityadminActions.UpdateDatasetIntegration,
 		ObservabilityadminActions.UpdateTelemetryPipeline,
@@ -190,12 +236,14 @@ export class ObservabilityadminActions {
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [
 		ObservabilityadminActions.ListCentralizationRulesForOrganization,
+		ObservabilityadminActions.ListConnectors,
 		ObservabilityadminActions.ListDatasetIntegrations,
 		ObservabilityadminActions.ListS3TableIntegrations,
 		ObservabilityadminActions.ListTagsForResource,
 		ObservabilityadminActions.ListTelemetryPipelines,
 		ObservabilityadminActions.ListTelemetryRules,
 		ObservabilityadminActions.ListTelemetryRulesForOrganization,
+		ObservabilityadminActions.ListThirdPartyTelemetryEnrichments,
 	];
 	/** All permission-management-level actions. */
 	static readonly AllPermissionManagementActions: string[] = [];
@@ -204,6 +252,38 @@ export class ObservabilityadminActions {
 		ObservabilityadminActions.TagResource,
 		ObservabilityadminActions.UntagResource,
 	];
+}
+
+/**
+ * Properties for building a connector ARN.
+ */
+export interface ObservabilityadminConnectorArnProps {
+	/** The ConnectorProvider component of the ARN. */
+	readonly connectorProvider: string;
+	/** The ConnectorId component of the ARN. */
+	readonly connectorId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a connector ARN.
+ */
+export interface ObservabilityadminConnectorArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ConnectorProvider component. */
+	readonly connectorProvider: string;
+	/** The ConnectorId component. */
+	readonly connectorId: string;
 }
 
 /**
@@ -319,6 +399,34 @@ export interface ObservabilityadminS3tableintegrationArnComponents {
 }
 
 /**
+ * Properties for building a telemetry-enrichment ARN.
+ */
+export interface ObservabilityadminTelemetryEnrichmentArnProps {
+	/** The TelemetryEnrichmentId component of the ARN. */
+	readonly telemetryEnrichmentId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a telemetry-enrichment ARN.
+ */
+export interface ObservabilityadminTelemetryEnrichmentArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TelemetryEnrichmentId component. */
+	readonly telemetryEnrichmentId: string;
+}
+
+/**
  * Properties for building a telemetry-pipeline ARN.
  */
 export interface ObservabilityadminTelemetryPipelineArnProps {
@@ -374,6 +482,8 @@ export interface ObservabilityadminTelemetryRuleArnComponents {
 	readonly telemetryRuleName: string;
 }
 
+const ConnectorArnRegex =
+	/^arn:(?<partition>[^:]+):observabilityadmin:(?<region>[^:]*):(?<account>[^:]*):connector\/(?<connectorProvider>[^:/?]+)\/(?<connectorId>[^:/?]+)$/;
 const DatasetIntegrationArnRegex =
 	/^arn:(?<partition>[^:]+):observabilityadmin:(?<region>[^:]*):(?<account>[^:]*):dataset-integration\/(?<datasetIntegrationIdentifier>[^:/?]+)$/;
 const OrganizationCentralizationRuleArnRegex =
@@ -382,6 +492,8 @@ const OrganizationTelemetryRuleArnRegex =
 	/^arn:(?<partition>[^:]+):observabilityadmin:(?<region>[^:]*):(?<account>[^:]*):organization-telemetry-rule\/(?<telemetryRuleName>[^:/?]+)$/;
 const S3tableintegrationArnRegex =
 	/^arn:(?<partition>[^:]+):observabilityadmin:(?<region>[^:]*):(?<account>[^:]*):s3tableintegration\/(?<s3TableIntegrationIdentifier>[^:/?]+)$/;
+const TelemetryEnrichmentArnRegex =
+	/^arn:(?<partition>[^:]+):observabilityadmin:(?<region>[^:]*):(?<account>[^:]*):telemetry-enrichments\/(?<telemetryEnrichmentId>[^:/?]+)$/;
 const TelemetryPipelineArnRegex =
 	/^arn:(?<partition>[^:]+):observabilityadmin:(?<region>[^:]*):(?<account>[^:]*):telemetry-pipeline\/(?<telemetryPipelineIdentifier>[^:/?]+)$/;
 const TelemetryRuleArnRegex =
@@ -391,6 +503,40 @@ const TelemetryRuleArnRegex =
  * ARN builders, validators, and parsers for observabilityadmin resources.
  */
 export class ObservabilityadminResources {
+	/**
+	 * Builds an ARN for the connector resource.
+	 */
+	static connector(props: ObservabilityadminConnectorArnProps): string {
+		return `arn:${props.partition ?? "aws"}:observabilityadmin:${props.region ?? "*"}:${props.account ?? "*"}:connector/${props.connectorProvider}/${props.connectorId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the connector resource.
+	 */
+	static isValidConnectorArn(arn: string): boolean {
+		return ConnectorArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a connector ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseConnectorArn(
+		arn: string,
+	): ObservabilityadminConnectorArnComponents {
+		const match = ConnectorArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid connector ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			connectorProvider: match.groups!.connectorProvider,
+			connectorId: match.groups!.connectorId,
+		};
+	}
+
 	/**
 	 * Builds an ARN for the dataset-integration resource.
 	 */
@@ -532,6 +678,41 @@ export class ObservabilityadminResources {
 	}
 
 	/**
+	 * Builds an ARN for the telemetry-enrichment resource.
+	 */
+	static telemetryEnrichment(
+		props: ObservabilityadminTelemetryEnrichmentArnProps,
+	): string {
+		return `arn:${props.partition ?? "aws"}:observabilityadmin:${props.region ?? "*"}:${props.account ?? "*"}:telemetry-enrichments/${props.telemetryEnrichmentId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the telemetry-enrichment resource.
+	 */
+	static isValidTelemetryEnrichmentArn(arn: string): boolean {
+		return TelemetryEnrichmentArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a telemetry-enrichment ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseTelemetryEnrichmentArn(
+		arn: string,
+	): ObservabilityadminTelemetryEnrichmentArnComponents {
+		const match = TelemetryEnrichmentArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid telemetry-enrichment ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			telemetryEnrichmentId: match.groups!.telemetryEnrichmentId,
+		};
+	}
+
+	/**
 	 * Builds an ARN for the telemetry-pipeline resource.
 	 */
 	static telemetryPipeline(
@@ -609,6 +790,12 @@ export class ObservabilityadminOperations {
 		"observabilityadmin:CreateCentralizationRuleForOrganization",
 		"observabilityadmin:TagResource",
 	];
+	/** IAM actions required for the CreateConnector API call. */
+	static readonly CreateConnector: string[] = [
+		"observabilityadmin:CreateConnector",
+		"iam:PassRole",
+		"observabilityadmin:TagResource",
+	];
 	/** IAM actions required for the CreateDatasetIntegration API call. */
 	static readonly CreateDatasetIntegration: string[] = [
 		"observabilityadmin:CreateDatasetIntegration",
@@ -641,6 +828,10 @@ export class ObservabilityadminOperations {
 	static readonly DeleteCentralizationRuleForOrganization: string[] = [
 		"observabilityadmin:DeleteCentralizationRuleForOrganization",
 	];
+	/** IAM actions required for the DeleteConnector API call. */
+	static readonly DeleteConnector: string[] = [
+		"observabilityadmin:DeleteConnector",
+	];
 	/** IAM actions required for the DeleteDatasetIntegration API call. */
 	static readonly DeleteDatasetIntegration: string[] = [
 		"observabilityadmin:DeleteDatasetIntegration",
@@ -664,6 +855,18 @@ export class ObservabilityadminOperations {
 	/** IAM actions required for the GetCentralizationRuleForOrganization API call. */
 	static readonly opGetCentralizationRuleForOrganization: string[] = [
 		"observabilityadmin:GetCentralizationRuleForOrganization",
+	];
+	/** IAM actions required for the GetConnector API call. */
+	static readonly opGetConnector: string[] = [
+		"observabilityadmin:GetConnector",
+	];
+	/** IAM actions required for the GetConnectorTelemetryManifest API call. */
+	static readonly opGetConnectorTelemetryManifest: string[] = [
+		"observabilityadmin:GetConnectorTelemetryManifest",
+	];
+	/** IAM actions required for the GetConnectorTelemetrySetup API call. */
+	static readonly opGetConnectorTelemetrySetup: string[] = [
+		"observabilityadmin:GetConnectorTelemetrySetup",
 	];
 	/** IAM actions required for the GetDatasetIntegration API call. */
 	static readonly opGetDatasetIntegration: string[] = [
@@ -697,9 +900,17 @@ export class ObservabilityadminOperations {
 	static readonly opGetTelemetryRuleForOrganization: string[] = [
 		"observabilityadmin:GetTelemetryRuleForOrganization",
 	];
+	/** IAM actions required for the GetThirdPartyTelemetryEnrichment API call. */
+	static readonly opGetThirdPartyTelemetryEnrichment: string[] = [
+		"observabilityadmin:GetThirdPartyTelemetryEnrichment",
+	];
 	/** IAM actions required for the ListCentralizationRulesForOrganization API call. */
 	static readonly ListCentralizationRulesForOrganization: string[] = [
 		"observabilityadmin:ListCentralizationRulesForOrganization",
+	];
+	/** IAM actions required for the ListConnectors API call. */
+	static readonly ListConnectors: string[] = [
+		"observabilityadmin:ListConnectors",
 	];
 	/** IAM actions required for the ListDatasetIntegrations API call. */
 	static readonly ListDatasetIntegrations: string[] = [
@@ -712,6 +923,10 @@ export class ObservabilityadminOperations {
 	/** IAM actions required for the ListResourceTelemetryForOrganization API call. */
 	static readonly ListResourceTelemetryForOrganization: string[] = [
 		"observabilityadmin:ListResourceTelemetryForOrganization",
+	];
+	/** IAM actions required for the ListResourcesByConnector API call. */
+	static readonly ListResourcesByConnector: string[] = [
+		"observabilityadmin:ListResourcesByConnector",
 	];
 	/** IAM actions required for the ListS3TableIntegrations API call. */
 	static readonly ListS3TableIntegrations: string[] = [
@@ -733,6 +948,14 @@ export class ObservabilityadminOperations {
 	static readonly ListTelemetryRulesForOrganization: string[] = [
 		"observabilityadmin:ListTelemetryRulesForOrganization",
 	];
+	/** IAM actions required for the ListThirdPartyTelemetryEnrichments API call. */
+	static readonly ListThirdPartyTelemetryEnrichments: string[] = [
+		"observabilityadmin:ListThirdPartyTelemetryEnrichments",
+	];
+	/** IAM actions required for the PutConnectorTelemetryManifest API call. */
+	static readonly PutConnectorTelemetryManifest: string[] = [
+		"observabilityadmin:PutConnectorTelemetryManifest",
+	];
 	/** IAM actions required for the StartTelemetryEnrichment API call. */
 	static readonly StartTelemetryEnrichment: string[] = [
 		"observabilityadmin:StartTelemetryEnrichment",
@@ -745,6 +968,12 @@ export class ObservabilityadminOperations {
 	static readonly StartTelemetryEvaluationForOrganization: string[] = [
 		"observabilityadmin:StartTelemetryEvaluationForOrganization",
 	];
+	/** IAM actions required for the StartTelemetryPipelineRefresh API call. */
+	static readonly StartTelemetryPipelineRefresh: string[] = [
+		"observabilityadmin:StartTelemetryPipelineRefresh",
+	];
+	/** IAM actions required for the StartThirdPartyTelemetryEnrichment API call. */
+	static readonly StartThirdPartyTelemetryEnrichment: string[] = [];
 	/** IAM actions required for the StopTelemetryEnrichment API call. */
 	static readonly StopTelemetryEnrichment: string[] = [
 		"observabilityadmin:StopTelemetryEnrichment",
@@ -756,6 +985,10 @@ export class ObservabilityadminOperations {
 	/** IAM actions required for the StopTelemetryEvaluationForOrganization API call. */
 	static readonly StopTelemetryEvaluationForOrganization: string[] = [
 		"observabilityadmin:StopTelemetryEvaluationForOrganization",
+	];
+	/** IAM actions required for the StopThirdPartyTelemetryEnrichment API call. */
+	static readonly StopThirdPartyTelemetryEnrichment: string[] = [
+		"observabilityadmin:StopThirdPartyTelemetryEnrichment",
 	];
 	/** IAM actions required for the TagResource API call. */
 	static readonly TagResource: string[] = ["observabilityadmin:TagResource"];
@@ -809,8 +1042,14 @@ export class ObservabilityadminConditions {
 			"observabilityadmin:CentralizationDestinationRegion",
 			"observabilityadmin:CentralizationRuleName",
 			"observabilityadmin:CentralizationSourceId",
+			"observabilityadmin:CentralizationSourceOrganizationalUnitId",
 			"observabilityadmin:CentralizationSourceRegions",
 		];
+	/** Condition keys applicable to the CreateConnector action. */
+	static readonly CreateConnectorConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateDatasetIntegration action. */
 	static readonly CreateDatasetIntegrationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
@@ -852,6 +1091,10 @@ export class ObservabilityadminConditions {
 	/** Condition keys applicable to the ListResourceTelemetryForOrganization action. */
 	static readonly ListResourceTelemetryForOrganizationConditionKeys: string[] =
 		["observabilityadmin:TargetRegions"];
+	/** Condition keys applicable to the PutConnectorTelemetryManifest action. */
+	static readonly PutConnectorTelemetryManifestConditionKeys: string[] = [
+		"observabilityadmin:AzureTelemetryRegion",
+	];
 	/** Condition keys applicable to the StartTelemetryEvaluation action. */
 	static readonly StartTelemetryEvaluationConditionKeys: string[] = [
 		"observabilityadmin:TargetRegions",
@@ -859,6 +1102,11 @@ export class ObservabilityadminConditions {
 	/** Condition keys applicable to the StartTelemetryEvaluationForOrganization action. */
 	static readonly StartTelemetryEvaluationForOrganizationConditionKeys: string[] =
 		["observabilityadmin:TargetRegions"];
+	/** Condition keys applicable to the StartThirdPartyTelemetryEnrichment action. */
+	static readonly StartThirdPartyTelemetryEnrichmentConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the TagResource action. */
 	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
@@ -874,6 +1122,7 @@ export class ObservabilityadminConditions {
 			"observabilityadmin:CentralizationDestinationRegion",
 			"observabilityadmin:CentralizationRuleName",
 			"observabilityadmin:CentralizationSourceId",
+			"observabilityadmin:CentralizationSourceOrganizationalUnitId",
 			"observabilityadmin:CentralizationSourceRegions",
 		];
 	/** Condition keys applicable to the UpdateTelemetryRule action. */
@@ -891,6 +1140,9 @@ export class ObservabilityadminConditions {
 	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
 	static readonly AWS_TAG_KEYS = "aws:TagKeys";
+	/** Condition key: observabilityadmin:AzureTelemetryRegion (ArrayOfString) */
+	static readonly AZURE_TELEMETRY_REGION =
+		"observabilityadmin:AzureTelemetryRegion";
 	/** Condition key: observabilityadmin:CentralizationBackupRegion (String) */
 	static readonly CENTRALIZATION_BACKUP_REGION =
 		"observabilityadmin:CentralizationBackupRegion";
@@ -906,6 +1158,9 @@ export class ObservabilityadminConditions {
 	/** Condition key: observabilityadmin:CentralizationSourceId (ArrayOfString) */
 	static readonly CENTRALIZATION_SOURCE_ID =
 		"observabilityadmin:CentralizationSourceId";
+	/** Condition key: observabilityadmin:CentralizationSourceOrganizationalUnitId (ArrayOfString) */
+	static readonly CENTRALIZATION_SOURCE_ORGANIZATIONAL_UNIT_ID =
+		"observabilityadmin:CentralizationSourceOrganizationalUnitId";
 	/** Condition key: observabilityadmin:CentralizationSourceRegions (ArrayOfString) */
 	static readonly CENTRALIZATION_SOURCE_REGIONS =
 		"observabilityadmin:CentralizationSourceRegions";
@@ -933,6 +1188,19 @@ export class ObservabilityadminConditions {
 	 */
 	static tagKeys(values: string[]): Record<string, Record<string, string[]>> {
 		return { "ForAllValues:StringEquals": { "aws:TagKeys": values } };
+	}
+
+	/**
+	 * Generates a condition block for `observabilityadmin:AzureTelemetryRegion`.
+	 */
+	static azureTelemetryRegion(
+		values: string[],
+	): Record<string, Record<string, string[]>> {
+		return {
+			"ForAllValues:StringEquals": {
+				"observabilityadmin:AzureTelemetryRegion": values,
+			},
+		};
 	}
 
 	/**
@@ -992,6 +1260,19 @@ export class ObservabilityadminConditions {
 		return {
 			"ForAllValues:StringEquals": {
 				"observabilityadmin:CentralizationSourceId": values,
+			},
+		};
+	}
+
+	/**
+	 * Generates a condition block for `observabilityadmin:CentralizationSourceOrganizationalUnitId`.
+	 */
+	static centralizationSourceOrganizationalUnitId(
+		values: string[],
+	): Record<string, Record<string, string[]>> {
+		return {
+			"ForAllValues:StringEquals": {
+				"observabilityadmin:CentralizationSourceOrganizationalUnitId": values,
 			},
 		};
 	}
