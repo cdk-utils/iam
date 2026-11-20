@@ -129,6 +129,9 @@ export class Route53resolverActions {
 		"route53resolver:ListFirewallDomainLists";
 	/** [List] route53resolver:ListFirewallDomains */
 	static readonly ListFirewallDomains = "route53resolver:ListFirewallDomains";
+	/** [List] route53resolver:ListFirewallRuleDomains */
+	static readonly ListFirewallRuleDomains =
+		"route53resolver:ListFirewallRuleDomains";
 	/** [List] route53resolver:ListFirewallRuleGroupAssociations */
 	static readonly ListFirewallRuleGroupAssociations =
 		"route53resolver:ListFirewallRuleGroupAssociations";
@@ -263,6 +266,7 @@ export class Route53resolverActions {
 		Route53resolverActions.ListFirewallConfigs,
 		Route53resolverActions.ListFirewallDomainLists,
 		Route53resolverActions.ListFirewallDomains,
+		Route53resolverActions.ListFirewallRuleDomains,
 		Route53resolverActions.ListFirewallRuleGroupAssociations,
 		Route53resolverActions.ListFirewallRuleGroups,
 		Route53resolverActions.ListFirewallRuleTypes,
@@ -1192,6 +1196,10 @@ export class Route53resolverOperations {
 	/** IAM actions required for the ListFirewallDomains API call. */
 	static readonly ListFirewallDomains: string[] = [
 		"route53resolver:ListFirewallDomains",
+	];
+	/** IAM actions required for the ListFirewallRuleDomains API call. */
+	static readonly ListFirewallRuleDomains: string[] = [
+		"route53resolver:ListFirewallRuleDomains",
 	];
 	/** IAM actions required for the ListFirewallRuleGroupAssociations API call. */
 	static readonly ListFirewallRuleGroupAssociations: string[] = [

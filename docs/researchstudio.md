@@ -40,6 +40,7 @@ new researchstudio.ResearchstudioActions()
 | <code><a href="#@cdk_utils/iam.researchstudio.ResearchstudioActions.property.DeletePrincipal">DeletePrincipal</a></code> | <code>string</code> | [Write] researchstudio:DeletePrincipal. |
 | <code><a href="#@cdk_utils/iam.researchstudio.ResearchstudioActions.property.ListApplications">ListApplications</a></code> | <code>string</code> | [List] researchstudio:ListApplications. |
 | <code><a href="#@cdk_utils/iam.researchstudio.ResearchstudioActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
+| <code><a href="#@cdk_utils/iam.researchstudio.ResearchstudioActions.property.UpdateApplication">UpdateApplication</a></code> | <code>string</code> | [Write] researchstudio:UpdateApplication. |
 
 ---
 
@@ -184,6 +185,18 @@ public readonly SERVICE_PREFIX: string;
 - *Type:* string
 
 The IAM service prefix.
+
+---
+
+##### `UpdateApplication`<sup>Required</sup> <a name="UpdateApplication" id="@cdk_utils/iam.researchstudio.ResearchstudioActions.property.UpdateApplication"></a>
+
+```typescript
+public readonly UpdateApplication: string;
+```
+
+- *Type:* string
+
+[Write] researchstudio:UpdateApplication.
 
 ---
 

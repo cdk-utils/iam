@@ -14,6 +14,9 @@ export class DsqlActions {
 
 	/** [Write] dsql:AddPeerCluster */
 	static readonly AddPeerCluster = "dsql:AddPeerCluster";
+	/** [PermissionManagement] dsql:AllowVendedLogDeliveryForResource */
+	static readonly AllowVendedLogDeliveryForResource =
+		"dsql:AllowVendedLogDeliveryForResource";
 	/** [Write] dsql:CreateCluster */
 	static readonly CreateCluster = "dsql:CreateCluster";
 	/** [Write] dsql:CreateStream */
@@ -112,7 +115,9 @@ export class DsqlActions {
 		DsqlActions.ListStreams,
 	];
 	/** All permission-management-level actions. */
-	static readonly AllPermissionManagementActions: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [
+		DsqlActions.AllowVendedLogDeliveryForResource,
+	];
 	/** All tagging-level actions. */
 	static readonly AllTaggingActions: string[] = [
 		DsqlActions.TagResource,

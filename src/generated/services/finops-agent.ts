@@ -69,6 +69,9 @@ export class FinopsAgentActions {
 		"finops-agent:GetDocumentMetadata";
 	/** [Read] finops-agent:GetIntegration */
 	static readonly actionGetIntegration = "finops-agent:GetIntegration";
+	/** [Read] finops-agent:GetOrganizationAccess */
+	static readonly actionGetOrganizationAccess =
+		"finops-agent:GetOrganizationAccess";
 	/** [Read] finops-agent:GetTask */
 	static readonly actionGetTask = "finops-agent:GetTask";
 	/** [Read] finops-agent:GetTurn */
@@ -107,6 +110,9 @@ export class FinopsAgentActions {
 	static readonly UpdateConnection = "finops-agent:UpdateConnection";
 	/** [Write] finops-agent:UpdateDocument */
 	static readonly UpdateDocument = "finops-agent:UpdateDocument";
+	/** [Write] finops-agent:UpdateOrganizationAccess */
+	static readonly UpdateOrganizationAccess =
+		"finops-agent:UpdateOrganizationAccess";
 
 	/** All read-level actions. */
 	static readonly AllReadActions: string[] = [
@@ -119,6 +125,7 @@ export class FinopsAgentActions {
 		FinopsAgentActions.actionGetDocumentContent,
 		FinopsAgentActions.actionGetDocumentMetadata,
 		FinopsAgentActions.actionGetIntegration,
+		FinopsAgentActions.actionGetOrganizationAccess,
 		FinopsAgentActions.actionGetTask,
 		FinopsAgentActions.actionGetTurn,
 	];
@@ -149,6 +156,7 @@ export class FinopsAgentActions {
 		FinopsAgentActions.UpdateAutomation,
 		FinopsAgentActions.UpdateConnection,
 		FinopsAgentActions.UpdateDocument,
+		FinopsAgentActions.UpdateOrganizationAccess,
 	];
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [

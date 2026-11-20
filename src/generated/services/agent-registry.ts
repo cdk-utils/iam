@@ -12,6 +12,9 @@ export class AgentRegistryActions {
 	/** The IAM service prefix. */
 	static readonly SERVICE_PREFIX = "agent-registry";
 
+	/** [Write] agent-registry:CompleteRegistryRecordTokenAuth */
+	static readonly CompleteRegistryRecordTokenAuth =
+		"agent-registry:CompleteRegistryRecordTokenAuth";
 	/** [Write] agent-registry:CreateRegistry */
 	static readonly CreateRegistry = "agent-registry:CreateRegistry";
 	/** [Write] agent-registry:CreateRegistryRecord */
@@ -73,6 +76,7 @@ export class AgentRegistryActions {
 	];
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
+		AgentRegistryActions.CompleteRegistryRecordTokenAuth,
 		AgentRegistryActions.CreateRegistry,
 		AgentRegistryActions.CreateRegistryRecord,
 		AgentRegistryActions.DeleteRegistry,

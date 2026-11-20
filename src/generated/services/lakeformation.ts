@@ -350,6 +350,10 @@ export class LakeFormationOperations {
 	static readonly opGetEffectivePermissionsForPath: string[] = [
 		"lakeformation:GetEffectivePermissionsForPath",
 	];
+	/** IAM actions required for the GetGlueFunctionSessionContext API call. */
+	static readonly opGetGlueFunctionSessionContext: string[] = [
+		"lakeformation:GetDataAccess",
+	];
 	/** IAM actions required for the GetLFTag API call. */
 	static readonly opGetLFTag: string[] = [];
 	/** IAM actions required for the GetLFTagExpression API call. */
@@ -370,6 +374,10 @@ export class LakeFormationOperations {
 	static readonly opGetTableObjects: string[] = [];
 	/** IAM actions required for the GetTemporaryDataLocationCredentials API call. */
 	static readonly opGetTemporaryDataLocationCredentials: string[] = [
+		"lakeformation:GetDataAccess",
+	];
+	/** IAM actions required for the GetTemporaryGlueFunctionCredentials API call. */
+	static readonly opGetTemporaryGlueFunctionCredentials: string[] = [
 		"lakeformation:GetDataAccess",
 	];
 	/** IAM actions required for the GetTemporaryGluePartitionCredentials API call. */

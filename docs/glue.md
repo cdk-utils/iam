@@ -1187,6 +1187,154 @@ Defaults to "*".
 
 ---
 
+### GlueDataQualityEvaluationConfigArnComponents <a name="GlueDataQualityEvaluationConfigArnComponents" id="@cdk_utils/iam.glue.GlueDataQualityEvaluationConfigArnComponents"></a>
+
+Parsed components of a dataQualityEvaluationConfig ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.glue.GlueDataQualityEvaluationConfigArnComponents.Initializer"></a>
+
+```typescript
+import { glue } from '@cdk_utils/iam'
+
+const glueDataQualityEvaluationConfigArnComponents: glue.GlueDataQualityEvaluationConfigArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.glue.GlueDataQualityEvaluationConfigArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.glue.GlueDataQualityEvaluationConfigArnComponents.property.evaluationConfigName">evaluationConfigName</a></code> | <code>string</code> | The EvaluationConfigName component. |
+| <code><a href="#@cdk_utils/iam.glue.GlueDataQualityEvaluationConfigArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.glue.GlueDataQualityEvaluationConfigArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.glue.GlueDataQualityEvaluationConfigArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `evaluationConfigName`<sup>Required</sup> <a name="evaluationConfigName" id="@cdk_utils/iam.glue.GlueDataQualityEvaluationConfigArnComponents.property.evaluationConfigName"></a>
+
+```typescript
+public readonly evaluationConfigName: string;
+```
+
+- *Type:* string
+
+The EvaluationConfigName component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.glue.GlueDataQualityEvaluationConfigArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.glue.GlueDataQualityEvaluationConfigArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### GlueDataQualityEvaluationConfigArnProps <a name="GlueDataQualityEvaluationConfigArnProps" id="@cdk_utils/iam.glue.GlueDataQualityEvaluationConfigArnProps"></a>
+
+Properties for building a dataQualityEvaluationConfig ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.glue.GlueDataQualityEvaluationConfigArnProps.Initializer"></a>
+
+```typescript
+import { glue } from '@cdk_utils/iam'
+
+const glueDataQualityEvaluationConfigArnProps: glue.GlueDataQualityEvaluationConfigArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.glue.GlueDataQualityEvaluationConfigArnProps.property.evaluationConfigName">evaluationConfigName</a></code> | <code>string</code> | The EvaluationConfigName component of the ARN. |
+| <code><a href="#@cdk_utils/iam.glue.GlueDataQualityEvaluationConfigArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.glue.GlueDataQualityEvaluationConfigArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.glue.GlueDataQualityEvaluationConfigArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `evaluationConfigName`<sup>Required</sup> <a name="evaluationConfigName" id="@cdk_utils/iam.glue.GlueDataQualityEvaluationConfigArnProps.property.evaluationConfigName"></a>
+
+```typescript
+public readonly evaluationConfigName: string;
+```
+
+- *Type:* string
+
+The EvaluationConfigName component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.glue.GlueDataQualityEvaluationConfigArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.glue.GlueDataQualityEvaluationConfigArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.glue.GlueDataQualityEvaluationConfigArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### GlueDataQualityRulesetArnComponents <a name="GlueDataQualityRulesetArnComponents" id="@cdk_utils/iam.glue.GlueDataQualityRulesetArnComponents"></a>
 
 Parsed components of a dataQualityRuleset ARN.
@@ -3712,6 +3860,7 @@ new glue.GlueActions()
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.actionGetDataCatalogEncryptionSettings">actionGetDataCatalogEncryptionSettings</a></code> | <code>string</code> | [Read] glue:GetDataCatalogEncryptionSettings. |
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.actionGetDataflowGraph">actionGetDataflowGraph</a></code> | <code>string</code> | [Read] glue:GetDataflowGraph. |
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.actionGetDataPreviewStatement">actionGetDataPreviewStatement</a></code> | <code>string</code> | [PermissionManagement] glue:GetDataPreviewStatement. |
+| <code><a href="#@cdk_utils/iam.glue.GlueActions.property.actionGetDataQualityEvaluationConfig">actionGetDataQualityEvaluationConfig</a></code> | <code>string</code> | [Read] glue:GetDataQualityEvaluationConfig. |
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.actionGetDataQualityModel">actionGetDataQualityModel</a></code> | <code>string</code> | [Read] glue:GetDataQualityModel. |
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.actionGetDataQualityModelResult">actionGetDataQualityModelResult</a></code> | <code>string</code> | [Read] glue:GetDataQualityModelResult. |
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.actionGetDataQualityResult">actionGetDataQualityResult</a></code> | <code>string</code> | [Read] glue:GetDataQualityResult. |
@@ -3821,6 +3970,7 @@ new glue.GlueActions()
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.CreateCrawler">CreateCrawler</a></code> | <code>string</code> | [Write] glue:CreateCrawler. |
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.CreateCustomEntityType">CreateCustomEntityType</a></code> | <code>string</code> | [Write] glue:CreateCustomEntityType. |
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.CreateDatabase">CreateDatabase</a></code> | <code>string</code> | [Write] glue:CreateDatabase. |
+| <code><a href="#@cdk_utils/iam.glue.GlueActions.property.CreateDataQualityEvaluationConfig">CreateDataQualityEvaluationConfig</a></code> | <code>string</code> | [Write] glue:CreateDataQualityEvaluationConfig. |
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.CreateDataQualityRuleset">CreateDataQualityRuleset</a></code> | <code>string</code> | [Write] glue:CreateDataQualityRuleset. |
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.CreateDevEndpoint">CreateDevEndpoint</a></code> | <code>string</code> | [Write] glue:CreateDevEndpoint. |
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.CreateGlueIdentityCenterConfiguration">CreateGlueIdentityCenterConfiguration</a></code> | <code>string</code> | [Write] glue:CreateGlueIdentityCenterConfiguration. |
@@ -3854,6 +4004,7 @@ new glue.GlueActions()
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.DeleteCrawler">DeleteCrawler</a></code> | <code>string</code> | [Write] glue:DeleteCrawler. |
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.DeleteCustomEntityType">DeleteCustomEntityType</a></code> | <code>string</code> | [Write] glue:DeleteCustomEntityType. |
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.DeleteDatabase">DeleteDatabase</a></code> | <code>string</code> | [Write] glue:DeleteDatabase. |
+| <code><a href="#@cdk_utils/iam.glue.GlueActions.property.DeleteDataQualityEvaluationConfig">DeleteDataQualityEvaluationConfig</a></code> | <code>string</code> | [Write] glue:DeleteDataQualityEvaluationConfig. |
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.DeleteDataQualityRuleset">DeleteDataQualityRuleset</a></code> | <code>string</code> | [Write] glue:DeleteDataQualityRuleset. |
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.DeleteDevEndpoint">DeleteDevEndpoint</a></code> | <code>string</code> | [Write] glue:DeleteDevEndpoint. |
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.DeleteGlueIdentityCenterConfiguration">DeleteGlueIdentityCenterConfiguration</a></code> | <code>string</code> | [Write] glue:DeleteGlueIdentityCenterConfiguration. |
@@ -3892,6 +4043,7 @@ new glue.GlueActions()
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.ListCrawlers">ListCrawlers</a></code> | <code>string</code> | [List] glue:ListCrawlers. |
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.ListCrawls">ListCrawls</a></code> | <code>string</code> | [List] glue:ListCrawls. |
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.ListCustomEntityTypes">ListCustomEntityTypes</a></code> | <code>string</code> | [List] glue:ListCustomEntityTypes. |
+| <code><a href="#@cdk_utils/iam.glue.GlueActions.property.ListDataQualityEvaluationConfigs">ListDataQualityEvaluationConfigs</a></code> | <code>string</code> | [List] glue:ListDataQualityEvaluationConfigs. |
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.ListDataQualityResults">ListDataQualityResults</a></code> | <code>string</code> | [List] glue:ListDataQualityResults. |
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.ListDataQualityRuleRecommendationRuns">ListDataQualityRuleRecommendationRuns</a></code> | <code>string</code> | [List] glue:ListDataQualityRuleRecommendationRuns. |
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.ListDataQualityRulesetEvaluationRuns">ListDataQualityRulesetEvaluationRuns</a></code> | <code>string</code> | [List] glue:ListDataQualityRulesetEvaluationRuns. |
@@ -3899,6 +4051,7 @@ new glue.GlueActions()
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.ListDevEndpoints">ListDevEndpoints</a></code> | <code>string</code> | [List] glue:ListDevEndpoints. |
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.ListEntities">ListEntities</a></code> | <code>string</code> | [PermissionManagement] glue:ListEntities. |
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.ListIntegrationResourceProperties">ListIntegrationResourceProperties</a></code> | <code>string</code> | [List] glue:ListIntegrationResourceProperties. |
+| <code><a href="#@cdk_utils/iam.glue.GlueActions.property.ListIntegrationTableProperties">ListIntegrationTableProperties</a></code> | <code>string</code> | [List] glue:ListIntegrationTableProperties. |
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.ListJobs">ListJobs</a></code> | <code>string</code> | [List] glue:ListJobs. |
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.ListJobUpgradeAnalyses">ListJobUpgradeAnalyses</a></code> | <code>string</code> | [List] glue:ListJobUpgradeAnalyses. |
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.ListMLTransforms">ListMLTransforms</a></code> | <code>string</code> | [List] glue:ListMLTransforms. |
@@ -3976,6 +4129,7 @@ new glue.GlueActions()
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.UpdateCrawler">UpdateCrawler</a></code> | <code>string</code> | [Write] glue:UpdateCrawler. |
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.UpdateCrawlerSchedule">UpdateCrawlerSchedule</a></code> | <code>string</code> | [Write] glue:UpdateCrawlerSchedule. |
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.UpdateDatabase">UpdateDatabase</a></code> | <code>string</code> | [Write] glue:UpdateDatabase. |
+| <code><a href="#@cdk_utils/iam.glue.GlueActions.property.UpdateDataQualityEvaluationConfig">UpdateDataQualityEvaluationConfig</a></code> | <code>string</code> | [Write] glue:UpdateDataQualityEvaluationConfig. |
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.UpdateDataQualityRuleset">UpdateDataQualityRuleset</a></code> | <code>string</code> | [Write] glue:UpdateDataQualityRuleset. |
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.UpdateDevEndpoint">UpdateDevEndpoint</a></code> | <code>string</code> | [Write] glue:UpdateDevEndpoint. |
 | <code><a href="#@cdk_utils/iam.glue.GlueActions.property.UpdateGlueIdentityCenterConfiguration">UpdateGlueIdentityCenterConfiguration</a></code> | <code>string</code> | [Write] glue:UpdateGlueIdentityCenterConfiguration. |
@@ -4321,6 +4475,18 @@ public readonly actionGetDataPreviewStatement: string;
 - *Type:* string
 
 [PermissionManagement] glue:GetDataPreviewStatement.
+
+---
+
+##### `actionGetDataQualityEvaluationConfig`<sup>Required</sup> <a name="actionGetDataQualityEvaluationConfig" id="@cdk_utils/iam.glue.GlueActions.property.actionGetDataQualityEvaluationConfig"></a>
+
+```typescript
+public readonly actionGetDataQualityEvaluationConfig: string;
+```
+
+- *Type:* string
+
+[Read] glue:GetDataQualityEvaluationConfig.
 
 ---
 
@@ -5632,6 +5798,18 @@ public readonly CreateDatabase: string;
 
 ---
 
+##### `CreateDataQualityEvaluationConfig`<sup>Required</sup> <a name="CreateDataQualityEvaluationConfig" id="@cdk_utils/iam.glue.GlueActions.property.CreateDataQualityEvaluationConfig"></a>
+
+```typescript
+public readonly CreateDataQualityEvaluationConfig: string;
+```
+
+- *Type:* string
+
+[Write] glue:CreateDataQualityEvaluationConfig.
+
+---
+
 ##### `CreateDataQualityRuleset`<sup>Required</sup> <a name="CreateDataQualityRuleset" id="@cdk_utils/iam.glue.GlueActions.property.CreateDataQualityRuleset"></a>
 
 ```typescript
@@ -6025,6 +6203,18 @@ public readonly DeleteDatabase: string;
 - *Type:* string
 
 [Write] glue:DeleteDatabase.
+
+---
+
+##### `DeleteDataQualityEvaluationConfig`<sup>Required</sup> <a name="DeleteDataQualityEvaluationConfig" id="@cdk_utils/iam.glue.GlueActions.property.DeleteDataQualityEvaluationConfig"></a>
+
+```typescript
+public readonly DeleteDataQualityEvaluationConfig: string;
+```
+
+- *Type:* string
+
+[Write] glue:DeleteDataQualityEvaluationConfig.
 
 ---
 
@@ -6484,6 +6674,18 @@ public readonly ListCustomEntityTypes: string;
 
 ---
 
+##### `ListDataQualityEvaluationConfigs`<sup>Required</sup> <a name="ListDataQualityEvaluationConfigs" id="@cdk_utils/iam.glue.GlueActions.property.ListDataQualityEvaluationConfigs"></a>
+
+```typescript
+public readonly ListDataQualityEvaluationConfigs: string;
+```
+
+- *Type:* string
+
+[List] glue:ListDataQualityEvaluationConfigs.
+
+---
+
 ##### `ListDataQualityResults`<sup>Required</sup> <a name="ListDataQualityResults" id="@cdk_utils/iam.glue.GlueActions.property.ListDataQualityResults"></a>
 
 ```typescript
@@ -6565,6 +6767,18 @@ public readonly ListIntegrationResourceProperties: string;
 - *Type:* string
 
 [List] glue:ListIntegrationResourceProperties.
+
+---
+
+##### `ListIntegrationTableProperties`<sup>Required</sup> <a name="ListIntegrationTableProperties" id="@cdk_utils/iam.glue.GlueActions.property.ListIntegrationTableProperties"></a>
+
+```typescript
+public readonly ListIntegrationTableProperties: string;
+```
+
+- *Type:* string
+
+[List] glue:ListIntegrationTableProperties.
 
 ---
 
@@ -7492,6 +7706,18 @@ public readonly UpdateDatabase: string;
 
 ---
 
+##### `UpdateDataQualityEvaluationConfig`<sup>Required</sup> <a name="UpdateDataQualityEvaluationConfig" id="@cdk_utils/iam.glue.GlueActions.property.UpdateDataQualityEvaluationConfig"></a>
+
+```typescript
+public readonly UpdateDataQualityEvaluationConfig: string;
+```
+
+- *Type:* string
+
+[Write] glue:UpdateDataQualityEvaluationConfig.
+
+---
+
 ##### `UpdateDataQualityRuleset`<sup>Required</sup> <a name="UpdateDataQualityRuleset" id="@cdk_utils/iam.glue.GlueActions.property.UpdateDataQualityRuleset"></a>
 
 ```typescript
@@ -7766,9 +7992,12 @@ new glue.GlueConditions()
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdk_utils/iam.glue.GlueConditions.connectionType">connectionType</a></code> | Generates a condition block for `glue:ConnectionType`. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.credentialIssuingService">credentialIssuingService</a></code> | Generates a condition block for `glue:CredentialIssuingService`. |
+| <code><a href="#@cdk_utils/iam.glue.GlueConditions.credentialVendingMode">credentialVendingMode</a></code> | Generates a condition block for `glue:CredentialVendingMode`. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.enabledForRedshiftAutoDiscovery">enabledForRedshiftAutoDiscovery</a></code> | Generates a condition block for `glue:EnabledForRedshiftAutoDiscovery`. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.federatedAuthorizationSource">federatedAuthorizationSource</a></code> | Generates a condition block for `glue:FederatedAuthorizationSource`. |
+| <code><a href="#@cdk_utils/iam.glue.GlueConditions.instanceURL">instanceURL</a></code> | Generates a condition block for `glue:InstanceUrl`. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.lakeFormationPermissions">lakeFormationPermissions</a></code> | Generates a condition block for `glue:LakeFormationPermissions`. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.requestTag">requestTag</a></code> | Generates a condition block for `aws:RequestTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.resourceTag">resourceTag</a></code> | Generates a condition block for `aws:ResourceTag/${TagKey}`. |
@@ -7777,6 +8006,22 @@ new glue.GlueConditions()
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.subnetIds">subnetIds</a></code> | Generates a condition block for `glue:SubnetIds`. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.tagKeys">tagKeys</a></code> | Generates a condition block for `aws:TagKeys`. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.vpcIds">vpcIds</a></code> | Generates a condition block for `glue:VpcIds`. |
+
+---
+
+##### `connectionType` <a name="connectionType" id="@cdk_utils/iam.glue.GlueConditions.connectionType"></a>
+
+```typescript
+import { glue } from '@cdk_utils/iam'
+
+glue.GlueConditions.connectionType(value: string)
+```
+
+Generates a condition block for `glue:ConnectionType`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.glue.GlueConditions.connectionType.parameter.value"></a>
+
+- *Type:* string
 
 ---
 
@@ -7791,6 +8036,22 @@ glue.GlueConditions.credentialIssuingService(value: string)
 Generates a condition block for `glue:CredentialIssuingService`.
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.glue.GlueConditions.credentialIssuingService.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `credentialVendingMode` <a name="credentialVendingMode" id="@cdk_utils/iam.glue.GlueConditions.credentialVendingMode"></a>
+
+```typescript
+import { glue } from '@cdk_utils/iam'
+
+glue.GlueConditions.credentialVendingMode(value: string)
+```
+
+Generates a condition block for `glue:CredentialVendingMode`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.glue.GlueConditions.credentialVendingMode.parameter.value"></a>
 
 - *Type:* string
 
@@ -7823,6 +8084,22 @@ glue.GlueConditions.federatedAuthorizationSource(value: string)
 Generates a condition block for `glue:FederatedAuthorizationSource`.
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.glue.GlueConditions.federatedAuthorizationSource.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `instanceURL` <a name="instanceURL" id="@cdk_utils/iam.glue.GlueConditions.instanceURL"></a>
+
+```typescript
+import { glue } from '@cdk_utils/iam'
+
+glue.GlueConditions.instanceURL(value: string)
+```
+
+Generates a condition block for `glue:InstanceUrl`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.glue.GlueConditions.instanceURL.parameter.value"></a>
 
 - *Type:* string
 
@@ -7989,12 +8266,14 @@ Generates a condition block for `glue:VpcIds`.
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.BatchDeleteTableVersionConditionKeys">BatchDeleteTableVersionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the BatchDeleteTableVersion action. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.BatchGetPartitionConditionKeys">BatchGetPartitionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the BatchGetPartition action. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.BatchUpdatePartitionConditionKeys">BatchUpdatePartitionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the BatchUpdatePartition action. |
+| <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.CONNECTION_TYPE">CONNECTION_TYPE</a></code> | <code>string</code> | Condition key: glue:ConnectionType (String). |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.CreateBlueprintConditionKeys">CreateBlueprintConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateBlueprint action. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.CreateCatalogConditionKeys">CreateCatalogConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateCatalog action. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.CreateConnectionConditionKeys">CreateConnectionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateConnection action. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.CreateCrawlerConditionKeys">CreateCrawlerConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateCrawler action. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.CreateCustomEntityTypeConditionKeys">CreateCustomEntityTypeConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateCustomEntityType action. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.CreateDatabaseConditionKeys">CreateDatabaseConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateDatabase action. |
+| <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.CreateDataQualityEvaluationConfigConditionKeys">CreateDataQualityEvaluationConfigConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateDataQualityEvaluationConfig action. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.CreateDataQualityRulesetConditionKeys">CreateDataQualityRulesetConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateDataQualityRuleset action. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.CreateDevEndpointConditionKeys">CreateDevEndpointConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateDevEndpoint action. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.CreateIntegrationConditionKeys">CreateIntegrationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateIntegration action. |
@@ -8012,6 +8291,7 @@ Generates a condition block for `glue:VpcIds`.
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.CreateUserDefinedFunctionConditionKeys">CreateUserDefinedFunctionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateUserDefinedFunction action. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.CreateWorkflowConditionKeys">CreateWorkflowConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateWorkflow action. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.CREDENTIAL_ISSUING_SERVICE">CREDENTIAL_ISSUING_SERVICE</a></code> | <code>string</code> | Condition key: glue:CredentialIssuingService (String). |
+| <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.CREDENTIAL_VENDING_MODE">CREDENTIAL_VENDING_MODE</a></code> | <code>string</code> | Condition key: glue:CredentialVendingMode (String). |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.DeleteCatalogConditionKeys">DeleteCatalogConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteCatalog action. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.DeleteColumnStatisticsForPartitionConditionKeys">DeleteColumnStatisticsForPartitionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteColumnStatisticsForPartition action. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.DeleteColumnStatisticsForTableConditionKeys">DeleteColumnStatisticsForTableConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteColumnStatisticsForTable action. |
@@ -8028,6 +8308,7 @@ Generates a condition block for `glue:VpcIds`.
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.FederateAuthorizationConditionKeys">FederateAuthorizationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the FederateAuthorization action. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.FEDERATED_AUTHORIZATION_SOURCE">FEDERATED_AUTHORIZATION_SOURCE</a></code> | <code>string</code> | Condition key: glue:FederatedAuthorizationSource (String). |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.ImportCatalogToGlueConditionKeys">ImportCatalogToGlueConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ImportCatalogToGlue action. |
+| <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.INSTANCE_URL">INSTANCE_URL</a></code> | <code>string</code> | Condition key: glue:InstanceUrl (String). |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.LAKE_FORMATION_PERMISSIONS">LAKE_FORMATION_PERMISSIONS</a></code> | <code>string</code> | Condition key: glue:LakeFormationPermissions (String). |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.ModifyIntegrationConditionKeys">ModifyIntegrationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ModifyIntegration action. |
 | <code><a href="#@cdk_utils/iam.glue.GlueConditions.property.RegisterConnectionTypeConditionKeys">RegisterConnectionTypeConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the RegisterConnectionType action. |
@@ -8387,6 +8668,18 @@ Condition keys applicable to the BatchUpdatePartition action.
 
 ---
 
+##### `CONNECTION_TYPE`<sup>Required</sup> <a name="CONNECTION_TYPE" id="@cdk_utils/iam.glue.GlueConditions.property.CONNECTION_TYPE"></a>
+
+```typescript
+public readonly CONNECTION_TYPE: string;
+```
+
+- *Type:* string
+
+Condition key: glue:ConnectionType (String).
+
+---
+
 ##### `CreateBlueprintConditionKeys`<sup>Required</sup> <a name="CreateBlueprintConditionKeys" id="@cdk_utils/iam.glue.GlueConditions.property.CreateBlueprintConditionKeys"></a>
 
 ```typescript
@@ -8456,6 +8749,18 @@ public readonly CreateDatabaseConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CreateDatabase action.
+
+---
+
+##### `CreateDataQualityEvaluationConfigConditionKeys`<sup>Required</sup> <a name="CreateDataQualityEvaluationConfigConditionKeys" id="@cdk_utils/iam.glue.GlueConditions.property.CreateDataQualityEvaluationConfigConditionKeys"></a>
+
+```typescript
+public readonly CreateDataQualityEvaluationConfigConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateDataQualityEvaluationConfig action.
 
 ---
 
@@ -8663,6 +8968,18 @@ Condition key: glue:CredentialIssuingService (String).
 
 ---
 
+##### `CREDENTIAL_VENDING_MODE`<sup>Required</sup> <a name="CREDENTIAL_VENDING_MODE" id="@cdk_utils/iam.glue.GlueConditions.property.CREDENTIAL_VENDING_MODE"></a>
+
+```typescript
+public readonly CREDENTIAL_VENDING_MODE: string;
+```
+
+- *Type:* string
+
+Condition key: glue:CredentialVendingMode (String).
+
+---
+
 ##### `DeleteCatalogConditionKeys`<sup>Required</sup> <a name="DeleteCatalogConditionKeys" id="@cdk_utils/iam.glue.GlueConditions.property.DeleteCatalogConditionKeys"></a>
 
 ```typescript
@@ -8852,6 +9169,18 @@ public readonly ImportCatalogToGlueConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the ImportCatalogToGlue action.
+
+---
+
+##### `INSTANCE_URL`<sup>Required</sup> <a name="INSTANCE_URL" id="@cdk_utils/iam.glue.GlueConditions.property.INSTANCE_URL"></a>
+
+```typescript
+public readonly INSTANCE_URL: string;
+```
+
+- *Type:* string
+
+Condition key: glue:InstanceUrl (String).
 
 ---
 
@@ -9154,6 +9483,7 @@ new glue.GlueOperations()
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.CreateCrawler">CreateCrawler</a></code> | <code>string[]</code> | IAM actions required for the CreateCrawler API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.CreateCustomEntityType">CreateCustomEntityType</a></code> | <code>string[]</code> | IAM actions required for the CreateCustomEntityType API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.CreateDatabase">CreateDatabase</a></code> | <code>string[]</code> | IAM actions required for the CreateDatabase API call. |
+| <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.CreateDataQualityEvaluationConfig">CreateDataQualityEvaluationConfig</a></code> | <code>string[]</code> | IAM actions required for the CreateDataQualityEvaluationConfig API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.CreateDataQualityRuleset">CreateDataQualityRuleset</a></code> | <code>string[]</code> | IAM actions required for the CreateDataQualityRuleset API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.CreateDevEndpoint">CreateDevEndpoint</a></code> | <code>string[]</code> | IAM actions required for the CreateDevEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.CreateGlossary">CreateGlossary</a></code> | <code>string[]</code> | IAM actions required for the CreateGlossary API call. |
@@ -9191,6 +9521,7 @@ new glue.GlueOperations()
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.DeleteCrawler">DeleteCrawler</a></code> | <code>string[]</code> | IAM actions required for the DeleteCrawler API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.DeleteCustomEntityType">DeleteCustomEntityType</a></code> | <code>string[]</code> | IAM actions required for the DeleteCustomEntityType API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.DeleteDatabase">DeleteDatabase</a></code> | <code>string[]</code> | IAM actions required for the DeleteDatabase API call. |
+| <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.DeleteDataQualityEvaluationConfig">DeleteDataQualityEvaluationConfig</a></code> | <code>string[]</code> | IAM actions required for the DeleteDataQualityEvaluationConfig API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.DeleteDataQualityRuleset">DeleteDataQualityRuleset</a></code> | <code>string[]</code> | IAM actions required for the DeleteDataQualityRuleset API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.DeleteDevEndpoint">DeleteDevEndpoint</a></code> | <code>string[]</code> | IAM actions required for the DeleteDevEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.DeleteFormType">DeleteFormType</a></code> | <code>string[]</code> | IAM actions required for the DeleteFormType API call. |
@@ -9230,6 +9561,7 @@ new glue.GlueOperations()
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.ListCrawlers">ListCrawlers</a></code> | <code>string[]</code> | IAM actions required for the ListCrawlers API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.ListCrawls">ListCrawls</a></code> | <code>string[]</code> | IAM actions required for the ListCrawls API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.ListCustomEntityTypes">ListCustomEntityTypes</a></code> | <code>string[]</code> | IAM actions required for the ListCustomEntityTypes API call. |
+| <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.ListDataQualityEvaluationConfigs">ListDataQualityEvaluationConfigs</a></code> | <code>string[]</code> | IAM actions required for the ListDataQualityEvaluationConfigs API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.ListDataQualityResults">ListDataQualityResults</a></code> | <code>string[]</code> | IAM actions required for the ListDataQualityResults API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.ListDataQualityResultsV2">ListDataQualityResultsV2</a></code> | <code>string[]</code> | IAM actions required for the ListDataQualityResultsV2 API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.ListDataQualityRuleRecommendationRuns">ListDataQualityRuleRecommendationRuns</a></code> | <code>string[]</code> | IAM actions required for the ListDataQualityRuleRecommendationRuns API call. |
@@ -9285,6 +9617,7 @@ new glue.GlueOperations()
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetDataCatalogEncryptionSettings">opGetDataCatalogEncryptionSettings</a></code> | <code>string[]</code> | IAM actions required for the GetDataCatalogEncryptionSettings API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetDataCatalogExportConfiguration">opGetDataCatalogExportConfiguration</a></code> | <code>string[]</code> | IAM actions required for the GetDataCatalogExportConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetDataflowGraph">opGetDataflowGraph</a></code> | <code>string[]</code> | IAM actions required for the GetDataflowGraph API call. |
+| <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetDataQualityEvaluationConfig">opGetDataQualityEvaluationConfig</a></code> | <code>string[]</code> | IAM actions required for the GetDataQualityEvaluationConfig API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetDataQualityModel">opGetDataQualityModel</a></code> | <code>string[]</code> | IAM actions required for the GetDataQualityModel API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetDataQualityModelResult">opGetDataQualityModelResult</a></code> | <code>string[]</code> | IAM actions required for the GetDataQualityModelResult API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetDataQualityResult">opGetDataQualityResult</a></code> | <code>string[]</code> | IAM actions required for the GetDataQualityResult API call. |
@@ -9306,6 +9639,7 @@ new glue.GlueOperations()
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetJobRun">opGetJobRun</a></code> | <code>string[]</code> | IAM actions required for the GetJobRun API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetJobRuns">opGetJobRuns</a></code> | <code>string[]</code> | IAM actions required for the GetJobRuns API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetJobs">opGetJobs</a></code> | <code>string[]</code> | IAM actions required for the GetJobs API call. |
+| <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetJobUpgradeAnalysis">opGetJobUpgradeAnalysis</a></code> | <code>string[]</code> | IAM actions required for the GetJobUpgradeAnalysis API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetMapping">opGetMapping</a></code> | <code>string[]</code> | IAM actions required for the GetMapping API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetMaterializedViewRefreshTaskRun">opGetMaterializedViewRefreshTaskRun</a></code> | <code>string[]</code> | IAM actions required for the GetMaterializedViewRefreshTaskRun API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetMLTaskRun">opGetMLTaskRun</a></code> | <code>string[]</code> | IAM actions required for the GetMLTaskRun API call. |
@@ -9378,6 +9712,7 @@ new glue.GlueOperations()
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StartExportLabelsTaskRun">StartExportLabelsTaskRun</a></code> | <code>string[]</code> | IAM actions required for the StartExportLabelsTaskRun API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StartImportLabelsTaskRun">StartImportLabelsTaskRun</a></code> | <code>string[]</code> | IAM actions required for the StartImportLabelsTaskRun API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StartJobRun">StartJobRun</a></code> | <code>string[]</code> | IAM actions required for the StartJobRun API call. |
+| <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StartJobUpgradeAnalysis">StartJobUpgradeAnalysis</a></code> | <code>string[]</code> | IAM actions required for the StartJobUpgradeAnalysis API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StartMaterializedViewRefreshTaskRun">StartMaterializedViewRefreshTaskRun</a></code> | <code>string[]</code> | IAM actions required for the StartMaterializedViewRefreshTaskRun API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StartMLEvaluationTaskRun">StartMLEvaluationTaskRun</a></code> | <code>string[]</code> | IAM actions required for the StartMLEvaluationTaskRun API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StartMLLabelingSetGenerationTaskRun">StartMLLabelingSetGenerationTaskRun</a></code> | <code>string[]</code> | IAM actions required for the StartMLLabelingSetGenerationTaskRun API call. |
@@ -9387,6 +9722,7 @@ new glue.GlueOperations()
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StopColumnStatisticsTaskRunSchedule">StopColumnStatisticsTaskRunSchedule</a></code> | <code>string[]</code> | IAM actions required for the StopColumnStatisticsTaskRunSchedule API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StopCrawler">StopCrawler</a></code> | <code>string[]</code> | IAM actions required for the StopCrawler API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StopCrawlerSchedule">StopCrawlerSchedule</a></code> | <code>string[]</code> | IAM actions required for the StopCrawlerSchedule API call. |
+| <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StopJobUpgradeAnalysis">StopJobUpgradeAnalysis</a></code> | <code>string[]</code> | IAM actions required for the StopJobUpgradeAnalysis API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StopMaterializedViewRefreshTaskRun">StopMaterializedViewRefreshTaskRun</a></code> | <code>string[]</code> | IAM actions required for the StopMaterializedViewRefreshTaskRun API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StopSession">StopSession</a></code> | <code>string[]</code> | IAM actions required for the StopSession API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.StopTrigger">StopTrigger</a></code> | <code>string[]</code> | IAM actions required for the StopTrigger API call. |
@@ -9405,6 +9741,7 @@ new glue.GlueOperations()
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.UpdateCrawler">UpdateCrawler</a></code> | <code>string[]</code> | IAM actions required for the UpdateCrawler API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.UpdateCrawlerSchedule">UpdateCrawlerSchedule</a></code> | <code>string[]</code> | IAM actions required for the UpdateCrawlerSchedule API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.UpdateDatabase">UpdateDatabase</a></code> | <code>string[]</code> | IAM actions required for the UpdateDatabase API call. |
+| <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.UpdateDataQualityEvaluationConfig">UpdateDataQualityEvaluationConfig</a></code> | <code>string[]</code> | IAM actions required for the UpdateDataQualityEvaluationConfig API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.UpdateDataQualityRuleset">UpdateDataQualityRuleset</a></code> | <code>string[]</code> | IAM actions required for the UpdateDataQualityRuleset API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.UpdateDevEndpoint">UpdateDevEndpoint</a></code> | <code>string[]</code> | IAM actions required for the UpdateDevEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.UpdateGlossary">UpdateGlossary</a></code> | <code>string[]</code> | IAM actions required for the UpdateGlossary API call. |
@@ -9845,6 +10182,18 @@ public readonly CreateDatabase: string[];
 - *Type:* string[]
 
 IAM actions required for the CreateDatabase API call.
+
+---
+
+##### `CreateDataQualityEvaluationConfig`<sup>Required</sup> <a name="CreateDataQualityEvaluationConfig" id="@cdk_utils/iam.glue.GlueOperations.property.CreateDataQualityEvaluationConfig"></a>
+
+```typescript
+public readonly CreateDataQualityEvaluationConfig: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateDataQualityEvaluationConfig API call.
 
 ---
 
@@ -10289,6 +10638,18 @@ public readonly DeleteDatabase: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteDatabase API call.
+
+---
+
+##### `DeleteDataQualityEvaluationConfig`<sup>Required</sup> <a name="DeleteDataQualityEvaluationConfig" id="@cdk_utils/iam.glue.GlueOperations.property.DeleteDataQualityEvaluationConfig"></a>
+
+```typescript
+public readonly DeleteDataQualityEvaluationConfig: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteDataQualityEvaluationConfig API call.
 
 ---
 
@@ -10757,6 +11118,18 @@ public readonly ListCustomEntityTypes: string[];
 - *Type:* string[]
 
 IAM actions required for the ListCustomEntityTypes API call.
+
+---
+
+##### `ListDataQualityEvaluationConfigs`<sup>Required</sup> <a name="ListDataQualityEvaluationConfigs" id="@cdk_utils/iam.glue.GlueOperations.property.ListDataQualityEvaluationConfigs"></a>
+
+```typescript
+public readonly ListDataQualityEvaluationConfigs: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListDataQualityEvaluationConfigs API call.
 
 ---
 
@@ -11420,6 +11793,18 @@ IAM actions required for the GetDataflowGraph API call.
 
 ---
 
+##### `opGetDataQualityEvaluationConfig`<sup>Required</sup> <a name="opGetDataQualityEvaluationConfig" id="@cdk_utils/iam.glue.GlueOperations.property.opGetDataQualityEvaluationConfig"></a>
+
+```typescript
+public readonly opGetDataQualityEvaluationConfig: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetDataQualityEvaluationConfig API call.
+
+---
+
 ##### `opGetDataQualityModel`<sup>Required</sup> <a name="opGetDataQualityModel" id="@cdk_utils/iam.glue.GlueOperations.property.opGetDataQualityModel"></a>
 
 ```typescript
@@ -11669,6 +12054,18 @@ public readonly opGetJobs: string[];
 - *Type:* string[]
 
 IAM actions required for the GetJobs API call.
+
+---
+
+##### `opGetJobUpgradeAnalysis`<sup>Required</sup> <a name="opGetJobUpgradeAnalysis" id="@cdk_utils/iam.glue.GlueOperations.property.opGetJobUpgradeAnalysis"></a>
+
+```typescript
+public readonly opGetJobUpgradeAnalysis: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetJobUpgradeAnalysis API call.
 
 ---
 
@@ -12536,6 +12933,18 @@ IAM actions required for the StartJobRun API call.
 
 ---
 
+##### `StartJobUpgradeAnalysis`<sup>Required</sup> <a name="StartJobUpgradeAnalysis" id="@cdk_utils/iam.glue.GlueOperations.property.StartJobUpgradeAnalysis"></a>
+
+```typescript
+public readonly StartJobUpgradeAnalysis: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StartJobUpgradeAnalysis API call.
+
+---
+
 ##### `StartMaterializedViewRefreshTaskRun`<sup>Required</sup> <a name="StartMaterializedViewRefreshTaskRun" id="@cdk_utils/iam.glue.GlueOperations.property.StartMaterializedViewRefreshTaskRun"></a>
 
 ```typescript
@@ -12641,6 +13050,18 @@ public readonly StopCrawlerSchedule: string[];
 - *Type:* string[]
 
 IAM actions required for the StopCrawlerSchedule API call.
+
+---
+
+##### `StopJobUpgradeAnalysis`<sup>Required</sup> <a name="StopJobUpgradeAnalysis" id="@cdk_utils/iam.glue.GlueOperations.property.StopJobUpgradeAnalysis"></a>
+
+```typescript
+public readonly StopJobUpgradeAnalysis: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StopJobUpgradeAnalysis API call.
 
 ---
 
@@ -12857,6 +13278,18 @@ public readonly UpdateDatabase: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateDatabase API call.
+
+---
+
+##### `UpdateDataQualityEvaluationConfig`<sup>Required</sup> <a name="UpdateDataQualityEvaluationConfig" id="@cdk_utils/iam.glue.GlueOperations.property.UpdateDataQualityEvaluationConfig"></a>
+
+```typescript
+public readonly UpdateDataQualityEvaluationConfig: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateDataQualityEvaluationConfig API call.
 
 ---
 
@@ -13130,6 +13563,7 @@ new glue.GlueResources()
 | <code><a href="#@cdk_utils/iam.glue.GlueResources.crawler">crawler</a></code> | Builds an ARN for the crawler resource. |
 | <code><a href="#@cdk_utils/iam.glue.GlueResources.customEntityType">customEntityType</a></code> | Builds an ARN for the customEntityType resource. |
 | <code><a href="#@cdk_utils/iam.glue.GlueResources.database">database</a></code> | Builds an ARN for the database resource. |
+| <code><a href="#@cdk_utils/iam.glue.GlueResources.dataQualityEvaluationConfig">dataQualityEvaluationConfig</a></code> | Builds an ARN for the dataQualityEvaluationConfig resource. |
 | <code><a href="#@cdk_utils/iam.glue.GlueResources.dataQualityRuleset">dataQualityRuleset</a></code> | Builds an ARN for the dataQualityRuleset resource. |
 | <code><a href="#@cdk_utils/iam.glue.GlueResources.devendpoint">devendpoint</a></code> | Builds an ARN for the devendpoint resource. |
 | <code><a href="#@cdk_utils/iam.glue.GlueResources.integration">integration</a></code> | Builds an ARN for the integration resource. |
@@ -13142,6 +13576,7 @@ new glue.GlueResources()
 | <code><a href="#@cdk_utils/iam.glue.GlueResources.isValidCrawlerArn">isValidCrawlerArn</a></code> | Validates whether a string is a valid ARN for the crawler resource. |
 | <code><a href="#@cdk_utils/iam.glue.GlueResources.isValidCustomEntityTypeArn">isValidCustomEntityTypeArn</a></code> | Validates whether a string is a valid ARN for the customEntityType resource. |
 | <code><a href="#@cdk_utils/iam.glue.GlueResources.isValidDatabaseArn">isValidDatabaseArn</a></code> | Validates whether a string is a valid ARN for the database resource. |
+| <code><a href="#@cdk_utils/iam.glue.GlueResources.isValidDataQualityEvaluationConfigArn">isValidDataQualityEvaluationConfigArn</a></code> | Validates whether a string is a valid ARN for the dataQualityEvaluationConfig resource. |
 | <code><a href="#@cdk_utils/iam.glue.GlueResources.isValidDataQualityRulesetArn">isValidDataQualityRulesetArn</a></code> | Validates whether a string is a valid ARN for the dataQualityRuleset resource. |
 | <code><a href="#@cdk_utils/iam.glue.GlueResources.isValidDevendpointArn">isValidDevendpointArn</a></code> | Validates whether a string is a valid ARN for the devendpoint resource. |
 | <code><a href="#@cdk_utils/iam.glue.GlueResources.isValidIntegrationArn">isValidIntegrationArn</a></code> | Validates whether a string is a valid ARN for the integration resource. |
@@ -13168,6 +13603,7 @@ new glue.GlueResources()
 | <code><a href="#@cdk_utils/iam.glue.GlueResources.parseCrawlerArn">parseCrawlerArn</a></code> | Parses a crawler ARN into its components. |
 | <code><a href="#@cdk_utils/iam.glue.GlueResources.parseCustomEntityTypeArn">parseCustomEntityTypeArn</a></code> | Parses a customEntityType ARN into its components. |
 | <code><a href="#@cdk_utils/iam.glue.GlueResources.parseDatabaseArn">parseDatabaseArn</a></code> | Parses a database ARN into its components. |
+| <code><a href="#@cdk_utils/iam.glue.GlueResources.parseDataQualityEvaluationConfigArn">parseDataQualityEvaluationConfigArn</a></code> | Parses a dataQualityEvaluationConfig ARN into its components. |
 | <code><a href="#@cdk_utils/iam.glue.GlueResources.parseDataQualityRulesetArn">parseDataQualityRulesetArn</a></code> | Parses a dataQualityRuleset ARN into its components. |
 | <code><a href="#@cdk_utils/iam.glue.GlueResources.parseDevendpointArn">parseDevendpointArn</a></code> | Parses a devendpoint ARN into its components. |
 | <code><a href="#@cdk_utils/iam.glue.GlueResources.parseIntegrationArn">parseIntegrationArn</a></code> | Parses a integration ARN into its components. |
@@ -13322,6 +13758,22 @@ Builds an ARN for the database resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.glue.GlueResources.database.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.glue.GlueDatabaseArnProps">GlueDatabaseArnProps</a>
+
+---
+
+##### `dataQualityEvaluationConfig` <a name="dataQualityEvaluationConfig" id="@cdk_utils/iam.glue.GlueResources.dataQualityEvaluationConfig"></a>
+
+```typescript
+import { glue } from '@cdk_utils/iam'
+
+glue.GlueResources.dataQualityEvaluationConfig(props: GlueDataQualityEvaluationConfigArnProps)
+```
+
+Builds an ARN for the dataQualityEvaluationConfig resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.glue.GlueResources.dataQualityEvaluationConfig.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.glue.GlueDataQualityEvaluationConfigArnProps">GlueDataQualityEvaluationConfigArnProps</a>
 
 ---
 
@@ -13512,6 +13964,22 @@ glue.GlueResources.isValidDatabaseArn(arn: string)
 Validates whether a string is a valid ARN for the database resource.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.glue.GlueResources.isValidDatabaseArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidDataQualityEvaluationConfigArn` <a name="isValidDataQualityEvaluationConfigArn" id="@cdk_utils/iam.glue.GlueResources.isValidDataQualityEvaluationConfigArn"></a>
+
+```typescript
+import { glue } from '@cdk_utils/iam'
+
+glue.GlueResources.isValidDataQualityEvaluationConfigArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the dataQualityEvaluationConfig resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.glue.GlueResources.isValidDataQualityEvaluationConfigArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -13928,6 +14396,22 @@ glue.GlueResources.parseDatabaseArn(arn: string)
 Parses a database ARN into its components.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.glue.GlueResources.parseDatabaseArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseDataQualityEvaluationConfigArn` <a name="parseDataQualityEvaluationConfigArn" id="@cdk_utils/iam.glue.GlueResources.parseDataQualityEvaluationConfigArn"></a>
+
+```typescript
+import { glue } from '@cdk_utils/iam'
+
+glue.GlueResources.parseDataQualityEvaluationConfigArn(arn: string)
+```
+
+Parses a dataQualityEvaluationConfig ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.glue.GlueResources.parseDataQualityEvaluationConfigArn.parameter.arn"></a>
 
 - *Type:* string
 

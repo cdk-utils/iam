@@ -12,6 +12,8 @@ export class S3tablesActions {
 	/** The IAM service prefix. */
 	static readonly SERVICE_PREFIX = "s3tables";
 
+	/** [Write] s3tables:CompleteTableMigration */
+	static readonly CompleteTableMigration = "s3tables:CompleteTableMigration";
 	/** [Write] s3tables:CreateNamespace */
 	static readonly CreateNamespace = "s3tables:CreateNamespace";
 	/** [Write] s3tables:CreateTable */
@@ -39,6 +41,9 @@ export class S3tablesActions {
 	static readonly DeleteTablePolicy = "s3tables:DeleteTablePolicy";
 	/** [Write] s3tables:DeleteTableReplication */
 	static readonly DeleteTableReplication = "s3tables:DeleteTableReplication";
+	/** [Write] s3tables:DisassociateTableReplication */
+	static readonly DisassociateTableReplication =
+		"s3tables:DisassociateTableReplication";
 	/** [Read] s3tables:GetNamespace */
 	static readonly actionGetNamespace = "s3tables:GetNamespace";
 	/** [Read] s3tables:GetTable */
@@ -48,6 +53,9 @@ export class S3tablesActions {
 	/** [Read] s3tables:GetTableBucketEncryption */
 	static readonly actionGetTableBucketEncryption =
 		"s3tables:GetTableBucketEncryption";
+	/** [Read] s3tables:GetTableBucketLogging */
+	static readonly actionGetTableBucketLogging =
+		"s3tables:GetTableBucketLogging";
 	/** [Read] s3tables:GetTableBucketMaintenanceConfiguration */
 	static readonly actionGetTableBucketMaintenanceConfiguration =
 		"s3tables:GetTableBucketMaintenanceConfiguration";
@@ -75,6 +83,8 @@ export class S3tablesActions {
 	/** [Read] s3tables:GetTableMetadataLocation */
 	static readonly actionGetTableMetadataLocation =
 		"s3tables:GetTableMetadataLocation";
+	/** [Read] s3tables:GetTableMigration */
+	static readonly actionGetTableMigration = "s3tables:GetTableMigration";
 	/** [Read] s3tables:GetTablePolicy */
 	static readonly actionGetTablePolicy = "s3tables:GetTablePolicy";
 	/** [Read] s3tables:GetTableRecordExpirationConfiguration */
@@ -94,6 +104,8 @@ export class S3tablesActions {
 	static readonly ListNamespaces = "s3tables:ListNamespaces";
 	/** [List] s3tables:ListTableBuckets */
 	static readonly ListTableBuckets = "s3tables:ListTableBuckets";
+	/** [List] s3tables:ListTableMigrations */
+	static readonly ListTableMigrations = "s3tables:ListTableMigrations";
 	/** [List] s3tables:ListTables */
 	static readonly ListTables = "s3tables:ListTables";
 	/** [List] s3tables:ListTagsForResource */
@@ -101,6 +113,8 @@ export class S3tablesActions {
 	/** [Write] s3tables:PutTableBucketEncryption */
 	static readonly PutTableBucketEncryption =
 		"s3tables:PutTableBucketEncryption";
+	/** [Write] s3tables:PutTableBucketLogging */
+	static readonly PutTableBucketLogging = "s3tables:PutTableBucketLogging";
 	/** [Write] s3tables:PutTableBucketMaintenanceConfiguration */
 	static readonly PutTableBucketMaintenanceConfiguration =
 		"s3tables:PutTableBucketMaintenanceConfiguration";
@@ -133,6 +147,10 @@ export class S3tablesActions {
 	static readonly PutTableStorageClass = "s3tables:PutTableStorageClass";
 	/** [Write] s3tables:RenameTable */
 	static readonly RenameTable = "s3tables:RenameTable";
+	/** [Write] s3tables:StartTableMigration */
+	static readonly StartTableMigration = "s3tables:StartTableMigration";
+	/** [Write] s3tables:SyncTableMigration */
+	static readonly SyncTableMigration = "s3tables:SyncTableMigration";
 	/** [Tagging] s3tables:TagResource */
 	static readonly TagResource = "s3tables:TagResource";
 	/** [Tagging] s3tables:UntagResource */
@@ -140,6 +158,8 @@ export class S3tablesActions {
 	/** [Write] s3tables:UpdateTableMetadataLocation */
 	static readonly UpdateTableMetadataLocation =
 		"s3tables:UpdateTableMetadataLocation";
+	/** [Write] s3tables:UpdateTableMigration */
+	static readonly UpdateTableMigration = "s3tables:UpdateTableMigration";
 
 	/** All read-level actions. */
 	static readonly AllReadActions: string[] = [
@@ -147,6 +167,7 @@ export class S3tablesActions {
 		S3tablesActions.actionGetTable,
 		S3tablesActions.actionGetTableBucket,
 		S3tablesActions.actionGetTableBucketEncryption,
+		S3tablesActions.actionGetTableBucketLogging,
 		S3tablesActions.actionGetTableBucketMaintenanceConfiguration,
 		S3tablesActions.actionGetTableBucketMetricsConfiguration,
 		S3tablesActions.actionGetTableBucketPolicy,
@@ -157,6 +178,7 @@ export class S3tablesActions {
 		S3tablesActions.actionGetTableMaintenanceConfiguration,
 		S3tablesActions.actionGetTableMaintenanceJobStatus,
 		S3tablesActions.actionGetTableMetadataLocation,
+		S3tablesActions.actionGetTableMigration,
 		S3tablesActions.actionGetTablePolicy,
 		S3tablesActions.actionGetTableRecordExpirationConfiguration,
 		S3tablesActions.actionGetTableRecordExpirationJobStatus,
@@ -166,6 +188,7 @@ export class S3tablesActions {
 	];
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
+		S3tablesActions.CompleteTableMigration,
 		S3tablesActions.CreateNamespace,
 		S3tablesActions.CreateTable,
 		S3tablesActions.CreateTableBucket,
@@ -176,7 +199,9 @@ export class S3tablesActions {
 		S3tablesActions.DeleteTableBucketMetricsConfiguration,
 		S3tablesActions.DeleteTableBucketReplication,
 		S3tablesActions.DeleteTableReplication,
+		S3tablesActions.DisassociateTableReplication,
 		S3tablesActions.PutTableBucketEncryption,
+		S3tablesActions.PutTableBucketLogging,
 		S3tablesActions.PutTableBucketMaintenanceConfiguration,
 		S3tablesActions.PutTableBucketMetricsConfiguration,
 		S3tablesActions.PutTableBucketReplication,
@@ -188,12 +213,16 @@ export class S3tablesActions {
 		S3tablesActions.PutTableReplication,
 		S3tablesActions.PutTableStorageClass,
 		S3tablesActions.RenameTable,
+		S3tablesActions.StartTableMigration,
+		S3tablesActions.SyncTableMigration,
 		S3tablesActions.UpdateTableMetadataLocation,
+		S3tablesActions.UpdateTableMigration,
 	];
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [
 		S3tablesActions.ListNamespaces,
 		S3tablesActions.ListTableBuckets,
+		S3tablesActions.ListTableMigrations,
 		S3tablesActions.ListTables,
 		S3tablesActions.ListTagsForResource,
 	];
@@ -348,6 +377,10 @@ export class S3tablesResources {
  * API operation to required IAM actions mapping for s3tables.
  */
 export class S3tablesOperations {
+	/** IAM actions required for the CompleteTableMigration API call. */
+	static readonly CompleteTableMigration: string[] = [
+		"s3tables:CompleteTableMigration",
+	];
 	/** IAM actions required for the CreateNamespace API call. */
 	static readonly CreateNamespace: string[] = ["s3tables:CreateNamespace"];
 	/** IAM actions required for the CreateTable API call. */
@@ -393,6 +426,10 @@ export class S3tablesOperations {
 	static readonly DeleteTableReplication: string[] = [
 		"s3tables:DeleteTableReplication",
 	];
+	/** IAM actions required for the DisassociateTableReplication API call. */
+	static readonly DisassociateTableReplication: string[] = [
+		"s3tables:DisassociateTableReplication",
+	];
 	/** IAM actions required for the GetNamespace API call. */
 	static readonly opGetNamespace: string[] = ["s3tables:GetNamespace"];
 	/** IAM actions required for the GetTable API call. */
@@ -402,6 +439,10 @@ export class S3tablesOperations {
 	/** IAM actions required for the GetTableBucketEncryption API call. */
 	static readonly opGetTableBucketEncryption: string[] = [
 		"s3tables:GetTableBucketEncryption",
+	];
+	/** IAM actions required for the GetTableBucketLogging API call. */
+	static readonly opGetTableBucketLogging: string[] = [
+		"s3tables:GetTableBucketLogging",
 	];
 	/** IAM actions required for the GetTableBucketMaintenanceConfiguration API call. */
 	static readonly opGetTableBucketMaintenanceConfiguration: string[] = [
@@ -439,6 +480,10 @@ export class S3tablesOperations {
 	static readonly opGetTableMetadataLocation: string[] = [
 		"s3tables:GetTableMetadataLocation",
 	];
+	/** IAM actions required for the GetTableMigration API call. */
+	static readonly opGetTableMigration: string[] = [
+		"s3tables:GetTableMigration",
+	];
 	/** IAM actions required for the GetTablePolicy API call. */
 	static readonly opGetTablePolicy: string[] = ["s3tables:GetTablePolicy"];
 	/** IAM actions required for the GetTableRecordExpirationConfiguration API call. */
@@ -465,6 +510,10 @@ export class S3tablesOperations {
 	static readonly ListNamespaces: string[] = ["s3tables:ListNamespaces"];
 	/** IAM actions required for the ListTableBuckets API call. */
 	static readonly ListTableBuckets: string[] = ["s3tables:ListTableBuckets"];
+	/** IAM actions required for the ListTableMigrations API call. */
+	static readonly ListTableMigrations: string[] = [
+		"s3tables:ListTableMigrations",
+	];
 	/** IAM actions required for the ListTables API call. */
 	static readonly ListTables: string[] = ["s3tables:ListTables"];
 	/** IAM actions required for the ListTagsForResource API call. */
@@ -474,6 +523,10 @@ export class S3tablesOperations {
 	/** IAM actions required for the PutTableBucketEncryption API call. */
 	static readonly PutTableBucketEncryption: string[] = [
 		"s3tables:PutTableBucketEncryption",
+	];
+	/** IAM actions required for the PutTableBucketLogging API call. */
+	static readonly PutTableBucketLogging: string[] = [
+		"s3tables:PutTableBucketLogging",
 	];
 	/** IAM actions required for the PutTableBucketMaintenanceConfiguration API call. */
 	static readonly PutTableBucketMaintenanceConfiguration: string[] = [
@@ -513,6 +566,16 @@ export class S3tablesOperations {
 	];
 	/** IAM actions required for the RenameTable API call. */
 	static readonly RenameTable: string[] = ["s3tables:RenameTable"];
+	/** IAM actions required for the StartTableMigration API call. */
+	static readonly StartTableMigration: string[] = [
+		"iam:PassRole",
+		"s3tables:StartTableMigration",
+	];
+	/** IAM actions required for the SyncTableMigration API call. */
+	static readonly SyncTableMigration: string[] = [
+		"iam:PassRole",
+		"s3tables:SyncTableMigration",
+	];
 	/** IAM actions required for the TagResource API call. */
 	static readonly TagResource: string[] = ["s3tables:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
@@ -521,12 +584,23 @@ export class S3tablesOperations {
 	static readonly UpdateTableMetadataLocation: string[] = [
 		"s3tables:UpdateTableMetadataLocation",
 	];
+	/** IAM actions required for the UpdateTableMigration API call. */
+	static readonly UpdateTableMigration: string[] = [
+		"s3tables:UpdateTableMigration",
+	];
 }
 
 /**
  * Condition key constants and builders for s3tables.
  */
 export class S3tablesConditions {
+	/** Condition keys applicable to the CompleteTableMigration action. */
+	static readonly CompleteTableMigrationConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"s3tables:TableBucketTag/${TagKey}",
+		"s3tables:namespace",
+		"s3tables:tableName",
+	];
 	/** Condition keys applicable to the CreateTable action. */
 	static readonly CreateTableConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
@@ -565,6 +639,11 @@ export class S3tablesConditions {
 		"s3tables:namespace",
 		"s3tables:tableName",
 	];
+	/** Condition keys applicable to the DisassociateTableReplication action. */
+	static readonly DisassociateTableReplicationConditionKeys: string[] = [
+		"s3tables:namespace",
+		"s3tables:tableName",
+	];
 	/** Condition keys applicable to the GetNamespace action. */
 	static readonly actionGetNamespaceConditionKeys: string[] = [
 		"s3tables:namespace",
@@ -597,6 +676,13 @@ export class S3tablesConditions {
 		"s3tables:namespace",
 		"s3tables:tableName",
 	];
+	/** Condition keys applicable to the GetTableMigration action. */
+	static readonly actionGetTableMigrationConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"s3tables:TableBucketTag/${TagKey}",
+		"s3tables:namespace",
+		"s3tables:tableName",
+	];
 	/** Condition keys applicable to the GetTablePolicy action. */
 	static readonly actionGetTablePolicyConditionKeys: string[] = [
 		"s3tables:namespace",
@@ -620,6 +706,13 @@ export class S3tablesConditions {
 	];
 	/** Condition keys applicable to the GetTableStorageClass action. */
 	static readonly actionGetTableStorageClassConditionKeys: string[] = [
+		"s3tables:namespace",
+		"s3tables:tableName",
+	];
+	/** Condition keys applicable to the ListTableMigrations action. */
+	static readonly ListTableMigrationsConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"s3tables:TableBucketTag/${TagKey}",
 		"s3tables:namespace",
 		"s3tables:tableName",
 	];
@@ -679,6 +772,21 @@ export class S3tablesConditions {
 		"s3tables:namespace",
 		"s3tables:tableName",
 	];
+	/** Condition keys applicable to the StartTableMigration action. */
+	static readonly StartTableMigrationConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:ResourceTag/${TagKey}",
+		"aws:TagKeys",
+		"s3tables:TableBucketTag/${TagKey}",
+		"s3tables:namespace",
+	];
+	/** Condition keys applicable to the SyncTableMigration action. */
+	static readonly SyncTableMigrationConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"s3tables:TableBucketTag/${TagKey}",
+		"s3tables:namespace",
+		"s3tables:tableName",
+	];
 	/** Condition keys applicable to the TagResource action. */
 	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
@@ -694,6 +802,13 @@ export class S3tablesConditions {
 	];
 	/** Condition keys applicable to the UpdateTableMetadataLocation action. */
 	static readonly UpdateTableMetadataLocationConditionKeys: string[] = [
+		"s3tables:namespace",
+		"s3tables:tableName",
+	];
+	/** Condition keys applicable to the UpdateTableMigration action. */
+	static readonly UpdateTableMigrationConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"s3tables:TableBucketTag/${TagKey}",
 		"s3tables:namespace",
 		"s3tables:tableName",
 	];

@@ -151,6 +151,154 @@ Defaults to "*".
 
 ---
 
+### BedrockAgentcoreAgentInsightStoreArnComponents <a name="BedrockAgentcoreAgentInsightStoreArnComponents" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreAgentInsightStoreArnComponents"></a>
+
+Parsed components of a agent-insight-store ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreAgentInsightStoreArnComponents.Initializer"></a>
+
+```typescript
+import { bedrock_agentcore } from '@cdk_utils/iam'
+
+const bedrockAgentcoreAgentInsightStoreArnComponents: bedrock_agentcore.BedrockAgentcoreAgentInsightStoreArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreAgentInsightStoreArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreAgentInsightStoreArnComponents.property.agentInsightStoreId">agentInsightStoreId</a></code> | <code>string</code> | The AgentInsightStoreId component. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreAgentInsightStoreArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreAgentInsightStoreArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreAgentInsightStoreArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `agentInsightStoreId`<sup>Required</sup> <a name="agentInsightStoreId" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreAgentInsightStoreArnComponents.property.agentInsightStoreId"></a>
+
+```typescript
+public readonly agentInsightStoreId: string;
+```
+
+- *Type:* string
+
+The AgentInsightStoreId component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreAgentInsightStoreArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreAgentInsightStoreArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### BedrockAgentcoreAgentInsightStoreArnProps <a name="BedrockAgentcoreAgentInsightStoreArnProps" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreAgentInsightStoreArnProps"></a>
+
+Properties for building a agent-insight-store ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreAgentInsightStoreArnProps.Initializer"></a>
+
+```typescript
+import { bedrock_agentcore } from '@cdk_utils/iam'
+
+const bedrockAgentcoreAgentInsightStoreArnProps: bedrock_agentcore.BedrockAgentcoreAgentInsightStoreArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreAgentInsightStoreArnProps.property.agentInsightStoreId">agentInsightStoreId</a></code> | <code>string</code> | The AgentInsightStoreId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreAgentInsightStoreArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreAgentInsightStoreArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreAgentInsightStoreArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `agentInsightStoreId`<sup>Required</sup> <a name="agentInsightStoreId" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreAgentInsightStoreArnProps.property.agentInsightStoreId"></a>
+
+```typescript
+public readonly agentInsightStoreId: string;
+```
+
+- *Type:* string
+
+The AgentInsightStoreId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreAgentInsightStoreArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreAgentInsightStoreArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreAgentInsightStoreArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### BedrockAgentcoreApikeycredentialproviderArnComponents <a name="BedrockAgentcoreApikeycredentialproviderArnComponents" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreApikeycredentialproviderArnComponents"></a>
 
 Parsed components of a apikeycredentialprovider ARN.
@@ -4651,6 +4799,128 @@ Defaults to "*".
 
 ---
 
+### BedrockAgentcoreWebAnswerArnComponents <a name="BedrockAgentcoreWebAnswerArnComponents" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreWebAnswerArnComponents"></a>
+
+Parsed components of a web-answer ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreWebAnswerArnComponents.Initializer"></a>
+
+```typescript
+import { bedrock_agentcore } from '@cdk_utils/iam'
+
+const bedrockAgentcoreWebAnswerArnComponents: bedrock_agentcore.BedrockAgentcoreWebAnswerArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreWebAnswerArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreWebAnswerArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreWebAnswerArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreWebAnswerArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreWebAnswerArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreWebAnswerArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### BedrockAgentcoreWebAnswerArnProps <a name="BedrockAgentcoreWebAnswerArnProps" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreWebAnswerArnProps"></a>
+
+Properties for building a web-answer ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreWebAnswerArnProps.Initializer"></a>
+
+```typescript
+import { bedrock_agentcore } from '@cdk_utils/iam'
+
+const bedrockAgentcoreWebAnswerArnProps: bedrock_agentcore.BedrockAgentcoreWebAnswerArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreWebAnswerArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreWebAnswerArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreWebAnswerArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreWebAnswerArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreWebAnswerArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreWebAnswerArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### BedrockAgentcoreWebSearchArnComponents <a name="BedrockAgentcoreWebSearchArnComponents" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreWebSearchArnComponents"></a>
 
 Parsed components of a web-search ARN.
@@ -5123,6 +5393,8 @@ new bedrock_agentcore.BedrockAgentcoreActions()
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.actionGetABTest">actionGetABTest</a></code> | <code>string</code> | [Read] bedrock-agentcore:GetABTest. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.actionGetAgentCard">actionGetAgentCard</a></code> | <code>string</code> | [Read] bedrock-agentcore:GetAgentCard. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.actionGetAgentInsight">actionGetAgentInsight</a></code> | <code>string</code> | [Read] bedrock-agentcore:GetAgentInsight. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.actionGetAgentInsightStore">actionGetAgentInsightStore</a></code> | <code>string</code> | [Read] bedrock-agentcore:GetAgentInsightStore. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.actionGetAgentRuntime">actionGetAgentRuntime</a></code> | <code>string</code> | [Read] bedrock-agentcore:GetAgentRuntime. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.actionGetAgentRuntimeEndpoint">actionGetAgentRuntimeEndpoint</a></code> | <code>string</code> | [Read] bedrock-agentcore:GetAgentRuntimeEndpoint. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.actionGetApiKeyCredentialProvider">actionGetApiKeyCredentialProvider</a></code> | <code>string</code> | [Read] bedrock-agentcore:GetApiKeyCredentialProvider. |
@@ -5276,9 +5548,12 @@ new bedrock_agentcore.BedrockAgentcoreActions()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.InvokeGateway">InvokeGateway</a></code> | <code>string</code> | [PermissionManagement] bedrock-agentcore:InvokeGateway. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.InvokeHarness">InvokeHarness</a></code> | <code>string</code> | [Write] bedrock-agentcore:InvokeHarness. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.InvokeRegistryMcp">InvokeRegistryMcp</a></code> | <code>string</code> | [Read] bedrock-agentcore:InvokeRegistryMcp. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.InvokeWebAnswer">InvokeWebAnswer</a></code> | <code>string</code> | [Write] bedrock-agentcore:InvokeWebAnswer. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.InvokeWebSearch">InvokeWebSearch</a></code> | <code>string</code> | [PermissionManagement] bedrock-agentcore:InvokeWebSearch. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.ListABTests">ListABTests</a></code> | <code>string</code> | [List] bedrock-agentcore:ListABTests. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.ListActors">ListActors</a></code> | <code>string</code> | [List] bedrock-agentcore:ListActors. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.ListAgentInsights">ListAgentInsights</a></code> | <code>string</code> | [List] bedrock-agentcore:ListAgentInsights. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.ListAgentInsightStores">ListAgentInsightStores</a></code> | <code>string</code> | [List] bedrock-agentcore:ListAgentInsightStores. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.ListAgentRuntimeEndpoints">ListAgentRuntimeEndpoints</a></code> | <code>string</code> | [List] bedrock-agentcore:ListAgentRuntimeEndpoints. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.ListAgentRuntimes">ListAgentRuntimes</a></code> | <code>string</code> | [List] bedrock-agentcore:ListAgentRuntimes. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.ListAgentRuntimeVersions">ListAgentRuntimeVersions</a></code> | <code>string</code> | [List] bedrock-agentcore:ListAgentRuntimeVersions. |
@@ -5356,6 +5631,8 @@ new bedrock_agentcore.BedrockAgentcoreActions()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] bedrock-agentcore:TagResource. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] bedrock-agentcore:UntagResource. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.UpdateABTest">UpdateABTest</a></code> | <code>string</code> | [Write] bedrock-agentcore:UpdateABTest. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.UpdateAgentInsight">UpdateAgentInsight</a></code> | <code>string</code> | [Write] bedrock-agentcore:UpdateAgentInsight. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.UpdateAgentInsightStore">UpdateAgentInsightStore</a></code> | <code>string</code> | [Write] bedrock-agentcore:UpdateAgentInsightStore. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.UpdateAgentRuntime">UpdateAgentRuntime</a></code> | <code>string</code> | [Write] bedrock-agentcore:UpdateAgentRuntime. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.UpdateAgentRuntimeEndpoint">UpdateAgentRuntimeEndpoint</a></code> | <code>string</code> | [Write] bedrock-agentcore:UpdateAgentRuntimeEndpoint. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.UpdateApiKeyCredentialProvider">UpdateApiKeyCredentialProvider</a></code> | <code>string</code> | [Write] bedrock-agentcore:UpdateApiKeyCredentialProvider. |
@@ -5409,6 +5686,30 @@ public readonly actionGetAgentCard: string;
 - *Type:* string
 
 [Read] bedrock-agentcore:GetAgentCard.
+
+---
+
+##### `actionGetAgentInsight`<sup>Required</sup> <a name="actionGetAgentInsight" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.actionGetAgentInsight"></a>
+
+```typescript
+public readonly actionGetAgentInsight: string;
+```
+
+- *Type:* string
+
+[Read] bedrock-agentcore:GetAgentInsight.
+
+---
+
+##### `actionGetAgentInsightStore`<sup>Required</sup> <a name="actionGetAgentInsightStore" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.actionGetAgentInsightStore"></a>
+
+```typescript
+public readonly actionGetAgentInsightStore: string;
+```
+
+- *Type:* string
+
+[Read] bedrock-agentcore:GetAgentInsightStore.
 
 ---
 
@@ -7248,6 +7549,18 @@ public readonly InvokeRegistryMcp: string;
 
 ---
 
+##### `InvokeWebAnswer`<sup>Required</sup> <a name="InvokeWebAnswer" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.InvokeWebAnswer"></a>
+
+```typescript
+public readonly InvokeWebAnswer: string;
+```
+
+- *Type:* string
+
+[Write] bedrock-agentcore:InvokeWebAnswer.
+
+---
+
 ##### `InvokeWebSearch`<sup>Required</sup> <a name="InvokeWebSearch" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.InvokeWebSearch"></a>
 
 ```typescript
@@ -7281,6 +7594,30 @@ public readonly ListActors: string;
 - *Type:* string
 
 [List] bedrock-agentcore:ListActors.
+
+---
+
+##### `ListAgentInsights`<sup>Required</sup> <a name="ListAgentInsights" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.ListAgentInsights"></a>
+
+```typescript
+public readonly ListAgentInsights: string;
+```
+
+- *Type:* string
+
+[List] bedrock-agentcore:ListAgentInsights.
+
+---
+
+##### `ListAgentInsightStores`<sup>Required</sup> <a name="ListAgentInsightStores" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.ListAgentInsightStores"></a>
+
+```typescript
+public readonly ListAgentInsightStores: string;
+```
+
+- *Type:* string
+
+[List] bedrock-agentcore:ListAgentInsightStores.
 
 ---
 
@@ -8205,6 +8542,30 @@ public readonly UpdateABTest: string;
 - *Type:* string
 
 [Write] bedrock-agentcore:UpdateABTest.
+
+---
+
+##### `UpdateAgentInsight`<sup>Required</sup> <a name="UpdateAgentInsight" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.UpdateAgentInsight"></a>
+
+```typescript
+public readonly UpdateAgentInsight: string;
+```
+
+- *Type:* string
+
+[Write] bedrock-agentcore:UpdateAgentInsight.
+
+---
+
+##### `UpdateAgentInsightStore`<sup>Required</sup> <a name="UpdateAgentInsightStore" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.UpdateAgentInsightStore"></a>
+
+```typescript
+public readonly UpdateAgentInsightStore: string;
+```
+
+- *Type:* string
+
+[Write] bedrock-agentcore:UpdateAgentInsightStore.
 
 ---
 
@@ -9248,6 +9609,7 @@ Generates a condition block for `bedrock-agentcore:userid`.
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.INBOUND_JWT_CLAIM_SUB">INBOUND_JWT_CLAIM_SUB</a></code> | <code>string</code> | Condition key: bedrock-agentcore:InboundJwtClaim/sub (String). |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.INFERENCE_TARGET_CONFIGURATION_TYPE">INFERENCE_TARGET_CONFIGURATION_TYPE</a></code> | <code>string</code> | Condition key: bedrock-agentcore:InferenceTargetConfigurationType (String). |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.IngestDataConditionKeys">IngestDataConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the IngestData action. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.InvokeGatewayConditionKeys">InvokeGatewayConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the InvokeGateway action. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.KMS_KEY_ARN">KMS_KEY_ARN</a></code> | <code>string</code> | Condition key: bedrock-agentcore:KmsKeyArn (String). |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.ListEventsConditionKeys">ListEventsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListEvents action. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.ListMemoryRecordsConditionKeys">ListMemoryRecordsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListMemoryRecords action. |
@@ -9879,6 +10241,18 @@ Condition keys applicable to the IngestData action.
 
 ---
 
+##### `InvokeGatewayConditionKeys`<sup>Required</sup> <a name="InvokeGatewayConditionKeys" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.InvokeGatewayConditionKeys"></a>
+
+```typescript
+public readonly InvokeGatewayConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the InvokeGateway action.
+
+---
+
 ##### `KMS_KEY_ARN`<sup>Required</sup> <a name="KMS_KEY_ARN" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreConditions.property.KMS_KEY_ARN"></a>
 
 ```typescript
@@ -10292,6 +10666,7 @@ new bedrock_agentcore.BedrockAgentcoreOperations()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.DeleteConsentPortal">DeleteConsentPortal</a></code> | <code>string[]</code> | IAM actions required for the DeleteConsentPortal API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.DeleteDataset">DeleteDataset</a></code> | <code>string[]</code> | IAM actions required for the DeleteDataset API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.DeleteDatasetExamples">DeleteDatasetExamples</a></code> | <code>string[]</code> | IAM actions required for the DeleteDatasetExamples API call. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.DeleteDatasetGeneration">DeleteDatasetGeneration</a></code> | <code>string[]</code> | IAM actions required for the DeleteDatasetGeneration API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.DeleteEvaluator">DeleteEvaluator</a></code> | <code>string[]</code> | IAM actions required for the DeleteEvaluator API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.DeleteEvent">DeleteEvent</a></code> | <code>string[]</code> | IAM actions required for the DeleteEvent API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.DeleteGateway">DeleteGateway</a></code> | <code>string[]</code> | IAM actions required for the DeleteGateway API call. |
@@ -10323,8 +10698,11 @@ new bedrock_agentcore.BedrockAgentcoreOperations()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.InvokeBrowser">InvokeBrowser</a></code> | <code>string[]</code> | IAM actions required for the InvokeBrowser API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.InvokeCodeInterpreter">InvokeCodeInterpreter</a></code> | <code>string[]</code> | IAM actions required for the InvokeCodeInterpreter API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.InvokeHarness">InvokeHarness</a></code> | <code>string[]</code> | IAM actions required for the InvokeHarness API call. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.InvokeWebSearch">InvokeWebSearch</a></code> | <code>string[]</code> | IAM actions required for the InvokeWebSearch API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.ListABTests">ListABTests</a></code> | <code>string[]</code> | IAM actions required for the ListABTests API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.ListActors">ListActors</a></code> | <code>string[]</code> | IAM actions required for the ListActors API call. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.ListAgentInsights">ListAgentInsights</a></code> | <code>string[]</code> | IAM actions required for the ListAgentInsights API call. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.ListAgentInsightStores">ListAgentInsightStores</a></code> | <code>string[]</code> | IAM actions required for the ListAgentInsightStores API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.ListAgentRuntimeEndpoints">ListAgentRuntimeEndpoints</a></code> | <code>string[]</code> | IAM actions required for the ListAgentRuntimeEndpoints API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.ListAgentRuntimes">ListAgentRuntimes</a></code> | <code>string[]</code> | IAM actions required for the ListAgentRuntimes API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.ListAgentRuntimeVersions">ListAgentRuntimeVersions</a></code> | <code>string[]</code> | IAM actions required for the ListAgentRuntimeVersions API call. |
@@ -10341,6 +10719,7 @@ new bedrock_agentcore.BedrockAgentcoreOperations()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.ListConfigurationBundleVersions">ListConfigurationBundleVersions</a></code> | <code>string[]</code> | IAM actions required for the ListConfigurationBundleVersions API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.ListConsentPortals">ListConsentPortals</a></code> | <code>string[]</code> | IAM actions required for the ListConsentPortals API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.ListDatasetExamples">ListDatasetExamples</a></code> | <code>string[]</code> | IAM actions required for the ListDatasetExamples API call. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.ListDatasetGenerations">ListDatasetGenerations</a></code> | <code>string[]</code> | IAM actions required for the ListDatasetGenerations API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.ListDatasets">ListDatasets</a></code> | <code>string[]</code> | IAM actions required for the ListDatasets API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.ListDatasetVersions">ListDatasetVersions</a></code> | <code>string[]</code> | IAM actions required for the ListDatasetVersions API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.ListEvaluators">ListEvaluators</a></code> | <code>string[]</code> | IAM actions required for the ListEvaluators API call. |
@@ -10377,6 +10756,8 @@ new bedrock_agentcore.BedrockAgentcoreOperations()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.ListWorkloadIdentities">ListWorkloadIdentities</a></code> | <code>string[]</code> | IAM actions required for the ListWorkloadIdentities API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.opGetABTest">opGetABTest</a></code> | <code>string[]</code> | IAM actions required for the GetABTest API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.opGetAgentCard">opGetAgentCard</a></code> | <code>string[]</code> | IAM actions required for the GetAgentCard API call. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.opGetAgentInsight">opGetAgentInsight</a></code> | <code>string[]</code> | IAM actions required for the GetAgentInsight API call. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.opGetAgentInsightStore">opGetAgentInsightStore</a></code> | <code>string[]</code> | IAM actions required for the GetAgentInsightStore API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.opGetAgentRuntime">opGetAgentRuntime</a></code> | <code>string[]</code> | IAM actions required for the GetAgentRuntime API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.opGetAgentRuntimeEndpoint">opGetAgentRuntimeEndpoint</a></code> | <code>string[]</code> | IAM actions required for the GetAgentRuntimeEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.opGetApiKeyCredentialProvider">opGetApiKeyCredentialProvider</a></code> | <code>string[]</code> | IAM actions required for the GetApiKeyCredentialProvider API call. |
@@ -10391,6 +10772,7 @@ new bedrock_agentcore.BedrockAgentcoreOperations()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.opGetConfigurationBundleVersion">opGetConfigurationBundleVersion</a></code> | <code>string[]</code> | IAM actions required for the GetConfigurationBundleVersion API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.opGetConsentPortal">opGetConsentPortal</a></code> | <code>string[]</code> | IAM actions required for the GetConsentPortal API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.opGetDataset">opGetDataset</a></code> | <code>string[]</code> | IAM actions required for the GetDataset API call. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.opGetDatasetGeneration">opGetDatasetGeneration</a></code> | <code>string[]</code> | IAM actions required for the GetDatasetGeneration API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.opGetEvaluator">opGetEvaluator</a></code> | <code>string[]</code> | IAM actions required for the GetEvaluator API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.opGetEvent">opGetEvent</a></code> | <code>string[]</code> | IAM actions required for the GetEvent API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.opGetGateway">opGetGateway</a></code> | <code>string[]</code> | IAM actions required for the GetGateway API call. |
@@ -10438,6 +10820,7 @@ new bedrock_agentcore.BedrockAgentcoreOperations()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.StartBatchEvaluation">StartBatchEvaluation</a></code> | <code>string[]</code> | IAM actions required for the StartBatchEvaluation API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.StartBrowserSession">StartBrowserSession</a></code> | <code>string[]</code> | IAM actions required for the StartBrowserSession API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.StartCodeInterpreterSession">StartCodeInterpreterSession</a></code> | <code>string[]</code> | IAM actions required for the StartCodeInterpreterSession API call. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.StartDatasetGeneration">StartDatasetGeneration</a></code> | <code>string[]</code> | IAM actions required for the StartDatasetGeneration API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.StartMemoryExtractionJob">StartMemoryExtractionJob</a></code> | <code>string[]</code> | IAM actions required for the StartMemoryExtractionJob API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.StartPolicyGeneration">StartPolicyGeneration</a></code> | <code>string[]</code> | IAM actions required for the StartPolicyGeneration API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.StartRecommendation">StartRecommendation</a></code> | <code>string[]</code> | IAM actions required for the StartRecommendation API call. |
@@ -10450,6 +10833,8 @@ new bedrock_agentcore.BedrockAgentcoreOperations()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.UpdateABTest">UpdateABTest</a></code> | <code>string[]</code> | IAM actions required for the UpdateABTest API call. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.UpdateAgentInsight">UpdateAgentInsight</a></code> | <code>string[]</code> | IAM actions required for the UpdateAgentInsight API call. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.UpdateAgentInsightStore">UpdateAgentInsightStore</a></code> | <code>string[]</code> | IAM actions required for the UpdateAgentInsightStore API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.UpdateAgentRuntime">UpdateAgentRuntime</a></code> | <code>string[]</code> | IAM actions required for the UpdateAgentRuntime API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.UpdateAgentRuntimeEndpoint">UpdateAgentRuntimeEndpoint</a></code> | <code>string[]</code> | IAM actions required for the UpdateAgentRuntimeEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.UpdateApiKeyCredentialProvider">UpdateApiKeyCredentialProvider</a></code> | <code>string[]</code> | IAM actions required for the UpdateApiKeyCredentialProvider API call. |
@@ -11117,6 +11502,18 @@ IAM actions required for the DeleteDatasetExamples API call.
 
 ---
 
+##### `DeleteDatasetGeneration`<sup>Required</sup> <a name="DeleteDatasetGeneration" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.DeleteDatasetGeneration"></a>
+
+```typescript
+public readonly DeleteDatasetGeneration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteDatasetGeneration API call.
+
+---
+
 ##### `DeleteEvaluator`<sup>Required</sup> <a name="DeleteEvaluator" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.DeleteEvaluator"></a>
 
 ```typescript
@@ -11489,6 +11886,18 @@ IAM actions required for the InvokeHarness API call.
 
 ---
 
+##### `InvokeWebSearch`<sup>Required</sup> <a name="InvokeWebSearch" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.InvokeWebSearch"></a>
+
+```typescript
+public readonly InvokeWebSearch: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the InvokeWebSearch API call.
+
+---
+
 ##### `ListABTests`<sup>Required</sup> <a name="ListABTests" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.ListABTests"></a>
 
 ```typescript
@@ -11510,6 +11919,30 @@ public readonly ListActors: string[];
 - *Type:* string[]
 
 IAM actions required for the ListActors API call.
+
+---
+
+##### `ListAgentInsights`<sup>Required</sup> <a name="ListAgentInsights" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.ListAgentInsights"></a>
+
+```typescript
+public readonly ListAgentInsights: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListAgentInsights API call.
+
+---
+
+##### `ListAgentInsightStores`<sup>Required</sup> <a name="ListAgentInsightStores" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.ListAgentInsightStores"></a>
+
+```typescript
+public readonly ListAgentInsightStores: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListAgentInsightStores API call.
 
 ---
 
@@ -11702,6 +12135,18 @@ public readonly ListDatasetExamples: string[];
 - *Type:* string[]
 
 IAM actions required for the ListDatasetExamples API call.
+
+---
+
+##### `ListDatasetGenerations`<sup>Required</sup> <a name="ListDatasetGenerations" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.ListDatasetGenerations"></a>
+
+```typescript
+public readonly ListDatasetGenerations: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListDatasetGenerations API call.
 
 ---
 
@@ -12137,6 +12582,30 @@ IAM actions required for the GetAgentCard API call.
 
 ---
 
+##### `opGetAgentInsight`<sup>Required</sup> <a name="opGetAgentInsight" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.opGetAgentInsight"></a>
+
+```typescript
+public readonly opGetAgentInsight: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetAgentInsight API call.
+
+---
+
+##### `opGetAgentInsightStore`<sup>Required</sup> <a name="opGetAgentInsightStore" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.opGetAgentInsightStore"></a>
+
+```typescript
+public readonly opGetAgentInsightStore: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetAgentInsightStore API call.
+
+---
+
 ##### `opGetAgentRuntime`<sup>Required</sup> <a name="opGetAgentRuntime" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.opGetAgentRuntime"></a>
 
 ```typescript
@@ -12302,6 +12771,18 @@ public readonly opGetDataset: string[];
 - *Type:* string[]
 
 IAM actions required for the GetDataset API call.
+
+---
+
+##### `opGetDatasetGeneration`<sup>Required</sup> <a name="opGetDatasetGeneration" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.opGetDatasetGeneration"></a>
+
+```typescript
+public readonly opGetDatasetGeneration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetDatasetGeneration API call.
 
 ---
 
@@ -12869,6 +13350,18 @@ IAM actions required for the StartCodeInterpreterSession API call.
 
 ---
 
+##### `StartDatasetGeneration`<sup>Required</sup> <a name="StartDatasetGeneration" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.StartDatasetGeneration"></a>
+
+```typescript
+public readonly StartDatasetGeneration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StartDatasetGeneration API call.
+
+---
+
 ##### `StartMemoryExtractionJob`<sup>Required</sup> <a name="StartMemoryExtractionJob" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.StartMemoryExtractionJob"></a>
 
 ```typescript
@@ -13010,6 +13503,30 @@ public readonly UpdateABTest: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateABTest API call.
+
+---
+
+##### `UpdateAgentInsight`<sup>Required</sup> <a name="UpdateAgentInsight" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.UpdateAgentInsight"></a>
+
+```typescript
+public readonly UpdateAgentInsight: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateAgentInsight API call.
+
+---
+
+##### `UpdateAgentInsightStore`<sup>Required</sup> <a name="UpdateAgentInsightStore" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreOperations.property.UpdateAgentInsightStore"></a>
+
+```typescript
+public readonly UpdateAgentInsightStore: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateAgentInsightStore API call.
 
 ---
 
@@ -13372,6 +13889,7 @@ new bedrock_agentcore.BedrockAgentcoreResources()
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.abTest">abTest</a></code> | Builds an ARN for the ab-test resource. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.agentInsightStore">agentInsightStore</a></code> | Builds an ARN for the agent-insight-store resource. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.apikeycredentialprovider">apikeycredentialprovider</a></code> | Builds an ARN for the apikeycredentialprovider resource. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.batchEvaluate">batchEvaluate</a></code> | Builds an ARN for the batch-evaluate resource. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.browser">browser</a></code> | Builds an ARN for the browser resource. |
@@ -13388,6 +13906,7 @@ new bedrock_agentcore.BedrockAgentcoreResources()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.harness">harness</a></code> | Builds an ARN for the harness resource. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.harnessEndpoint">harnessEndpoint</a></code> | Builds an ARN for the harness-endpoint resource. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.isValidAbTestArn">isValidAbTestArn</a></code> | Validates whether a string is a valid ARN for the ab-test resource. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.isValidAgentInsightStoreArn">isValidAgentInsightStoreArn</a></code> | Validates whether a string is a valid ARN for the agent-insight-store resource. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.isValidApikeycredentialproviderArn">isValidApikeycredentialproviderArn</a></code> | Validates whether a string is a valid ARN for the apikeycredentialprovider resource. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.isValidBatchEvaluateArn">isValidBatchEvaluateArn</a></code> | Validates whether a string is a valid ARN for the batch-evaluate resource. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.isValidBrowserArn">isValidBrowserArn</a></code> | Validates whether a string is a valid ARN for the browser resource. |
@@ -13417,6 +13936,7 @@ new bedrock_agentcore.BedrockAgentcoreResources()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.isValidRuntimeArn">isValidRuntimeArn</a></code> | Validates whether a string is a valid ARN for the runtime resource. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.isValidRuntimeEndpointArn">isValidRuntimeEndpointArn</a></code> | Validates whether a string is a valid ARN for the runtime-endpoint resource. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.isValidTokenVaultArn">isValidTokenVaultArn</a></code> | Validates whether a string is a valid ARN for the token-vault resource. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.isValidWebAnswerArn">isValidWebAnswerArn</a></code> | Validates whether a string is a valid ARN for the web-answer resource. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.isValidWebSearchArn">isValidWebSearchArn</a></code> | Validates whether a string is a valid ARN for the web-search resource. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.isValidWorkloadIdentityArn">isValidWorkloadIdentityArn</a></code> | Validates whether a string is a valid ARN for the workload-identity resource. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.isValidWorkloadIdentityDirectoryArn">isValidWorkloadIdentityDirectoryArn</a></code> | Validates whether a string is a valid ARN for the workload-identity-directory resource. |
@@ -13424,6 +13944,7 @@ new bedrock_agentcore.BedrockAgentcoreResources()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.oauth2credentialprovider">oauth2credentialprovider</a></code> | Builds an ARN for the oauth2credentialprovider resource. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.onlineEvaluationConfig">onlineEvaluationConfig</a></code> | Builds an ARN for the online-evaluation-config resource. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.parseAbTestArn">parseAbTestArn</a></code> | Parses a ab-test ARN into its components. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.parseAgentInsightStoreArn">parseAgentInsightStoreArn</a></code> | Parses a agent-insight-store ARN into its components. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.parseApikeycredentialproviderArn">parseApikeycredentialproviderArn</a></code> | Parses a apikeycredentialprovider ARN into its components. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.parseBatchEvaluateArn">parseBatchEvaluateArn</a></code> | Parses a batch-evaluate ARN into its components. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.parseBrowserArn">parseBrowserArn</a></code> | Parses a browser ARN into its components. |
@@ -13453,6 +13974,7 @@ new bedrock_agentcore.BedrockAgentcoreResources()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.parseRuntimeArn">parseRuntimeArn</a></code> | Parses a runtime ARN into its components. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.parseRuntimeEndpointArn">parseRuntimeEndpointArn</a></code> | Parses a runtime-endpoint ARN into its components. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.parseTokenVaultArn">parseTokenVaultArn</a></code> | Parses a token-vault ARN into its components. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.parseWebAnswerArn">parseWebAnswerArn</a></code> | Parses a web-answer ARN into its components. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.parseWebSearchArn">parseWebSearchArn</a></code> | Parses a web-search ARN into its components. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.parseWorkloadIdentityArn">parseWorkloadIdentityArn</a></code> | Parses a workload-identity ARN into its components. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.parseWorkloadIdentityDirectoryArn">parseWorkloadIdentityDirectoryArn</a></code> | Parses a workload-identity-directory ARN into its components. |
@@ -13467,6 +13989,7 @@ new bedrock_agentcore.BedrockAgentcoreResources()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.runtime">runtime</a></code> | Builds an ARN for the runtime resource. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.runtimeEndpoint">runtimeEndpoint</a></code> | Builds an ARN for the runtime-endpoint resource. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.tokenVault">tokenVault</a></code> | Builds an ARN for the token-vault resource. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.webAnswer">webAnswer</a></code> | Builds an ARN for the web-answer resource. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.webSearch">webSearch</a></code> | Builds an ARN for the web-search resource. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.workloadIdentity">workloadIdentity</a></code> | Builds an ARN for the workload-identity resource. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.workloadIdentityDirectory">workloadIdentityDirectory</a></code> | Builds an ARN for the workload-identity-directory resource. |
@@ -13486,6 +14009,22 @@ Builds an ARN for the ab-test resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.abTest.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreAbTestArnProps">BedrockAgentcoreAbTestArnProps</a>
+
+---
+
+##### `agentInsightStore` <a name="agentInsightStore" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.agentInsightStore"></a>
+
+```typescript
+import { bedrock_agentcore } from '@cdk_utils/iam'
+
+bedrock_agentcore.BedrockAgentcoreResources.agentInsightStore(props: BedrockAgentcoreAgentInsightStoreArnProps)
+```
+
+Builds an ARN for the agent-insight-store resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.agentInsightStore.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreAgentInsightStoreArnProps">BedrockAgentcoreAgentInsightStoreArnProps</a>
 
 ---
 
@@ -13740,6 +14279,22 @@ bedrock_agentcore.BedrockAgentcoreResources.isValidAbTestArn(arn: string)
 Validates whether a string is a valid ARN for the ab-test resource.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.isValidAbTestArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidAgentInsightStoreArn` <a name="isValidAgentInsightStoreArn" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.isValidAgentInsightStoreArn"></a>
+
+```typescript
+import { bedrock_agentcore } from '@cdk_utils/iam'
+
+bedrock_agentcore.BedrockAgentcoreResources.isValidAgentInsightStoreArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the agent-insight-store resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.isValidAgentInsightStoreArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -14209,6 +14764,22 @@ Validates whether a string is a valid ARN for the token-vault resource.
 
 ---
 
+##### `isValidWebAnswerArn` <a name="isValidWebAnswerArn" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.isValidWebAnswerArn"></a>
+
+```typescript
+import { bedrock_agentcore } from '@cdk_utils/iam'
+
+bedrock_agentcore.BedrockAgentcoreResources.isValidWebAnswerArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the web-answer resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.isValidWebAnswerArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `isValidWebSearchArn` <a name="isValidWebSearchArn" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.isValidWebSearchArn"></a>
 
 ```typescript
@@ -14316,6 +14887,22 @@ bedrock_agentcore.BedrockAgentcoreResources.parseAbTestArn(arn: string)
 Parses a ab-test ARN into its components.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.parseAbTestArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseAgentInsightStoreArn` <a name="parseAgentInsightStoreArn" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.parseAgentInsightStoreArn"></a>
+
+```typescript
+import { bedrock_agentcore } from '@cdk_utils/iam'
+
+bedrock_agentcore.BedrockAgentcoreResources.parseAgentInsightStoreArn(arn: string)
+```
+
+Parses a agent-insight-store ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.parseAgentInsightStoreArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -14785,6 +15372,22 @@ Parses a token-vault ARN into its components.
 
 ---
 
+##### `parseWebAnswerArn` <a name="parseWebAnswerArn" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.parseWebAnswerArn"></a>
+
+```typescript
+import { bedrock_agentcore } from '@cdk_utils/iam'
+
+bedrock_agentcore.BedrockAgentcoreResources.parseWebAnswerArn(arn: string)
+```
+
+Parses a web-answer ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.parseWebAnswerArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `parseWebSearchArn` <a name="parseWebSearchArn" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.parseWebSearchArn"></a>
 
 ```typescript
@@ -15006,6 +15609,22 @@ Builds an ARN for the token-vault resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.tokenVault.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreTokenVaultArnProps">BedrockAgentcoreTokenVaultArnProps</a>
+
+---
+
+##### `webAnswer` <a name="webAnswer" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.webAnswer"></a>
+
+```typescript
+import { bedrock_agentcore } from '@cdk_utils/iam'
+
+bedrock_agentcore.BedrockAgentcoreResources.webAnswer(props: BedrockAgentcoreWebAnswerArnProps)
+```
+
+Builds an ARN for the web-answer resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreResources.webAnswer.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreWebAnswerArnProps">BedrockAgentcoreWebAnswerArnProps</a>
 
 ---
 

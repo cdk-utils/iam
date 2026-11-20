@@ -819,6 +819,378 @@ Defaults to "aws".
 
 ---
 
+### AWSMarketplaceDataSubscriptionArnComponents <a name="AWSMarketplaceDataSubscriptionArnComponents" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceDataSubscriptionArnComponents"></a>
+
+Parsed components of a DataSubscription ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceDataSubscriptionArnComponents.Initializer"></a>
+
+```typescript
+import { aws_marketplace } from '@cdk_utils/iam'
+
+const aWSMarketplaceDataSubscriptionArnComponents: aws_marketplace.AWSMarketplaceDataSubscriptionArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceDataSubscriptionArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceDataSubscriptionArnComponents.property.catalog">catalog</a></code> | <code>string</code> | The Catalog component. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceDataSubscriptionArnComponents.property.dataSubscriptionId">dataSubscriptionId</a></code> | <code>string</code> | The DataSubscriptionId component. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceDataSubscriptionArnComponents.property.factTable">factTable</a></code> | <code>string</code> | The FactTable component. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceDataSubscriptionArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceDataSubscriptionArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `catalog`<sup>Required</sup> <a name="catalog" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceDataSubscriptionArnComponents.property.catalog"></a>
+
+```typescript
+public readonly catalog: string;
+```
+
+- *Type:* string
+
+The Catalog component.
+
+---
+
+##### `dataSubscriptionId`<sup>Required</sup> <a name="dataSubscriptionId" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceDataSubscriptionArnComponents.property.dataSubscriptionId"></a>
+
+```typescript
+public readonly dataSubscriptionId: string;
+```
+
+- *Type:* string
+
+The DataSubscriptionId component.
+
+---
+
+##### `factTable`<sup>Required</sup> <a name="factTable" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceDataSubscriptionArnComponents.property.factTable"></a>
+
+```typescript
+public readonly factTable: string;
+```
+
+- *Type:* string
+
+The FactTable component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceDataSubscriptionArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+### AWSMarketplaceDataSubscriptionArnProps <a name="AWSMarketplaceDataSubscriptionArnProps" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceDataSubscriptionArnProps"></a>
+
+Properties for building a DataSubscription ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceDataSubscriptionArnProps.Initializer"></a>
+
+```typescript
+import { aws_marketplace } from '@cdk_utils/iam'
+
+const aWSMarketplaceDataSubscriptionArnProps: aws_marketplace.AWSMarketplaceDataSubscriptionArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceDataSubscriptionArnProps.property.catalog">catalog</a></code> | <code>string</code> | The Catalog component of the ARN. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceDataSubscriptionArnProps.property.dataSubscriptionId">dataSubscriptionId</a></code> | <code>string</code> | The DataSubscriptionId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceDataSubscriptionArnProps.property.factTable">factTable</a></code> | <code>string</code> | The FactTable component of the ARN. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceDataSubscriptionArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceDataSubscriptionArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+
+---
+
+##### `catalog`<sup>Required</sup> <a name="catalog" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceDataSubscriptionArnProps.property.catalog"></a>
+
+```typescript
+public readonly catalog: string;
+```
+
+- *Type:* string
+
+The Catalog component of the ARN.
+
+---
+
+##### `dataSubscriptionId`<sup>Required</sup> <a name="dataSubscriptionId" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceDataSubscriptionArnProps.property.dataSubscriptionId"></a>
+
+```typescript
+public readonly dataSubscriptionId: string;
+```
+
+- *Type:* string
+
+The DataSubscriptionId component of the ARN.
+
+---
+
+##### `factTable`<sup>Required</sup> <a name="factTable" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceDataSubscriptionArnProps.property.factTable"></a>
+
+```typescript
+public readonly factTable: string;
+```
+
+- *Type:* string
+
+The FactTable component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceDataSubscriptionArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceDataSubscriptionArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+### AWSMarketplaceDeploymentConfigurationArnComponents <a name="AWSMarketplaceDeploymentConfigurationArnComponents" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceDeploymentConfigurationArnComponents"></a>
+
+Parsed components of a DeploymentConfiguration ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceDeploymentConfigurationArnComponents.Initializer"></a>
+
+```typescript
+import { aws_marketplace } from '@cdk_utils/iam'
+
+const aWSMarketplaceDeploymentConfigurationArnComponents: aws_marketplace.AWSMarketplaceDeploymentConfigurationArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceDeploymentConfigurationArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceDeploymentConfigurationArnComponents.property.catalogName">catalogName</a></code> | <code>string</code> | The CatalogName component. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceDeploymentConfigurationArnComponents.property.deliveryOptionType">deliveryOptionType</a></code> | <code>string</code> | The DeliveryOptionType component. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceDeploymentConfigurationArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceDeploymentConfigurationArnComponents.property.productId">productId</a></code> | <code>string</code> | The ProductId component. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceDeploymentConfigurationArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceDeploymentConfigurationArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `catalogName`<sup>Required</sup> <a name="catalogName" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceDeploymentConfigurationArnComponents.property.catalogName"></a>
+
+```typescript
+public readonly catalogName: string;
+```
+
+- *Type:* string
+
+The CatalogName component.
+
+---
+
+##### `deliveryOptionType`<sup>Required</sup> <a name="deliveryOptionType" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceDeploymentConfigurationArnComponents.property.deliveryOptionType"></a>
+
+```typescript
+public readonly deliveryOptionType: string;
+```
+
+- *Type:* string
+
+The DeliveryOptionType component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceDeploymentConfigurationArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `productId`<sup>Required</sup> <a name="productId" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceDeploymentConfigurationArnComponents.property.productId"></a>
+
+```typescript
+public readonly productId: string;
+```
+
+- *Type:* string
+
+The ProductId component.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceDeploymentConfigurationArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### AWSMarketplaceDeploymentConfigurationArnProps <a name="AWSMarketplaceDeploymentConfigurationArnProps" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceDeploymentConfigurationArnProps"></a>
+
+Properties for building a DeploymentConfiguration ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceDeploymentConfigurationArnProps.Initializer"></a>
+
+```typescript
+import { aws_marketplace } from '@cdk_utils/iam'
+
+const aWSMarketplaceDeploymentConfigurationArnProps: aws_marketplace.AWSMarketplaceDeploymentConfigurationArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceDeploymentConfigurationArnProps.property.catalogName">catalogName</a></code> | <code>string</code> | The CatalogName component of the ARN. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceDeploymentConfigurationArnProps.property.deliveryOptionType">deliveryOptionType</a></code> | <code>string</code> | The DeliveryOptionType component of the ARN. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceDeploymentConfigurationArnProps.property.productId">productId</a></code> | <code>string</code> | The ProductId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceDeploymentConfigurationArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceDeploymentConfigurationArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceDeploymentConfigurationArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `catalogName`<sup>Required</sup> <a name="catalogName" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceDeploymentConfigurationArnProps.property.catalogName"></a>
+
+```typescript
+public readonly catalogName: string;
+```
+
+- *Type:* string
+
+The CatalogName component of the ARN.
+
+---
+
+##### `deliveryOptionType`<sup>Required</sup> <a name="deliveryOptionType" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceDeploymentConfigurationArnProps.property.deliveryOptionType"></a>
+
+```typescript
+public readonly deliveryOptionType: string;
+```
+
+- *Type:* string
+
+The DeliveryOptionType component of the ARN.
+
+---
+
+##### `productId`<sup>Required</sup> <a name="productId" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceDeploymentConfigurationArnProps.property.productId"></a>
+
+```typescript
+public readonly productId: string;
+```
+
+- *Type:* string
+
+The ProductId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceDeploymentConfigurationArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceDeploymentConfigurationArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceDeploymentConfigurationArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### AWSMarketplaceDeploymentParameterArnComponents <a name="AWSMarketplaceDeploymentParameterArnComponents" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceDeploymentParameterArnComponents"></a>
 
 Parsed components of a DeploymentParameter ARN.
@@ -2609,6 +2981,178 @@ Defaults to "aws".
 
 ---
 
+### AWSMarketplaceSellerDatasetArnComponents <a name="AWSMarketplaceSellerDatasetArnComponents" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnComponents"></a>
+
+Parsed components of a SellerDataset ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnComponents.Initializer"></a>
+
+```typescript
+import { aws_marketplace } from '@cdk_utils/iam'
+
+const aWSMarketplaceSellerDatasetArnComponents: aws_marketplace.AWSMarketplaceSellerDatasetArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnComponents.property.catalog">catalog</a></code> | <code>string</code> | The Catalog component. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnComponents.property.datasetName">datasetName</a></code> | <code>string</code> | The DatasetName component. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnComponents.property.factTable">factTable</a></code> | <code>string</code> | The FactTable component. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `catalog`<sup>Required</sup> <a name="catalog" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnComponents.property.catalog"></a>
+
+```typescript
+public readonly catalog: string;
+```
+
+- *Type:* string
+
+The Catalog component.
+
+---
+
+##### `datasetName`<sup>Required</sup> <a name="datasetName" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnComponents.property.datasetName"></a>
+
+```typescript
+public readonly datasetName: string;
+```
+
+- *Type:* string
+
+The DatasetName component.
+
+---
+
+##### `factTable`<sup>Required</sup> <a name="factTable" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnComponents.property.factTable"></a>
+
+```typescript
+public readonly factTable: string;
+```
+
+- *Type:* string
+
+The FactTable component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+### AWSMarketplaceSellerDatasetArnProps <a name="AWSMarketplaceSellerDatasetArnProps" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnProps"></a>
+
+Properties for building a SellerDataset ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnProps.Initializer"></a>
+
+```typescript
+import { aws_marketplace } from '@cdk_utils/iam'
+
+const aWSMarketplaceSellerDatasetArnProps: aws_marketplace.AWSMarketplaceSellerDatasetArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnProps.property.catalog">catalog</a></code> | <code>string</code> | The Catalog component of the ARN. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnProps.property.datasetName">datasetName</a></code> | <code>string</code> | The DatasetName component of the ARN. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnProps.property.factTable">factTable</a></code> | <code>string</code> | The FactTable component of the ARN. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+
+---
+
+##### `catalog`<sup>Required</sup> <a name="catalog" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnProps.property.catalog"></a>
+
+```typescript
+public readonly catalog: string;
+```
+
+- *Type:* string
+
+The Catalog component of the ARN.
+
+---
+
+##### `datasetName`<sup>Required</sup> <a name="datasetName" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnProps.property.datasetName"></a>
+
+```typescript
+public readonly datasetName: string;
+```
+
+- *Type:* string
+
+The DatasetName component of the ARN.
+
+---
+
+##### `factTable`<sup>Required</sup> <a name="factTable" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnProps.property.factTable"></a>
+
+```typescript
+public readonly factTable: string;
+```
+
+- *Type:* string
+
+The FactTable component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
 ### AWSMarketplaceTaxComplianceProfileArnComponents <a name="AWSMarketplaceTaxComplianceProfileArnComponents" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceTaxComplianceProfileArnComponents"></a>
 
 Parsed components of a TaxComplianceProfile ARN.
@@ -3105,18 +3649,26 @@ new aws_marketplace.AWSMarketplaceActions()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.AcceptAgreementApproval">AcceptAgreementApproval</a></code> | <code>string</code> | [Write] aws-marketplace:AcceptAgreementApproval. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.AcceptAgreementApprovalRequest">AcceptAgreementApprovalRequest</a></code> | <code>string</code> | [Write] aws-marketplace:AcceptAgreementApprovalRequest. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.AcceptAgreementCancellationRequest">AcceptAgreementCancellationRequest</a></code> | <code>string</code> | [Write] aws-marketplace:AcceptAgreementCancellationRequest. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.AcceptAgreementPaymentRequest">AcceptAgreementPaymentRequest</a></code> | <code>string</code> | [Write] aws-marketplace:AcceptAgreementPaymentRequest. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.AcceptAgreementRequest">AcceptAgreementRequest</a></code> | <code>string</code> | [Write] aws-marketplace:AcceptAgreementRequest. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetAgreementApproval">actionGetAgreementApproval</a></code> | <code>string</code> | [Read] aws-marketplace:GetAgreementApproval. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetAgreementApprovalRequest">actionGetAgreementApprovalRequest</a></code> | <code>string</code> | [Read] aws-marketplace:GetAgreementApprovalRequest. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetAgreementCancellationRequest">actionGetAgreementCancellationRequest</a></code> | <code>string</code> | [Read] aws-marketplace:GetAgreementCancellationRequest. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetAgreementContacts">actionGetAgreementContacts</a></code> | <code>string</code> | [Read] aws-marketplace:GetAgreementContacts. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetAgreementEntitlements">actionGetAgreementEntitlements</a></code> | <code>string</code> | [Read] aws-marketplace:GetAgreementEntitlements. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetAgreementPaymentRequest">actionGetAgreementPaymentRequest</a></code> | <code>string</code> | [Read] aws-marketplace:GetAgreementPaymentRequest. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetAgreementRequest">actionGetAgreementRequest</a></code> | <code>string</code> | [Read] aws-marketplace:GetAgreementRequest. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetAgreementRequestApprovalPlans">actionGetAgreementRequestApprovalPlans</a></code> | <code>string</code> | [Read] aws-marketplace:GetAgreementRequestApprovalPlans. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetAgreementRequestTerms">actionGetAgreementRequestTerms</a></code> | <code>string</code> | [Read] aws-marketplace:GetAgreementRequestTerms. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetAgreementTerms">actionGetAgreementTerms</a></code> | <code>string</code> | [List] aws-marketplace:GetAgreementTerms. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetBillingAdjustmentRequest">actionGetBillingAdjustmentRequest</a></code> | <code>string</code> | [Read] aws-marketplace:GetBillingAdjustmentRequest. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetBuyerDashboard">actionGetBuyerDashboard</a></code> | <code>string</code> | [Read] aws-marketplace:GetBuyerDashboard. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetDataSubscription">actionGetDataSubscription</a></code> | <code>string</code> | [Read] aws-marketplace:GetDataSubscription. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetDeploymentConfiguration">actionGetDeploymentConfiguration</a></code> | <code>string</code> | [Read] aws-marketplace:GetDeploymentConfiguration. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetDeploymentConfigurationJob">actionGetDeploymentConfigurationJob</a></code> | <code>string</code> | [Read] aws-marketplace:GetDeploymentConfigurationJob. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetEntitlements">actionGetEntitlements</a></code> | <code>string</code> | [Read] aws-marketplace:GetEntitlements. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetInvoiceSubmissionTask">actionGetInvoiceSubmissionTask</a></code> | <code>string</code> | [Read] aws-marketplace:GetInvoiceSubmissionTask. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetIssuedTaxInvoice">actionGetIssuedTaxInvoice</a></code> | <code>string</code> | [Read] aws-marketplace:GetIssuedTaxInvoice. |
@@ -3127,6 +3679,7 @@ new aws_marketplace.AWSMarketplaceActions()
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetProduct">actionGetProduct</a></code> | <code>string</code> | [Read] aws-marketplace:GetProduct. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetResourcePolicy">actionGetResourcePolicy</a></code> | <code>string</code> | [Read] aws-marketplace:GetResourcePolicy. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetSellerDashboard">actionGetSellerDashboard</a></code> | <code>string</code> | [Read] aws-marketplace:GetSellerDashboard. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetSellerReportingData">actionGetSellerReportingData</a></code> | <code>string</code> | [Read] aws-marketplace:GetSellerReportingData. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetTaxComplianceProfile">actionGetTaxComplianceProfile</a></code> | <code>string</code> | [Read] aws-marketplace:GetTaxComplianceProfile. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetVerification">actionGetVerification</a></code> | <code>string</code> | [Read] aws-marketplace:GetVerification. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetVerificationEvidence">actionGetVerificationEvidence</a></code> | <code>string</code> | [Read] aws-marketplace:GetVerificationEvidence. |
@@ -3144,8 +3697,10 @@ new aws_marketplace.AWSMarketplaceActions()
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.CancelAgreementRequest">CancelAgreementRequest</a></code> | <code>string</code> | [Write] aws-marketplace:CancelAgreementRequest. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.CancelChangeSet">CancelChangeSet</a></code> | <code>string</code> | [Write] aws-marketplace:CancelChangeSet. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.CreateAgreementRequest">CreateAgreementRequest</a></code> | <code>string</code> | [Write] aws-marketplace:CreateAgreementRequest. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.CreateDataSubscription">CreateDataSubscription</a></code> | <code>string</code> | [Write] aws-marketplace:CreateDataSubscription. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.CreatePrivateMarketplaceRequests">CreatePrivateMarketplaceRequests</a></code> | <code>string</code> | [Write] aws-marketplace:CreatePrivateMarketplaceRequests. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.CreateVerificationEvidence">CreateVerificationEvidence</a></code> | <code>string</code> | [Write] aws-marketplace:CreateVerificationEvidence. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.DeleteDataSubscription">DeleteDataSubscription</a></code> | <code>string</code> | [Write] aws-marketplace:DeleteDataSubscription. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.DeleteResourcePolicy">DeleteResourcePolicy</a></code> | <code>string</code> | [PermissionManagement] aws-marketplace:DeleteResourcePolicy. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.DescribeAgreement">DescribeAgreement</a></code> | <code>string</code> | [Read] aws-marketplace:DescribeAgreement. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.DescribeAssessment">DescribeAssessment</a></code> | <code>string</code> | [Read] aws-marketplace:DescribeAssessment. |
@@ -3156,6 +3711,7 @@ new aws_marketplace.AWSMarketplaceActions()
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.DescribeProcurementSystemConfiguration">DescribeProcurementSystemConfiguration</a></code> | <code>string</code> | [Read] aws-marketplace:DescribeProcurementSystemConfiguration. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.DisassociateProductsFromPrivateMarketplace">DisassociateProductsFromPrivateMarketplace</a></code> | <code>string</code> | [Write] aws-marketplace:DisassociateProductsFromPrivateMarketplace. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.ListAgreementApprovalRequests">ListAgreementApprovalRequests</a></code> | <code>string</code> | [List] aws-marketplace:ListAgreementApprovalRequests. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.ListAgreementApprovals">ListAgreementApprovals</a></code> | <code>string</code> | [List] aws-marketplace:ListAgreementApprovals. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.ListAgreementCancellationRequests">ListAgreementCancellationRequests</a></code> | <code>string</code> | [List] aws-marketplace:ListAgreementCancellationRequests. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.ListAgreementCharges">ListAgreementCharges</a></code> | <code>string</code> | [List] aws-marketplace:ListAgreementCharges. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.ListAgreementInvoiceLineItems">ListAgreementInvoiceLineItems</a></code> | <code>string</code> | [List] aws-marketplace:ListAgreementInvoiceLineItems. |
@@ -3165,6 +3721,8 @@ new aws_marketplace.AWSMarketplaceActions()
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.ListBillingAdjustmentRequests">ListBillingAdjustmentRequests</a></code> | <code>string</code> | [List] aws-marketplace:ListBillingAdjustmentRequests. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.ListBuilds">ListBuilds</a></code> | <code>string</code> | [Read] aws-marketplace:ListBuilds. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.ListChangeSets">ListChangeSets</a></code> | <code>string</code> | [List] aws-marketplace:ListChangeSets. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.ListDataSubscriptions">ListDataSubscriptions</a></code> | <code>string</code> | [List] aws-marketplace:ListDataSubscriptions. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.ListDeploymentConfigurationJobs">ListDeploymentConfigurationJobs</a></code> | <code>string</code> | [List] aws-marketplace:ListDeploymentConfigurationJobs. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.ListEntities">ListEntities</a></code> | <code>string</code> | [List] aws-marketplace:ListEntities. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.ListEntitlementDetails">ListEntitlementDetails</a></code> | <code>string</code> | [Read] aws-marketplace:ListEntitlementDetails. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.ListFulfillmentOptions">ListFulfillmentOptions</a></code> | <code>string</code> | [List] aws-marketplace:ListFulfillmentOptions. |
@@ -3184,6 +3742,7 @@ new aws_marketplace.AWSMarketplaceActions()
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.PutProcurementSystemConfiguration">PutProcurementSystemConfiguration</a></code> | <code>string</code> | [Write] aws-marketplace:PutProcurementSystemConfiguration. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.PutResourcePolicy">PutResourcePolicy</a></code> | <code>string</code> | [PermissionManagement] aws-marketplace:PutResourcePolicy. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.RegisterUsage">RegisterUsage</a></code> | <code>string</code> | [Write] aws-marketplace:RegisterUsage. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.RejectAgreementApproval">RejectAgreementApproval</a></code> | <code>string</code> | [Write] aws-marketplace:RejectAgreementApproval. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.RejectAgreementApprovalRequest">RejectAgreementApprovalRequest</a></code> | <code>string</code> | [Write] aws-marketplace:RejectAgreementApprovalRequest. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.RejectAgreementCancellationRequest">RejectAgreementCancellationRequest</a></code> | <code>string</code> | [Write] aws-marketplace:RejectAgreementCancellationRequest. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.RejectAgreementPaymentRequest">RejectAgreementPaymentRequest</a></code> | <code>string</code> | [Write] aws-marketplace:RejectAgreementPaymentRequest. |
@@ -3194,8 +3753,11 @@ new aws_marketplace.AWSMarketplaceActions()
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.SendAgreementCancellationRequest">SendAgreementCancellationRequest</a></code> | <code>string</code> | [Write] aws-marketplace:SendAgreementCancellationRequest. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.SendAgreementPaymentRequest">SendAgreementPaymentRequest</a></code> | <code>string</code> | [Write] aws-marketplace:SendAgreementPaymentRequest. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.StartAgreementApprovals">StartAgreementApprovals</a></code> | <code>string</code> | [Write] aws-marketplace:StartAgreementApprovals. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.StartAssessment">StartAssessment</a></code> | <code>string</code> | [Write] aws-marketplace:StartAssessment. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.StartBuild">StartBuild</a></code> | <code>string</code> | [Write] aws-marketplace:StartBuild. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.StartChangeSet">StartChangeSet</a></code> | <code>string</code> | [Write] aws-marketplace:StartChangeSet. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.StartDeploymentConfigurationJob">StartDeploymentConfigurationJob</a></code> | <code>string</code> | [Write] aws-marketplace:StartDeploymentConfigurationJob. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.StartInvoiceSubmissionTask">StartInvoiceSubmissionTask</a></code> | <code>string</code> | [Write] aws-marketplace:StartInvoiceSubmissionTask. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.StartTaxComplianceProfileChangeTask">StartTaxComplianceProfileChangeTask</a></code> | <code>string</code> | [Write] aws-marketplace:StartTaxComplianceProfileChangeTask. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.StartVerification">StartVerification</a></code> | <code>string</code> | [Write] aws-marketplace:StartVerification. |
@@ -3207,6 +3769,18 @@ new aws_marketplace.AWSMarketplaceActions()
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.UpdatePurchaseOrders">UpdatePurchaseOrders</a></code> | <code>string</code> | [Write] aws-marketplace:UpdatePurchaseOrders. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.UpdateVerificationEvidence">UpdateVerificationEvidence</a></code> | <code>string</code> | [Write] aws-marketplace:UpdateVerificationEvidence. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.ViewSubscriptions">ViewSubscriptions</a></code> | <code>string</code> | [List] aws-marketplace:ViewSubscriptions. |
+
+---
+
+##### `AcceptAgreementApproval`<sup>Required</sup> <a name="AcceptAgreementApproval" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.AcceptAgreementApproval"></a>
+
+```typescript
+public readonly AcceptAgreementApproval: string;
+```
+
+- *Type:* string
+
+[Write] aws-marketplace:AcceptAgreementApproval.
 
 ---
 
@@ -3258,6 +3832,18 @@ public readonly AcceptAgreementRequest: string;
 
 ---
 
+##### `actionGetAgreementApproval`<sup>Required</sup> <a name="actionGetAgreementApproval" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetAgreementApproval"></a>
+
+```typescript
+public readonly actionGetAgreementApproval: string;
+```
+
+- *Type:* string
+
+[Read] aws-marketplace:GetAgreementApproval.
+
+---
+
 ##### `actionGetAgreementApprovalRequest`<sup>Required</sup> <a name="actionGetAgreementApprovalRequest" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetAgreementApprovalRequest"></a>
 
 ```typescript
@@ -3279,6 +3865,18 @@ public readonly actionGetAgreementCancellationRequest: string;
 - *Type:* string
 
 [Read] aws-marketplace:GetAgreementCancellationRequest.
+
+---
+
+##### `actionGetAgreementContacts`<sup>Required</sup> <a name="actionGetAgreementContacts" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetAgreementContacts"></a>
+
+```typescript
+public readonly actionGetAgreementContacts: string;
+```
+
+- *Type:* string
+
+[Read] aws-marketplace:GetAgreementContacts.
 
 ---
 
@@ -3318,6 +3916,30 @@ public readonly actionGetAgreementRequest: string;
 
 ---
 
+##### `actionGetAgreementRequestApprovalPlans`<sup>Required</sup> <a name="actionGetAgreementRequestApprovalPlans" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetAgreementRequestApprovalPlans"></a>
+
+```typescript
+public readonly actionGetAgreementRequestApprovalPlans: string;
+```
+
+- *Type:* string
+
+[Read] aws-marketplace:GetAgreementRequestApprovalPlans.
+
+---
+
+##### `actionGetAgreementRequestTerms`<sup>Required</sup> <a name="actionGetAgreementRequestTerms" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetAgreementRequestTerms"></a>
+
+```typescript
+public readonly actionGetAgreementRequestTerms: string;
+```
+
+- *Type:* string
+
+[Read] aws-marketplace:GetAgreementRequestTerms.
+
+---
+
 ##### `actionGetAgreementTerms`<sup>Required</sup> <a name="actionGetAgreementTerms" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetAgreementTerms"></a>
 
 ```typescript
@@ -3351,6 +3973,42 @@ public readonly actionGetBuyerDashboard: string;
 - *Type:* string
 
 [Read] aws-marketplace:GetBuyerDashboard.
+
+---
+
+##### `actionGetDataSubscription`<sup>Required</sup> <a name="actionGetDataSubscription" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetDataSubscription"></a>
+
+```typescript
+public readonly actionGetDataSubscription: string;
+```
+
+- *Type:* string
+
+[Read] aws-marketplace:GetDataSubscription.
+
+---
+
+##### `actionGetDeploymentConfiguration`<sup>Required</sup> <a name="actionGetDeploymentConfiguration" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetDeploymentConfiguration"></a>
+
+```typescript
+public readonly actionGetDeploymentConfiguration: string;
+```
+
+- *Type:* string
+
+[Read] aws-marketplace:GetDeploymentConfiguration.
+
+---
+
+##### `actionGetDeploymentConfigurationJob`<sup>Required</sup> <a name="actionGetDeploymentConfigurationJob" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetDeploymentConfigurationJob"></a>
+
+```typescript
+public readonly actionGetDeploymentConfigurationJob: string;
+```
+
+- *Type:* string
+
+[Read] aws-marketplace:GetDeploymentConfigurationJob.
 
 ---
 
@@ -3471,6 +4129,18 @@ public readonly actionGetSellerDashboard: string;
 - *Type:* string
 
 [Read] aws-marketplace:GetSellerDashboard.
+
+---
+
+##### `actionGetSellerReportingData`<sup>Required</sup> <a name="actionGetSellerReportingData" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.actionGetSellerReportingData"></a>
+
+```typescript
+public readonly actionGetSellerReportingData: string;
+```
+
+- *Type:* string
+
+[Read] aws-marketplace:GetSellerReportingData.
 
 ---
 
@@ -3678,6 +4348,18 @@ public readonly CreateAgreementRequest: string;
 
 ---
 
+##### `CreateDataSubscription`<sup>Required</sup> <a name="CreateDataSubscription" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.CreateDataSubscription"></a>
+
+```typescript
+public readonly CreateDataSubscription: string;
+```
+
+- *Type:* string
+
+[Write] aws-marketplace:CreateDataSubscription.
+
+---
+
 ##### `CreatePrivateMarketplaceRequests`<sup>Required</sup> <a name="CreatePrivateMarketplaceRequests" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.CreatePrivateMarketplaceRequests"></a>
 
 ```typescript
@@ -3699,6 +4381,18 @@ public readonly CreateVerificationEvidence: string;
 - *Type:* string
 
 [Write] aws-marketplace:CreateVerificationEvidence.
+
+---
+
+##### `DeleteDataSubscription`<sup>Required</sup> <a name="DeleteDataSubscription" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.DeleteDataSubscription"></a>
+
+```typescript
+public readonly DeleteDataSubscription: string;
+```
+
+- *Type:* string
+
+[Write] aws-marketplace:DeleteDataSubscription.
 
 ---
 
@@ -3822,6 +4516,18 @@ public readonly ListAgreementApprovalRequests: string;
 
 ---
 
+##### `ListAgreementApprovals`<sup>Required</sup> <a name="ListAgreementApprovals" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.ListAgreementApprovals"></a>
+
+```typescript
+public readonly ListAgreementApprovals: string;
+```
+
+- *Type:* string
+
+[List] aws-marketplace:ListAgreementApprovals.
+
+---
+
 ##### `ListAgreementCancellationRequests`<sup>Required</sup> <a name="ListAgreementCancellationRequests" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.ListAgreementCancellationRequests"></a>
 
 ```typescript
@@ -3927,6 +4633,30 @@ public readonly ListChangeSets: string;
 - *Type:* string
 
 [List] aws-marketplace:ListChangeSets.
+
+---
+
+##### `ListDataSubscriptions`<sup>Required</sup> <a name="ListDataSubscriptions" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.ListDataSubscriptions"></a>
+
+```typescript
+public readonly ListDataSubscriptions: string;
+```
+
+- *Type:* string
+
+[List] aws-marketplace:ListDataSubscriptions.
+
+---
+
+##### `ListDeploymentConfigurationJobs`<sup>Required</sup> <a name="ListDeploymentConfigurationJobs" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.ListDeploymentConfigurationJobs"></a>
+
+```typescript
+public readonly ListDeploymentConfigurationJobs: string;
+```
+
+- *Type:* string
+
+[List] aws-marketplace:ListDeploymentConfigurationJobs.
 
 ---
 
@@ -4158,6 +4888,18 @@ public readonly RegisterUsage: string;
 
 ---
 
+##### `RejectAgreementApproval`<sup>Required</sup> <a name="RejectAgreementApproval" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.RejectAgreementApproval"></a>
+
+```typescript
+public readonly RejectAgreementApproval: string;
+```
+
+- *Type:* string
+
+[Write] aws-marketplace:RejectAgreementApproval.
+
+---
+
 ##### `RejectAgreementApprovalRequest`<sup>Required</sup> <a name="RejectAgreementApprovalRequest" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.RejectAgreementApprovalRequest"></a>
 
 ```typescript
@@ -4278,6 +5020,30 @@ The IAM service prefix.
 
 ---
 
+##### `StartAgreementApprovals`<sup>Required</sup> <a name="StartAgreementApprovals" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.StartAgreementApprovals"></a>
+
+```typescript
+public readonly StartAgreementApprovals: string;
+```
+
+- *Type:* string
+
+[Write] aws-marketplace:StartAgreementApprovals.
+
+---
+
+##### `StartAssessment`<sup>Required</sup> <a name="StartAssessment" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.StartAssessment"></a>
+
+```typescript
+public readonly StartAssessment: string;
+```
+
+- *Type:* string
+
+[Write] aws-marketplace:StartAssessment.
+
+---
+
 ##### `StartBuild`<sup>Required</sup> <a name="StartBuild" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.StartBuild"></a>
 
 ```typescript
@@ -4299,6 +5065,18 @@ public readonly StartChangeSet: string;
 - *Type:* string
 
 [Write] aws-marketplace:StartChangeSet.
+
+---
+
+##### `StartDeploymentConfigurationJob`<sup>Required</sup> <a name="StartDeploymentConfigurationJob" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.StartDeploymentConfigurationJob"></a>
+
+```typescript
+public readonly StartDeploymentConfigurationJob: string;
+```
+
+- *Type:* string
+
+[Write] aws-marketplace:StartDeploymentConfigurationJob.
 
 ---
 
@@ -4600,14 +5378,23 @@ Generates a condition block for `aws-marketplace:VerificationType`.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.AcceptAgreementApprovalConditionKeys">AcceptAgreementApprovalConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the AcceptAgreementApproval action. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.AcceptAgreementCancellationRequestConditionKeys">AcceptAgreementCancellationRequestConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the AcceptAgreementCancellationRequest action. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.AcceptAgreementPaymentRequestConditionKeys">AcceptAgreementPaymentRequestConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the AcceptAgreementPaymentRequest action. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.AcceptAgreementRequestConditionKeys">AcceptAgreementRequestConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the AcceptAgreementRequest action. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.actionGetAgreementApprovalConditionKeys">actionGetAgreementApprovalConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetAgreementApproval action. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.actionGetAgreementCancellationRequestConditionKeys">actionGetAgreementCancellationRequestConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetAgreementCancellationRequest action. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.actionGetAgreementContactsConditionKeys">actionGetAgreementContactsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetAgreementContacts action. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.actionGetAgreementEntitlementsConditionKeys">actionGetAgreementEntitlementsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetAgreementEntitlements action. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.actionGetAgreementPaymentRequestConditionKeys">actionGetAgreementPaymentRequestConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetAgreementPaymentRequest action. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.actionGetAgreementRequestApprovalPlansConditionKeys">actionGetAgreementRequestApprovalPlansConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetAgreementRequestApprovalPlans action. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.actionGetAgreementRequestConditionKeys">actionGetAgreementRequestConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetAgreementRequest action. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.actionGetAgreementRequestTermsConditionKeys">actionGetAgreementRequestTermsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetAgreementRequestTerms action. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.actionGetAgreementTermsConditionKeys">actionGetAgreementTermsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetAgreementTerms action. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.actionGetBillingAdjustmentRequestConditionKeys">actionGetBillingAdjustmentRequestConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetBillingAdjustmentRequest action. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.actionGetDataSubscriptionConditionKeys">actionGetDataSubscriptionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetDataSubscription action. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.actionGetDeploymentConfigurationConditionKeys">actionGetDeploymentConfigurationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetDeploymentConfiguration action. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.actionGetDeploymentConfigurationJobConditionKeys">actionGetDeploymentConfigurationJobConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetDeploymentConfigurationJob action. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.actionGetVerificationConditionKeys">actionGetVerificationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetVerification action. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.AGREEMENT_TYPE">AGREEMENT_TYPE</a></code> | <code>string</code> | Condition key: aws-marketplace:AgreementType (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.AWS_REQUEST_TAG">AWS_REQUEST_TAG</a></code> | <code>string</code> | Condition key: aws:RequestTag/${TagKey} (String). |
@@ -4617,9 +5404,12 @@ Generates a condition block for `aws-marketplace:VerificationType`.
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.CancelAgreementCancellationRequestConditionKeys">CancelAgreementCancellationRequestConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CancelAgreementCancellationRequest action. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.CancelAgreementConditionKeys">CancelAgreementConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CancelAgreement action. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.CancelAgreementPaymentRequestConditionKeys">CancelAgreementPaymentRequestConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CancelAgreementPaymentRequest action. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.CancelAgreementRequestConditionKeys">CancelAgreementRequestConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CancelAgreementRequest action. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.CHANGE_TYPE">CHANGE_TYPE</a></code> | <code>string</code> | Condition key: catalog:ChangeType (String). |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.CreateAgreementRequestConditionKeys">CreateAgreementRequestConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateAgreementRequest action. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.CreateDataSubscriptionConditionKeys">CreateDataSubscriptionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateDataSubscription action. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.CreateVerificationEvidenceConditionKeys">CreateVerificationEvidenceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateVerificationEvidence action. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.DeleteDataSubscriptionConditionKeys">DeleteDataSubscriptionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteDataSubscription action. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.DescribeAgreementConditionKeys">DescribeAgreementConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeAgreement action. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.INTENT">INTENT</a></code> | <code>string</code> | Condition key: aws-marketplace:Intent (String). |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.ListAgreementCancellationRequestsConditionKeys">ListAgreementCancellationRequestsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListAgreementCancellationRequests action. |
@@ -4627,17 +5417,22 @@ Generates a condition block for `aws-marketplace:VerificationType`.
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.ListAgreementInvoiceLineItemsConditionKeys">ListAgreementInvoiceLineItemsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListAgreementInvoiceLineItems action. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.ListAgreementPaymentRequestsConditionKeys">ListAgreementPaymentRequestsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListAgreementPaymentRequests action. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.ListBillingAdjustmentRequestsConditionKeys">ListBillingAdjustmentRequestsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListBillingAdjustmentRequests action. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.ListDeploymentConfigurationJobsConditionKeys">ListDeploymentConfigurationJobsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListDeploymentConfigurationJobs action. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.ListTagsForResourceConditionKeys">ListTagsForResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListTagsForResource action. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.ListVerificationsConditionKeys">ListVerificationsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListVerifications action. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.PARTY_TYPE">PARTY_TYPE</a></code> | <code>string</code> | Condition key: aws-marketplace:PartyType (String). |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.PRODUCT_ID">PRODUCT_ID</a></code> | <code>string</code> | Condition key: aws-marketplace:ProductId (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.PutDeploymentParameterConditionKeys">PutDeploymentParameterConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutDeploymentParameter action. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.RejectAgreementApprovalConditionKeys">RejectAgreementApprovalConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the RejectAgreementApproval action. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.RejectAgreementCancellationRequestConditionKeys">RejectAgreementCancellationRequestConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the RejectAgreementCancellationRequest action. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.RejectAgreementPaymentRequestConditionKeys">RejectAgreementPaymentRequestConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the RejectAgreementPaymentRequest action. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.SearchAgreementsConditionKeys">SearchAgreementsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the SearchAgreements action. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.SendAgreementCancellationRequestConditionKeys">SendAgreementCancellationRequestConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the SendAgreementCancellationRequest action. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.SendAgreementPaymentRequestConditionKeys">SendAgreementPaymentRequestConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the SendAgreementPaymentRequest action. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.StartAgreementApprovalsConditionKeys">StartAgreementApprovalsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartAgreementApprovals action. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.StartAssessmentConditionKeys">StartAssessmentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartAssessment action. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.StartChangeSetConditionKeys">StartChangeSetConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartChangeSet action. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.StartDeploymentConfigurationJobConditionKeys">StartDeploymentConfigurationJobConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartDeploymentConfigurationJob action. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.StartInvoiceSubmissionTaskConditionKeys">StartInvoiceSubmissionTaskConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartInvoiceSubmissionTask action. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.StartTaxComplianceProfileChangeTaskConditionKeys">StartTaxComplianceProfileChangeTaskConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartTaxComplianceProfileChangeTask action. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.StartVerificationConditionKeys">StartVerificationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartVerification action. |
@@ -4645,6 +5440,18 @@ Generates a condition block for `aws-marketplace:VerificationType`.
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.UpdatePurchaseOrdersConditionKeys">UpdatePurchaseOrdersConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdatePurchaseOrders action. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.VERIFICATION_TYPE">VERIFICATION_TYPE</a></code> | <code>string</code> | Condition key: aws-marketplace:VerificationType (String). |
+
+---
+
+##### `AcceptAgreementApprovalConditionKeys`<sup>Required</sup> <a name="AcceptAgreementApprovalConditionKeys" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.AcceptAgreementApprovalConditionKeys"></a>
+
+```typescript
+public readonly AcceptAgreementApprovalConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the AcceptAgreementApproval action.
 
 ---
 
@@ -4684,6 +5491,18 @@ Condition keys applicable to the AcceptAgreementRequest action.
 
 ---
 
+##### `actionGetAgreementApprovalConditionKeys`<sup>Required</sup> <a name="actionGetAgreementApprovalConditionKeys" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.actionGetAgreementApprovalConditionKeys"></a>
+
+```typescript
+public readonly actionGetAgreementApprovalConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetAgreementApproval action.
+
+---
+
 ##### `actionGetAgreementCancellationRequestConditionKeys`<sup>Required</sup> <a name="actionGetAgreementCancellationRequestConditionKeys" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.actionGetAgreementCancellationRequestConditionKeys"></a>
 
 ```typescript
@@ -4693,6 +5512,18 @@ public readonly actionGetAgreementCancellationRequestConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the GetAgreementCancellationRequest action.
+
+---
+
+##### `actionGetAgreementContactsConditionKeys`<sup>Required</sup> <a name="actionGetAgreementContactsConditionKeys" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.actionGetAgreementContactsConditionKeys"></a>
+
+```typescript
+public readonly actionGetAgreementContactsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetAgreementContacts action.
 
 ---
 
@@ -4720,6 +5551,42 @@ Condition keys applicable to the GetAgreementPaymentRequest action.
 
 ---
 
+##### `actionGetAgreementRequestApprovalPlansConditionKeys`<sup>Required</sup> <a name="actionGetAgreementRequestApprovalPlansConditionKeys" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.actionGetAgreementRequestApprovalPlansConditionKeys"></a>
+
+```typescript
+public readonly actionGetAgreementRequestApprovalPlansConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetAgreementRequestApprovalPlans action.
+
+---
+
+##### `actionGetAgreementRequestConditionKeys`<sup>Required</sup> <a name="actionGetAgreementRequestConditionKeys" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.actionGetAgreementRequestConditionKeys"></a>
+
+```typescript
+public readonly actionGetAgreementRequestConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetAgreementRequest action.
+
+---
+
+##### `actionGetAgreementRequestTermsConditionKeys`<sup>Required</sup> <a name="actionGetAgreementRequestTermsConditionKeys" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.actionGetAgreementRequestTermsConditionKeys"></a>
+
+```typescript
+public readonly actionGetAgreementRequestTermsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetAgreementRequestTerms action.
+
+---
+
 ##### `actionGetAgreementTermsConditionKeys`<sup>Required</sup> <a name="actionGetAgreementTermsConditionKeys" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.actionGetAgreementTermsConditionKeys"></a>
 
 ```typescript
@@ -4741,6 +5608,42 @@ public readonly actionGetBillingAdjustmentRequestConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the GetBillingAdjustmentRequest action.
+
+---
+
+##### `actionGetDataSubscriptionConditionKeys`<sup>Required</sup> <a name="actionGetDataSubscriptionConditionKeys" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.actionGetDataSubscriptionConditionKeys"></a>
+
+```typescript
+public readonly actionGetDataSubscriptionConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetDataSubscription action.
+
+---
+
+##### `actionGetDeploymentConfigurationConditionKeys`<sup>Required</sup> <a name="actionGetDeploymentConfigurationConditionKeys" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.actionGetDeploymentConfigurationConditionKeys"></a>
+
+```typescript
+public readonly actionGetDeploymentConfigurationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetDeploymentConfiguration action.
+
+---
+
+##### `actionGetDeploymentConfigurationJobConditionKeys`<sup>Required</sup> <a name="actionGetDeploymentConfigurationJobConditionKeys" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.actionGetDeploymentConfigurationJobConditionKeys"></a>
+
+```typescript
+public readonly actionGetDeploymentConfigurationJobConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetDeploymentConfigurationJob action.
 
 ---
 
@@ -4852,6 +5755,18 @@ Condition keys applicable to the CancelAgreementPaymentRequest action.
 
 ---
 
+##### `CancelAgreementRequestConditionKeys`<sup>Required</sup> <a name="CancelAgreementRequestConditionKeys" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.CancelAgreementRequestConditionKeys"></a>
+
+```typescript
+public readonly CancelAgreementRequestConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CancelAgreementRequest action.
+
+---
+
 ##### `CHANGE_TYPE`<sup>Required</sup> <a name="CHANGE_TYPE" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.CHANGE_TYPE"></a>
 
 ```typescript
@@ -4876,6 +5791,18 @@ Condition keys applicable to the CreateAgreementRequest action.
 
 ---
 
+##### `CreateDataSubscriptionConditionKeys`<sup>Required</sup> <a name="CreateDataSubscriptionConditionKeys" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.CreateDataSubscriptionConditionKeys"></a>
+
+```typescript
+public readonly CreateDataSubscriptionConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateDataSubscription action.
+
+---
+
 ##### `CreateVerificationEvidenceConditionKeys`<sup>Required</sup> <a name="CreateVerificationEvidenceConditionKeys" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.CreateVerificationEvidenceConditionKeys"></a>
 
 ```typescript
@@ -4885,6 +5812,18 @@ public readonly CreateVerificationEvidenceConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CreateVerificationEvidence action.
+
+---
+
+##### `DeleteDataSubscriptionConditionKeys`<sup>Required</sup> <a name="DeleteDataSubscriptionConditionKeys" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.DeleteDataSubscriptionConditionKeys"></a>
+
+```typescript
+public readonly DeleteDataSubscriptionConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DeleteDataSubscription action.
 
 ---
 
@@ -4972,6 +5911,18 @@ Condition keys applicable to the ListBillingAdjustmentRequests action.
 
 ---
 
+##### `ListDeploymentConfigurationJobsConditionKeys`<sup>Required</sup> <a name="ListDeploymentConfigurationJobsConditionKeys" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.ListDeploymentConfigurationJobsConditionKeys"></a>
+
+```typescript
+public readonly ListDeploymentConfigurationJobsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ListDeploymentConfigurationJobs action.
+
+---
+
 ##### `ListTagsForResourceConditionKeys`<sup>Required</sup> <a name="ListTagsForResourceConditionKeys" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.ListTagsForResourceConditionKeys"></a>
 
 ```typescript
@@ -5029,6 +5980,18 @@ public readonly PutDeploymentParameterConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the PutDeploymentParameter action.
+
+---
+
+##### `RejectAgreementApprovalConditionKeys`<sup>Required</sup> <a name="RejectAgreementApprovalConditionKeys" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.RejectAgreementApprovalConditionKeys"></a>
+
+```typescript
+public readonly RejectAgreementApprovalConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the RejectAgreementApproval action.
 
 ---
 
@@ -5092,6 +6055,30 @@ Condition keys applicable to the SendAgreementPaymentRequest action.
 
 ---
 
+##### `StartAgreementApprovalsConditionKeys`<sup>Required</sup> <a name="StartAgreementApprovalsConditionKeys" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.StartAgreementApprovalsConditionKeys"></a>
+
+```typescript
+public readonly StartAgreementApprovalsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the StartAgreementApprovals action.
+
+---
+
+##### `StartAssessmentConditionKeys`<sup>Required</sup> <a name="StartAssessmentConditionKeys" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.StartAssessmentConditionKeys"></a>
+
+```typescript
+public readonly StartAssessmentConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the StartAssessment action.
+
+---
+
 ##### `StartChangeSetConditionKeys`<sup>Required</sup> <a name="StartChangeSetConditionKeys" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.StartChangeSetConditionKeys"></a>
 
 ```typescript
@@ -5101,6 +6088,18 @@ public readonly StartChangeSetConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the StartChangeSet action.
+
+---
+
+##### `StartDeploymentConfigurationJobConditionKeys`<sup>Required</sup> <a name="StartDeploymentConfigurationJobConditionKeys" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceConditions.property.StartDeploymentConfigurationJobConditionKeys"></a>
+
+```typescript
+public readonly StartDeploymentConfigurationJobConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the StartDeploymentConfigurationJob action.
 
 ---
 
@@ -5212,6 +6211,7 @@ new aws_marketplace.AWSMarketplaceOperations()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.AcceptAgreementApproval">AcceptAgreementApproval</a></code> | <code>string[]</code> | IAM actions required for the AcceptAgreementApproval API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.AcceptAgreementCancellationRequest">AcceptAgreementCancellationRequest</a></code> | <code>string[]</code> | IAM actions required for the AcceptAgreementCancellationRequest API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.AcceptAgreementPaymentRequest">AcceptAgreementPaymentRequest</a></code> | <code>string[]</code> | IAM actions required for the AcceptAgreementPaymentRequest API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.AcceptAgreementRequest">AcceptAgreementRequest</a></code> | <code>string[]</code> | IAM actions required for the AcceptAgreementRequest API call. |
@@ -5221,6 +6221,7 @@ new aws_marketplace.AWSMarketplaceOperations()
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.CancelAgreement">CancelAgreement</a></code> | <code>string[]</code> | IAM actions required for the CancelAgreement API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.CancelAgreementCancellationRequest">CancelAgreementCancellationRequest</a></code> | <code>string[]</code> | IAM actions required for the CancelAgreementCancellationRequest API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.CancelAgreementPaymentRequest">CancelAgreementPaymentRequest</a></code> | <code>string[]</code> | IAM actions required for the CancelAgreementPaymentRequest API call. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.CancelAgreementRequest">CancelAgreementRequest</a></code> | <code>string[]</code> | IAM actions required for the CancelAgreementRequest API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.CancelChangeSet">CancelChangeSet</a></code> | <code>string[]</code> | IAM actions required for the CancelChangeSet API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.CreateAgreementRequest">CreateAgreementRequest</a></code> | <code>string[]</code> | IAM actions required for the CreateAgreementRequest API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.DeleteResourcePolicy">DeleteResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the DeleteResourcePolicy API call. |
@@ -5228,24 +6229,34 @@ new aws_marketplace.AWSMarketplaceOperations()
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.DescribeAssessment">DescribeAssessment</a></code> | <code>string[]</code> | IAM actions required for the DescribeAssessment API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.DescribeChangeSet">DescribeChangeSet</a></code> | <code>string[]</code> | IAM actions required for the DescribeChangeSet API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.DescribeEntity">DescribeEntity</a></code> | <code>string[]</code> | IAM actions required for the DescribeEntity API call. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.ListAgreementApprovals">ListAgreementApprovals</a></code> | <code>string[]</code> | IAM actions required for the ListAgreementApprovals API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.ListAgreementCancellationRequests">ListAgreementCancellationRequests</a></code> | <code>string[]</code> | IAM actions required for the ListAgreementCancellationRequests API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.ListAgreementCharges">ListAgreementCharges</a></code> | <code>string[]</code> | IAM actions required for the ListAgreementCharges API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.ListAgreementInvoiceLineItems">ListAgreementInvoiceLineItems</a></code> | <code>string[]</code> | IAM actions required for the ListAgreementInvoiceLineItems API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.ListAgreementPaymentRequests">ListAgreementPaymentRequests</a></code> | <code>string[]</code> | IAM actions required for the ListAgreementPaymentRequests API call. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.ListAgreementRequests">ListAgreementRequests</a></code> | <code>string[]</code> | IAM actions required for the ListAgreementRequests API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.ListAssessments">ListAssessments</a></code> | <code>string[]</code> | IAM actions required for the ListAssessments API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.ListBillingAdjustmentRequests">ListBillingAdjustmentRequests</a></code> | <code>string[]</code> | IAM actions required for the ListBillingAdjustmentRequests API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.ListChangeSets">ListChangeSets</a></code> | <code>string[]</code> | IAM actions required for the ListChangeSets API call. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.ListDeploymentConfigurationJobs">ListDeploymentConfigurationJobs</a></code> | <code>string[]</code> | IAM actions required for the ListDeploymentConfigurationJobs API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.ListEntities">ListEntities</a></code> | <code>string[]</code> | IAM actions required for the ListEntities API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.ListFulfillmentOptions">ListFulfillmentOptions</a></code> | <code>string[]</code> | IAM actions required for the ListFulfillmentOptions API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.ListPurchaseOptions">ListPurchaseOptions</a></code> | <code>string[]</code> | IAM actions required for the ListPurchaseOptions API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.MeterUsage">MeterUsage</a></code> | <code>string[]</code> | IAM actions required for the MeterUsage API call. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.opGetAgreementApproval">opGetAgreementApproval</a></code> | <code>string[]</code> | IAM actions required for the GetAgreementApproval API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.opGetAgreementCancellationRequest">opGetAgreementCancellationRequest</a></code> | <code>string[]</code> | IAM actions required for the GetAgreementCancellationRequest API call. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.opGetAgreementContacts">opGetAgreementContacts</a></code> | <code>string[]</code> | IAM actions required for the GetAgreementContacts API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.opGetAgreementEntitlements">opGetAgreementEntitlements</a></code> | <code>string[]</code> | IAM actions required for the GetAgreementEntitlements API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.opGetAgreementPaymentRequest">opGetAgreementPaymentRequest</a></code> | <code>string[]</code> | IAM actions required for the GetAgreementPaymentRequest API call. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.opGetAgreementRequest">opGetAgreementRequest</a></code> | <code>string[]</code> | IAM actions required for the GetAgreementRequest API call. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.opGetAgreementRequestApprovalPlans">opGetAgreementRequestApprovalPlans</a></code> | <code>string[]</code> | IAM actions required for the GetAgreementRequestApprovalPlans API call. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.opGetAgreementRequestTerms">opGetAgreementRequestTerms</a></code> | <code>string[]</code> | IAM actions required for the GetAgreementRequestTerms API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.opGetAgreementTerms">opGetAgreementTerms</a></code> | <code>string[]</code> | IAM actions required for the GetAgreementTerms API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.opGetBillingAdjustmentRequest">opGetBillingAdjustmentRequest</a></code> | <code>string[]</code> | IAM actions required for the GetBillingAdjustmentRequest API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.opGetBuyerDashboard">opGetBuyerDashboard</a></code> | <code>string[]</code> | IAM actions required for the GetBuyerDashboard API call. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.opGetDeploymentConfiguration">opGetDeploymentConfiguration</a></code> | <code>string[]</code> | IAM actions required for the GetDeploymentConfiguration API call. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.opGetDeploymentConfigurationJob">opGetDeploymentConfigurationJob</a></code> | <code>string[]</code> | IAM actions required for the GetDeploymentConfigurationJob API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.opGetEntitlements">opGetEntitlements</a></code> | <code>string[]</code> | IAM actions required for the GetEntitlements API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.opGetListing">opGetListing</a></code> | <code>string[]</code> | IAM actions required for the GetListing API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.opGetOffer">opGetOffer</a></code> | <code>string[]</code> | IAM actions required for the GetOffer API call. |
@@ -5256,6 +6267,7 @@ new aws_marketplace.AWSMarketplaceOperations()
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.PutDeploymentParameter">PutDeploymentParameter</a></code> | <code>string[]</code> | IAM actions required for the PutDeploymentParameter API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.PutResourcePolicy">PutResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the PutResourcePolicy API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.RegisterUsage">RegisterUsage</a></code> | <code>string[]</code> | IAM actions required for the RegisterUsage API call. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.RejectAgreementApproval">RejectAgreementApproval</a></code> | <code>string[]</code> | IAM actions required for the RejectAgreementApproval API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.RejectAgreementCancellationRequest">RejectAgreementCancellationRequest</a></code> | <code>string[]</code> | IAM actions required for the RejectAgreementCancellationRequest API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.RejectAgreementPaymentRequest">RejectAgreementPaymentRequest</a></code> | <code>string[]</code> | IAM actions required for the RejectAgreementPaymentRequest API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.ResolveCustomer">ResolveCustomer</a></code> | <code>string[]</code> | IAM actions required for the ResolveCustomer API call. |
@@ -5264,10 +6276,25 @@ new aws_marketplace.AWSMarketplaceOperations()
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.SearchListings">SearchListings</a></code> | <code>string[]</code> | IAM actions required for the SearchListings API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.SendAgreementCancellationRequest">SendAgreementCancellationRequest</a></code> | <code>string[]</code> | IAM actions required for the SendAgreementCancellationRequest API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.SendAgreementPaymentRequest">SendAgreementPaymentRequest</a></code> | <code>string[]</code> | IAM actions required for the SendAgreementPaymentRequest API call. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.StartAgreementApprovals">StartAgreementApprovals</a></code> | <code>string[]</code> | IAM actions required for the StartAgreementApprovals API call. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.StartAssessment">StartAssessment</a></code> | <code>string[]</code> | IAM actions required for the StartAssessment API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.StartChangeSet">StartChangeSet</a></code> | <code>string[]</code> | IAM actions required for the StartChangeSet API call. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.StartDeploymentConfigurationJob">StartDeploymentConfigurationJob</a></code> | <code>string[]</code> | IAM actions required for the StartDeploymentConfigurationJob API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.UpdatePurchaseOrders">UpdatePurchaseOrders</a></code> | <code>string[]</code> | IAM actions required for the UpdatePurchaseOrders API call. |
+
+---
+
+##### `AcceptAgreementApproval`<sup>Required</sup> <a name="AcceptAgreementApproval" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.AcceptAgreementApproval"></a>
+
+```typescript
+public readonly AcceptAgreementApproval: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the AcceptAgreementApproval API call.
 
 ---
 
@@ -5379,6 +6406,18 @@ IAM actions required for the CancelAgreementPaymentRequest API call.
 
 ---
 
+##### `CancelAgreementRequest`<sup>Required</sup> <a name="CancelAgreementRequest" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.CancelAgreementRequest"></a>
+
+```typescript
+public readonly CancelAgreementRequest: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CancelAgreementRequest API call.
+
+---
+
 ##### `CancelChangeSet`<sup>Required</sup> <a name="CancelChangeSet" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.CancelChangeSet"></a>
 
 ```typescript
@@ -5463,6 +6502,18 @@ IAM actions required for the DescribeEntity API call.
 
 ---
 
+##### `ListAgreementApprovals`<sup>Required</sup> <a name="ListAgreementApprovals" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.ListAgreementApprovals"></a>
+
+```typescript
+public readonly ListAgreementApprovals: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListAgreementApprovals API call.
+
+---
+
 ##### `ListAgreementCancellationRequests`<sup>Required</sup> <a name="ListAgreementCancellationRequests" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.ListAgreementCancellationRequests"></a>
 
 ```typescript
@@ -5511,6 +6562,18 @@ IAM actions required for the ListAgreementPaymentRequests API call.
 
 ---
 
+##### `ListAgreementRequests`<sup>Required</sup> <a name="ListAgreementRequests" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.ListAgreementRequests"></a>
+
+```typescript
+public readonly ListAgreementRequests: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListAgreementRequests API call.
+
+---
+
 ##### `ListAssessments`<sup>Required</sup> <a name="ListAssessments" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.ListAssessments"></a>
 
 ```typescript
@@ -5544,6 +6607,18 @@ public readonly ListChangeSets: string[];
 - *Type:* string[]
 
 IAM actions required for the ListChangeSets API call.
+
+---
+
+##### `ListDeploymentConfigurationJobs`<sup>Required</sup> <a name="ListDeploymentConfigurationJobs" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.ListDeploymentConfigurationJobs"></a>
+
+```typescript
+public readonly ListDeploymentConfigurationJobs: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListDeploymentConfigurationJobs API call.
 
 ---
 
@@ -5607,6 +6682,18 @@ IAM actions required for the MeterUsage API call.
 
 ---
 
+##### `opGetAgreementApproval`<sup>Required</sup> <a name="opGetAgreementApproval" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.opGetAgreementApproval"></a>
+
+```typescript
+public readonly opGetAgreementApproval: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetAgreementApproval API call.
+
+---
+
 ##### `opGetAgreementCancellationRequest`<sup>Required</sup> <a name="opGetAgreementCancellationRequest" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.opGetAgreementCancellationRequest"></a>
 
 ```typescript
@@ -5616,6 +6703,18 @@ public readonly opGetAgreementCancellationRequest: string[];
 - *Type:* string[]
 
 IAM actions required for the GetAgreementCancellationRequest API call.
+
+---
+
+##### `opGetAgreementContacts`<sup>Required</sup> <a name="opGetAgreementContacts" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.opGetAgreementContacts"></a>
+
+```typescript
+public readonly opGetAgreementContacts: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetAgreementContacts API call.
 
 ---
 
@@ -5640,6 +6739,42 @@ public readonly opGetAgreementPaymentRequest: string[];
 - *Type:* string[]
 
 IAM actions required for the GetAgreementPaymentRequest API call.
+
+---
+
+##### `opGetAgreementRequest`<sup>Required</sup> <a name="opGetAgreementRequest" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.opGetAgreementRequest"></a>
+
+```typescript
+public readonly opGetAgreementRequest: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetAgreementRequest API call.
+
+---
+
+##### `opGetAgreementRequestApprovalPlans`<sup>Required</sup> <a name="opGetAgreementRequestApprovalPlans" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.opGetAgreementRequestApprovalPlans"></a>
+
+```typescript
+public readonly opGetAgreementRequestApprovalPlans: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetAgreementRequestApprovalPlans API call.
+
+---
+
+##### `opGetAgreementRequestTerms`<sup>Required</sup> <a name="opGetAgreementRequestTerms" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.opGetAgreementRequestTerms"></a>
+
+```typescript
+public readonly opGetAgreementRequestTerms: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetAgreementRequestTerms API call.
 
 ---
 
@@ -5676,6 +6811,30 @@ public readonly opGetBuyerDashboard: string[];
 - *Type:* string[]
 
 IAM actions required for the GetBuyerDashboard API call.
+
+---
+
+##### `opGetDeploymentConfiguration`<sup>Required</sup> <a name="opGetDeploymentConfiguration" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.opGetDeploymentConfiguration"></a>
+
+```typescript
+public readonly opGetDeploymentConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetDeploymentConfiguration API call.
+
+---
+
+##### `opGetDeploymentConfigurationJob`<sup>Required</sup> <a name="opGetDeploymentConfigurationJob" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.opGetDeploymentConfigurationJob"></a>
+
+```typescript
+public readonly opGetDeploymentConfigurationJob: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetDeploymentConfigurationJob API call.
 
 ---
 
@@ -5799,6 +6958,18 @@ IAM actions required for the RegisterUsage API call.
 
 ---
 
+##### `RejectAgreementApproval`<sup>Required</sup> <a name="RejectAgreementApproval" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.RejectAgreementApproval"></a>
+
+```typescript
+public readonly RejectAgreementApproval: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the RejectAgreementApproval API call.
+
+---
+
 ##### `RejectAgreementCancellationRequest`<sup>Required</sup> <a name="RejectAgreementCancellationRequest" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.RejectAgreementCancellationRequest"></a>
 
 ```typescript
@@ -5895,6 +7066,30 @@ IAM actions required for the SendAgreementPaymentRequest API call.
 
 ---
 
+##### `StartAgreementApprovals`<sup>Required</sup> <a name="StartAgreementApprovals" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.StartAgreementApprovals"></a>
+
+```typescript
+public readonly StartAgreementApprovals: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StartAgreementApprovals API call.
+
+---
+
+##### `StartAssessment`<sup>Required</sup> <a name="StartAssessment" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.StartAssessment"></a>
+
+```typescript
+public readonly StartAssessment: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StartAssessment API call.
+
+---
+
 ##### `StartChangeSet`<sup>Required</sup> <a name="StartChangeSet" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.StartChangeSet"></a>
 
 ```typescript
@@ -5904,6 +7099,18 @@ public readonly StartChangeSet: string[];
 - *Type:* string[]
 
 IAM actions required for the StartChangeSet API call.
+
+---
+
+##### `StartDeploymentConfigurationJob`<sup>Required</sup> <a name="StartDeploymentConfigurationJob" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.StartDeploymentConfigurationJob"></a>
+
+```typescript
+public readonly StartDeploymentConfigurationJob: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StartDeploymentConfigurationJob API call.
 
 ---
 
@@ -5970,6 +7177,8 @@ new aws_marketplace.AWSMarketplaceResources()
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.assessment">assessment</a></code> | Builds an ARN for the Assessment resource. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.changeSet">changeSet</a></code> | Builds an ARN for the ChangeSet resource. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.dashboard">dashboard</a></code> | Builds an ARN for the Dashboard resource. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.dataSubscription">dataSubscription</a></code> | Builds an ARN for the DataSubscription resource. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.deploymentConfiguration">deploymentConfiguration</a></code> | Builds an ARN for the DeploymentConfiguration resource. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.deploymentParameter">deploymentParameter</a></code> | Builds an ARN for the DeploymentParameter resource. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.entity">entity</a></code> | Builds an ARN for the Entity resource. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.invoiceSubmissionTask">invoiceSubmissionTask</a></code> | Builds an ARN for the InvoiceSubmissionTask resource. |
@@ -5979,6 +7188,8 @@ new aws_marketplace.AWSMarketplaceResources()
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.isValidAssessmentArn">isValidAssessmentArn</a></code> | Validates whether a string is a valid ARN for the Assessment resource. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.isValidChangeSetArn">isValidChangeSetArn</a></code> | Validates whether a string is a valid ARN for the ChangeSet resource. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.isValidDashboardArn">isValidDashboardArn</a></code> | Validates whether a string is a valid ARN for the Dashboard resource. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.isValidDataSubscriptionArn">isValidDataSubscriptionArn</a></code> | Validates whether a string is a valid ARN for the DataSubscription resource. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.isValidDeploymentConfigurationArn">isValidDeploymentConfigurationArn</a></code> | Validates whether a string is a valid ARN for the DeploymentConfiguration resource. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.isValidDeploymentParameterArn">isValidDeploymentParameterArn</a></code> | Validates whether a string is a valid ARN for the DeploymentParameter resource. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.isValidEntityArn">isValidEntityArn</a></code> | Validates whether a string is a valid ARN for the Entity resource. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.isValidInvoiceSubmissionTaskArn">isValidInvoiceSubmissionTaskArn</a></code> | Validates whether a string is a valid ARN for the InvoiceSubmissionTask resource. |
@@ -5989,6 +7200,7 @@ new aws_marketplace.AWSMarketplaceResources()
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.isValidProductArn">isValidProductArn</a></code> | Validates whether a string is a valid ARN for the Product resource. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.isValidPurchaseOptionArn">isValidPurchaseOptionArn</a></code> | Validates whether a string is a valid ARN for the PurchaseOption resource. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.isValidSellerDashboardArn">isValidSellerDashboardArn</a></code> | Validates whether a string is a valid ARN for the SellerDashboard resource. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.isValidSellerDatasetArn">isValidSellerDatasetArn</a></code> | Validates whether a string is a valid ARN for the SellerDataset resource. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.isValidTaxComplianceProfileArn">isValidTaxComplianceProfileArn</a></code> | Validates whether a string is a valid ARN for the TaxComplianceProfile resource. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.isValidTaxComplianceProfileChangeTaskArn">isValidTaxComplianceProfileChangeTaskArn</a></code> | Validates whether a string is a valid ARN for the TaxComplianceProfileChangeTask resource. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.isValidVerificationEvidenceArn">isValidVerificationEvidenceArn</a></code> | Validates whether a string is a valid ARN for the VerificationEvidence resource. |
@@ -6000,6 +7212,8 @@ new aws_marketplace.AWSMarketplaceResources()
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.parseAssessmentArn">parseAssessmentArn</a></code> | Parses a Assessment ARN into its components. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.parseChangeSetArn">parseChangeSetArn</a></code> | Parses a ChangeSet ARN into its components. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.parseDashboardArn">parseDashboardArn</a></code> | Parses a Dashboard ARN into its components. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.parseDataSubscriptionArn">parseDataSubscriptionArn</a></code> | Parses a DataSubscription ARN into its components. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.parseDeploymentConfigurationArn">parseDeploymentConfigurationArn</a></code> | Parses a DeploymentConfiguration ARN into its components. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.parseDeploymentParameterArn">parseDeploymentParameterArn</a></code> | Parses a DeploymentParameter ARN into its components. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.parseEntityArn">parseEntityArn</a></code> | Parses a Entity ARN into its components. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.parseInvoiceSubmissionTaskArn">parseInvoiceSubmissionTaskArn</a></code> | Parses a InvoiceSubmissionTask ARN into its components. |
@@ -6010,12 +7224,14 @@ new aws_marketplace.AWSMarketplaceResources()
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.parseProductArn">parseProductArn</a></code> | Parses a Product ARN into its components. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.parsePurchaseOptionArn">parsePurchaseOptionArn</a></code> | Parses a PurchaseOption ARN into its components. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.parseSellerDashboardArn">parseSellerDashboardArn</a></code> | Parses a SellerDashboard ARN into its components. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.parseSellerDatasetArn">parseSellerDatasetArn</a></code> | Parses a SellerDataset ARN into its components. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.parseTaxComplianceProfileArn">parseTaxComplianceProfileArn</a></code> | Parses a TaxComplianceProfile ARN into its components. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.parseTaxComplianceProfileChangeTaskArn">parseTaxComplianceProfileChangeTaskArn</a></code> | Parses a TaxComplianceProfileChangeTask ARN into its components. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.parseVerificationEvidenceArn">parseVerificationEvidenceArn</a></code> | Parses a VerificationEvidence ARN into its components. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.product">product</a></code> | Builds an ARN for the Product resource. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.purchaseOption">purchaseOption</a></code> | Builds an ARN for the PurchaseOption resource. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.sellerDashboard">sellerDashboard</a></code> | Builds an ARN for the SellerDashboard resource. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.sellerDataset">sellerDataset</a></code> | Builds an ARN for the SellerDataset resource. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.taxComplianceProfile">taxComplianceProfile</a></code> | Builds an ARN for the TaxComplianceProfile resource. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.taxComplianceProfileChangeTask">taxComplianceProfileChangeTask</a></code> | Builds an ARN for the TaxComplianceProfileChangeTask resource. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.verificationEvidence">verificationEvidence</a></code> | Builds an ARN for the VerificationEvidence resource. |
@@ -6099,6 +7315,38 @@ Builds an ARN for the Dashboard resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.dashboard.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceDashboardArnProps">AWSMarketplaceDashboardArnProps</a>
+
+---
+
+##### `dataSubscription` <a name="dataSubscription" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.dataSubscription"></a>
+
+```typescript
+import { aws_marketplace } from '@cdk_utils/iam'
+
+aws_marketplace.AWSMarketplaceResources.dataSubscription(props: AWSMarketplaceDataSubscriptionArnProps)
+```
+
+Builds an ARN for the DataSubscription resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.dataSubscription.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceDataSubscriptionArnProps">AWSMarketplaceDataSubscriptionArnProps</a>
+
+---
+
+##### `deploymentConfiguration` <a name="deploymentConfiguration" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.deploymentConfiguration"></a>
+
+```typescript
+import { aws_marketplace } from '@cdk_utils/iam'
+
+aws_marketplace.AWSMarketplaceResources.deploymentConfiguration(props: AWSMarketplaceDeploymentConfigurationArnProps)
+```
+
+Builds an ARN for the DeploymentConfiguration resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.deploymentConfiguration.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceDeploymentConfigurationArnProps">AWSMarketplaceDeploymentConfigurationArnProps</a>
 
 ---
 
@@ -6241,6 +7489,38 @@ aws_marketplace.AWSMarketplaceResources.isValidDashboardArn(arn: string)
 Validates whether a string is a valid ARN for the Dashboard resource.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.isValidDashboardArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidDataSubscriptionArn` <a name="isValidDataSubscriptionArn" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.isValidDataSubscriptionArn"></a>
+
+```typescript
+import { aws_marketplace } from '@cdk_utils/iam'
+
+aws_marketplace.AWSMarketplaceResources.isValidDataSubscriptionArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the DataSubscription resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.isValidDataSubscriptionArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidDeploymentConfigurationArn` <a name="isValidDeploymentConfigurationArn" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.isValidDeploymentConfigurationArn"></a>
+
+```typescript
+import { aws_marketplace } from '@cdk_utils/iam'
+
+aws_marketplace.AWSMarketplaceResources.isValidDeploymentConfigurationArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the DeploymentConfiguration resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.isValidDeploymentConfigurationArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -6401,6 +7681,22 @@ aws_marketplace.AWSMarketplaceResources.isValidSellerDashboardArn(arn: string)
 Validates whether a string is a valid ARN for the SellerDashboard resource.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.isValidSellerDashboardArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidSellerDatasetArn` <a name="isValidSellerDatasetArn" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.isValidSellerDatasetArn"></a>
+
+```typescript
+import { aws_marketplace } from '@cdk_utils/iam'
+
+aws_marketplace.AWSMarketplaceResources.isValidSellerDatasetArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the SellerDataset resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.isValidSellerDatasetArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -6582,6 +7878,38 @@ Parses a Dashboard ARN into its components.
 
 ---
 
+##### `parseDataSubscriptionArn` <a name="parseDataSubscriptionArn" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.parseDataSubscriptionArn"></a>
+
+```typescript
+import { aws_marketplace } from '@cdk_utils/iam'
+
+aws_marketplace.AWSMarketplaceResources.parseDataSubscriptionArn(arn: string)
+```
+
+Parses a DataSubscription ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.parseDataSubscriptionArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseDeploymentConfigurationArn` <a name="parseDeploymentConfigurationArn" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.parseDeploymentConfigurationArn"></a>
+
+```typescript
+import { aws_marketplace } from '@cdk_utils/iam'
+
+aws_marketplace.AWSMarketplaceResources.parseDeploymentConfigurationArn(arn: string)
+```
+
+Parses a DeploymentConfiguration ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.parseDeploymentConfigurationArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `parseDeploymentParameterArn` <a name="parseDeploymentParameterArn" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.parseDeploymentParameterArn"></a>
 
 ```typescript
@@ -6742,6 +8070,22 @@ Parses a SellerDashboard ARN into its components.
 
 ---
 
+##### `parseSellerDatasetArn` <a name="parseSellerDatasetArn" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.parseSellerDatasetArn"></a>
+
+```typescript
+import { aws_marketplace } from '@cdk_utils/iam'
+
+aws_marketplace.AWSMarketplaceResources.parseSellerDatasetArn(arn: string)
+```
+
+Parses a SellerDataset ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.parseSellerDatasetArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `parseTaxComplianceProfileArn` <a name="parseTaxComplianceProfileArn" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.parseTaxComplianceProfileArn"></a>
 
 ```typescript
@@ -6835,6 +8179,22 @@ Builds an ARN for the SellerDashboard resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.sellerDashboard.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDashboardArnProps">AWSMarketplaceSellerDashboardArnProps</a>
+
+---
+
+##### `sellerDataset` <a name="sellerDataset" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.sellerDataset"></a>
+
+```typescript
+import { aws_marketplace } from '@cdk_utils/iam'
+
+aws_marketplace.AWSMarketplaceResources.sellerDataset(props: AWSMarketplaceSellerDatasetArnProps)
+```
+
+Builds an ARN for the SellerDataset resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceResources.sellerDataset.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceSellerDatasetArnProps">AWSMarketplaceSellerDatasetArnProps</a>
 
 ---
 

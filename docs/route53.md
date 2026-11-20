@@ -595,6 +595,154 @@ Defaults to "*".
 
 ---
 
+### Route53HealthchecksourceArnComponents <a name="Route53HealthchecksourceArnComponents" id="@cdk_utils/iam.route53.Route53HealthchecksourceArnComponents"></a>
+
+Parsed components of a healthchecksource ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.route53.Route53HealthchecksourceArnComponents.Initializer"></a>
+
+```typescript
+import { route53 } from '@cdk_utils/iam'
+
+const route53HealthchecksourceArnComponents: route53.Route53HealthchecksourceArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.route53.Route53HealthchecksourceArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.route53.Route53HealthchecksourceArnComponents.property.id">id</a></code> | <code>string</code> | The Id component. |
+| <code><a href="#@cdk_utils/iam.route53.Route53HealthchecksourceArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.route53.Route53HealthchecksourceArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.route53.Route53HealthchecksourceArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdk_utils/iam.route53.Route53HealthchecksourceArnComponents.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+The Id component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.route53.Route53HealthchecksourceArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.route53.Route53HealthchecksourceArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### Route53HealthchecksourceArnProps <a name="Route53HealthchecksourceArnProps" id="@cdk_utils/iam.route53.Route53HealthchecksourceArnProps"></a>
+
+Properties for building a healthchecksource ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.route53.Route53HealthchecksourceArnProps.Initializer"></a>
+
+```typescript
+import { route53 } from '@cdk_utils/iam'
+
+const route53HealthchecksourceArnProps: route53.Route53HealthchecksourceArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.route53.Route53HealthchecksourceArnProps.property.id">id</a></code> | <code>string</code> | The Id component of the ARN. |
+| <code><a href="#@cdk_utils/iam.route53.Route53HealthchecksourceArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.route53.Route53HealthchecksourceArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.route53.Route53HealthchecksourceArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdk_utils/iam.route53.Route53HealthchecksourceArnProps.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+The Id component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.route53.Route53HealthchecksourceArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.route53.Route53HealthchecksourceArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.route53.Route53HealthchecksourceArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### Route53HostedzoneArnComponents <a name="Route53HostedzoneArnComponents" id="@cdk_utils/iam.route53.Route53HostedzoneArnComponents"></a>
 
 Parsed components of a hostedzone ARN.
@@ -1369,10 +1517,12 @@ new route53.Route53Actions()
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.actionGetHealthCheck">actionGetHealthCheck</a></code> | <code>string</code> | [Read] route53:GetHealthCheck. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.actionGetHealthCheckCount">actionGetHealthCheckCount</a></code> | <code>string</code> | [List] route53:GetHealthCheckCount. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.actionGetHealthCheckLastFailureReason">actionGetHealthCheckLastFailureReason</a></code> | <code>string</code> | [List] route53:GetHealthCheckLastFailureReason. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.actionGetHealthCheckSource">actionGetHealthCheckSource</a></code> | <code>string</code> | [Read] route53:GetHealthCheckSource. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.actionGetHealthCheckStatus">actionGetHealthCheckStatus</a></code> | <code>string</code> | [List] route53:GetHealthCheckStatus. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.actionGetHostedZone">actionGetHostedZone</a></code> | <code>string</code> | [List] route53:GetHostedZone. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.actionGetHostedZoneCount">actionGetHostedZoneCount</a></code> | <code>string</code> | [List] route53:GetHostedZoneCount. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.actionGetHostedZoneLimit">actionGetHostedZoneLimit</a></code> | <code>string</code> | [Read] route53:GetHostedZoneLimit. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.actionGetIpGuardrailPolicy">actionGetIpGuardrailPolicy</a></code> | <code>string</code> | [Read] route53:GetIpGuardrailPolicy. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.actionGetQueryLoggingConfig">actionGetQueryLoggingConfig</a></code> | <code>string</code> | [Read] route53:GetQueryLoggingConfig. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.actionGetReusableDelegationSet">actionGetReusableDelegationSet</a></code> | <code>string</code> | [List] route53:GetReusableDelegationSet. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.actionGetReusableDelegationSetLimit">actionGetReusableDelegationSetLimit</a></code> | <code>string</code> | [Read] route53:GetReusableDelegationSetLimit. |
@@ -1391,9 +1541,12 @@ new route53.Route53Actions()
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.ChangeTagsForResource">ChangeTagsForResource</a></code> | <code>string</code> | [Tagging] route53:ChangeTagsForResource. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.CreateCidrCollection">CreateCidrCollection</a></code> | <code>string</code> | [Write] route53:CreateCidrCollection. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.CreateHealthCheck">CreateHealthCheck</a></code> | <code>string</code> | [Write] route53:CreateHealthCheck. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.CreateHealthCheckSource">CreateHealthCheckSource</a></code> | <code>string</code> | [Write] route53:CreateHealthCheckSource. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.CreateHostedZone">CreateHostedZone</a></code> | <code>string</code> | [Write] route53:CreateHostedZone. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.CreateIpGuardrailPolicy">CreateIpGuardrailPolicy</a></code> | <code>string</code> | [Write] route53:CreateIpGuardrailPolicy. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.CreateKeySigningKey">CreateKeySigningKey</a></code> | <code>string</code> | [Write] route53:CreateKeySigningKey. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.CreateQueryLoggingConfig">CreateQueryLoggingConfig</a></code> | <code>string</code> | [Write] route53:CreateQueryLoggingConfig. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.CreateResourceRecordSetProtections">CreateResourceRecordSetProtections</a></code> | <code>string</code> | [Write] route53:CreateResourceRecordSetProtections. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.CreateReusableDelegationSet">CreateReusableDelegationSet</a></code> | <code>string</code> | [Write] route53:CreateReusableDelegationSet. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.CreateTrafficPolicy">CreateTrafficPolicy</a></code> | <code>string</code> | [Write] route53:CreateTrafficPolicy. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.CreateTrafficPolicyInstance">CreateTrafficPolicyInstance</a></code> | <code>string</code> | [Write] route53:CreateTrafficPolicyInstance. |
@@ -1402,9 +1555,12 @@ new route53.Route53Actions()
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.DeactivateKeySigningKey">DeactivateKeySigningKey</a></code> | <code>string</code> | [Write] route53:DeactivateKeySigningKey. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.DeleteCidrCollection">DeleteCidrCollection</a></code> | <code>string</code> | [Write] route53:DeleteCidrCollection. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.DeleteHealthCheck">DeleteHealthCheck</a></code> | <code>string</code> | [Write] route53:DeleteHealthCheck. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.DeleteHealthCheckSource">DeleteHealthCheckSource</a></code> | <code>string</code> | [Write] route53:DeleteHealthCheckSource. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.DeleteHostedZone">DeleteHostedZone</a></code> | <code>string</code> | [Write] route53:DeleteHostedZone. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.DeleteIpGuardrailPolicy">DeleteIpGuardrailPolicy</a></code> | <code>string</code> | [Write] route53:DeleteIpGuardrailPolicy. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.DeleteKeySigningKey">DeleteKeySigningKey</a></code> | <code>string</code> | [Write] route53:DeleteKeySigningKey. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.DeleteQueryLoggingConfig">DeleteQueryLoggingConfig</a></code> | <code>string</code> | [Write] route53:DeleteQueryLoggingConfig. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.DeleteResourceRecordSetProtections">DeleteResourceRecordSetProtections</a></code> | <code>string</code> | [Write] route53:DeleteResourceRecordSetProtections. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.DeleteReusableDelegationSet">DeleteReusableDelegationSet</a></code> | <code>string</code> | [Write] route53:DeleteReusableDelegationSet. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.DeleteTrafficPolicy">DeleteTrafficPolicy</a></code> | <code>string</code> | [Write] route53:DeleteTrafficPolicy. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.DeleteTrafficPolicyInstance">DeleteTrafficPolicyInstance</a></code> | <code>string</code> | [Write] route53:DeleteTrafficPolicyInstance. |
@@ -1417,10 +1573,14 @@ new route53.Route53Actions()
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.ListCidrLocations">ListCidrLocations</a></code> | <code>string</code> | [List] route53:ListCidrLocations. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.ListGeoLocations">ListGeoLocations</a></code> | <code>string</code> | [Read] route53:ListGeoLocations. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.ListHealthChecks">ListHealthChecks</a></code> | <code>string</code> | [Read] route53:ListHealthChecks. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.ListHealthChecksBySource">ListHealthChecksBySource</a></code> | <code>string</code> | [List] route53:ListHealthChecksBySource. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.ListHealthCheckSources">ListHealthCheckSources</a></code> | <code>string</code> | [List] route53:ListHealthCheckSources. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.ListHostedZones">ListHostedZones</a></code> | <code>string</code> | [List] route53:ListHostedZones. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.ListHostedZonesByName">ListHostedZonesByName</a></code> | <code>string</code> | [List] route53:ListHostedZonesByName. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.ListHostedZonesByVPC">ListHostedZonesByVPC</a></code> | <code>string</code> | [List] route53:ListHostedZonesByVPC. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.ListIpGuardrailPolicies">ListIpGuardrailPolicies</a></code> | <code>string</code> | [List] route53:ListIpGuardrailPolicies. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.ListQueryLoggingConfigs">ListQueryLoggingConfigs</a></code> | <code>string</code> | [List] route53:ListQueryLoggingConfigs. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.ListResourceRecordSetProtections">ListResourceRecordSetProtections</a></code> | <code>string</code> | [List] route53:ListResourceRecordSetProtections. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.ListResourceRecordSets">ListResourceRecordSets</a></code> | <code>string</code> | [List] route53:ListResourceRecordSets. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.ListReusableDelegationSets">ListReusableDelegationSets</a></code> | <code>string</code> | [Read] route53:ListReusableDelegationSets. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Read] route53:ListTagsForResource. |
@@ -1436,6 +1596,7 @@ new route53.Route53Actions()
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.UpdateHealthCheck">UpdateHealthCheck</a></code> | <code>string</code> | [Write] route53:UpdateHealthCheck. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.UpdateHostedZoneComment">UpdateHostedZoneComment</a></code> | <code>string</code> | [Write] route53:UpdateHostedZoneComment. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.UpdateHostedZoneFeatures">UpdateHostedZoneFeatures</a></code> | <code>string</code> | [Write] route53:UpdateHostedZoneFeatures. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.UpdateIpGuardrailPolicy">UpdateIpGuardrailPolicy</a></code> | <code>string</code> | [Write] route53:UpdateIpGuardrailPolicy. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.UpdateTrafficPolicyComment">UpdateTrafficPolicyComment</a></code> | <code>string</code> | [Write] route53:UpdateTrafficPolicyComment. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.UpdateTrafficPolicyInstance">UpdateTrafficPolicyInstance</a></code> | <code>string</code> | [Write] route53:UpdateTrafficPolicyInstance. |
 
@@ -1537,6 +1698,18 @@ public readonly actionGetHealthCheckLastFailureReason: string;
 
 ---
 
+##### `actionGetHealthCheckSource`<sup>Required</sup> <a name="actionGetHealthCheckSource" id="@cdk_utils/iam.route53.Route53Actions.property.actionGetHealthCheckSource"></a>
+
+```typescript
+public readonly actionGetHealthCheckSource: string;
+```
+
+- *Type:* string
+
+[Read] route53:GetHealthCheckSource.
+
+---
+
 ##### `actionGetHealthCheckStatus`<sup>Required</sup> <a name="actionGetHealthCheckStatus" id="@cdk_utils/iam.route53.Route53Actions.property.actionGetHealthCheckStatus"></a>
 
 ```typescript
@@ -1582,6 +1755,18 @@ public readonly actionGetHostedZoneLimit: string;
 - *Type:* string
 
 [Read] route53:GetHostedZoneLimit.
+
+---
+
+##### `actionGetIpGuardrailPolicy`<sup>Required</sup> <a name="actionGetIpGuardrailPolicy" id="@cdk_utils/iam.route53.Route53Actions.property.actionGetIpGuardrailPolicy"></a>
+
+```typescript
+public readonly actionGetIpGuardrailPolicy: string;
+```
+
+- *Type:* string
+
+[Read] route53:GetIpGuardrailPolicy.
 
 ---
 
@@ -1801,6 +1986,18 @@ public readonly CreateHealthCheck: string;
 
 ---
 
+##### `CreateHealthCheckSource`<sup>Required</sup> <a name="CreateHealthCheckSource" id="@cdk_utils/iam.route53.Route53Actions.property.CreateHealthCheckSource"></a>
+
+```typescript
+public readonly CreateHealthCheckSource: string;
+```
+
+- *Type:* string
+
+[Write] route53:CreateHealthCheckSource.
+
+---
+
 ##### `CreateHostedZone`<sup>Required</sup> <a name="CreateHostedZone" id="@cdk_utils/iam.route53.Route53Actions.property.CreateHostedZone"></a>
 
 ```typescript
@@ -1810,6 +2007,18 @@ public readonly CreateHostedZone: string;
 - *Type:* string
 
 [Write] route53:CreateHostedZone.
+
+---
+
+##### `CreateIpGuardrailPolicy`<sup>Required</sup> <a name="CreateIpGuardrailPolicy" id="@cdk_utils/iam.route53.Route53Actions.property.CreateIpGuardrailPolicy"></a>
+
+```typescript
+public readonly CreateIpGuardrailPolicy: string;
+```
+
+- *Type:* string
+
+[Write] route53:CreateIpGuardrailPolicy.
 
 ---
 
@@ -1834,6 +2043,18 @@ public readonly CreateQueryLoggingConfig: string;
 - *Type:* string
 
 [Write] route53:CreateQueryLoggingConfig.
+
+---
+
+##### `CreateResourceRecordSetProtections`<sup>Required</sup> <a name="CreateResourceRecordSetProtections" id="@cdk_utils/iam.route53.Route53Actions.property.CreateResourceRecordSetProtections"></a>
+
+```typescript
+public readonly CreateResourceRecordSetProtections: string;
+```
+
+- *Type:* string
+
+[Write] route53:CreateResourceRecordSetProtections.
 
 ---
 
@@ -1933,6 +2154,18 @@ public readonly DeleteHealthCheck: string;
 
 ---
 
+##### `DeleteHealthCheckSource`<sup>Required</sup> <a name="DeleteHealthCheckSource" id="@cdk_utils/iam.route53.Route53Actions.property.DeleteHealthCheckSource"></a>
+
+```typescript
+public readonly DeleteHealthCheckSource: string;
+```
+
+- *Type:* string
+
+[Write] route53:DeleteHealthCheckSource.
+
+---
+
 ##### `DeleteHostedZone`<sup>Required</sup> <a name="DeleteHostedZone" id="@cdk_utils/iam.route53.Route53Actions.property.DeleteHostedZone"></a>
 
 ```typescript
@@ -1942,6 +2175,18 @@ public readonly DeleteHostedZone: string;
 - *Type:* string
 
 [Write] route53:DeleteHostedZone.
+
+---
+
+##### `DeleteIpGuardrailPolicy`<sup>Required</sup> <a name="DeleteIpGuardrailPolicy" id="@cdk_utils/iam.route53.Route53Actions.property.DeleteIpGuardrailPolicy"></a>
+
+```typescript
+public readonly DeleteIpGuardrailPolicy: string;
+```
+
+- *Type:* string
+
+[Write] route53:DeleteIpGuardrailPolicy.
 
 ---
 
@@ -1966,6 +2211,18 @@ public readonly DeleteQueryLoggingConfig: string;
 - *Type:* string
 
 [Write] route53:DeleteQueryLoggingConfig.
+
+---
+
+##### `DeleteResourceRecordSetProtections`<sup>Required</sup> <a name="DeleteResourceRecordSetProtections" id="@cdk_utils/iam.route53.Route53Actions.property.DeleteResourceRecordSetProtections"></a>
+
+```typescript
+public readonly DeleteResourceRecordSetProtections: string;
+```
+
+- *Type:* string
+
+[Write] route53:DeleteResourceRecordSetProtections.
 
 ---
 
@@ -2113,6 +2370,30 @@ public readonly ListHealthChecks: string;
 
 ---
 
+##### `ListHealthChecksBySource`<sup>Required</sup> <a name="ListHealthChecksBySource" id="@cdk_utils/iam.route53.Route53Actions.property.ListHealthChecksBySource"></a>
+
+```typescript
+public readonly ListHealthChecksBySource: string;
+```
+
+- *Type:* string
+
+[List] route53:ListHealthChecksBySource.
+
+---
+
+##### `ListHealthCheckSources`<sup>Required</sup> <a name="ListHealthCheckSources" id="@cdk_utils/iam.route53.Route53Actions.property.ListHealthCheckSources"></a>
+
+```typescript
+public readonly ListHealthCheckSources: string;
+```
+
+- *Type:* string
+
+[List] route53:ListHealthCheckSources.
+
+---
+
 ##### `ListHostedZones`<sup>Required</sup> <a name="ListHostedZones" id="@cdk_utils/iam.route53.Route53Actions.property.ListHostedZones"></a>
 
 ```typescript
@@ -2149,6 +2430,18 @@ public readonly ListHostedZonesByVPC: string;
 
 ---
 
+##### `ListIpGuardrailPolicies`<sup>Required</sup> <a name="ListIpGuardrailPolicies" id="@cdk_utils/iam.route53.Route53Actions.property.ListIpGuardrailPolicies"></a>
+
+```typescript
+public readonly ListIpGuardrailPolicies: string;
+```
+
+- *Type:* string
+
+[List] route53:ListIpGuardrailPolicies.
+
+---
+
 ##### `ListQueryLoggingConfigs`<sup>Required</sup> <a name="ListQueryLoggingConfigs" id="@cdk_utils/iam.route53.Route53Actions.property.ListQueryLoggingConfigs"></a>
 
 ```typescript
@@ -2158,6 +2451,18 @@ public readonly ListQueryLoggingConfigs: string;
 - *Type:* string
 
 [List] route53:ListQueryLoggingConfigs.
+
+---
+
+##### `ListResourceRecordSetProtections`<sup>Required</sup> <a name="ListResourceRecordSetProtections" id="@cdk_utils/iam.route53.Route53Actions.property.ListResourceRecordSetProtections"></a>
+
+```typescript
+public readonly ListResourceRecordSetProtections: string;
+```
+
+- *Type:* string
+
+[List] route53:ListResourceRecordSetProtections.
 
 ---
 
@@ -2341,6 +2646,18 @@ public readonly UpdateHostedZoneFeatures: string;
 
 ---
 
+##### `UpdateIpGuardrailPolicy`<sup>Required</sup> <a name="UpdateIpGuardrailPolicy" id="@cdk_utils/iam.route53.Route53Actions.property.UpdateIpGuardrailPolicy"></a>
+
+```typescript
+public readonly UpdateIpGuardrailPolicy: string;
+```
+
+- *Type:* string
+
+[Write] route53:UpdateIpGuardrailPolicy.
+
+---
+
 ##### `UpdateTrafficPolicyComment`<sup>Required</sup> <a name="UpdateTrafficPolicyComment" id="@cdk_utils/iam.route53.Route53Actions.property.UpdateTrafficPolicyComment"></a>
 
 ```typescript
@@ -2390,6 +2707,9 @@ new route53.Route53Conditions()
 | <code><a href="#@cdk_utils/iam.route53.Route53Conditions.changeResourceRecordSetsActions">changeResourceRecordSetsActions</a></code> | Generates a condition block for `route53:ChangeResourceRecordSetsActions`. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Conditions.changeResourceRecordSetsNormalizedRecordNames">changeResourceRecordSetsNormalizedRecordNames</a></code> | Generates a condition block for `route53:ChangeResourceRecordSetsNormalizedRecordNames`. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Conditions.changeResourceRecordSetsRecordTypes">changeResourceRecordSetsRecordTypes</a></code> | Generates a condition block for `route53:ChangeResourceRecordSetsRecordTypes`. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Conditions.requestTag">requestTag</a></code> | Generates a condition block for `aws:RequestTag/${TagKey}`. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Conditions.resourceTag">resourceTag</a></code> | Generates a condition block for `aws:ResourceTag/${TagKey}`. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Conditions.tagKeys">tagKeys</a></code> | Generates a condition block for `aws:TagKeys`. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Conditions.vpCs">vpCs</a></code> | Generates a condition block for `route53:VPCs`. |
 
 ---
@@ -2442,6 +2762,54 @@ Generates a condition block for `route53:ChangeResourceRecordSetsRecordTypes`.
 
 ---
 
+##### `requestTag` <a name="requestTag" id="@cdk_utils/iam.route53.Route53Conditions.requestTag"></a>
+
+```typescript
+import { route53 } from '@cdk_utils/iam'
+
+route53.Route53Conditions.requestTag(value: string)
+```
+
+Generates a condition block for `aws:RequestTag/${TagKey}`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.route53.Route53Conditions.requestTag.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `resourceTag` <a name="resourceTag" id="@cdk_utils/iam.route53.Route53Conditions.resourceTag"></a>
+
+```typescript
+import { route53 } from '@cdk_utils/iam'
+
+route53.Route53Conditions.resourceTag(value: string)
+```
+
+Generates a condition block for `aws:ResourceTag/${TagKey}`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.route53.Route53Conditions.resourceTag.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `tagKeys` <a name="tagKeys" id="@cdk_utils/iam.route53.Route53Conditions.tagKeys"></a>
+
+```typescript
+import { route53 } from '@cdk_utils/iam'
+
+route53.Route53Conditions.tagKeys(values: string[])
+```
+
+Generates a condition block for `aws:TagKeys`.
+
+###### `values`<sup>Required</sup> <a name="values" id="@cdk_utils/iam.route53.Route53Conditions.tagKeys.parameter.values"></a>
+
+- *Type:* string[]
+
+---
+
 ##### `vpCs` <a name="vpCs" id="@cdk_utils/iam.route53.Route53Conditions.vpCs"></a>
 
 ```typescript
@@ -2464,10 +2832,14 @@ Generates a condition block for `route53:VPCs`.
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.route53.Route53Conditions.property.AssociateVPCWithHostedZoneConditionKeys">AssociateVPCWithHostedZoneConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the AssociateVPCWithHostedZone action. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Conditions.property.AWS_REQUEST_TAG">AWS_REQUEST_TAG</a></code> | <code>string</code> | Condition key: aws:RequestTag/${TagKey} (String). |
+| <code><a href="#@cdk_utils/iam.route53.Route53Conditions.property.AWS_RESOURCE_TAG">AWS_RESOURCE_TAG</a></code> | <code>string</code> | Condition key: aws:ResourceTag/${TagKey} (String). |
+| <code><a href="#@cdk_utils/iam.route53.Route53Conditions.property.AWS_TAG_KEYS">AWS_TAG_KEYS</a></code> | <code>string</code> | Condition key: aws:TagKeys (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.route53.Route53Conditions.property.CHANGE_RESOURCE_RECORD_SETS_ACTIONS">CHANGE_RESOURCE_RECORD_SETS_ACTIONS</a></code> | <code>string</code> | Condition key: route53:ChangeResourceRecordSetsActions (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.route53.Route53Conditions.property.CHANGE_RESOURCE_RECORD_SETS_NORMALIZED_RECORD_NAMES">CHANGE_RESOURCE_RECORD_SETS_NORMALIZED_RECORD_NAMES</a></code> | <code>string</code> | Condition key: route53:ChangeResourceRecordSetsNormalizedRecordNames (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.route53.Route53Conditions.property.CHANGE_RESOURCE_RECORD_SETS_RECORD_TYPES">CHANGE_RESOURCE_RECORD_SETS_RECORD_TYPES</a></code> | <code>string</code> | Condition key: route53:ChangeResourceRecordSetsRecordTypes (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.route53.Route53Conditions.property.ChangeResourceRecordSetsConditionKeys">ChangeResourceRecordSetsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ChangeResourceRecordSets action. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Conditions.property.CreateHealthCheckSourceConditionKeys">CreateHealthCheckSourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateHealthCheckSource action. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Conditions.property.CreateHostedZoneConditionKeys">CreateHostedZoneConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateHostedZone action. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Conditions.property.CreateVPCAssociationAuthorizationConditionKeys">CreateVPCAssociationAuthorizationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateVPCAssociationAuthorization action. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Conditions.property.DeleteVPCAssociationAuthorizationConditionKeys">DeleteVPCAssociationAuthorizationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteVPCAssociationAuthorization action. |
@@ -2486,6 +2858,42 @@ public readonly AssociateVPCWithHostedZoneConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the AssociateVPCWithHostedZone action.
+
+---
+
+##### `AWS_REQUEST_TAG`<sup>Required</sup> <a name="AWS_REQUEST_TAG" id="@cdk_utils/iam.route53.Route53Conditions.property.AWS_REQUEST_TAG"></a>
+
+```typescript
+public readonly AWS_REQUEST_TAG: string;
+```
+
+- *Type:* string
+
+Condition key: aws:RequestTag/${TagKey} (String).
+
+---
+
+##### `AWS_RESOURCE_TAG`<sup>Required</sup> <a name="AWS_RESOURCE_TAG" id="@cdk_utils/iam.route53.Route53Conditions.property.AWS_RESOURCE_TAG"></a>
+
+```typescript
+public readonly AWS_RESOURCE_TAG: string;
+```
+
+- *Type:* string
+
+Condition key: aws:ResourceTag/${TagKey} (String).
+
+---
+
+##### `AWS_TAG_KEYS`<sup>Required</sup> <a name="AWS_TAG_KEYS" id="@cdk_utils/iam.route53.Route53Conditions.property.AWS_TAG_KEYS"></a>
+
+```typescript
+public readonly AWS_TAG_KEYS: string;
+```
+
+- *Type:* string
+
+Condition key: aws:TagKeys (ArrayOfString).
 
 ---
 
@@ -2534,6 +2942,18 @@ public readonly ChangeResourceRecordSetsConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the ChangeResourceRecordSets action.
+
+---
+
+##### `CreateHealthCheckSourceConditionKeys`<sup>Required</sup> <a name="CreateHealthCheckSourceConditionKeys" id="@cdk_utils/iam.route53.Route53Conditions.property.CreateHealthCheckSourceConditionKeys"></a>
+
+```typescript
+public readonly CreateHealthCheckSourceConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateHealthCheckSource action.
 
 ---
 
@@ -2640,9 +3060,11 @@ new route53.Route53Operations()
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ChangeTagsForResource">ChangeTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ChangeTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.CreateCidrCollection">CreateCidrCollection</a></code> | <code>string[]</code> | IAM actions required for the CreateCidrCollection API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.CreateHealthCheck">CreateHealthCheck</a></code> | <code>string[]</code> | IAM actions required for the CreateHealthCheck API call. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.CreateHealthCheckSource">CreateHealthCheckSource</a></code> | <code>string[]</code> | IAM actions required for the CreateHealthCheckSource API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.CreateHostedZone">CreateHostedZone</a></code> | <code>string[]</code> | IAM actions required for the CreateHostedZone API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.CreateKeySigningKey">CreateKeySigningKey</a></code> | <code>string[]</code> | IAM actions required for the CreateKeySigningKey API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.CreateQueryLoggingConfig">CreateQueryLoggingConfig</a></code> | <code>string[]</code> | IAM actions required for the CreateQueryLoggingConfig API call. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.CreateResourceRecordSetProtections">CreateResourceRecordSetProtections</a></code> | <code>string[]</code> | IAM actions required for the CreateResourceRecordSetProtections API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.CreateReusableDelegationSet">CreateReusableDelegationSet</a></code> | <code>string[]</code> | IAM actions required for the CreateReusableDelegationSet API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.CreateTrafficPolicy">CreateTrafficPolicy</a></code> | <code>string[]</code> | IAM actions required for the CreateTrafficPolicy API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.CreateTrafficPolicyInstance">CreateTrafficPolicyInstance</a></code> | <code>string[]</code> | IAM actions required for the CreateTrafficPolicyInstance API call. |
@@ -2651,9 +3073,11 @@ new route53.Route53Operations()
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.DeactivateKeySigningKey">DeactivateKeySigningKey</a></code> | <code>string[]</code> | IAM actions required for the DeactivateKeySigningKey API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.DeleteCidrCollection">DeleteCidrCollection</a></code> | <code>string[]</code> | IAM actions required for the DeleteCidrCollection API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.DeleteHealthCheck">DeleteHealthCheck</a></code> | <code>string[]</code> | IAM actions required for the DeleteHealthCheck API call. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.DeleteHealthCheckSource">DeleteHealthCheckSource</a></code> | <code>string[]</code> | IAM actions required for the DeleteHealthCheckSource API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.DeleteHostedZone">DeleteHostedZone</a></code> | <code>string[]</code> | IAM actions required for the DeleteHostedZone API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.DeleteKeySigningKey">DeleteKeySigningKey</a></code> | <code>string[]</code> | IAM actions required for the DeleteKeySigningKey API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.DeleteQueryLoggingConfig">DeleteQueryLoggingConfig</a></code> | <code>string[]</code> | IAM actions required for the DeleteQueryLoggingConfig API call. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.DeleteResourceRecordSetProtections">DeleteResourceRecordSetProtections</a></code> | <code>string[]</code> | IAM actions required for the DeleteResourceRecordSetProtections API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.DeleteReusableDelegationSet">DeleteReusableDelegationSet</a></code> | <code>string[]</code> | IAM actions required for the DeleteReusableDelegationSet API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.DeleteTrafficPolicy">DeleteTrafficPolicy</a></code> | <code>string[]</code> | IAM actions required for the DeleteTrafficPolicy API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.DeleteTrafficPolicyInstance">DeleteTrafficPolicyInstance</a></code> | <code>string[]</code> | IAM actions required for the DeleteTrafficPolicyInstance API call. |
@@ -2666,10 +3090,13 @@ new route53.Route53Operations()
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListCidrLocations">ListCidrLocations</a></code> | <code>string[]</code> | IAM actions required for the ListCidrLocations API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListGeoLocations">ListGeoLocations</a></code> | <code>string[]</code> | IAM actions required for the ListGeoLocations API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListHealthChecks">ListHealthChecks</a></code> | <code>string[]</code> | IAM actions required for the ListHealthChecks API call. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListHealthChecksBySource">ListHealthChecksBySource</a></code> | <code>string[]</code> | IAM actions required for the ListHealthChecksBySource API call. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListHealthCheckSources">ListHealthCheckSources</a></code> | <code>string[]</code> | IAM actions required for the ListHealthCheckSources API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListHostedZones">ListHostedZones</a></code> | <code>string[]</code> | IAM actions required for the ListHostedZones API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListHostedZonesByName">ListHostedZonesByName</a></code> | <code>string[]</code> | IAM actions required for the ListHostedZonesByName API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListHostedZonesByVPC">ListHostedZonesByVPC</a></code> | <code>string[]</code> | IAM actions required for the ListHostedZonesByVPC API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListQueryLoggingConfigs">ListQueryLoggingConfigs</a></code> | <code>string[]</code> | IAM actions required for the ListQueryLoggingConfigs API call. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListResourceRecordSetProtections">ListResourceRecordSetProtections</a></code> | <code>string[]</code> | IAM actions required for the ListResourceRecordSetProtections API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListResourceRecordSets">ListResourceRecordSets</a></code> | <code>string[]</code> | IAM actions required for the ListResourceRecordSets API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListReusableDelegationSets">ListReusableDelegationSets</a></code> | <code>string[]</code> | IAM actions required for the ListReusableDelegationSets API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
@@ -2688,6 +3115,7 @@ new route53.Route53Operations()
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.opGetHealthCheck">opGetHealthCheck</a></code> | <code>string[]</code> | IAM actions required for the GetHealthCheck API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.opGetHealthCheckCount">opGetHealthCheckCount</a></code> | <code>string[]</code> | IAM actions required for the GetHealthCheckCount API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.opGetHealthCheckLastFailureReason">opGetHealthCheckLastFailureReason</a></code> | <code>string[]</code> | IAM actions required for the GetHealthCheckLastFailureReason API call. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.opGetHealthCheckSource">opGetHealthCheckSource</a></code> | <code>string[]</code> | IAM actions required for the GetHealthCheckSource API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.opGetHealthCheckStatus">opGetHealthCheckStatus</a></code> | <code>string[]</code> | IAM actions required for the GetHealthCheckStatus API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.opGetHostedZone">opGetHostedZone</a></code> | <code>string[]</code> | IAM actions required for the GetHostedZone API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.opGetHostedZoneCount">opGetHostedZoneCount</a></code> | <code>string[]</code> | IAM actions required for the GetHostedZoneCount API call. |
@@ -2791,6 +3219,18 @@ IAM actions required for the CreateHealthCheck API call.
 
 ---
 
+##### `CreateHealthCheckSource`<sup>Required</sup> <a name="CreateHealthCheckSource" id="@cdk_utils/iam.route53.Route53Operations.property.CreateHealthCheckSource"></a>
+
+```typescript
+public readonly CreateHealthCheckSource: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateHealthCheckSource API call.
+
+---
+
 ##### `CreateHostedZone`<sup>Required</sup> <a name="CreateHostedZone" id="@cdk_utils/iam.route53.Route53Operations.property.CreateHostedZone"></a>
 
 ```typescript
@@ -2824,6 +3264,18 @@ public readonly CreateQueryLoggingConfig: string[];
 - *Type:* string[]
 
 IAM actions required for the CreateQueryLoggingConfig API call.
+
+---
+
+##### `CreateResourceRecordSetProtections`<sup>Required</sup> <a name="CreateResourceRecordSetProtections" id="@cdk_utils/iam.route53.Route53Operations.property.CreateResourceRecordSetProtections"></a>
+
+```typescript
+public readonly CreateResourceRecordSetProtections: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateResourceRecordSetProtections API call.
 
 ---
 
@@ -2923,6 +3375,18 @@ IAM actions required for the DeleteHealthCheck API call.
 
 ---
 
+##### `DeleteHealthCheckSource`<sup>Required</sup> <a name="DeleteHealthCheckSource" id="@cdk_utils/iam.route53.Route53Operations.property.DeleteHealthCheckSource"></a>
+
+```typescript
+public readonly DeleteHealthCheckSource: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteHealthCheckSource API call.
+
+---
+
 ##### `DeleteHostedZone`<sup>Required</sup> <a name="DeleteHostedZone" id="@cdk_utils/iam.route53.Route53Operations.property.DeleteHostedZone"></a>
 
 ```typescript
@@ -2956,6 +3420,18 @@ public readonly DeleteQueryLoggingConfig: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteQueryLoggingConfig API call.
+
+---
+
+##### `DeleteResourceRecordSetProtections`<sup>Required</sup> <a name="DeleteResourceRecordSetProtections" id="@cdk_utils/iam.route53.Route53Operations.property.DeleteResourceRecordSetProtections"></a>
+
+```typescript
+public readonly DeleteResourceRecordSetProtections: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteResourceRecordSetProtections API call.
 
 ---
 
@@ -3103,6 +3579,30 @@ IAM actions required for the ListHealthChecks API call.
 
 ---
 
+##### `ListHealthChecksBySource`<sup>Required</sup> <a name="ListHealthChecksBySource" id="@cdk_utils/iam.route53.Route53Operations.property.ListHealthChecksBySource"></a>
+
+```typescript
+public readonly ListHealthChecksBySource: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListHealthChecksBySource API call.
+
+---
+
+##### `ListHealthCheckSources`<sup>Required</sup> <a name="ListHealthCheckSources" id="@cdk_utils/iam.route53.Route53Operations.property.ListHealthCheckSources"></a>
+
+```typescript
+public readonly ListHealthCheckSources: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListHealthCheckSources API call.
+
+---
+
 ##### `ListHostedZones`<sup>Required</sup> <a name="ListHostedZones" id="@cdk_utils/iam.route53.Route53Operations.property.ListHostedZones"></a>
 
 ```typescript
@@ -3148,6 +3648,18 @@ public readonly ListQueryLoggingConfigs: string[];
 - *Type:* string[]
 
 IAM actions required for the ListQueryLoggingConfigs API call.
+
+---
+
+##### `ListResourceRecordSetProtections`<sup>Required</sup> <a name="ListResourceRecordSetProtections" id="@cdk_utils/iam.route53.Route53Operations.property.ListResourceRecordSetProtections"></a>
+
+```typescript
+public readonly ListResourceRecordSetProtections: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListResourceRecordSetProtections API call.
 
 ---
 
@@ -3364,6 +3876,18 @@ public readonly opGetHealthCheckLastFailureReason: string[];
 - *Type:* string[]
 
 IAM actions required for the GetHealthCheckLastFailureReason API call.
+
+---
+
+##### `opGetHealthCheckSource`<sup>Required</sup> <a name="opGetHealthCheckSource" id="@cdk_utils/iam.route53.Route53Operations.property.opGetHealthCheckSource"></a>
+
+```typescript
+public readonly opGetHealthCheckSource: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetHealthCheckSource API call.
 
 ---
 
@@ -3585,11 +4109,13 @@ new route53.Route53Resources()
 | <code><a href="#@cdk_utils/iam.route53.Route53Resources.cidrcollection">cidrcollection</a></code> | Builds an ARN for the cidrcollection resource. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Resources.delegationset">delegationset</a></code> | Builds an ARN for the delegationset resource. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Resources.healthcheck">healthcheck</a></code> | Builds an ARN for the healthcheck resource. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Resources.healthchecksource">healthchecksource</a></code> | Builds an ARN for the healthchecksource resource. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Resources.hostedzone">hostedzone</a></code> | Builds an ARN for the hostedzone resource. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Resources.isValidChangeArn">isValidChangeArn</a></code> | Validates whether a string is a valid ARN for the change resource. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Resources.isValidCidrcollectionArn">isValidCidrcollectionArn</a></code> | Validates whether a string is a valid ARN for the cidrcollection resource. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Resources.isValidDelegationsetArn">isValidDelegationsetArn</a></code> | Validates whether a string is a valid ARN for the delegationset resource. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Resources.isValidHealthcheckArn">isValidHealthcheckArn</a></code> | Validates whether a string is a valid ARN for the healthcheck resource. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Resources.isValidHealthchecksourceArn">isValidHealthchecksourceArn</a></code> | Validates whether a string is a valid ARN for the healthchecksource resource. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Resources.isValidHostedzoneArn">isValidHostedzoneArn</a></code> | Validates whether a string is a valid ARN for the hostedzone resource. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Resources.isValidQueryloggingconfigArn">isValidQueryloggingconfigArn</a></code> | Validates whether a string is a valid ARN for the queryloggingconfig resource. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Resources.isValidTrafficpolicyArn">isValidTrafficpolicyArn</a></code> | Validates whether a string is a valid ARN for the trafficpolicy resource. |
@@ -3599,6 +4125,7 @@ new route53.Route53Resources()
 | <code><a href="#@cdk_utils/iam.route53.Route53Resources.parseCidrcollectionArn">parseCidrcollectionArn</a></code> | Parses a cidrcollection ARN into its components. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Resources.parseDelegationsetArn">parseDelegationsetArn</a></code> | Parses a delegationset ARN into its components. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Resources.parseHealthcheckArn">parseHealthcheckArn</a></code> | Parses a healthcheck ARN into its components. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Resources.parseHealthchecksourceArn">parseHealthchecksourceArn</a></code> | Parses a healthchecksource ARN into its components. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Resources.parseHostedzoneArn">parseHostedzoneArn</a></code> | Parses a hostedzone ARN into its components. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Resources.parseQueryloggingconfigArn">parseQueryloggingconfigArn</a></code> | Parses a queryloggingconfig ARN into its components. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Resources.parseTrafficpolicyArn">parseTrafficpolicyArn</a></code> | Parses a trafficpolicy ARN into its components. |
@@ -3672,6 +4199,22 @@ Builds an ARN for the healthcheck resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.route53.Route53Resources.healthcheck.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.route53.Route53HealthcheckArnProps">Route53HealthcheckArnProps</a>
+
+---
+
+##### `healthchecksource` <a name="healthchecksource" id="@cdk_utils/iam.route53.Route53Resources.healthchecksource"></a>
+
+```typescript
+import { route53 } from '@cdk_utils/iam'
+
+route53.Route53Resources.healthchecksource(props: Route53HealthchecksourceArnProps)
+```
+
+Builds an ARN for the healthchecksource resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.route53.Route53Resources.healthchecksource.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.route53.Route53HealthchecksourceArnProps">Route53HealthchecksourceArnProps</a>
 
 ---
 
@@ -3750,6 +4293,22 @@ route53.Route53Resources.isValidHealthcheckArn(arn: string)
 Validates whether a string is a valid ARN for the healthcheck resource.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.route53.Route53Resources.isValidHealthcheckArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidHealthchecksourceArn` <a name="isValidHealthchecksourceArn" id="@cdk_utils/iam.route53.Route53Resources.isValidHealthchecksourceArn"></a>
+
+```typescript
+import { route53 } from '@cdk_utils/iam'
+
+route53.Route53Resources.isValidHealthchecksourceArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the healthchecksource resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.route53.Route53Resources.isValidHealthchecksourceArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -3894,6 +4453,22 @@ route53.Route53Resources.parseHealthcheckArn(arn: string)
 Parses a healthcheck ARN into its components.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.route53.Route53Resources.parseHealthcheckArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseHealthchecksourceArn` <a name="parseHealthchecksourceArn" id="@cdk_utils/iam.route53.Route53Resources.parseHealthchecksourceArn"></a>
+
+```typescript
+import { route53 } from '@cdk_utils/iam'
+
+route53.Route53Resources.parseHealthchecksourceArn(arn: string)
+```
+
+Parses a healthchecksource ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.route53.Route53Resources.parseHealthchecksourceArn.parameter.arn"></a>
 
 - *Type:* string
 

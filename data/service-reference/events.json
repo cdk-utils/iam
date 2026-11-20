@@ -199,6 +199,7 @@
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
         "aws:TagKeys",
+        "events:EventSourceType",
         "events:source"
       ],
       "Annotations": {
@@ -1330,6 +1331,30 @@
       }
     },
     {
+      "Name": "PutWebhookEvents",
+      "ActionConditionKeys": [
+        "events:Metadata/${MetadataKey}",
+        "events:SystemMetadata/ContentType"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event-busv2"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "RemovePermission",
       "Annotations": {
         "Properties": {
@@ -1407,6 +1432,27 @@
       "Resources": [
         {
           "Name": "event-busv2"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RotateWebhookCredentials",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "event-sourcev2"
         }
       ],
       "SupportedBy": {
@@ -1658,6 +1704,7 @@
     {
       "Name": "UpdateEventSource",
       "ActionConditionKeys": [
+        "events:EventSourceType",
         "events:source"
       ],
       "Annotations": {
@@ -1741,6 +1788,12 @@
       "Name": "events:EventBusArn",
       "Types": [
         "ArrayOfARN"
+      ]
+    },
+    {
+      "Name": "events:EventSourceType",
+      "Types": [
+        "String"
       ]
     },
     {
@@ -1889,6 +1942,10 @@
         {
           "Name": "CreateArchive",
           "Service": "events"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "events"
         }
       ],
       "SDK": [
@@ -1971,6 +2028,15 @@
         {
           "Name": "CreateEventSource",
           "Service": "events"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "events.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
         },
         {
           "Name": "TagResource",
@@ -2888,10 +2954,30 @@
       ]
     },
     {
+      "Name": "RotateWebhookCredentials",
+      "AuthorizedActions": [
+        {
+          "Name": "RotateWebhookCredentials",
+          "Service": "events"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "eventbridgev2",
+          "Method": "rotate_webhook_credentials",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "StartReplay",
       "AuthorizedActions": [
         {
           "Name": "StartReplay",
+          "Service": "events"
+        },
+        {
+          "Name": "TagResource",
           "Service": "events"
         }
       ],
@@ -3058,6 +3144,15 @@
     {
       "Name": "UpdateEventSource",
       "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "events.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
         {
           "Name": "UpdateEventSource",
           "Service": "events"

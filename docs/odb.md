@@ -1531,6 +1531,7 @@ new odb.OdbActions()
 | <code><a href="#@cdk_utils/iam.odb.OdbActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
 | <code><a href="#@cdk_utils/iam.odb.OdbActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
 | <code><a href="#@cdk_utils/iam.odb.OdbActions.property.AssociateIamRoleToResource">AssociateIamRoleToResource</a></code> | <code>string</code> | [Write] odb:AssociateIamRoleToResource. |
+| <code><a href="#@cdk_utils/iam.odb.OdbActions.property.AssociateVirtualMachinesToCloudVmCluster">AssociateVirtualMachinesToCloudVmCluster</a></code> | <code>string</code> | [Write] odb:AssociateVirtualMachinesToCloudVmCluster. |
 | <code><a href="#@cdk_utils/iam.odb.OdbActions.property.AssociateVirtualMachinesToExadbVmCluster">AssociateVirtualMachinesToExadbVmCluster</a></code> | <code>string</code> | [Write] odb:AssociateVirtualMachinesToExadbVmCluster. |
 | <code><a href="#@cdk_utils/iam.odb.OdbActions.property.CreateAutonomousDatabase">CreateAutonomousDatabase</a></code> | <code>string</code> | [Write] odb:CreateAutonomousDatabase. |
 | <code><a href="#@cdk_utils/iam.odb.OdbActions.property.CreateAutonomousDatabaseBackup">CreateAutonomousDatabaseBackup</a></code> | <code>string</code> | [Write] odb:CreateAutonomousDatabaseBackup. |
@@ -1558,6 +1559,7 @@ new odb.OdbActions()
 | <code><a href="#@cdk_utils/iam.odb.OdbActions.property.DeleteOdbPeeringConnection">DeleteOdbPeeringConnection</a></code> | <code>string</code> | [Write] odb:DeleteOdbPeeringConnection. |
 | <code><a href="#@cdk_utils/iam.odb.OdbActions.property.DeleteResourcePolicy">DeleteResourcePolicy</a></code> | <code>string</code> | [Write] odb:DeleteResourcePolicy. |
 | <code><a href="#@cdk_utils/iam.odb.OdbActions.property.DisassociateIamRoleFromResource">DisassociateIamRoleFromResource</a></code> | <code>string</code> | [Write] odb:DisassociateIamRoleFromResource. |
+| <code><a href="#@cdk_utils/iam.odb.OdbActions.property.DisassociateVirtualMachinesFromCloudVmCluster">DisassociateVirtualMachinesFromCloudVmCluster</a></code> | <code>string</code> | [Write] odb:DisassociateVirtualMachinesFromCloudVmCluster. |
 | <code><a href="#@cdk_utils/iam.odb.OdbActions.property.DisassociateVirtualMachinesFromExadbVmCluster">DisassociateVirtualMachinesFromExadbVmCluster</a></code> | <code>string</code> | [Write] odb:DisassociateVirtualMachinesFromExadbVmCluster. |
 | <code><a href="#@cdk_utils/iam.odb.OdbActions.property.FailoverAutonomousDatabase">FailoverAutonomousDatabase</a></code> | <code>string</code> | [Write] odb:FailoverAutonomousDatabase. |
 | <code><a href="#@cdk_utils/iam.odb.OdbActions.property.InitializeService">InitializeService</a></code> | <code>string</code> | [Write] odb:InitializeService. |
@@ -1598,7 +1600,10 @@ new odb.OdbActions()
 | <code><a href="#@cdk_utils/iam.odb.OdbActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] odb:UntagResource. |
 | <code><a href="#@cdk_utils/iam.odb.OdbActions.property.UpdateAutonomousDatabase">UpdateAutonomousDatabase</a></code> | <code>string</code> | [Write] odb:UpdateAutonomousDatabase. |
 | <code><a href="#@cdk_utils/iam.odb.OdbActions.property.UpdateAutonomousDatabaseBackup">UpdateAutonomousDatabaseBackup</a></code> | <code>string</code> | [Write] odb:UpdateAutonomousDatabaseBackup. |
+| <code><a href="#@cdk_utils/iam.odb.OdbActions.property.UpdateCloudAutonomousVmCluster">UpdateCloudAutonomousVmCluster</a></code> | <code>string</code> | [Write] odb:UpdateCloudAutonomousVmCluster. |
 | <code><a href="#@cdk_utils/iam.odb.OdbActions.property.UpdateCloudExadataInfrastructure">UpdateCloudExadataInfrastructure</a></code> | <code>string</code> | [Write] odb:UpdateCloudExadataInfrastructure. |
+| <code><a href="#@cdk_utils/iam.odb.OdbActions.property.UpdateCloudExadataInfrastructureStorageCapacity">UpdateCloudExadataInfrastructureStorageCapacity</a></code> | <code>string</code> | [Write] odb:UpdateCloudExadataInfrastructureStorageCapacity. |
+| <code><a href="#@cdk_utils/iam.odb.OdbActions.property.UpdateCloudVmCluster">UpdateCloudVmCluster</a></code> | <code>string</code> | [Write] odb:UpdateCloudVmCluster. |
 | <code><a href="#@cdk_utils/iam.odb.OdbActions.property.UpdateExadbVmCluster">UpdateExadbVmCluster</a></code> | <code>string</code> | [Write] odb:UpdateExadbVmCluster. |
 | <code><a href="#@cdk_utils/iam.odb.OdbActions.property.UpdateExascaleCloudExadataInfrastructure">UpdateExascaleCloudExadataInfrastructure</a></code> | <code>string</code> | [Write] odb:UpdateExascaleCloudExadataInfrastructure. |
 | <code><a href="#@cdk_utils/iam.odb.OdbActions.property.UpdateExascaleDbStorageVault">UpdateExascaleDbStorageVault</a></code> | <code>string</code> | [Write] odb:UpdateExascaleDbStorageVault. |
@@ -1870,6 +1875,18 @@ public readonly AssociateIamRoleToResource: string;
 - *Type:* string
 
 [Write] odb:AssociateIamRoleToResource.
+
+---
+
+##### `AssociateVirtualMachinesToCloudVmCluster`<sup>Required</sup> <a name="AssociateVirtualMachinesToCloudVmCluster" id="@cdk_utils/iam.odb.OdbActions.property.AssociateVirtualMachinesToCloudVmCluster"></a>
+
+```typescript
+public readonly AssociateVirtualMachinesToCloudVmCluster: string;
+```
+
+- *Type:* string
+
+[Write] odb:AssociateVirtualMachinesToCloudVmCluster.
 
 ---
 
@@ -2194,6 +2211,18 @@ public readonly DisassociateIamRoleFromResource: string;
 - *Type:* string
 
 [Write] odb:DisassociateIamRoleFromResource.
+
+---
+
+##### `DisassociateVirtualMachinesFromCloudVmCluster`<sup>Required</sup> <a name="DisassociateVirtualMachinesFromCloudVmCluster" id="@cdk_utils/iam.odb.OdbActions.property.DisassociateVirtualMachinesFromCloudVmCluster"></a>
+
+```typescript
+public readonly DisassociateVirtualMachinesFromCloudVmCluster: string;
+```
+
+- *Type:* string
+
+[Write] odb:DisassociateVirtualMachinesFromCloudVmCluster.
 
 ---
 
@@ -2677,6 +2706,18 @@ public readonly UpdateAutonomousDatabaseBackup: string;
 
 ---
 
+##### `UpdateCloudAutonomousVmCluster`<sup>Required</sup> <a name="UpdateCloudAutonomousVmCluster" id="@cdk_utils/iam.odb.OdbActions.property.UpdateCloudAutonomousVmCluster"></a>
+
+```typescript
+public readonly UpdateCloudAutonomousVmCluster: string;
+```
+
+- *Type:* string
+
+[Write] odb:UpdateCloudAutonomousVmCluster.
+
+---
+
 ##### `UpdateCloudExadataInfrastructure`<sup>Required</sup> <a name="UpdateCloudExadataInfrastructure" id="@cdk_utils/iam.odb.OdbActions.property.UpdateCloudExadataInfrastructure"></a>
 
 ```typescript
@@ -2686,6 +2727,30 @@ public readonly UpdateCloudExadataInfrastructure: string;
 - *Type:* string
 
 [Write] odb:UpdateCloudExadataInfrastructure.
+
+---
+
+##### `UpdateCloudExadataInfrastructureStorageCapacity`<sup>Required</sup> <a name="UpdateCloudExadataInfrastructureStorageCapacity" id="@cdk_utils/iam.odb.OdbActions.property.UpdateCloudExadataInfrastructureStorageCapacity"></a>
+
+```typescript
+public readonly UpdateCloudExadataInfrastructureStorageCapacity: string;
+```
+
+- *Type:* string
+
+[Write] odb:UpdateCloudExadataInfrastructureStorageCapacity.
+
+---
+
+##### `UpdateCloudVmCluster`<sup>Required</sup> <a name="UpdateCloudVmCluster" id="@cdk_utils/iam.odb.OdbActions.property.UpdateCloudVmCluster"></a>
+
+```typescript
+public readonly UpdateCloudVmCluster: string;
+```
+
+- *Type:* string
+
+[Write] odb:UpdateCloudVmCluster.
 
 ---
 
@@ -3078,6 +3143,7 @@ new odb.OdbOperations()
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.AcceptMarketplaceRegistration">AcceptMarketplaceRegistration</a></code> | <code>string[]</code> | IAM actions required for the AcceptMarketplaceRegistration API call. |
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.AssociateIamRoleToResource">AssociateIamRoleToResource</a></code> | <code>string[]</code> | IAM actions required for the AssociateIamRoleToResource API call. |
+| <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.AssociateVirtualMachinesToCloudVmCluster">AssociateVirtualMachinesToCloudVmCluster</a></code> | <code>string[]</code> | IAM actions required for the AssociateVirtualMachinesToCloudVmCluster API call. |
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.AssociateVirtualMachinesToExadbVmCluster">AssociateVirtualMachinesToExadbVmCluster</a></code> | <code>string[]</code> | IAM actions required for the AssociateVirtualMachinesToExadbVmCluster API call. |
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.CreateAutonomousDatabase">CreateAutonomousDatabase</a></code> | <code>string[]</code> | IAM actions required for the CreateAutonomousDatabase API call. |
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.CreateAutonomousDatabaseBackup">CreateAutonomousDatabaseBackup</a></code> | <code>string[]</code> | IAM actions required for the CreateAutonomousDatabaseBackup API call. |
@@ -3099,6 +3165,7 @@ new odb.OdbOperations()
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.DeleteOdbNetwork">DeleteOdbNetwork</a></code> | <code>string[]</code> | IAM actions required for the DeleteOdbNetwork API call. |
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.DeleteOdbPeeringConnection">DeleteOdbPeeringConnection</a></code> | <code>string[]</code> | IAM actions required for the DeleteOdbPeeringConnection API call. |
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.DisassociateIamRoleFromResource">DisassociateIamRoleFromResource</a></code> | <code>string[]</code> | IAM actions required for the DisassociateIamRoleFromResource API call. |
+| <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.DisassociateVirtualMachinesFromCloudVmCluster">DisassociateVirtualMachinesFromCloudVmCluster</a></code> | <code>string[]</code> | IAM actions required for the DisassociateVirtualMachinesFromCloudVmCluster API call. |
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.DisassociateVirtualMachinesFromExadbVmCluster">DisassociateVirtualMachinesFromExadbVmCluster</a></code> | <code>string[]</code> | IAM actions required for the DisassociateVirtualMachinesFromExadbVmCluster API call. |
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.FailoverAutonomousDatabase">FailoverAutonomousDatabase</a></code> | <code>string[]</code> | IAM actions required for the FailoverAutonomousDatabase API call. |
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.InitializeService">InitializeService</a></code> | <code>string[]</code> | IAM actions required for the InitializeService API call. |
@@ -3151,7 +3218,10 @@ new odb.OdbOperations()
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.UpdateAutonomousDatabase">UpdateAutonomousDatabase</a></code> | <code>string[]</code> | IAM actions required for the UpdateAutonomousDatabase API call. |
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.UpdateAutonomousDatabaseBackup">UpdateAutonomousDatabaseBackup</a></code> | <code>string[]</code> | IAM actions required for the UpdateAutonomousDatabaseBackup API call. |
+| <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.UpdateCloudAutonomousVmCluster">UpdateCloudAutonomousVmCluster</a></code> | <code>string[]</code> | IAM actions required for the UpdateCloudAutonomousVmCluster API call. |
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.UpdateCloudExadataInfrastructure">UpdateCloudExadataInfrastructure</a></code> | <code>string[]</code> | IAM actions required for the UpdateCloudExadataInfrastructure API call. |
+| <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.UpdateCloudExadataInfrastructureStorageCapacity">UpdateCloudExadataInfrastructureStorageCapacity</a></code> | <code>string[]</code> | IAM actions required for the UpdateCloudExadataInfrastructureStorageCapacity API call. |
+| <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.UpdateCloudVmCluster">UpdateCloudVmCluster</a></code> | <code>string[]</code> | IAM actions required for the UpdateCloudVmCluster API call. |
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.UpdateExadbVmCluster">UpdateExadbVmCluster</a></code> | <code>string[]</code> | IAM actions required for the UpdateExadbVmCluster API call. |
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.UpdateExascaleCloudExadataInfrastructure">UpdateExascaleCloudExadataInfrastructure</a></code> | <code>string[]</code> | IAM actions required for the UpdateExascaleCloudExadataInfrastructure API call. |
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.UpdateExascaleDbStorageVault">UpdateExascaleDbStorageVault</a></code> | <code>string[]</code> | IAM actions required for the UpdateExascaleDbStorageVault API call. |
@@ -3181,6 +3251,18 @@ public readonly AssociateIamRoleToResource: string[];
 - *Type:* string[]
 
 IAM actions required for the AssociateIamRoleToResource API call.
+
+---
+
+##### `AssociateVirtualMachinesToCloudVmCluster`<sup>Required</sup> <a name="AssociateVirtualMachinesToCloudVmCluster" id="@cdk_utils/iam.odb.OdbOperations.property.AssociateVirtualMachinesToCloudVmCluster"></a>
+
+```typescript
+public readonly AssociateVirtualMachinesToCloudVmCluster: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the AssociateVirtualMachinesToCloudVmCluster API call.
 
 ---
 
@@ -3433,6 +3515,18 @@ public readonly DisassociateIamRoleFromResource: string[];
 - *Type:* string[]
 
 IAM actions required for the DisassociateIamRoleFromResource API call.
+
+---
+
+##### `DisassociateVirtualMachinesFromCloudVmCluster`<sup>Required</sup> <a name="DisassociateVirtualMachinesFromCloudVmCluster" id="@cdk_utils/iam.odb.OdbOperations.property.DisassociateVirtualMachinesFromCloudVmCluster"></a>
+
+```typescript
+public readonly DisassociateVirtualMachinesFromCloudVmCluster: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DisassociateVirtualMachinesFromCloudVmCluster API call.
 
 ---
 
@@ -4060,6 +4154,18 @@ IAM actions required for the UpdateAutonomousDatabaseBackup API call.
 
 ---
 
+##### `UpdateCloudAutonomousVmCluster`<sup>Required</sup> <a name="UpdateCloudAutonomousVmCluster" id="@cdk_utils/iam.odb.OdbOperations.property.UpdateCloudAutonomousVmCluster"></a>
+
+```typescript
+public readonly UpdateCloudAutonomousVmCluster: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateCloudAutonomousVmCluster API call.
+
+---
+
 ##### `UpdateCloudExadataInfrastructure`<sup>Required</sup> <a name="UpdateCloudExadataInfrastructure" id="@cdk_utils/iam.odb.OdbOperations.property.UpdateCloudExadataInfrastructure"></a>
 
 ```typescript
@@ -4069,6 +4175,30 @@ public readonly UpdateCloudExadataInfrastructure: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateCloudExadataInfrastructure API call.
+
+---
+
+##### `UpdateCloudExadataInfrastructureStorageCapacity`<sup>Required</sup> <a name="UpdateCloudExadataInfrastructureStorageCapacity" id="@cdk_utils/iam.odb.OdbOperations.property.UpdateCloudExadataInfrastructureStorageCapacity"></a>
+
+```typescript
+public readonly UpdateCloudExadataInfrastructureStorageCapacity: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateCloudExadataInfrastructureStorageCapacity API call.
+
+---
+
+##### `UpdateCloudVmCluster`<sup>Required</sup> <a name="UpdateCloudVmCluster" id="@cdk_utils/iam.odb.OdbOperations.property.UpdateCloudVmCluster"></a>
+
+```typescript
+public readonly UpdateCloudVmCluster: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateCloudVmCluster API call.
 
 ---
 

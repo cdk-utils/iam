@@ -57,6 +57,9 @@ export class S3vectorsActions {
 	static readonly UntagResource = "s3vectors:UntagResource";
 	/** [Write] s3vectors:UpdateIndexMode */
 	static readonly UpdateIndexMode = "s3vectors:UpdateIndexMode";
+	/** [Write] s3vectors:UpdateMetadataConfiguration */
+	static readonly UpdateMetadataConfiguration =
+		"s3vectors:UpdateMetadataConfiguration";
 
 	/** All read-level actions. */
 	static readonly AllReadActions: string[] = [
@@ -76,6 +79,7 @@ export class S3vectorsActions {
 		S3vectorsActions.PutVectorBucketDefaultIndexMode,
 		S3vectorsActions.PutVectors,
 		S3vectorsActions.UpdateIndexMode,
+		S3vectorsActions.UpdateMetadataConfiguration,
 	];
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [
@@ -275,6 +279,8 @@ export class S3vectorsOperations {
 	static readonly UntagResource: string[] = [];
 	/** IAM actions required for the UpdateIndexMode API call. */
 	static readonly UpdateIndexMode: string[] = [];
+	/** IAM actions required for the UpdateMetadataConfiguration API call. */
+	static readonly UpdateMetadataConfiguration: string[] = [];
 }
 
 /**
@@ -389,6 +395,11 @@ export class S3vectorsConditions {
 	];
 	/** Condition keys applicable to the UpdateIndexMode action. */
 	static readonly UpdateIndexModeConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"s3vectors:VectorBucketTag/${TagKey}",
+	];
+	/** Condition keys applicable to the UpdateMetadataConfiguration action. */
+	static readonly UpdateMetadataConfigurationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"s3vectors:VectorBucketTag/${TagKey}",
 	];

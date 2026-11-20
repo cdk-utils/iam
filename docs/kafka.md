@@ -3,6 +3,180 @@
 
 ## Structs <a name="Structs" id="Structs"></a>
 
+### KafkaAssessmentArnComponents <a name="KafkaAssessmentArnComponents" id="@cdk_utils/iam.kafka.KafkaAssessmentArnComponents"></a>
+
+Parsed components of a assessment ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.kafka.KafkaAssessmentArnComponents.Initializer"></a>
+
+```typescript
+import { kafka } from '@cdk_utils/iam'
+
+const kafkaAssessmentArnComponents: kafka.KafkaAssessmentArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaAssessmentArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaAssessmentArnComponents.property.clusterUuid">clusterUuid</a></code> | <code>string</code> | The ClusterUuid component. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaAssessmentArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaAssessmentArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaAssessmentArnComponents.property.uuid">uuid</a></code> | <code>string</code> | The Uuid component. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.kafka.KafkaAssessmentArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `clusterUuid`<sup>Required</sup> <a name="clusterUuid" id="@cdk_utils/iam.kafka.KafkaAssessmentArnComponents.property.clusterUuid"></a>
+
+```typescript
+public readonly clusterUuid: string;
+```
+
+- *Type:* string
+
+The ClusterUuid component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.kafka.KafkaAssessmentArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.kafka.KafkaAssessmentArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+##### `uuid`<sup>Required</sup> <a name="uuid" id="@cdk_utils/iam.kafka.KafkaAssessmentArnComponents.property.uuid"></a>
+
+```typescript
+public readonly uuid: string;
+```
+
+- *Type:* string
+
+The Uuid component.
+
+---
+
+### KafkaAssessmentArnProps <a name="KafkaAssessmentArnProps" id="@cdk_utils/iam.kafka.KafkaAssessmentArnProps"></a>
+
+Properties for building a assessment ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.kafka.KafkaAssessmentArnProps.Initializer"></a>
+
+```typescript
+import { kafka } from '@cdk_utils/iam'
+
+const kafkaAssessmentArnProps: kafka.KafkaAssessmentArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaAssessmentArnProps.property.clusterUuid">clusterUuid</a></code> | <code>string</code> | The ClusterUuid component of the ARN. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaAssessmentArnProps.property.uuid">uuid</a></code> | <code>string</code> | The Uuid component of the ARN. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaAssessmentArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaAssessmentArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaAssessmentArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `clusterUuid`<sup>Required</sup> <a name="clusterUuid" id="@cdk_utils/iam.kafka.KafkaAssessmentArnProps.property.clusterUuid"></a>
+
+```typescript
+public readonly clusterUuid: string;
+```
+
+- *Type:* string
+
+The ClusterUuid component of the ARN.
+
+---
+
+##### `uuid`<sup>Required</sup> <a name="uuid" id="@cdk_utils/iam.kafka.KafkaAssessmentArnProps.property.uuid"></a>
+
+```typescript
+public readonly uuid: string;
+```
+
+- *Type:* string
+
+The Uuid component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.kafka.KafkaAssessmentArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.kafka.KafkaAssessmentArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.kafka.KafkaAssessmentArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### KafkaChannelArnComponents <a name="KafkaChannelArnComponents" id="@cdk_utils/iam.kafka.KafkaChannelArnComponents"></a>
 
 Parsed components of a channel ARN.
@@ -1151,6 +1325,206 @@ Defaults to "*".
 
 ---
 
+### KafkaTopicReassignmentArnComponents <a name="KafkaTopicReassignmentArnComponents" id="@cdk_utils/iam.kafka.KafkaTopicReassignmentArnComponents"></a>
+
+Parsed components of a topic-reassignment ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.kafka.KafkaTopicReassignmentArnComponents.Initializer"></a>
+
+```typescript
+import { kafka } from '@cdk_utils/iam'
+
+const kafkaTopicReassignmentArnComponents: kafka.KafkaTopicReassignmentArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaTopicReassignmentArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaTopicReassignmentArnComponents.property.clusterName">clusterName</a></code> | <code>string</code> | The ClusterName component. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaTopicReassignmentArnComponents.property.clusterUuid">clusterUuid</a></code> | <code>string</code> | The ClusterUuid component. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaTopicReassignmentArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaTopicReassignmentArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaTopicReassignmentArnComponents.property.uuid">uuid</a></code> | <code>string</code> | The Uuid component. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.kafka.KafkaTopicReassignmentArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `clusterName`<sup>Required</sup> <a name="clusterName" id="@cdk_utils/iam.kafka.KafkaTopicReassignmentArnComponents.property.clusterName"></a>
+
+```typescript
+public readonly clusterName: string;
+```
+
+- *Type:* string
+
+The ClusterName component.
+
+---
+
+##### `clusterUuid`<sup>Required</sup> <a name="clusterUuid" id="@cdk_utils/iam.kafka.KafkaTopicReassignmentArnComponents.property.clusterUuid"></a>
+
+```typescript
+public readonly clusterUuid: string;
+```
+
+- *Type:* string
+
+The ClusterUuid component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.kafka.KafkaTopicReassignmentArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.kafka.KafkaTopicReassignmentArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+##### `uuid`<sup>Required</sup> <a name="uuid" id="@cdk_utils/iam.kafka.KafkaTopicReassignmentArnComponents.property.uuid"></a>
+
+```typescript
+public readonly uuid: string;
+```
+
+- *Type:* string
+
+The Uuid component.
+
+---
+
+### KafkaTopicReassignmentArnProps <a name="KafkaTopicReassignmentArnProps" id="@cdk_utils/iam.kafka.KafkaTopicReassignmentArnProps"></a>
+
+Properties for building a topic-reassignment ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.kafka.KafkaTopicReassignmentArnProps.Initializer"></a>
+
+```typescript
+import { kafka } from '@cdk_utils/iam'
+
+const kafkaTopicReassignmentArnProps: kafka.KafkaTopicReassignmentArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaTopicReassignmentArnProps.property.clusterName">clusterName</a></code> | <code>string</code> | The ClusterName component of the ARN. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaTopicReassignmentArnProps.property.clusterUuid">clusterUuid</a></code> | <code>string</code> | The ClusterUuid component of the ARN. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaTopicReassignmentArnProps.property.uuid">uuid</a></code> | <code>string</code> | The Uuid component of the ARN. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaTopicReassignmentArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaTopicReassignmentArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaTopicReassignmentArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `clusterName`<sup>Required</sup> <a name="clusterName" id="@cdk_utils/iam.kafka.KafkaTopicReassignmentArnProps.property.clusterName"></a>
+
+```typescript
+public readonly clusterName: string;
+```
+
+- *Type:* string
+
+The ClusterName component of the ARN.
+
+---
+
+##### `clusterUuid`<sup>Required</sup> <a name="clusterUuid" id="@cdk_utils/iam.kafka.KafkaTopicReassignmentArnProps.property.clusterUuid"></a>
+
+```typescript
+public readonly clusterUuid: string;
+```
+
+- *Type:* string
+
+The ClusterUuid component of the ARN.
+
+---
+
+##### `uuid`<sup>Required</sup> <a name="uuid" id="@cdk_utils/iam.kafka.KafkaTopicReassignmentArnProps.property.uuid"></a>
+
+```typescript
+public readonly uuid: string;
+```
+
+- *Type:* string
+
+The Uuid component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.kafka.KafkaTopicReassignmentArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.kafka.KafkaTopicReassignmentArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.kafka.KafkaTopicReassignmentArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### KafkaTransactionalIdArnComponents <a name="KafkaTransactionalIdArnComponents" id="@cdk_utils/iam.kafka.KafkaTransactionalIdArnComponents"></a>
 
 Parsed components of a transactional-id ARN.
@@ -1613,6 +1987,7 @@ new kafka.KafkaActions()
 | <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.BatchAssociateScramSecret">BatchAssociateScramSecret</a></code> | <code>string</code> | [Write] kafka:BatchAssociateScramSecret. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.BatchDisassociateScramSecret">BatchDisassociateScramSecret</a></code> | <code>string</code> | [Write] kafka:BatchDisassociateScramSecret. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.CreateAssessment">CreateAssessment</a></code> | <code>string</code> | [Write] kafka:CreateAssessment. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.CreateChannel">CreateChannel</a></code> | <code>string</code> | [Write] kafka:CreateChannel. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.CreateCluster">CreateCluster</a></code> | <code>string</code> | [Write] kafka:CreateCluster. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.CreateClusterV2">CreateClusterV2</a></code> | <code>string</code> | [Write] kafka:CreateClusterV2. |
@@ -1620,6 +1995,7 @@ new kafka.KafkaActions()
 | <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.CreateReplicator">CreateReplicator</a></code> | <code>string</code> | [Write] kafka:CreateReplicator. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.CreateTopic">CreateTopic</a></code> | <code>string</code> | [Write] kafka:CreateTopic. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.CreateVpcConnection">CreateVpcConnection</a></code> | <code>string</code> | [Write] kafka:CreateVpcConnection. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.DeleteAssessment">DeleteAssessment</a></code> | <code>string</code> | [Write] kafka:DeleteAssessment. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.DeleteChannel">DeleteChannel</a></code> | <code>string</code> | [Write] kafka:DeleteChannel. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.DeleteCluster">DeleteCluster</a></code> | <code>string</code> | [Write] kafka:DeleteCluster. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.DeleteClusterPolicy">DeleteClusterPolicy</a></code> | <code>string</code> | [Write] kafka:DeleteClusterPolicy. |
@@ -1627,6 +2003,7 @@ new kafka.KafkaActions()
 | <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.DeleteReplicator">DeleteReplicator</a></code> | <code>string</code> | [Write] kafka:DeleteReplicator. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.DeleteTopic">DeleteTopic</a></code> | <code>string</code> | [Write] kafka:DeleteTopic. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.DeleteVpcConnection">DeleteVpcConnection</a></code> | <code>string</code> | [Write] kafka:DeleteVpcConnection. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.DescribeAssessment">DescribeAssessment</a></code> | <code>string</code> | [Read] kafka:DescribeAssessment. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.DescribeChannel">DescribeChannel</a></code> | <code>string</code> | [Read] kafka:DescribeChannel. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.DescribeCluster">DescribeCluster</a></code> | <code>string</code> | [Read] kafka:DescribeCluster. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.DescribeClusterOperation">DescribeClusterOperation</a></code> | <code>string</code> | [Read] kafka:DescribeClusterOperation. |
@@ -1637,7 +2014,10 @@ new kafka.KafkaActions()
 | <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.DescribeReplicator">DescribeReplicator</a></code> | <code>string</code> | [Read] kafka:DescribeReplicator. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.DescribeTopic">DescribeTopic</a></code> | <code>string</code> | [Read] kafka:DescribeTopic. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.DescribeTopicPartitions">DescribeTopicPartitions</a></code> | <code>string</code> | [Read] kafka:DescribeTopicPartitions. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.DescribeTopicReassignment">DescribeTopicReassignment</a></code> | <code>string</code> | [Read] kafka:DescribeTopicReassignment. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.DescribeVpcConnection">DescribeVpcConnection</a></code> | <code>string</code> | [Read] kafka:DescribeVpcConnection. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.ListAssessmentFindings">ListAssessmentFindings</a></code> | <code>string</code> | [List] kafka:ListAssessmentFindings. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.ListAssessments">ListAssessments</a></code> | <code>string</code> | [List] kafka:ListAssessments. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.ListChannels">ListChannels</a></code> | <code>string</code> | [List] kafka:ListChannels. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.ListClientVpcConnections">ListClientVpcConnections</a></code> | <code>string</code> | [List] kafka:ListClientVpcConnections. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.ListClusterOperations">ListClusterOperations</a></code> | <code>string</code> | [List] kafka:ListClusterOperations. |
@@ -1651,12 +2031,15 @@ new kafka.KafkaActions()
 | <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.ListReplicators">ListReplicators</a></code> | <code>string</code> | [List] kafka:ListReplicators. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.ListScramSecrets">ListScramSecrets</a></code> | <code>string</code> | [List] kafka:ListScramSecrets. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Read] kafka:ListTagsForResource. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.ListTopicReassignments">ListTopicReassignments</a></code> | <code>string</code> | [List] kafka:ListTopicReassignments. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.ListTopics">ListTopics</a></code> | <code>string</code> | [List] kafka:ListTopics. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.ListVpcConnections">ListVpcConnections</a></code> | <code>string</code> | [List] kafka:ListVpcConnections. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.PutClusterPolicy">PutClusterPolicy</a></code> | <code>string</code> | [Write] kafka:PutClusterPolicy. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.RebootBroker">RebootBroker</a></code> | <code>string</code> | [Write] kafka:RebootBroker. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.RejectClientVpcConnection">RejectClientVpcConnection</a></code> | <code>string</code> | [Write] kafka:RejectClientVpcConnection. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.StartTopicReassignment">StartTopicReassignment</a></code> | <code>string</code> | [Write] kafka:StartTopicReassignment. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.StopTopicReassignment">StopTopicReassignment</a></code> | <code>string</code> | [Write] kafka:StopTopicReassignment. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] kafka:TagResource. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] kafka:UntagResource. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaActions.property.UpdateBrokerCount">UpdateBrokerCount</a></code> | <code>string</code> | [Write] kafka:UpdateBrokerCount. |
@@ -1796,6 +2179,18 @@ public readonly BatchDisassociateScramSecret: string;
 
 ---
 
+##### `CreateAssessment`<sup>Required</sup> <a name="CreateAssessment" id="@cdk_utils/iam.kafka.KafkaActions.property.CreateAssessment"></a>
+
+```typescript
+public readonly CreateAssessment: string;
+```
+
+- *Type:* string
+
+[Write] kafka:CreateAssessment.
+
+---
+
 ##### `CreateChannel`<sup>Required</sup> <a name="CreateChannel" id="@cdk_utils/iam.kafka.KafkaActions.property.CreateChannel"></a>
 
 ```typescript
@@ -1880,6 +2275,18 @@ public readonly CreateVpcConnection: string;
 
 ---
 
+##### `DeleteAssessment`<sup>Required</sup> <a name="DeleteAssessment" id="@cdk_utils/iam.kafka.KafkaActions.property.DeleteAssessment"></a>
+
+```typescript
+public readonly DeleteAssessment: string;
+```
+
+- *Type:* string
+
+[Write] kafka:DeleteAssessment.
+
+---
+
 ##### `DeleteChannel`<sup>Required</sup> <a name="DeleteChannel" id="@cdk_utils/iam.kafka.KafkaActions.property.DeleteChannel"></a>
 
 ```typescript
@@ -1961,6 +2368,18 @@ public readonly DeleteVpcConnection: string;
 - *Type:* string
 
 [Write] kafka:DeleteVpcConnection.
+
+---
+
+##### `DescribeAssessment`<sup>Required</sup> <a name="DescribeAssessment" id="@cdk_utils/iam.kafka.KafkaActions.property.DescribeAssessment"></a>
+
+```typescript
+public readonly DescribeAssessment: string;
+```
+
+- *Type:* string
+
+[Read] kafka:DescribeAssessment.
 
 ---
 
@@ -2084,6 +2503,18 @@ public readonly DescribeTopicPartitions: string;
 
 ---
 
+##### `DescribeTopicReassignment`<sup>Required</sup> <a name="DescribeTopicReassignment" id="@cdk_utils/iam.kafka.KafkaActions.property.DescribeTopicReassignment"></a>
+
+```typescript
+public readonly DescribeTopicReassignment: string;
+```
+
+- *Type:* string
+
+[Read] kafka:DescribeTopicReassignment.
+
+---
+
 ##### `DescribeVpcConnection`<sup>Required</sup> <a name="DescribeVpcConnection" id="@cdk_utils/iam.kafka.KafkaActions.property.DescribeVpcConnection"></a>
 
 ```typescript
@@ -2093,6 +2524,30 @@ public readonly DescribeVpcConnection: string;
 - *Type:* string
 
 [Read] kafka:DescribeVpcConnection.
+
+---
+
+##### `ListAssessmentFindings`<sup>Required</sup> <a name="ListAssessmentFindings" id="@cdk_utils/iam.kafka.KafkaActions.property.ListAssessmentFindings"></a>
+
+```typescript
+public readonly ListAssessmentFindings: string;
+```
+
+- *Type:* string
+
+[List] kafka:ListAssessmentFindings.
+
+---
+
+##### `ListAssessments`<sup>Required</sup> <a name="ListAssessments" id="@cdk_utils/iam.kafka.KafkaActions.property.ListAssessments"></a>
+
+```typescript
+public readonly ListAssessments: string;
+```
+
+- *Type:* string
+
+[List] kafka:ListAssessments.
 
 ---
 
@@ -2252,6 +2707,18 @@ public readonly ListTagsForResource: string;
 
 ---
 
+##### `ListTopicReassignments`<sup>Required</sup> <a name="ListTopicReassignments" id="@cdk_utils/iam.kafka.KafkaActions.property.ListTopicReassignments"></a>
+
+```typescript
+public readonly ListTopicReassignments: string;
+```
+
+- *Type:* string
+
+[List] kafka:ListTopicReassignments.
+
+---
+
 ##### `ListTopics`<sup>Required</sup> <a name="ListTopics" id="@cdk_utils/iam.kafka.KafkaActions.property.ListTopics"></a>
 
 ```typescript
@@ -2321,6 +2788,30 @@ public readonly SERVICE_PREFIX: string;
 - *Type:* string
 
 The IAM service prefix.
+
+---
+
+##### `StartTopicReassignment`<sup>Required</sup> <a name="StartTopicReassignment" id="@cdk_utils/iam.kafka.KafkaActions.property.StartTopicReassignment"></a>
+
+```typescript
+public readonly StartTopicReassignment: string;
+```
+
+- *Type:* string
+
+[Write] kafka:StartTopicReassignment.
+
+---
+
+##### `StopTopicReassignment`<sup>Required</sup> <a name="StopTopicReassignment" id="@cdk_utils/iam.kafka.KafkaActions.property.StopTopicReassignment"></a>
+
+```typescript
+public readonly StopTopicReassignment: string;
+```
+
+- *Type:* string
+
+[Write] kafka:StopTopicReassignment.
 
 ---
 
@@ -2617,6 +3108,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.kafka.KafkaConditions.property.AWS_REQUEST_TAG">AWS_REQUEST_TAG</a></code> | <code>string</code> | Condition key: aws:RequestTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaConditions.property.AWS_RESOURCE_TAG">AWS_RESOURCE_TAG</a></code> | <code>string</code> | Condition key: aws:ResourceTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaConditions.property.AWS_TAG_KEYS">AWS_TAG_KEYS</a></code> | <code>string</code> | Condition key: aws:TagKeys (ArrayOfString). |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaConditions.property.CreateAssessmentConditionKeys">CreateAssessmentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateAssessment action. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaConditions.property.CreateChannelConditionKeys">CreateChannelConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateChannel action. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaConditions.property.CreateClusterConditionKeys">CreateClusterConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateCluster action. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaConditions.property.CreateClusterV2ConditionKeys">CreateClusterV2ConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateClusterV2 action. |
@@ -2662,6 +3154,18 @@ public readonly AWS_TAG_KEYS: string;
 - *Type:* string
 
 Condition key: aws:TagKeys (ArrayOfString).
+
+---
+
+##### `CreateAssessmentConditionKeys`<sup>Required</sup> <a name="CreateAssessmentConditionKeys" id="@cdk_utils/iam.kafka.KafkaConditions.property.CreateAssessmentConditionKeys"></a>
+
+```typescript
+public readonly CreateAssessmentConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateAssessment action.
 
 ---
 
@@ -2799,6 +3303,7 @@ new kafka.KafkaOperations()
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.BatchAssociateScramSecret">BatchAssociateScramSecret</a></code> | <code>string[]</code> | IAM actions required for the BatchAssociateScramSecret API call. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.BatchDisassociateScramSecret">BatchDisassociateScramSecret</a></code> | <code>string[]</code> | IAM actions required for the BatchDisassociateScramSecret API call. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.CreateAssessment">CreateAssessment</a></code> | <code>string[]</code> | IAM actions required for the CreateAssessment API call. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.CreateChannel">CreateChannel</a></code> | <code>string[]</code> | IAM actions required for the CreateChannel API call. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.CreateCluster">CreateCluster</a></code> | <code>string[]</code> | IAM actions required for the CreateCluster API call. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.CreateClusterV2">CreateClusterV2</a></code> | <code>string[]</code> | IAM actions required for the CreateClusterV2 API call. |
@@ -2806,6 +3311,7 @@ new kafka.KafkaOperations()
 | <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.CreateReplicator">CreateReplicator</a></code> | <code>string[]</code> | IAM actions required for the CreateReplicator API call. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.CreateTopic">CreateTopic</a></code> | <code>string[]</code> | IAM actions required for the CreateTopic API call. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.CreateVpcConnection">CreateVpcConnection</a></code> | <code>string[]</code> | IAM actions required for the CreateVpcConnection API call. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.DeleteAssessment">DeleteAssessment</a></code> | <code>string[]</code> | IAM actions required for the DeleteAssessment API call. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.DeleteChannel">DeleteChannel</a></code> | <code>string[]</code> | IAM actions required for the DeleteChannel API call. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.DeleteCluster">DeleteCluster</a></code> | <code>string[]</code> | IAM actions required for the DeleteCluster API call. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.DeleteClusterPolicy">DeleteClusterPolicy</a></code> | <code>string[]</code> | IAM actions required for the DeleteClusterPolicy API call. |
@@ -2813,6 +3319,7 @@ new kafka.KafkaOperations()
 | <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.DeleteReplicator">DeleteReplicator</a></code> | <code>string[]</code> | IAM actions required for the DeleteReplicator API call. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.DeleteTopic">DeleteTopic</a></code> | <code>string[]</code> | IAM actions required for the DeleteTopic API call. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.DeleteVpcConnection">DeleteVpcConnection</a></code> | <code>string[]</code> | IAM actions required for the DeleteVpcConnection API call. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.DescribeAssessment">DescribeAssessment</a></code> | <code>string[]</code> | IAM actions required for the DescribeAssessment API call. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.DescribeChannel">DescribeChannel</a></code> | <code>string[]</code> | IAM actions required for the DescribeChannel API call. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.DescribeCluster">DescribeCluster</a></code> | <code>string[]</code> | IAM actions required for the DescribeCluster API call. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.DescribeClusterOperation">DescribeClusterOperation</a></code> | <code>string[]</code> | IAM actions required for the DescribeClusterOperation API call. |
@@ -2823,7 +3330,10 @@ new kafka.KafkaOperations()
 | <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.DescribeReplicator">DescribeReplicator</a></code> | <code>string[]</code> | IAM actions required for the DescribeReplicator API call. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.DescribeTopic">DescribeTopic</a></code> | <code>string[]</code> | IAM actions required for the DescribeTopic API call. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.DescribeTopicPartitions">DescribeTopicPartitions</a></code> | <code>string[]</code> | IAM actions required for the DescribeTopicPartitions API call. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.DescribeTopicReassignment">DescribeTopicReassignment</a></code> | <code>string[]</code> | IAM actions required for the DescribeTopicReassignment API call. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.DescribeVpcConnection">DescribeVpcConnection</a></code> | <code>string[]</code> | IAM actions required for the DescribeVpcConnection API call. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.ListAssessmentFindings">ListAssessmentFindings</a></code> | <code>string[]</code> | IAM actions required for the ListAssessmentFindings API call. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.ListAssessments">ListAssessments</a></code> | <code>string[]</code> | IAM actions required for the ListAssessments API call. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.ListChannels">ListChannels</a></code> | <code>string[]</code> | IAM actions required for the ListChannels API call. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.ListClientVpcConnections">ListClientVpcConnections</a></code> | <code>string[]</code> | IAM actions required for the ListClientVpcConnections API call. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.ListClusterOperations">ListClusterOperations</a></code> | <code>string[]</code> | IAM actions required for the ListClusterOperations API call. |
@@ -2837,6 +3347,7 @@ new kafka.KafkaOperations()
 | <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.ListReplicators">ListReplicators</a></code> | <code>string[]</code> | IAM actions required for the ListReplicators API call. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.ListScramSecrets">ListScramSecrets</a></code> | <code>string[]</code> | IAM actions required for the ListScramSecrets API call. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.ListTopicReassignments">ListTopicReassignments</a></code> | <code>string[]</code> | IAM actions required for the ListTopicReassignments API call. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.ListTopics">ListTopics</a></code> | <code>string[]</code> | IAM actions required for the ListTopics API call. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.ListVpcConnections">ListVpcConnections</a></code> | <code>string[]</code> | IAM actions required for the ListVpcConnections API call. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.opGetBootstrapBrokers">opGetBootstrapBrokers</a></code> | <code>string[]</code> | IAM actions required for the GetBootstrapBrokers API call. |
@@ -2845,6 +3356,8 @@ new kafka.KafkaOperations()
 | <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.PutClusterPolicy">PutClusterPolicy</a></code> | <code>string[]</code> | IAM actions required for the PutClusterPolicy API call. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.RebootBroker">RebootBroker</a></code> | <code>string[]</code> | IAM actions required for the RebootBroker API call. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.RejectClientVpcConnection">RejectClientVpcConnection</a></code> | <code>string[]</code> | IAM actions required for the RejectClientVpcConnection API call. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.StartTopicReassignment">StartTopicReassignment</a></code> | <code>string[]</code> | IAM actions required for the StartTopicReassignment API call. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.StopTopicReassignment">StopTopicReassignment</a></code> | <code>string[]</code> | IAM actions required for the StopTopicReassignment API call. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaOperations.property.UpdateBrokerCount">UpdateBrokerCount</a></code> | <code>string[]</code> | IAM actions required for the UpdateBrokerCount API call. |
@@ -2885,6 +3398,18 @@ public readonly BatchDisassociateScramSecret: string[];
 - *Type:* string[]
 
 IAM actions required for the BatchDisassociateScramSecret API call.
+
+---
+
+##### `CreateAssessment`<sup>Required</sup> <a name="CreateAssessment" id="@cdk_utils/iam.kafka.KafkaOperations.property.CreateAssessment"></a>
+
+```typescript
+public readonly CreateAssessment: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateAssessment API call.
 
 ---
 
@@ -2972,6 +3497,18 @@ IAM actions required for the CreateVpcConnection API call.
 
 ---
 
+##### `DeleteAssessment`<sup>Required</sup> <a name="DeleteAssessment" id="@cdk_utils/iam.kafka.KafkaOperations.property.DeleteAssessment"></a>
+
+```typescript
+public readonly DeleteAssessment: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteAssessment API call.
+
+---
+
 ##### `DeleteChannel`<sup>Required</sup> <a name="DeleteChannel" id="@cdk_utils/iam.kafka.KafkaOperations.property.DeleteChannel"></a>
 
 ```typescript
@@ -3053,6 +3590,18 @@ public readonly DeleteVpcConnection: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteVpcConnection API call.
+
+---
+
+##### `DescribeAssessment`<sup>Required</sup> <a name="DescribeAssessment" id="@cdk_utils/iam.kafka.KafkaOperations.property.DescribeAssessment"></a>
+
+```typescript
+public readonly DescribeAssessment: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeAssessment API call.
 
 ---
 
@@ -3176,6 +3725,18 @@ IAM actions required for the DescribeTopicPartitions API call.
 
 ---
 
+##### `DescribeTopicReassignment`<sup>Required</sup> <a name="DescribeTopicReassignment" id="@cdk_utils/iam.kafka.KafkaOperations.property.DescribeTopicReassignment"></a>
+
+```typescript
+public readonly DescribeTopicReassignment: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeTopicReassignment API call.
+
+---
+
 ##### `DescribeVpcConnection`<sup>Required</sup> <a name="DescribeVpcConnection" id="@cdk_utils/iam.kafka.KafkaOperations.property.DescribeVpcConnection"></a>
 
 ```typescript
@@ -3185,6 +3746,30 @@ public readonly DescribeVpcConnection: string[];
 - *Type:* string[]
 
 IAM actions required for the DescribeVpcConnection API call.
+
+---
+
+##### `ListAssessmentFindings`<sup>Required</sup> <a name="ListAssessmentFindings" id="@cdk_utils/iam.kafka.KafkaOperations.property.ListAssessmentFindings"></a>
+
+```typescript
+public readonly ListAssessmentFindings: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListAssessmentFindings API call.
+
+---
+
+##### `ListAssessments`<sup>Required</sup> <a name="ListAssessments" id="@cdk_utils/iam.kafka.KafkaOperations.property.ListAssessments"></a>
+
+```typescript
+public readonly ListAssessments: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListAssessments API call.
 
 ---
 
@@ -3344,6 +3929,18 @@ IAM actions required for the ListTagsForResource API call.
 
 ---
 
+##### `ListTopicReassignments`<sup>Required</sup> <a name="ListTopicReassignments" id="@cdk_utils/iam.kafka.KafkaOperations.property.ListTopicReassignments"></a>
+
+```typescript
+public readonly ListTopicReassignments: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListTopicReassignments API call.
+
+---
+
 ##### `ListTopics`<sup>Required</sup> <a name="ListTopics" id="@cdk_utils/iam.kafka.KafkaOperations.property.ListTopics"></a>
 
 ```typescript
@@ -3437,6 +4034,30 @@ public readonly RejectClientVpcConnection: string[];
 - *Type:* string[]
 
 IAM actions required for the RejectClientVpcConnection API call.
+
+---
+
+##### `StartTopicReassignment`<sup>Required</sup> <a name="StartTopicReassignment" id="@cdk_utils/iam.kafka.KafkaOperations.property.StartTopicReassignment"></a>
+
+```typescript
+public readonly StartTopicReassignment: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StartTopicReassignment API call.
+
+---
+
+##### `StopTopicReassignment`<sup>Required</sup> <a name="StopTopicReassignment" id="@cdk_utils/iam.kafka.KafkaOperations.property.StopTopicReassignment"></a>
+
+```typescript
+public readonly StopTopicReassignment: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StopTopicReassignment API call.
 
 ---
 
@@ -3654,30 +4275,52 @@ new kafka.KafkaResources()
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaResources.assessment">assessment</a></code> | Builds an ARN for the assessment resource. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaResources.channel">channel</a></code> | Builds an ARN for the channel resource. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaResources.cluster">cluster</a></code> | Builds an ARN for the cluster resource. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaResources.configuration">configuration</a></code> | Builds an ARN for the configuration resource. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaResources.group">group</a></code> | Builds an ARN for the group resource. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaResources.isValidAssessmentArn">isValidAssessmentArn</a></code> | Validates whether a string is a valid ARN for the assessment resource. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaResources.isValidChannelArn">isValidChannelArn</a></code> | Validates whether a string is a valid ARN for the channel resource. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaResources.isValidClusterArn">isValidClusterArn</a></code> | Validates whether a string is a valid ARN for the cluster resource. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaResources.isValidConfigurationArn">isValidConfigurationArn</a></code> | Validates whether a string is a valid ARN for the configuration resource. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaResources.isValidGroupArn">isValidGroupArn</a></code> | Validates whether a string is a valid ARN for the group resource. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaResources.isValidReplicatorArn">isValidReplicatorArn</a></code> | Validates whether a string is a valid ARN for the replicator resource. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaResources.isValidTopicArn">isValidTopicArn</a></code> | Validates whether a string is a valid ARN for the topic resource. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaResources.isValidTopicReassignmentArn">isValidTopicReassignmentArn</a></code> | Validates whether a string is a valid ARN for the topic-reassignment resource. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaResources.isValidTransactionalIdArn">isValidTransactionalIdArn</a></code> | Validates whether a string is a valid ARN for the transactional-id resource. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaResources.isValidVPCConnectionArn">isValidVPCConnectionArn</a></code> | Validates whether a string is a valid ARN for the vpc-connection resource. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaResources.parseAssessmentArn">parseAssessmentArn</a></code> | Parses a assessment ARN into its components. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaResources.parseChannelArn">parseChannelArn</a></code> | Parses a channel ARN into its components. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaResources.parseClusterArn">parseClusterArn</a></code> | Parses a cluster ARN into its components. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaResources.parseConfigurationArn">parseConfigurationArn</a></code> | Parses a configuration ARN into its components. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaResources.parseGroupArn">parseGroupArn</a></code> | Parses a group ARN into its components. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaResources.parseReplicatorArn">parseReplicatorArn</a></code> | Parses a replicator ARN into its components. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaResources.parseTopicArn">parseTopicArn</a></code> | Parses a topic ARN into its components. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaResources.parseTopicReassignmentArn">parseTopicReassignmentArn</a></code> | Parses a topic-reassignment ARN into its components. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaResources.parseTransactionalIdArn">parseTransactionalIdArn</a></code> | Parses a transactional-id ARN into its components. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaResources.parseVPCConnectionArn">parseVPCConnectionArn</a></code> | Parses a vpc-connection ARN into its components. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaResources.replicator">replicator</a></code> | Builds an ARN for the replicator resource. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaResources.topic">topic</a></code> | Builds an ARN for the topic resource. |
+| <code><a href="#@cdk_utils/iam.kafka.KafkaResources.topicReassignment">topicReassignment</a></code> | Builds an ARN for the topic-reassignment resource. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaResources.transactionalId">transactionalId</a></code> | Builds an ARN for the transactional-id resource. |
 | <code><a href="#@cdk_utils/iam.kafka.KafkaResources.vpcConnection">vpcConnection</a></code> | Builds an ARN for the vpc-connection resource. |
+
+---
+
+##### `assessment` <a name="assessment" id="@cdk_utils/iam.kafka.KafkaResources.assessment"></a>
+
+```typescript
+import { kafka } from '@cdk_utils/iam'
+
+kafka.KafkaResources.assessment(props: KafkaAssessmentArnProps)
+```
+
+Builds an ARN for the assessment resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.kafka.KafkaResources.assessment.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.kafka.KafkaAssessmentArnProps">KafkaAssessmentArnProps</a>
 
 ---
 
@@ -3742,6 +4385,22 @@ Builds an ARN for the group resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.kafka.KafkaResources.group.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.kafka.KafkaGroupArnProps">KafkaGroupArnProps</a>
+
+---
+
+##### `isValidAssessmentArn` <a name="isValidAssessmentArn" id="@cdk_utils/iam.kafka.KafkaResources.isValidAssessmentArn"></a>
+
+```typescript
+import { kafka } from '@cdk_utils/iam'
+
+kafka.KafkaResources.isValidAssessmentArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the assessment resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.kafka.KafkaResources.isValidAssessmentArn.parameter.arn"></a>
+
+- *Type:* string
 
 ---
 
@@ -3841,6 +4500,22 @@ Validates whether a string is a valid ARN for the topic resource.
 
 ---
 
+##### `isValidTopicReassignmentArn` <a name="isValidTopicReassignmentArn" id="@cdk_utils/iam.kafka.KafkaResources.isValidTopicReassignmentArn"></a>
+
+```typescript
+import { kafka } from '@cdk_utils/iam'
+
+kafka.KafkaResources.isValidTopicReassignmentArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the topic-reassignment resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.kafka.KafkaResources.isValidTopicReassignmentArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `isValidTransactionalIdArn` <a name="isValidTransactionalIdArn" id="@cdk_utils/iam.kafka.KafkaResources.isValidTransactionalIdArn"></a>
 
 ```typescript
@@ -3868,6 +4543,22 @@ kafka.KafkaResources.isValidVPCConnectionArn(arn: string)
 Validates whether a string is a valid ARN for the vpc-connection resource.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.kafka.KafkaResources.isValidVPCConnectionArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseAssessmentArn` <a name="parseAssessmentArn" id="@cdk_utils/iam.kafka.KafkaResources.parseAssessmentArn"></a>
+
+```typescript
+import { kafka } from '@cdk_utils/iam'
+
+kafka.KafkaResources.parseAssessmentArn(arn: string)
+```
+
+Parses a assessment ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.kafka.KafkaResources.parseAssessmentArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -3969,6 +4660,22 @@ Parses a topic ARN into its components.
 
 ---
 
+##### `parseTopicReassignmentArn` <a name="parseTopicReassignmentArn" id="@cdk_utils/iam.kafka.KafkaResources.parseTopicReassignmentArn"></a>
+
+```typescript
+import { kafka } from '@cdk_utils/iam'
+
+kafka.KafkaResources.parseTopicReassignmentArn(arn: string)
+```
+
+Parses a topic-reassignment ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.kafka.KafkaResources.parseTopicReassignmentArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `parseTransactionalIdArn` <a name="parseTransactionalIdArn" id="@cdk_utils/iam.kafka.KafkaResources.parseTransactionalIdArn"></a>
 
 ```typescript
@@ -4030,6 +4737,22 @@ Builds an ARN for the topic resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.kafka.KafkaResources.topic.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.kafka.KafkaTopicArnProps">KafkaTopicArnProps</a>
+
+---
+
+##### `topicReassignment` <a name="topicReassignment" id="@cdk_utils/iam.kafka.KafkaResources.topicReassignment"></a>
+
+```typescript
+import { kafka } from '@cdk_utils/iam'
+
+kafka.KafkaResources.topicReassignment(props: KafkaTopicReassignmentArnProps)
+```
+
+Builds an ARN for the topic-reassignment resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.kafka.KafkaResources.topicReassignment.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.kafka.KafkaTopicReassignmentArnProps">KafkaTopicReassignmentArnProps</a>
 
 ---
 

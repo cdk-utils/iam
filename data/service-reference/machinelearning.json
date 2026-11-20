@@ -476,7 +476,7 @@
       },
       "Resources": [
         {
-          "Name": "datasource"
+          "Name": "evaluation"
         }
       ],
       "SupportedBy": {

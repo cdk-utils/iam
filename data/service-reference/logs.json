@@ -1486,8 +1486,8 @@
         }
       ],
       "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -4313,6 +4313,15 @@
       "Name": "PutIntegration",
       "AuthorizedActions": [
         {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "directquery.opensearchservice.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
           "Name": "PutIntegration",
           "Service": "logs"
         }
@@ -4518,6 +4527,15 @@
         {
           "Name": "FilterLogEvents",
           "Service": "logs"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "logs.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
         },
         {
           "Name": "StartQuery",

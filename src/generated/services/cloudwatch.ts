@@ -41,6 +41,8 @@ export class CloudWatchActions {
 		"cloudwatch:CreateIngestionEndpoint";
 	/** [Write] cloudwatch:CreateIntegration */
 	static readonly CreateIntegration = "cloudwatch:CreateIntegration";
+	/** [Write] cloudwatch:CreateOmniAgentAsset */
+	static readonly CreateOmniAgentAsset = "cloudwatch:CreateOmniAgentAsset";
 	/** [Write] cloudwatch:CreateOmniDashboard */
 	static readonly CreateOmniDashboard = "cloudwatch:CreateOmniDashboard";
 	/** [Write] cloudwatch:CreateOmniThread */
@@ -87,8 +89,13 @@ export class CloudWatchActions {
 	static readonly DeleteInsightRules = "cloudwatch:DeleteInsightRules";
 	/** [Write] cloudwatch:DeleteIntegration */
 	static readonly DeleteIntegration = "cloudwatch:DeleteIntegration";
+	/** [Write] cloudwatch:DeleteMetricDataQueryDefinition */
+	static readonly DeleteMetricDataQueryDefinition =
+		"cloudwatch:DeleteMetricDataQueryDefinition";
 	/** [Write] cloudwatch:DeleteMetricStream */
 	static readonly DeleteMetricStream = "cloudwatch:DeleteMetricStream";
+	/** [Write] cloudwatch:DeleteOmniAgentAsset */
+	static readonly DeleteOmniAgentAsset = "cloudwatch:DeleteOmniAgentAsset";
 	/** [Write] cloudwatch:DeleteOmniDashboard */
 	static readonly DeleteOmniDashboard = "cloudwatch:DeleteOmniDashboard";
 	/** [Write] cloudwatch:DeleteOmniThread */
@@ -117,6 +124,8 @@ export class CloudWatchActions {
 		"cloudwatch:DescribeAnomalyDetectors";
 	/** [Read] cloudwatch:DescribeInsightRules */
 	static readonly DescribeInsightRules = "cloudwatch:DescribeInsightRules";
+	/** [Read] cloudwatch:DetectGroupOutliers */
+	static readonly DetectGroupOutliers = "cloudwatch:DetectGroupOutliers";
 	/** [Write] cloudwatch:DisableAlarmActions */
 	static readonly DisableAlarmActions = "cloudwatch:DisableAlarmActions";
 	/** [Write] cloudwatch:DisableInsightRules */
@@ -170,6 +179,9 @@ export class CloudWatchActions {
 		"cloudwatch:GetIntelligenceConfiguration";
 	/** [Read] cloudwatch:GetMetricData */
 	static readonly actionGetMetricData = "cloudwatch:GetMetricData";
+	/** [Read] cloudwatch:GetMetricDataQueryDefinition */
+	static readonly actionGetMetricDataQueryDefinition =
+		"cloudwatch:GetMetricDataQueryDefinition";
 	/** [Read] cloudwatch:GetMetricStatistics */
 	static readonly actionGetMetricStatistics = "cloudwatch:GetMetricStatistics";
 	/** [Read] cloudwatch:GetMetricStream */
@@ -179,6 +191,8 @@ export class CloudWatchActions {
 		"cloudwatch:GetMetricWidgetImage";
 	/** [Read] cloudwatch:GetOTelEnrichment */
 	static readonly actionGetOTelEnrichment = "cloudwatch:GetOTelEnrichment";
+	/** [Read] cloudwatch:GetOmniAgentAsset */
+	static readonly actionGetOmniAgentAsset = "cloudwatch:GetOmniAgentAsset";
 	/** [Read] cloudwatch:GetOmniDashboard */
 	static readonly actionGetOmniDashboard = "cloudwatch:GetOmniDashboard";
 	/** [Read] cloudwatch:GetOmniThread */
@@ -206,6 +220,8 @@ export class CloudWatchActions {
 	/** [Read] cloudwatch:GetSpaceCredentialsForOrganization */
 	static readonly actionGetSpaceCredentialsForOrganization =
 		"cloudwatch:GetSpaceCredentialsForOrganization";
+	/** [Read] cloudwatch:GetSpaceDataAccess */
+	static readonly actionGetSpaceDataAccess = "cloudwatch:GetSpaceDataAccess";
 	/** [Read] cloudwatch:GetTelemetryQueryResults */
 	static readonly actionGetTelemetryQueryResults =
 		"cloudwatch:GetTelemetryQueryResults";
@@ -246,10 +262,15 @@ export class CloudWatchActions {
 	/** [Read] cloudwatch:ListManagedInsightRules */
 	static readonly ListManagedInsightRules =
 		"cloudwatch:ListManagedInsightRules";
+	/** [List] cloudwatch:ListMetricDataQueryDefinitions */
+	static readonly ListMetricDataQueryDefinitions =
+		"cloudwatch:ListMetricDataQueryDefinitions";
 	/** [List] cloudwatch:ListMetricStreams */
 	static readonly ListMetricStreams = "cloudwatch:ListMetricStreams";
 	/** [List] cloudwatch:ListMetrics */
 	static readonly ListMetrics = "cloudwatch:ListMetrics";
+	/** [List] cloudwatch:ListOmniAgentAssets */
+	static readonly ListOmniAgentAssets = "cloudwatch:ListOmniAgentAssets";
 	/** [List] cloudwatch:ListOmniDashboards */
 	static readonly ListOmniDashboards = "cloudwatch:ListOmniDashboards";
 	/** [List] cloudwatch:ListOmniThreads */
@@ -296,6 +317,9 @@ export class CloudWatchActions {
 	static readonly PutMetricAlarm = "cloudwatch:PutMetricAlarm";
 	/** [Write] cloudwatch:PutMetricData */
 	static readonly PutMetricData = "cloudwatch:PutMetricData";
+	/** [Write] cloudwatch:PutMetricDataQueryDefinition */
+	static readonly PutMetricDataQueryDefinition =
+		"cloudwatch:PutMetricDataQueryDefinition";
 	/** [Write] cloudwatch:PutMetricStream */
 	static readonly PutMetricStream = "cloudwatch:PutMetricStream";
 	/** [Write] cloudwatch:PutPipelineRule */
@@ -354,6 +378,8 @@ export class CloudWatchActions {
 	static readonly UpdateIntegration = "cloudwatch:UpdateIntegration";
 	/** [Write] cloudwatch:UpdateOTelEnrichment */
 	static readonly UpdateOTelEnrichment = "cloudwatch:UpdateOTelEnrichment";
+	/** [Write] cloudwatch:UpdateOmniAgentAsset */
+	static readonly UpdateOmniAgentAsset = "cloudwatch:UpdateOmniAgentAsset";
 	/** [Write] cloudwatch:UpdateOmniDashboard */
 	static readonly UpdateOmniDashboard = "cloudwatch:UpdateOmniDashboard";
 	/** [Write] cloudwatch:UpdateOmniThread */
@@ -380,6 +406,7 @@ export class CloudWatchActions {
 		CloudWatchActions.DescribeAlarmsForMetric,
 		CloudWatchActions.DescribeAnomalyDetectors,
 		CloudWatchActions.DescribeInsightRules,
+		CloudWatchActions.DetectGroupOutliers,
 		CloudWatchActions.GenerateQuery,
 		CloudWatchActions.GenerateQueryResultsSummary,
 		CloudWatchActions.actionGetAccessGrant,
@@ -398,10 +425,12 @@ export class CloudWatchActions {
 		CloudWatchActions.actionGetIntegration,
 		CloudWatchActions.actionGetIntelligenceConfiguration,
 		CloudWatchActions.actionGetMetricData,
+		CloudWatchActions.actionGetMetricDataQueryDefinition,
 		CloudWatchActions.actionGetMetricStatistics,
 		CloudWatchActions.actionGetMetricStream,
 		CloudWatchActions.actionGetMetricWidgetImage,
 		CloudWatchActions.actionGetOTelEnrichment,
+		CloudWatchActions.actionGetOmniAgentAsset,
 		CloudWatchActions.actionGetOmniDashboard,
 		CloudWatchActions.actionGetOmniThread,
 		CloudWatchActions.actionGetPreferences,
@@ -414,6 +443,7 @@ export class CloudWatchActions {
 		CloudWatchActions.actionGetSpace,
 		CloudWatchActions.actionGetSpaceCredentials,
 		CloudWatchActions.actionGetSpaceCredentialsForOrganization,
+		CloudWatchActions.actionGetSpaceDataAccess,
 		CloudWatchActions.actionGetTelemetryQueryResults,
 		CloudWatchActions.actionGetTopologyDiscoveryStatus,
 		CloudWatchActions.actionGetTopologyMap,
@@ -428,6 +458,7 @@ export class CloudWatchActions {
 		CloudWatchActions.CreateDomainForOrganization,
 		CloudWatchActions.CreateIngestionEndpoint,
 		CloudWatchActions.CreateIntegration,
+		CloudWatchActions.CreateOmniAgentAsset,
 		CloudWatchActions.CreateOmniDashboard,
 		CloudWatchActions.CreateOmniThread,
 		CloudWatchActions.CreateOneTimeDeepLinkCode,
@@ -445,7 +476,9 @@ export class CloudWatchActions {
 		CloudWatchActions.DeleteIngestionEndpoint,
 		CloudWatchActions.DeleteInsightRules,
 		CloudWatchActions.DeleteIntegration,
+		CloudWatchActions.DeleteMetricDataQueryDefinition,
 		CloudWatchActions.DeleteMetricStream,
+		CloudWatchActions.DeleteOmniAgentAsset,
 		CloudWatchActions.DeleteOmniDashboard,
 		CloudWatchActions.DeleteOmniThread,
 		CloudWatchActions.DeletePipelineRule,
@@ -470,6 +503,7 @@ export class CloudWatchActions {
 		CloudWatchActions.PutManagedInsightRules,
 		CloudWatchActions.PutMetricAlarm,
 		CloudWatchActions.PutMetricData,
+		CloudWatchActions.PutMetricDataQueryDefinition,
 		CloudWatchActions.PutMetricStream,
 		CloudWatchActions.PutPipelineRule,
 		CloudWatchActions.PutProfileRecords,
@@ -494,6 +528,7 @@ export class CloudWatchActions {
 		CloudWatchActions.UpdateIngestionEndpoint,
 		CloudWatchActions.UpdateIntegration,
 		CloudWatchActions.UpdateOTelEnrichment,
+		CloudWatchActions.UpdateOmniAgentAsset,
 		CloudWatchActions.UpdateOmniDashboard,
 		CloudWatchActions.UpdateOmniThread,
 		CloudWatchActions.UpdatePreferences,
@@ -515,8 +550,10 @@ export class CloudWatchActions {
 		CloudWatchActions.ListEntitiesForMetric,
 		CloudWatchActions.ListIngestionEndpoints,
 		CloudWatchActions.ListIntegrations,
+		CloudWatchActions.ListMetricDataQueryDefinitions,
 		CloudWatchActions.ListMetricStreams,
 		CloudWatchActions.ListMetrics,
+		CloudWatchActions.ListOmniAgentAssets,
 		CloudWatchActions.ListOmniDashboards,
 		CloudWatchActions.ListOmniThreads,
 		CloudWatchActions.ListServiceLevelObjectives,
@@ -856,6 +893,34 @@ export interface CloudWatchIntegrationArnComponents {
 }
 
 /**
+ * Properties for building a metric-query-definition ARN.
+ */
+export interface CloudWatchMetricQueryDefinitionArnProps {
+	/** The MetricDataQueryDefinitionId component of the ARN. */
+	readonly metricDataQueryDefinitionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a metric-query-definition ARN.
+ */
+export interface CloudWatchMetricQueryDefinitionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MetricDataQueryDefinitionId component. */
+	readonly metricDataQueryDefinitionId: string;
+}
+
+/**
  * Properties for building a metric-stream ARN.
  */
 export interface CloudWatchMetricStreamArnProps {
@@ -881,6 +946,34 @@ export interface CloudWatchMetricStreamArnComponents {
 	readonly account: string;
 	/** The MetricStreamName component. */
 	readonly metricStreamName: string;
+}
+
+/**
+ * Properties for building a omni-agent-asset ARN.
+ */
+export interface CloudWatchOmniAgentAssetArnProps {
+	/** The AssetId component of the ARN. */
+	readonly assetId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a omni-agent-asset ARN.
+ */
+export interface CloudWatchOmniAgentAssetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AssetId component. */
+	readonly assetId: string;
 }
 
 /**
@@ -1061,6 +1154,8 @@ export interface CloudWatchSpaceArnComponents {
 export interface CloudWatchViewArnProps {
 	/** The ViewName component of the ARN. */
 	readonly viewName: string;
+	/** The ViewId component of the ARN. */
+	readonly viewId: string;
 	/** AWS region. Defaults to "*". */
 	readonly region?: string;
 	/** AWS account ID. Defaults to "*". */
@@ -1081,6 +1176,8 @@ export interface CloudWatchViewArnComponents {
 	readonly account: string;
 	/** The ViewName component. */
 	readonly viewName: string;
+	/** The ViewId component. */
+	readonly viewId: string;
 }
 
 const AccessGrantArnRegex =
@@ -1105,8 +1202,12 @@ const InsightRuleArnRegex =
 	/^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):insight-rule\/(?<insightRuleName>[^:/?]+)$/;
 const IntegrationArnRegex =
 	/^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):integration\/(?<integrationId>[^:/?]+)$/;
+const MetricQueryDefinitionArnRegex =
+	/^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):metric-query-definition\/(?<metricDataQueryDefinitionId>[^:/?]+)$/;
 const MetricStreamArnRegex =
 	/^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):metric-stream\/(?<metricStreamName>[^:/?]+)$/;
+const OmniAgentAssetArnRegex =
+	/^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):omni-agent-asset\/(?<assetId>[^:/?]+)$/;
 const OmniDashboardArnRegex =
 	/^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):omni-dashboard\/(?<dashboardId>[^:/?]+)$/;
 const OrganizationAccessGrantArnRegex =
@@ -1120,7 +1221,7 @@ const SloArnRegex =
 const SpaceArnRegex =
 	/^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):space\/(?<spaceId>[^:/?]+)$/;
 const ViewArnRegex =
-	/^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):view\/(?<viewName>[^:/?]+)$/;
+	/^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):view\/(?<viewName>[^:/?]+)\/(?<viewId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for cloudwatch resources.
@@ -1474,6 +1575,41 @@ export class CloudWatchResources {
 	}
 
 	/**
+	 * Builds an ARN for the metric-query-definition resource.
+	 */
+	static metricQueryDefinition(
+		props: CloudWatchMetricQueryDefinitionArnProps,
+	): string {
+		return `arn:${props.partition ?? "aws"}:cloudwatch:${props.region ?? "*"}:${props.account ?? "*"}:metric-query-definition/${props.metricDataQueryDefinitionId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the metric-query-definition resource.
+	 */
+	static isValidMetricQueryDefinitionArn(arn: string): boolean {
+		return MetricQueryDefinitionArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a metric-query-definition ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseMetricQueryDefinitionArn(
+		arn: string,
+	): CloudWatchMetricQueryDefinitionArnComponents {
+		const match = MetricQueryDefinitionArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid metric-query-definition ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			metricDataQueryDefinitionId: match.groups!.metricDataQueryDefinitionId,
+		};
+	}
+
+	/**
 	 * Builds an ARN for the metric-stream resource.
 	 */
 	static metricStream(props: CloudWatchMetricStreamArnProps): string {
@@ -1503,6 +1639,39 @@ export class CloudWatchResources {
 			region: match.groups.region,
 			account: match.groups.account,
 			metricStreamName: match.groups!.metricStreamName,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the omni-agent-asset resource.
+	 */
+	static omniAgentAsset(props: CloudWatchOmniAgentAssetArnProps): string {
+		return `arn:${props.partition ?? "aws"}:cloudwatch:${props.region ?? "*"}:${props.account ?? "*"}:omni-agent-asset/${props.assetId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the omni-agent-asset resource.
+	 */
+	static isValidOmniAgentAssetArn(arn: string): boolean {
+		return OmniAgentAssetArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a omni-agent-asset ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseOmniAgentAssetArn(
+		arn: string,
+	): CloudWatchOmniAgentAssetArnComponents {
+		const match = OmniAgentAssetArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid omni-agent-asset ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			assetId: match.groups!.assetId,
 		};
 	}
 
@@ -1707,7 +1876,7 @@ export class CloudWatchResources {
 	 * Builds an ARN for the view resource.
 	 */
 	static view(props: CloudWatchViewArnProps): string {
-		return `arn:${props.partition ?? "aws"}:cloudwatch:${props.region ?? "*"}:${props.account ?? "*"}:view/${props.viewName}`;
+		return `arn:${props.partition ?? "aws"}:cloudwatch:${props.region ?? "*"}:${props.account ?? "*"}:view/${props.viewName}/${props.viewId}`;
 	}
 
 	/**
@@ -1731,6 +1900,7 @@ export class CloudWatchResources {
 			region: match.groups.region,
 			account: match.groups.account,
 			viewName: match.groups!.viewName,
+			viewId: match.groups!.viewId,
 		};
 	}
 }
@@ -1839,6 +2009,10 @@ export class CloudWatchOperations {
 	static readonly DeleteIntegration: string[] = [
 		"cloudwatch:DeleteIntegration",
 	];
+	/** IAM actions required for the DeleteMetricDataQueryDefinition API call. */
+	static readonly DeleteMetricDataQueryDefinition: string[] = [
+		"cloudwatch:DeleteMetricDataQueryDefinition",
+	];
 	/** IAM actions required for the DeleteMetricStream API call. */
 	static readonly DeleteMetricStream: string[] = [
 		"cloudwatch:DeleteMetricStream",
@@ -1933,6 +2107,10 @@ export class CloudWatchOperations {
 	];
 	/** IAM actions required for the GetMetricData API call. */
 	static readonly opGetMetricData: string[] = ["cloudwatch:GetMetricData"];
+	/** IAM actions required for the GetMetricDataQueryDefinition API call. */
+	static readonly opGetMetricDataQueryDefinition: string[] = [
+		"cloudwatch:GetMetricDataQueryDefinition",
+	];
 	/** IAM actions required for the GetMetricStatistics API call. */
 	static readonly opGetMetricStatistics: string[] = [
 		"cloudwatch:GetMetricStatistics",
@@ -1960,6 +2138,10 @@ export class CloudWatchOperations {
 	/** IAM actions required for the GetSpaceCredentialsForOrganization API call. */
 	static readonly opGetSpaceCredentialsForOrganization: string[] = [
 		"cloudwatch:GetSpaceCredentialsForOrganization",
+	];
+	/** IAM actions required for the GetSpaceDataAccess API call. */
+	static readonly opGetSpaceDataAccess: string[] = [
+		"cloudwatch:GetSpaceDataAccess",
 	];
 	/** IAM actions required for the GetTelemetryQueryResults API call. */
 	static readonly opGetTelemetryQueryResults: string[] = [
@@ -1992,6 +2174,10 @@ export class CloudWatchOperations {
 	/** IAM actions required for the ListManagedInsightRules API call. */
 	static readonly ListManagedInsightRules: string[] = [
 		"cloudwatch:ListManagedInsightRules",
+	];
+	/** IAM actions required for the ListMetricDataQueryDefinitions API call. */
+	static readonly ListMetricDataQueryDefinitions: string[] = [
+		"cloudwatch:ListMetricDataQueryDefinitions",
 	];
 	/** IAM actions required for the ListMetricStreams API call. */
 	static readonly ListMetricStreams: string[] = [
@@ -2068,11 +2254,17 @@ export class CloudWatchOperations {
 	];
 	/** IAM actions required for the PutMetricAlarm API call. */
 	static readonly PutMetricAlarm: string[] = [
+		"cloudwatch:ListTagsForResource",
 		"cloudwatch:PutMetricAlarm",
 		"cloudwatch:TagResource",
 	];
 	/** IAM actions required for the PutMetricData API call. */
 	static readonly PutMetricData: string[] = ["cloudwatch:PutMetricData"];
+	/** IAM actions required for the PutMetricDataQueryDefinition API call. */
+	static readonly PutMetricDataQueryDefinition: string[] = [
+		"cloudwatch:PutMetricDataQueryDefinition",
+		"cloudwatch:TagResource",
+	];
 	/** IAM actions required for the PutMetricStream API call. */
 	static readonly PutMetricStream: string[] = [
 		"iam:PassRole",
@@ -2192,6 +2384,10 @@ export class CloudWatchConditions {
 	static readonly CreateIntegrationConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
 	];
+	/** Condition keys applicable to the CreateOmniAgentAsset action. */
+	static readonly CreateOmniAgentAssetConditionKeys: string[] = [
+		"cloudwatch:HasAccessGrant",
+	];
 	/** Condition keys applicable to the CreateOmniDashboard action. */
 	static readonly CreateOmniDashboardConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
@@ -2230,6 +2426,10 @@ export class CloudWatchConditions {
 		["cloudwatch:HasAccessGrant"];
 	/** Condition keys applicable to the DeleteIntegration action. */
 	static readonly DeleteIntegrationConditionKeys: string[] = [
+		"cloudwatch:HasAccessGrant",
+	];
+	/** Condition keys applicable to the DeleteOmniAgentAsset action. */
+	static readonly DeleteOmniAgentAssetConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
 	];
 	/** Condition keys applicable to the DeleteOmniDashboard action. */
@@ -2287,6 +2487,10 @@ export class CloudWatchConditions {
 	static readonly actionGetMetricDataConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
 	];
+	/** Condition keys applicable to the GetOmniAgentAsset action. */
+	static readonly actionGetOmniAgentAssetConditionKeys: string[] = [
+		"cloudwatch:HasAccessGrant",
+	];
 	/** Condition keys applicable to the GetOmniDashboard action. */
 	static readonly actionGetOmniDashboardConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
@@ -2312,6 +2516,10 @@ export class CloudWatchConditions {
 		["cloudwatch:ResourceArn"];
 	/** Condition keys applicable to the GetSpace action. */
 	static readonly actionGetSpaceConditionKeys: string[] = [
+		"cloudwatch:HasAccessGrant",
+	];
+	/** Condition keys applicable to the GetSpaceDataAccess action. */
+	static readonly actionGetSpaceDataAccessConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
 	];
 	/** Condition keys applicable to the GetTelemetryQueryResults action. */
@@ -2357,6 +2565,10 @@ export class CloudWatchConditions {
 	];
 	/** Condition keys applicable to the ListMetrics action. */
 	static readonly ListMetricsConditionKeys: string[] = [
+		"cloudwatch:HasAccessGrant",
+	];
+	/** Condition keys applicable to the ListOmniAgentAssets action. */
+	static readonly ListOmniAgentAssetsConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
 	];
 	/** Condition keys applicable to the ListOmniDashboards action. */
@@ -2446,6 +2658,11 @@ export class CloudWatchConditions {
 	static readonly PutMetricDataConditionKeys: string[] = [
 		"cloudwatch:namespace",
 	];
+	/** Condition keys applicable to the PutMetricDataQueryDefinition action. */
+	static readonly PutMetricDataQueryDefinitionConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the PutMetricStream action. */
 	static readonly PutMetricStreamConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
@@ -2504,6 +2721,10 @@ export class CloudWatchConditions {
 	];
 	/** Condition keys applicable to the UpdateIntegration action. */
 	static readonly UpdateIntegrationConditionKeys: string[] = [
+		"cloudwatch:HasAccessGrant",
+	];
+	/** Condition keys applicable to the UpdateOmniAgentAsset action. */
+	static readonly UpdateOmniAgentAssetConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
 	];
 	/** Condition keys applicable to the UpdateOmniDashboard action. */

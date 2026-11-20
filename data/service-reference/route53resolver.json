@@ -910,6 +910,27 @@
       }
     },
     {
+      "Name": "ListFirewallRuleDomains",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "firewall-rule-group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListFirewallRuleGroupAssociations",
       "Annotations": {
         "Properties": {
@@ -2282,6 +2303,22 @@
         {
           "Name": "route53resolver",
           "Method": "list_firewall_domains",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFirewallRuleDomains",
+      "AuthorizedActions": [
+        {
+          "Name": "ListFirewallRuleDomains",
+          "Service": "route53resolver"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53resolver",
+          "Method": "list_firewall_rule_domains",
           "Package": "Boto3"
         }
       ]

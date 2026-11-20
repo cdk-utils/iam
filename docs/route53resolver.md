@@ -1704,6 +1704,7 @@ new route53resolver.Route53resolverActions()
 | <code><a href="#@cdk_utils/iam.route53resolver.Route53resolverActions.property.ListFirewallConfigs">ListFirewallConfigs</a></code> | <code>string</code> | [List] route53resolver:ListFirewallConfigs. |
 | <code><a href="#@cdk_utils/iam.route53resolver.Route53resolverActions.property.ListFirewallDomainLists">ListFirewallDomainLists</a></code> | <code>string</code> | [List] route53resolver:ListFirewallDomainLists. |
 | <code><a href="#@cdk_utils/iam.route53resolver.Route53resolverActions.property.ListFirewallDomains">ListFirewallDomains</a></code> | <code>string</code> | [List] route53resolver:ListFirewallDomains. |
+| <code><a href="#@cdk_utils/iam.route53resolver.Route53resolverActions.property.ListFirewallRuleDomains">ListFirewallRuleDomains</a></code> | <code>string</code> | [List] route53resolver:ListFirewallRuleDomains. |
 | <code><a href="#@cdk_utils/iam.route53resolver.Route53resolverActions.property.ListFirewallRuleGroupAssociations">ListFirewallRuleGroupAssociations</a></code> | <code>string</code> | [List] route53resolver:ListFirewallRuleGroupAssociations. |
 | <code><a href="#@cdk_utils/iam.route53resolver.Route53resolverActions.property.ListFirewallRuleGroups">ListFirewallRuleGroups</a></code> | <code>string</code> | [List] route53resolver:ListFirewallRuleGroups. |
 | <code><a href="#@cdk_utils/iam.route53resolver.Route53resolverActions.property.ListFirewallRules">ListFirewallRules</a></code> | <code>string</code> | [List] route53resolver:ListFirewallRules. |
@@ -2297,6 +2298,18 @@ public readonly ListFirewallDomains: string;
 - *Type:* string
 
 [List] route53resolver:ListFirewallDomains.
+
+---
+
+##### `ListFirewallRuleDomains`<sup>Required</sup> <a name="ListFirewallRuleDomains" id="@cdk_utils/iam.route53resolver.Route53resolverActions.property.ListFirewallRuleDomains"></a>
+
+```typescript
+public readonly ListFirewallRuleDomains: string;
+```
+
+- *Type:* string
+
+[List] route53resolver:ListFirewallRuleDomains.
 
 ---
 
@@ -2941,6 +2954,7 @@ new route53resolver.Route53resolverOperations()
 | <code><a href="#@cdk_utils/iam.route53resolver.Route53resolverOperations.property.ListFirewallConfigs">ListFirewallConfigs</a></code> | <code>string[]</code> | IAM actions required for the ListFirewallConfigs API call. |
 | <code><a href="#@cdk_utils/iam.route53resolver.Route53resolverOperations.property.ListFirewallDomainLists">ListFirewallDomainLists</a></code> | <code>string[]</code> | IAM actions required for the ListFirewallDomainLists API call. |
 | <code><a href="#@cdk_utils/iam.route53resolver.Route53resolverOperations.property.ListFirewallDomains">ListFirewallDomains</a></code> | <code>string[]</code> | IAM actions required for the ListFirewallDomains API call. |
+| <code><a href="#@cdk_utils/iam.route53resolver.Route53resolverOperations.property.ListFirewallRuleDomains">ListFirewallRuleDomains</a></code> | <code>string[]</code> | IAM actions required for the ListFirewallRuleDomains API call. |
 | <code><a href="#@cdk_utils/iam.route53resolver.Route53resolverOperations.property.ListFirewallRuleGroupAssociations">ListFirewallRuleGroupAssociations</a></code> | <code>string[]</code> | IAM actions required for the ListFirewallRuleGroupAssociations API call. |
 | <code><a href="#@cdk_utils/iam.route53resolver.Route53resolverOperations.property.ListFirewallRuleGroups">ListFirewallRuleGroups</a></code> | <code>string[]</code> | IAM actions required for the ListFirewallRuleGroups API call. |
 | <code><a href="#@cdk_utils/iam.route53resolver.Route53resolverOperations.property.ListFirewallRules">ListFirewallRules</a></code> | <code>string[]</code> | IAM actions required for the ListFirewallRules API call. |
@@ -3332,6 +3346,18 @@ public readonly ListFirewallDomains: string[];
 - *Type:* string[]
 
 IAM actions required for the ListFirewallDomains API call.
+
+---
+
+##### `ListFirewallRuleDomains`<sup>Required</sup> <a name="ListFirewallRuleDomains" id="@cdk_utils/iam.route53resolver.Route53resolverOperations.property.ListFirewallRuleDomains"></a>
+
+```typescript
+public readonly ListFirewallRuleDomains: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListFirewallRuleDomains API call.
 
 ---
 

@@ -24,6 +24,8 @@ export class ResearchstudioActions {
 	static readonly actionGetApplication = "researchstudio:GetApplication";
 	/** [List] researchstudio:ListApplications */
 	static readonly ListApplications = "researchstudio:ListApplications";
+	/** [Write] researchstudio:UpdateApplication */
+	static readonly UpdateApplication = "researchstudio:UpdateApplication";
 
 	/** All read-level actions. */
 	static readonly AllReadActions: string[] = [
@@ -35,6 +37,7 @@ export class ResearchstudioActions {
 		ResearchstudioActions.CreateApplication,
 		ResearchstudioActions.DeleteApplication,
 		ResearchstudioActions.DeletePrincipal,
+		ResearchstudioActions.UpdateApplication,
 	];
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [

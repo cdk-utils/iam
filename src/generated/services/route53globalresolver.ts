@@ -32,6 +32,9 @@ export class Route53globalresolverActions {
 		"route53globalresolver:CreateAccessSource";
 	/** [Write] route53globalresolver:CreateAccessToken */
 	static readonly CreateAccessToken = "route53globalresolver:CreateAccessToken";
+	/** [Write] route53globalresolver:CreateCoreNetworkEndpoint */
+	static readonly CreateCoreNetworkEndpoint =
+		"route53globalresolver:CreateCoreNetworkEndpoint";
 	/** [Write] route53globalresolver:CreateDNSView */
 	static readonly CreateDNSView = "route53globalresolver:CreateDNSView";
 	/** [Write] route53globalresolver:CreateFirewallDomainList */
@@ -48,6 +51,9 @@ export class Route53globalresolverActions {
 		"route53globalresolver:DeleteAccessSource";
 	/** [Write] route53globalresolver:DeleteAccessToken */
 	static readonly DeleteAccessToken = "route53globalresolver:DeleteAccessToken";
+	/** [Write] route53globalresolver:DeleteCoreNetworkEndpoint */
+	static readonly DeleteCoreNetworkEndpoint =
+		"route53globalresolver:DeleteCoreNetworkEndpoint";
 	/** [Write] route53globalresolver:DeleteDNSView */
 	static readonly DeleteDNSView = "route53globalresolver:DeleteDNSView";
 	/** [Write] route53globalresolver:DeleteFirewallDomainList */
@@ -71,6 +77,9 @@ export class Route53globalresolverActions {
 		"route53globalresolver:GetAccessSource";
 	/** [Read] route53globalresolver:GetAccessToken */
 	static readonly actionGetAccessToken = "route53globalresolver:GetAccessToken";
+	/** [Read] route53globalresolver:GetCoreNetworkEndpoint */
+	static readonly actionGetCoreNetworkEndpoint =
+		"route53globalresolver:GetCoreNetworkEndpoint";
 	/** [Read] route53globalresolver:GetDNSView */
 	static readonly actionGetDNSView = "route53globalresolver:GetDNSView";
 	/** [Read] route53globalresolver:GetFirewallDomainList */
@@ -95,6 +104,9 @@ export class Route53globalresolverActions {
 	static readonly ListAccessSources = "route53globalresolver:ListAccessSources";
 	/** [List] route53globalresolver:ListAccessTokens */
 	static readonly ListAccessTokens = "route53globalresolver:ListAccessTokens";
+	/** [List] route53globalresolver:ListCoreNetworkEndpoints */
+	static readonly ListCoreNetworkEndpoints =
+		"route53globalresolver:ListCoreNetworkEndpoints";
 	/** [List] route53globalresolver:ListDNSViews */
 	static readonly ListDNSViews = "route53globalresolver:ListDNSViews";
 	/** [List] route53globalresolver:ListFirewallDomainLists */
@@ -114,6 +126,9 @@ export class Route53globalresolverActions {
 	/** [List] route53globalresolver:ListManagedFirewallDomainLists */
 	static readonly ListManagedFirewallDomainLists =
 		"route53globalresolver:ListManagedFirewallDomainLists";
+	/** [List] route53globalresolver:ListSharedDNSViews */
+	static readonly ListSharedDNSViews =
+		"route53globalresolver:ListSharedDNSViews";
 	/** [Write] route53globalresolver:ListTagsForResource */
 	static readonly ListTagsForResource =
 		"route53globalresolver:ListTagsForResource";
@@ -126,6 +141,9 @@ export class Route53globalresolverActions {
 		"route53globalresolver:UpdateAccessSource";
 	/** [Write] route53globalresolver:UpdateAccessToken */
 	static readonly UpdateAccessToken = "route53globalresolver:UpdateAccessToken";
+	/** [Write] route53globalresolver:UpdateCoreNetworkEndpoint */
+	static readonly UpdateCoreNetworkEndpoint =
+		"route53globalresolver:UpdateCoreNetworkEndpoint";
 	/** [Write] route53globalresolver:UpdateDNSView */
 	static readonly UpdateDNSView = "route53globalresolver:UpdateDNSView";
 	/** [Write] route53globalresolver:UpdateFirewallDomains */
@@ -145,6 +163,7 @@ export class Route53globalresolverActions {
 	static readonly AllReadActions: string[] = [
 		Route53globalresolverActions.actionGetAccessSource,
 		Route53globalresolverActions.actionGetAccessToken,
+		Route53globalresolverActions.actionGetCoreNetworkEndpoint,
 		Route53globalresolverActions.actionGetDNSView,
 		Route53globalresolverActions.actionGetFirewallDomainList,
 		Route53globalresolverActions.actionGetFirewallRule,
@@ -161,12 +180,14 @@ export class Route53globalresolverActions {
 		Route53globalresolverActions.BatchUpdateFirewallRule,
 		Route53globalresolverActions.CreateAccessSource,
 		Route53globalresolverActions.CreateAccessToken,
+		Route53globalresolverActions.CreateCoreNetworkEndpoint,
 		Route53globalresolverActions.CreateDNSView,
 		Route53globalresolverActions.CreateFirewallDomainList,
 		Route53globalresolverActions.CreateFirewallRule,
 		Route53globalresolverActions.CreateGlobalResolver,
 		Route53globalresolverActions.DeleteAccessSource,
 		Route53globalresolverActions.DeleteAccessToken,
+		Route53globalresolverActions.DeleteCoreNetworkEndpoint,
 		Route53globalresolverActions.DeleteDNSView,
 		Route53globalresolverActions.DeleteFirewallDomainList,
 		Route53globalresolverActions.DeleteFirewallRule,
@@ -178,6 +199,7 @@ export class Route53globalresolverActions {
 		Route53globalresolverActions.ListTagsForResource,
 		Route53globalresolverActions.UpdateAccessSource,
 		Route53globalresolverActions.UpdateAccessToken,
+		Route53globalresolverActions.UpdateCoreNetworkEndpoint,
 		Route53globalresolverActions.UpdateDNSView,
 		Route53globalresolverActions.UpdateFirewallDomains,
 		Route53globalresolverActions.UpdateFirewallRule,
@@ -188,12 +210,14 @@ export class Route53globalresolverActions {
 	static readonly AllListActions: string[] = [
 		Route53globalresolverActions.ListAccessSources,
 		Route53globalresolverActions.ListAccessTokens,
+		Route53globalresolverActions.ListCoreNetworkEndpoints,
 		Route53globalresolverActions.ListDNSViews,
 		Route53globalresolverActions.ListFirewallDomainLists,
 		Route53globalresolverActions.ListFirewallRules,
 		Route53globalresolverActions.ListGlobalResolvers,
 		Route53globalresolverActions.ListHostedZoneAssociations,
 		Route53globalresolverActions.ListManagedFirewallDomainLists,
+		Route53globalresolverActions.ListSharedDNSViews,
 	];
 	/** All permission-management-level actions. */
 	static readonly AllPermissionManagementActions: string[] = [
@@ -246,6 +270,30 @@ export interface Route53globalresolverAccessTokenArnProps {
  * Parsed components of a access-token ARN.
  */
 export interface Route53globalresolverAccessTokenArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a core-network-endpoint ARN.
+ */
+export interface Route53globalresolverCoreNetworkEndpointArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a core-network-endpoint ARN.
+ */
+export interface Route53globalresolverCoreNetworkEndpointArnComponents {
 	/** AWS partition. */
 	readonly partition: string;
 	/** AWS account ID. */
@@ -330,6 +378,8 @@ const AccessSourceArnRegex =
 	/^arn:(?<partition>[^:]+):route53globalresolver::(?<account>[^:]*):access-source\/(?<id>[^:/?]+)$/;
 const AccessTokenArnRegex =
 	/^arn:(?<partition>[^:]+):route53globalresolver::(?<account>[^:]*):access-token\/(?<id>[^:/?]+)$/;
+const CoreNetworkEndpointArnRegex =
+	/^arn:(?<partition>[^:]+):route53globalresolver::(?<account>[^:]*):core-network-endpoint\/(?<id>[^:/?]+)$/;
 const DNSViewArnRegex =
 	/^arn:(?<partition>[^:]+):route53globalresolver::(?<account>[^:]*):dns-view\/(?<id>[^:/?]+)$/;
 const FirewallDomainListArnRegex =
@@ -399,6 +449,40 @@ export class Route53globalresolverResources {
 		const match = AccessTokenArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid access-token ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			account: match.groups.account,
+			id: match.groups!.id,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the core-network-endpoint resource.
+	 */
+	static coreNetworkEndpoint(
+		props: Route53globalresolverCoreNetworkEndpointArnProps,
+	): string {
+		return `arn:${props.partition ?? "aws"}:route53globalresolver::${props.account ?? "*"}:core-network-endpoint/${props.id}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the core-network-endpoint resource.
+	 */
+	static isValidCoreNetworkEndpointArn(arn: string): boolean {
+		return CoreNetworkEndpointArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a core-network-endpoint ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseCoreNetworkEndpointArn(
+		arn: string,
+	): Route53globalresolverCoreNetworkEndpointArnComponents {
+		const match = CoreNetworkEndpointArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid core-network-endpoint ARN: ${arn}`);
 		}
 		return {
 			partition: match.groups.partition,
@@ -538,6 +622,11 @@ export class Route53globalresolverOperations {
 		"route53globalresolver:CreateAccessToken",
 		"route53globalresolver:TagResource",
 	];
+	/** IAM actions required for the CreateCoreNetworkEndpoint API call. */
+	static readonly CreateCoreNetworkEndpoint: string[] = [
+		"route53globalresolver:CreateCoreNetworkEndpoint",
+		"route53globalresolver:TagResource",
+	];
 	/** IAM actions required for the CreateDNSView API call. */
 	static readonly CreateDNSView: string[] = [
 		"route53globalresolver:CreateDNSView",
@@ -564,6 +653,10 @@ export class Route53globalresolverOperations {
 	/** IAM actions required for the DeleteAccessToken API call. */
 	static readonly DeleteAccessToken: string[] = [
 		"route53globalresolver:DeleteAccessToken",
+	];
+	/** IAM actions required for the DeleteCoreNetworkEndpoint API call. */
+	static readonly DeleteCoreNetworkEndpoint: string[] = [
+		"route53globalresolver:DeleteCoreNetworkEndpoint",
 	];
 	/** IAM actions required for the DeleteDNSView API call. */
 	static readonly DeleteDNSView: string[] = [
@@ -601,6 +694,10 @@ export class Route53globalresolverOperations {
 	static readonly opGetAccessToken: string[] = [
 		"route53globalresolver:GetAccessToken",
 	];
+	/** IAM actions required for the GetCoreNetworkEndpoint API call. */
+	static readonly opGetCoreNetworkEndpoint: string[] = [
+		"route53globalresolver:GetCoreNetworkEndpoint",
+	];
 	/** IAM actions required for the GetDNSView API call. */
 	static readonly opGetDNSView: string[] = ["route53globalresolver:GetDNSView"];
 	/** IAM actions required for the GetFirewallDomainList API call. */
@@ -635,6 +732,10 @@ export class Route53globalresolverOperations {
 	static readonly ListAccessTokens: string[] = [
 		"route53globalresolver:ListAccessTokens",
 	];
+	/** IAM actions required for the ListCoreNetworkEndpoints API call. */
+	static readonly ListCoreNetworkEndpoints: string[] = [
+		"route53globalresolver:ListCoreNetworkEndpoints",
+	];
 	/** IAM actions required for the ListDNSViews API call. */
 	static readonly ListDNSViews: string[] = [
 		"route53globalresolver:ListDNSViews",
@@ -664,7 +765,9 @@ export class Route53globalresolverOperations {
 		"route53globalresolver:ListManagedFirewallDomainLists",
 	];
 	/** IAM actions required for the ListSharedDNSViews API call. */
-	static readonly ListSharedDNSViews: string[] = [];
+	static readonly ListSharedDNSViews: string[] = [
+		"route53globalresolver:ListSharedDNSViews",
+	];
 	/** IAM actions required for the ListTagsForResource API call. */
 	static readonly ListTagsForResource: string[] = [
 		"route53globalresolver:ListTagsForResource",
@@ -682,6 +785,10 @@ export class Route53globalresolverOperations {
 	/** IAM actions required for the UpdateAccessToken API call. */
 	static readonly UpdateAccessToken: string[] = [
 		"route53globalresolver:UpdateAccessToken",
+	];
+	/** IAM actions required for the UpdateCoreNetworkEndpoint API call. */
+	static readonly UpdateCoreNetworkEndpoint: string[] = [
+		"route53globalresolver:UpdateCoreNetworkEndpoint",
 	];
 	/** IAM actions required for the UpdateDNSView API call. */
 	static readonly UpdateDNSView: string[] = [
@@ -716,6 +823,11 @@ export class Route53globalresolverConditions {
 	];
 	/** Condition keys applicable to the CreateAccessToken action. */
 	static readonly CreateAccessTokenConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the CreateCoreNetworkEndpoint action. */
+	static readonly CreateCoreNetworkEndpointConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];

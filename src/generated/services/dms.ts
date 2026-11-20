@@ -1291,6 +1291,7 @@ export class DmsOperations {
 	static readonly CreateReplicationTask: string[] = [
 		"dms:AddTagsToResource",
 		"dms:CreateReplicationTask",
+		"iam:PassRole",
 	];
 	/** IAM actions required for the DeleteCertificate API call. */
 	static readonly DeleteCertificate: string[] = ["dms:DeleteCertificate"];

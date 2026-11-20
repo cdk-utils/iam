@@ -3893,9 +3893,13 @@ new rds.RDSActions()
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.DescribeTenantDatabases">DescribeTenantDatabases</a></code> | <code>string</code> | [List] rds:DescribeTenantDatabases. |
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.DescribeValidDBInstanceModifications">DescribeValidDBInstanceModifications</a></code> | <code>string</code> | [List] rds:DescribeValidDBInstanceModifications. |
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.DisableHttpEndpoint">DisableHttpEndpoint</a></code> | <code>string</code> | [Write] rds:DisableHttpEndpoint. |
+| <code><a href="#@cdk_utils/iam.rds.RDSActions.property.DisableInternetAccessGateway">DisableInternetAccessGateway</a></code> | <code>string</code> | [Write] rds:DisableInternetAccessGateway. |
+| <code><a href="#@cdk_utils/iam.rds.RDSActions.property.DisableVpcNetworking">DisableVpcNetworking</a></code> | <code>string</code> | [Write] rds:DisableVpcNetworking. |
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.DownloadCompleteDBLogFile">DownloadCompleteDBLogFile</a></code> | <code>string</code> | [Read] rds:DownloadCompleteDBLogFile. |
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.DownloadDBLogFilePortion">DownloadDBLogFilePortion</a></code> | <code>string</code> | [Read] rds:DownloadDBLogFilePortion. |
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.EnableHttpEndpoint">EnableHttpEndpoint</a></code> | <code>string</code> | [Write] rds:EnableHttpEndpoint. |
+| <code><a href="#@cdk_utils/iam.rds.RDSActions.property.EnableInternetAccessGateway">EnableInternetAccessGateway</a></code> | <code>string</code> | [Write] rds:EnableInternetAccessGateway. |
+| <code><a href="#@cdk_utils/iam.rds.RDSActions.property.EnableVpcNetworking">EnableVpcNetworking</a></code> | <code>string</code> | [Write] rds:EnableVpcNetworking. |
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.FailoverDBCluster">FailoverDBCluster</a></code> | <code>string</code> | [Write] rds:FailoverDBCluster. |
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.FailoverGlobalCluster">FailoverGlobalCluster</a></code> | <code>string</code> | [Write] rds:FailoverGlobalCluster. |
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Read] rds:ListTagsForResource. |
@@ -5329,6 +5333,30 @@ public readonly DisableHttpEndpoint: string;
 
 ---
 
+##### `DisableInternetAccessGateway`<sup>Required</sup> <a name="DisableInternetAccessGateway" id="@cdk_utils/iam.rds.RDSActions.property.DisableInternetAccessGateway"></a>
+
+```typescript
+public readonly DisableInternetAccessGateway: string;
+```
+
+- *Type:* string
+
+[Write] rds:DisableInternetAccessGateway.
+
+---
+
+##### `DisableVpcNetworking`<sup>Required</sup> <a name="DisableVpcNetworking" id="@cdk_utils/iam.rds.RDSActions.property.DisableVpcNetworking"></a>
+
+```typescript
+public readonly DisableVpcNetworking: string;
+```
+
+- *Type:* string
+
+[Write] rds:DisableVpcNetworking.
+
+---
+
 ##### `DownloadCompleteDBLogFile`<sup>Required</sup> <a name="DownloadCompleteDBLogFile" id="@cdk_utils/iam.rds.RDSActions.property.DownloadCompleteDBLogFile"></a>
 
 ```typescript
@@ -5362,6 +5390,30 @@ public readonly EnableHttpEndpoint: string;
 - *Type:* string
 
 [Write] rds:EnableHttpEndpoint.
+
+---
+
+##### `EnableInternetAccessGateway`<sup>Required</sup> <a name="EnableInternetAccessGateway" id="@cdk_utils/iam.rds.RDSActions.property.EnableInternetAccessGateway"></a>
+
+```typescript
+public readonly EnableInternetAccessGateway: string;
+```
+
+- *Type:* string
+
+[Write] rds:EnableInternetAccessGateway.
+
+---
+
+##### `EnableVpcNetworking`<sup>Required</sup> <a name="EnableVpcNetworking" id="@cdk_utils/iam.rds.RDSActions.property.EnableVpcNetworking"></a>
+
+```typescript
+public readonly EnableVpcNetworking: string;
+```
+
+- *Type:* string
+
+[Write] rds:EnableVpcNetworking.
 
 ---
 
@@ -6161,6 +6213,7 @@ new rds.RDSConditions()
 | <code><a href="#@cdk_utils/iam.rds.RDSConditions.tagsFromRequest">tagsFromRequest</a></code> | Generates a condition block for `rds:TagsFromRequest`. |
 | <code><a href="#@cdk_utils/iam.rds.RDSConditions.tenantDatabaseName">tenantDatabaseName</a></code> | Generates a condition block for `rds:TenantDatabaseName`. |
 | <code><a href="#@cdk_utils/iam.rds.RDSConditions.vpc">vpc</a></code> | Generates a condition block for `rds:Vpc`. |
+| <code><a href="#@cdk_utils/iam.rds.RDSConditions.vpcNetworkingEnabled">vpcNetworkingEnabled</a></code> | Generates a condition block for `rds:VpcNetworkingEnabled`. |
 
 ---
 
@@ -6644,6 +6697,22 @@ Generates a condition block for `rds:Vpc`.
 
 ---
 
+##### `vpcNetworkingEnabled` <a name="vpcNetworkingEnabled" id="@cdk_utils/iam.rds.RDSConditions.vpcNetworkingEnabled"></a>
+
+```typescript
+import { rds } from '@cdk_utils/iam'
+
+rds.RDSConditions.vpcNetworkingEnabled(value: boolean)
+```
+
+Generates a condition block for `rds:VpcNetworkingEnabled`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.rds.RDSConditions.vpcNetworkingEnabled.parameter.value"></a>
+
+- *Type:* boolean
+
+---
+
 
 #### Constants <a name="Constants" id="Constants"></a>
 
@@ -6721,6 +6790,7 @@ Generates a condition block for `rds:Vpc`.
 | <code><a href="#@cdk_utils/iam.rds.RDSConditions.property.TAGS_FROM_REQUEST">TAGS_FROM_REQUEST</a></code> | <code>string</code> | Condition key: rds:TagsFromRequest (Bool). |
 | <code><a href="#@cdk_utils/iam.rds.RDSConditions.property.TENANT_DATABASE_NAME">TENANT_DATABASE_NAME</a></code> | <code>string</code> | Condition key: rds:TenantDatabaseName (String). |
 | <code><a href="#@cdk_utils/iam.rds.RDSConditions.property.VPC">VPC</a></code> | <code>string</code> | Condition key: rds:Vpc (Bool). |
+| <code><a href="#@cdk_utils/iam.rds.RDSConditions.property.VPC_NETWORKING_ENABLED">VPC_NETWORKING_ENABLED</a></code> | <code>string</code> | Condition key: rds:VpcNetworkingEnabled (Bool). |
 
 ---
 
@@ -7585,6 +7655,18 @@ public readonly VPC: string;
 - *Type:* string
 
 Condition key: rds:Vpc (Bool).
+
+---
+
+##### `VPC_NETWORKING_ENABLED`<sup>Required</sup> <a name="VPC_NETWORKING_ENABLED" id="@cdk_utils/iam.rds.RDSConditions.property.VPC_NETWORKING_ENABLED"></a>
+
+```typescript
+public readonly VPC_NETWORKING_ENABLED: string;
+```
+
+- *Type:* string
+
+Condition key: rds:VpcNetworkingEnabled (Bool).
 
 ---
 

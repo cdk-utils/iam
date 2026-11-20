@@ -185,6 +185,30 @@
       }
     },
     {
+      "Name": "AssociateBusinessPlan",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "BusinessPlan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "AssociateOpportunity",
       "ActionConditionKeys": [
         "partnercentral:Catalog",
@@ -202,6 +226,29 @@
       "Resources": [
         {
           "Name": "Opportunity"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "BatchCreateCampaignAsset",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Campaign"
         }
       ],
       "SupportedBy": {
@@ -229,6 +276,56 @@
       "Resources": [
         {
           "Name": "BenefitApplication"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelBusinessPlan",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:AllowAwsEngagement",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "BusinessPlan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CancelBusinessPlanSubmissionTask",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:AllowAwsEngagement",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "BusinessPlan"
         }
       ],
       "SupportedBy": {
@@ -361,6 +458,13 @@
     },
     {
       "Name": "CreateBusinessPlan",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:ResourceTag/${TagKey}",
+        "aws:TagKeys",
+        "partnercentral:AllowAwsEngagement",
+        "partnercentral:Catalog"
+      ],
       "Annotations": {
         "Properties": {
           "IsList": false,
@@ -369,6 +473,58 @@
           "IsWrite": true
         }
       },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateBusinessPlanItem",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:AllowAwsEngagement",
+        "partnercentral:BusinessPlanItemStage",
+        "partnercentral:BusinessPlanItemType",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "BusinessPlan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateCampaign",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Campaign"
+        }
+      ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -449,6 +605,57 @@
           "IsWrite": true
         }
       },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateCustomerAccount",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "CustomerAccount"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDataSubscription",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "DataSubscription"
+        }
+      ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -740,6 +947,193 @@
       }
     },
     {
+      "Name": "CreateSocialConnectionAuthorizationUrl",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeactivateCampaignAsset",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteBusinessPlanAttachment",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:AllowAwsEngagement",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "BusinessPlan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteBusinessPlanItem",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:AllowAwsEngagement",
+        "partnercentral:BusinessPlanItemStage",
+        "partnercentral:BusinessPlanItemType",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "BusinessPlan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteCampaign",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteCampaignAsset",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteCustomerAccount",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "CustomerAccount"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteDataSubscription",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "DataSubscription"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DeleteProgramManagementAccount",
       "ActionConditionKeys": [
         "aws:ResourceTag/${TagKey}",
@@ -814,6 +1208,29 @@
       }
     },
     {
+      "Name": "DeleteSocialConnection",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "SocialConnection"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DisassociateAwsTrainingCertificationEmailDomain",
       "ActionConditionKeys": [
         "aws:ResourceTag/${TagKey}",
@@ -864,6 +1281,30 @@
         },
         {
           "Name": "Opportunity"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociateBusinessPlan",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "BusinessPlan"
         }
       ],
       "SupportedBy": {
@@ -1042,6 +1483,259 @@
     },
     {
       "Name": "GetBusinessPlan",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "BusinessPlan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetBusinessPlanAttachment",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "BusinessPlan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetBusinessPlanAttachmentImportTask",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "BusinessPlan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetBusinessPlanItem",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:BusinessPlanItemStage",
+        "partnercentral:BusinessPlanItemType",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "BusinessPlan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetBusinessPlanItemSchema",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetBusinessPlanSettings",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetBusinessPlanSubmissionTask",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "BusinessPlan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCampaign",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCampaignAsset",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCampaignAssetActivationTask",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCampaignAssetExportTask",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCampaignTemplate",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
       "Annotations": {
         "Properties": {
           "IsList": false,
@@ -1132,6 +1826,121 @@
           "IsWrite": false
         }
       },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCustomerAccount",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "CustomerAccount"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCustomerAccountBulkJob",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "CustomerAccountBulkJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCustomerAccountBulkJobReportUrl",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "CustomerAccountBulkJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetCustomerAccountStatistics",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDataSubscription",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "DataSubscription"
+        }
+      ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -1258,6 +2067,30 @@
       }
     },
     {
+      "Name": "GetOpportunityBulkJobReportUrl",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "OpportunityBulkJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GetPartner",
       "ActionConditionKeys": [
         "aws:ResourceTag/${TagKey}",
@@ -1351,6 +2184,29 @@
           "IsWrite": false
         }
       },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPartnerReportingData",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Dataset"
+        }
+      ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -1786,7 +2642,189 @@
       }
     },
     {
+      "Name": "ListBusinessPlanAssociations",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "BusinessPlan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListBusinessPlanAttachmentImportTasks",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "BusinessPlan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListBusinessPlanAttachments",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "BusinessPlan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListBusinessPlanHistory",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "BusinessPlan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListBusinessPlanItems",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "BusinessPlan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListBusinessPlanSubmissionTasks",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "BusinessPlan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListBusinessPlans",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCampaignAssets",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCampaigns",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
       "Annotations": {
         "Properties": {
           "IsList": true,
@@ -1879,6 +2917,67 @@
       }
     },
     {
+      "Name": "ListCustomerAccountBulkJobResults",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "CustomerAccountBulkJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListCustomerAccountBulkJobs",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListDataSubscriptions",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListEngagementByAcceptingInvitationTasks",
       "ActionConditionKeys": [
         "partnercentral:Catalog"
@@ -1899,6 +2998,25 @@
     },
     {
       "Name": "ListEngagementFromOpportunityTasks",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListEngagementGroups",
       "ActionConditionKeys": [
         "partnercentral:Catalog"
       ],
@@ -2047,6 +3165,49 @@
     },
     {
       "Name": "ListOpportunities",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListOpportunityBulkJobResults",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "OpportunityBulkJob"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListOpportunityBulkJobs",
       "ActionConditionKeys": [
         "partnercentral:Catalog"
       ],
@@ -2289,6 +3450,24 @@
       }
     },
     {
+      "Name": "ListSocialConnections",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListSolutions",
       "ActionConditionKeys": [
         "partnercentral:Catalog"
@@ -2357,6 +3536,24 @@
     },
     {
       "Name": "PutBusinessPlan",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutBusinessPlanSettings",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
       "Annotations": {
         "Properties": {
           "IsList": false,
@@ -2515,12 +3712,69 @@
       }
     },
     {
+      "Name": "SearchCampaignTemplates",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SearchCustomerAccounts",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SearchEngagements",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "SearchOpportunities",
       "ActionConditionKeys": [
         "partnercentral:Catalog"
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2567,6 +3821,121 @@
     },
     {
       "Name": "SendEmailVerificationCode",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartBusinessPlanAttachmentImportTask",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:AllowAwsEngagement",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "BusinessPlan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartBusinessPlanSubmissionTask",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:AllowAwsEngagement",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "BusinessPlan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartCampaignAssetActivationTask",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartCampaignAssetExportTask",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartCustomerAccountBulkJob",
       "ActionConditionKeys": [
         "partnercentral:Catalog"
       ],
@@ -2633,6 +4002,25 @@
           "Name": "engagement-from-opportunity-task"
         }
       ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartOpportunityBulkJob",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -2931,7 +4319,19 @@
           "Name": "BenefitApplication"
         },
         {
+          "Name": "BusinessPlan"
+        },
+        {
+          "Name": "Campaign"
+        },
+        {
           "Name": "ChannelHandshake"
+        },
+        {
+          "Name": "CustomerAccount"
+        },
+        {
+          "Name": "DataSubscription"
         },
         {
           "Name": "MarketplaceRevenueShare"
@@ -2983,7 +4383,19 @@
           "Name": "BenefitApplication"
         },
         {
+          "Name": "BusinessPlan"
+        },
+        {
+          "Name": "Campaign"
+        },
+        {
           "Name": "ChannelHandshake"
+        },
+        {
+          "Name": "CustomerAccount"
+        },
+        {
+          "Name": "DataSubscription"
         },
         {
           "Name": "MarketplaceRevenueShare"
@@ -3040,6 +4452,104 @@
       }
     },
     {
+      "Name": "UpdateBusinessPlan",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:AllowAwsEngagement",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "BusinessPlan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateBusinessPlanItem",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "partnercentral:AllowAwsEngagement",
+        "partnercentral:BusinessPlanItemStage",
+        "partnercentral:BusinessPlanItemType",
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "BusinessPlan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCampaign",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCampaignAsset",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Campaign"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "UpdateConnectionPreferences",
       "ActionConditionKeys": [
         "partnercentral:Catalog"
@@ -3053,6 +4563,30 @@
           "IsWrite": true
         }
       },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateCustomerAccount",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "CustomerAccount"
+        }
+      ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -3075,6 +4609,30 @@
       "Resources": [
         {
           "Name": "Engagement"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateMarketplaceRevenueShare",
+      "ActionConditionKeys": [
+        "partnercentral:Catalog"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "MarketplaceRevenueShare"
         }
       ],
       "SupportedBy": {
@@ -3240,6 +4798,24 @@
       "Name": "aws:TagKeys",
       "Types": [
         "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "partnercentral:AllowAwsEngagement",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "partnercentral:BusinessPlanItemStage",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "partnercentral:BusinessPlanItemType",
+      "Types": [
+        "String"
       ]
     },
     {
@@ -3553,6 +5129,22 @@
       ]
     },
     {
+      "Name": "CreateCustomerAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCustomerAccount",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "create_customer_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "CreateEngagement",
       "AuthorizedActions": [
         {
@@ -3801,6 +5393,22 @@
       ]
     },
     {
+      "Name": "DeleteCustomerAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCustomerAccount",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "delete_customer_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DeleteProgramManagementAccount",
       "AuthorizedActions": [
         {
@@ -4025,6 +5633,70 @@
       ]
     },
     {
+      "Name": "GetCustomerAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCustomerAccount",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "get_customer_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCustomerAccountBulkJob",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCustomerAccountBulkJob",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "get_customer_account_bulk_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCustomerAccountBulkJobReportUrl",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCustomerAccountBulkJobReportUrl",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "get_customer_account_bulk_job_report_url",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCustomerAccountStatistics",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCustomerAccountStatistics",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "get_customer_account_statistics",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetEngagement",
       "AuthorizedActions": [
         {
@@ -4100,6 +5772,22 @@
         {
           "Name": "partnercentral-selling",
           "Method": "get_opportunity",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetOpportunityBulkJobReportUrl",
+      "AuthorizedActions": [
+        {
+          "Name": "GetOpportunityBulkJobReportUrl",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "get_opportunity_bulk_job_report_url",
           "Package": "Boto3"
         }
       ]
@@ -4441,6 +6129,38 @@
       ]
     },
     {
+      "Name": "ListCustomerAccountBulkJobResults",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCustomerAccountBulkJobResults",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "list_customer_account_bulk_job_results",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCustomerAccountBulkJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCustomerAccountBulkJobs",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "list_customer_account_bulk_jobs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListEngagementByAcceptingInvitationTasks",
       "AuthorizedActions": [
         {
@@ -4468,6 +6188,22 @@
         {
           "Name": "partnercentral-selling",
           "Method": "list_engagement_from_opportunity_tasks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEngagementGroups",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEngagementGroups",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "list_engagement_groups",
           "Package": "Boto3"
         }
       ]
@@ -4580,6 +6316,38 @@
         {
           "Name": "partnercentral-selling",
           "Method": "list_opportunities",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListOpportunityBulkJobResults",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOpportunityBulkJobResults",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "list_opportunity_bulk_job_results",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListOpportunityBulkJobs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOpportunityBulkJobs",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "list_opportunity_bulk_jobs",
           "Package": "Boto3"
         }
       ]
@@ -4902,6 +6670,54 @@
       ]
     },
     {
+      "Name": "SearchCustomerAccounts",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchCustomerAccounts",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "search_customer_accounts",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchEngagements",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchEngagements",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "search_engagements",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SearchOpportunities",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchOpportunities",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "search_opportunities",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "SendEmailVerificationCode",
       "AuthorizedActions": [
         {
@@ -4913,6 +6729,22 @@
         {
           "Name": "partnercentral-account",
           "Method": "send_email_verification_code",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartCustomerAccountBulkJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StartCustomerAccountBulkJob",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "start_customer_account_bulk_job",
           "Package": "Boto3"
         }
       ]
@@ -5014,8 +6846,28 @@
       ]
     },
     {
+      "Name": "StartOpportunityBulkJob",
+      "AuthorizedActions": [
+        {
+          "Name": "StartOpportunityBulkJob",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "start_opportunity_bulk_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "StartOpportunityFromEngagementTask",
       "AuthorizedActions": [
+        {
+          "Name": "CreateEngagementContext",
+          "Service": "partnercentral"
+        },
         {
           "Name": "CreateOpportunity",
           "Service": "partnercentral"
@@ -5322,6 +7174,22 @@
       ]
     },
     {
+      "Name": "UpdateCustomerAccount",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCustomerAccount",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-selling",
+          "Method": "update_customer_account",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "UpdateEngagementContext",
       "AuthorizedActions": [
         {
@@ -5337,6 +7205,22 @@
         {
           "Name": "partnercentral-selling",
           "Method": "update_engagement_context",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateMarketplaceRevenueShare",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateMarketplaceRevenueShare",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-revenue-measurement",
+          "Method": "update_marketplace_revenue_share",
           "Package": "Boto3"
         }
       ]
@@ -5445,6 +7329,24 @@
       ]
     },
     {
+      "Name": "BusinessPlan",
+      "ARNFormats": [
+        "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/business-plan/${Identifier}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Campaign",
+      "ARNFormats": [
+        "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/campaign/${CampaignId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
       "Name": "ChannelHandshake",
       "ARNFormats": [
         "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/channel-handshake/${Identifier}"
@@ -5472,9 +7374,39 @@
       ]
     },
     {
+      "Name": "CustomerAccount",
+      "ARNFormats": [
+        "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/customer-account/${Identifier}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "CustomerAccountBulkJob",
+      "ARNFormats": [
+        "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/customer-account-bulk-job/${Identifier}"
+      ]
+    },
+    {
       "Name": "Dashboard",
       "ARNFormats": [
         "arn:${Partition}:partnercentral::${Account}:catalog/${Catalog}/ReportingData/${TableId}/Dashboard/${DashboardId}"
+      ]
+    },
+    {
+      "Name": "DataSubscription",
+      "ARNFormats": [
+        "arn:${Partition}:partnercentral::${Account}:catalog/${Catalog}/ReportingData/${Domain}/DataSubscription/${DataSubscriptionId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "Dataset",
+      "ARNFormats": [
+        "arn:${Partition}:partnercentral::${Account}:catalog/${Catalog}/ReportingData/${Domain}/Dataset/${DatasetName}"
       ]
     },
     {
@@ -5484,9 +7416,15 @@
       ]
     },
     {
+      "Name": "EngagementGroup",
+      "ARNFormats": [
+        "arn:${Partition}:partnercentral:${Region}::catalog/${Catalog}/engagement-group/${Identifier}"
+      ]
+    },
+    {
       "Name": "MarketplaceRevenueShare",
       "ARNFormats": [
-        "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/marketplace-revenue-share/${MarketplaceProductId}"
+        "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/marketplace-revenue-share/${MarketplaceRevenueShareId}"
       ],
       "ConditionKeys": [
         "aws:ResourceTag/${TagKey}"
@@ -5499,6 +7437,12 @@
       ],
       "ConditionKeys": [
         "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "OpportunityBulkJob",
+      "ARNFormats": [
+        "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/opportunity-bulk-job/${Identifier}"
       ]
     },
     {
@@ -5553,6 +7497,12 @@
       ],
       "ConditionKeys": [
         "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "SocialConnection",
+      "ARNFormats": [
+        "arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/social-connection/${SocialConnectionId}"
       ]
     },
     {

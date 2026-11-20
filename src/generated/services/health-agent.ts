@@ -14,10 +14,15 @@ export class HealthAgentActions {
 
 	/** [Write] health-agent:ActivateSubscription */
 	static readonly ActivateSubscription = "health-agent:ActivateSubscription";
+	/** [Write] health-agent:BatchRefillPatientPharmacyPrescriptions */
+	static readonly BatchRefillPatientPharmacyPrescriptions =
+		"health-agent:BatchRefillPatientPharmacyPrescriptions";
 	/** [Write] health-agent:CancelAppointment */
 	static readonly CancelAppointment = "health-agent:CancelAppointment";
 	/** [Write] health-agent:CreateAgent */
 	static readonly CreateAgent = "health-agent:CreateAgent";
+	/** [Write] health-agent:CreateDataset */
+	static readonly CreateDataset = "health-agent:CreateDataset";
 	/** [Write] health-agent:CreateDomain */
 	static readonly CreateDomain = "health-agent:CreateDomain";
 	/** [Write] health-agent:CreateIntegration */
@@ -31,6 +36,8 @@ export class HealthAgentActions {
 		"health-agent:DeactivateSubscription";
 	/** [Write] health-agent:DeleteAgent */
 	static readonly DeleteAgent = "health-agent:DeleteAgent";
+	/** [Write] health-agent:DeleteDataset */
+	static readonly DeleteDataset = "health-agent:DeleteDataset";
 	/** [Write] health-agent:DeleteDomain */
 	static readonly DeleteDomain = "health-agent:DeleteDomain";
 	/** [Write] health-agent:DeleteIntegration */
@@ -40,12 +47,17 @@ export class HealthAgentActions {
 	/** [Read] health-agent:GetCareTeamProvider */
 	static readonly actionGetCareTeamProvider =
 		"health-agent:GetCareTeamProvider";
+	/** [Read] health-agent:GetDataset */
+	static readonly actionGetDataset = "health-agent:GetDataset";
 	/** [Read] health-agent:GetDomain */
 	static readonly actionGetDomain = "health-agent:GetDomain";
 	/** [Read] health-agent:GetDomainAnalytics */
 	static readonly actionGetDomainAnalytics = "health-agent:GetDomainAnalytics";
 	/** [Read] health-agent:GetIntegration */
 	static readonly actionGetIntegration = "health-agent:GetIntegration";
+	/** [Read] health-agent:GetMedicalCodingJob */
+	static readonly actionGetMedicalCodingJob =
+		"health-agent:GetMedicalCodingJob";
 	/** [Read] health-agent:GetMedicalScribeListeningSession */
 	static readonly actionGetMedicalScribeListeningSession =
 		"health-agent:GetMedicalScribeListeningSession";
@@ -66,6 +78,8 @@ export class HealthAgentActions {
 	static readonly ListAgents = "health-agent:ListAgents";
 	/** [Read] health-agent:ListAppointmentSlots */
 	static readonly ListAppointmentSlots = "health-agent:ListAppointmentSlots";
+	/** [List] health-agent:ListDatasets */
+	static readonly ListDatasets = "health-agent:ListDatasets";
 	/** [List] health-agent:ListDomains */
 	static readonly ListDomains = "health-agent:ListDomains";
 	/** [List] health-agent:ListIntegrations */
@@ -79,6 +93,9 @@ export class HealthAgentActions {
 	/** [Read] health-agent:ListPatientMedications */
 	static readonly ListPatientMedications =
 		"health-agent:ListPatientMedications";
+	/** [Read] health-agent:ListPatientPharmacyPrescriptions */
+	static readonly ListPatientPharmacyPrescriptions =
+		"health-agent:ListPatientPharmacyPrescriptions";
 	/** [Read] health-agent:ListProviders */
 	static readonly ListProviders = "health-agent:ListProviders";
 	/** [List] health-agent:ListSessionRecords */
@@ -97,12 +114,16 @@ export class HealthAgentActions {
 	static readonly ResetPassword = "health-agent:ResetPassword";
 	/** [Write] health-agent:ScheduleAppointment */
 	static readonly ScheduleAppointment = "health-agent:ScheduleAppointment";
+	/** [Write] health-agent:StartMedicalCodingJob */
+	static readonly StartMedicalCodingJob = "health-agent:StartMedicalCodingJob";
 	/** [Write] health-agent:StartMedicalScribeListeningSession */
 	static readonly StartMedicalScribeListeningSession =
 		"health-agent:StartMedicalScribeListeningSession";
 	/** [Write] health-agent:StartPatientInsightsJob */
 	static readonly StartPatientInsightsJob =
 		"health-agent:StartPatientInsightsJob";
+	/** [Write] health-agent:SubmitFeedback */
+	static readonly SubmitFeedback = "health-agent:SubmitFeedback";
 	/** [Write] health-agent:SubmitMedicationRenewal */
 	static readonly SubmitMedicationRenewal =
 		"health-agent:SubmitMedicationRenewal";
@@ -121,9 +142,11 @@ export class HealthAgentActions {
 	static readonly AllReadActions: string[] = [
 		HealthAgentActions.actionGetAgent,
 		HealthAgentActions.actionGetCareTeamProvider,
+		HealthAgentActions.actionGetDataset,
 		HealthAgentActions.actionGetDomain,
 		HealthAgentActions.actionGetDomainAnalytics,
 		HealthAgentActions.actionGetIntegration,
+		HealthAgentActions.actionGetMedicalCodingJob,
 		HealthAgentActions.actionGetMedicalScribeListeningSession,
 		HealthAgentActions.actionGetPatient,
 		HealthAgentActions.actionGetPatientInsightsJob,
@@ -134,20 +157,24 @@ export class HealthAgentActions {
 		HealthAgentActions.ListPatientAppointments,
 		HealthAgentActions.ListPatientInsuranceCoverages,
 		HealthAgentActions.ListPatientMedications,
+		HealthAgentActions.ListPatientPharmacyPrescriptions,
 		HealthAgentActions.ListProviders,
 		HealthAgentActions.MatchPatient,
 	];
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
 		HealthAgentActions.ActivateSubscription,
+		HealthAgentActions.BatchRefillPatientPharmacyPrescriptions,
 		HealthAgentActions.CancelAppointment,
 		HealthAgentActions.CreateAgent,
+		HealthAgentActions.CreateDataset,
 		HealthAgentActions.CreateDomain,
 		HealthAgentActions.CreateIntegration,
 		HealthAgentActions.CreateSession,
 		HealthAgentActions.CreateSubscription,
 		HealthAgentActions.DeactivateSubscription,
 		HealthAgentActions.DeleteAgent,
+		HealthAgentActions.DeleteDataset,
 		HealthAgentActions.DeleteDomain,
 		HealthAgentActions.DeleteIntegration,
 		HealthAgentActions.InvokeAgent,
@@ -155,8 +182,10 @@ export class HealthAgentActions {
 		HealthAgentActions.RescheduleAppointment,
 		HealthAgentActions.ResetPassword,
 		HealthAgentActions.ScheduleAppointment,
+		HealthAgentActions.StartMedicalCodingJob,
 		HealthAgentActions.StartMedicalScribeListeningSession,
 		HealthAgentActions.StartPatientInsightsJob,
+		HealthAgentActions.SubmitFeedback,
 		HealthAgentActions.SubmitMedicationRenewal,
 		HealthAgentActions.UpdateAgent,
 		HealthAgentActions.UpdateIntegration,
@@ -165,6 +194,7 @@ export class HealthAgentActions {
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [
 		HealthAgentActions.ListAgents,
+		HealthAgentActions.ListDatasets,
 		HealthAgentActions.ListDomains,
 		HealthAgentActions.ListIntegrations,
 		HealthAgentActions.ListSessionRecords,
@@ -210,6 +240,38 @@ export interface HealthAgentAgentArnComponents {
 	readonly domainId: string;
 	/** The AgentId component. */
 	readonly agentId: string;
+}
+
+/**
+ * Properties for building a Dataset ARN.
+ */
+export interface HealthAgentDatasetArnProps {
+	/** The DomainId component of the ARN. */
+	readonly domainId: string;
+	/** The DatasetId component of the ARN. */
+	readonly datasetId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a Dataset ARN.
+ */
+export interface HealthAgentDatasetArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainId component. */
+	readonly domainId: string;
+	/** The DatasetId component. */
+	readonly datasetId: string;
 }
 
 /**
@@ -270,6 +332,38 @@ export interface HealthAgentIntegrationArnComponents {
 	readonly domainId: string;
 	/** The IntegrationId component. */
 	readonly integrationId: string;
+}
+
+/**
+ * Properties for building a MedicalCodingJob ARN.
+ */
+export interface HealthAgentMedicalCodingJobArnProps {
+	/** The DomainId component of the ARN. */
+	readonly domainId: string;
+	/** The JobId component of the ARN. */
+	readonly jobId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a MedicalCodingJob ARN.
+ */
+export interface HealthAgentMedicalCodingJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The DomainId component. */
+	readonly domainId: string;
+	/** The JobId component. */
+	readonly jobId: string;
 }
 
 /**
@@ -370,10 +464,14 @@ export interface HealthAgentSubscriptionArnComponents {
 
 const AgentArnRegex =
 	/^arn:(?<partition>[^:]+):health-agent:(?<region>[^:]*):(?<account>[^:]*):domain\/(?<domainId>[^:/?]+)\/agent\/(?<agentId>[^:/?]+)$/;
+const DatasetArnRegex =
+	/^arn:(?<partition>[^:]+):health-agent:(?<region>[^:]*):(?<account>[^:]*):domain\/(?<domainId>[^:/?]+)\/dataset\/(?<datasetId>[^:/?]+)$/;
 const DomainArnRegex =
 	/^arn:(?<partition>[^:]+):health-agent:(?<region>[^:]*):(?<account>[^:]*):domain\/(?<domainId>[^:/?]+)$/;
 const IntegrationArnRegex =
 	/^arn:(?<partition>[^:]+):health-agent:(?<region>[^:]*):(?<account>[^:]*):domain\/(?<domainId>[^:/?]+)\/integration\/(?<integrationId>[^:/?]+)$/;
+const MedicalCodingJobArnRegex =
+	/^arn:(?<partition>[^:]+):health-agent:(?<region>[^:]*):(?<account>[^:]*):domain\/(?<domainId>[^:/?]+)\/medical-coding-job\/(?<jobId>[^:/?]+)$/;
 const PatientInsightsJobArnRegex =
 	/^arn:(?<partition>[^:]+):health-agent:(?<region>[^:]*):(?<account>[^:]*):domain\/(?<domainId>[^:/?]+)\/patient-insights-job\/(?<jobId>[^:/?]+)$/;
 const SessionArnRegex =
@@ -414,6 +512,38 @@ export class HealthAgentResources {
 			account: match.groups.account,
 			domainId: match.groups!.domainId,
 			agentId: match.groups!.agentId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the Dataset resource.
+	 */
+	static dataset(props: HealthAgentDatasetArnProps): string {
+		return `arn:${props.partition ?? "aws"}:health-agent:${props.region ?? "*"}:${props.account ?? "*"}:domain/${props.domainId}/dataset/${props.datasetId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the Dataset resource.
+	 */
+	static isValidDatasetArn(arn: string): boolean {
+		return DatasetArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a Dataset ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseDatasetArn(arn: string): HealthAgentDatasetArnComponents {
+		const match = DatasetArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid Dataset ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			domainId: match.groups!.domainId,
+			datasetId: match.groups!.datasetId,
 		};
 	}
 
@@ -477,6 +607,40 @@ export class HealthAgentResources {
 			account: match.groups.account,
 			domainId: match.groups!.domainId,
 			integrationId: match.groups!.integrationId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the MedicalCodingJob resource.
+	 */
+	static medicalCodingJob(props: HealthAgentMedicalCodingJobArnProps): string {
+		return `arn:${props.partition ?? "aws"}:health-agent:${props.region ?? "*"}:${props.account ?? "*"}:domain/${props.domainId}/medical-coding-job/${props.jobId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the MedicalCodingJob resource.
+	 */
+	static isValidMedicalCodingJobArn(arn: string): boolean {
+		return MedicalCodingJobArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a MedicalCodingJob ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseMedicalCodingJobArn(
+		arn: string,
+	): HealthAgentMedicalCodingJobArnComponents {
+		const match = MedicalCodingJobArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid MedicalCodingJob ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			domainId: match.groups!.domainId,
+			jobId: match.groups!.jobId,
 		};
 	}
 
@@ -591,6 +755,8 @@ export class HealthAgentOperations {
 	static readonly ActivateSubscription: string[] = [
 		"health-agent:ActivateSubscription",
 	];
+	/** IAM actions required for the CreateDataset API call. */
+	static readonly CreateDataset: string[] = ["health-agent:CreateDataset"];
 	/** IAM actions required for the CreateDomain API call. */
 	static readonly CreateDomain: string[] = [
 		"health-agent:CreateDomain",
@@ -605,10 +771,18 @@ export class HealthAgentOperations {
 	static readonly DeactivateSubscription: string[] = [
 		"health-agent:DeactivateSubscription",
 	];
+	/** IAM actions required for the DeleteDataset API call. */
+	static readonly DeleteDataset: string[] = ["health-agent:DeleteDataset"];
 	/** IAM actions required for the DeleteDomain API call. */
 	static readonly DeleteDomain: string[] = ["health-agent:DeleteDomain"];
+	/** IAM actions required for the GetDataset API call. */
+	static readonly opGetDataset: string[] = ["health-agent:GetDataset"];
 	/** IAM actions required for the GetDomain API call. */
 	static readonly opGetDomain: string[] = ["health-agent:GetDomain"];
+	/** IAM actions required for the GetMedicalCodingJob API call. */
+	static readonly opGetMedicalCodingJob: string[] = [
+		"health-agent:GetMedicalCodingJob",
+	];
 	/** IAM actions required for the GetMedicalScribeListeningSession API call. */
 	static readonly opGetMedicalScribeListeningSession: string[] = [
 		"health-agent:GetMedicalScribeListeningSession",
@@ -621,6 +795,8 @@ export class HealthAgentOperations {
 	static readonly opGetSubscription: string[] = [
 		"health-agent:GetSubscription",
 	];
+	/** IAM actions required for the ListDatasets API call. */
+	static readonly ListDatasets: string[] = ["health-agent:ListDatasets"];
 	/** IAM actions required for the ListDomains API call. */
 	static readonly ListDomains: string[] = ["health-agent:ListDomains"];
 	/** IAM actions required for the ListSubscriptions API call. */
@@ -631,6 +807,10 @@ export class HealthAgentOperations {
 	static readonly ListTagsForResource: string[] = [
 		"health-agent:ListTagsForResource",
 	];
+	/** IAM actions required for the StartMedicalCodingJob API call. */
+	static readonly StartMedicalCodingJob: string[] = [
+		"health-agent:StartMedicalCodingJob",
+	];
 	/** IAM actions required for the StartMedicalScribeListeningSession API call. */
 	static readonly StartMedicalScribeListeningSession: string[] = [
 		"health-agent:StartMedicalScribeListeningSession",
@@ -639,6 +819,8 @@ export class HealthAgentOperations {
 	static readonly StartPatientInsightsJob: string[] = [
 		"health-agent:StartPatientInsightsJob",
 	];
+	/** IAM actions required for the SubmitFeedback API call. */
+	static readonly SubmitFeedback: string[] = ["health-agent:SubmitFeedback"];
 	/** IAM actions required for the TagResource API call. */
 	static readonly TagResource: string[] = ["health-agent:TagResource"];
 	/** IAM actions required for the UntagResource API call. */

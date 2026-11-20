@@ -12,6 +12,11 @@ export class HealthActions {
 	/** The IAM service prefix. */
 	static readonly SERVICE_PREFIX = "health";
 
+	/** [Write] health:ConfigureTags */
+	static readonly ConfigureTags = "health:ConfigureTags";
+	/** [Write] health:ConfigureTagsForOrganization */
+	static readonly ConfigureTagsForOrganization =
+		"health:ConfigureTagsForOrganization";
 	/** [Read] health:DescribeAffectedAccountsForOrganization */
 	static readonly DescribeAffectedAccountsForOrganization =
 		"health:DescribeAffectedAccountsForOrganization";
@@ -42,12 +47,38 @@ export class HealthActions {
 	/** [Read] health:DescribeHealthServiceStatusForOrganization */
 	static readonly DescribeHealthServiceStatusForOrganization =
 		"health:DescribeHealthServiceStatusForOrganization";
+	/** [Read] health:DescribeTagKeys */
+	static readonly DescribeTagKeys = "health:DescribeTagKeys";
+	/** [Read] health:DescribeTagKeysForOrganization */
+	static readonly DescribeTagKeysForOrganization =
+		"health:DescribeTagKeysForOrganization";
+	/** [Read] health:DescribeTags */
+	static readonly DescribeTags = "health:DescribeTags";
+	/** [Read] health:DescribeTagsForOrganization */
+	static readonly DescribeTagsForOrganization =
+		"health:DescribeTagsForOrganization";
+	/** [Read] health:DescribeTagsOnboardingStatus */
+	static readonly DescribeTagsOnboardingStatus =
+		"health:DescribeTagsOnboardingStatus";
+	/** [Read] health:DescribeTagsOnboardingStatusForOrganization */
+	static readonly DescribeTagsOnboardingStatusForOrganization =
+		"health:DescribeTagsOnboardingStatusForOrganization";
 	/** [PermissionManagement] health:DisableHealthServiceAccessForOrganization */
 	static readonly DisableHealthServiceAccessForOrganization =
 		"health:DisableHealthServiceAccessForOrganization";
+	/** [Write] health:DisableTags */
+	static readonly DisableTags = "health:DisableTags";
+	/** [Write] health:DisableTagsForOrganization */
+	static readonly DisableTagsForOrganization =
+		"health:DisableTagsForOrganization";
 	/** [PermissionManagement] health:EnableHealthServiceAccessForOrganization */
 	static readonly EnableHealthServiceAccessForOrganization =
 		"health:EnableHealthServiceAccessForOrganization";
+	/** [Write] health:EnableTags */
+	static readonly EnableTags = "health:EnableTags";
+	/** [Write] health:EnableTagsForOrganization */
+	static readonly EnableTagsForOrganization =
+		"health:EnableTagsForOrganization";
 
 	/** All read-level actions. */
 	static readonly AllReadActions: string[] = [
@@ -63,9 +94,22 @@ export class HealthActions {
 		HealthActions.DescribeEvents,
 		HealthActions.DescribeEventsForOrganization,
 		HealthActions.DescribeHealthServiceStatusForOrganization,
+		HealthActions.DescribeTagKeys,
+		HealthActions.DescribeTagKeysForOrganization,
+		HealthActions.DescribeTags,
+		HealthActions.DescribeTagsForOrganization,
+		HealthActions.DescribeTagsOnboardingStatus,
+		HealthActions.DescribeTagsOnboardingStatusForOrganization,
 	];
 	/** All write-level actions. */
-	static readonly AllWriteActions: string[] = [];
+	static readonly AllWriteActions: string[] = [
+		HealthActions.ConfigureTags,
+		HealthActions.ConfigureTagsForOrganization,
+		HealthActions.DisableTags,
+		HealthActions.DisableTagsForOrganization,
+		HealthActions.EnableTags,
+		HealthActions.EnableTagsForOrganization,
+	];
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [];
 	/** All permission-management-level actions. */
@@ -153,6 +197,12 @@ export class HealthResources {
  * API operation to required IAM actions mapping for health.
  */
 export class HealthOperations {
+	/** IAM actions required for the ConfigureTags API call. */
+	static readonly ConfigureTags: string[] = ["health:ConfigureTags"];
+	/** IAM actions required for the ConfigureTagsForOrganization API call. */
+	static readonly ConfigureTagsForOrganization: string[] = [
+		"health:ConfigureTagsForOrganization",
+	];
 	/** IAM actions required for the DescribeAffectedAccountsForOrganization API call. */
 	static readonly DescribeAffectedAccountsForOrganization: string[] = [
 		"health:DescribeAffectedAccountsForOrganization",
@@ -205,10 +255,40 @@ export class HealthOperations {
 	];
 	/** IAM actions required for the DescribeServiceLifecycle API call. */
 	static readonly DescribeServiceLifecycle: string[] = [];
+	/** IAM actions required for the DescribeTagKeys API call. */
+	static readonly DescribeTagKeys: string[] = ["health:DescribeTagKeys"];
+	/** IAM actions required for the DescribeTagKeysForOrganization API call. */
+	static readonly DescribeTagKeysForOrganization: string[] = [
+		"health:DescribeTagKeysForOrganization",
+		"organizations:ListAccounts",
+	];
+	/** IAM actions required for the DescribeTags API call. */
+	static readonly DescribeTags: string[] = ["health:DescribeTags"];
+	/** IAM actions required for the DescribeTagsForOrganization API call. */
+	static readonly DescribeTagsForOrganization: string[] = [
+		"health:DescribeTagsForOrganization",
+		"organizations:ListAccounts",
+	];
+	/** IAM actions required for the DescribeTagsOnboardingStatus API call. */
+	static readonly DescribeTagsOnboardingStatus: string[] = [
+		"health:DescribeTagsOnboardingStatus",
+	];
+	/** IAM actions required for the DescribeTagsOnboardingStatusForOrganization API call. */
+	static readonly DescribeTagsOnboardingStatusForOrganization: string[] = [
+		"health:DescribeTagsOnboardingStatusForOrganization",
+		"organizations:ListAccounts",
+	];
 	/** IAM actions required for the DisableHealthServiceAccessForOrganization API call. */
 	static readonly DisableHealthServiceAccessForOrganization: string[] = [
 		"organizations:DisableAWSServiceAccess",
 		"health:DisableHealthServiceAccessForOrganization",
+		"organizations:ListAccounts",
+	];
+	/** IAM actions required for the DisableTags API call. */
+	static readonly DisableTags: string[] = ["health:DisableTags"];
+	/** IAM actions required for the DisableTagsForOrganization API call. */
+	static readonly DisableTagsForOrganization: string[] = [
+		"health:DisableTagsForOrganization",
 		"organizations:ListAccounts",
 	];
 	/** IAM actions required for the EnableHealthServiceAccessForOrganization API call. */
@@ -218,27 +298,105 @@ export class HealthOperations {
 		"health:EnableHealthServiceAccessForOrganization",
 		"organizations:ListAccounts",
 	];
+	/** IAM actions required for the EnableTags API call. */
+	static readonly EnableTags: string[] = ["health:EnableTags"];
+	/** IAM actions required for the EnableTagsForOrganization API call. */
+	static readonly EnableTagsForOrganization: string[] = [
+		"health:EnableTagsForOrganization",
+	];
 }
 
 /**
  * Condition key constants and builders for health.
  */
 export class HealthConditions {
+	/** Condition keys applicable to the ConfigureTags action. */
+	static readonly ConfigureTagsConditionKeys: string[] = [
+		"health:TagChannel",
+		"health:TagKeys",
+	];
+	/** Condition keys applicable to the ConfigureTagsForOrganization action. */
+	static readonly ConfigureTagsForOrganizationConditionKeys: string[] = [
+		"health:TagChannel",
+		"health:TagKeys",
+	];
+	/** Condition keys applicable to the DescribeAffectedAccountsForOrganization action. */
+	static readonly DescribeAffectedAccountsForOrganizationConditionKeys: string[] =
+		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
 	/** Condition keys applicable to the DescribeAffectedEntities action. */
 	static readonly DescribeAffectedEntitiesConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
 		"health:eventTypeCode",
 		"health:service",
+	];
+	/** Condition keys applicable to the DescribeAffectedEntitiesForOrganization action. */
+	static readonly DescribeAffectedEntitiesForOrganizationConditionKeys: string[] =
+		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	/** Condition keys applicable to the DescribeEntityAggregates action. */
+	static readonly DescribeEntityAggregatesConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the DescribeEntityAggregatesForOrganization action. */
+	static readonly DescribeEntityAggregatesForOrganizationConditionKeys: string[] =
+		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
+	/** Condition keys applicable to the DescribeEventAggregates action. */
+	static readonly DescribeEventAggregatesConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the DescribeEventDetails action. */
 	static readonly DescribeEventDetailsConditionKeys: string[] = [
 		"health:eventTypeCode",
 		"health:service",
 	];
+	/** Condition keys applicable to the DescribeEvents action. */
+	static readonly DescribeEventsConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the DescribeEventsForOrganization action. */
+	static readonly DescribeEventsForOrganizationConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 
+	/** Condition key: aws:RequestTag/${TagKey} (String) */
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	/** Condition key: aws:TagKeys (ArrayOfString) */
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
+	/** Condition key: health:TagChannel (ArrayOfString) */
+	static readonly TAG_CHANNEL = "health:TagChannel";
+	/** Condition key: health:TagKeys (ArrayOfString) */
+	static readonly TAG_KEYS = "health:TagKeys";
 	/** Condition key: health:eventTypeCode (String) */
 	static readonly EVENT_TYPE_CODE = "health:eventTypeCode";
 	/** Condition key: health:service (String) */
 	static readonly SERVICE = "health:service";
+
+	/**
+	 * Generates a condition block for `aws:RequestTag/${TagKey}`.
+	 */
+	static requestTag(value: string): Record<string, Record<string, string>> {
+		return { StringEquals: { "aws:RequestTag/${TagKey}": value } };
+	}
+
+	/**
+	 * Generates a condition block for `aws:TagKeys`.
+	 */
+	static tagKeys(values: string[]): Record<string, Record<string, string[]>> {
+		return { "ForAllValues:StringEquals": { "aws:TagKeys": values } };
+	}
+
+	/**
+	 * Generates a condition block for `health:TagChannel`.
+	 */
+	static tagChannel(
+		values: string[],
+	): Record<string, Record<string, string[]>> {
+		return { "ForAllValues:StringEquals": { "health:TagChannel": values } };
+	}
 
 	/**
 	 * Generates a condition block for `health:eventTypeCode`.

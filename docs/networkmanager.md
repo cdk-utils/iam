@@ -389,6 +389,126 @@ Defaults to "aws".
 
 ---
 
+### NetworkManagerContextStoreArnComponents <a name="NetworkManagerContextStoreArnComponents" id="@cdk_utils/iam.networkmanager.NetworkManagerContextStoreArnComponents"></a>
+
+Parsed components of a context-store ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.networkmanager.NetworkManagerContextStoreArnComponents.Initializer"></a>
+
+```typescript
+import { networkmanager } from '@cdk_utils/iam'
+
+const networkManagerContextStoreArnComponents: networkmanager.NetworkManagerContextStoreArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerContextStoreArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerContextStoreArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerContextStoreArnComponents.property.resourceId">resourceId</a></code> | <code>string</code> | The ResourceId component. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.networkmanager.NetworkManagerContextStoreArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.networkmanager.NetworkManagerContextStoreArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `resourceId`<sup>Required</sup> <a name="resourceId" id="@cdk_utils/iam.networkmanager.NetworkManagerContextStoreArnComponents.property.resourceId"></a>
+
+```typescript
+public readonly resourceId: string;
+```
+
+- *Type:* string
+
+The ResourceId component.
+
+---
+
+### NetworkManagerContextStoreArnProps <a name="NetworkManagerContextStoreArnProps" id="@cdk_utils/iam.networkmanager.NetworkManagerContextStoreArnProps"></a>
+
+Properties for building a context-store ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.networkmanager.NetworkManagerContextStoreArnProps.Initializer"></a>
+
+```typescript
+import { networkmanager } from '@cdk_utils/iam'
+
+const networkManagerContextStoreArnProps: networkmanager.NetworkManagerContextStoreArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerContextStoreArnProps.property.resourceId">resourceId</a></code> | <code>string</code> | The ResourceId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerContextStoreArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerContextStoreArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+
+---
+
+##### `resourceId`<sup>Required</sup> <a name="resourceId" id="@cdk_utils/iam.networkmanager.NetworkManagerContextStoreArnProps.property.resourceId"></a>
+
+```typescript
+public readonly resourceId: string;
+```
+
+- *Type:* string
+
+The ResourceId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.networkmanager.NetworkManagerContextStoreArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.networkmanager.NetworkManagerContextStoreArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
 ### NetworkManagerCoreNetworkArnComponents <a name="NetworkManagerCoreNetworkArnComponents" id="@cdk_utils/iam.networkmanager.NetworkManagerCoreNetworkArnComponents"></a>
 
 Parsed components of a core-network ARN.
@@ -921,6 +1041,154 @@ Defaults to "aws".
 
 ---
 
+### NetworkManagerNetworkScopeArnComponents <a name="NetworkManagerNetworkScopeArnComponents" id="@cdk_utils/iam.networkmanager.NetworkManagerNetworkScopeArnComponents"></a>
+
+Parsed components of a network-scope ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.networkmanager.NetworkManagerNetworkScopeArnComponents.Initializer"></a>
+
+```typescript
+import { networkmanager } from '@cdk_utils/iam'
+
+const networkManagerNetworkScopeArnComponents: networkmanager.NetworkManagerNetworkScopeArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerNetworkScopeArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerNetworkScopeArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerNetworkScopeArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerNetworkScopeArnComponents.property.resourceId">resourceId</a></code> | <code>string</code> | The ResourceId component. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.networkmanager.NetworkManagerNetworkScopeArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.networkmanager.NetworkManagerNetworkScopeArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.networkmanager.NetworkManagerNetworkScopeArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+##### `resourceId`<sup>Required</sup> <a name="resourceId" id="@cdk_utils/iam.networkmanager.NetworkManagerNetworkScopeArnComponents.property.resourceId"></a>
+
+```typescript
+public readonly resourceId: string;
+```
+
+- *Type:* string
+
+The ResourceId component.
+
+---
+
+### NetworkManagerNetworkScopeArnProps <a name="NetworkManagerNetworkScopeArnProps" id="@cdk_utils/iam.networkmanager.NetworkManagerNetworkScopeArnProps"></a>
+
+Properties for building a network-scope ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.networkmanager.NetworkManagerNetworkScopeArnProps.Initializer"></a>
+
+```typescript
+import { networkmanager } from '@cdk_utils/iam'
+
+const networkManagerNetworkScopeArnProps: networkmanager.NetworkManagerNetworkScopeArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerNetworkScopeArnProps.property.resourceId">resourceId</a></code> | <code>string</code> | The ResourceId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerNetworkScopeArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerNetworkScopeArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerNetworkScopeArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `resourceId`<sup>Required</sup> <a name="resourceId" id="@cdk_utils/iam.networkmanager.NetworkManagerNetworkScopeArnProps.property.resourceId"></a>
+
+```typescript
+public readonly resourceId: string;
+```
+
+- *Type:* string
+
+The ResourceId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.networkmanager.NetworkManagerNetworkScopeArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.networkmanager.NetworkManagerNetworkScopeArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.networkmanager.NetworkManagerNetworkScopeArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### NetworkManagerPeeringArnComponents <a name="NetworkManagerPeeringArnComponents" id="@cdk_utils/iam.networkmanager.NetworkManagerPeeringArnComponents"></a>
 
 Parsed components of a peering ARN.
@@ -1218,6 +1486,9 @@ new networkmanager.NetworkManagerActions()
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.actionGetConnections">actionGetConnections</a></code> | <code>string</code> | [List] networkmanager:GetConnections. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.actionGetConnectPeer">actionGetConnectPeer</a></code> | <code>string</code> | [Read] networkmanager:GetConnectPeer. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.actionGetConnectPeerAssociations">actionGetConnectPeerAssociations</a></code> | <code>string</code> | [Read] networkmanager:GetConnectPeerAssociations. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.actionGetContextStore">actionGetContextStore</a></code> | <code>string</code> | [Read] networkmanager:GetContextStore. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.actionGetContextStoreAssociation">actionGetContextStoreAssociation</a></code> | <code>string</code> | [Read] networkmanager:GetContextStoreAssociation. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.actionGetContextVersion">actionGetContextVersion</a></code> | <code>string</code> | [Read] networkmanager:GetContextVersion. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.actionGetCoreNetwork">actionGetCoreNetwork</a></code> | <code>string</code> | [Read] networkmanager:GetCoreNetwork. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.actionGetCoreNetworkChangeEvents">actionGetCoreNetworkChangeEvents</a></code> | <code>string</code> | [Read] networkmanager:GetCoreNetworkChangeEvents. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.actionGetCoreNetworkChangeSet">actionGetCoreNetworkChangeSet</a></code> | <code>string</code> | [Read] networkmanager:GetCoreNetworkChangeSet. |
@@ -1247,12 +1518,14 @@ new networkmanager.NetworkManagerActions()
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.AssociateConnectPeer">AssociateConnectPeer</a></code> | <code>string</code> | [Write] networkmanager:AssociateConnectPeer. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.AssociateContextStore">AssociateContextStore</a></code> | <code>string</code> | [Write] networkmanager:AssociateContextStore. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.AssociateCustomerGateway">AssociateCustomerGateway</a></code> | <code>string</code> | [Write] networkmanager:AssociateCustomerGateway. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.AssociateLink">AssociateLink</a></code> | <code>string</code> | [Write] networkmanager:AssociateLink. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.AssociateTransitGatewayConnectPeer">AssociateTransitGatewayConnectPeer</a></code> | <code>string</code> | [Write] networkmanager:AssociateTransitGatewayConnectPeer. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.CreateConnectAttachment">CreateConnectAttachment</a></code> | <code>string</code> | [Write] networkmanager:CreateConnectAttachment. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.CreateConnection">CreateConnection</a></code> | <code>string</code> | [Write] networkmanager:CreateConnection. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.CreateConnectPeer">CreateConnectPeer</a></code> | <code>string</code> | [Write] networkmanager:CreateConnectPeer. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.CreateContextStore">CreateContextStore</a></code> | <code>string</code> | [Write] networkmanager:CreateContextStore. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.CreateCoreNetwork">CreateCoreNetwork</a></code> | <code>string</code> | [Write] networkmanager:CreateCoreNetwork. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.CreateCoreNetworkPrefixListAssociation">CreateCoreNetworkPrefixListAssociation</a></code> | <code>string</code> | [Write] networkmanager:CreateCoreNetworkPrefixListAssociation. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.CreateDevice">CreateDevice</a></code> | <code>string</code> | [Write] networkmanager:CreateDevice. |
@@ -1267,6 +1540,7 @@ new networkmanager.NetworkManagerActions()
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.DeleteAttachment">DeleteAttachment</a></code> | <code>string</code> | [Write] networkmanager:DeleteAttachment. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.DeleteConnection">DeleteConnection</a></code> | <code>string</code> | [Write] networkmanager:DeleteConnection. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.DeleteConnectPeer">DeleteConnectPeer</a></code> | <code>string</code> | [Write] networkmanager:DeleteConnectPeer. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.DeleteContextStore">DeleteContextStore</a></code> | <code>string</code> | [Write] networkmanager:DeleteContextStore. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.DeleteCoreNetwork">DeleteCoreNetwork</a></code> | <code>string</code> | [Write] networkmanager:DeleteCoreNetwork. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.DeleteCoreNetworkPolicyVersion">DeleteCoreNetworkPolicyVersion</a></code> | <code>string</code> | [Write] networkmanager:DeleteCoreNetworkPolicyVersion. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.DeleteCoreNetworkPrefixListAssociation">DeleteCoreNetworkPrefixListAssociation</a></code> | <code>string</code> | [Write] networkmanager:DeleteCoreNetworkPrefixListAssociation. |
@@ -1279,6 +1553,7 @@ new networkmanager.NetworkManagerActions()
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.DeregisterTransitGateway">DeregisterTransitGateway</a></code> | <code>string</code> | [Write] networkmanager:DeregisterTransitGateway. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.DescribeGlobalNetworks">DescribeGlobalNetworks</a></code> | <code>string</code> | [List] networkmanager:DescribeGlobalNetworks. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.DisassociateConnectPeer">DisassociateConnectPeer</a></code> | <code>string</code> | [Write] networkmanager:DisassociateConnectPeer. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.DisassociateContextStore">DisassociateContextStore</a></code> | <code>string</code> | [Write] networkmanager:DisassociateContextStore. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.DisassociateCustomerGateway">DisassociateCustomerGateway</a></code> | <code>string</code> | [Write] networkmanager:DisassociateCustomerGateway. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.DisassociateLink">DisassociateLink</a></code> | <code>string</code> | [Write] networkmanager:DisassociateLink. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.DisassociateTransitGatewayConnectPeer">DisassociateTransitGatewayConnectPeer</a></code> | <code>string</code> | [Write] networkmanager:DisassociateTransitGatewayConnectPeer. |
@@ -1287,6 +1562,10 @@ new networkmanager.NetworkManagerActions()
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.ListAttachmentRoutingPolicyAssociations">ListAttachmentRoutingPolicyAssociations</a></code> | <code>string</code> | [List] networkmanager:ListAttachmentRoutingPolicyAssociations. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.ListAttachments">ListAttachments</a></code> | <code>string</code> | [List] networkmanager:ListAttachments. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.ListConnectPeers">ListConnectPeers</a></code> | <code>string</code> | [List] networkmanager:ListConnectPeers. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.ListContextChanges">ListContextChanges</a></code> | <code>string</code> | [Read] networkmanager:ListContextChanges. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.ListContexts">ListContexts</a></code> | <code>string</code> | [Read] networkmanager:ListContexts. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.ListContextStoreAssociations">ListContextStoreAssociations</a></code> | <code>string</code> | [List] networkmanager:ListContextStoreAssociations. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.ListContextStores">ListContextStores</a></code> | <code>string</code> | [List] networkmanager:ListContextStores. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.ListCoreNetworkPolicyVersions">ListCoreNetworkPolicyVersions</a></code> | <code>string</code> | [List] networkmanager:ListCoreNetworkPolicyVersions. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.ListCoreNetworkPrefixListAssociations">ListCoreNetworkPrefixListAssociations</a></code> | <code>string</code> | [List] networkmanager:ListCoreNetworkPrefixListAssociations. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.ListCoreNetworkRoutingInformation">ListCoreNetworkRoutingInformation</a></code> | <code>string</code> | [List] networkmanager:ListCoreNetworkRoutingInformation. |
@@ -1308,6 +1587,7 @@ new networkmanager.NetworkManagerActions()
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] networkmanager:UntagResource. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.UpdateAttachmentNatConfiguration">UpdateAttachmentNatConfiguration</a></code> | <code>string</code> | [Write] networkmanager:UpdateAttachmentNatConfiguration. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.UpdateConnection">UpdateConnection</a></code> | <code>string</code> | [Write] networkmanager:UpdateConnection. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.UpdateContextStore">UpdateContextStore</a></code> | <code>string</code> | [Write] networkmanager:UpdateContextStore. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.UpdateCoreNetwork">UpdateCoreNetwork</a></code> | <code>string</code> | [Write] networkmanager:UpdateCoreNetwork. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.UpdateDevice">UpdateDevice</a></code> | <code>string</code> | [Write] networkmanager:UpdateDevice. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerActions.property.UpdateDirectConnectGatewayAttachment">UpdateDirectConnectGatewayAttachment</a></code> | <code>string</code> | [Write] networkmanager:UpdateDirectConnectGatewayAttachment. |
@@ -1376,6 +1656,42 @@ public readonly actionGetConnectPeerAssociations: string;
 - *Type:* string
 
 [Read] networkmanager:GetConnectPeerAssociations.
+
+---
+
+##### `actionGetContextStore`<sup>Required</sup> <a name="actionGetContextStore" id="@cdk_utils/iam.networkmanager.NetworkManagerActions.property.actionGetContextStore"></a>
+
+```typescript
+public readonly actionGetContextStore: string;
+```
+
+- *Type:* string
+
+[Read] networkmanager:GetContextStore.
+
+---
+
+##### `actionGetContextStoreAssociation`<sup>Required</sup> <a name="actionGetContextStoreAssociation" id="@cdk_utils/iam.networkmanager.NetworkManagerActions.property.actionGetContextStoreAssociation"></a>
+
+```typescript
+public readonly actionGetContextStoreAssociation: string;
+```
+
+- *Type:* string
+
+[Read] networkmanager:GetContextStoreAssociation.
+
+---
+
+##### `actionGetContextVersion`<sup>Required</sup> <a name="actionGetContextVersion" id="@cdk_utils/iam.networkmanager.NetworkManagerActions.property.actionGetContextVersion"></a>
+
+```typescript
+public readonly actionGetContextVersion: string;
+```
+
+- *Type:* string
+
+[Read] networkmanager:GetContextVersion.
 
 ---
 
@@ -1727,6 +2043,18 @@ public readonly AssociateConnectPeer: string;
 
 ---
 
+##### `AssociateContextStore`<sup>Required</sup> <a name="AssociateContextStore" id="@cdk_utils/iam.networkmanager.NetworkManagerActions.property.AssociateContextStore"></a>
+
+```typescript
+public readonly AssociateContextStore: string;
+```
+
+- *Type:* string
+
+[Write] networkmanager:AssociateContextStore.
+
+---
+
 ##### `AssociateCustomerGateway`<sup>Required</sup> <a name="AssociateCustomerGateway" id="@cdk_utils/iam.networkmanager.NetworkManagerActions.property.AssociateCustomerGateway"></a>
 
 ```typescript
@@ -1796,6 +2124,18 @@ public readonly CreateConnectPeer: string;
 - *Type:* string
 
 [Write] networkmanager:CreateConnectPeer.
+
+---
+
+##### `CreateContextStore`<sup>Required</sup> <a name="CreateContextStore" id="@cdk_utils/iam.networkmanager.NetworkManagerActions.property.CreateContextStore"></a>
+
+```typescript
+public readonly CreateContextStore: string;
+```
+
+- *Type:* string
+
+[Write] networkmanager:CreateContextStore.
 
 ---
 
@@ -1967,6 +2307,18 @@ public readonly DeleteConnectPeer: string;
 
 ---
 
+##### `DeleteContextStore`<sup>Required</sup> <a name="DeleteContextStore" id="@cdk_utils/iam.networkmanager.NetworkManagerActions.property.DeleteContextStore"></a>
+
+```typescript
+public readonly DeleteContextStore: string;
+```
+
+- *Type:* string
+
+[Write] networkmanager:DeleteContextStore.
+
+---
+
 ##### `DeleteCoreNetwork`<sup>Required</sup> <a name="DeleteCoreNetwork" id="@cdk_utils/iam.networkmanager.NetworkManagerActions.property.DeleteCoreNetwork"></a>
 
 ```typescript
@@ -2111,6 +2463,18 @@ public readonly DisassociateConnectPeer: string;
 
 ---
 
+##### `DisassociateContextStore`<sup>Required</sup> <a name="DisassociateContextStore" id="@cdk_utils/iam.networkmanager.NetworkManagerActions.property.DisassociateContextStore"></a>
+
+```typescript
+public readonly DisassociateContextStore: string;
+```
+
+- *Type:* string
+
+[Write] networkmanager:DisassociateContextStore.
+
+---
+
 ##### `DisassociateCustomerGateway`<sup>Required</sup> <a name="DisassociateCustomerGateway" id="@cdk_utils/iam.networkmanager.NetworkManagerActions.property.DisassociateCustomerGateway"></a>
 
 ```typescript
@@ -2204,6 +2568,54 @@ public readonly ListConnectPeers: string;
 - *Type:* string
 
 [List] networkmanager:ListConnectPeers.
+
+---
+
+##### `ListContextChanges`<sup>Required</sup> <a name="ListContextChanges" id="@cdk_utils/iam.networkmanager.NetworkManagerActions.property.ListContextChanges"></a>
+
+```typescript
+public readonly ListContextChanges: string;
+```
+
+- *Type:* string
+
+[Read] networkmanager:ListContextChanges.
+
+---
+
+##### `ListContexts`<sup>Required</sup> <a name="ListContexts" id="@cdk_utils/iam.networkmanager.NetworkManagerActions.property.ListContexts"></a>
+
+```typescript
+public readonly ListContexts: string;
+```
+
+- *Type:* string
+
+[Read] networkmanager:ListContexts.
+
+---
+
+##### `ListContextStoreAssociations`<sup>Required</sup> <a name="ListContextStoreAssociations" id="@cdk_utils/iam.networkmanager.NetworkManagerActions.property.ListContextStoreAssociations"></a>
+
+```typescript
+public readonly ListContextStoreAssociations: string;
+```
+
+- *Type:* string
+
+[List] networkmanager:ListContextStoreAssociations.
+
+---
+
+##### `ListContextStores`<sup>Required</sup> <a name="ListContextStores" id="@cdk_utils/iam.networkmanager.NetworkManagerActions.property.ListContextStores"></a>
+
+```typescript
+public readonly ListContextStores: string;
+```
+
+- *Type:* string
+
+[List] networkmanager:ListContextStores.
 
 ---
 
@@ -2459,6 +2871,18 @@ public readonly UpdateConnection: string;
 
 ---
 
+##### `UpdateContextStore`<sup>Required</sup> <a name="UpdateContextStore" id="@cdk_utils/iam.networkmanager.NetworkManagerActions.property.UpdateContextStore"></a>
+
+```typescript
+public readonly UpdateContextStore: string;
+```
+
+- *Type:* string
+
+[Write] networkmanager:UpdateContextStore.
+
+---
+
 ##### `UpdateCoreNetwork`<sup>Required</sup> <a name="UpdateCoreNetwork" id="@cdk_utils/iam.networkmanager.NetworkManagerActions.property.UpdateCoreNetwork"></a>
 
 ```typescript
@@ -2580,6 +3004,7 @@ new networkmanager.NetworkManagerConditions()
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.cgwARN">cgwARN</a></code> | Generates a condition block for `networkmanager:cgwArn`. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.directConnectGatewayARN">directConnectGatewayARN</a></code> | Generates a condition block for `networkmanager:directConnectGatewayArn`. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.edgeLocations">edgeLocations</a></code> | Generates a condition block for `networkmanager:edgeLocations`. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.managedBy">managedBy</a></code> | Generates a condition block for `networkmanager:ManagedBy`. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.requestTag">requestTag</a></code> | Generates a condition block for `aws:RequestTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.resourceTag">resourceTag</a></code> | Generates a condition block for `aws:ResourceTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.subnetArns">subnetArns</a></code> | Generates a condition block for `networkmanager:subnetArns`. |
@@ -2637,6 +3062,22 @@ Generates a condition block for `networkmanager:edgeLocations`.
 ###### `values`<sup>Required</sup> <a name="values" id="@cdk_utils/iam.networkmanager.NetworkManagerConditions.edgeLocations.parameter.values"></a>
 
 - *Type:* string[]
+
+---
+
+##### `managedBy` <a name="managedBy" id="@cdk_utils/iam.networkmanager.NetworkManagerConditions.managedBy"></a>
+
+```typescript
+import { networkmanager } from '@cdk_utils/iam'
+
+networkmanager.NetworkManagerConditions.managedBy(value: string)
+```
+
+Generates a condition block for `networkmanager:ManagedBy`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.networkmanager.NetworkManagerConditions.managedBy.parameter.value"></a>
+
+- *Type:* string
 
 ---
 
@@ -2789,6 +3230,10 @@ Generates a condition block for `networkmanager:vpnConnectionArn`.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.actionGetContextStoreAssociationConditionKeys">actionGetContextStoreAssociationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetContextStoreAssociation action. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.actionGetContextStoreConditionKeys">actionGetContextStoreConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetContextStore action. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.actionGetContextVersionConditionKeys">actionGetContextVersionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetContextVersion action. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.AssociateContextStoreConditionKeys">AssociateContextStoreConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the AssociateContextStore action. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.AssociateCustomerGatewayConditionKeys">AssociateCustomerGatewayConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the AssociateCustomerGateway action. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.AssociateTransitGatewayConnectPeerConditionKeys">AssociateTransitGatewayConnectPeerConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the AssociateTransitGatewayConnectPeer action. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.AWS_REQUEST_TAG">AWS_REQUEST_TAG</a></code> | <code>string</code> | Condition key: aws:RequestTag/${TagKey} (String). |
@@ -2798,6 +3243,7 @@ Generates a condition block for `networkmanager:vpnConnectionArn`.
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.CreateConnectAttachmentConditionKeys">CreateConnectAttachmentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateConnectAttachment action. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.CreateConnectionConditionKeys">CreateConnectionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateConnection action. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.CreateConnectPeerConditionKeys">CreateConnectPeerConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateConnectPeer action. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.CreateContextStoreConditionKeys">CreateContextStoreConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateContextStore action. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.CreateCoreNetworkConditionKeys">CreateCoreNetworkConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateCoreNetwork action. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.CreateDeviceConditionKeys">CreateDeviceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateDevice action. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.CreateDirectConnectGatewayAttachmentConditionKeys">CreateDirectConnectGatewayAttachmentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateDirectConnectGatewayAttachment action. |
@@ -2808,12 +3254,18 @@ Generates a condition block for `networkmanager:vpnConnectionArn`.
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.CreateTransitGatewayPeeringConditionKeys">CreateTransitGatewayPeeringConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateTransitGatewayPeering action. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.CreateTransitGatewayRouteTableAttachmentConditionKeys">CreateTransitGatewayRouteTableAttachmentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateTransitGatewayRouteTableAttachment action. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.CreateVpcAttachmentConditionKeys">CreateVpcAttachmentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateVpcAttachment action. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.DeleteContextStoreConditionKeys">DeleteContextStoreConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteContextStore action. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.DeregisterTransitGatewayConditionKeys">DeregisterTransitGatewayConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeregisterTransitGateway action. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.DIRECT_CONNECT_GATEWAY_ARN">DIRECT_CONNECT_GATEWAY_ARN</a></code> | <code>string</code> | Condition key: networkmanager:directConnectGatewayArn (ARN). |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.DisassociateContextStoreConditionKeys">DisassociateContextStoreConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DisassociateContextStore action. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.DisassociateCustomerGatewayConditionKeys">DisassociateCustomerGatewayConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DisassociateCustomerGateway action. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.DisassociateTransitGatewayConnectPeerConditionKeys">DisassociateTransitGatewayConnectPeerConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DisassociateTransitGatewayConnectPeer action. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.EDGE_LOCATIONS">EDGE_LOCATIONS</a></code> | <code>string</code> | Condition key: networkmanager:edgeLocations (ArrayOfString). |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.ListContextChangesConditionKeys">ListContextChangesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListContextChanges action. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.ListContextsConditionKeys">ListContextsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListContexts action. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.ListContextStoreAssociationsConditionKeys">ListContextStoreAssociationsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListContextStoreAssociations action. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.ListTagsForResourceConditionKeys">ListTagsForResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListTagsForResource action. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.MANAGED_BY">MANAGED_BY</a></code> | <code>string</code> | Condition key: networkmanager:ManagedBy (String). |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.RegisterTransitGatewayConditionKeys">RegisterTransitGatewayConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the RegisterTransitGateway action. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.SUBNET_ARNS">SUBNET_ARNS</a></code> | <code>string</code> | Condition key: networkmanager:subnetArns (ArrayOfARN). |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
@@ -2821,10 +3273,59 @@ Generates a condition block for `networkmanager:vpnConnectionArn`.
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.TGW_CONNECT_PEER_ARN">TGW_CONNECT_PEER_ARN</a></code> | <code>string</code> | Condition key: networkmanager:tgwConnectPeerArn (ARN). |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.TGW_RTB_ARN">TGW_RTB_ARN</a></code> | <code>string</code> | Condition key: networkmanager:tgwRtbArn (ARN). |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.UpdateContextStoreConditionKeys">UpdateContextStoreConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateContextStore action. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.UpdateDirectConnectGatewayAttachmentConditionKeys">UpdateDirectConnectGatewayAttachmentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateDirectConnectGatewayAttachment action. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.UpdateVpcAttachmentConditionKeys">UpdateVpcAttachmentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateVpcAttachment action. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.VPC_ARN">VPC_ARN</a></code> | <code>string</code> | Condition key: networkmanager:vpcArn (ARN). |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.VPN_CONNECTION_ARN">VPN_CONNECTION_ARN</a></code> | <code>string</code> | Condition key: networkmanager:vpnConnectionArn (ARN). |
+
+---
+
+##### `actionGetContextStoreAssociationConditionKeys`<sup>Required</sup> <a name="actionGetContextStoreAssociationConditionKeys" id="@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.actionGetContextStoreAssociationConditionKeys"></a>
+
+```typescript
+public readonly actionGetContextStoreAssociationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetContextStoreAssociation action.
+
+---
+
+##### `actionGetContextStoreConditionKeys`<sup>Required</sup> <a name="actionGetContextStoreConditionKeys" id="@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.actionGetContextStoreConditionKeys"></a>
+
+```typescript
+public readonly actionGetContextStoreConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetContextStore action.
+
+---
+
+##### `actionGetContextVersionConditionKeys`<sup>Required</sup> <a name="actionGetContextVersionConditionKeys" id="@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.actionGetContextVersionConditionKeys"></a>
+
+```typescript
+public readonly actionGetContextVersionConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetContextVersion action.
+
+---
+
+##### `AssociateContextStoreConditionKeys`<sup>Required</sup> <a name="AssociateContextStoreConditionKeys" id="@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.AssociateContextStoreConditionKeys"></a>
+
+```typescript
+public readonly AssociateContextStoreConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the AssociateContextStore action.
 
 ---
 
@@ -2933,6 +3434,18 @@ public readonly CreateConnectPeerConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CreateConnectPeer action.
+
+---
+
+##### `CreateContextStoreConditionKeys`<sup>Required</sup> <a name="CreateContextStoreConditionKeys" id="@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.CreateContextStoreConditionKeys"></a>
+
+```typescript
+public readonly CreateContextStoreConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateContextStore action.
 
 ---
 
@@ -3056,6 +3569,18 @@ Condition keys applicable to the CreateVpcAttachment action.
 
 ---
 
+##### `DeleteContextStoreConditionKeys`<sup>Required</sup> <a name="DeleteContextStoreConditionKeys" id="@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.DeleteContextStoreConditionKeys"></a>
+
+```typescript
+public readonly DeleteContextStoreConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DeleteContextStore action.
+
+---
+
 ##### `DeregisterTransitGatewayConditionKeys`<sup>Required</sup> <a name="DeregisterTransitGatewayConditionKeys" id="@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.DeregisterTransitGatewayConditionKeys"></a>
 
 ```typescript
@@ -3077,6 +3602,18 @@ public readonly DIRECT_CONNECT_GATEWAY_ARN: string;
 - *Type:* string
 
 Condition key: networkmanager:directConnectGatewayArn (ARN).
+
+---
+
+##### `DisassociateContextStoreConditionKeys`<sup>Required</sup> <a name="DisassociateContextStoreConditionKeys" id="@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.DisassociateContextStoreConditionKeys"></a>
+
+```typescript
+public readonly DisassociateContextStoreConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DisassociateContextStore action.
 
 ---
 
@@ -3116,6 +3653,42 @@ Condition key: networkmanager:edgeLocations (ArrayOfString).
 
 ---
 
+##### `ListContextChangesConditionKeys`<sup>Required</sup> <a name="ListContextChangesConditionKeys" id="@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.ListContextChangesConditionKeys"></a>
+
+```typescript
+public readonly ListContextChangesConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ListContextChanges action.
+
+---
+
+##### `ListContextsConditionKeys`<sup>Required</sup> <a name="ListContextsConditionKeys" id="@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.ListContextsConditionKeys"></a>
+
+```typescript
+public readonly ListContextsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ListContexts action.
+
+---
+
+##### `ListContextStoreAssociationsConditionKeys`<sup>Required</sup> <a name="ListContextStoreAssociationsConditionKeys" id="@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.ListContextStoreAssociationsConditionKeys"></a>
+
+```typescript
+public readonly ListContextStoreAssociationsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ListContextStoreAssociations action.
+
+---
+
 ##### `ListTagsForResourceConditionKeys`<sup>Required</sup> <a name="ListTagsForResourceConditionKeys" id="@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.ListTagsForResourceConditionKeys"></a>
 
 ```typescript
@@ -3125,6 +3698,18 @@ public readonly ListTagsForResourceConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the ListTagsForResource action.
+
+---
+
+##### `MANAGED_BY`<sup>Required</sup> <a name="MANAGED_BY" id="@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.MANAGED_BY"></a>
+
+```typescript
+public readonly MANAGED_BY: string;
+```
+
+- *Type:* string
+
+Condition key: networkmanager:ManagedBy (String).
 
 ---
 
@@ -3212,6 +3797,18 @@ Condition keys applicable to the UntagResource action.
 
 ---
 
+##### `UpdateContextStoreConditionKeys`<sup>Required</sup> <a name="UpdateContextStoreConditionKeys" id="@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.UpdateContextStoreConditionKeys"></a>
+
+```typescript
+public readonly UpdateContextStoreConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateContextStore action.
+
+---
+
 ##### `UpdateDirectConnectGatewayAttachmentConditionKeys`<sup>Required</sup> <a name="UpdateDirectConnectGatewayAttachmentConditionKeys" id="@cdk_utils/iam.networkmanager.NetworkManagerConditions.property.UpdateDirectConnectGatewayAttachmentConditionKeys"></a>
 
 ```typescript
@@ -3286,12 +3883,14 @@ new networkmanager.NetworkManagerOperations()
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.AcceptAttachment">AcceptAttachment</a></code> | <code>string[]</code> | IAM actions required for the AcceptAttachment API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.AssociateConnectPeer">AssociateConnectPeer</a></code> | <code>string[]</code> | IAM actions required for the AssociateConnectPeer API call. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.AssociateContextStore">AssociateContextStore</a></code> | <code>string[]</code> | IAM actions required for the AssociateContextStore API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.AssociateCustomerGateway">AssociateCustomerGateway</a></code> | <code>string[]</code> | IAM actions required for the AssociateCustomerGateway API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.AssociateLink">AssociateLink</a></code> | <code>string[]</code> | IAM actions required for the AssociateLink API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.AssociateTransitGatewayConnectPeer">AssociateTransitGatewayConnectPeer</a></code> | <code>string[]</code> | IAM actions required for the AssociateTransitGatewayConnectPeer API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.CreateConnectAttachment">CreateConnectAttachment</a></code> | <code>string[]</code> | IAM actions required for the CreateConnectAttachment API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.CreateConnection">CreateConnection</a></code> | <code>string[]</code> | IAM actions required for the CreateConnection API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.CreateConnectPeer">CreateConnectPeer</a></code> | <code>string[]</code> | IAM actions required for the CreateConnectPeer API call. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.CreateContextStore">CreateContextStore</a></code> | <code>string[]</code> | IAM actions required for the CreateContextStore API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.CreateCoreNetwork">CreateCoreNetwork</a></code> | <code>string[]</code> | IAM actions required for the CreateCoreNetwork API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.CreateCoreNetworkPrefixListAssociation">CreateCoreNetworkPrefixListAssociation</a></code> | <code>string[]</code> | IAM actions required for the CreateCoreNetworkPrefixListAssociation API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.CreateDevice">CreateDevice</a></code> | <code>string[]</code> | IAM actions required for the CreateDevice API call. |
@@ -3306,6 +3905,7 @@ new networkmanager.NetworkManagerOperations()
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DeleteAttachment">DeleteAttachment</a></code> | <code>string[]</code> | IAM actions required for the DeleteAttachment API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DeleteConnection">DeleteConnection</a></code> | <code>string[]</code> | IAM actions required for the DeleteConnection API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DeleteConnectPeer">DeleteConnectPeer</a></code> | <code>string[]</code> | IAM actions required for the DeleteConnectPeer API call. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DeleteContextStore">DeleteContextStore</a></code> | <code>string[]</code> | IAM actions required for the DeleteContextStore API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DeleteCoreNetwork">DeleteCoreNetwork</a></code> | <code>string[]</code> | IAM actions required for the DeleteCoreNetwork API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DeleteCoreNetworkPolicyVersion">DeleteCoreNetworkPolicyVersion</a></code> | <code>string[]</code> | IAM actions required for the DeleteCoreNetworkPolicyVersion API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DeleteCoreNetworkPrefixListAssociation">DeleteCoreNetworkPrefixListAssociation</a></code> | <code>string[]</code> | IAM actions required for the DeleteCoreNetworkPrefixListAssociation API call. |
@@ -3318,6 +3918,7 @@ new networkmanager.NetworkManagerOperations()
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DeregisterTransitGateway">DeregisterTransitGateway</a></code> | <code>string[]</code> | IAM actions required for the DeregisterTransitGateway API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DescribeGlobalNetworks">DescribeGlobalNetworks</a></code> | <code>string[]</code> | IAM actions required for the DescribeGlobalNetworks API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DisassociateConnectPeer">DisassociateConnectPeer</a></code> | <code>string[]</code> | IAM actions required for the DisassociateConnectPeer API call. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DisassociateContextStore">DisassociateContextStore</a></code> | <code>string[]</code> | IAM actions required for the DisassociateContextStore API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DisassociateCustomerGateway">DisassociateCustomerGateway</a></code> | <code>string[]</code> | IAM actions required for the DisassociateCustomerGateway API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DisassociateLink">DisassociateLink</a></code> | <code>string[]</code> | IAM actions required for the DisassociateLink API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DisassociateTransitGatewayConnectPeer">DisassociateTransitGatewayConnectPeer</a></code> | <code>string[]</code> | IAM actions required for the DisassociateTransitGatewayConnectPeer API call. |
@@ -3326,6 +3927,10 @@ new networkmanager.NetworkManagerOperations()
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.ListAttachmentRoutingPolicyAssociations">ListAttachmentRoutingPolicyAssociations</a></code> | <code>string[]</code> | IAM actions required for the ListAttachmentRoutingPolicyAssociations API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.ListAttachments">ListAttachments</a></code> | <code>string[]</code> | IAM actions required for the ListAttachments API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.ListConnectPeers">ListConnectPeers</a></code> | <code>string[]</code> | IAM actions required for the ListConnectPeers API call. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.ListContextChanges">ListContextChanges</a></code> | <code>string[]</code> | IAM actions required for the ListContextChanges API call. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.ListContexts">ListContexts</a></code> | <code>string[]</code> | IAM actions required for the ListContexts API call. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.ListContextStoreAssociations">ListContextStoreAssociations</a></code> | <code>string[]</code> | IAM actions required for the ListContextStoreAssociations API call. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.ListContextStores">ListContextStores</a></code> | <code>string[]</code> | IAM actions required for the ListContextStores API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.ListCoreNetworkPolicyVersions">ListCoreNetworkPolicyVersions</a></code> | <code>string[]</code> | IAM actions required for the ListCoreNetworkPolicyVersions API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.ListCoreNetworkPrefixListAssociations">ListCoreNetworkPrefixListAssociations</a></code> | <code>string[]</code> | IAM actions required for the ListCoreNetworkPrefixListAssociations API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.ListCoreNetworkRoutingInformation">ListCoreNetworkRoutingInformation</a></code> | <code>string[]</code> | IAM actions required for the ListCoreNetworkRoutingInformation API call. |
@@ -3337,6 +3942,9 @@ new networkmanager.NetworkManagerOperations()
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.opGetConnections">opGetConnections</a></code> | <code>string[]</code> | IAM actions required for the GetConnections API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.opGetConnectPeer">opGetConnectPeer</a></code> | <code>string[]</code> | IAM actions required for the GetConnectPeer API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.opGetConnectPeerAssociations">opGetConnectPeerAssociations</a></code> | <code>string[]</code> | IAM actions required for the GetConnectPeerAssociations API call. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.opGetContextStore">opGetContextStore</a></code> | <code>string[]</code> | IAM actions required for the GetContextStore API call. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.opGetContextStoreAssociation">opGetContextStoreAssociation</a></code> | <code>string[]</code> | IAM actions required for the GetContextStoreAssociation API call. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.opGetContextVersion">opGetContextVersion</a></code> | <code>string[]</code> | IAM actions required for the GetContextVersion API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.opGetCoreNetwork">opGetCoreNetwork</a></code> | <code>string[]</code> | IAM actions required for the GetCoreNetwork API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.opGetCoreNetworkChangeEvents">opGetCoreNetworkChangeEvents</a></code> | <code>string[]</code> | IAM actions required for the GetCoreNetworkChangeEvents API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.opGetCoreNetworkChangeSet">opGetCoreNetworkChangeSet</a></code> | <code>string[]</code> | IAM actions required for the GetCoreNetworkChangeSet API call. |
@@ -3373,6 +3981,7 @@ new networkmanager.NetworkManagerOperations()
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.UpdateAttachmentNatConfiguration">UpdateAttachmentNatConfiguration</a></code> | <code>string[]</code> | IAM actions required for the UpdateAttachmentNatConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.UpdateConnection">UpdateConnection</a></code> | <code>string[]</code> | IAM actions required for the UpdateConnection API call. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.UpdateContextStore">UpdateContextStore</a></code> | <code>string[]</code> | IAM actions required for the UpdateContextStore API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.UpdateCoreNetwork">UpdateCoreNetwork</a></code> | <code>string[]</code> | IAM actions required for the UpdateCoreNetwork API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.UpdateDevice">UpdateDevice</a></code> | <code>string[]</code> | IAM actions required for the UpdateDevice API call. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.UpdateDirectConnectGatewayAttachment">UpdateDirectConnectGatewayAttachment</a></code> | <code>string[]</code> | IAM actions required for the UpdateDirectConnectGatewayAttachment API call. |
@@ -3405,6 +4014,18 @@ public readonly AssociateConnectPeer: string[];
 - *Type:* string[]
 
 IAM actions required for the AssociateConnectPeer API call.
+
+---
+
+##### `AssociateContextStore`<sup>Required</sup> <a name="AssociateContextStore" id="@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.AssociateContextStore"></a>
+
+```typescript
+public readonly AssociateContextStore: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the AssociateContextStore API call.
 
 ---
 
@@ -3477,6 +4098,18 @@ public readonly CreateConnectPeer: string[];
 - *Type:* string[]
 
 IAM actions required for the CreateConnectPeer API call.
+
+---
+
+##### `CreateContextStore`<sup>Required</sup> <a name="CreateContextStore" id="@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.CreateContextStore"></a>
+
+```typescript
+public readonly CreateContextStore: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateContextStore API call.
 
 ---
 
@@ -3648,6 +4281,18 @@ IAM actions required for the DeleteConnectPeer API call.
 
 ---
 
+##### `DeleteContextStore`<sup>Required</sup> <a name="DeleteContextStore" id="@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DeleteContextStore"></a>
+
+```typescript
+public readonly DeleteContextStore: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteContextStore API call.
+
+---
+
 ##### `DeleteCoreNetwork`<sup>Required</sup> <a name="DeleteCoreNetwork" id="@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DeleteCoreNetwork"></a>
 
 ```typescript
@@ -3792,6 +4437,18 @@ IAM actions required for the DisassociateConnectPeer API call.
 
 ---
 
+##### `DisassociateContextStore`<sup>Required</sup> <a name="DisassociateContextStore" id="@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DisassociateContextStore"></a>
+
+```typescript
+public readonly DisassociateContextStore: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DisassociateContextStore API call.
+
+---
+
 ##### `DisassociateCustomerGateway`<sup>Required</sup> <a name="DisassociateCustomerGateway" id="@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.DisassociateCustomerGateway"></a>
 
 ```typescript
@@ -3885,6 +4542,54 @@ public readonly ListConnectPeers: string[];
 - *Type:* string[]
 
 IAM actions required for the ListConnectPeers API call.
+
+---
+
+##### `ListContextChanges`<sup>Required</sup> <a name="ListContextChanges" id="@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.ListContextChanges"></a>
+
+```typescript
+public readonly ListContextChanges: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListContextChanges API call.
+
+---
+
+##### `ListContexts`<sup>Required</sup> <a name="ListContexts" id="@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.ListContexts"></a>
+
+```typescript
+public readonly ListContexts: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListContexts API call.
+
+---
+
+##### `ListContextStoreAssociations`<sup>Required</sup> <a name="ListContextStoreAssociations" id="@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.ListContextStoreAssociations"></a>
+
+```typescript
+public readonly ListContextStoreAssociations: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListContextStoreAssociations API call.
+
+---
+
+##### `ListContextStores`<sup>Required</sup> <a name="ListContextStores" id="@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.ListContextStores"></a>
+
+```typescript
+public readonly ListContextStores: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListContextStores API call.
 
 ---
 
@@ -4017,6 +4722,42 @@ public readonly opGetConnectPeerAssociations: string[];
 - *Type:* string[]
 
 IAM actions required for the GetConnectPeerAssociations API call.
+
+---
+
+##### `opGetContextStore`<sup>Required</sup> <a name="opGetContextStore" id="@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.opGetContextStore"></a>
+
+```typescript
+public readonly opGetContextStore: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetContextStore API call.
+
+---
+
+##### `opGetContextStoreAssociation`<sup>Required</sup> <a name="opGetContextStoreAssociation" id="@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.opGetContextStoreAssociation"></a>
+
+```typescript
+public readonly opGetContextStoreAssociation: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetContextStoreAssociation API call.
+
+---
+
+##### `opGetContextVersion`<sup>Required</sup> <a name="opGetContextVersion" id="@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.opGetContextVersion"></a>
+
+```typescript
+public readonly opGetContextVersion: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetContextVersion API call.
 
 ---
 
@@ -4452,6 +5193,18 @@ IAM actions required for the UpdateConnection API call.
 
 ---
 
+##### `UpdateContextStore`<sup>Required</sup> <a name="UpdateContextStore" id="@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.UpdateContextStore"></a>
+
+```typescript
+public readonly UpdateContextStore: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateContextStore API call.
+
+---
+
 ##### `UpdateCoreNetwork`<sup>Required</sup> <a name="UpdateCoreNetwork" id="@cdk_utils/iam.networkmanager.NetworkManagerOperations.property.UpdateCoreNetwork"></a>
 
 ```typescript
@@ -4573,26 +5326,32 @@ new networkmanager.NetworkManagerResources()
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerResources.attachment">attachment</a></code> | Builds an ARN for the attachment resource. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerResources.connection">connection</a></code> | Builds an ARN for the connection resource. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerResources.connectPeer">connectPeer</a></code> | Builds an ARN for the connect-peer resource. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerResources.contextStore">contextStore</a></code> | Builds an ARN for the context-store resource. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerResources.coreNetwork">coreNetwork</a></code> | Builds an ARN for the core-network resource. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerResources.device">device</a></code> | Builds an ARN for the device resource. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerResources.globalNetwork">globalNetwork</a></code> | Builds an ARN for the global-network resource. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerResources.isValidAttachmentArn">isValidAttachmentArn</a></code> | Validates whether a string is a valid ARN for the attachment resource. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerResources.isValidConnectionArn">isValidConnectionArn</a></code> | Validates whether a string is a valid ARN for the connection resource. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerResources.isValidConnectPeerArn">isValidConnectPeerArn</a></code> | Validates whether a string is a valid ARN for the connect-peer resource. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerResources.isValidContextStoreArn">isValidContextStoreArn</a></code> | Validates whether a string is a valid ARN for the context-store resource. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerResources.isValidCoreNetworkArn">isValidCoreNetworkArn</a></code> | Validates whether a string is a valid ARN for the core-network resource. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerResources.isValidDeviceArn">isValidDeviceArn</a></code> | Validates whether a string is a valid ARN for the device resource. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerResources.isValidGlobalNetworkArn">isValidGlobalNetworkArn</a></code> | Validates whether a string is a valid ARN for the global-network resource. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerResources.isValidLinkArn">isValidLinkArn</a></code> | Validates whether a string is a valid ARN for the link resource. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerResources.isValidNetworkScopeArn">isValidNetworkScopeArn</a></code> | Validates whether a string is a valid ARN for the network-scope resource. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerResources.isValidPeeringArn">isValidPeeringArn</a></code> | Validates whether a string is a valid ARN for the peering resource. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerResources.isValidSiteArn">isValidSiteArn</a></code> | Validates whether a string is a valid ARN for the site resource. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerResources.link">link</a></code> | Builds an ARN for the link resource. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerResources.networkScope">networkScope</a></code> | Builds an ARN for the network-scope resource. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerResources.parseAttachmentArn">parseAttachmentArn</a></code> | Parses a attachment ARN into its components. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerResources.parseConnectionArn">parseConnectionArn</a></code> | Parses a connection ARN into its components. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerResources.parseConnectPeerArn">parseConnectPeerArn</a></code> | Parses a connect-peer ARN into its components. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerResources.parseContextStoreArn">parseContextStoreArn</a></code> | Parses a context-store ARN into its components. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerResources.parseCoreNetworkArn">parseCoreNetworkArn</a></code> | Parses a core-network ARN into its components. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerResources.parseDeviceArn">parseDeviceArn</a></code> | Parses a device ARN into its components. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerResources.parseGlobalNetworkArn">parseGlobalNetworkArn</a></code> | Parses a global-network ARN into its components. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerResources.parseLinkArn">parseLinkArn</a></code> | Parses a link ARN into its components. |
+| <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerResources.parseNetworkScopeArn">parseNetworkScopeArn</a></code> | Parses a network-scope ARN into its components. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerResources.parsePeeringArn">parsePeeringArn</a></code> | Parses a peering ARN into its components. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerResources.parseSiteArn">parseSiteArn</a></code> | Parses a site ARN into its components. |
 | <code><a href="#@cdk_utils/iam.networkmanager.NetworkManagerResources.peering">peering</a></code> | Builds an ARN for the peering resource. |
@@ -4645,6 +5404,22 @@ Builds an ARN for the connect-peer resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.networkmanager.NetworkManagerResources.connectPeer.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.networkmanager.NetworkManagerConnectPeerArnProps">NetworkManagerConnectPeerArnProps</a>
+
+---
+
+##### `contextStore` <a name="contextStore" id="@cdk_utils/iam.networkmanager.NetworkManagerResources.contextStore"></a>
+
+```typescript
+import { networkmanager } from '@cdk_utils/iam'
+
+networkmanager.NetworkManagerResources.contextStore(props: NetworkManagerContextStoreArnProps)
+```
+
+Builds an ARN for the context-store resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.networkmanager.NetworkManagerResources.contextStore.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.networkmanager.NetworkManagerContextStoreArnProps">NetworkManagerContextStoreArnProps</a>
 
 ---
 
@@ -4744,6 +5519,22 @@ Validates whether a string is a valid ARN for the connect-peer resource.
 
 ---
 
+##### `isValidContextStoreArn` <a name="isValidContextStoreArn" id="@cdk_utils/iam.networkmanager.NetworkManagerResources.isValidContextStoreArn"></a>
+
+```typescript
+import { networkmanager } from '@cdk_utils/iam'
+
+networkmanager.NetworkManagerResources.isValidContextStoreArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the context-store resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.networkmanager.NetworkManagerResources.isValidContextStoreArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `isValidCoreNetworkArn` <a name="isValidCoreNetworkArn" id="@cdk_utils/iam.networkmanager.NetworkManagerResources.isValidCoreNetworkArn"></a>
 
 ```typescript
@@ -4808,6 +5599,22 @@ Validates whether a string is a valid ARN for the link resource.
 
 ---
 
+##### `isValidNetworkScopeArn` <a name="isValidNetworkScopeArn" id="@cdk_utils/iam.networkmanager.NetworkManagerResources.isValidNetworkScopeArn"></a>
+
+```typescript
+import { networkmanager } from '@cdk_utils/iam'
+
+networkmanager.NetworkManagerResources.isValidNetworkScopeArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the network-scope resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.networkmanager.NetworkManagerResources.isValidNetworkScopeArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `isValidPeeringArn` <a name="isValidPeeringArn" id="@cdk_utils/iam.networkmanager.NetworkManagerResources.isValidPeeringArn"></a>
 
 ```typescript
@@ -4856,6 +5663,22 @@ Builds an ARN for the link resource.
 
 ---
 
+##### `networkScope` <a name="networkScope" id="@cdk_utils/iam.networkmanager.NetworkManagerResources.networkScope"></a>
+
+```typescript
+import { networkmanager } from '@cdk_utils/iam'
+
+networkmanager.NetworkManagerResources.networkScope(props: NetworkManagerNetworkScopeArnProps)
+```
+
+Builds an ARN for the network-scope resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.networkmanager.NetworkManagerResources.networkScope.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.networkmanager.NetworkManagerNetworkScopeArnProps">NetworkManagerNetworkScopeArnProps</a>
+
+---
+
 ##### `parseAttachmentArn` <a name="parseAttachmentArn" id="@cdk_utils/iam.networkmanager.NetworkManagerResources.parseAttachmentArn"></a>
 
 ```typescript
@@ -4899,6 +5722,22 @@ networkmanager.NetworkManagerResources.parseConnectPeerArn(arn: string)
 Parses a connect-peer ARN into its components.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.networkmanager.NetworkManagerResources.parseConnectPeerArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseContextStoreArn` <a name="parseContextStoreArn" id="@cdk_utils/iam.networkmanager.NetworkManagerResources.parseContextStoreArn"></a>
+
+```typescript
+import { networkmanager } from '@cdk_utils/iam'
+
+networkmanager.NetworkManagerResources.parseContextStoreArn(arn: string)
+```
+
+Parses a context-store ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.networkmanager.NetworkManagerResources.parseContextStoreArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -4963,6 +5802,22 @@ networkmanager.NetworkManagerResources.parseLinkArn(arn: string)
 Parses a link ARN into its components.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.networkmanager.NetworkManagerResources.parseLinkArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseNetworkScopeArn` <a name="parseNetworkScopeArn" id="@cdk_utils/iam.networkmanager.NetworkManagerResources.parseNetworkScopeArn"></a>
+
+```typescript
+import { networkmanager } from '@cdk_utils/iam'
+
+networkmanager.NetworkManagerResources.parseNetworkScopeArn(arn: string)
+```
+
+Parses a network-scope ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.networkmanager.NetworkManagerResources.parseNetworkScopeArn.parameter.arn"></a>
 
 - *Type:* string
 

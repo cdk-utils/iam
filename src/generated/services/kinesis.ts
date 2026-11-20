@@ -12,13 +12,23 @@ export class KinesisActions {
 	/** The IAM service prefix. */
 	static readonly SERVICE_PREFIX = "kinesis";
 
+	/** [Write] kinesis:AcknowledgeDeadLetterQueueRecords */
+	static readonly AcknowledgeDeadLetterQueueRecords =
+		"kinesis:AcknowledgeDeadLetterQueueRecords";
+	/** [Write] kinesis:AcknowledgeQueueRecords */
+	static readonly AcknowledgeQueueRecords = "kinesis:AcknowledgeQueueRecords";
 	/** [Tagging] kinesis:AddTagsToStream */
 	static readonly AddTagsToStream = "kinesis:AddTagsToStream";
 	/** [Write] kinesis:AssociateStreamsWithChannel */
 	static readonly AssociateStreamsWithChannel =
 		"kinesis:AssociateStreamsWithChannel";
-	/** [Tagging] kinesis:CreateChannel */
+	/** [Write] kinesis:AssociateStreamsWithQueue */
+	static readonly AssociateStreamsWithQueue =
+		"kinesis:AssociateStreamsWithQueue";
+	/** [Write] kinesis:CreateChannel */
 	static readonly CreateChannel = "kinesis:CreateChannel";
+	/** [Write] kinesis:CreateQueue */
+	static readonly CreateQueue = "kinesis:CreateQueue";
 	/** [Write] kinesis:CreateStream */
 	static readonly CreateStream = "kinesis:CreateStream";
 	/** [Write] kinesis:DecreaseStreamRetentionPeriod */
@@ -26,6 +36,8 @@ export class KinesisActions {
 		"kinesis:DecreaseStreamRetentionPeriod";
 	/** [Write] kinesis:DeleteChannel */
 	static readonly DeleteChannel = "kinesis:DeleteChannel";
+	/** [Write] kinesis:DeleteQueue */
+	static readonly DeleteQueue = "kinesis:DeleteQueue";
 	/** [Write] kinesis:DeleteResourcePolicy */
 	static readonly DeleteResourcePolicy = "kinesis:DeleteResourcePolicy";
 	/** [Write] kinesis:DeleteStream */
@@ -38,6 +50,8 @@ export class KinesisActions {
 	static readonly DescribeChannel = "kinesis:DescribeChannel";
 	/** [Read] kinesis:DescribeLimits */
 	static readonly DescribeLimits = "kinesis:DescribeLimits";
+	/** [Read] kinesis:DescribeQueue */
+	static readonly DescribeQueue = "kinesis:DescribeQueue";
 	/** [Read] kinesis:DescribeStream */
 	static readonly DescribeStream = "kinesis:DescribeStream";
 	/** [Read] kinesis:DescribeStreamConsumer */
@@ -62,6 +76,8 @@ export class KinesisActions {
 	static readonly InjectApiError = "kinesis:InjectApiError";
 	/** [List] kinesis:ListChannels */
 	static readonly ListChannels = "kinesis:ListChannels";
+	/** [List] kinesis:ListQueues */
+	static readonly ListQueues = "kinesis:ListQueues";
 	/** [List] kinesis:ListShards */
 	static readonly ListShards = "kinesis:ListShards";
 	/** [List] kinesis:ListStreamConsumers */
@@ -80,10 +96,18 @@ export class KinesisActions {
 	static readonly PutRecords = "kinesis:PutRecords";
 	/** [Write] kinesis:PutResourcePolicy */
 	static readonly PutResourcePolicy = "kinesis:PutResourcePolicy";
+	/** [Read] kinesis:ReceiveDeadLetterQueueRecords */
+	static readonly ReceiveDeadLetterQueueRecords =
+		"kinesis:ReceiveDeadLetterQueueRecords";
+	/** [Read] kinesis:ReceiveQueueRecords */
+	static readonly ReceiveQueueRecords = "kinesis:ReceiveQueueRecords";
 	/** [Write] kinesis:RegisterStreamConsumer */
 	static readonly RegisterStreamConsumer = "kinesis:RegisterStreamConsumer";
 	/** [Tagging] kinesis:RemoveTagsFromStream */
 	static readonly RemoveTagsFromStream = "kinesis:RemoveTagsFromStream";
+	/** [Write] kinesis:RestoreDeadLetterQueueRecords */
+	static readonly RestoreDeadLetterQueueRecords =
+		"kinesis:RestoreDeadLetterQueueRecords";
 	/** [Write] kinesis:SplitShard */
 	static readonly SplitShard = "kinesis:SplitShard";
 	/** [Write] kinesis:StartStreamEncryption */
@@ -100,8 +124,16 @@ export class KinesisActions {
 	static readonly UpdateAccountSettings = "kinesis:UpdateAccountSettings";
 	/** [Write] kinesis:UpdateChannel */
 	static readonly UpdateChannel = "kinesis:UpdateChannel";
+	/** [Write] kinesis:UpdateDeadLetterQueueRecordsVisibility */
+	static readonly UpdateDeadLetterQueueRecordsVisibility =
+		"kinesis:UpdateDeadLetterQueueRecordsVisibility";
 	/** [Write] kinesis:UpdateMaxRecordSize */
 	static readonly UpdateMaxRecordSize = "kinesis:UpdateMaxRecordSize";
+	/** [Write] kinesis:UpdateQueue */
+	static readonly UpdateQueue = "kinesis:UpdateQueue";
+	/** [Write] kinesis:UpdateQueueRecordsVisibility */
+	static readonly UpdateQueueRecordsVisibility =
+		"kinesis:UpdateQueueRecordsVisibility";
 	/** [Write] kinesis:UpdateShardCount */
 	static readonly UpdateShardCount = "kinesis:UpdateShardCount";
 	/** [Write] kinesis:UpdateStreamMode */
@@ -118,6 +150,7 @@ export class KinesisActions {
 		KinesisActions.DescribeAccountSettings,
 		KinesisActions.DescribeChannel,
 		KinesisActions.DescribeLimits,
+		KinesisActions.DescribeQueue,
 		KinesisActions.DescribeStream,
 		KinesisActions.DescribeStreamConsumer,
 		KinesisActions.DescribeStreamSummary,
@@ -126,14 +159,22 @@ export class KinesisActions {
 		KinesisActions.actionGetShardIterator,
 		KinesisActions.ListTagsForResource,
 		KinesisActions.ListTagsForStream,
+		KinesisActions.ReceiveDeadLetterQueueRecords,
+		KinesisActions.ReceiveQueueRecords,
 		KinesisActions.SubscribeToShard,
 	];
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
+		KinesisActions.AcknowledgeDeadLetterQueueRecords,
+		KinesisActions.AcknowledgeQueueRecords,
 		KinesisActions.AssociateStreamsWithChannel,
+		KinesisActions.AssociateStreamsWithQueue,
+		KinesisActions.CreateChannel,
+		KinesisActions.CreateQueue,
 		KinesisActions.CreateStream,
 		KinesisActions.DecreaseStreamRetentionPeriod,
 		KinesisActions.DeleteChannel,
+		KinesisActions.DeleteQueue,
 		KinesisActions.DeleteResourcePolicy,
 		KinesisActions.DeleteStream,
 		KinesisActions.DeregisterStreamConsumer,
@@ -146,12 +187,16 @@ export class KinesisActions {
 		KinesisActions.PutRecords,
 		KinesisActions.PutResourcePolicy,
 		KinesisActions.RegisterStreamConsumer,
+		KinesisActions.RestoreDeadLetterQueueRecords,
 		KinesisActions.SplitShard,
 		KinesisActions.StartStreamEncryption,
 		KinesisActions.StopStreamEncryption,
 		KinesisActions.UpdateAccountSettings,
 		KinesisActions.UpdateChannel,
+		KinesisActions.UpdateDeadLetterQueueRecordsVisibility,
 		KinesisActions.UpdateMaxRecordSize,
+		KinesisActions.UpdateQueue,
+		KinesisActions.UpdateQueueRecordsVisibility,
 		KinesisActions.UpdateShardCount,
 		KinesisActions.UpdateStreamMode,
 		KinesisActions.UpdateStreamRecordDistributionStrategy,
@@ -160,6 +205,7 @@ export class KinesisActions {
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [
 		KinesisActions.ListChannels,
+		KinesisActions.ListQueues,
 		KinesisActions.ListShards,
 		KinesisActions.ListStreamConsumers,
 		KinesisActions.ListStreams,
@@ -169,7 +215,6 @@ export class KinesisActions {
 	/** All tagging-level actions. */
 	static readonly AllTaggingActions: string[] = [
 		KinesisActions.AddTagsToStream,
-		KinesisActions.CreateChannel,
 		KinesisActions.RemoveTagsFromStream,
 		KinesisActions.TagResource,
 		KinesisActions.UntagResource,
@@ -273,6 +318,34 @@ export interface KinesisKMSKeyArnComponents {
 }
 
 /**
+ * Properties for building a queue ARN.
+ */
+export interface KinesisQueueArnProps {
+	/** The QueueId component of the ARN. */
+	readonly queueId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a queue ARN.
+ */
+export interface KinesisQueueArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The QueueId component. */
+	readonly queueId: string;
+}
+
+/**
  * Properties for building a stream ARN.
  */
 export interface KinesisStreamArnProps {
@@ -306,6 +379,8 @@ const ConsumerArnRegex =
 	/^arn:(?<partition>[^:]+):kinesis:(?<region>[^:]*):(?<account>[^:]*):(?<streamType>[^:/?]+)\/(?<streamName>[^:/?]+)\/consumer\/(?<consumerName>[^:/?]+):(?<consumerCreationTimpstamp>[^:/?]+)$/;
 const KMSKeyArnRegex =
 	/^arn:(?<partition>[^:]+):kms:(?<region>[^:]*):(?<account>[^:]*):key\/(?<keyId>[^:/?]+)$/;
+const QueueArnRegex =
+	/^arn:(?<partition>[^:]+):kinesis:(?<region>[^:]*):(?<account>[^:]*):queue\/(?<queueId>[^:/?]+)$/;
 const StreamArnRegex =
 	/^arn:(?<partition>[^:]+):kinesis:(?<region>[^:]*):(?<account>[^:]*):stream\/(?<streamName>[^:/?]+)$/;
 
@@ -410,6 +485,37 @@ export class KinesisResources {
 	}
 
 	/**
+	 * Builds an ARN for the queue resource.
+	 */
+	static queue(props: KinesisQueueArnProps): string {
+		return `arn:${props.partition ?? "aws"}:kinesis:${props.region ?? "*"}:${props.account ?? "*"}:queue/${props.queueId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the queue resource.
+	 */
+	static isValidQueueArn(arn: string): boolean {
+		return QueueArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a queue ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseQueueArn(arn: string): KinesisQueueArnComponents {
+		const match = QueueArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid queue ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			queueId: match.groups!.queueId,
+		};
+	}
+
+	/**
 	 * Builds an ARN for the stream resource.
 	 */
 	static stream(props: KinesisStreamArnProps): string {
@@ -445,6 +551,14 @@ export class KinesisResources {
  * API operation to required IAM actions mapping for kinesis.
  */
 export class KinesisOperations {
+	/** IAM actions required for the AcknowledgeDeadLetterQueueRecords API call. */
+	static readonly AcknowledgeDeadLetterQueueRecords: string[] = [
+		"kinesis:AcknowledgeDeadLetterQueueRecords",
+	];
+	/** IAM actions required for the AcknowledgeQueueRecords API call. */
+	static readonly AcknowledgeQueueRecords: string[] = [
+		"kinesis:AcknowledgeQueueRecords",
+	];
 	/** IAM actions required for the AddTagsToStream API call. */
 	static readonly AddTagsToStream: string[] = ["kinesis:AddTagsToStream"];
 	/** IAM actions required for the CreateChannel API call. */
@@ -452,6 +566,12 @@ export class KinesisOperations {
 		"kinesis:AssociateStreamsWithChannel",
 		"kinesis:CreateChannel",
 		"iam:PassRole",
+		"kinesis:TagResource",
+	];
+	/** IAM actions required for the CreateQueue API call. */
+	static readonly CreateQueue: string[] = [
+		"kinesis:AssociateStreamsWithQueue",
+		"kinesis:CreateQueue",
 		"kinesis:TagResource",
 	];
 	/** IAM actions required for the CreateStream API call. */
@@ -465,6 +585,8 @@ export class KinesisOperations {
 	];
 	/** IAM actions required for the DeleteChannel API call. */
 	static readonly DeleteChannel: string[] = ["kinesis:DeleteChannel"];
+	/** IAM actions required for the DeleteQueue API call. */
+	static readonly DeleteQueue: string[] = ["kinesis:DeleteQueue"];
 	/** IAM actions required for the DeleteResourcePolicy API call. */
 	static readonly DeleteResourcePolicy: string[] = [
 		"kinesis:DeleteResourcePolicy",
@@ -483,6 +605,8 @@ export class KinesisOperations {
 	static readonly DescribeChannel: string[] = ["kinesis:DescribeChannel"];
 	/** IAM actions required for the DescribeLimits API call. */
 	static readonly DescribeLimits: string[] = ["kinesis:DescribeLimits"];
+	/** IAM actions required for the DescribeQueue API call. */
+	static readonly DescribeQueue: string[] = ["kinesis:DescribeQueue"];
 	/** IAM actions required for the DescribeStream API call. */
 	static readonly DescribeStream: string[] = ["kinesis:DescribeStream"];
 	/** IAM actions required for the DescribeStreamConsumer API call. */
@@ -513,6 +637,8 @@ export class KinesisOperations {
 	];
 	/** IAM actions required for the ListChannels API call. */
 	static readonly ListChannels: string[] = ["kinesis:ListChannels"];
+	/** IAM actions required for the ListQueues API call. */
+	static readonly ListQueues: string[] = ["kinesis:ListQueues"];
 	/** IAM actions required for the ListShards API call. */
 	static readonly ListShards: string[] = ["kinesis:ListShards"];
 	/** IAM actions required for the ListStreamConsumers API call. */
@@ -535,6 +661,14 @@ export class KinesisOperations {
 	static readonly PutRecords: string[] = ["kinesis:PutRecords"];
 	/** IAM actions required for the PutResourcePolicy API call. */
 	static readonly PutResourcePolicy: string[] = ["kinesis:PutResourcePolicy"];
+	/** IAM actions required for the ReceiveDeadLetterQueueRecords API call. */
+	static readonly ReceiveDeadLetterQueueRecords: string[] = [
+		"kinesis:ReceiveDeadLetterQueueRecords",
+	];
+	/** IAM actions required for the ReceiveQueueRecords API call. */
+	static readonly ReceiveQueueRecords: string[] = [
+		"kinesis:ReceiveQueueRecords",
+	];
 	/** IAM actions required for the RegisterStreamConsumer API call. */
 	static readonly RegisterStreamConsumer: string[] = [
 		"kinesis:RegisterStreamConsumer",
@@ -543,6 +677,10 @@ export class KinesisOperations {
 	/** IAM actions required for the RemoveTagsFromStream API call. */
 	static readonly RemoveTagsFromStream: string[] = [
 		"kinesis:RemoveTagsFromStream",
+	];
+	/** IAM actions required for the RestoreDeadLetterQueueRecords API call. */
+	static readonly RestoreDeadLetterQueueRecords: string[] = [
+		"kinesis:RestoreDeadLetterQueueRecords",
 	];
 	/** IAM actions required for the SplitShard API call. */
 	static readonly SplitShard: string[] = ["kinesis:SplitShard"];
@@ -566,9 +704,19 @@ export class KinesisOperations {
 	];
 	/** IAM actions required for the UpdateChannel API call. */
 	static readonly UpdateChannel: string[] = ["kinesis:UpdateChannel"];
+	/** IAM actions required for the UpdateDeadLetterQueueRecordsVisibility API call. */
+	static readonly UpdateDeadLetterQueueRecordsVisibility: string[] = [
+		"kinesis:UpdateDeadLetterQueueRecordsVisibility",
+	];
 	/** IAM actions required for the UpdateMaxRecordSize API call. */
 	static readonly UpdateMaxRecordSize: string[] = [
 		"kinesis:UpdateMaxRecordSize",
+	];
+	/** IAM actions required for the UpdateQueue API call. */
+	static readonly UpdateQueue: string[] = ["kinesis:UpdateQueue"];
+	/** IAM actions required for the UpdateQueueRecordsVisibility API call. */
+	static readonly UpdateQueueRecordsVisibility: string[] = [
+		"kinesis:UpdateQueueRecordsVisibility",
 	];
 	/** IAM actions required for the UpdateShardCount API call. */
 	static readonly UpdateShardCount: string[] = ["kinesis:UpdateShardCount"];

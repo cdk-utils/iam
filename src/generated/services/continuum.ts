@@ -523,71 +523,102 @@ export class ContinuumResources {
  */
 export class ContinuumOperations {
 	/** IAM actions required for the AssociateCollector API call. */
-	static readonly AssociateCollector: string[] = [];
+	static readonly AssociateCollector: string[] = [
+		"continuum:AssociateCollector",
+		"iam:PassRole",
+	];
 	/** IAM actions required for the CreateCodeFinding API call. */
-	static readonly CreateCodeFinding: string[] = [];
+	static readonly CreateCodeFinding: string[] = ["continuum:CreateCodeFinding"];
 	/** IAM actions required for the CreateCodeScan API call. */
-	static readonly CreateCodeScan: string[] = [];
+	static readonly CreateCodeScan: string[] = ["continuum:CreateCodeScan"];
 	/** IAM actions required for the CreateCollector API call. */
-	static readonly CreateCollector: string[] = [];
+	static readonly CreateCollector: string[] = [
+		"continuum:CreateCollector",
+		"iam:PassRole",
+	];
 	/** IAM actions required for the CreateEnvironment API call. */
-	static readonly CreateEnvironment: string[] = [];
+	static readonly CreateEnvironment: string[] = [
+		"continuum:CreateEnvironment",
+		"iam:PassRole",
+	];
 	/** IAM actions required for the CreateIntegration API call. */
-	static readonly CreateIntegration: string[] = [];
+	static readonly CreateIntegration: string[] = [
+		"continuum:CreateIntegration",
+		"iam:PassRole",
+	];
 	/** IAM actions required for the DeleteCollector API call. */
-	static readonly DeleteCollector: string[] = [];
+	static readonly DeleteCollector: string[] = ["continuum:DeleteCollector"];
 	/** IAM actions required for the DeleteEnvironment API call. */
-	static readonly DeleteEnvironment: string[] = [];
+	static readonly DeleteEnvironment: string[] = ["continuum:DeleteEnvironment"];
 	/** IAM actions required for the DeleteIntegration API call. */
-	static readonly DeleteIntegration: string[] = [];
+	static readonly DeleteIntegration: string[] = ["continuum:DeleteIntegration"];
 	/** IAM actions required for the DisassociateCollector API call. */
-	static readonly DisassociateCollector: string[] = [];
+	static readonly DisassociateCollector: string[] = [
+		"continuum:DisassociateCollector",
+	];
 	/** IAM actions required for the GetCodeFinding API call. */
-	static readonly opGetCodeFinding: string[] = [];
+	static readonly opGetCodeFinding: string[] = ["continuum:GetCodeFinding"];
 	/** IAM actions required for the GetCodeIssue API call. */
-	static readonly opGetCodeIssue: string[] = [];
+	static readonly opGetCodeIssue: string[] = ["continuum:GetCodeIssue"];
 	/** IAM actions required for the GetCodeIssueArtifact API call. */
-	static readonly opGetCodeIssueArtifact: string[] = [];
+	static readonly opGetCodeIssueArtifact: string[] = [
+		"continuum:GetCodeIssueArtifact",
+	];
 	/** IAM actions required for the GetCodeScan API call. */
-	static readonly opGetCodeScan: string[] = [];
+	static readonly opGetCodeScan: string[] = ["continuum:GetCodeScan"];
 	/** IAM actions required for the GetCollector API call. */
-	static readonly opGetCollector: string[] = [];
+	static readonly opGetCollector: string[] = ["continuum:GetCollector"];
 	/** IAM actions required for the GetCollectorDataAccessAuthorization API call. */
-	static readonly opGetCollectorDataAccessAuthorization: string[] = [];
+	static readonly opGetCollectorDataAccessAuthorization: string[] = [
+		"continuum:GetCollectorDataAccessAuthorization",
+	];
 	/** IAM actions required for the GetEnvironment API call. */
-	static readonly opGetEnvironment: string[] = [];
+	static readonly opGetEnvironment: string[] = ["continuum:GetEnvironment"];
 	/** IAM actions required for the GetIntegration API call. */
-	static readonly opGetIntegration: string[] = [];
+	static readonly opGetIntegration: string[] = ["continuum:GetIntegration"];
 	/** IAM actions required for the GetResourcePolicy API call. */
-	static readonly opGetResourcePolicy: string[] = [];
+	static readonly opGetResourcePolicy: string[] = [
+		"continuum:GetResourcePolicy",
+	];
 	/** IAM actions required for the ListAssociatedCollectors API call. */
-	static readonly ListAssociatedCollectors: string[] = [];
+	static readonly ListAssociatedCollectors: string[] = [
+		"continuum:ListAssociatedCollectors",
+	];
 	/** IAM actions required for the ListAssociatedEnvironments API call. */
-	static readonly ListAssociatedEnvironments: string[] = [];
+	static readonly ListAssociatedEnvironments: string[] = [
+		"continuum:ListAssociatedEnvironments",
+	];
 	/** IAM actions required for the ListCodeFindings API call. */
-	static readonly ListCodeFindings: string[] = [];
+	static readonly ListCodeFindings: string[] = ["continuum:ListCodeFindings"];
 	/** IAM actions required for the ListCodeIssueArtifacts API call. */
-	static readonly ListCodeIssueArtifacts: string[] = [];
+	static readonly ListCodeIssueArtifacts: string[] = [
+		"continuum:ListCodeIssueArtifacts",
+	];
 	/** IAM actions required for the ListCodeIssues API call. */
-	static readonly ListCodeIssues: string[] = [];
+	static readonly ListCodeIssues: string[] = ["continuum:ListCodeIssues"];
 	/** IAM actions required for the ListCodeScans API call. */
-	static readonly ListCodeScans: string[] = [];
+	static readonly ListCodeScans: string[] = ["continuum:ListCodeScans"];
 	/** IAM actions required for the ListCollectors API call. */
-	static readonly ListCollectors: string[] = [];
+	static readonly ListCollectors: string[] = ["continuum:ListCollectors"];
 	/** IAM actions required for the ListEnvironments API call. */
-	static readonly ListEnvironments: string[] = [];
+	static readonly ListEnvironments: string[] = ["continuum:ListEnvironments"];
 	/** IAM actions required for the ListIntegrations API call. */
-	static readonly ListIntegrations: string[] = [];
+	static readonly ListIntegrations: string[] = ["continuum:ListIntegrations"];
 	/** IAM actions required for the PutResourcePolicy API call. */
-	static readonly PutResourcePolicy: string[] = [];
+	static readonly PutResourcePolicy: string[] = ["continuum:PutResourcePolicy"];
 	/** IAM actions required for the StartIntegrationAuthorization API call. */
-	static readonly StartIntegrationAuthorization: string[] = [];
+	static readonly StartIntegrationAuthorization: string[] = [
+		"continuum:StartIntegrationAuthorization",
+	];
 	/** IAM actions required for the UpdateCollector API call. */
 	static readonly UpdateCollector: string[] = [];
 	/** IAM actions required for the UpdateEnvironment API call. */
-	static readonly UpdateEnvironment: string[] = [];
+	static readonly UpdateEnvironment: string[] = ["continuum:UpdateEnvironment"];
 	/** IAM actions required for the UpdateIntegration API call. */
-	static readonly UpdateIntegration: string[] = [];
+	static readonly UpdateIntegration: string[] = [
+		"iam:PassRole",
+		"continuum:UpdateIntegration",
+	];
 }
 
 /**

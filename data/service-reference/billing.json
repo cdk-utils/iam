@@ -761,6 +761,7 @@
       "Name": "SplitCredit",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -802,6 +803,7 @@
       "Name": "TransferCredit",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1404,6 +1406,22 @@
       ]
     },
     {
+      "Name": "SplitCredit",
+      "AuthorizedActions": [
+        {
+          "Name": "SplitCredit",
+          "Service": "billing"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "billing",
+          "Method": "split_credit",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "TagResource",
       "AuthorizedActions": [
         {
@@ -1415,6 +1433,22 @@
         {
           "Name": "billing",
           "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TransferCredit",
+      "AuthorizedActions": [
+        {
+          "Name": "TransferCredit",
+          "Service": "billing"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "billing",
+          "Method": "transfer_credit",
           "Package": "Boto3"
         }
       ]

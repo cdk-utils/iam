@@ -68,6 +68,9 @@ export class SSMActions {
 	static readonly DeleteResourceDataSync = "ssm:DeleteResourceDataSync";
 	/** [PermissionManagement] ssm:DeleteResourcePolicy */
 	static readonly DeleteResourcePolicy = "ssm:DeleteResourcePolicy";
+	/** [Write] ssm:DeregisterDefaultHostManagementConfiguration */
+	static readonly DeregisterDefaultHostManagementConfiguration =
+		"ssm:DeregisterDefaultHostManagementConfiguration";
 	/** [Write] ssm:DeregisterManagedInstance */
 	static readonly DeregisterManagedInstance = "ssm:DeregisterManagedInstance";
 	/** [Write] ssm:DeregisterPatchBaselineForPatchGroup */
@@ -293,6 +296,9 @@ export class SSMActions {
 	static readonly PutParameter = "ssm:PutParameter";
 	/** [PermissionManagement] ssm:PutResourcePolicy */
 	static readonly PutResourcePolicy = "ssm:PutResourcePolicy";
+	/** [Write] ssm:RegisterDefaultHostManagementConfiguration */
+	static readonly RegisterDefaultHostManagementConfiguration =
+		"ssm:RegisterDefaultHostManagementConfiguration";
 	/** [Write] ssm:RegisterDefaultPatchBaseline */
 	static readonly RegisterDefaultPatchBaseline =
 		"ssm:RegisterDefaultPatchBaseline";
@@ -466,6 +472,7 @@ export class SSMActions {
 		SSMActions.DeleteParameters,
 		SSMActions.DeletePatchBaseline,
 		SSMActions.DeleteResourceDataSync,
+		SSMActions.DeregisterDefaultHostManagementConfiguration,
 		SSMActions.DeregisterManagedInstance,
 		SSMActions.DeregisterPatchBaselineForPatchGroup,
 		SSMActions.DeregisterTargetFromMaintenanceWindow,
@@ -476,6 +483,7 @@ export class SSMActions {
 		SSMActions.PutComplianceItems,
 		SSMActions.PutInventory,
 		SSMActions.PutParameter,
+		SSMActions.RegisterDefaultHostManagementConfiguration,
 		SSMActions.RegisterDefaultPatchBaseline,
 		SSMActions.RegisterManagedInstance,
 		SSMActions.RegisterPatchBaselineForPatchGroup,
@@ -2020,6 +2028,10 @@ export class SSMOperations {
 	];
 	/** IAM actions required for the DeleteResourcePolicy API call. */
 	static readonly DeleteResourcePolicy: string[] = ["ssm:DeleteResourcePolicy"];
+	/** IAM actions required for the DeregisterDefaultHostManagementConfiguration API call. */
+	static readonly DeregisterDefaultHostManagementConfiguration: string[] = [
+		"ssm:DeregisterDefaultHostManagementConfiguration",
+	];
 	/** IAM actions required for the DeregisterManagedInstance API call. */
 	static readonly DeregisterManagedInstance: string[] = [
 		"ssm:DeregisterManagedInstance",
@@ -2304,6 +2316,11 @@ export class SSMOperations {
 	];
 	/** IAM actions required for the PutResourcePolicy API call. */
 	static readonly PutResourcePolicy: string[] = ["ssm:PutResourcePolicy"];
+	/** IAM actions required for the RegisterDefaultHostManagementConfiguration API call. */
+	static readonly RegisterDefaultHostManagementConfiguration: string[] = [
+		"iam:PassRole",
+		"ssm:RegisterDefaultHostManagementConfiguration",
+	];
 	/** IAM actions required for the RegisterDefaultPatchBaseline API call. */
 	static readonly RegisterDefaultPatchBaseline: string[] = [
 		"ssm:RegisterDefaultPatchBaseline",
@@ -2355,6 +2372,7 @@ export class SSMOperations {
 	];
 	/** IAM actions required for the StartExecutionPreview API call. */
 	static readonly StartExecutionPreview: string[] = [
+		"ssm:AddTagsToResource",
 		"ssm:StartExecutionPreview",
 	];
 	/** IAM actions required for the StartSession API call. */

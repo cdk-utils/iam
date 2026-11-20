@@ -3130,6 +3130,15 @@
         {
           "Name": "CreateReplicationTask",
           "Service": "dms"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "dms.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
         }
       ],
       "SDK": [

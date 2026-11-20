@@ -363,6 +363,9 @@ export class SesActions {
 	/** [Write] ses:PutAccountDedicatedIpWarmupAttributes */
 	static readonly PutAccountDedicatedIpWarmupAttributes =
 		"ses:PutAccountDedicatedIpWarmupAttributes";
+	/** [Write] ses:PutAccountDeliveryAttributes */
+	static readonly PutAccountDeliveryAttributes =
+		"ses:PutAccountDeliveryAttributes";
 	/** [Write] ses:PutAccountDetails */
 	static readonly PutAccountDetails = "ses:PutAccountDetails";
 	/** [Write] ses:PutAccountPricingAttributes */
@@ -675,6 +678,7 @@ export class SesActions {
 		SesActions.DeregisterMemberFromAddressList,
 		SesActions.DisassociateEmailIdentityCertificate,
 		SesActions.PutAccountDedicatedIpWarmupAttributes,
+		SesActions.PutAccountDeliveryAttributes,
 		SesActions.PutAccountDetails,
 		SesActions.PutAccountPricingAttributes,
 		SesActions.PutAccountSendingAttributes,
@@ -2545,6 +2549,10 @@ export class SesOperations {
 	static readonly PutAccountDedicatedIpWarmupAttributes: string[] = [
 		"ses:PutAccountDedicatedIpWarmupAttributes",
 	];
+	/** IAM actions required for the PutAccountDeliveryAttributes API call. */
+	static readonly PutAccountDeliveryAttributes: string[] = [
+		"ses:PutAccountDeliveryAttributes",
+	];
 	/** IAM actions required for the PutAccountDetails API call. */
 	static readonly PutAccountDetails: string[] = ["ses:PutAccountDetails"];
 	/** IAM actions required for the PutAccountPricingAttributes API call. */
@@ -2646,7 +2654,10 @@ export class SesOperations {
 	/** IAM actions required for the SendBounce API call. */
 	static readonly SendBounce: string[] = [];
 	/** IAM actions required for the SendBulkEmail API call. */
-	static readonly SendBulkEmail: string[] = ["ses:SendBulkEmail"];
+	static readonly SendBulkEmail: string[] = [
+		"ses:SendBulkEmail",
+		"ses:SendBulkTemplatedEmail",
+	];
 	/** IAM actions required for the SendBulkTemplatedEmail API call. */
 	static readonly SendBulkTemplatedEmail: string[] = [];
 	/** IAM actions required for the SendCustomVerificationEmail API call. */
@@ -2654,7 +2665,11 @@ export class SesOperations {
 		"ses:SendCustomVerificationEmail",
 	];
 	/** IAM actions required for the SendEmail API call. */
-	static readonly SendEmail: string[] = [];
+	static readonly SendEmail: string[] = [
+		"ses:SendEmail",
+		"ses:SendRawEmail",
+		"ses:SendTemplatedEmail",
+	];
 	/** IAM actions required for the SendRawEmail API call. */
 	static readonly SendRawEmail: string[] = [];
 	/** IAM actions required for the SendTemplatedEmail API call. */
@@ -3299,6 +3314,10 @@ export class SesConditions {
 	/** Condition keys applicable to the PutAccountDedicatedIpWarmupAttributes action. */
 	static readonly PutAccountDedicatedIpWarmupAttributesConditionKeys: string[] =
 		["ses:ApiVersion"];
+	/** Condition keys applicable to the PutAccountDeliveryAttributes action. */
+	static readonly PutAccountDeliveryAttributesConditionKeys: string[] = [
+		"ses:ApiVersion",
+	];
 	/** Condition keys applicable to the PutAccountDetails action. */
 	static readonly PutAccountDetailsConditionKeys: string[] = ["ses:ApiVersion"];
 	/** Condition keys applicable to the PutAccountPricingAttributes action. */

@@ -216,8 +216,12 @@ export class CloudFormationActions {
 	static readonly RegisterPublisher = "cloudformation:RegisterPublisher";
 	/** [Write] cloudformation:RegisterType */
 	static readonly RegisterType = "cloudformation:RegisterType";
+	/** [Write] cloudformation:RemoveAlias */
+	static readonly RemoveAlias = "cloudformation:RemoveAlias";
 	/** [Write] cloudformation:RollbackStack */
 	static readonly RollbackStack = "cloudformation:RollbackStack";
+	/** [Write] cloudformation:SetAlias */
+	static readonly actionSetAlias = "cloudformation:SetAlias";
 	/** [PermissionManagement] cloudformation:SetStackPolicy */
 	static readonly actionSetStackPolicy = "cloudformation:SetStackPolicy";
 	/** [Write] cloudformation:SetTypeConfiguration */
@@ -324,7 +328,9 @@ export class CloudFormationActions {
 		CloudFormationActions.RecordHandlerProgress,
 		CloudFormationActions.RegisterPublisher,
 		CloudFormationActions.RegisterType,
+		CloudFormationActions.RemoveAlias,
 		CloudFormationActions.RollbackStack,
+		CloudFormationActions.actionSetAlias,
 		CloudFormationActions.actionSetTypeConfiguration,
 		CloudFormationActions.actionSetTypeDefaultVersion,
 		CloudFormationActions.SignalResource,
@@ -1222,11 +1228,15 @@ export class CloudFormationOperations {
 		"iam:PassRole",
 		"cloudformation:RegisterType",
 	];
+	/** IAM actions required for the RemoveAlias API call. */
+	static readonly RemoveAlias: string[] = ["cloudformation:RemoveAlias"];
 	/** IAM actions required for the RollbackStack API call. */
 	static readonly RollbackStack: string[] = [
 		"iam:PassRole",
 		"cloudformation:RollbackStack",
 	];
+	/** IAM actions required for the SetAlias API call. */
+	static readonly opSetAlias: string[] = ["cloudformation:SetAlias"];
 	/** IAM actions required for the SetStackPolicy API call. */
 	static readonly opSetStackPolicy: string[] = [
 		"cloudformation:SetStackPolicy",
@@ -1302,6 +1312,7 @@ export class CloudFormationConditions {
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"cloudformation:ChangeSetName",
+		"cloudformation:DisableValidation",
 		"cloudformation:ImportResourceTypes",
 		"cloudformation:ResourceTypes",
 		"cloudformation:RoleArn",
@@ -1312,6 +1323,7 @@ export class CloudFormationConditions {
 	static readonly CreateStackConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
+		"cloudformation:DisableValidation",
 		"cloudformation:ResourceTypes",
 		"cloudformation:RoleArn",
 		"cloudformation:StackPolicyUrl",
@@ -1396,6 +1408,7 @@ export class CloudFormationConditions {
 	static readonly UpdateStackConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
+		"cloudformation:DisableValidation",
 		"cloudformation:ResourceTypes",
 		"cloudformation:RoleArn",
 		"cloudformation:StackPolicyUrl",
@@ -1428,6 +1441,8 @@ export class CloudFormationConditions {
 	static readonly CHANGE_SET_NAME = "cloudformation:ChangeSetName";
 	/** Condition key: cloudformation:CreateAction (String) */
 	static readonly CREATE_ACTION = "cloudformation:CreateAction";
+	/** Condition key: cloudformation:DisableValidation (Bool) */
+	static readonly DISABLE_VALIDATION = "cloudformation:DisableValidation";
 	/** Condition key: cloudformation:ImportResourceTypes (String) */
 	static readonly IMPORT_RESOURCE_TYPES = "cloudformation:ImportResourceTypes";
 	/** Condition key: cloudformation:ResourceTypes (ArrayOfString) */
@@ -1476,6 +1491,15 @@ export class CloudFormationConditions {
 	 */
 	static createAction(value: string): Record<string, Record<string, string>> {
 		return { StringEquals: { "cloudformation:CreateAction": value } };
+	}
+
+	/**
+	 * Generates a condition block for `cloudformation:DisableValidation`.
+	 */
+	static disableValidation(
+		value: boolean,
+	): Record<string, Record<string, boolean>> {
+		return { Bool: { "cloudformation:DisableValidation": value } };
 	}
 
 	/**

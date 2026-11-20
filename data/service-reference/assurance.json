@@ -587,26 +587,6 @@
       }
     },
     {
-      "Name": "DownloadEvidence",
-      "Annotations": {
-        "Properties": {
-          "IsList": false,
-          "IsPermissionManagement": false,
-          "IsTaggingOnly": false,
-          "IsWrite": false
-        }
-      },
-      "Resources": [
-        {
-          "Name": "environment"
-        }
-      ],
-      "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
-      }
-    },
-    {
       "Name": "EnableFramework",
       "Annotations": {
         "Properties": {
@@ -928,6 +908,26 @@
     },
     {
       "Name": "GetProject",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "environment"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetResourceActivitiesQueryResults",
       "Annotations": {
         "Properties": {
           "IsList": false,
@@ -1392,26 +1392,6 @@
       }
     },
     {
-      "Name": "ListResourcesForControl",
-      "Annotations": {
-        "Properties": {
-          "IsList": false,
-          "IsPermissionManagement": false,
-          "IsTaggingOnly": false,
-          "IsWrite": false
-        }
-      },
-      "Resources": [
-        {
-          "Name": "environment"
-        }
-      ],
-      "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
-      }
-    },
-    {
       "Name": "ListTagsForResource",
       "Annotations": {
         "Properties": {
@@ -1627,13 +1607,13 @@
       }
     },
     {
-      "Name": "StartResourceDiscovery",
+      "Name": "StartResourceActivitiesQuery",
       "Annotations": {
         "Properties": {
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
-          "IsWrite": true
+          "IsWrite": false
         }
       },
       "Resources": [
@@ -1908,41 +1888,6 @@
           "Name": "environment"
         }
       ],
-      "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
-      }
-    },
-    {
-      "Name": "UploadEvidence",
-      "Annotations": {
-        "Properties": {
-          "IsList": false,
-          "IsPermissionManagement": false,
-          "IsTaggingOnly": false,
-          "IsWrite": true
-        }
-      },
-      "Resources": [
-        {
-          "Name": "environment"
-        }
-      ],
-      "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
-      }
-    },
-    {
-      "Name": "VendConnectionAccessToken",
-      "Annotations": {
-        "Properties": {
-          "IsList": false,
-          "IsPermissionManagement": false,
-          "IsTaggingOnly": false,
-          "IsWrite": true
-        }
-      },
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false

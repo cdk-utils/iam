@@ -16,9 +16,17 @@ export class TransformCustomActions {
 	static readonly BatchCreateFindings = "transform-custom:BatchCreateFindings";
 	/** [Write] transform-custom:BatchUpdateFindings */
 	static readonly BatchUpdateFindings = "transform-custom:BatchUpdateFindings";
+	/** [Write] transform-custom:CancelSkillCreationJob */
+	static readonly CancelSkillCreationJob =
+		"transform-custom:CancelSkillCreationJob";
 	/** [Write] transform-custom:CompleteTransformationPackageUpload */
 	static readonly CompleteTransformationPackageUpload =
 		"transform-custom:CompleteTransformationPackageUpload";
+	/** [Write] transform-custom:ConnectSource */
+	static readonly ConnectSource = "transform-custom:ConnectSource";
+	/** [Write] transform-custom:ContributeKnowledgeItems */
+	static readonly ContributeKnowledgeItems =
+		"transform-custom:ContributeKnowledgeItems";
 	/** [Write] transform-custom:ConverseStream */
 	static readonly ConverseStream = "transform-custom:ConverseStream";
 	/** [Write] transform-custom:CreateAnalysis */
@@ -27,6 +35,9 @@ export class TransformCustomActions {
 	static readonly CreateCampaign = "transform-custom:CreateCampaign";
 	/** [Write] transform-custom:CreateRemediation */
 	static readonly CreateRemediation = "transform-custom:CreateRemediation";
+	/** [Write] transform-custom:CreateRemediationPlan */
+	static readonly CreateRemediationPlan =
+		"transform-custom:CreateRemediationPlan";
 	/** [Write] transform-custom:CreateRepository */
 	static readonly CreateRepository = "transform-custom:CreateRepository";
 	/** [Write] transform-custom:CreateSource */
@@ -44,8 +55,14 @@ export class TransformCustomActions {
 	static readonly DeleteKnowledgeItem = "transform-custom:DeleteKnowledgeItem";
 	/** [Write] transform-custom:DeleteRemediation */
 	static readonly DeleteRemediation = "transform-custom:DeleteRemediation";
+	/** [Write] transform-custom:DeleteRemediationPlan */
+	static readonly DeleteRemediationPlan =
+		"transform-custom:DeleteRemediationPlan";
 	/** [Write] transform-custom:DeleteRepository */
 	static readonly DeleteRepository = "transform-custom:DeleteRepository";
+	/** [PermissionManagement] transform-custom:DeleteResourcePolicy */
+	static readonly DeleteResourcePolicy =
+		"transform-custom:DeleteResourcePolicy";
 	/** [Write] transform-custom:DeleteSource */
 	static readonly DeleteSource = "transform-custom:DeleteSource";
 	/** [Write] transform-custom:DeleteTransformationPackage */
@@ -65,12 +82,23 @@ export class TransformCustomActions {
 	static readonly actionGetFinding = "transform-custom:GetFinding";
 	/** [Read] transform-custom:GetFindingGroups */
 	static readonly actionGetFindingGroups = "transform-custom:GetFindingGroups";
+	/** [Read] transform-custom:GetIssueGroup */
+	static readonly actionGetIssueGroup = "transform-custom:GetIssueGroup";
 	/** [Read] transform-custom:GetKnowledgeItem */
 	static readonly actionGetKnowledgeItem = "transform-custom:GetKnowledgeItem";
 	/** [Read] transform-custom:GetRemediation */
 	static readonly actionGetRemediation = "transform-custom:GetRemediation";
+	/** [Read] transform-custom:GetRemediationPlan */
+	static readonly actionGetRemediationPlan =
+		"transform-custom:GetRemediationPlan";
 	/** [Read] transform-custom:GetRepository */
 	static readonly actionGetRepository = "transform-custom:GetRepository";
+	/** [Read] transform-custom:GetResourcePolicy */
+	static readonly actionGetResourcePolicy =
+		"transform-custom:GetResourcePolicy";
+	/** [Read] transform-custom:GetSkillCreationJob */
+	static readonly actionGetSkillCreationJob =
+		"transform-custom:GetSkillCreationJob";
 	/** [Read] transform-custom:GetSource */
 	static readonly actionGetSource = "transform-custom:GetSource";
 	/** [Read] transform-custom:GetTransformationPackageUrl */
@@ -88,12 +116,20 @@ export class TransformCustomActions {
 	static readonly ListCampaigns = "transform-custom:ListCampaigns";
 	/** [List] transform-custom:ListFindings */
 	static readonly ListFindings = "transform-custom:ListFindings";
+	/** [List] transform-custom:ListIssueGroups */
+	static readonly ListIssueGroups = "transform-custom:ListIssueGroups";
 	/** [List] transform-custom:ListKnowledgeItems */
 	static readonly ListKnowledgeItems = "transform-custom:ListKnowledgeItems";
+	/** [List] transform-custom:ListRemediationPlans */
+	static readonly ListRemediationPlans =
+		"transform-custom:ListRemediationPlans";
 	/** [List] transform-custom:ListRemediations */
 	static readonly ListRemediations = "transform-custom:ListRemediations";
 	/** [List] transform-custom:ListRepositories */
 	static readonly ListRepositories = "transform-custom:ListRepositories";
+	/** [List] transform-custom:ListSkillCreationJobs */
+	static readonly ListSkillCreationJobs =
+		"transform-custom:ListSkillCreationJobs";
 	/** [List] transform-custom:ListSources */
 	static readonly ListSources = "transform-custom:ListSources";
 	/** [Read] transform-custom:ListTagsForResource */
@@ -104,11 +140,19 @@ export class TransformCustomActions {
 	/** [Read] transform-custom:ListTransformationPackageShares */
 	static readonly ListTransformationPackageShares =
 		"transform-custom:ListTransformationPackageShares";
+	/** [PermissionManagement] transform-custom:PutResourcePolicy */
+	static readonly PutResourcePolicy = "transform-custom:PutResourcePolicy";
+	/** [Write] transform-custom:ReadRepositoryContent */
+	static readonly ReadRepositoryContent =
+		"transform-custom:ReadRepositoryContent";
 	/** [Write] transform-custom:SendTelemetryEvent */
 	static readonly SendTelemetryEvent = "transform-custom:SendTelemetryEvent";
 	/** [Write] transform-custom:ShareTransformationPackage */
 	static readonly ShareTransformationPackage =
 		"transform-custom:ShareTransformationPackage";
+	/** [Write] transform-custom:StartSkillCreationJob */
+	static readonly StartSkillCreationJob =
+		"transform-custom:StartSkillCreationJob";
 	/** [Tagging] transform-custom:TagResource */
 	static readonly TagResource = "transform-custom:TagResource";
 	/** [Write] transform-custom:UnshareTransformationPackage */
@@ -123,6 +167,8 @@ export class TransformCustomActions {
 	/** [Write] transform-custom:UpdateCampaignRepositoryStatus */
 	static readonly UpdateCampaignRepositoryStatus =
 		"transform-custom:UpdateCampaignRepositoryStatus";
+	/** [Write] transform-custom:UpdateIssueGroup */
+	static readonly UpdateIssueGroup = "transform-custom:UpdateIssueGroup";
 	/** [Write] transform-custom:UpdateKnowledgeItemConfiguration */
 	static readonly UpdateKnowledgeItemConfiguration =
 		"transform-custom:UpdateKnowledgeItemConfiguration";
@@ -131,10 +177,19 @@ export class TransformCustomActions {
 		"transform-custom:UpdateKnowledgeItemStatus";
 	/** [Write] transform-custom:UpdateRemediation */
 	static readonly UpdateRemediation = "transform-custom:UpdateRemediation";
+	/** [Write] transform-custom:UpdateRemediationPlan */
+	static readonly UpdateRemediationPlan =
+		"transform-custom:UpdateRemediationPlan";
 	/** [Write] transform-custom:UpdateRepository */
 	static readonly UpdateRepository = "transform-custom:UpdateRepository";
+	/** [Write] transform-custom:UpdateSkillCreationJob */
+	static readonly UpdateSkillCreationJob =
+		"transform-custom:UpdateSkillCreationJob";
 	/** [Write] transform-custom:UpdateSource */
 	static readonly UpdateSource = "transform-custom:UpdateSource";
+	/** [Write] transform-custom:WriteRepositoryContent */
+	static readonly WriteRepositoryContent =
+		"transform-custom:WriteRepositoryContent";
 
 	/** All read-level actions. */
 	static readonly AllReadActions: string[] = [
@@ -143,9 +198,13 @@ export class TransformCustomActions {
 		TransformCustomActions.actionGetCampaign,
 		TransformCustomActions.actionGetFinding,
 		TransformCustomActions.actionGetFindingGroups,
+		TransformCustomActions.actionGetIssueGroup,
 		TransformCustomActions.actionGetKnowledgeItem,
 		TransformCustomActions.actionGetRemediation,
+		TransformCustomActions.actionGetRemediationPlan,
 		TransformCustomActions.actionGetRepository,
+		TransformCustomActions.actionGetResourcePolicy,
+		TransformCustomActions.actionGetSkillCreationJob,
 		TransformCustomActions.actionGetSource,
 		TransformCustomActions.actionGetTransformationPackageUrl,
 		TransformCustomActions.ListAnalysisArtifacts,
@@ -157,11 +216,15 @@ export class TransformCustomActions {
 	static readonly AllWriteActions: string[] = [
 		TransformCustomActions.BatchCreateFindings,
 		TransformCustomActions.BatchUpdateFindings,
+		TransformCustomActions.CancelSkillCreationJob,
 		TransformCustomActions.CompleteTransformationPackageUpload,
+		TransformCustomActions.ConnectSource,
+		TransformCustomActions.ContributeKnowledgeItems,
 		TransformCustomActions.ConverseStream,
 		TransformCustomActions.CreateAnalysis,
 		TransformCustomActions.CreateCampaign,
 		TransformCustomActions.CreateRemediation,
+		TransformCustomActions.CreateRemediationPlan,
 		TransformCustomActions.CreateRepository,
 		TransformCustomActions.CreateSource,
 		TransformCustomActions.CreateTransformationPackageUrl,
@@ -170,35 +233,48 @@ export class TransformCustomActions {
 		TransformCustomActions.DeleteFinding,
 		TransformCustomActions.DeleteKnowledgeItem,
 		TransformCustomActions.DeleteRemediation,
+		TransformCustomActions.DeleteRemediationPlan,
 		TransformCustomActions.DeleteRepository,
 		TransformCustomActions.DeleteSource,
 		TransformCustomActions.DeleteTransformationPackage,
 		TransformCustomActions.ExecuteTransformation,
+		TransformCustomActions.ReadRepositoryContent,
 		TransformCustomActions.SendTelemetryEvent,
 		TransformCustomActions.ShareTransformationPackage,
+		TransformCustomActions.StartSkillCreationJob,
 		TransformCustomActions.UnshareTransformationPackage,
 		TransformCustomActions.UpdateAnalysis,
 		TransformCustomActions.UpdateCampaign,
 		TransformCustomActions.UpdateCampaignRepositoryStatus,
+		TransformCustomActions.UpdateIssueGroup,
 		TransformCustomActions.UpdateKnowledgeItemConfiguration,
 		TransformCustomActions.UpdateKnowledgeItemStatus,
 		TransformCustomActions.UpdateRemediation,
+		TransformCustomActions.UpdateRemediationPlan,
 		TransformCustomActions.UpdateRepository,
+		TransformCustomActions.UpdateSkillCreationJob,
 		TransformCustomActions.UpdateSource,
+		TransformCustomActions.WriteRepositoryContent,
 	];
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [
 		TransformCustomActions.ListAnalyses,
 		TransformCustomActions.ListCampaigns,
 		TransformCustomActions.ListFindings,
+		TransformCustomActions.ListIssueGroups,
 		TransformCustomActions.ListKnowledgeItems,
+		TransformCustomActions.ListRemediationPlans,
 		TransformCustomActions.ListRemediations,
 		TransformCustomActions.ListRepositories,
+		TransformCustomActions.ListSkillCreationJobs,
 		TransformCustomActions.ListSources,
 		TransformCustomActions.ListTransformationPackageMetadata,
 	];
 	/** All permission-management-level actions. */
-	static readonly AllPermissionManagementActions: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [
+		TransformCustomActions.DeleteResourcePolicy,
+		TransformCustomActions.PutResourcePolicy,
+	];
 	/** All tagging-level actions. */
 	static readonly AllTaggingActions: string[] = [
 		TransformCustomActions.TagResource,
@@ -291,6 +367,34 @@ export interface TransformCustomFindingArnComponents {
 }
 
 /**
+ * Properties for building a issue-group ARN.
+ */
+export interface TransformCustomIssueGroupArnProps {
+	/** The IssueGroupId component of the ARN. */
+	readonly issueGroupId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a issue-group ARN.
+ */
+export interface TransformCustomIssueGroupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The IssueGroupId component. */
+	readonly issueGroupId: string;
+}
+
+/**
  * Properties for building a knowledge-item ARN.
  */
 export interface TransformCustomKnowledgeItemArnProps {
@@ -379,6 +483,34 @@ export interface TransformCustomRemediationArnComponents {
 }
 
 /**
+ * Properties for building a remediation-plan ARN.
+ */
+export interface TransformCustomRemediationPlanArnProps {
+	/** The RemediationPlanId component of the ARN. */
+	readonly remediationPlanId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a remediation-plan ARN.
+ */
+export interface TransformCustomRemediationPlanArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RemediationPlanId component. */
+	readonly remediationPlanId: string;
+}
+
+/**
  * Properties for building a repository ARN.
  */
 export interface TransformCustomRepositoryArnProps {
@@ -404,6 +536,34 @@ export interface TransformCustomRepositoryArnComponents {
 	readonly account: string;
 	/** The RepositoryId component. */
 	readonly repositoryId: string;
+}
+
+/**
+ * Properties for building a skill-creation-job ARN.
+ */
+export interface TransformCustomSkillCreationJobArnProps {
+	/** The SkillCreationJobId component of the ARN. */
+	readonly skillCreationJobId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a skill-creation-job ARN.
+ */
+export interface TransformCustomSkillCreationJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SkillCreationJobId component. */
+	readonly skillCreationJobId: string;
 }
 
 /**
@@ -440,14 +600,20 @@ const CampaignArnRegex =
 	/^arn:(?<partition>[^:]+):transform-custom:(?<region>[^:]*):(?<account>[^:]*):campaign\/(?<name>[^:/?]+)$/;
 const FindingArnRegex =
 	/^arn:(?<partition>[^:]+):transform-custom:(?<region>[^:]*):(?<account>[^:]*):finding\/(?<findingId>[^:/?]+)$/;
+const IssueGroupArnRegex =
+	/^arn:(?<partition>[^:]+):transform-custom:(?<region>[^:]*):(?<account>[^:]*):issue-group\/(?<issueGroupId>[^:/?]+)$/;
 const KnowledgeItemArnRegex =
 	/^arn:(?<partition>[^:]+):transform-custom:(?<region>[^:]*):(?<account>[^:]*):package\/(?<transformationPackageName>[^:/?]+)\/knowledge-item\/(?<id>[^:/?]+)$/;
 const PackageArnRegex =
 	/^arn:(?<partition>[^:]+):transform-custom:(?<region>[^:]*):(?<account>[^:]*):package\/(?<name>[^:/?]+)$/;
 const RemediationArnRegex =
 	/^arn:(?<partition>[^:]+):transform-custom:(?<region>[^:]*):(?<account>[^:]*):remediation\/(?<remediationId>[^:/?]+)$/;
+const RemediationPlanArnRegex =
+	/^arn:(?<partition>[^:]+):transform-custom:(?<region>[^:]*):(?<account>[^:]*):remediation-plan\/(?<remediationPlanId>[^:/?]+)$/;
 const RepositoryArnRegex =
 	/^arn:(?<partition>[^:]+):transform-custom:(?<region>[^:]*):(?<account>[^:]*):repository\/(?<repositoryId>[^:/?]+)$/;
+const SkillCreationJobArnRegex =
+	/^arn:(?<partition>[^:]+):transform-custom:(?<region>[^:]*):(?<account>[^:]*):skill-creation-job\/(?<skillCreationJobId>[^:/?]+)$/;
 const SourceArnRegex =
 	/^arn:(?<partition>[^:]+):transform-custom:(?<region>[^:]*):(?<account>[^:]*):source\/(?<name>[^:/?]+)$/;
 
@@ -545,6 +711,39 @@ export class TransformCustomResources {
 			region: match.groups.region,
 			account: match.groups.account,
 			findingId: match.groups!.findingId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the issue-group resource.
+	 */
+	static issueGroup(props: TransformCustomIssueGroupArnProps): string {
+		return `arn:${props.partition ?? "aws"}:transform-custom:${props.region ?? "*"}:${props.account ?? "*"}:issue-group/${props.issueGroupId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the issue-group resource.
+	 */
+	static isValidIssueGroupArn(arn: string): boolean {
+		return IssueGroupArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a issue-group ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseIssueGroupArn(
+		arn: string,
+	): TransformCustomIssueGroupArnComponents {
+		const match = IssueGroupArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid issue-group ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			issueGroupId: match.groups!.issueGroupId,
 		};
 	}
 
@@ -647,6 +846,41 @@ export class TransformCustomResources {
 	}
 
 	/**
+	 * Builds an ARN for the remediation-plan resource.
+	 */
+	static remediationPlan(
+		props: TransformCustomRemediationPlanArnProps,
+	): string {
+		return `arn:${props.partition ?? "aws"}:transform-custom:${props.region ?? "*"}:${props.account ?? "*"}:remediation-plan/${props.remediationPlanId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the remediation-plan resource.
+	 */
+	static isValidRemediationPlanArn(arn: string): boolean {
+		return RemediationPlanArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a remediation-plan ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseRemediationPlanArn(
+		arn: string,
+	): TransformCustomRemediationPlanArnComponents {
+		const match = RemediationPlanArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid remediation-plan ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			remediationPlanId: match.groups!.remediationPlanId,
+		};
+	}
+
+	/**
 	 * Builds an ARN for the repository resource.
 	 */
 	static repository(props: TransformCustomRepositoryArnProps): string {
@@ -676,6 +910,41 @@ export class TransformCustomResources {
 			region: match.groups.region,
 			account: match.groups.account,
 			repositoryId: match.groups!.repositoryId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the skill-creation-job resource.
+	 */
+	static skillCreationJob(
+		props: TransformCustomSkillCreationJobArnProps,
+	): string {
+		return `arn:${props.partition ?? "aws"}:transform-custom:${props.region ?? "*"}:${props.account ?? "*"}:skill-creation-job/${props.skillCreationJobId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the skill-creation-job resource.
+	 */
+	static isValidSkillCreationJobArn(arn: string): boolean {
+		return SkillCreationJobArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a skill-creation-job ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseSkillCreationJobArn(
+		arn: string,
+	): TransformCustomSkillCreationJobArnComponents {
+		const match = SkillCreationJobArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid skill-creation-job ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			skillCreationJobId: match.groups!.skillCreationJobId,
 		};
 	}
 
@@ -721,8 +990,20 @@ export class TransformCustomConditions {
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
+	/** Condition keys applicable to the CancelSkillCreationJob action. */
+	static readonly CancelSkillCreationJobConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the CompleteTransformationPackageUpload action. */
 	static readonly CompleteTransformationPackageUploadConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
+	/** Condition keys applicable to the ConnectSource action. */
+	static readonly ConnectSourceConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
+	/** Condition keys applicable to the ContributeKnowledgeItems action. */
+	static readonly ContributeKnowledgeItemsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateAnalysis action. */
@@ -739,6 +1020,12 @@ export class TransformCustomConditions {
 	];
 	/** Condition keys applicable to the CreateRemediation action. */
 	static readonly CreateRemediationConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:ResourceTag/${TagKey}",
+		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the CreateRemediationPlan action. */
+	static readonly CreateRemediationPlanConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
@@ -781,8 +1068,16 @@ export class TransformCustomConditions {
 	static readonly DeleteRemediationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
+	/** Condition keys applicable to the DeleteRemediationPlan action. */
+	static readonly DeleteRemediationPlanConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the DeleteRepository action. */
 	static readonly DeleteRepositoryConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
+	/** Condition keys applicable to the DeleteResourcePolicy action. */
+	static readonly DeleteResourcePolicyConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the DeleteSource action. */
@@ -812,6 +1107,10 @@ export class TransformCustomConditions {
 	static readonly actionGetFindingConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
+	/** Condition keys applicable to the GetIssueGroup action. */
+	static readonly actionGetIssueGroupConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the GetKnowledgeItem action. */
 	static readonly actionGetKnowledgeItemConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
@@ -820,8 +1119,20 @@ export class TransformCustomConditions {
 	static readonly actionGetRemediationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
+	/** Condition keys applicable to the GetRemediationPlan action. */
+	static readonly actionGetRemediationPlanConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the GetRepository action. */
 	static readonly actionGetRepositoryConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
+	/** Condition keys applicable to the GetResourcePolicy action. */
+	static readonly actionGetResourcePolicyConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
+	/** Condition keys applicable to the GetSkillCreationJob action. */
+	static readonly actionGetSkillCreationJobConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetSource action. */
@@ -844,9 +1155,23 @@ export class TransformCustomConditions {
 	static readonly ListTransformationPackageSharesConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
+	/** Condition keys applicable to the PutResourcePolicy action. */
+	static readonly PutResourcePolicyConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
+	/** Condition keys applicable to the ReadRepositoryContent action. */
+	static readonly ReadRepositoryContentConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the ShareTransformationPackage action. */
 	static readonly ShareTransformationPackageConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
+	];
+	/** Condition keys applicable to the StartSkillCreationJob action. */
+	static readonly StartSkillCreationJobConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:ResourceTag/${TagKey}",
+		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the TagResource action. */
 	static readonly TagResourceConditionKeys: string[] = [
@@ -872,6 +1197,10 @@ export class TransformCustomConditions {
 	static readonly UpdateCampaignRepositoryStatusConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
+	/** Condition keys applicable to the UpdateIssueGroup action. */
+	static readonly UpdateIssueGroupConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the UpdateKnowledgeItemConfiguration action. */
 	static readonly UpdateKnowledgeItemConfigurationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
@@ -884,12 +1213,24 @@ export class TransformCustomConditions {
 	static readonly UpdateRemediationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
+	/** Condition keys applicable to the UpdateRemediationPlan action. */
+	static readonly UpdateRemediationPlanConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the UpdateRepository action. */
 	static readonly UpdateRepositoryConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
+	/** Condition keys applicable to the UpdateSkillCreationJob action. */
+	static readonly UpdateSkillCreationJobConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the UpdateSource action. */
 	static readonly UpdateSourceConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
+	/** Condition keys applicable to the WriteRepositoryContent action. */
+	static readonly WriteRepositoryContentConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 	];
 

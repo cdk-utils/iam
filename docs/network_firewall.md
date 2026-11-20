@@ -2010,6 +2010,7 @@ new network_firewall.NetworkFirewallActions()
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.DisassociateSubnets">DisassociateSubnets</a></code> | <code>string</code> | [Write] network-firewall:DisassociateSubnets. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.ListAnalysisReports">ListAnalysisReports</a></code> | <code>string</code> | [List] network-firewall:ListAnalysisReports. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.ListContainerAssociations">ListContainerAssociations</a></code> | <code>string</code> | [List] network-firewall:ListContainerAssociations. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.ListContextStores">ListContextStores</a></code> | <code>string</code> | [List] network-firewall:ListContextStores. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.ListFirewallPolicies">ListFirewallPolicies</a></code> | <code>string</code> | [List] network-firewall:ListFirewallPolicies. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.ListFirewallPoliciesV2">ListFirewallPoliciesV2</a></code> | <code>string</code> | [List] network-firewall:ListFirewallPoliciesV2. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.ListFirewalls">ListFirewalls</a></code> | <code>string</code> | [List] network-firewall:ListFirewalls. |
@@ -2018,6 +2019,7 @@ new network_firewall.NetworkFirewallActions()
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.ListProxies">ListProxies</a></code> | <code>string</code> | [List] network-firewall:ListProxies. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.ListProxyConfigurations">ListProxyConfigurations</a></code> | <code>string</code> | [List] network-firewall:ListProxyConfigurations. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.ListProxyRuleGroups">ListProxyRuleGroups</a></code> | <code>string</code> | [List] network-firewall:ListProxyRuleGroups. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.ListResourcesInContextStore">ListResourcesInContextStore</a></code> | <code>string</code> | [List] network-firewall:ListResourcesInContextStore. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.ListRuleGroups">ListRuleGroups</a></code> | <code>string</code> | [List] network-firewall:ListRuleGroups. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [List] network-firewall:ListTagsForResource. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.ListTLSInspectionConfigurations">ListTLSInspectionConfigurations</a></code> | <code>string</code> | [List] network-firewall:ListTLSInspectionConfigurations. |
@@ -2735,6 +2737,18 @@ public readonly ListContainerAssociations: string;
 
 ---
 
+##### `ListContextStores`<sup>Required</sup> <a name="ListContextStores" id="@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.ListContextStores"></a>
+
+```typescript
+public readonly ListContextStores: string;
+```
+
+- *Type:* string
+
+[List] network-firewall:ListContextStores.
+
+---
+
 ##### `ListFirewallPolicies`<sup>Required</sup> <a name="ListFirewallPolicies" id="@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.ListFirewallPolicies"></a>
 
 ```typescript
@@ -2828,6 +2842,18 @@ public readonly ListProxyRuleGroups: string;
 - *Type:* string
 
 [List] network-firewall:ListProxyRuleGroups.
+
+---
+
+##### `ListResourcesInContextStore`<sup>Required</sup> <a name="ListResourcesInContextStore" id="@cdk_utils/iam.network_firewall.NetworkFirewallActions.property.ListResourcesInContextStore"></a>
+
+```typescript
+public readonly ListResourcesInContextStore: string;
+```
+
+- *Type:* string
+
+[List] network-firewall:ListResourcesInContextStore.
 
 ---
 
@@ -3511,25 +3537,19 @@ new network_firewall.NetworkFirewallOperations()
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.AssociateAvailabilityZones">AssociateAvailabilityZones</a></code> | <code>string[]</code> | IAM actions required for the AssociateAvailabilityZones API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.AssociateFirewallPolicy">AssociateFirewallPolicy</a></code> | <code>string[]</code> | IAM actions required for the AssociateFirewallPolicy API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.AssociateSubnets">AssociateSubnets</a></code> | <code>string[]</code> | IAM actions required for the AssociateSubnets API call. |
-| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.AttachRuleGroupsToProxyConfiguration">AttachRuleGroupsToProxyConfiguration</a></code> | <code>string[]</code> | IAM actions required for the AttachRuleGroupsToProxyConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.CreateContainerAssociation">CreateContainerAssociation</a></code> | <code>string[]</code> | IAM actions required for the CreateContainerAssociation API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.CreateFirewall">CreateFirewall</a></code> | <code>string[]</code> | IAM actions required for the CreateFirewall API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.CreateFirewallPolicy">CreateFirewallPolicy</a></code> | <code>string[]</code> | IAM actions required for the CreateFirewallPolicy API call. |
-| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.CreateProxy">CreateProxy</a></code> | <code>string[]</code> | IAM actions required for the CreateProxy API call. |
-| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.CreateProxyConfiguration">CreateProxyConfiguration</a></code> | <code>string[]</code> | IAM actions required for the CreateProxyConfiguration API call. |
-| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.CreateProxyRuleGroup">CreateProxyRuleGroup</a></code> | <code>string[]</code> | IAM actions required for the CreateProxyRuleGroup API call. |
-| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.CreateProxyRules">CreateProxyRules</a></code> | <code>string[]</code> | IAM actions required for the CreateProxyRules API call. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.CreateFirewallPolicyV2">CreateFirewallPolicyV2</a></code> | <code>string[]</code> | IAM actions required for the CreateFirewallPolicyV2 API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.CreateRuleGroup">CreateRuleGroup</a></code> | <code>string[]</code> | IAM actions required for the CreateRuleGroup API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.CreateTLSInspectionConfiguration">CreateTLSInspectionConfiguration</a></code> | <code>string[]</code> | IAM actions required for the CreateTLSInspectionConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.CreateVpcEndpointAssociation">CreateVpcEndpointAssociation</a></code> | <code>string[]</code> | IAM actions required for the CreateVpcEndpointAssociation API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DeleteContainerAssociation">DeleteContainerAssociation</a></code> | <code>string[]</code> | IAM actions required for the DeleteContainerAssociation API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DeleteFirewall">DeleteFirewall</a></code> | <code>string[]</code> | IAM actions required for the DeleteFirewall API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DeleteFirewallPolicy">DeleteFirewallPolicy</a></code> | <code>string[]</code> | IAM actions required for the DeleteFirewallPolicy API call. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DeleteFirewallPolicyV2">DeleteFirewallPolicyV2</a></code> | <code>string[]</code> | IAM actions required for the DeleteFirewallPolicyV2 API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DeleteNetworkFirewallTransitGatewayAttachment">DeleteNetworkFirewallTransitGatewayAttachment</a></code> | <code>string[]</code> | IAM actions required for the DeleteNetworkFirewallTransitGatewayAttachment API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DeleteProxy">DeleteProxy</a></code> | <code>string[]</code> | IAM actions required for the DeleteProxy API call. |
-| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DeleteProxyConfiguration">DeleteProxyConfiguration</a></code> | <code>string[]</code> | IAM actions required for the DeleteProxyConfiguration API call. |
-| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DeleteProxyRuleGroup">DeleteProxyRuleGroup</a></code> | <code>string[]</code> | IAM actions required for the DeleteProxyRuleGroup API call. |
-| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DeleteProxyRules">DeleteProxyRules</a></code> | <code>string[]</code> | IAM actions required for the DeleteProxyRules API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DeleteResourcePolicy">DeleteResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the DeleteResourcePolicy API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DeleteRuleGroup">DeleteRuleGroup</a></code> | <code>string[]</code> | IAM actions required for the DeleteRuleGroup API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DeleteTLSInspectionConfiguration">DeleteTLSInspectionConfiguration</a></code> | <code>string[]</code> | IAM actions required for the DeleteTLSInspectionConfiguration API call. |
@@ -3538,30 +3558,27 @@ new network_firewall.NetworkFirewallOperations()
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DescribeFirewall">DescribeFirewall</a></code> | <code>string[]</code> | IAM actions required for the DescribeFirewall API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DescribeFirewallMetadata">DescribeFirewallMetadata</a></code> | <code>string[]</code> | IAM actions required for the DescribeFirewallMetadata API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DescribeFirewallPolicy">DescribeFirewallPolicy</a></code> | <code>string[]</code> | IAM actions required for the DescribeFirewallPolicy API call. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DescribeFirewallPolicyV2">DescribeFirewallPolicyV2</a></code> | <code>string[]</code> | IAM actions required for the DescribeFirewallPolicyV2 API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DescribeFlowOperation">DescribeFlowOperation</a></code> | <code>string[]</code> | IAM actions required for the DescribeFlowOperation API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DescribeLoggingConfiguration">DescribeLoggingConfiguration</a></code> | <code>string[]</code> | IAM actions required for the DescribeLoggingConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DescribeProxy">DescribeProxy</a></code> | <code>string[]</code> | IAM actions required for the DescribeProxy API call. |
-| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DescribeProxyConfiguration">DescribeProxyConfiguration</a></code> | <code>string[]</code> | IAM actions required for the DescribeProxyConfiguration API call. |
-| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DescribeProxyRule">DescribeProxyRule</a></code> | <code>string[]</code> | IAM actions required for the DescribeProxyRule API call. |
-| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DescribeProxyRuleGroup">DescribeProxyRuleGroup</a></code> | <code>string[]</code> | IAM actions required for the DescribeProxyRuleGroup API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DescribeResourcePolicy">DescribeResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the DescribeResourcePolicy API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DescribeRuleGroup">DescribeRuleGroup</a></code> | <code>string[]</code> | IAM actions required for the DescribeRuleGroup API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DescribeRuleGroupMetadata">DescribeRuleGroupMetadata</a></code> | <code>string[]</code> | IAM actions required for the DescribeRuleGroupMetadata API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DescribeRuleGroupSummary">DescribeRuleGroupSummary</a></code> | <code>string[]</code> | IAM actions required for the DescribeRuleGroupSummary API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DescribeTLSInspectionConfiguration">DescribeTLSInspectionConfiguration</a></code> | <code>string[]</code> | IAM actions required for the DescribeTLSInspectionConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DescribeVpcEndpointAssociation">DescribeVpcEndpointAssociation</a></code> | <code>string[]</code> | IAM actions required for the DescribeVpcEndpointAssociation API call. |
-| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DetachRuleGroupsFromProxyConfiguration">DetachRuleGroupsFromProxyConfiguration</a></code> | <code>string[]</code> | IAM actions required for the DetachRuleGroupsFromProxyConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DisassociateAvailabilityZones">DisassociateAvailabilityZones</a></code> | <code>string[]</code> | IAM actions required for the DisassociateAvailabilityZones API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DisassociateSubnets">DisassociateSubnets</a></code> | <code>string[]</code> | IAM actions required for the DisassociateSubnets API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.ListAnalysisReports">ListAnalysisReports</a></code> | <code>string[]</code> | IAM actions required for the ListAnalysisReports API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.ListContainerAssociations">ListContainerAssociations</a></code> | <code>string[]</code> | IAM actions required for the ListContainerAssociations API call. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.ListContextStores">ListContextStores</a></code> | <code>string[]</code> | IAM actions required for the ListContextStores API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.ListFirewallPolicies">ListFirewallPolicies</a></code> | <code>string[]</code> | IAM actions required for the ListFirewallPolicies API call. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.ListFirewallPoliciesV2">ListFirewallPoliciesV2</a></code> | <code>string[]</code> | IAM actions required for the ListFirewallPoliciesV2 API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.ListFirewalls">ListFirewalls</a></code> | <code>string[]</code> | IAM actions required for the ListFirewalls API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.ListFlowOperationResults">ListFlowOperationResults</a></code> | <code>string[]</code> | IAM actions required for the ListFlowOperationResults API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.ListFlowOperations">ListFlowOperations</a></code> | <code>string[]</code> | IAM actions required for the ListFlowOperations API call. |
-| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.ListProxies">ListProxies</a></code> | <code>string[]</code> | IAM actions required for the ListProxies API call. |
-| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.ListProxyConfigurations">ListProxyConfigurations</a></code> | <code>string[]</code> | IAM actions required for the ListProxyConfigurations API call. |
-| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.ListProxyRuleGroups">ListProxyRuleGroups</a></code> | <code>string[]</code> | IAM actions required for the ListProxyRuleGroups API call. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.ListResourcesInContextStore">ListResourcesInContextStore</a></code> | <code>string[]</code> | IAM actions required for the ListResourcesInContextStore API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.ListRuleGroups">ListRuleGroups</a></code> | <code>string[]</code> | IAM actions required for the ListRuleGroups API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.ListTLSInspectionConfigurations">ListTLSInspectionConfigurations</a></code> | <code>string[]</code> | IAM actions required for the ListTLSInspectionConfigurations API call. |
@@ -3582,12 +3599,8 @@ new network_firewall.NetworkFirewallOperations()
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.UpdateFirewallEncryptionConfiguration">UpdateFirewallEncryptionConfiguration</a></code> | <code>string[]</code> | IAM actions required for the UpdateFirewallEncryptionConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.UpdateFirewallPolicy">UpdateFirewallPolicy</a></code> | <code>string[]</code> | IAM actions required for the UpdateFirewallPolicy API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.UpdateFirewallPolicyChangeProtection">UpdateFirewallPolicyChangeProtection</a></code> | <code>string[]</code> | IAM actions required for the UpdateFirewallPolicyChangeProtection API call. |
+| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.UpdateFirewallPolicyV2">UpdateFirewallPolicyV2</a></code> | <code>string[]</code> | IAM actions required for the UpdateFirewallPolicyV2 API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.UpdateLoggingConfiguration">UpdateLoggingConfiguration</a></code> | <code>string[]</code> | IAM actions required for the UpdateLoggingConfiguration API call. |
-| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.UpdateProxy">UpdateProxy</a></code> | <code>string[]</code> | IAM actions required for the UpdateProxy API call. |
-| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.UpdateProxyConfiguration">UpdateProxyConfiguration</a></code> | <code>string[]</code> | IAM actions required for the UpdateProxyConfiguration API call. |
-| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.UpdateProxyRule">UpdateProxyRule</a></code> | <code>string[]</code> | IAM actions required for the UpdateProxyRule API call. |
-| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.UpdateProxyRuleGroupPriorities">UpdateProxyRuleGroupPriorities</a></code> | <code>string[]</code> | IAM actions required for the UpdateProxyRuleGroupPriorities API call. |
-| <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.UpdateProxyRulePriorities">UpdateProxyRulePriorities</a></code> | <code>string[]</code> | IAM actions required for the UpdateProxyRulePriorities API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.UpdateProxySettings">UpdateProxySettings</a></code> | <code>string[]</code> | IAM actions required for the UpdateProxySettings API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.UpdateRuleGroup">UpdateRuleGroup</a></code> | <code>string[]</code> | IAM actions required for the UpdateRuleGroup API call. |
 | <code><a href="#@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.UpdateSubnetChangeProtection">UpdateSubnetChangeProtection</a></code> | <code>string[]</code> | IAM actions required for the UpdateSubnetChangeProtection API call. |
@@ -3643,18 +3656,6 @@ IAM actions required for the AssociateSubnets API call.
 
 ---
 
-##### `AttachRuleGroupsToProxyConfiguration`<sup>Required</sup> <a name="AttachRuleGroupsToProxyConfiguration" id="@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.AttachRuleGroupsToProxyConfiguration"></a>
-
-```typescript
-public readonly AttachRuleGroupsToProxyConfiguration: string[];
-```
-
-- *Type:* string[]
-
-IAM actions required for the AttachRuleGroupsToProxyConfiguration API call.
-
----
-
 ##### `CreateContainerAssociation`<sup>Required</sup> <a name="CreateContainerAssociation" id="@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.CreateContainerAssociation"></a>
 
 ```typescript
@@ -3691,51 +3692,15 @@ IAM actions required for the CreateFirewallPolicy API call.
 
 ---
 
-##### `CreateProxy`<sup>Required</sup> <a name="CreateProxy" id="@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.CreateProxy"></a>
+##### `CreateFirewallPolicyV2`<sup>Required</sup> <a name="CreateFirewallPolicyV2" id="@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.CreateFirewallPolicyV2"></a>
 
 ```typescript
-public readonly CreateProxy: string[];
+public readonly CreateFirewallPolicyV2: string[];
 ```
 
 - *Type:* string[]
 
-IAM actions required for the CreateProxy API call.
-
----
-
-##### `CreateProxyConfiguration`<sup>Required</sup> <a name="CreateProxyConfiguration" id="@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.CreateProxyConfiguration"></a>
-
-```typescript
-public readonly CreateProxyConfiguration: string[];
-```
-
-- *Type:* string[]
-
-IAM actions required for the CreateProxyConfiguration API call.
-
----
-
-##### `CreateProxyRuleGroup`<sup>Required</sup> <a name="CreateProxyRuleGroup" id="@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.CreateProxyRuleGroup"></a>
-
-```typescript
-public readonly CreateProxyRuleGroup: string[];
-```
-
-- *Type:* string[]
-
-IAM actions required for the CreateProxyRuleGroup API call.
-
----
-
-##### `CreateProxyRules`<sup>Required</sup> <a name="CreateProxyRules" id="@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.CreateProxyRules"></a>
-
-```typescript
-public readonly CreateProxyRules: string[];
-```
-
-- *Type:* string[]
-
-IAM actions required for the CreateProxyRules API call.
+IAM actions required for the CreateFirewallPolicyV2 API call.
 
 ---
 
@@ -3811,6 +3776,18 @@ IAM actions required for the DeleteFirewallPolicy API call.
 
 ---
 
+##### `DeleteFirewallPolicyV2`<sup>Required</sup> <a name="DeleteFirewallPolicyV2" id="@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DeleteFirewallPolicyV2"></a>
+
+```typescript
+public readonly DeleteFirewallPolicyV2: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteFirewallPolicyV2 API call.
+
+---
+
 ##### `DeleteNetworkFirewallTransitGatewayAttachment`<sup>Required</sup> <a name="DeleteNetworkFirewallTransitGatewayAttachment" id="@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DeleteNetworkFirewallTransitGatewayAttachment"></a>
 
 ```typescript
@@ -3832,42 +3809,6 @@ public readonly DeleteProxy: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteProxy API call.
-
----
-
-##### `DeleteProxyConfiguration`<sup>Required</sup> <a name="DeleteProxyConfiguration" id="@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DeleteProxyConfiguration"></a>
-
-```typescript
-public readonly DeleteProxyConfiguration: string[];
-```
-
-- *Type:* string[]
-
-IAM actions required for the DeleteProxyConfiguration API call.
-
----
-
-##### `DeleteProxyRuleGroup`<sup>Required</sup> <a name="DeleteProxyRuleGroup" id="@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DeleteProxyRuleGroup"></a>
-
-```typescript
-public readonly DeleteProxyRuleGroup: string[];
-```
-
-- *Type:* string[]
-
-IAM actions required for the DeleteProxyRuleGroup API call.
-
----
-
-##### `DeleteProxyRules`<sup>Required</sup> <a name="DeleteProxyRules" id="@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DeleteProxyRules"></a>
-
-```typescript
-public readonly DeleteProxyRules: string[];
-```
-
-- *Type:* string[]
-
-IAM actions required for the DeleteProxyRules API call.
 
 ---
 
@@ -3967,6 +3908,18 @@ IAM actions required for the DescribeFirewallPolicy API call.
 
 ---
 
+##### `DescribeFirewallPolicyV2`<sup>Required</sup> <a name="DescribeFirewallPolicyV2" id="@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DescribeFirewallPolicyV2"></a>
+
+```typescript
+public readonly DescribeFirewallPolicyV2: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeFirewallPolicyV2 API call.
+
+---
+
 ##### `DescribeFlowOperation`<sup>Required</sup> <a name="DescribeFlowOperation" id="@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DescribeFlowOperation"></a>
 
 ```typescript
@@ -4000,42 +3953,6 @@ public readonly DescribeProxy: string[];
 - *Type:* string[]
 
 IAM actions required for the DescribeProxy API call.
-
----
-
-##### `DescribeProxyConfiguration`<sup>Required</sup> <a name="DescribeProxyConfiguration" id="@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DescribeProxyConfiguration"></a>
-
-```typescript
-public readonly DescribeProxyConfiguration: string[];
-```
-
-- *Type:* string[]
-
-IAM actions required for the DescribeProxyConfiguration API call.
-
----
-
-##### `DescribeProxyRule`<sup>Required</sup> <a name="DescribeProxyRule" id="@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DescribeProxyRule"></a>
-
-```typescript
-public readonly DescribeProxyRule: string[];
-```
-
-- *Type:* string[]
-
-IAM actions required for the DescribeProxyRule API call.
-
----
-
-##### `DescribeProxyRuleGroup`<sup>Required</sup> <a name="DescribeProxyRuleGroup" id="@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DescribeProxyRuleGroup"></a>
-
-```typescript
-public readonly DescribeProxyRuleGroup: string[];
-```
-
-- *Type:* string[]
-
-IAM actions required for the DescribeProxyRuleGroup API call.
 
 ---
 
@@ -4111,18 +4028,6 @@ IAM actions required for the DescribeVpcEndpointAssociation API call.
 
 ---
 
-##### `DetachRuleGroupsFromProxyConfiguration`<sup>Required</sup> <a name="DetachRuleGroupsFromProxyConfiguration" id="@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DetachRuleGroupsFromProxyConfiguration"></a>
-
-```typescript
-public readonly DetachRuleGroupsFromProxyConfiguration: string[];
-```
-
-- *Type:* string[]
-
-IAM actions required for the DetachRuleGroupsFromProxyConfiguration API call.
-
----
-
 ##### `DisassociateAvailabilityZones`<sup>Required</sup> <a name="DisassociateAvailabilityZones" id="@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.DisassociateAvailabilityZones"></a>
 
 ```typescript
@@ -4171,6 +4076,18 @@ IAM actions required for the ListContainerAssociations API call.
 
 ---
 
+##### `ListContextStores`<sup>Required</sup> <a name="ListContextStores" id="@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.ListContextStores"></a>
+
+```typescript
+public readonly ListContextStores: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListContextStores API call.
+
+---
+
 ##### `ListFirewallPolicies`<sup>Required</sup> <a name="ListFirewallPolicies" id="@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.ListFirewallPolicies"></a>
 
 ```typescript
@@ -4180,6 +4097,18 @@ public readonly ListFirewallPolicies: string[];
 - *Type:* string[]
 
 IAM actions required for the ListFirewallPolicies API call.
+
+---
+
+##### `ListFirewallPoliciesV2`<sup>Required</sup> <a name="ListFirewallPoliciesV2" id="@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.ListFirewallPoliciesV2"></a>
+
+```typescript
+public readonly ListFirewallPoliciesV2: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListFirewallPoliciesV2 API call.
 
 ---
 
@@ -4219,39 +4148,15 @@ IAM actions required for the ListFlowOperations API call.
 
 ---
 
-##### `ListProxies`<sup>Required</sup> <a name="ListProxies" id="@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.ListProxies"></a>
+##### `ListResourcesInContextStore`<sup>Required</sup> <a name="ListResourcesInContextStore" id="@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.ListResourcesInContextStore"></a>
 
 ```typescript
-public readonly ListProxies: string[];
+public readonly ListResourcesInContextStore: string[];
 ```
 
 - *Type:* string[]
 
-IAM actions required for the ListProxies API call.
-
----
-
-##### `ListProxyConfigurations`<sup>Required</sup> <a name="ListProxyConfigurations" id="@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.ListProxyConfigurations"></a>
-
-```typescript
-public readonly ListProxyConfigurations: string[];
-```
-
-- *Type:* string[]
-
-IAM actions required for the ListProxyConfigurations API call.
-
----
-
-##### `ListProxyRuleGroups`<sup>Required</sup> <a name="ListProxyRuleGroups" id="@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.ListProxyRuleGroups"></a>
-
-```typescript
-public readonly ListProxyRuleGroups: string[];
-```
-
-- *Type:* string[]
-
-IAM actions required for the ListProxyRuleGroups API call.
+IAM actions required for the ListResourcesInContextStore API call.
 
 ---
 
@@ -4495,6 +4400,18 @@ IAM actions required for the UpdateFirewallPolicyChangeProtection API call.
 
 ---
 
+##### `UpdateFirewallPolicyV2`<sup>Required</sup> <a name="UpdateFirewallPolicyV2" id="@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.UpdateFirewallPolicyV2"></a>
+
+```typescript
+public readonly UpdateFirewallPolicyV2: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateFirewallPolicyV2 API call.
+
+---
+
 ##### `UpdateLoggingConfiguration`<sup>Required</sup> <a name="UpdateLoggingConfiguration" id="@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.UpdateLoggingConfiguration"></a>
 
 ```typescript
@@ -4504,66 +4421,6 @@ public readonly UpdateLoggingConfiguration: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateLoggingConfiguration API call.
-
----
-
-##### `UpdateProxy`<sup>Required</sup> <a name="UpdateProxy" id="@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.UpdateProxy"></a>
-
-```typescript
-public readonly UpdateProxy: string[];
-```
-
-- *Type:* string[]
-
-IAM actions required for the UpdateProxy API call.
-
----
-
-##### `UpdateProxyConfiguration`<sup>Required</sup> <a name="UpdateProxyConfiguration" id="@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.UpdateProxyConfiguration"></a>
-
-```typescript
-public readonly UpdateProxyConfiguration: string[];
-```
-
-- *Type:* string[]
-
-IAM actions required for the UpdateProxyConfiguration API call.
-
----
-
-##### `UpdateProxyRule`<sup>Required</sup> <a name="UpdateProxyRule" id="@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.UpdateProxyRule"></a>
-
-```typescript
-public readonly UpdateProxyRule: string[];
-```
-
-- *Type:* string[]
-
-IAM actions required for the UpdateProxyRule API call.
-
----
-
-##### `UpdateProxyRuleGroupPriorities`<sup>Required</sup> <a name="UpdateProxyRuleGroupPriorities" id="@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.UpdateProxyRuleGroupPriorities"></a>
-
-```typescript
-public readonly UpdateProxyRuleGroupPriorities: string[];
-```
-
-- *Type:* string[]
-
-IAM actions required for the UpdateProxyRuleGroupPriorities API call.
-
----
-
-##### `UpdateProxyRulePriorities`<sup>Required</sup> <a name="UpdateProxyRulePriorities" id="@cdk_utils/iam.network_firewall.NetworkFirewallOperations.property.UpdateProxyRulePriorities"></a>
-
-```typescript
-public readonly UpdateProxyRulePriorities: string[];
-```
-
-- *Type:* string[]
-
-IAM actions required for the UpdateProxyRulePriorities API call.
 
 ---
 

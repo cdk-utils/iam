@@ -12,6 +12,9 @@ export class ConfigActions {
 	/** The IAM service prefix. */
 	static readonly SERVICE_PREFIX = "config";
 
+	/** [PermissionManagement] config:AllowVendedLogDeliveryForResource */
+	static readonly AllowVendedLogDeliveryForResource =
+		"config:AllowVendedLogDeliveryForResource";
 	/** [Write] config:AssociateResourceTypes */
 	static readonly AssociateResourceTypes = "config:AssociateResourceTypes";
 	/** [Read] config:BatchGetAggregateResourceConfig */
@@ -394,7 +397,9 @@ export class ConfigActions {
 		ConfigActions.ListStoredQueries,
 	];
 	/** All permission-management-level actions. */
-	static readonly AllPermissionManagementActions: string[] = [];
+	static readonly AllPermissionManagementActions: string[] = [
+		ConfigActions.AllowVendedLogDeliveryForResource,
+	];
 	/** All tagging-level actions. */
 	static readonly AllTaggingActions: string[] = [
 		ConfigActions.TagResource,
@@ -1435,6 +1440,7 @@ export class ConfigOperations {
 	/** IAM actions required for the PutServiceLinkedConfigurationRecorder API call. */
 	static readonly PutServiceLinkedConfigurationRecorder: string[] = [
 		"config:PutServiceLinkedConfigurationRecorder",
+		"config:TagResource",
 	];
 	/** IAM actions required for the PutStoredQuery API call. */
 	static readonly PutStoredQuery: string[] = [
@@ -1484,6 +1490,10 @@ export class ConfigOperations {
  * Condition key constants and builders for config.
  */
 export class ConfigConditions {
+	/** Condition keys applicable to the AllowVendedLogDeliveryForResource action. */
+	static readonly AllowVendedLogDeliveryForResourceConditionKeys: string[] = [
+		"config:ConfigurationRecorderServicePrincipal",
+	];
 	/** Condition keys applicable to the DeleteServiceLinkedConfigurationRecorder action. */
 	static readonly DeleteServiceLinkedConfigurationRecorderConditionKeys: string[] =
 		["config:ConfigurationRecorderServicePrincipal"];

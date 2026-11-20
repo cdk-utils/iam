@@ -359,6 +359,7 @@ new dsql.DsqlActions()
 | <code><a href="#@cdk_utils/iam.dsql.DsqlActions.property.actionGetVpcEndpointServiceName">actionGetVpcEndpointServiceName</a></code> | <code>string</code> | [Read] dsql:GetVpcEndpointServiceName. |
 | <code><a href="#@cdk_utils/iam.dsql.DsqlActions.property.AddPeerCluster">AddPeerCluster</a></code> | <code>string</code> | [Write] dsql:AddPeerCluster. |
 | <code><a href="#@cdk_utils/iam.dsql.DsqlActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
+| <code><a href="#@cdk_utils/iam.dsql.DsqlActions.property.AllowVendedLogDeliveryForResource">AllowVendedLogDeliveryForResource</a></code> | <code>string</code> | [PermissionManagement] dsql:AllowVendedLogDeliveryForResource. |
 | <code><a href="#@cdk_utils/iam.dsql.DsqlActions.property.AllPermissionManagementActions">AllPermissionManagementActions</a></code> | <code>string[]</code> | All permission-management-level actions. |
 | <code><a href="#@cdk_utils/iam.dsql.DsqlActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
 | <code><a href="#@cdk_utils/iam.dsql.DsqlActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
@@ -483,6 +484,18 @@ public readonly AllListActions: string[];
 - *Type:* string[]
 
 All list-level actions.
+
+---
+
+##### `AllowVendedLogDeliveryForResource`<sup>Required</sup> <a name="AllowVendedLogDeliveryForResource" id="@cdk_utils/iam.dsql.DsqlActions.property.AllowVendedLogDeliveryForResource"></a>
+
+```typescript
+public readonly AllowVendedLogDeliveryForResource: string;
+```
+
+- *Type:* string
+
+[PermissionManagement] dsql:AllowVendedLogDeliveryForResource.
 
 ---
 

@@ -524,6 +524,7 @@
             "elasticache:DataStorageUnit",
             "elasticache:EngineType",
             "elasticache:EngineVersion",
+            "elasticache:IntegrationType",
             "elasticache:KmsKeyId",
             "elasticache:MaximumDataStorage",
             "elasticache:MaximumECPUPerSecond",
@@ -2267,6 +2268,12 @@
     },
     {
       "Name": "elasticache:EngineVersion",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "elasticache:IntegrationType",
       "Types": [
         "String"
       ]

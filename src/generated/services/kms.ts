@@ -962,6 +962,7 @@ export class KMSConditions {
 	/** Condition keys applicable to the GetKeyPolicy action. */
 	static readonly actionGetKeyPolicyConditionKeys: string[] = [
 		"kms:CallerAccount",
+		"kms:PolicyName",
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the GetKeyRotationStatus action. */
@@ -1024,6 +1025,7 @@ export class KMSConditions {
 	static readonly PutKeyPolicyConditionKeys: string[] = [
 		"kms:BypassPolicyLockoutSafetyCheck",
 		"kms:CallerAccount",
+		"kms:PolicyName",
 		"kms:ViaService",
 	];
 	/** Condition keys applicable to the ReEncryptFrom action. */
@@ -1191,6 +1193,8 @@ export class KMSConditions {
 	static readonly MULTI_REGION = "kms:MultiRegion";
 	/** Condition key: kms:MultiRegionKeyType (String) */
 	static readonly MULTI_REGION_KEY_TYPE = "kms:MultiRegionKeyType";
+	/** Condition key: kms:PolicyName (String) */
+	static readonly POLICY_NAME = "kms:PolicyName";
 	/** Condition key: kms:PrimaryRegion (String) */
 	static readonly PRIMARY_REGION = "kms:PrimaryRegion";
 	/** Condition key: kms:ReEncryptOnSameKey (Bool) */
@@ -1354,6 +1358,9 @@ export class KMSConditions {
 	static readonly RECIPIENT_ATTESTATION_PCR7 = "kms:RecipientAttestation:PCR7";
 	/** Condition key: kms:RecipientAttestation:PCR8 (String) */
 	static readonly RECIPIENT_ATTESTATION_PCR8 = "kms:RecipientAttestation:PCR8";
+	/** Condition key: kms:RecipientAttestation:PCR8:ServiceName (String) */
+	static readonly RECIPIENT_ATTESTATION_PCR8_SERVICE_NAME =
+		"kms:RecipientAttestation:PCR8:ServiceName";
 	/** Condition key: kms:RecipientAttestation:PCR9 (String) */
 	static readonly RECIPIENT_ATTESTATION_PCR9 = "kms:RecipientAttestation:PCR9";
 	/** Condition key: kms:ReplicaRegion (String) */
@@ -1610,6 +1617,13 @@ export class KMSConditions {
 		value: string,
 	): Record<string, Record<string, string>> {
 		return { StringEquals: { "kms:MultiRegionKeyType": value } };
+	}
+
+	/**
+	 * Generates a condition block for `kms:PolicyName`.
+	 */
+	static policyName(value: string): Record<string, Record<string, string>> {
+		return { StringEquals: { "kms:PolicyName": value } };
 	}
 
 	/**
@@ -2158,6 +2172,17 @@ export class KMSConditions {
 		value: string,
 	): Record<string, Record<string, string>> {
 		return { StringEquals: { "kms:RecipientAttestation:PCR8": value } };
+	}
+
+	/**
+	 * Generates a condition block for `kms:RecipientAttestation:PCR8:ServiceName`.
+	 */
+	static recipientAttestationPcr8ServiceName(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return {
+			StringEquals: { "kms:RecipientAttestation:PCR8:ServiceName": value },
+		};
 	}
 
 	/**

@@ -38,6 +38,8 @@ export class MgnActions {
 	/** [Write] mgn:CreateNetworkMigrationDefinition */
 	static readonly CreateNetworkMigrationDefinition =
 		"mgn:CreateNetworkMigrationDefinition";
+	/** [Write] mgn:CreateRemoteSourceAction */
+	static readonly CreateRemoteSourceAction = "mgn:CreateRemoteSourceAction";
 	/** [Write] mgn:CreateReplicationConfigurationTemplate */
 	static readonly CreateReplicationConfigurationTemplate =
 		"mgn:CreateReplicationConfigurationTemplate";
@@ -57,6 +59,8 @@ export class MgnActions {
 	/** [Write] mgn:DeleteNetworkMigrationDefinition */
 	static readonly DeleteNetworkMigrationDefinition =
 		"mgn:DeleteNetworkMigrationDefinition";
+	/** [Write] mgn:DeleteRemoteSourceAction */
+	static readonly DeleteRemoteSourceAction = "mgn:DeleteRemoteSourceAction";
 	/** [Write] mgn:DeleteReplicationConfigurationTemplate */
 	static readonly DeleteReplicationConfigurationTemplate =
 		"mgn:DeleteReplicationConfigurationTemplate";
@@ -118,6 +122,9 @@ export class MgnActions {
 		"mgn:GetChannelCommandsForMgn";
 	/** [Read] mgn:GetLaunchConfiguration */
 	static readonly actionGetLaunchConfiguration = "mgn:GetLaunchConfiguration";
+	/** [Read] mgn:GetLaunchConfigurationDefaults */
+	static readonly actionGetLaunchConfigurationDefaults =
+		"mgn:GetLaunchConfigurationDefaults";
 	/** [Read] mgn:GetNetworkMigrationDefinition */
 	static readonly actionGetNetworkMigrationDefinition =
 		"mgn:GetNetworkMigrationDefinition";
@@ -181,6 +188,9 @@ export class MgnActions {
 	/** [List] mgn:ListNetworkMigrationExecutions */
 	static readonly ListNetworkMigrationExecutions =
 		"mgn:ListNetworkMigrationExecutions";
+	/** [List] mgn:ListNetworkMigrationInsights */
+	static readonly ListNetworkMigrationInsights =
+		"mgn:ListNetworkMigrationInsights";
 	/** [List] mgn:ListNetworkMigrationMapperSegmentConstructs */
 	static readonly ListNetworkMigrationMapperSegmentConstructs =
 		"mgn:ListNetworkMigrationMapperSegmentConstructs";
@@ -193,6 +203,16 @@ export class MgnActions {
 	/** [List] mgn:ListNetworkMigrationMappings */
 	static readonly ListNetworkMigrationMappings =
 		"mgn:ListNetworkMigrationMappings";
+	/** [List] mgn:ListRemoteSourceActionInvocationResults */
+	static readonly ListRemoteSourceActionInvocationResults =
+		"mgn:ListRemoteSourceActionInvocationResults";
+	/** [List] mgn:ListRemoteSourceActionInvocations */
+	static readonly ListRemoteSourceActionInvocations =
+		"mgn:ListRemoteSourceActionInvocations";
+	/** [List] mgn:ListRemoteSourceActionJobs */
+	static readonly ListRemoteSourceActionJobs = "mgn:ListRemoteSourceActionJobs";
+	/** [List] mgn:ListRemoteSourceActions */
+	static readonly ListRemoteSourceActions = "mgn:ListRemoteSourceActions";
 	/** [List] mgn:ListSourceServerActions */
 	static readonly ListSourceServerActions = "mgn:ListSourceServerActions";
 	/** [Read] mgn:ListTagsForResource */
@@ -279,6 +299,8 @@ export class MgnActions {
 	/** [Write] mgn:StartNetworkMigrationMappingUpdate */
 	static readonly StartNetworkMigrationMappingUpdate =
 		"mgn:StartNetworkMigrationMappingUpdate";
+	/** [Write] mgn:StartRemoteSourceActionJob */
+	static readonly StartRemoteSourceActionJob = "mgn:StartRemoteSourceActionJob";
 	/** [Write] mgn:StartReplication */
 	static readonly StartReplication = "mgn:StartReplication";
 	/** [Write] mgn:StartSnapshotGroupForMgn */
@@ -319,6 +341,9 @@ export class MgnActions {
 	static readonly UpdateConnector = "mgn:UpdateConnector";
 	/** [Write] mgn:UpdateLaunchConfiguration */
 	static readonly UpdateLaunchConfiguration = "mgn:UpdateLaunchConfiguration";
+	/** [Write] mgn:UpdateLaunchConfigurationDefaults */
+	static readonly UpdateLaunchConfigurationDefaults =
+		"mgn:UpdateLaunchConfigurationDefaults";
 	/** [Write] mgn:UpdateLaunchConfigurationTemplate */
 	static readonly UpdateLaunchConfigurationTemplate =
 		"mgn:UpdateLaunchConfigurationTemplate";
@@ -331,6 +356,8 @@ export class MgnActions {
 	/** [Write] mgn:UpdateNetworkMigrationMapperSegmentConstruct */
 	static readonly UpdateNetworkMigrationMapperSegmentConstruct =
 		"mgn:UpdateNetworkMigrationMapperSegmentConstruct";
+	/** [Write] mgn:UpdateRemoteSourceAction */
+	static readonly UpdateRemoteSourceAction = "mgn:UpdateRemoteSourceAction";
 	/** [Write] mgn:UpdateReplicationConfiguration */
 	static readonly UpdateReplicationConfiguration =
 		"mgn:UpdateReplicationConfiguration";
@@ -361,6 +388,7 @@ export class MgnActions {
 		MgnActions.actionGetAgentSnapshotCreditsForMgn,
 		MgnActions.actionGetChannelCommandsForMgn,
 		MgnActions.actionGetLaunchConfiguration,
+		MgnActions.actionGetLaunchConfigurationDefaults,
 		MgnActions.actionGetNetworkMigrationDefinition,
 		MgnActions.actionGetNetworkMigrationMapperSegmentConstruct,
 		MgnActions.actionGetReplicationConfiguration,
@@ -382,6 +410,7 @@ export class MgnActions {
 		MgnActions.CreateConnector,
 		MgnActions.CreateLaunchConfigurationTemplate,
 		MgnActions.CreateNetworkMigrationDefinition,
+		MgnActions.CreateRemoteSourceAction,
 		MgnActions.CreateReplicationConfigurationTemplate,
 		MgnActions.CreateVcenterClientForMgn,
 		MgnActions.CreateWave,
@@ -390,6 +419,7 @@ export class MgnActions {
 		MgnActions.DeleteJob,
 		MgnActions.DeleteLaunchConfigurationTemplate,
 		MgnActions.DeleteNetworkMigrationDefinition,
+		MgnActions.DeleteRemoteSourceAction,
 		MgnActions.DeleteReplicationConfigurationTemplate,
 		MgnActions.DeleteSourceServer,
 		MgnActions.DeleteVcenterClient,
@@ -432,6 +462,7 @@ export class MgnActions {
 		MgnActions.StartNetworkMigrationDeployment,
 		MgnActions.StartNetworkMigrationMapping,
 		MgnActions.StartNetworkMigrationMappingUpdate,
+		MgnActions.StartRemoteSourceActionJob,
 		MgnActions.StartReplication,
 		MgnActions.StartSnapshotGroupForMgn,
 		MgnActions.StartTest,
@@ -448,10 +479,12 @@ export class MgnActions {
 		MgnActions.UpdateApplication,
 		MgnActions.UpdateConnector,
 		MgnActions.UpdateLaunchConfiguration,
+		MgnActions.UpdateLaunchConfigurationDefaults,
 		MgnActions.UpdateLaunchConfigurationTemplate,
 		MgnActions.UpdateNetworkMigrationDefinition,
 		MgnActions.UpdateNetworkMigrationMapperSegment,
 		MgnActions.UpdateNetworkMigrationMapperSegmentConstruct,
+		MgnActions.UpdateRemoteSourceAction,
 		MgnActions.UpdateReplicationConfiguration,
 		MgnActions.UpdateReplicationConfigurationTemplate,
 		MgnActions.UpdateSourceServer,
@@ -482,10 +515,15 @@ export class MgnActions {
 		MgnActions.ListNetworkMigrationDeployments,
 		MgnActions.ListNetworkMigrationExecutionArtifacts,
 		MgnActions.ListNetworkMigrationExecutions,
+		MgnActions.ListNetworkMigrationInsights,
 		MgnActions.ListNetworkMigrationMapperSegmentConstructs,
 		MgnActions.ListNetworkMigrationMapperSegments,
 		MgnActions.ListNetworkMigrationMappingUpdates,
 		MgnActions.ListNetworkMigrationMappings,
+		MgnActions.ListRemoteSourceActionInvocationResults,
+		MgnActions.ListRemoteSourceActionInvocations,
+		MgnActions.ListRemoteSourceActionJobs,
+		MgnActions.ListRemoteSourceActions,
 		MgnActions.ListSourceServerActions,
 		MgnActions.ListTemplateActions,
 		MgnActions.ListWaves,
@@ -696,6 +734,62 @@ export interface MgnNetworkMigrationDefinitionResourceArnComponents {
 }
 
 /**
+ * Properties for building a RemoteSourceActionJobResource ARN.
+ */
+export interface MgnRemoteSourceActionJobResourceArnProps {
+	/** The RemoteSourceActionJobID component of the ARN. */
+	readonly remoteSourceActionJobId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a RemoteSourceActionJobResource ARN.
+ */
+export interface MgnRemoteSourceActionJobResourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RemoteSourceActionJobID component. */
+	readonly remoteSourceActionJobId: string;
+}
+
+/**
+ * Properties for building a RemoteSourceActionResource ARN.
+ */
+export interface MgnRemoteSourceActionResourceArnProps {
+	/** The RemoteSourceActionID component of the ARN. */
+	readonly remoteSourceActionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a RemoteSourceActionResource ARN.
+ */
+export interface MgnRemoteSourceActionResourceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The RemoteSourceActionID component. */
+	readonly remoteSourceActionId: string;
+}
+
+/**
  * Properties for building a ReplicationConfigurationTemplateResource ARN.
  */
 export interface MgnReplicationConfigurationTemplateResourceArnProps {
@@ -821,6 +915,10 @@ const LaunchConfigurationTemplateResourceArnRegex =
 	/^arn:(?<partition>[^:]+):mgn:(?<region>[^:]*):(?<account>[^:]*):launch-configuration-template\/(?<launchConfigurationTemplateId>[^:/?]+)$/;
 const NetworkMigrationDefinitionResourceArnRegex =
 	/^arn:(?<partition>[^:]+):mgn:(?<region>[^:]*):(?<account>[^:]*):network-migration-definition\/(?<networkMigrationDefinitionId>[^:/?]+)$/;
+const RemoteSourceActionJobResourceArnRegex =
+	/^arn:(?<partition>[^:]+):mgn:(?<region>[^:]*):(?<account>[^:]*):remote-source-action-job\/(?<remoteSourceActionJobId>[^:/?]+)$/;
+const RemoteSourceActionResourceArnRegex =
+	/^arn:(?<partition>[^:]+):mgn:(?<region>[^:]*):(?<account>[^:]*):remote-source-action\/(?<remoteSourceActionId>[^:/?]+)$/;
 const ReplicationConfigurationTemplateResourceArnRegex =
 	/^arn:(?<partition>[^:]+):mgn:(?<region>[^:]*):(?<account>[^:]*):replication-configuration-template\/(?<replicationConfigurationTemplateId>[^:/?]+)$/;
 const SourceServerResourceArnRegex =
@@ -1067,6 +1165,76 @@ export class MgnResources {
 	}
 
 	/**
+	 * Builds an ARN for the RemoteSourceActionJobResource resource.
+	 */
+	static remoteSourceActionJobResource(
+		props: MgnRemoteSourceActionJobResourceArnProps,
+	): string {
+		return `arn:${props.partition ?? "aws"}:mgn:${props.region ?? "*"}:${props.account ?? "*"}:remote-source-action-job/${props.remoteSourceActionJobId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the RemoteSourceActionJobResource resource.
+	 */
+	static isValidRemoteSourceActionJobResourceArn(arn: string): boolean {
+		return RemoteSourceActionJobResourceArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a RemoteSourceActionJobResource ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseRemoteSourceActionJobResourceArn(
+		arn: string,
+	): MgnRemoteSourceActionJobResourceArnComponents {
+		const match = RemoteSourceActionJobResourceArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid RemoteSourceActionJobResource ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			remoteSourceActionJobId: match.groups!.remoteSourceActionJobId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the RemoteSourceActionResource resource.
+	 */
+	static remoteSourceActionResource(
+		props: MgnRemoteSourceActionResourceArnProps,
+	): string {
+		return `arn:${props.partition ?? "aws"}:mgn:${props.region ?? "*"}:${props.account ?? "*"}:remote-source-action/${props.remoteSourceActionId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the RemoteSourceActionResource resource.
+	 */
+	static isValidRemoteSourceActionResourceArn(arn: string): boolean {
+		return RemoteSourceActionResourceArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a RemoteSourceActionResource ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseRemoteSourceActionResourceArn(
+		arn: string,
+	): MgnRemoteSourceActionResourceArnComponents {
+		const match = RemoteSourceActionResourceArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid RemoteSourceActionResource ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			remoteSourceActionId: match.groups!.remoteSourceActionId,
+		};
+	}
+
+	/**
 	 * Builds an ARN for the ReplicationConfigurationTemplateResource resource.
 	 */
 	static replicationConfigurationTemplateResource(
@@ -1246,6 +1414,11 @@ export class MgnOperations {
 		"mgn:CreateNetworkMigrationDefinition",
 		"mgn:TagResource",
 	];
+	/** IAM actions required for the CreateRemoteSourceAction API call. */
+	static readonly CreateRemoteSourceAction: string[] = [
+		"mgn:CreateRemoteSourceAction",
+		"mgn:TagResource",
+	];
 	/** IAM actions required for the CreateReplicationConfigurationTemplate API call. */
 	static readonly CreateReplicationConfigurationTemplate: string[] = [
 		"mgn:CreateReplicationConfigurationTemplate",
@@ -1266,6 +1439,10 @@ export class MgnOperations {
 	/** IAM actions required for the DeleteNetworkMigrationDefinition API call. */
 	static readonly DeleteNetworkMigrationDefinition: string[] = [
 		"mgn:DeleteNetworkMigrationDefinition",
+	];
+	/** IAM actions required for the DeleteRemoteSourceAction API call. */
+	static readonly DeleteRemoteSourceAction: string[] = [
+		"mgn:DeleteRemoteSourceAction",
 	];
 	/** IAM actions required for the DeleteReplicationConfigurationTemplate API call. */
 	static readonly DeleteReplicationConfigurationTemplate: string[] = [
@@ -1314,6 +1491,10 @@ export class MgnOperations {
 	/** IAM actions required for the GetLaunchConfiguration API call. */
 	static readonly opGetLaunchConfiguration: string[] = [
 		"mgn:GetLaunchConfiguration",
+	];
+	/** IAM actions required for the GetLaunchConfigurationDefaults API call. */
+	static readonly opGetLaunchConfigurationDefaults: string[] = [
+		"mgn:GetLaunchConfigurationDefaults",
 	];
 	/** IAM actions required for the GetNetworkMigrationDefinition API call. */
 	static readonly opGetNetworkMigrationDefinition: string[] = [
@@ -1379,6 +1560,8 @@ export class MgnOperations {
 	static readonly ListNetworkMigrationExecutions: string[] = [
 		"mgn:ListNetworkMigrationExecutions",
 	];
+	/** IAM actions required for the ListNetworkMigrationInsights API call. */
+	static readonly ListNetworkMigrationInsights: string[] = [];
 	/** IAM actions required for the ListNetworkMigrationMapperSegmentConstructs API call. */
 	static readonly ListNetworkMigrationMapperSegmentConstructs: string[] = [
 		"mgn:ListNetworkMigrationMapperSegmentConstructs",
@@ -1394,6 +1577,22 @@ export class MgnOperations {
 	/** IAM actions required for the ListNetworkMigrationMappings API call. */
 	static readonly ListNetworkMigrationMappings: string[] = [
 		"mgn:ListNetworkMigrationMappings",
+	];
+	/** IAM actions required for the ListRemoteSourceActionInvocationResults API call. */
+	static readonly ListRemoteSourceActionInvocationResults: string[] = [
+		"mgn:ListRemoteSourceActionInvocationResults",
+	];
+	/** IAM actions required for the ListRemoteSourceActionInvocations API call. */
+	static readonly ListRemoteSourceActionInvocations: string[] = [
+		"mgn:ListRemoteSourceActionInvocations",
+	];
+	/** IAM actions required for the ListRemoteSourceActionJobs API call. */
+	static readonly ListRemoteSourceActionJobs: string[] = [
+		"mgn:ListRemoteSourceActionJobs",
+	];
+	/** IAM actions required for the ListRemoteSourceActions API call. */
+	static readonly ListRemoteSourceActions: string[] = [
+		"mgn:ListRemoteSourceActions",
 	];
 	/** IAM actions required for the ListSourceServerActions API call. */
 	static readonly ListSourceServerActions: string[] = [
@@ -1464,6 +1663,10 @@ export class MgnOperations {
 	static readonly StartNetworkMigrationMappingUpdate: string[] = [
 		"mgn:StartNetworkMigrationMappingUpdate",
 	];
+	/** IAM actions required for the StartRemoteSourceActionJob API call. */
+	static readonly StartRemoteSourceActionJob: string[] = [
+		"mgn:StartRemoteSourceActionJob",
+	];
 	/** IAM actions required for the StartReplication API call. */
 	static readonly StartReplication: string[] = ["mgn:StartReplication"];
 	/** IAM actions required for the StartTest API call. */
@@ -1491,6 +1694,10 @@ export class MgnOperations {
 	static readonly UpdateLaunchConfiguration: string[] = [
 		"mgn:UpdateLaunchConfiguration",
 	];
+	/** IAM actions required for the UpdateLaunchConfigurationDefaults API call. */
+	static readonly UpdateLaunchConfigurationDefaults: string[] = [
+		"mgn:UpdateLaunchConfigurationDefaults",
+	];
 	/** IAM actions required for the UpdateLaunchConfigurationTemplate API call. */
 	static readonly UpdateLaunchConfigurationTemplate: string[] = [
 		"mgn:UpdateLaunchConfigurationTemplate",
@@ -1502,6 +1709,10 @@ export class MgnOperations {
 	/** IAM actions required for the UpdateNetworkMigrationMapperSegment API call. */
 	static readonly UpdateNetworkMigrationMapperSegment: string[] = [
 		"mgn:UpdateNetworkMigrationMapperSegment",
+	];
+	/** IAM actions required for the UpdateRemoteSourceAction API call. */
+	static readonly UpdateRemoteSourceAction: string[] = [
+		"mgn:UpdateRemoteSourceAction",
 	];
 	/** IAM actions required for the UpdateReplicationConfiguration API call. */
 	static readonly UpdateReplicationConfiguration: string[] = [
@@ -1545,6 +1756,11 @@ export class MgnConditions {
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
+	/** Condition keys applicable to the CreateRemoteSourceAction action. */
+	static readonly CreateRemoteSourceActionConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateReplicationConfigurationTemplate action. */
 	static readonly CreateReplicationConfigurationTemplateConditionKeys: string[] =
 		["aws:RequestTag/${TagKey}", "aws:TagKeys"];
@@ -1575,6 +1791,11 @@ export class MgnConditions {
 	];
 	/** Condition keys applicable to the StartImport action. */
 	static readonly StartImportConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the StartRemoteSourceActionJob action. */
+	static readonly StartRemoteSourceActionJobConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];

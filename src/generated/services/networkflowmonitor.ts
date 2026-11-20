@@ -14,17 +14,32 @@ export class NetworkflowmonitorActions {
 
 	/** [Write] networkflowmonitor:CreateMonitor */
 	static readonly CreateMonitor = "networkflowmonitor:CreateMonitor";
+	/** [Write] networkflowmonitor:CreatePerformanceMonitor */
+	static readonly CreatePerformanceMonitor =
+		"networkflowmonitor:CreatePerformanceMonitor";
 	/** [Write] networkflowmonitor:CreateScope */
 	static readonly CreateScope = "networkflowmonitor:CreateScope";
 	/** [Write] networkflowmonitor:DeleteMonitor */
 	static readonly DeleteMonitor = "networkflowmonitor:DeleteMonitor";
+	/** [Write] networkflowmonitor:DeletePerformanceMonitor */
+	static readonly DeletePerformanceMonitor =
+		"networkflowmonitor:DeletePerformanceMonitor";
 	/** [Write] networkflowmonitor:DeleteScope */
 	static readonly DeleteScope = "networkflowmonitor:DeleteScope";
 	/** [Read] networkflowmonitor:GetMonitor */
 	static readonly actionGetMonitor = "networkflowmonitor:GetMonitor";
+	/** [Read] networkflowmonitor:GetMonitorScopeSuggestions */
+	static readonly actionGetMonitorScopeSuggestions =
+		"networkflowmonitor:GetMonitorScopeSuggestions";
+	/** [Read] networkflowmonitor:GetPerformanceMonitor */
+	static readonly actionGetPerformanceMonitor =
+		"networkflowmonitor:GetPerformanceMonitor";
 	/** [Read] networkflowmonitor:GetQueryResultsMonitorTopContributors */
 	static readonly actionGetQueryResultsMonitorTopContributors =
 		"networkflowmonitor:GetQueryResultsMonitorTopContributors";
+	/** [Read] networkflowmonitor:GetQueryResultsPerformanceMonitor */
+	static readonly actionGetQueryResultsPerformanceMonitor =
+		"networkflowmonitor:GetQueryResultsPerformanceMonitor";
 	/** [Read] networkflowmonitor:GetQueryResultsWorkloadInsightsTopContributors */
 	static readonly actionGetQueryResultsWorkloadInsightsTopContributors =
 		"networkflowmonitor:GetQueryResultsWorkloadInsightsTopContributors";
@@ -34,6 +49,9 @@ export class NetworkflowmonitorActions {
 	/** [Read] networkflowmonitor:GetQueryStatusMonitorTopContributors */
 	static readonly actionGetQueryStatusMonitorTopContributors =
 		"networkflowmonitor:GetQueryStatusMonitorTopContributors";
+	/** [Read] networkflowmonitor:GetQueryStatusPerformanceMonitor */
+	static readonly actionGetQueryStatusPerformanceMonitor =
+		"networkflowmonitor:GetQueryStatusPerformanceMonitor";
 	/** [Read] networkflowmonitor:GetQueryStatusWorkloadInsightsTopContributors */
 	static readonly actionGetQueryStatusWorkloadInsightsTopContributors =
 		"networkflowmonitor:GetQueryStatusWorkloadInsightsTopContributors";
@@ -44,6 +62,9 @@ export class NetworkflowmonitorActions {
 	static readonly actionGetScope = "networkflowmonitor:GetScope";
 	/** [List] networkflowmonitor:ListMonitors */
 	static readonly ListMonitors = "networkflowmonitor:ListMonitors";
+	/** [List] networkflowmonitor:ListPerformanceMonitors */
+	static readonly ListPerformanceMonitors =
+		"networkflowmonitor:ListPerformanceMonitors";
 	/** [List] networkflowmonitor:ListScopes */
 	static readonly ListScopes = "networkflowmonitor:ListScopes";
 	/** [Read] networkflowmonitor:ListTagsForResource */
@@ -54,6 +75,9 @@ export class NetworkflowmonitorActions {
 	/** [Write] networkflowmonitor:StartQueryMonitorTopContributors */
 	static readonly StartQueryMonitorTopContributors =
 		"networkflowmonitor:StartQueryMonitorTopContributors";
+	/** [Write] networkflowmonitor:StartQueryPerformanceMonitor */
+	static readonly StartQueryPerformanceMonitor =
+		"networkflowmonitor:StartQueryPerformanceMonitor";
 	/** [Write] networkflowmonitor:StartQueryWorkloadInsightsTopContributors */
 	static readonly StartQueryWorkloadInsightsTopContributors =
 		"networkflowmonitor:StartQueryWorkloadInsightsTopContributors";
@@ -63,6 +87,9 @@ export class NetworkflowmonitorActions {
 	/** [Write] networkflowmonitor:StopQueryMonitorTopContributors */
 	static readonly StopQueryMonitorTopContributors =
 		"networkflowmonitor:StopQueryMonitorTopContributors";
+	/** [Write] networkflowmonitor:StopQueryPerformanceMonitor */
+	static readonly StopQueryPerformanceMonitor =
+		"networkflowmonitor:StopQueryPerformanceMonitor";
 	/** [Write] networkflowmonitor:StopQueryWorkloadInsightsTopContributors */
 	static readonly StopQueryWorkloadInsightsTopContributors =
 		"networkflowmonitor:StopQueryWorkloadInsightsTopContributors";
@@ -75,16 +102,23 @@ export class NetworkflowmonitorActions {
 	static readonly UntagResource = "networkflowmonitor:UntagResource";
 	/** [Write] networkflowmonitor:UpdateMonitor */
 	static readonly UpdateMonitor = "networkflowmonitor:UpdateMonitor";
+	/** [Write] networkflowmonitor:UpdatePerformanceMonitor */
+	static readonly UpdatePerformanceMonitor =
+		"networkflowmonitor:UpdatePerformanceMonitor";
 	/** [Write] networkflowmonitor:UpdateScope */
 	static readonly UpdateScope = "networkflowmonitor:UpdateScope";
 
 	/** All read-level actions. */
 	static readonly AllReadActions: string[] = [
 		NetworkflowmonitorActions.actionGetMonitor,
+		NetworkflowmonitorActions.actionGetMonitorScopeSuggestions,
+		NetworkflowmonitorActions.actionGetPerformanceMonitor,
 		NetworkflowmonitorActions.actionGetQueryResultsMonitorTopContributors,
+		NetworkflowmonitorActions.actionGetQueryResultsPerformanceMonitor,
 		NetworkflowmonitorActions.actionGetQueryResultsWorkloadInsightsTopContributors,
 		NetworkflowmonitorActions.actionGetQueryResultsWorkloadInsightsTopContributorsData,
 		NetworkflowmonitorActions.actionGetQueryStatusMonitorTopContributors,
+		NetworkflowmonitorActions.actionGetQueryStatusPerformanceMonitor,
 		NetworkflowmonitorActions.actionGetQueryStatusWorkloadInsightsTopContributors,
 		NetworkflowmonitorActions.actionGetQueryStatusWorkloadInsightsTopContributorsData,
 		NetworkflowmonitorActions.actionGetScope,
@@ -93,22 +127,28 @@ export class NetworkflowmonitorActions {
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
 		NetworkflowmonitorActions.CreateMonitor,
+		NetworkflowmonitorActions.CreatePerformanceMonitor,
 		NetworkflowmonitorActions.CreateScope,
 		NetworkflowmonitorActions.DeleteMonitor,
+		NetworkflowmonitorActions.DeletePerformanceMonitor,
 		NetworkflowmonitorActions.DeleteScope,
 		NetworkflowmonitorActions.Publish,
 		NetworkflowmonitorActions.StartQueryMonitorTopContributors,
+		NetworkflowmonitorActions.StartQueryPerformanceMonitor,
 		NetworkflowmonitorActions.StartQueryWorkloadInsightsTopContributors,
 		NetworkflowmonitorActions.StartQueryWorkloadInsightsTopContributorsData,
 		NetworkflowmonitorActions.StopQueryMonitorTopContributors,
+		NetworkflowmonitorActions.StopQueryPerformanceMonitor,
 		NetworkflowmonitorActions.StopQueryWorkloadInsightsTopContributors,
 		NetworkflowmonitorActions.StopQueryWorkloadInsightsTopContributorsData,
 		NetworkflowmonitorActions.UpdateMonitor,
+		NetworkflowmonitorActions.UpdatePerformanceMonitor,
 		NetworkflowmonitorActions.UpdateScope,
 	];
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [
 		NetworkflowmonitorActions.ListMonitors,
+		NetworkflowmonitorActions.ListPerformanceMonitors,
 		NetworkflowmonitorActions.ListScopes,
 	];
 	/** All permission-management-level actions. */
@@ -149,6 +189,34 @@ export interface NetworkflowmonitorMonitorArnComponents {
 }
 
 /**
+ * Properties for building a performancemonitor ARN.
+ */
+export interface NetworkflowmonitorPerformancemonitorArnProps {
+	/** The MonitorName component of the ARN. */
+	readonly monitorName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a performancemonitor ARN.
+ */
+export interface NetworkflowmonitorPerformancemonitorArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The MonitorName component. */
+	readonly monitorName: string;
+}
+
+/**
  * Properties for building a scope ARN.
  */
 export interface NetworkflowmonitorScopeArnProps {
@@ -178,6 +246,8 @@ export interface NetworkflowmonitorScopeArnComponents {
 
 const MonitorArnRegex =
 	/^arn:(?<partition>[^:]+):networkflowmonitor:(?<region>[^:]*):(?<account>[^:]*):monitor\/(?<monitorName>[^:/?]+)$/;
+const PerformancemonitorArnRegex =
+	/^arn:(?<partition>[^:]+):networkflowmonitor:(?<region>[^:]*):(?<account>[^:]*):performancemonitor\/(?<monitorName>[^:/?]+)$/;
 const ScopeArnRegex =
 	/^arn:(?<partition>[^:]+):networkflowmonitor:(?<region>[^:]*):(?<account>[^:]*):scope\/(?<scopeId>[^:/?]+)$/;
 
@@ -207,6 +277,41 @@ export class NetworkflowmonitorResources {
 		const match = MonitorArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid monitor ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			monitorName: match.groups!.monitorName,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the performancemonitor resource.
+	 */
+	static performancemonitor(
+		props: NetworkflowmonitorPerformancemonitorArnProps,
+	): string {
+		return `arn:${props.partition ?? "aws"}:networkflowmonitor:${props.region ?? "*"}:${props.account ?? "*"}:performancemonitor/${props.monitorName}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the performancemonitor resource.
+	 */
+	static isValidPerformancemonitorArn(arn: string): boolean {
+		return PerformancemonitorArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a performancemonitor ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parsePerformancemonitorArn(
+		arn: string,
+	): NetworkflowmonitorPerformancemonitorArnComponents {
+		const match = PerformancemonitorArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid performancemonitor ARN: ${arn}`);
 		}
 		return {
 			partition: match.groups.partition,
@@ -257,6 +362,11 @@ export class NetworkflowmonitorOperations {
 		"networkflowmonitor:CreateMonitor",
 		"networkflowmonitor:TagResource",
 	];
+	/** IAM actions required for the CreatePerformanceMonitor API call. */
+	static readonly CreatePerformanceMonitor: string[] = [
+		"networkflowmonitor:CreatePerformanceMonitor",
+		"networkflowmonitor:TagResource",
+	];
 	/** IAM actions required for the CreateScope API call. */
 	static readonly CreateScope: string[] = [
 		"networkflowmonitor:CreateScope",
@@ -266,13 +376,29 @@ export class NetworkflowmonitorOperations {
 	static readonly DeleteMonitor: string[] = [
 		"networkflowmonitor:DeleteMonitor",
 	];
+	/** IAM actions required for the DeletePerformanceMonitor API call. */
+	static readonly DeletePerformanceMonitor: string[] = [
+		"networkflowmonitor:DeletePerformanceMonitor",
+	];
 	/** IAM actions required for the DeleteScope API call. */
 	static readonly DeleteScope: string[] = ["networkflowmonitor:DeleteScope"];
 	/** IAM actions required for the GetMonitor API call. */
 	static readonly opGetMonitor: string[] = ["networkflowmonitor:GetMonitor"];
+	/** IAM actions required for the GetMonitorScopeSuggestions API call. */
+	static readonly opGetMonitorScopeSuggestions: string[] = [
+		"networkflowmonitor:GetMonitorScopeSuggestions",
+	];
+	/** IAM actions required for the GetPerformanceMonitor API call. */
+	static readonly opGetPerformanceMonitor: string[] = [
+		"networkflowmonitor:GetPerformanceMonitor",
+	];
 	/** IAM actions required for the GetQueryResultsMonitorTopContributors API call. */
 	static readonly opGetQueryResultsMonitorTopContributors: string[] = [
 		"networkflowmonitor:GetQueryResultsMonitorTopContributors",
+	];
+	/** IAM actions required for the GetQueryResultsPerformanceMonitor API call. */
+	static readonly opGetQueryResultsPerformanceMonitor: string[] = [
+		"networkflowmonitor:GetQueryResultsPerformanceMonitor",
 	];
 	/** IAM actions required for the GetQueryResultsWorkloadInsightsTopContributors API call. */
 	static readonly opGetQueryResultsWorkloadInsightsTopContributors: string[] = [
@@ -285,6 +411,10 @@ export class NetworkflowmonitorOperations {
 	static readonly opGetQueryStatusMonitorTopContributors: string[] = [
 		"networkflowmonitor:GetQueryStatusMonitorTopContributors",
 	];
+	/** IAM actions required for the GetQueryStatusPerformanceMonitor API call. */
+	static readonly opGetQueryStatusPerformanceMonitor: string[] = [
+		"networkflowmonitor:GetQueryStatusPerformanceMonitor",
+	];
 	/** IAM actions required for the GetQueryStatusWorkloadInsightsTopContributors API call. */
 	static readonly opGetQueryStatusWorkloadInsightsTopContributors: string[] = [
 		"networkflowmonitor:GetQueryStatusWorkloadInsightsTopContributors",
@@ -296,6 +426,10 @@ export class NetworkflowmonitorOperations {
 	static readonly opGetScope: string[] = ["networkflowmonitor:GetScope"];
 	/** IAM actions required for the ListMonitors API call. */
 	static readonly ListMonitors: string[] = ["networkflowmonitor:ListMonitors"];
+	/** IAM actions required for the ListPerformanceMonitors API call. */
+	static readonly ListPerformanceMonitors: string[] = [
+		"networkflowmonitor:ListPerformanceMonitors",
+	];
 	/** IAM actions required for the ListScopes API call. */
 	static readonly ListScopes: string[] = ["networkflowmonitor:ListScopes"];
 	/** IAM actions required for the ListTagsForResource API call. */
@@ -305,6 +439,10 @@ export class NetworkflowmonitorOperations {
 	/** IAM actions required for the StartQueryMonitorTopContributors API call. */
 	static readonly StartQueryMonitorTopContributors: string[] = [
 		"networkflowmonitor:StartQueryMonitorTopContributors",
+	];
+	/** IAM actions required for the StartQueryPerformanceMonitor API call. */
+	static readonly StartQueryPerformanceMonitor: string[] = [
+		"networkflowmonitor:StartQueryPerformanceMonitor",
 	];
 	/** IAM actions required for the StartQueryWorkloadInsightsTopContributors API call. */
 	static readonly StartQueryWorkloadInsightsTopContributors: string[] = [
@@ -317,6 +455,10 @@ export class NetworkflowmonitorOperations {
 	/** IAM actions required for the StopQueryMonitorTopContributors API call. */
 	static readonly StopQueryMonitorTopContributors: string[] = [
 		"networkflowmonitor:StopQueryMonitorTopContributors",
+	];
+	/** IAM actions required for the StopQueryPerformanceMonitor API call. */
+	static readonly StopQueryPerformanceMonitor: string[] = [
+		"networkflowmonitor:StopQueryPerformanceMonitor",
 	];
 	/** IAM actions required for the StopQueryWorkloadInsightsTopContributors API call. */
 	static readonly StopQueryWorkloadInsightsTopContributors: string[] = [
@@ -336,6 +478,10 @@ export class NetworkflowmonitorOperations {
 	static readonly UpdateMonitor: string[] = [
 		"networkflowmonitor:UpdateMonitor",
 	];
+	/** IAM actions required for the UpdatePerformanceMonitor API call. */
+	static readonly UpdatePerformanceMonitor: string[] = [
+		"networkflowmonitor:UpdatePerformanceMonitor",
+	];
 	/** IAM actions required for the UpdateScope API call. */
 	static readonly UpdateScope: string[] = ["networkflowmonitor:UpdateScope"];
 }
@@ -346,6 +492,11 @@ export class NetworkflowmonitorOperations {
 export class NetworkflowmonitorConditions {
 	/** Condition keys applicable to the CreateMonitor action. */
 	static readonly CreateMonitorConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the CreatePerformanceMonitor action. */
+	static readonly CreatePerformanceMonitorConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];

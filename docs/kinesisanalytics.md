@@ -151,6 +151,154 @@ Defaults to "*".
 
 ---
 
+### KinesisanalyticsSnapshotArnComponents <a name="KinesisanalyticsSnapshotArnComponents" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsSnapshotArnComponents"></a>
+
+Parsed components of a snapshot ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsSnapshotArnComponents.Initializer"></a>
+
+```typescript
+import { kinesisanalytics } from '@cdk_utils/iam'
+
+const kinesisanalyticsSnapshotArnComponents: kinesisanalytics.KinesisanalyticsSnapshotArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsSnapshotArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsSnapshotArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsSnapshotArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsSnapshotArnComponents.property.snapshotName">snapshotName</a></code> | <code>string</code> | The SnapshotName component. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsSnapshotArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsSnapshotArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsSnapshotArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+##### `snapshotName`<sup>Required</sup> <a name="snapshotName" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsSnapshotArnComponents.property.snapshotName"></a>
+
+```typescript
+public readonly snapshotName: string;
+```
+
+- *Type:* string
+
+The SnapshotName component.
+
+---
+
+### KinesisanalyticsSnapshotArnProps <a name="KinesisanalyticsSnapshotArnProps" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsSnapshotArnProps"></a>
+
+Properties for building a snapshot ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsSnapshotArnProps.Initializer"></a>
+
+```typescript
+import { kinesisanalytics } from '@cdk_utils/iam'
+
+const kinesisanalyticsSnapshotArnProps: kinesisanalytics.KinesisanalyticsSnapshotArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsSnapshotArnProps.property.snapshotName">snapshotName</a></code> | <code>string</code> | The SnapshotName component of the ARN. |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsSnapshotArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsSnapshotArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsSnapshotArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `snapshotName`<sup>Required</sup> <a name="snapshotName" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsSnapshotArnProps.property.snapshotName"></a>
+
+```typescript
+public readonly snapshotName: string;
+```
+
+- *Type:* string
+
+The SnapshotName component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsSnapshotArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsSnapshotArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsSnapshotArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ## Classes <a name="Classes" id="Classes"></a>
 
 ### KinesisanalyticsActions <a name="KinesisanalyticsActions" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions"></a>
@@ -192,6 +340,8 @@ new kinesisanalytics.KinesisanalyticsActions()
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.CreateApplication">CreateApplication</a></code> | <code>string</code> | [Write] kinesisanalytics:CreateApplication. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.CreateApplicationPresignedUrl">CreateApplicationPresignedUrl</a></code> | <code>string</code> | [Read] kinesisanalytics:CreateApplicationPresignedUrl. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.CreateApplicationSnapshot">CreateApplicationSnapshot</a></code> | <code>string</code> | [Write] kinesisanalytics:CreateApplicationSnapshot. |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.CreateSnapshot">CreateSnapshot</a></code> | <code>string</code> | [Write] kinesisanalytics:CreateSnapshot. |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.CreateSystemSnapshot">CreateSystemSnapshot</a></code> | <code>string</code> | [Write] kinesisanalytics:CreateSystemSnapshot. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.DeleteApplication">DeleteApplication</a></code> | <code>string</code> | [Write] kinesisanalytics:DeleteApplication. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.DeleteApplicationCloudWatchLoggingOption">DeleteApplicationCloudWatchLoggingOption</a></code> | <code>string</code> | [Write] kinesisanalytics:DeleteApplicationCloudWatchLoggingOption. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.DeleteApplicationInputProcessingConfiguration">DeleteApplicationInputProcessingConfiguration</a></code> | <code>string</code> | [Write] kinesisanalytics:DeleteApplicationInputProcessingConfiguration. |
@@ -199,16 +349,24 @@ new kinesisanalytics.KinesisanalyticsActions()
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.DeleteApplicationReferenceDataSource">DeleteApplicationReferenceDataSource</a></code> | <code>string</code> | [Write] kinesisanalytics:DeleteApplicationReferenceDataSource. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.DeleteApplicationSnapshot">DeleteApplicationSnapshot</a></code> | <code>string</code> | [Write] kinesisanalytics:DeleteApplicationSnapshot. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.DeleteApplicationVpcConfiguration">DeleteApplicationVpcConfiguration</a></code> | <code>string</code> | [Write] kinesisanalytics:DeleteApplicationVpcConfiguration. |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.DeleteSnapshot">DeleteSnapshot</a></code> | <code>string</code> | [Write] kinesisanalytics:DeleteSnapshot. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.DescribeApplication">DescribeApplication</a></code> | <code>string</code> | [Read] kinesisanalytics:DescribeApplication. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.DescribeApplicationOperation">DescribeApplicationOperation</a></code> | <code>string</code> | [Read] kinesisanalytics:DescribeApplicationOperation. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.DescribeApplicationSnapshot">DescribeApplicationSnapshot</a></code> | <code>string</code> | [Read] kinesisanalytics:DescribeApplicationSnapshot. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.DescribeApplicationVersion">DescribeApplicationVersion</a></code> | <code>string</code> | [Read] kinesisanalytics:DescribeApplicationVersion. |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.DescribeSnapshot">DescribeSnapshot</a></code> | <code>string</code> | [Read] kinesisanalytics:DescribeSnapshot. |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.DescribeSnapshotOperation">DescribeSnapshotOperation</a></code> | <code>string</code> | [Read] kinesisanalytics:DescribeSnapshotOperation. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.DiscoverInputSchema">DiscoverInputSchema</a></code> | <code>string</code> | [Read] kinesisanalytics:DiscoverInputSchema. |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.ExportSnapshot">ExportSnapshot</a></code> | <code>string</code> | [Write] kinesisanalytics:ExportSnapshot. |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.ImportSnapshot">ImportSnapshot</a></code> | <code>string</code> | [Write] kinesisanalytics:ImportSnapshot. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.ListApplicationOperations">ListApplicationOperations</a></code> | <code>string</code> | [Read] kinesisanalytics:ListApplicationOperations. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.ListApplications">ListApplications</a></code> | <code>string</code> | [List] kinesisanalytics:ListApplications. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.ListApplicationSnapshots">ListApplicationSnapshots</a></code> | <code>string</code> | [Read] kinesisanalytics:ListApplicationSnapshots. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.ListApplicationVersions">ListApplicationVersions</a></code> | <code>string</code> | [Read] kinesisanalytics:ListApplicationVersions. |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.ListSnapshotOperations">ListSnapshotOperations</a></code> | <code>string</code> | [List] kinesisanalytics:ListSnapshotOperations. |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.ListSnapshots">ListSnapshots</a></code> | <code>string</code> | [List] kinesisanalytics:ListSnapshots. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Read] kinesisanalytics:ListTagsForResource. |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.RestoreFromSnapshot">RestoreFromSnapshot</a></code> | <code>string</code> | [Read] kinesisanalytics:RestoreFromSnapshot. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.RollbackApplication">RollbackApplication</a></code> | <code>string</code> | [Write] kinesisanalytics:RollbackApplication. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.StartApplication">StartApplication</a></code> | <code>string</code> | [Write] kinesisanalytics:StartApplication. |
@@ -400,6 +558,30 @@ public readonly CreateApplicationSnapshot: string;
 
 ---
 
+##### `CreateSnapshot`<sup>Required</sup> <a name="CreateSnapshot" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.CreateSnapshot"></a>
+
+```typescript
+public readonly CreateSnapshot: string;
+```
+
+- *Type:* string
+
+[Write] kinesisanalytics:CreateSnapshot.
+
+---
+
+##### `CreateSystemSnapshot`<sup>Required</sup> <a name="CreateSystemSnapshot" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.CreateSystemSnapshot"></a>
+
+```typescript
+public readonly CreateSystemSnapshot: string;
+```
+
+- *Type:* string
+
+[Write] kinesisanalytics:CreateSystemSnapshot.
+
+---
+
 ##### `DeleteApplication`<sup>Required</sup> <a name="DeleteApplication" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.DeleteApplication"></a>
 
 ```typescript
@@ -484,6 +666,18 @@ public readonly DeleteApplicationVpcConfiguration: string;
 
 ---
 
+##### `DeleteSnapshot`<sup>Required</sup> <a name="DeleteSnapshot" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.DeleteSnapshot"></a>
+
+```typescript
+public readonly DeleteSnapshot: string;
+```
+
+- *Type:* string
+
+[Write] kinesisanalytics:DeleteSnapshot.
+
+---
+
 ##### `DescribeApplication`<sup>Required</sup> <a name="DescribeApplication" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.DescribeApplication"></a>
 
 ```typescript
@@ -532,6 +726,30 @@ public readonly DescribeApplicationVersion: string;
 
 ---
 
+##### `DescribeSnapshot`<sup>Required</sup> <a name="DescribeSnapshot" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.DescribeSnapshot"></a>
+
+```typescript
+public readonly DescribeSnapshot: string;
+```
+
+- *Type:* string
+
+[Read] kinesisanalytics:DescribeSnapshot.
+
+---
+
+##### `DescribeSnapshotOperation`<sup>Required</sup> <a name="DescribeSnapshotOperation" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.DescribeSnapshotOperation"></a>
+
+```typescript
+public readonly DescribeSnapshotOperation: string;
+```
+
+- *Type:* string
+
+[Read] kinesisanalytics:DescribeSnapshotOperation.
+
+---
+
 ##### `DiscoverInputSchema`<sup>Required</sup> <a name="DiscoverInputSchema" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.DiscoverInputSchema"></a>
 
 ```typescript
@@ -541,6 +759,30 @@ public readonly DiscoverInputSchema: string;
 - *Type:* string
 
 [Read] kinesisanalytics:DiscoverInputSchema.
+
+---
+
+##### `ExportSnapshot`<sup>Required</sup> <a name="ExportSnapshot" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.ExportSnapshot"></a>
+
+```typescript
+public readonly ExportSnapshot: string;
+```
+
+- *Type:* string
+
+[Write] kinesisanalytics:ExportSnapshot.
+
+---
+
+##### `ImportSnapshot`<sup>Required</sup> <a name="ImportSnapshot" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.ImportSnapshot"></a>
+
+```typescript
+public readonly ImportSnapshot: string;
+```
+
+- *Type:* string
+
+[Write] kinesisanalytics:ImportSnapshot.
 
 ---
 
@@ -592,6 +834,30 @@ public readonly ListApplicationVersions: string;
 
 ---
 
+##### `ListSnapshotOperations`<sup>Required</sup> <a name="ListSnapshotOperations" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.ListSnapshotOperations"></a>
+
+```typescript
+public readonly ListSnapshotOperations: string;
+```
+
+- *Type:* string
+
+[List] kinesisanalytics:ListSnapshotOperations.
+
+---
+
+##### `ListSnapshots`<sup>Required</sup> <a name="ListSnapshots" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.ListSnapshots"></a>
+
+```typescript
+public readonly ListSnapshots: string;
+```
+
+- *Type:* string
+
+[List] kinesisanalytics:ListSnapshots.
+
+---
+
 ##### `ListTagsForResource`<sup>Required</sup> <a name="ListTagsForResource" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.ListTagsForResource"></a>
 
 ```typescript
@@ -601,6 +867,18 @@ public readonly ListTagsForResource: string;
 - *Type:* string
 
 [Read] kinesisanalytics:ListTagsForResource.
+
+---
+
+##### `RestoreFromSnapshot`<sup>Required</sup> <a name="RestoreFromSnapshot" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsActions.property.RestoreFromSnapshot"></a>
+
+```typescript
+public readonly RestoreFromSnapshot: string;
+```
+
+- *Type:* string
+
+[Read] kinesisanalytics:RestoreFromSnapshot.
 
 ---
 
@@ -785,6 +1063,8 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsConditions.property.AWS_RESOURCE_TAG">AWS_RESOURCE_TAG</a></code> | <code>string</code> | Condition key: aws:ResourceTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsConditions.property.AWS_TAG_KEYS">AWS_TAG_KEYS</a></code> | <code>string</code> | Condition key: aws:TagKeys (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsConditions.property.CreateApplicationConditionKeys">CreateApplicationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateApplication action. |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsConditions.property.CreateSnapshotConditionKeys">CreateSnapshotConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateSnapshot action. |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsConditions.property.ImportSnapshotConditionKeys">ImportSnapshotConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ImportSnapshot action. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
 
@@ -835,6 +1115,30 @@ public readonly CreateApplicationConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CreateApplication action.
+
+---
+
+##### `CreateSnapshotConditionKeys`<sup>Required</sup> <a name="CreateSnapshotConditionKeys" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsConditions.property.CreateSnapshotConditionKeys"></a>
+
+```typescript
+public readonly CreateSnapshotConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateSnapshot action.
+
+---
+
+##### `ImportSnapshotConditionKeys`<sup>Required</sup> <a name="ImportSnapshotConditionKeys" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsConditions.property.ImportSnapshotConditionKeys"></a>
+
+```typescript
+public readonly ImportSnapshotConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ImportSnapshot action.
 
 ---
 
@@ -895,6 +1199,7 @@ new kinesisanalytics.KinesisanalyticsOperations()
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.CreateApplication">CreateApplication</a></code> | <code>string[]</code> | IAM actions required for the CreateApplication API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.CreateApplicationPresignedUrl">CreateApplicationPresignedUrl</a></code> | <code>string[]</code> | IAM actions required for the CreateApplicationPresignedUrl API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.CreateApplicationSnapshot">CreateApplicationSnapshot</a></code> | <code>string[]</code> | IAM actions required for the CreateApplicationSnapshot API call. |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.CreateSnapshot">CreateSnapshot</a></code> | <code>string[]</code> | IAM actions required for the CreateSnapshot API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DeleteApplication">DeleteApplication</a></code> | <code>string[]</code> | IAM actions required for the DeleteApplication API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DeleteApplicationCloudWatchLoggingOption">DeleteApplicationCloudWatchLoggingOption</a></code> | <code>string[]</code> | IAM actions required for the DeleteApplicationCloudWatchLoggingOption API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DeleteApplicationInputProcessingConfiguration">DeleteApplicationInputProcessingConfiguration</a></code> | <code>string[]</code> | IAM actions required for the DeleteApplicationInputProcessingConfiguration API call. |
@@ -902,15 +1207,22 @@ new kinesisanalytics.KinesisanalyticsOperations()
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DeleteApplicationReferenceDataSource">DeleteApplicationReferenceDataSource</a></code> | <code>string[]</code> | IAM actions required for the DeleteApplicationReferenceDataSource API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DeleteApplicationSnapshot">DeleteApplicationSnapshot</a></code> | <code>string[]</code> | IAM actions required for the DeleteApplicationSnapshot API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DeleteApplicationVpcConfiguration">DeleteApplicationVpcConfiguration</a></code> | <code>string[]</code> | IAM actions required for the DeleteApplicationVpcConfiguration API call. |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DeleteSnapshot">DeleteSnapshot</a></code> | <code>string[]</code> | IAM actions required for the DeleteSnapshot API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DescribeApplication">DescribeApplication</a></code> | <code>string[]</code> | IAM actions required for the DescribeApplication API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DescribeApplicationOperation">DescribeApplicationOperation</a></code> | <code>string[]</code> | IAM actions required for the DescribeApplicationOperation API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DescribeApplicationSnapshot">DescribeApplicationSnapshot</a></code> | <code>string[]</code> | IAM actions required for the DescribeApplicationSnapshot API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DescribeApplicationVersion">DescribeApplicationVersion</a></code> | <code>string[]</code> | IAM actions required for the DescribeApplicationVersion API call. |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DescribeSnapshot">DescribeSnapshot</a></code> | <code>string[]</code> | IAM actions required for the DescribeSnapshot API call. |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DescribeSnapshotOperation">DescribeSnapshotOperation</a></code> | <code>string[]</code> | IAM actions required for the DescribeSnapshotOperation API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DiscoverInputSchema">DiscoverInputSchema</a></code> | <code>string[]</code> | IAM actions required for the DiscoverInputSchema API call. |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.ExportSnapshot">ExportSnapshot</a></code> | <code>string[]</code> | IAM actions required for the ExportSnapshot API call. |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.ImportSnapshot">ImportSnapshot</a></code> | <code>string[]</code> | IAM actions required for the ImportSnapshot API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.ListApplicationOperations">ListApplicationOperations</a></code> | <code>string[]</code> | IAM actions required for the ListApplicationOperations API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.ListApplications">ListApplications</a></code> | <code>string[]</code> | IAM actions required for the ListApplications API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.ListApplicationSnapshots">ListApplicationSnapshots</a></code> | <code>string[]</code> | IAM actions required for the ListApplicationSnapshots API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.ListApplicationVersions">ListApplicationVersions</a></code> | <code>string[]</code> | IAM actions required for the ListApplicationVersions API call. |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.ListSnapshotOperations">ListSnapshotOperations</a></code> | <code>string[]</code> | IAM actions required for the ListSnapshotOperations API call. |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.ListSnapshots">ListSnapshots</a></code> | <code>string[]</code> | IAM actions required for the ListSnapshots API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.RollbackApplication">RollbackApplication</a></code> | <code>string[]</code> | IAM actions required for the RollbackApplication API call. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.StartApplication">StartApplication</a></code> | <code>string[]</code> | IAM actions required for the StartApplication API call. |
@@ -1030,6 +1342,18 @@ IAM actions required for the CreateApplicationSnapshot API call.
 
 ---
 
+##### `CreateSnapshot`<sup>Required</sup> <a name="CreateSnapshot" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.CreateSnapshot"></a>
+
+```typescript
+public readonly CreateSnapshot: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateSnapshot API call.
+
+---
+
 ##### `DeleteApplication`<sup>Required</sup> <a name="DeleteApplication" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DeleteApplication"></a>
 
 ```typescript
@@ -1114,6 +1438,18 @@ IAM actions required for the DeleteApplicationVpcConfiguration API call.
 
 ---
 
+##### `DeleteSnapshot`<sup>Required</sup> <a name="DeleteSnapshot" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DeleteSnapshot"></a>
+
+```typescript
+public readonly DeleteSnapshot: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteSnapshot API call.
+
+---
+
 ##### `DescribeApplication`<sup>Required</sup> <a name="DescribeApplication" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DescribeApplication"></a>
 
 ```typescript
@@ -1162,6 +1498,30 @@ IAM actions required for the DescribeApplicationVersion API call.
 
 ---
 
+##### `DescribeSnapshot`<sup>Required</sup> <a name="DescribeSnapshot" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DescribeSnapshot"></a>
+
+```typescript
+public readonly DescribeSnapshot: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeSnapshot API call.
+
+---
+
+##### `DescribeSnapshotOperation`<sup>Required</sup> <a name="DescribeSnapshotOperation" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DescribeSnapshotOperation"></a>
+
+```typescript
+public readonly DescribeSnapshotOperation: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeSnapshotOperation API call.
+
+---
+
 ##### `DiscoverInputSchema`<sup>Required</sup> <a name="DiscoverInputSchema" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.DiscoverInputSchema"></a>
 
 ```typescript
@@ -1171,6 +1531,30 @@ public readonly DiscoverInputSchema: string[];
 - *Type:* string[]
 
 IAM actions required for the DiscoverInputSchema API call.
+
+---
+
+##### `ExportSnapshot`<sup>Required</sup> <a name="ExportSnapshot" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.ExportSnapshot"></a>
+
+```typescript
+public readonly ExportSnapshot: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ExportSnapshot API call.
+
+---
+
+##### `ImportSnapshot`<sup>Required</sup> <a name="ImportSnapshot" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.ImportSnapshot"></a>
+
+```typescript
+public readonly ImportSnapshot: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ImportSnapshot API call.
 
 ---
 
@@ -1219,6 +1603,30 @@ public readonly ListApplicationVersions: string[];
 - *Type:* string[]
 
 IAM actions required for the ListApplicationVersions API call.
+
+---
+
+##### `ListSnapshotOperations`<sup>Required</sup> <a name="ListSnapshotOperations" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.ListSnapshotOperations"></a>
+
+```typescript
+public readonly ListSnapshotOperations: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListSnapshotOperations API call.
+
+---
+
+##### `ListSnapshots`<sup>Required</sup> <a name="ListSnapshots" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsOperations.property.ListSnapshots"></a>
+
+```typescript
+public readonly ListSnapshots: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListSnapshots API call.
 
 ---
 
@@ -1342,7 +1750,10 @@ new kinesisanalytics.KinesisanalyticsResources()
 | --- | --- |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsResources.application">application</a></code> | Builds an ARN for the application resource. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsResources.isValidApplicationArn">isValidApplicationArn</a></code> | Validates whether a string is a valid ARN for the application resource. |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsResources.isValidSnapshotArn">isValidSnapshotArn</a></code> | Validates whether a string is a valid ARN for the snapshot resource. |
 | <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsResources.parseApplicationArn">parseApplicationArn</a></code> | Parses a application ARN into its components. |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsResources.parseSnapshotArn">parseSnapshotArn</a></code> | Parses a snapshot ARN into its components. |
+| <code><a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsResources.snapshot">snapshot</a></code> | Builds an ARN for the snapshot resource. |
 
 ---
 
@@ -1378,6 +1789,22 @@ Validates whether a string is a valid ARN for the application resource.
 
 ---
 
+##### `isValidSnapshotArn` <a name="isValidSnapshotArn" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsResources.isValidSnapshotArn"></a>
+
+```typescript
+import { kinesisanalytics } from '@cdk_utils/iam'
+
+kinesisanalytics.KinesisanalyticsResources.isValidSnapshotArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the snapshot resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsResources.isValidSnapshotArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `parseApplicationArn` <a name="parseApplicationArn" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsResources.parseApplicationArn"></a>
 
 ```typescript
@@ -1391,6 +1818,38 @@ Parses a application ARN into its components.
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsResources.parseApplicationArn.parameter.arn"></a>
 
 - *Type:* string
+
+---
+
+##### `parseSnapshotArn` <a name="parseSnapshotArn" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsResources.parseSnapshotArn"></a>
+
+```typescript
+import { kinesisanalytics } from '@cdk_utils/iam'
+
+kinesisanalytics.KinesisanalyticsResources.parseSnapshotArn(arn: string)
+```
+
+Parses a snapshot ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsResources.parseSnapshotArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `snapshot` <a name="snapshot" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsResources.snapshot"></a>
+
+```typescript
+import { kinesisanalytics } from '@cdk_utils/iam'
+
+kinesisanalytics.KinesisanalyticsResources.snapshot(props: KinesisanalyticsSnapshotArnProps)
+```
+
+Builds an ARN for the snapshot resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.kinesisanalytics.KinesisanalyticsResources.snapshot.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.kinesisanalytics.KinesisanalyticsSnapshotArnProps">KinesisanalyticsSnapshotArnProps</a>
 
 ---
 

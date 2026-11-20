@@ -9,6 +9,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -29,6 +30,7 @@
       "Name": "CreateCodeFinding",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -52,6 +54,7 @@
       "Name": "CreateCodeScan",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -75,6 +78,7 @@
       "Name": "CreateCollector",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -98,6 +102,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -124,6 +129,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -144,6 +150,7 @@
       "Name": "DeleteCollector",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -164,6 +171,7 @@
       "Name": "DeleteEnvironment",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -184,6 +192,7 @@
       "Name": "DeleteIntegration",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -207,6 +216,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -227,6 +237,7 @@
       "Name": "GetCodeFinding",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -247,6 +258,7 @@
       "Name": "GetCodeIssue",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -267,6 +279,7 @@
       "Name": "GetCodeIssueArtifact",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -287,6 +300,7 @@
       "Name": "GetCodeScan",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -307,6 +321,7 @@
       "Name": "GetCollector",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -330,6 +345,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -350,6 +366,7 @@
       "Name": "GetEnvironment",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -370,6 +387,7 @@
       "Name": "GetIntegration",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -390,6 +408,7 @@
       "Name": "GetResourcePolicy",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -410,6 +429,7 @@
       "Name": "ListAssociatedCollectors",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -430,6 +450,7 @@
       "Name": "ListAssociatedEnvironments",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -450,6 +471,7 @@
       "Name": "ListCodeFindings",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -470,6 +492,7 @@
       "Name": "ListCodeIssueArtifacts",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -490,6 +513,7 @@
       "Name": "ListCodeIssues",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -510,6 +534,7 @@
       "Name": "ListCodeScans",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -530,6 +555,7 @@
       "Name": "ListCollectors",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -550,6 +576,7 @@
       "Name": "ListEnvironments",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -570,6 +597,7 @@
       "Name": "ListIntegrations",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -590,6 +618,7 @@
       "Name": "PutResourcePolicy",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -610,6 +639,7 @@
       "Name": "StartIntegrationAuthorization",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -648,6 +678,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -671,6 +702,7 @@
       "Name": "UpdateIntegration",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -717,6 +749,21 @@
   "Operations": [
     {
       "Name": "AssociateCollector",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociateCollector",
+          "Service": "continuum"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "continuum.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",
@@ -727,6 +774,12 @@
     },
     {
       "Name": "CreateCodeFinding",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCodeFinding",
+          "Service": "continuum"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",
@@ -737,6 +790,12 @@
     },
     {
       "Name": "CreateCodeScan",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCodeScan",
+          "Service": "continuum"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",
@@ -747,6 +806,21 @@
     },
     {
       "Name": "CreateCollector",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCollector",
+          "Service": "continuum"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "collector.continuum.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",
@@ -757,6 +831,21 @@
     },
     {
       "Name": "CreateEnvironment",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateEnvironment",
+          "Service": "continuum"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "continuum.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",
@@ -767,6 +856,21 @@
     },
     {
       "Name": "CreateIntegration",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateIntegration",
+          "Service": "continuum"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "continuum.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",
@@ -777,6 +881,12 @@
     },
     {
       "Name": "DeleteCollector",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCollector",
+          "Service": "continuum"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",
@@ -787,6 +897,12 @@
     },
     {
       "Name": "DeleteEnvironment",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteEnvironment",
+          "Service": "continuum"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",
@@ -797,6 +913,12 @@
     },
     {
       "Name": "DeleteIntegration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteIntegration",
+          "Service": "continuum"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",
@@ -807,6 +929,12 @@
     },
     {
       "Name": "DisassociateCollector",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociateCollector",
+          "Service": "continuum"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",
@@ -817,6 +945,12 @@
     },
     {
       "Name": "GetCodeFinding",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCodeFinding",
+          "Service": "continuum"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",
@@ -827,6 +961,12 @@
     },
     {
       "Name": "GetCodeIssue",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCodeIssue",
+          "Service": "continuum"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",
@@ -837,6 +977,12 @@
     },
     {
       "Name": "GetCodeIssueArtifact",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCodeIssueArtifact",
+          "Service": "continuum"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",
@@ -847,6 +993,12 @@
     },
     {
       "Name": "GetCodeScan",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCodeScan",
+          "Service": "continuum"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",
@@ -857,6 +1009,12 @@
     },
     {
       "Name": "GetCollector",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCollector",
+          "Service": "continuum"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",
@@ -867,6 +1025,12 @@
     },
     {
       "Name": "GetCollectorDataAccessAuthorization",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCollectorDataAccessAuthorization",
+          "Service": "continuum"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",
@@ -877,6 +1041,12 @@
     },
     {
       "Name": "GetEnvironment",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEnvironment",
+          "Service": "continuum"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",
@@ -887,6 +1057,12 @@
     },
     {
       "Name": "GetIntegration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetIntegration",
+          "Service": "continuum"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",
@@ -897,6 +1073,12 @@
     },
     {
       "Name": "GetResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetResourcePolicy",
+          "Service": "continuum"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",
@@ -907,6 +1089,12 @@
     },
     {
       "Name": "ListAssociatedCollectors",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAssociatedCollectors",
+          "Service": "continuum"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",
@@ -917,6 +1105,12 @@
     },
     {
       "Name": "ListAssociatedEnvironments",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAssociatedEnvironments",
+          "Service": "continuum"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",
@@ -927,6 +1121,12 @@
     },
     {
       "Name": "ListCodeFindings",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCodeFindings",
+          "Service": "continuum"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",
@@ -937,6 +1137,12 @@
     },
     {
       "Name": "ListCodeIssueArtifacts",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCodeIssueArtifacts",
+          "Service": "continuum"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",
@@ -947,6 +1153,12 @@
     },
     {
       "Name": "ListCodeIssues",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCodeIssues",
+          "Service": "continuum"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",
@@ -957,6 +1169,12 @@
     },
     {
       "Name": "ListCodeScans",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCodeScans",
+          "Service": "continuum"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",
@@ -967,6 +1185,12 @@
     },
     {
       "Name": "ListCollectors",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCollectors",
+          "Service": "continuum"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",
@@ -977,6 +1201,12 @@
     },
     {
       "Name": "ListEnvironments",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEnvironments",
+          "Service": "continuum"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",
@@ -987,6 +1217,12 @@
     },
     {
       "Name": "ListIntegrations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListIntegrations",
+          "Service": "continuum"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",
@@ -997,6 +1233,12 @@
     },
     {
       "Name": "PutResourcePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutResourcePolicy",
+          "Service": "continuum"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",
@@ -1007,6 +1249,12 @@
     },
     {
       "Name": "StartIntegrationAuthorization",
+      "AuthorizedActions": [
+        {
+          "Name": "StartIntegrationAuthorization",
+          "Service": "continuum"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",
@@ -1027,6 +1275,12 @@
     },
     {
       "Name": "UpdateEnvironment",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateEnvironment",
+          "Service": "continuum"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",
@@ -1037,6 +1291,21 @@
     },
     {
       "Name": "UpdateIntegration",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "continuum.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateIntegration",
+          "Service": "continuum"
+        }
+      ],
       "SDK": [
         {
           "Name": "continuum",

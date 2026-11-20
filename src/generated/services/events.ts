@@ -133,6 +133,8 @@ export class EventsActions {
 	static readonly PutRule = "events:PutRule";
 	/** [Write] events:PutTargets */
 	static readonly PutTargets = "events:PutTargets";
+	/** [Write] events:PutWebhookEvents */
+	static readonly PutWebhookEvents = "events:PutWebhookEvents";
 	/** [PermissionManagement] events:RemovePermission */
 	static readonly RemovePermission = "events:RemovePermission";
 	/** [Write] events:RemoveTargets */
@@ -142,6 +144,8 @@ export class EventsActions {
 		"events:RetrieveConnectionCredentials";
 	/** [Write] events:RevokeResource */
 	static readonly RevokeResource = "events:RevokeResource";
+	/** [Write] events:RotateWebhookCredentials */
+	static readonly RotateWebhookCredentials = "events:RotateWebhookCredentials";
 	/** [Write] events:StartReplay */
 	static readonly StartReplay = "events:StartReplay";
 	/** [Tagging] events:TagResource */
@@ -212,9 +216,11 @@ export class EventsActions {
 		EventsActions.PutRawEvents,
 		EventsActions.PutRule,
 		EventsActions.PutTargets,
+		EventsActions.PutWebhookEvents,
 		EventsActions.RemoveTargets,
 		EventsActions.RetrieveConnectionCredentials,
 		EventsActions.RevokeResource,
+		EventsActions.RotateWebhookCredentials,
 		EventsActions.StartReplay,
 		EventsActions.UpdateApiDestination,
 		EventsActions.UpdateArchive,
@@ -1396,7 +1402,10 @@ export class EventsOperations {
 		"events:CreateApiDestination",
 	];
 	/** IAM actions required for the CreateArchive API call. */
-	static readonly CreateArchive: string[] = ["events:CreateArchive"];
+	static readonly CreateArchive: string[] = [
+		"events:CreateArchive",
+		"events:TagResource",
+	];
 	/** IAM actions required for the CreateConnection API call. */
 	static readonly CreateConnection: string[] = ["events:CreateConnection"];
 	/** IAM actions required for the CreateEndpoint API call. */
@@ -1412,6 +1421,7 @@ export class EventsOperations {
 	/** IAM actions required for the CreateEventSource API call. */
 	static readonly CreateEventSource: string[] = [
 		"events:CreateEventSource",
+		"iam:PassRole",
 		"events:TagResource",
 	];
 	/** IAM actions required for the CreatePartnerEventSource API call. */
@@ -1556,8 +1566,15 @@ export class EventsOperations {
 	static readonly RemoveTargets: string[] = ["events:RemoveTargets"];
 	/** IAM actions required for the RevokeResource API call. */
 	static readonly RevokeResource: string[] = ["events:RevokeResource"];
+	/** IAM actions required for the RotateWebhookCredentials API call. */
+	static readonly RotateWebhookCredentials: string[] = [
+		"events:RotateWebhookCredentials",
+	];
 	/** IAM actions required for the StartReplay API call. */
-	static readonly StartReplay: string[] = ["events:StartReplay"];
+	static readonly StartReplay: string[] = [
+		"events:StartReplay",
+		"events:TagResource",
+	];
 	/** IAM actions required for the TagResource API call. */
 	static readonly TagResource: string[] = ["events:TagResource"];
 	/** IAM actions required for the TestEventPattern API call. */
@@ -1580,7 +1597,10 @@ export class EventsOperations {
 	/** IAM actions required for the UpdateEventBus API call. */
 	static readonly UpdateEventBus: string[] = ["events:UpdateEventBus"];
 	/** IAM actions required for the UpdateEventSource API call. */
-	static readonly UpdateEventSource: string[] = ["events:UpdateEventSource"];
+	static readonly UpdateEventSource: string[] = [
+		"iam:PassRole",
+		"events:UpdateEventSource",
+	];
 	/** IAM actions required for the UpdateSubscriber API call. */
 	static readonly UpdateSubscriber: string[] = [
 		"iam:PassRole",
@@ -1605,6 +1625,7 @@ export class EventsConditions {
 	static readonly CreateEventSourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
+		"events:EventSourceType",
 		"events:source",
 	];
 	/** Condition keys applicable to the CreateSubscriber action. */
@@ -1689,6 +1710,11 @@ export class EventsConditions {
 		"events:TargetArn",
 		"events:creatorAccount",
 	];
+	/** Condition keys applicable to the PutWebhookEvents action. */
+	static readonly PutWebhookEventsConditionKeys: string[] = [
+		"events:Metadata/${MetadataKey}",
+		"events:SystemMetadata/ContentType",
+	];
 	/** Condition keys applicable to the RemoveTargets action. */
 	static readonly RemoveTargetsConditionKeys: string[] = [
 		"events:ManagedBy",
@@ -1710,7 +1736,10 @@ export class EventsConditions {
 		"events:EventBusArn",
 	];
 	/** Condition keys applicable to the UpdateEventSource action. */
-	static readonly UpdateEventSourceConditionKeys: string[] = ["events:source"];
+	static readonly UpdateEventSourceConditionKeys: string[] = [
+		"events:EventSourceType",
+		"events:source",
+	];
 	/** Condition keys applicable to the UpdateSubscriber action. */
 	static readonly UpdateSubscriberConditionKeys: string[] = [
 		"events:ContentFilterPresent",
@@ -1728,6 +1757,8 @@ export class EventsConditions {
 	static readonly CONTENT_FILTER_PRESENT = "events:ContentFilterPresent";
 	/** Condition key: events:EventBusArn (ArrayOfARN) */
 	static readonly EVENT_BUS_ARN = "events:EventBusArn";
+	/** Condition key: events:EventSourceType (String) */
+	static readonly EVENT_SOURCE_TYPE = "events:EventSourceType";
 	/** Condition key: events:ManagedBy (String) */
 	static readonly MANAGED_BY = "events:ManagedBy";
 	/** Condition key: events:Metadata/${MetadataKey} (ArrayOfString) */
@@ -1800,6 +1831,15 @@ export class EventsConditions {
 		values: string[],
 	): Record<string, Record<string, string[]>> {
 		return { "ForAllValues:ArnEquals": { "events:EventBusArn": values } };
+	}
+
+	/**
+	 * Generates a condition block for `events:EventSourceType`.
+	 */
+	static eventSourceType(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "events:EventSourceType": value } };
 	}
 
 	/**

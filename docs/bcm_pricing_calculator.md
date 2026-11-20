@@ -392,6 +392,7 @@ new bcm_pricing_calculator.BcmPricingCalculatorActions()
 | <code><a href="#@cdk_utils/iam.bcm_pricing_calculator.BcmPricingCalculatorActions.property.actionGetBillEstimate">actionGetBillEstimate</a></code> | <code>string</code> | [Read] bcm-pricing-calculator:GetBillEstimate. |
 | <code><a href="#@cdk_utils/iam.bcm_pricing_calculator.BcmPricingCalculatorActions.property.actionGetBillScenario">actionGetBillScenario</a></code> | <code>string</code> | [Read] bcm-pricing-calculator:GetBillScenario. |
 | <code><a href="#@cdk_utils/iam.bcm_pricing_calculator.BcmPricingCalculatorActions.property.actionGetPreferences">actionGetPreferences</a></code> | <code>string</code> | [Read] bcm-pricing-calculator:GetPreferences. |
+| <code><a href="#@cdk_utils/iam.bcm_pricing_calculator.BcmPricingCalculatorActions.property.actionGetUsageLinesEstimatedCost">actionGetUsageLinesEstimatedCost</a></code> | <code>string</code> | [Read] bcm-pricing-calculator:GetUsageLinesEstimatedCost. |
 | <code><a href="#@cdk_utils/iam.bcm_pricing_calculator.BcmPricingCalculatorActions.property.actionGetWorkloadEstimate">actionGetWorkloadEstimate</a></code> | <code>string</code> | [Read] bcm-pricing-calculator:GetWorkloadEstimate. |
 | <code><a href="#@cdk_utils/iam.bcm_pricing_calculator.BcmPricingCalculatorActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
 | <code><a href="#@cdk_utils/iam.bcm_pricing_calculator.BcmPricingCalculatorActions.property.AllPermissionManagementActions">AllPermissionManagementActions</a></code> | <code>string[]</code> | All permission-management-level actions. |
@@ -467,6 +468,18 @@ public readonly actionGetPreferences: string;
 - *Type:* string
 
 [Read] bcm-pricing-calculator:GetPreferences.
+
+---
+
+##### `actionGetUsageLinesEstimatedCost`<sup>Required</sup> <a name="actionGetUsageLinesEstimatedCost" id="@cdk_utils/iam.bcm_pricing_calculator.BcmPricingCalculatorActions.property.actionGetUsageLinesEstimatedCost"></a>
+
+```typescript
+public readonly actionGetUsageLinesEstimatedCost: string;
+```
+
+- *Type:* string
+
+[Read] bcm-pricing-calculator:GetUsageLinesEstimatedCost.
 
 ---
 
@@ -1166,6 +1179,7 @@ new bcm_pricing_calculator.BcmPricingCalculatorOperations()
 | <code><a href="#@cdk_utils/iam.bcm_pricing_calculator.BcmPricingCalculatorOperations.property.opGetBillEstimate">opGetBillEstimate</a></code> | <code>string[]</code> | IAM actions required for the GetBillEstimate API call. |
 | <code><a href="#@cdk_utils/iam.bcm_pricing_calculator.BcmPricingCalculatorOperations.property.opGetBillScenario">opGetBillScenario</a></code> | <code>string[]</code> | IAM actions required for the GetBillScenario API call. |
 | <code><a href="#@cdk_utils/iam.bcm_pricing_calculator.BcmPricingCalculatorOperations.property.opGetPreferences">opGetPreferences</a></code> | <code>string[]</code> | IAM actions required for the GetPreferences API call. |
+| <code><a href="#@cdk_utils/iam.bcm_pricing_calculator.BcmPricingCalculatorOperations.property.opGetUsageLinesEstimatedCost">opGetUsageLinesEstimatedCost</a></code> | <code>string[]</code> | IAM actions required for the GetUsageLinesEstimatedCost API call. |
 | <code><a href="#@cdk_utils/iam.bcm_pricing_calculator.BcmPricingCalculatorOperations.property.opGetWorkloadEstimate">opGetWorkloadEstimate</a></code> | <code>string[]</code> | IAM actions required for the GetWorkloadEstimate API call. |
 | <code><a href="#@cdk_utils/iam.bcm_pricing_calculator.BcmPricingCalculatorOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.bcm_pricing_calculator.BcmPricingCalculatorOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
@@ -1521,6 +1535,18 @@ public readonly opGetPreferences: string[];
 - *Type:* string[]
 
 IAM actions required for the GetPreferences API call.
+
+---
+
+##### `opGetUsageLinesEstimatedCost`<sup>Required</sup> <a name="opGetUsageLinesEstimatedCost" id="@cdk_utils/iam.bcm_pricing_calculator.BcmPricingCalculatorOperations.property.opGetUsageLinesEstimatedCost"></a>
+
+```typescript
+public readonly opGetUsageLinesEstimatedCost: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetUsageLinesEstimatedCost API call.
 
 ---
 

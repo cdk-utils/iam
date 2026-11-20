@@ -68,6 +68,7 @@ new support.SupportActions()
 | <code><a href="#@cdk_utils/iam.support.SupportActions.property.ResolveCase">ResolveCase</a></code> | <code>string</code> | [Write] support:ResolveCase. |
 | <code><a href="#@cdk_utils/iam.support.SupportActions.property.ResolveInteraction">ResolveInteraction</a></code> | <code>string</code> | [Write] support:ResolveInteraction. |
 | <code><a href="#@cdk_utils/iam.support.SupportActions.property.SearchForCases">SearchForCases</a></code> | <code>string</code> | [Read] support:SearchForCases. |
+| <code><a href="#@cdk_utils/iam.support.SupportActions.property.SearchInteractions">SearchInteractions</a></code> | <code>string</code> | [Read] support:SearchInteractions. |
 | <code><a href="#@cdk_utils/iam.support.SupportActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.support.SupportActions.property.StartInteraction">StartInteraction</a></code> | <code>string</code> | [Write] support:StartInteraction. |
 | <code><a href="#@cdk_utils/iam.support.SupportActions.property.UpdateCaseSeverity">UpdateCaseSeverity</a></code> | <code>string</code> | [Write] support:UpdateCaseSeverity. |
@@ -553,6 +554,18 @@ public readonly SearchForCases: string;
 - *Type:* string
 
 [Read] support:SearchForCases.
+
+---
+
+##### `SearchInteractions`<sup>Required</sup> <a name="SearchInteractions" id="@cdk_utils/iam.support.SupportActions.property.SearchInteractions"></a>
+
+```typescript
+public readonly SearchInteractions: string;
+```
+
+- *Type:* string
+
+[Read] support:SearchInteractions.
 
 ---
 

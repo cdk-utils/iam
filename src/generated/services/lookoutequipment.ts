@@ -642,7 +642,6 @@ export class LookoutEquipmentOperations {
 	/** IAM actions required for the ImportModelVersion API call. */
 	static readonly ImportModelVersion: string[] = [
 		"lookoutequipment:ImportModelVersion",
-		"iam:PassRole",
 		"lookoutequipment:TagResource",
 	];
 	/** IAM actions required for the ListDataIngestionJobs API call. */

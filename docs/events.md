@@ -2783,10 +2783,12 @@ new events.EventsActions()
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.PutResourcePolicy">PutResourcePolicy</a></code> | <code>string</code> | [PermissionManagement] events:PutResourcePolicy. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.PutRule">PutRule</a></code> | <code>string</code> | [Write] events:PutRule. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.PutTargets">PutTargets</a></code> | <code>string</code> | [Write] events:PutTargets. |
+| <code><a href="#@cdk_utils/iam.events.EventsActions.property.PutWebhookEvents">PutWebhookEvents</a></code> | <code>string</code> | [Write] events:PutWebhookEvents. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.RemovePermission">RemovePermission</a></code> | <code>string</code> | [PermissionManagement] events:RemovePermission. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.RemoveTargets">RemoveTargets</a></code> | <code>string</code> | [Write] events:RemoveTargets. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.RetrieveConnectionCredentials">RetrieveConnectionCredentials</a></code> | <code>string</code> | [Write] events:RetrieveConnectionCredentials. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.RevokeResource">RevokeResource</a></code> | <code>string</code> | [Write] events:RevokeResource. |
+| <code><a href="#@cdk_utils/iam.events.EventsActions.property.RotateWebhookCredentials">RotateWebhookCredentials</a></code> | <code>string</code> | [Write] events:RotateWebhookCredentials. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.StartReplay">StartReplay</a></code> | <code>string</code> | [Write] events:StartReplay. |
 | <code><a href="#@cdk_utils/iam.events.EventsActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] events:TagResource. |
@@ -3570,6 +3572,18 @@ public readonly PutTargets: string;
 
 ---
 
+##### `PutWebhookEvents`<sup>Required</sup> <a name="PutWebhookEvents" id="@cdk_utils/iam.events.EventsActions.property.PutWebhookEvents"></a>
+
+```typescript
+public readonly PutWebhookEvents: string;
+```
+
+- *Type:* string
+
+[Write] events:PutWebhookEvents.
+
+---
+
 ##### `RemovePermission`<sup>Required</sup> <a name="RemovePermission" id="@cdk_utils/iam.events.EventsActions.property.RemovePermission"></a>
 
 ```typescript
@@ -3615,6 +3629,18 @@ public readonly RevokeResource: string;
 - *Type:* string
 
 [Write] events:RevokeResource.
+
+---
+
+##### `RotateWebhookCredentials`<sup>Required</sup> <a name="RotateWebhookCredentials" id="@cdk_utils/iam.events.EventsActions.property.RotateWebhookCredentials"></a>
+
+```typescript
+public readonly RotateWebhookCredentials: string;
+```
+
+- *Type:* string
+
+[Write] events:RotateWebhookCredentials.
 
 ---
 
@@ -3792,6 +3818,7 @@ new events.EventsConditions()
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.detailUserIdentityPrincipalId">detailUserIdentityPrincipalId</a></code> | Generates a condition block for `events:detail.userIdentity.principalId`. |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.eventBusARN">eventBusARN</a></code> | Generates a condition block for `events:EventBusArn`. |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.eventBusInvocation">eventBusInvocation</a></code> | Generates a condition block for `events:eventBusInvocation`. |
+| <code><a href="#@cdk_utils/iam.events.EventsConditions.eventSourceType">eventSourceType</a></code> | Generates a condition block for `events:EventSourceType`. |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.managedBy">managedBy</a></code> | Generates a condition block for `events:ManagedBy`. |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.metadata">metadata</a></code> | Generates a condition block for `events:Metadata/${MetadataKey}`. |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.metadataMatcher">metadataMatcher</a></code> | Generates a condition block for `events:Metadata/${MetadataKey}/Matcher`. |
@@ -3930,6 +3957,22 @@ events.EventsConditions.eventBusInvocation(value: string)
 Generates a condition block for `events:eventBusInvocation`.
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.events.EventsConditions.eventBusInvocation.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `eventSourceType` <a name="eventSourceType" id="@cdk_utils/iam.events.EventsConditions.eventSourceType"></a>
+
+```typescript
+import { events } from '@cdk_utils/iam'
+
+events.EventsConditions.eventSourceType(value: string)
+```
+
+Generates a condition block for `events:EventSourceType`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.events.EventsConditions.eventSourceType.parameter.value"></a>
 
 - *Type:* string
 
@@ -4153,6 +4196,7 @@ Generates a condition block for `events:TargetArn`.
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.property.EnableRuleConditionKeys">EnableRuleConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the EnableRule action. |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.property.EVENT_BUS_ARN">EVENT_BUS_ARN</a></code> | <code>string</code> | Condition key: events:EventBusArn (ArrayOfARN). |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.property.EVENT_BUS_INVOCATION">EVENT_BUS_INVOCATION</a></code> | <code>string</code> | Condition key: events:eventBusInvocation (String). |
+| <code><a href="#@cdk_utils/iam.events.EventsConditions.property.EVENT_SOURCE_TYPE">EVENT_SOURCE_TYPE</a></code> | <code>string</code> | Condition key: events:EventSourceType (String). |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.property.ListTagsForResourceConditionKeys">ListTagsForResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListTagsForResource action. |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.property.ListTargetsByRuleConditionKeys">ListTargetsByRuleConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListTargetsByRule action. |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.property.MANAGED_BY">MANAGED_BY</a></code> | <code>string</code> | Condition key: events:ManagedBy (String). |
@@ -4164,6 +4208,7 @@ Generates a condition block for `events:TargetArn`.
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.property.PutResourcePolicyConditionKeys">PutResourcePolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutResourcePolicy action. |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.property.PutRuleConditionKeys">PutRuleConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutRule action. |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.property.PutTargetsConditionKeys">PutTargetsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutTargets action. |
+| <code><a href="#@cdk_utils/iam.events.EventsConditions.property.PutWebhookEventsConditionKeys">PutWebhookEventsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutWebhookEvents action. |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.property.RemoveTargetsConditionKeys">RemoveTargetsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the RemoveTargets action. |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.property.SOURCE">SOURCE</a></code> | <code>string</code> | Condition key: events:source (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.events.EventsConditions.property.SYSTEM_METADATA_AWS_DETAIL_TYPE">SYSTEM_METADATA_AWS_DETAIL_TYPE</a></code> | <code>string</code> | Condition key: events:SystemMetadata/AwsDetailType (String). |
@@ -4430,6 +4475,18 @@ Condition key: events:eventBusInvocation (String).
 
 ---
 
+##### `EVENT_SOURCE_TYPE`<sup>Required</sup> <a name="EVENT_SOURCE_TYPE" id="@cdk_utils/iam.events.EventsConditions.property.EVENT_SOURCE_TYPE"></a>
+
+```typescript
+public readonly EVENT_SOURCE_TYPE: string;
+```
+
+- *Type:* string
+
+Condition key: events:EventSourceType (String).
+
+---
+
 ##### `ListTagsForResourceConditionKeys`<sup>Required</sup> <a name="ListTagsForResourceConditionKeys" id="@cdk_utils/iam.events.EventsConditions.property.ListTagsForResourceConditionKeys"></a>
 
 ```typescript
@@ -4559,6 +4616,18 @@ public readonly PutTargetsConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the PutTargets action.
+
+---
+
+##### `PutWebhookEventsConditionKeys`<sup>Required</sup> <a name="PutWebhookEventsConditionKeys" id="@cdk_utils/iam.events.EventsConditions.property.PutWebhookEventsConditionKeys"></a>
+
+```typescript
+public readonly PutWebhookEventsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the PutWebhookEvents action.
 
 ---
 
@@ -4778,6 +4847,7 @@ new events.EventsOperations()
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.RemovePermission">RemovePermission</a></code> | <code>string[]</code> | IAM actions required for the RemovePermission API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.RemoveTargets">RemoveTargets</a></code> | <code>string[]</code> | IAM actions required for the RemoveTargets API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.RevokeResource">RevokeResource</a></code> | <code>string[]</code> | IAM actions required for the RevokeResource API call. |
+| <code><a href="#@cdk_utils/iam.events.EventsOperations.property.RotateWebhookCredentials">RotateWebhookCredentials</a></code> | <code>string[]</code> | IAM actions required for the RotateWebhookCredentials API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.StartReplay">StartReplay</a></code> | <code>string[]</code> | IAM actions required for the StartReplay API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.events.EventsOperations.property.TestEventPattern">TestEventPattern</a></code> | <code>string[]</code> | IAM actions required for the TestEventPattern API call. |
@@ -5509,6 +5579,18 @@ public readonly RevokeResource: string[];
 - *Type:* string[]
 
 IAM actions required for the RevokeResource API call.
+
+---
+
+##### `RotateWebhookCredentials`<sup>Required</sup> <a name="RotateWebhookCredentials" id="@cdk_utils/iam.events.EventsOperations.property.RotateWebhookCredentials"></a>
+
+```typescript
+public readonly RotateWebhookCredentials: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the RotateWebhookCredentials API call.
 
 ---
 
