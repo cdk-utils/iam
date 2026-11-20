@@ -151,6 +151,154 @@ Defaults to "*".
 
 ---
 
+### PollyVoiceArnComponents <a name="PollyVoiceArnComponents" id="@cdk_utils/iam.polly.PollyVoiceArnComponents"></a>
+
+Parsed components of a voice ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.polly.PollyVoiceArnComponents.Initializer"></a>
+
+```typescript
+import { polly } from '@cdk_utils/iam'
+
+const pollyVoiceArnComponents: polly.PollyVoiceArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.polly.PollyVoiceArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.polly.PollyVoiceArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.polly.PollyVoiceArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+| <code><a href="#@cdk_utils/iam.polly.PollyVoiceArnComponents.property.voiceId">voiceId</a></code> | <code>string</code> | The VoiceId component. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.polly.PollyVoiceArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.polly.PollyVoiceArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.polly.PollyVoiceArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+##### `voiceId`<sup>Required</sup> <a name="voiceId" id="@cdk_utils/iam.polly.PollyVoiceArnComponents.property.voiceId"></a>
+
+```typescript
+public readonly voiceId: string;
+```
+
+- *Type:* string
+
+The VoiceId component.
+
+---
+
+### PollyVoiceArnProps <a name="PollyVoiceArnProps" id="@cdk_utils/iam.polly.PollyVoiceArnProps"></a>
+
+Properties for building a voice ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.polly.PollyVoiceArnProps.Initializer"></a>
+
+```typescript
+import { polly } from '@cdk_utils/iam'
+
+const pollyVoiceArnProps: polly.PollyVoiceArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.polly.PollyVoiceArnProps.property.voiceId">voiceId</a></code> | <code>string</code> | The VoiceId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.polly.PollyVoiceArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.polly.PollyVoiceArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.polly.PollyVoiceArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `voiceId`<sup>Required</sup> <a name="voiceId" id="@cdk_utils/iam.polly.PollyVoiceArnProps.property.voiceId"></a>
+
+```typescript
+public readonly voiceId: string;
+```
+
+- *Type:* string
+
+The VoiceId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.polly.PollyVoiceArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.polly.PollyVoiceArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.polly.PollyVoiceArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ## Classes <a name="Classes" id="Classes"></a>
 
 ### PollyActions <a name="PollyActions" id="@cdk_utils/iam.polly.PollyActions"></a>
@@ -179,12 +327,15 @@ new polly.PollyActions()
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.polly.PollyActions.property.actionGetLexicon">actionGetLexicon</a></code> | <code>string</code> | [Read] polly:GetLexicon. |
 | <code><a href="#@cdk_utils/iam.polly.PollyActions.property.actionGetSpeechSynthesisTask">actionGetSpeechSynthesisTask</a></code> | <code>string</code> | [Read] polly:GetSpeechSynthesisTask. |
+| <code><a href="#@cdk_utils/iam.polly.PollyActions.property.actionGetVoice">actionGetVoice</a></code> | <code>string</code> | [Read] polly:GetVoice. |
 | <code><a href="#@cdk_utils/iam.polly.PollyActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
 | <code><a href="#@cdk_utils/iam.polly.PollyActions.property.AllPermissionManagementActions">AllPermissionManagementActions</a></code> | <code>string[]</code> | All permission-management-level actions. |
 | <code><a href="#@cdk_utils/iam.polly.PollyActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
 | <code><a href="#@cdk_utils/iam.polly.PollyActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
 | <code><a href="#@cdk_utils/iam.polly.PollyActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
+| <code><a href="#@cdk_utils/iam.polly.PollyActions.property.CreateVoice">CreateVoice</a></code> | <code>string</code> | [Write] polly:CreateVoice. |
 | <code><a href="#@cdk_utils/iam.polly.PollyActions.property.DeleteLexicon">DeleteLexicon</a></code> | <code>string</code> | [Write] polly:DeleteLexicon. |
+| <code><a href="#@cdk_utils/iam.polly.PollyActions.property.DeleteVoice">DeleteVoice</a></code> | <code>string</code> | [Write] polly:DeleteVoice. |
 | <code><a href="#@cdk_utils/iam.polly.PollyActions.property.DescribeVoices">DescribeVoices</a></code> | <code>string</code> | [List] polly:DescribeVoices. |
 | <code><a href="#@cdk_utils/iam.polly.PollyActions.property.ListLexicons">ListLexicons</a></code> | <code>string</code> | [List] polly:ListLexicons. |
 | <code><a href="#@cdk_utils/iam.polly.PollyActions.property.ListSpeechSynthesisTasks">ListSpeechSynthesisTasks</a></code> | <code>string</code> | [List] polly:ListSpeechSynthesisTasks. |
@@ -220,6 +371,18 @@ public readonly actionGetSpeechSynthesisTask: string;
 - *Type:* string
 
 [Read] polly:GetSpeechSynthesisTask.
+
+---
+
+##### `actionGetVoice`<sup>Required</sup> <a name="actionGetVoice" id="@cdk_utils/iam.polly.PollyActions.property.actionGetVoice"></a>
+
+```typescript
+public readonly actionGetVoice: string;
+```
+
+- *Type:* string
+
+[Read] polly:GetVoice.
 
 ---
 
@@ -283,6 +446,18 @@ All write-level actions.
 
 ---
 
+##### `CreateVoice`<sup>Required</sup> <a name="CreateVoice" id="@cdk_utils/iam.polly.PollyActions.property.CreateVoice"></a>
+
+```typescript
+public readonly CreateVoice: string;
+```
+
+- *Type:* string
+
+[Write] polly:CreateVoice.
+
+---
+
 ##### `DeleteLexicon`<sup>Required</sup> <a name="DeleteLexicon" id="@cdk_utils/iam.polly.PollyActions.property.DeleteLexicon"></a>
 
 ```typescript
@@ -292,6 +467,18 @@ public readonly DeleteLexicon: string;
 - *Type:* string
 
 [Write] polly:DeleteLexicon.
+
+---
+
+##### `DeleteVoice`<sup>Required</sup> <a name="DeleteVoice" id="@cdk_utils/iam.polly.PollyActions.property.DeleteVoice"></a>
+
+```typescript
+public readonly DeleteVoice: string;
+```
+
+- *Type:* string
+
+[Write] polly:DeleteVoice.
 
 ---
 
@@ -511,6 +698,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.polly.PollyConditions.property.AWS_REQUEST_TAG">AWS_REQUEST_TAG</a></code> | <code>string</code> | Condition key: aws:RequestTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.polly.PollyConditions.property.AWS_RESOURCE_TAG">AWS_RESOURCE_TAG</a></code> | <code>string</code> | Condition key: aws:ResourceTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.polly.PollyConditions.property.AWS_TAG_KEYS">AWS_TAG_KEYS</a></code> | <code>string</code> | Condition key: aws:TagKeys (ArrayOfString). |
+| <code><a href="#@cdk_utils/iam.polly.PollyConditions.property.CreateVoiceConditionKeys">CreateVoiceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateVoice action. |
 | <code><a href="#@cdk_utils/iam.polly.PollyConditions.property.PutLexiconConditionKeys">PutLexiconConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutLexicon action. |
 | <code><a href="#@cdk_utils/iam.polly.PollyConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
 | <code><a href="#@cdk_utils/iam.polly.PollyConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
@@ -550,6 +738,18 @@ public readonly AWS_TAG_KEYS: string;
 - *Type:* string
 
 Condition key: aws:TagKeys (ArrayOfString).
+
+---
+
+##### `CreateVoiceConditionKeys`<sup>Required</sup> <a name="CreateVoiceConditionKeys" id="@cdk_utils/iam.polly.PollyConditions.property.CreateVoiceConditionKeys"></a>
+
+```typescript
+public readonly CreateVoiceConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateVoice action.
 
 ---
 
@@ -847,8 +1047,11 @@ new polly.PollyResources()
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdk_utils/iam.polly.PollyResources.isValidLexiconArn">isValidLexiconArn</a></code> | Validates whether a string is a valid ARN for the lexicon resource. |
+| <code><a href="#@cdk_utils/iam.polly.PollyResources.isValidVoiceArn">isValidVoiceArn</a></code> | Validates whether a string is a valid ARN for the voice resource. |
 | <code><a href="#@cdk_utils/iam.polly.PollyResources.lexicon">lexicon</a></code> | Builds an ARN for the lexicon resource. |
 | <code><a href="#@cdk_utils/iam.polly.PollyResources.parseLexiconArn">parseLexiconArn</a></code> | Parses a lexicon ARN into its components. |
+| <code><a href="#@cdk_utils/iam.polly.PollyResources.parseVoiceArn">parseVoiceArn</a></code> | Parses a voice ARN into its components. |
+| <code><a href="#@cdk_utils/iam.polly.PollyResources.voice">voice</a></code> | Builds an ARN for the voice resource. |
 
 ---
 
@@ -863,6 +1066,22 @@ polly.PollyResources.isValidLexiconArn(arn: string)
 Validates whether a string is a valid ARN for the lexicon resource.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.polly.PollyResources.isValidLexiconArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidVoiceArn` <a name="isValidVoiceArn" id="@cdk_utils/iam.polly.PollyResources.isValidVoiceArn"></a>
+
+```typescript
+import { polly } from '@cdk_utils/iam'
+
+polly.PollyResources.isValidVoiceArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the voice resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.polly.PollyResources.isValidVoiceArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -897,6 +1116,38 @@ Parses a lexicon ARN into its components.
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.polly.PollyResources.parseLexiconArn.parameter.arn"></a>
 
 - *Type:* string
+
+---
+
+##### `parseVoiceArn` <a name="parseVoiceArn" id="@cdk_utils/iam.polly.PollyResources.parseVoiceArn"></a>
+
+```typescript
+import { polly } from '@cdk_utils/iam'
+
+polly.PollyResources.parseVoiceArn(arn: string)
+```
+
+Parses a voice ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.polly.PollyResources.parseVoiceArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `voice` <a name="voice" id="@cdk_utils/iam.polly.PollyResources.voice"></a>
+
+```typescript
+import { polly } from '@cdk_utils/iam'
+
+polly.PollyResources.voice(props: PollyVoiceArnProps)
+```
+
+Builds an ARN for the voice resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.polly.PollyResources.voice.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.polly.PollyVoiceArnProps">PollyVoiceArnProps</a>
 
 ---
 

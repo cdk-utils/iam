@@ -12,14 +12,20 @@ export class PollyActions {
 	/** The IAM service prefix. */
 	static readonly SERVICE_PREFIX = "polly";
 
+	/** [Write] polly:CreateVoice */
+	static readonly CreateVoice = "polly:CreateVoice";
 	/** [Write] polly:DeleteLexicon */
 	static readonly DeleteLexicon = "polly:DeleteLexicon";
+	/** [Write] polly:DeleteVoice */
+	static readonly DeleteVoice = "polly:DeleteVoice";
 	/** [List] polly:DescribeVoices */
 	static readonly DescribeVoices = "polly:DescribeVoices";
 	/** [Read] polly:GetLexicon */
 	static readonly actionGetLexicon = "polly:GetLexicon";
 	/** [Read] polly:GetSpeechSynthesisTask */
 	static readonly actionGetSpeechSynthesisTask = "polly:GetSpeechSynthesisTask";
+	/** [Read] polly:GetVoice */
+	static readonly actionGetVoice = "polly:GetVoice";
 	/** [List] polly:ListLexicons */
 	static readonly ListLexicons = "polly:ListLexicons";
 	/** [List] polly:ListSpeechSynthesisTasks */
@@ -44,13 +50,16 @@ export class PollyActions {
 	static readonly AllReadActions: string[] = [
 		PollyActions.actionGetLexicon,
 		PollyActions.actionGetSpeechSynthesisTask,
+		PollyActions.actionGetVoice,
 		PollyActions.ListTagsForResource,
 		PollyActions.StartSpeechSynthesisStream,
 		PollyActions.SynthesizeSpeech,
 	];
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
+		PollyActions.CreateVoice,
 		PollyActions.DeleteLexicon,
+		PollyActions.DeleteVoice,
 		PollyActions.PutLexicon,
 		PollyActions.StartSpeechSynthesisTask,
 	];
@@ -97,8 +106,38 @@ export interface PollyLexiconArnComponents {
 	readonly lexiconName: string;
 }
 
+/**
+ * Properties for building a voice ARN.
+ */
+export interface PollyVoiceArnProps {
+	/** The VoiceId component of the ARN. */
+	readonly voiceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a voice ARN.
+ */
+export interface PollyVoiceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The VoiceId component. */
+	readonly voiceId: string;
+}
+
 const LexiconArnRegex =
 	/^arn:(?<partition>[^:]+):polly:(?<region>[^:]*):(?<account>[^:]*):lexicon\/(?<lexiconName>[^:/?]+)$/;
+const VoiceArnRegex =
+	/^arn:(?<partition>[^:]+):polly:(?<region>[^:]*):(?<account>[^:]*):voice\/(?<voiceId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for polly resources.
@@ -134,6 +173,37 @@ export class PollyResources {
 			lexiconName: match.groups!.lexiconName,
 		};
 	}
+
+	/**
+	 * Builds an ARN for the voice resource.
+	 */
+	static voice(props: PollyVoiceArnProps): string {
+		return `arn:${props.partition ?? "aws"}:polly:${props.region ?? "*"}:${props.account ?? "*"}:voice/${props.voiceId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the voice resource.
+	 */
+	static isValidVoiceArn(arn: string): boolean {
+		return VoiceArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a voice ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseVoiceArn(arn: string): PollyVoiceArnComponents {
+		const match = VoiceArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid voice ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			voiceId: match.groups!.voiceId,
+		};
+	}
 }
 
 /**
@@ -141,11 +211,14 @@ export class PollyResources {
  */
 export class PollyOperations {
 	/** IAM actions required for the CreateVoice API call. */
-	static readonly CreateVoice: string[] = ["polly:TagResource"];
+	static readonly CreateVoice: string[] = [
+		"polly:CreateVoice",
+		"polly:TagResource",
+	];
 	/** IAM actions required for the DeleteLexicon API call. */
 	static readonly DeleteLexicon: string[] = ["polly:DeleteLexicon"];
 	/** IAM actions required for the DeleteVoice API call. */
-	static readonly DeleteVoice: string[] = [];
+	static readonly DeleteVoice: string[] = ["polly:DeleteVoice"];
 	/** IAM actions required for the DescribeVoices API call. */
 	static readonly DescribeVoices: string[] = ["polly:DescribeVoices"];
 	/** IAM actions required for the GetLexicon API call. */
@@ -155,7 +228,7 @@ export class PollyOperations {
 		"polly:GetSpeechSynthesisTask",
 	];
 	/** IAM actions required for the GetVoice API call. */
-	static readonly opGetVoice: string[] = [];
+	static readonly opGetVoice: string[] = ["polly:GetVoice"];
 	/** IAM actions required for the ListLexicons API call. */
 	static readonly ListLexicons: string[] = ["polly:ListLexicons"];
 	/** IAM actions required for the ListSpeechSynthesisTasks API call. */
@@ -189,6 +262,11 @@ export class PollyOperations {
  * Condition key constants and builders for polly.
  */
 export class PollyConditions {
+	/** Condition keys applicable to the CreateVoice action. */
+	static readonly CreateVoiceConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the PutLexicon action. */
 	static readonly PutLexiconConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",

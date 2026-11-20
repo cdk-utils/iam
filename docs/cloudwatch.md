@@ -3207,6 +3207,7 @@ new cloudwatch.CloudWatchActions()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetMetricStatistics">actionGetMetricStatistics</a></code> | <code>string</code> | [Read] cloudwatch:GetMetricStatistics. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetMetricStream">actionGetMetricStream</a></code> | <code>string</code> | [Read] cloudwatch:GetMetricStream. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetMetricWidgetImage">actionGetMetricWidgetImage</a></code> | <code>string</code> | [Read] cloudwatch:GetMetricWidgetImage. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetMonitoringAssessment">actionGetMonitoringAssessment</a></code> | <code>string</code> | [Read] cloudwatch:GetMonitoringAssessment. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetOmniAgentAsset">actionGetOmniAgentAsset</a></code> | <code>string</code> | [Read] cloudwatch:GetOmniAgentAsset. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetOmniDashboard">actionGetOmniDashboard</a></code> | <code>string</code> | [Read] cloudwatch:GetOmniDashboard. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetOmniThread">actionGetOmniThread</a></code> | <code>string</code> | [Read] cloudwatch:GetOmniThread. |
@@ -3305,6 +3306,8 @@ new cloudwatch.CloudWatchActions()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListMetricDataQueryDefinitions">ListMetricDataQueryDefinitions</a></code> | <code>string</code> | [List] cloudwatch:ListMetricDataQueryDefinitions. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListMetrics">ListMetrics</a></code> | <code>string</code> | [List] cloudwatch:ListMetrics. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListMetricStreams">ListMetricStreams</a></code> | <code>string</code> | [List] cloudwatch:ListMetricStreams. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListMonitoringAssessmentResults">ListMonitoringAssessmentResults</a></code> | <code>string</code> | [List] cloudwatch:ListMonitoringAssessmentResults. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListMonitoringAssessments">ListMonitoringAssessments</a></code> | <code>string</code> | [List] cloudwatch:ListMonitoringAssessments. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListOmniAgentAssets">ListOmniAgentAssets</a></code> | <code>string</code> | [List] cloudwatch:ListOmniAgentAssets. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListOmniDashboards">ListOmniDashboards</a></code> | <code>string</code> | [List] cloudwatch:ListOmniDashboards. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListOmniThreads">ListOmniThreads</a></code> | <code>string</code> | [List] cloudwatch:ListOmniThreads. |
@@ -3336,6 +3339,7 @@ new cloudwatch.CloudWatchActions()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.SearchPrincipals">SearchPrincipals</a></code> | <code>string</code> | [Write] cloudwatch:SearchPrincipals. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.StartMetricStreams">StartMetricStreams</a></code> | <code>string</code> | [Write] cloudwatch:StartMetricStreams. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.StartMonitoringAssessment">StartMonitoringAssessment</a></code> | <code>string</code> | [Read] cloudwatch:StartMonitoringAssessment. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.StartOmniThreadSession">StartOmniThreadSession</a></code> | <code>string</code> | [Write] cloudwatch:StartOmniThreadSession. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.StartOTelEnrichment">StartOTelEnrichment</a></code> | <code>string</code> | [Write] cloudwatch:StartOTelEnrichment. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.StartTelemetryQuery">StartTelemetryQuery</a></code> | <code>string</code> | [Write] cloudwatch:StartTelemetryQuery. |
@@ -3603,6 +3607,18 @@ public readonly actionGetMetricWidgetImage: string;
 - *Type:* string
 
 [Read] cloudwatch:GetMetricWidgetImage.
+
+---
+
+##### `actionGetMonitoringAssessment`<sup>Required</sup> <a name="actionGetMonitoringAssessment" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetMonitoringAssessment"></a>
+
+```typescript
+public readonly actionGetMonitoringAssessment: string;
+```
+
+- *Type:* string
+
+[Read] cloudwatch:GetMonitoringAssessment.
 
 ---
 
@@ -4782,6 +4798,30 @@ public readonly ListMetricStreams: string;
 
 ---
 
+##### `ListMonitoringAssessmentResults`<sup>Required</sup> <a name="ListMonitoringAssessmentResults" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListMonitoringAssessmentResults"></a>
+
+```typescript
+public readonly ListMonitoringAssessmentResults: string;
+```
+
+- *Type:* string
+
+[List] cloudwatch:ListMonitoringAssessmentResults.
+
+---
+
+##### `ListMonitoringAssessments`<sup>Required</sup> <a name="ListMonitoringAssessments" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListMonitoringAssessments"></a>
+
+```typescript
+public readonly ListMonitoringAssessments: string;
+```
+
+- *Type:* string
+
+[List] cloudwatch:ListMonitoringAssessments.
+
+---
+
 ##### `ListOmniAgentAssets`<sup>Required</sup> <a name="ListOmniAgentAssets" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListOmniAgentAssets"></a>
 
 ```typescript
@@ -5151,6 +5191,18 @@ public readonly StartMetricStreams: string;
 - *Type:* string
 
 [Write] cloudwatch:StartMetricStreams.
+
+---
+
+##### `StartMonitoringAssessment`<sup>Required</sup> <a name="StartMonitoringAssessment" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.StartMonitoringAssessment"></a>
+
+```typescript
+public readonly StartMonitoringAssessment: string;
+```
+
+- *Type:* string
+
+[Read] cloudwatch:StartMonitoringAssessment.
 
 ---
 

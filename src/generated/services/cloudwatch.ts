@@ -189,6 +189,9 @@ export class CloudWatchActions {
 	/** [Read] cloudwatch:GetMetricWidgetImage */
 	static readonly actionGetMetricWidgetImage =
 		"cloudwatch:GetMetricWidgetImage";
+	/** [Read] cloudwatch:GetMonitoringAssessment */
+	static readonly actionGetMonitoringAssessment =
+		"cloudwatch:GetMonitoringAssessment";
 	/** [Read] cloudwatch:GetOTelEnrichment */
 	static readonly actionGetOTelEnrichment = "cloudwatch:GetOTelEnrichment";
 	/** [Read] cloudwatch:GetOmniAgentAsset */
@@ -269,6 +272,12 @@ export class CloudWatchActions {
 	static readonly ListMetricStreams = "cloudwatch:ListMetricStreams";
 	/** [List] cloudwatch:ListMetrics */
 	static readonly ListMetrics = "cloudwatch:ListMetrics";
+	/** [List] cloudwatch:ListMonitoringAssessmentResults */
+	static readonly ListMonitoringAssessmentResults =
+		"cloudwatch:ListMonitoringAssessmentResults";
+	/** [List] cloudwatch:ListMonitoringAssessments */
+	static readonly ListMonitoringAssessments =
+		"cloudwatch:ListMonitoringAssessments";
 	/** [List] cloudwatch:ListOmniAgentAssets */
 	static readonly ListOmniAgentAssets = "cloudwatch:ListOmniAgentAssets";
 	/** [List] cloudwatch:ListOmniDashboards */
@@ -336,6 +345,9 @@ export class CloudWatchActions {
 	static readonly actionSetAlarmState = "cloudwatch:SetAlarmState";
 	/** [Write] cloudwatch:StartMetricStreams */
 	static readonly StartMetricStreams = "cloudwatch:StartMetricStreams";
+	/** [Read] cloudwatch:StartMonitoringAssessment */
+	static readonly StartMonitoringAssessment =
+		"cloudwatch:StartMonitoringAssessment";
 	/** [Write] cloudwatch:StartOTelEnrichment */
 	static readonly StartOTelEnrichment = "cloudwatch:StartOTelEnrichment";
 	/** [Write] cloudwatch:StartOmniThreadSession */
@@ -429,6 +441,7 @@ export class CloudWatchActions {
 		CloudWatchActions.actionGetMetricStatistics,
 		CloudWatchActions.actionGetMetricStream,
 		CloudWatchActions.actionGetMetricWidgetImage,
+		CloudWatchActions.actionGetMonitoringAssessment,
 		CloudWatchActions.actionGetOTelEnrichment,
 		CloudWatchActions.actionGetOmniAgentAsset,
 		CloudWatchActions.actionGetOmniDashboard,
@@ -449,6 +462,7 @@ export class CloudWatchActions {
 		CloudWatchActions.actionGetTopologyMap,
 		CloudWatchActions.actionGetView,
 		CloudWatchActions.ListManagedInsightRules,
+		CloudWatchActions.StartMonitoringAssessment,
 	];
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
@@ -553,6 +567,8 @@ export class CloudWatchActions {
 		CloudWatchActions.ListMetricDataQueryDefinitions,
 		CloudWatchActions.ListMetricStreams,
 		CloudWatchActions.ListMetrics,
+		CloudWatchActions.ListMonitoringAssessmentResults,
+		CloudWatchActions.ListMonitoringAssessments,
 		CloudWatchActions.ListOmniAgentAssets,
 		CloudWatchActions.ListOmniDashboards,
 		CloudWatchActions.ListOmniThreads,
