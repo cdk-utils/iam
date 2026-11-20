@@ -3,6 +3,29 @@
   "ServiceName": "Config",
   "Actions": [
     {
+      "Name": "AllowVendedLogDeliveryForResource",
+      "ActionConditionKeys": [
+        "config:ConfigurationRecorderServicePrincipal"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "ConfigurationRecorder"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "AssociateResourceTypes",
       "Annotations": {
         "Properties": {
@@ -3591,6 +3614,10 @@
       "AuthorizedActions": [
         {
           "Name": "PutServiceLinkedConfigurationRecorder",
+          "Service": "config"
+        },
+        {
+          "Name": "TagResource",
           "Service": "config"
         }
       ],

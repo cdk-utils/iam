@@ -52,6 +52,8 @@ new iam.IAMActions()
 | <code><a href="#@cdk_utils/iam.iam.IAMActions.property.actionGetOutboundWebIdentityFederationInfo">actionGetOutboundWebIdentityFederationInfo</a></code> | <code>string</code> | [Read] iam:GetOutboundWebIdentityFederationInfo. |
 | <code><a href="#@cdk_utils/iam.iam.IAMActions.property.actionGetPolicy">actionGetPolicy</a></code> | <code>string</code> | [Read] iam:GetPolicy. |
 | <code><a href="#@cdk_utils/iam.iam.IAMActions.property.actionGetPolicyVersion">actionGetPolicyVersion</a></code> | <code>string</code> | [Read] iam:GetPolicyVersion. |
+| <code><a href="#@cdk_utils/iam.iam.IAMActions.property.actionGetRequestAuthorizationDetails">actionGetRequestAuthorizationDetails</a></code> | <code>string</code> | [Read] iam:GetRequestAuthorizationDetails. |
+| <code><a href="#@cdk_utils/iam.iam.IAMActions.property.actionGetRequestAuthorizationPolicy">actionGetRequestAuthorizationPolicy</a></code> | <code>string</code> | [Read] iam:GetRequestAuthorizationPolicy. |
 | <code><a href="#@cdk_utils/iam.iam.IAMActions.property.actionGetRole">actionGetRole</a></code> | <code>string</code> | [Read] iam:GetRole. |
 | <code><a href="#@cdk_utils/iam.iam.IAMActions.property.actionGetRolePolicy">actionGetRolePolicy</a></code> | <code>string</code> | [Read] iam:GetRolePolicy. |
 | <code><a href="#@cdk_utils/iam.iam.IAMActions.property.actionGetRoleTemplateVersion">actionGetRoleTemplateVersion</a></code> | <code>string</code> | [Read] iam:GetRoleTemplateVersion. |
@@ -211,6 +213,7 @@ new iam.IAMActions()
 | <code><a href="#@cdk_utils/iam.iam.IAMActions.property.UpdateCloudFrontPublicKey">UpdateCloudFrontPublicKey</a></code> | <code>string</code> | [Write] iam:UpdateCloudFrontPublicKey. |
 | <code><a href="#@cdk_utils/iam.iam.IAMActions.property.UpdateGroup">UpdateGroup</a></code> | <code>string</code> | [Write] iam:UpdateGroup. |
 | <code><a href="#@cdk_utils/iam.iam.IAMActions.property.UpdateLoginProfile">UpdateLoginProfile</a></code> | <code>string</code> | [Write] iam:UpdateLoginProfile. |
+| <code><a href="#@cdk_utils/iam.iam.IAMActions.property.UpdateOpenIDConnectProvider">UpdateOpenIDConnectProvider</a></code> | <code>string</code> | [Write] iam:UpdateOpenIDConnectProvider. |
 | <code><a href="#@cdk_utils/iam.iam.IAMActions.property.UpdateOpenIDConnectProviderThumbprint">UpdateOpenIDConnectProviderThumbprint</a></code> | <code>string</code> | [Write] iam:UpdateOpenIDConnectProviderThumbprint. |
 | <code><a href="#@cdk_utils/iam.iam.IAMActions.property.UpdateRole">UpdateRole</a></code> | <code>string</code> | [Write] iam:UpdateRole. |
 | <code><a href="#@cdk_utils/iam.iam.IAMActions.property.UpdateRoleDescription">UpdateRoleDescription</a></code> | <code>string</code> | [Write] iam:UpdateRoleDescription. |
@@ -512,6 +515,30 @@ public readonly actionGetPolicyVersion: string;
 - *Type:* string
 
 [Read] iam:GetPolicyVersion.
+
+---
+
+##### `actionGetRequestAuthorizationDetails`<sup>Required</sup> <a name="actionGetRequestAuthorizationDetails" id="@cdk_utils/iam.iam.IAMActions.property.actionGetRequestAuthorizationDetails"></a>
+
+```typescript
+public readonly actionGetRequestAuthorizationDetails: string;
+```
+
+- *Type:* string
+
+[Read] iam:GetRequestAuthorizationDetails.
+
+---
+
+##### `actionGetRequestAuthorizationPolicy`<sup>Required</sup> <a name="actionGetRequestAuthorizationPolicy" id="@cdk_utils/iam.iam.IAMActions.property.actionGetRequestAuthorizationPolicy"></a>
+
+```typescript
+public readonly actionGetRequestAuthorizationPolicy: string;
+```
+
+- *Type:* string
+
+[Read] iam:GetRequestAuthorizationPolicy.
 
 ---
 
@@ -2423,6 +2450,18 @@ public readonly UpdateLoginProfile: string;
 
 ---
 
+##### `UpdateOpenIDConnectProvider`<sup>Required</sup> <a name="UpdateOpenIDConnectProvider" id="@cdk_utils/iam.iam.IAMActions.property.UpdateOpenIDConnectProvider"></a>
+
+```typescript
+public readonly UpdateOpenIDConnectProvider: string;
+```
+
+- *Type:* string
+
+[Write] iam:UpdateOpenIDConnectProvider.
+
+---
+
 ##### `UpdateOpenIDConnectProviderThumbprint`<sup>Required</sup> <a name="UpdateOpenIDConnectProviderThumbprint" id="@cdk_utils/iam.iam.IAMActions.property.UpdateOpenIDConnectProviderThumbprint"></a>
 
 ```typescript
@@ -2606,6 +2645,8 @@ new iam.IAMConditions()
 | <code><a href="#@cdk_utils/iam.iam.IAMConditions.awsServiceName">awsServiceName</a></code> | Generates a condition block for `iam:AWSServiceName`. |
 | <code><a href="#@cdk_utils/iam.iam.IAMConditions.delegationDuration">delegationDuration</a></code> | Generates a condition block for `iam:DelegationDuration`. |
 | <code><a href="#@cdk_utils/iam.iam.IAMConditions.delegationRequestOwner">delegationRequestOwner</a></code> | Generates a condition block for `iam:DelegationRequestOwner`. |
+| <code><a href="#@cdk_utils/iam.iam.IAMConditions.enableIdentityCenterAssociation">enableIdentityCenterAssociation</a></code> | Generates a condition block for `iam:EnableIdentityCenterAssociation`. |
+| <code><a href="#@cdk_utils/iam.iam.IAMConditions.enableIdentityPropagation">enableIdentityPropagation</a></code> | Generates a condition block for `iam:EnableIdentityPropagation`. |
 | <code><a href="#@cdk_utils/iam.iam.IAMConditions.fidoCertification">fidoCertification</a></code> | Generates a condition block for `iam:FIDO-certification`. |
 | <code><a href="#@cdk_utils/iam.iam.IAMConditions.fidoFips1402Certification">fidoFips1402Certification</a></code> | Generates a condition block for `iam:FIDO-FIPS-140-2-certification`. |
 | <code><a href="#@cdk_utils/iam.iam.IAMConditions.fidoFips1403Certification">fidoFips1403Certification</a></code> | Generates a condition block for `iam:FIDO-FIPS-140-3-certification`. |
@@ -2615,7 +2656,11 @@ new iam.IAMConditions()
 | <code><a href="#@cdk_utils/iam.iam.IAMConditions.permissionsBoundary">permissionsBoundary</a></code> | Generates a condition block for `iam:PermissionsBoundary`. |
 | <code><a href="#@cdk_utils/iam.iam.IAMConditions.policyARN">policyARN</a></code> | Generates a condition block for `iam:PolicyARN`. |
 | <code><a href="#@cdk_utils/iam.iam.IAMConditions.registerSecurityKey">registerSecurityKey</a></code> | Generates a condition block for `iam:RegisterSecurityKey`. |
+| <code><a href="#@cdk_utils/iam.iam.IAMConditions.requestIdentityCenterInstanceARN">requestIdentityCenterInstanceARN</a></code> | Generates a condition block for `iam:RequestIdentityCenterInstanceArn`. |
+| <code><a href="#@cdk_utils/iam.iam.IAMConditions.requestIdentityProviderIssuers">requestIdentityProviderIssuers</a></code> | Generates a condition block for `iam:RequestIdentityProviderIssuers`. |
 | <code><a href="#@cdk_utils/iam.iam.IAMConditions.requestTag">requestTag</a></code> | Generates a condition block for `aws:RequestTag/${TagKey}`. |
+| <code><a href="#@cdk_utils/iam.iam.IAMConditions.resourceIdentityCenterInstanceARN">resourceIdentityCenterInstanceARN</a></code> | Generates a condition block for `iam:ResourceIdentityCenterInstanceArn`. |
+| <code><a href="#@cdk_utils/iam.iam.IAMConditions.resourceIdentityProviderIssuers">resourceIdentityProviderIssuers</a></code> | Generates a condition block for `iam:ResourceIdentityProviderIssuers`. |
 | <code><a href="#@cdk_utils/iam.iam.IAMConditions.resourceTag">resourceTag</a></code> | Generates a condition block for `aws:ResourceTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.iam.IAMConditions.roleTemplateARN">roleTemplateARN</a></code> | Generates a condition block for `iam:RoleTemplateARN`. |
 | <code><a href="#@cdk_utils/iam.iam.IAMConditions.serviceSpecificCredentialAgeDays">serviceSpecificCredentialAgeDays</a></code> | Generates a condition block for `iam:ServiceSpecificCredentialAgeDays`. |
@@ -2702,6 +2747,38 @@ Generates a condition block for `iam:DelegationRequestOwner`.
 ###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.iam.IAMConditions.delegationRequestOwner.parameter.value"></a>
 
 - *Type:* string
+
+---
+
+##### `enableIdentityCenterAssociation` <a name="enableIdentityCenterAssociation" id="@cdk_utils/iam.iam.IAMConditions.enableIdentityCenterAssociation"></a>
+
+```typescript
+import { iam } from '@cdk_utils/iam'
+
+iam.IAMConditions.enableIdentityCenterAssociation(value: boolean)
+```
+
+Generates a condition block for `iam:EnableIdentityCenterAssociation`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.iam.IAMConditions.enableIdentityCenterAssociation.parameter.value"></a>
+
+- *Type:* boolean
+
+---
+
+##### `enableIdentityPropagation` <a name="enableIdentityPropagation" id="@cdk_utils/iam.iam.IAMConditions.enableIdentityPropagation"></a>
+
+```typescript
+import { iam } from '@cdk_utils/iam'
+
+iam.IAMConditions.enableIdentityPropagation(value: boolean)
+```
+
+Generates a condition block for `iam:EnableIdentityPropagation`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.iam.IAMConditions.enableIdentityPropagation.parameter.value"></a>
+
+- *Type:* boolean
 
 ---
 
@@ -2849,6 +2926,38 @@ Generates a condition block for `iam:RegisterSecurityKey`.
 
 ---
 
+##### `requestIdentityCenterInstanceARN` <a name="requestIdentityCenterInstanceARN" id="@cdk_utils/iam.iam.IAMConditions.requestIdentityCenterInstanceARN"></a>
+
+```typescript
+import { iam } from '@cdk_utils/iam'
+
+iam.IAMConditions.requestIdentityCenterInstanceARN(value: string)
+```
+
+Generates a condition block for `iam:RequestIdentityCenterInstanceArn`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.iam.IAMConditions.requestIdentityCenterInstanceARN.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `requestIdentityProviderIssuers` <a name="requestIdentityProviderIssuers" id="@cdk_utils/iam.iam.IAMConditions.requestIdentityProviderIssuers"></a>
+
+```typescript
+import { iam } from '@cdk_utils/iam'
+
+iam.IAMConditions.requestIdentityProviderIssuers(values: string[])
+```
+
+Generates a condition block for `iam:RequestIdentityProviderIssuers`.
+
+###### `values`<sup>Required</sup> <a name="values" id="@cdk_utils/iam.iam.IAMConditions.requestIdentityProviderIssuers.parameter.values"></a>
+
+- *Type:* string[]
+
+---
+
 ##### `requestTag` <a name="requestTag" id="@cdk_utils/iam.iam.IAMConditions.requestTag"></a>
 
 ```typescript
@@ -2862,6 +2971,38 @@ Generates a condition block for `aws:RequestTag/${TagKey}`.
 ###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.iam.IAMConditions.requestTag.parameter.value"></a>
 
 - *Type:* string
+
+---
+
+##### `resourceIdentityCenterInstanceARN` <a name="resourceIdentityCenterInstanceARN" id="@cdk_utils/iam.iam.IAMConditions.resourceIdentityCenterInstanceARN"></a>
+
+```typescript
+import { iam } from '@cdk_utils/iam'
+
+iam.IAMConditions.resourceIdentityCenterInstanceARN(value: string)
+```
+
+Generates a condition block for `iam:ResourceIdentityCenterInstanceArn`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.iam.IAMConditions.resourceIdentityCenterInstanceARN.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `resourceIdentityProviderIssuers` <a name="resourceIdentityProviderIssuers" id="@cdk_utils/iam.iam.IAMConditions.resourceIdentityProviderIssuers"></a>
+
+```typescript
+import { iam } from '@cdk_utils/iam'
+
+iam.IAMConditions.resourceIdentityProviderIssuers(values: string[])
+```
+
+Generates a condition block for `iam:ResourceIdentityProviderIssuers`.
+
+###### `values`<sup>Required</sup> <a name="values" id="@cdk_utils/iam.iam.IAMConditions.resourceIdentityProviderIssuers.parameter.values"></a>
+
+- *Type:* string[]
 
 ---
 
@@ -2998,6 +3139,8 @@ Generates a condition block for `iam:TemplateArn`.
 | <code><a href="#@cdk_utils/iam.iam.IAMConditions.property.DetachGroupPolicyConditionKeys">DetachGroupPolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DetachGroupPolicy action. |
 | <code><a href="#@cdk_utils/iam.iam.IAMConditions.property.DetachRolePolicyConditionKeys">DetachRolePolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DetachRolePolicy action. |
 | <code><a href="#@cdk_utils/iam.iam.IAMConditions.property.DetachUserPolicyConditionKeys">DetachUserPolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DetachUserPolicy action. |
+| <code><a href="#@cdk_utils/iam.iam.IAMConditions.property.ENABLE_IDENTITY_CENTER_ASSOCIATION">ENABLE_IDENTITY_CENTER_ASSOCIATION</a></code> | <code>string</code> | Condition key: iam:EnableIdentityCenterAssociation (Bool). |
+| <code><a href="#@cdk_utils/iam.iam.IAMConditions.property.ENABLE_IDENTITY_PROPAGATION">ENABLE_IDENTITY_PROPAGATION</a></code> | <code>string</code> | Condition key: iam:EnableIdentityPropagation (Bool). |
 | <code><a href="#@cdk_utils/iam.iam.IAMConditions.property.EnableMFADeviceConditionKeys">EnableMFADeviceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the EnableMFADevice action. |
 | <code><a href="#@cdk_utils/iam.iam.IAMConditions.property.FIDO_CERTIFICATION">FIDO_CERTIFICATION</a></code> | <code>string</code> | Condition key: iam:FIDO-certification (String). |
 | <code><a href="#@cdk_utils/iam.iam.IAMConditions.property.FIDO_FIPS_140_2_CERTIFICATION">FIDO_FIPS_140_2_CERTIFICATION</a></code> | <code>string</code> | Condition key: iam:FIDO-FIPS-140-2-certification (String). |
@@ -3016,7 +3159,11 @@ Generates a condition block for `iam:TemplateArn`.
 | <code><a href="#@cdk_utils/iam.iam.IAMConditions.property.PutUserPermissionsBoundaryConditionKeys">PutUserPermissionsBoundaryConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutUserPermissionsBoundary action. |
 | <code><a href="#@cdk_utils/iam.iam.IAMConditions.property.PutUserPolicyConditionKeys">PutUserPolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutUserPolicy action. |
 | <code><a href="#@cdk_utils/iam.iam.IAMConditions.property.REGISTER_SECURITY_KEY">REGISTER_SECURITY_KEY</a></code> | <code>string</code> | Condition key: iam:RegisterSecurityKey (String). |
+| <code><a href="#@cdk_utils/iam.iam.IAMConditions.property.REQUEST_IDENTITY_CENTER_INSTANCE_ARN">REQUEST_IDENTITY_CENTER_INSTANCE_ARN</a></code> | <code>string</code> | Condition key: iam:RequestIdentityCenterInstanceArn (ARN). |
+| <code><a href="#@cdk_utils/iam.iam.IAMConditions.property.REQUEST_IDENTITY_PROVIDER_ISSUERS">REQUEST_IDENTITY_PROVIDER_ISSUERS</a></code> | <code>string</code> | Condition key: iam:RequestIdentityProviderIssuers (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.iam.IAMConditions.property.ResetServiceSpecificCredentialConditionKeys">ResetServiceSpecificCredentialConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ResetServiceSpecificCredential action. |
+| <code><a href="#@cdk_utils/iam.iam.IAMConditions.property.RESOURCE_IDENTITY_CENTER_INSTANCE_ARN">RESOURCE_IDENTITY_CENTER_INSTANCE_ARN</a></code> | <code>string</code> | Condition key: iam:ResourceIdentityCenterInstanceArn (ARN). |
+| <code><a href="#@cdk_utils/iam.iam.IAMConditions.property.RESOURCE_IDENTITY_PROVIDER_ISSUERS">RESOURCE_IDENTITY_PROVIDER_ISSUERS</a></code> | <code>string</code> | Condition key: iam:ResourceIdentityProviderIssuers (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.iam.IAMConditions.property.RESOURCE_TAG">RESOURCE_TAG</a></code> | <code>string</code> | Condition key: iam:ResourceTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.iam.IAMConditions.property.ROLE_TEMPLATE_ARN">ROLE_TEMPLATE_ARN</a></code> | <code>string</code> | Condition key: iam:RoleTemplateARN (ARN). |
 | <code><a href="#@cdk_utils/iam.iam.IAMConditions.property.SERVICE_SPECIFIC_CREDENTIAL_AGE_DAYS">SERVICE_SPECIFIC_CREDENTIAL_AGE_DAYS</a></code> | <code>string</code> | Condition key: iam:ServiceSpecificCredentialAgeDays (Numeric). |
@@ -3039,8 +3186,10 @@ Generates a condition block for `iam:TemplateArn`.
 | <code><a href="#@cdk_utils/iam.iam.IAMConditions.property.UntagServerCertificateConditionKeys">UntagServerCertificateConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagServerCertificate action. |
 | <code><a href="#@cdk_utils/iam.iam.IAMConditions.property.UntagUserConditionKeys">UntagUserConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagUser action. |
 | <code><a href="#@cdk_utils/iam.iam.IAMConditions.property.UpdateAssumeRolePolicyConditionKeys">UpdateAssumeRolePolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateAssumeRolePolicy action. |
+| <code><a href="#@cdk_utils/iam.iam.IAMConditions.property.UpdateOpenIDConnectProviderConditionKeys">UpdateOpenIDConnectProviderConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateOpenIDConnectProvider action. |
 | <code><a href="#@cdk_utils/iam.iam.IAMConditions.property.UpdateRoleConditionKeys">UpdateRoleConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateRole action. |
 | <code><a href="#@cdk_utils/iam.iam.IAMConditions.property.UpdateRoleDescriptionConditionKeys">UpdateRoleDescriptionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateRoleDescription action. |
+| <code><a href="#@cdk_utils/iam.iam.IAMConditions.property.UpdateSAMLProviderConditionKeys">UpdateSAMLProviderConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateSAMLProvider action. |
 | <code><a href="#@cdk_utils/iam.iam.IAMConditions.property.UpdateServiceSpecificCredentialConditionKeys">UpdateServiceSpecificCredentialConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateServiceSpecificCredential action. |
 | <code><a href="#@cdk_utils/iam.iam.IAMConditions.property.UploadServerCertificateConditionKeys">UploadServerCertificateConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UploadServerCertificate action. |
 
@@ -3430,6 +3579,30 @@ Condition keys applicable to the DetachUserPolicy action.
 
 ---
 
+##### `ENABLE_IDENTITY_CENTER_ASSOCIATION`<sup>Required</sup> <a name="ENABLE_IDENTITY_CENTER_ASSOCIATION" id="@cdk_utils/iam.iam.IAMConditions.property.ENABLE_IDENTITY_CENTER_ASSOCIATION"></a>
+
+```typescript
+public readonly ENABLE_IDENTITY_CENTER_ASSOCIATION: string;
+```
+
+- *Type:* string
+
+Condition key: iam:EnableIdentityCenterAssociation (Bool).
+
+---
+
+##### `ENABLE_IDENTITY_PROPAGATION`<sup>Required</sup> <a name="ENABLE_IDENTITY_PROPAGATION" id="@cdk_utils/iam.iam.IAMConditions.property.ENABLE_IDENTITY_PROPAGATION"></a>
+
+```typescript
+public readonly ENABLE_IDENTITY_PROPAGATION: string;
+```
+
+- *Type:* string
+
+Condition key: iam:EnableIdentityPropagation (Bool).
+
+---
+
 ##### `EnableMFADeviceConditionKeys`<sup>Required</sup> <a name="EnableMFADeviceConditionKeys" id="@cdk_utils/iam.iam.IAMConditions.property.EnableMFADeviceConditionKeys"></a>
 
 ```typescript
@@ -3646,6 +3819,30 @@ Condition key: iam:RegisterSecurityKey (String).
 
 ---
 
+##### `REQUEST_IDENTITY_CENTER_INSTANCE_ARN`<sup>Required</sup> <a name="REQUEST_IDENTITY_CENTER_INSTANCE_ARN" id="@cdk_utils/iam.iam.IAMConditions.property.REQUEST_IDENTITY_CENTER_INSTANCE_ARN"></a>
+
+```typescript
+public readonly REQUEST_IDENTITY_CENTER_INSTANCE_ARN: string;
+```
+
+- *Type:* string
+
+Condition key: iam:RequestIdentityCenterInstanceArn (ARN).
+
+---
+
+##### `REQUEST_IDENTITY_PROVIDER_ISSUERS`<sup>Required</sup> <a name="REQUEST_IDENTITY_PROVIDER_ISSUERS" id="@cdk_utils/iam.iam.IAMConditions.property.REQUEST_IDENTITY_PROVIDER_ISSUERS"></a>
+
+```typescript
+public readonly REQUEST_IDENTITY_PROVIDER_ISSUERS: string;
+```
+
+- *Type:* string
+
+Condition key: iam:RequestIdentityProviderIssuers (ArrayOfString).
+
+---
+
 ##### `ResetServiceSpecificCredentialConditionKeys`<sup>Required</sup> <a name="ResetServiceSpecificCredentialConditionKeys" id="@cdk_utils/iam.iam.IAMConditions.property.ResetServiceSpecificCredentialConditionKeys"></a>
 
 ```typescript
@@ -3655,6 +3852,30 @@ public readonly ResetServiceSpecificCredentialConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the ResetServiceSpecificCredential action.
+
+---
+
+##### `RESOURCE_IDENTITY_CENTER_INSTANCE_ARN`<sup>Required</sup> <a name="RESOURCE_IDENTITY_CENTER_INSTANCE_ARN" id="@cdk_utils/iam.iam.IAMConditions.property.RESOURCE_IDENTITY_CENTER_INSTANCE_ARN"></a>
+
+```typescript
+public readonly RESOURCE_IDENTITY_CENTER_INSTANCE_ARN: string;
+```
+
+- *Type:* string
+
+Condition key: iam:ResourceIdentityCenterInstanceArn (ARN).
+
+---
+
+##### `RESOURCE_IDENTITY_PROVIDER_ISSUERS`<sup>Required</sup> <a name="RESOURCE_IDENTITY_PROVIDER_ISSUERS" id="@cdk_utils/iam.iam.IAMConditions.property.RESOURCE_IDENTITY_PROVIDER_ISSUERS"></a>
+
+```typescript
+public readonly RESOURCE_IDENTITY_PROVIDER_ISSUERS: string;
+```
+
+- *Type:* string
+
+Condition key: iam:ResourceIdentityProviderIssuers (ArrayOfString).
 
 ---
 
@@ -3922,6 +4143,18 @@ Condition keys applicable to the UpdateAssumeRolePolicy action.
 
 ---
 
+##### `UpdateOpenIDConnectProviderConditionKeys`<sup>Required</sup> <a name="UpdateOpenIDConnectProviderConditionKeys" id="@cdk_utils/iam.iam.IAMConditions.property.UpdateOpenIDConnectProviderConditionKeys"></a>
+
+```typescript
+public readonly UpdateOpenIDConnectProviderConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateOpenIDConnectProvider action.
+
+---
+
 ##### `UpdateRoleConditionKeys`<sup>Required</sup> <a name="UpdateRoleConditionKeys" id="@cdk_utils/iam.iam.IAMConditions.property.UpdateRoleConditionKeys"></a>
 
 ```typescript
@@ -3943,6 +4176,18 @@ public readonly UpdateRoleDescriptionConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the UpdateRoleDescription action.
+
+---
+
+##### `UpdateSAMLProviderConditionKeys`<sup>Required</sup> <a name="UpdateSAMLProviderConditionKeys" id="@cdk_utils/iam.iam.IAMConditions.property.UpdateSAMLProviderConditionKeys"></a>
+
+```typescript
+public readonly UpdateSAMLProviderConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateSAMLProvider action.
 
 ---
 
@@ -4113,6 +4358,7 @@ new iam.IAMOperations()
 | <code><a href="#@cdk_utils/iam.iam.IAMOperations.property.opGetPolicy">opGetPolicy</a></code> | <code>string[]</code> | IAM actions required for the GetPolicy API call. |
 | <code><a href="#@cdk_utils/iam.iam.IAMOperations.property.opGetPolicyVersion">opGetPolicyVersion</a></code> | <code>string[]</code> | IAM actions required for the GetPolicyVersion API call. |
 | <code><a href="#@cdk_utils/iam.iam.IAMOperations.property.opGetRequestAuthorizationDetails">opGetRequestAuthorizationDetails</a></code> | <code>string[]</code> | IAM actions required for the GetRequestAuthorizationDetails API call. |
+| <code><a href="#@cdk_utils/iam.iam.IAMOperations.property.opGetRequestAuthorizationPolicy">opGetRequestAuthorizationPolicy</a></code> | <code>string[]</code> | IAM actions required for the GetRequestAuthorizationPolicy API call. |
 | <code><a href="#@cdk_utils/iam.iam.IAMOperations.property.opGetRole">opGetRole</a></code> | <code>string[]</code> | IAM actions required for the GetRole API call. |
 | <code><a href="#@cdk_utils/iam.iam.IAMOperations.property.opGetRolePolicy">opGetRolePolicy</a></code> | <code>string[]</code> | IAM actions required for the GetRolePolicy API call. |
 | <code><a href="#@cdk_utils/iam.iam.IAMOperations.property.opGetRoleTemplateVersion">opGetRoleTemplateVersion</a></code> | <code>string[]</code> | IAM actions required for the GetRoleTemplateVersion API call. |
@@ -4163,6 +4409,7 @@ new iam.IAMOperations()
 | <code><a href="#@cdk_utils/iam.iam.IAMOperations.property.UpdateDelegationRequest">UpdateDelegationRequest</a></code> | <code>string[]</code> | IAM actions required for the UpdateDelegationRequest API call. |
 | <code><a href="#@cdk_utils/iam.iam.IAMOperations.property.UpdateGroup">UpdateGroup</a></code> | <code>string[]</code> | IAM actions required for the UpdateGroup API call. |
 | <code><a href="#@cdk_utils/iam.iam.IAMOperations.property.UpdateLoginProfile">UpdateLoginProfile</a></code> | <code>string[]</code> | IAM actions required for the UpdateLoginProfile API call. |
+| <code><a href="#@cdk_utils/iam.iam.IAMOperations.property.UpdateOpenIDConnectProvider">UpdateOpenIDConnectProvider</a></code> | <code>string[]</code> | IAM actions required for the UpdateOpenIDConnectProvider API call. |
 | <code><a href="#@cdk_utils/iam.iam.IAMOperations.property.UpdateOpenIDConnectProviderThumbprint">UpdateOpenIDConnectProviderThumbprint</a></code> | <code>string[]</code> | IAM actions required for the UpdateOpenIDConnectProviderThumbprint API call. |
 | <code><a href="#@cdk_utils/iam.iam.IAMOperations.property.UpdateRole">UpdateRole</a></code> | <code>string[]</code> | IAM actions required for the UpdateRole API call. |
 | <code><a href="#@cdk_utils/iam.iam.IAMOperations.property.UpdateRoleDescription">UpdateRoleDescription</a></code> | <code>string[]</code> | IAM actions required for the UpdateRoleDescription API call. |
@@ -5606,6 +5853,18 @@ IAM actions required for the GetRequestAuthorizationDetails API call.
 
 ---
 
+##### `opGetRequestAuthorizationPolicy`<sup>Required</sup> <a name="opGetRequestAuthorizationPolicy" id="@cdk_utils/iam.iam.IAMOperations.property.opGetRequestAuthorizationPolicy"></a>
+
+```typescript
+public readonly opGetRequestAuthorizationPolicy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetRequestAuthorizationPolicy API call.
+
+---
+
 ##### `opGetRole`<sup>Required</sup> <a name="opGetRole" id="@cdk_utils/iam.iam.IAMOperations.property.opGetRole"></a>
 
 ```typescript
@@ -6203,6 +6462,18 @@ public readonly UpdateLoginProfile: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateLoginProfile API call.
+
+---
+
+##### `UpdateOpenIDConnectProvider`<sup>Required</sup> <a name="UpdateOpenIDConnectProvider" id="@cdk_utils/iam.iam.IAMOperations.property.UpdateOpenIDConnectProvider"></a>
+
+```typescript
+public readonly UpdateOpenIDConnectProvider: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateOpenIDConnectProvider API call.
 
 ---
 

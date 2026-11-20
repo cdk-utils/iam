@@ -1928,6 +1928,43 @@
       }
     },
     {
+      "Name": "GetAgentInsight",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": true,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAgentInsightStore",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agent-insight-store"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GetAgentRuntime",
       "Annotations": {
         "Properties": {
@@ -3265,6 +3302,13 @@
     },
     {
       "Name": "InvokeGateway",
+      "ActionConditionKeys": [
+        "bedrock-agentcore:InboundJwtClaim/aud",
+        "bedrock-agentcore:InboundJwtClaim/client_id",
+        "bedrock-agentcore:InboundJwtClaim/iss",
+        "bedrock-agentcore:InboundJwtClaim/scope",
+        "bedrock-agentcore:InboundJwtClaim/sub"
+      ],
       "Annotations": {
         "Properties": {
           "IsList": false,
@@ -3328,6 +3372,26 @@
       }
     },
     {
+      "Name": "InvokeWebAnswer",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "web-answer"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "InvokeWebSearch",
       "Annotations": {
         "Properties": {
@@ -3379,6 +3443,38 @@
           "Name": "memory"
         }
       ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAgentInsightStores",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAgentInsights",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": true,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -5095,6 +5191,43 @@
       "Resources": [
         {
           "Name": "ab-test"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAgentInsight",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": true,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAgentInsightStore",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agent-insight-store"
         }
       ],
       "SupportedBy": {
@@ -7061,6 +7194,16 @@
       ]
     },
     {
+      "Name": "DeleteDatasetGeneration",
+      "SDK": [
+        {
+          "Name": "bedrock-agentcore",
+          "Method": "delete_dataset_generation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DeleteEvaluator",
       "AuthorizedActions": [
         {
@@ -7497,6 +7640,38 @@
       ]
     },
     {
+      "Name": "GetAgentInsight",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAgentInsight",
+          "Service": "bedrock-agentcore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bedrock-agentcore",
+          "Method": "get_agent_insight",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAgentInsightStore",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAgentInsightStore",
+          "Service": "bedrock-agentcore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bedrock-agentcore-control",
+          "Method": "get_agent_insight_store",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetAgentRuntime",
       "AuthorizedActions": [
         {
@@ -7716,6 +7891,16 @@
         {
           "Name": "bedrock-agentcore-control",
           "Method": "get_dataset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetDatasetGeneration",
+      "SDK": [
+        {
+          "Name": "bedrock-agentcore",
+          "Method": "get_dataset_generation",
           "Package": "Boto3"
         }
       ]
@@ -8399,6 +8584,16 @@
       ]
     },
     {
+      "Name": "InvokeWebSearch",
+      "SDK": [
+        {
+          "Name": "bedrock-agentcore",
+          "Method": "invoke_web_search",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListABTests",
       "AuthorizedActions": [
         {
@@ -8426,6 +8621,38 @@
         {
           "Name": "bedrock-agentcore",
           "Method": "list_actors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAgentInsightStores",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAgentInsightStores",
+          "Service": "bedrock-agentcore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bedrock-agentcore-control",
+          "Method": "list_agent_insight_stores",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAgentInsights",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAgentInsights",
+          "Service": "bedrock-agentcore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bedrock-agentcore",
+          "Method": "list_agent_insights",
           "Package": "Boto3"
         }
       ]
@@ -8682,6 +8909,16 @@
         {
           "Name": "bedrock-agentcore-control",
           "Method": "list_dataset_examples",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListDatasetGenerations",
+      "SDK": [
+        {
+          "Name": "bedrock-agentcore",
+          "Method": "list_dataset_generations",
           "Package": "Boto3"
         }
       ]
@@ -9401,6 +9638,16 @@
       ]
     },
     {
+      "Name": "StartDatasetGeneration",
+      "SDK": [
+        {
+          "Name": "bedrock-agentcore",
+          "Method": "start_dataset_generation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "StartMemoryExtractionJob",
       "AuthorizedActions": [
         {
@@ -9602,6 +9849,38 @@
       ]
     },
     {
+      "Name": "UpdateAgentInsight",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAgentInsight",
+          "Service": "bedrock-agentcore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bedrock-agentcore",
+          "Method": "update_agent_insight",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAgentInsightStore",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAgentInsightStore",
+          "Service": "bedrock-agentcore"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bedrock-agentcore-control",
+          "Method": "update_agent_insight_store",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "UpdateAgentRuntime",
       "AuthorizedActions": [
         {
@@ -9777,6 +10056,10 @@
     {
       "Name": "UpdateGateway",
       "AuthorizedActions": [
+        {
+          "Name": "CreateGateway",
+          "Service": "bedrock-agentcore"
+        },
         {
           "Name": "PassRole",
           "Context": {
@@ -10156,6 +10439,12 @@
       ]
     },
     {
+      "Name": "agent-insight-store",
+      "ARNFormats": [
+        "arn:${Partition}:bedrock-agentcore:${Region}:${Account}:agent-insight-store/${AgentInsightStoreId}"
+      ]
+    },
+    {
       "Name": "apikeycredentialprovider",
       "ARNFormats": [
         "arn:${Partition}:bedrock-agentcore:${Region}:${Account}:token-vault/${TokenVaultId}/apikeycredentialprovider/${Name}"
@@ -10396,6 +10685,12 @@
       ],
       "ConditionKeys": [
         "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "web-answer",
+      "ARNFormats": [
+        "arn:${Partition}:bedrock-agentcore:${Region}:aws:tool/web-answer.v1"
       ]
     },
     {

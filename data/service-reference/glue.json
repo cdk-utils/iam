@@ -665,6 +665,9 @@
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
         "aws:TagKeys",
+        "glue:ConnectionType",
+        "glue:CredentialVendingMode",
+        "glue:InstanceUrl",
         "glue:LakeFormationPermissions"
       ],
       "Annotations": {
@@ -724,6 +727,31 @@
           "IsWrite": true
         }
       },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateDataQualityEvaluationConfig",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataQualityEvaluationConfig"
+        }
+      ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -1556,6 +1584,27 @@
           "IsWrite": true
         }
       },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteDataQualityEvaluationConfig",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataQualityEvaluationConfig"
+        }
+      ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -2789,6 +2838,27 @@
       }
     },
     {
+      "Name": "GetDataQualityEvaluationConfig",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataQualityEvaluationConfig"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GetDataQualityModel",
       "Annotations": {
         "Properties": {
@@ -3278,6 +3348,7 @@
       "Name": "GetJobUpgradeAnalysis",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4214,6 +4285,9 @@
           "Name": "customEntityType"
         },
         {
+          "Name": "dataQualityEvaluationConfig"
+        },
+        {
           "Name": "database"
         },
         {
@@ -4602,6 +4676,27 @@
       }
     },
     {
+      "Name": "ListDataQualityEvaluationConfigs",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataQualityEvaluationConfig"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListDataQualityResults",
       "Annotations": {
         "Properties": {
@@ -4753,6 +4848,22 @@
           "Name": "integrationResourceProperty"
         }
       ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListIntegrationTableProperties",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -5776,6 +5887,7 @@
       "Name": "StartJobUpgradeAnalysis",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5986,6 +6098,7 @@
       "Name": "StopJobUpgradeAnalysis",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -6099,6 +6212,9 @@
         },
         {
           "Name": "customEntityType"
+        },
+        {
+          "Name": "dataQualityEvaluationConfig"
         },
         {
           "Name": "dataQualityRuleset"
@@ -6217,6 +6333,9 @@
         },
         {
           "Name": "customEntityType"
+        },
+        {
+          "Name": "dataQualityEvaluationConfig"
         },
         {
           "Name": "dataQualityRuleset"
@@ -6422,6 +6541,9 @@
     {
       "Name": "UpdateConnection",
       "ActionConditionKeys": [
+        "glue:ConnectionType",
+        "glue:CredentialVendingMode",
+        "glue:InstanceUrl",
         "glue:LakeFormationPermissions"
       ],
       "Annotations": {
@@ -6481,6 +6603,27 @@
           "IsWrite": true
         }
       },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateDataQualityEvaluationConfig",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataQualityEvaluationConfig"
+        }
+      ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -7032,7 +7175,19 @@
       ]
     },
     {
+      "Name": "glue:ConnectionType",
+      "Types": [
+        "String"
+      ]
+    },
+    {
       "Name": "glue:CredentialIssuingService",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "glue:CredentialVendingMode",
       "Types": [
         "String"
       ]
@@ -7045,6 +7200,12 @@
     },
     {
       "Name": "glue:FederatedAuthorizationSource",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "glue:InstanceUrl",
       "Types": [
         "String"
       ]
@@ -7675,6 +7836,35 @@
         {
           "Name": "glue",
           "Method": "create_custom_entity_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateDataQualityEvaluationConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateDataQualityEvaluationConfig",
+          "Service": "glue"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "glue.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "glue"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glue",
+          "Method": "create_data_quality_evaluation_config",
           "Package": "Boto3"
         }
       ]
@@ -8372,6 +8562,22 @@
         {
           "Name": "glue",
           "Method": "delete_custom_entity_type",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteDataQualityEvaluationConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDataQualityEvaluationConfig",
+          "Service": "glue"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glue",
+          "Method": "delete_data_quality_evaluation_config",
           "Package": "Boto3"
         }
       ]
@@ -9229,6 +9435,22 @@
       ]
     },
     {
+      "Name": "GetDataQualityEvaluationConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDataQualityEvaluationConfig",
+          "Service": "glue"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glue",
+          "Method": "get_data_quality_evaluation_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetDataQualityModel",
       "AuthorizedActions": [
         {
@@ -9583,6 +9805,22 @@
         {
           "Name": "glue",
           "Method": "get_job_runs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetJobUpgradeAnalysis",
+      "AuthorizedActions": [
+        {
+          "Name": "GetJobUpgradeAnalysis",
+          "Service": "glue"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glue",
+          "Method": "get_job_upgrade_analysis",
           "Package": "Boto3"
         }
       ]
@@ -10389,6 +10627,22 @@
       ]
     },
     {
+      "Name": "ListDataQualityEvaluationConfigs",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDataQualityEvaluationConfigs",
+          "Service": "glue"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glue",
+          "Method": "list_data_quality_evaluation_configs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListDataQualityResults",
       "AuthorizedActions": [
         {
@@ -10580,6 +10834,12 @@
     },
     {
       "Name": "ListIntegrationTableProperties",
+      "AuthorizedActions": [
+        {
+          "Name": "ListIntegrationTableProperties",
+          "Service": "glue"
+        }
+      ],
       "SDK": [
         {
           "Name": "glue",
@@ -11292,6 +11552,22 @@
       ]
     },
     {
+      "Name": "StartJobUpgradeAnalysis",
+      "AuthorizedActions": [
+        {
+          "Name": "StartJobUpgradeAnalysis",
+          "Service": "glue"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glue",
+          "Method": "start_job_upgrade_analysis",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "StartMLEvaluationTaskRun",
       "AuthorizedActions": [
         {
@@ -11425,6 +11701,22 @@
         {
           "Name": "glue",
           "Method": "stop_crawler_schedule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StopJobUpgradeAnalysis",
+      "AuthorizedActions": [
+        {
+          "Name": "StopJobUpgradeAnalysis",
+          "Service": "glue"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glue",
+          "Method": "stop_job_upgrade_analysis",
           "Package": "Boto3"
         }
       ]
@@ -11734,6 +12026,31 @@
         {
           "Name": "glue",
           "Method": "update_crawler_schedule",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateDataQualityEvaluationConfig",
+      "AuthorizedActions": [
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "glue.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
+          "Name": "UpdateDataQualityEvaluationConfig",
+          "Service": "glue"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "glue",
+          "Method": "update_data_quality_evaluation_config",
           "Package": "Boto3"
         }
       ]
@@ -12176,6 +12493,15 @@
       "Name": "customEntityType",
       "ARNFormats": [
         "arn:${Partition}:glue:${Region}:${Account}:customEntityType/${CustomEntityTypeId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "dataQualityEvaluationConfig",
+      "ARNFormats": [
+        "arn:${Partition}:glue:${Region}:${Account}:dataQualityEvaluationConfig/${EvaluationConfigName}"
       ],
       "ConditionKeys": [
         "aws:ResourceTag/${TagKey}"

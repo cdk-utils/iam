@@ -160,6 +160,8 @@ export class AccountAccessOperations {
 	static readonly opGetEntitlement: string[] = [
 		"account-access:GetEntitlement",
 	];
+	/** IAM actions required for the GetRoleCredentials API call. */
+	static readonly opGetRoleCredentials: string[] = [];
 	/** IAM actions required for the ListApplications API call. */
 	static readonly ListApplications: string[] = [
 		"account-access:ListApplications",
@@ -168,6 +170,8 @@ export class AccountAccessOperations {
 	static readonly ListEntitlements: string[] = [
 		"account-access:ListEntitlements",
 	];
+	/** IAM actions required for the ListRoles API call. */
+	static readonly ListRoles: string[] = [];
 	/** IAM actions required for the ListTagsForResource API call. */
 	static readonly ListTagsForResource: string[] = [
 		"account-access:ListTagsForResource",

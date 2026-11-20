@@ -3,7 +3,51 @@
   "ServiceName": "Health",
   "Actions": [
     {
+      "Name": "ConfigureTags",
+      "ActionConditionKeys": [
+        "health:TagChannel",
+        "health:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ConfigureTagsForOrganization",
+      "ActionConditionKeys": [
+        "health:TagChannel",
+        "health:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DescribeAffectedAccountsForOrganization",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
@@ -21,6 +65,8 @@
     {
       "Name": "DescribeAffectedEntities",
       "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
         "health:eventTypeCode",
         "health:service"
       ],
@@ -45,6 +91,10 @@
     },
     {
       "Name": "DescribeAffectedEntitiesForOrganization",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
@@ -61,6 +111,10 @@
     },
     {
       "Name": "DescribeEntityAggregates",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
@@ -77,6 +131,10 @@
     },
     {
       "Name": "DescribeEntityAggregatesForOrganization",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
@@ -93,6 +151,10 @@
     },
     {
       "Name": "DescribeEventAggregates",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
@@ -166,6 +228,10 @@
     },
     {
       "Name": "DescribeEvents",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
@@ -182,6 +248,10 @@
     },
     {
       "Name": "DescribeEventsForOrganization",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
@@ -213,12 +283,140 @@
       }
     },
     {
+      "Name": "DescribeTagKeys",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeTagKeysForOrganization",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeTags",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeTagsForOrganization",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeTagsOnboardingStatus",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeTagsOnboardingStatusForOrganization",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DisableHealthServiceAccessForOrganization",
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisableTags",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisableTagsForOrganization",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
           "IsTaggingOnly": false,
           "IsWrite": true
         }
@@ -243,9 +441,65 @@
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
       }
+    },
+    {
+      "Name": "EnableTags",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "EnableTagsForOrganization",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
     }
   ],
   "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "health:TagChannel",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
+      "Name": "health:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
     {
       "Name": "health:eventTypeCode",
       "Types": [
@@ -260,6 +514,38 @@
     }
   ],
   "Operations": [
+    {
+      "Name": "ConfigureTags",
+      "AuthorizedActions": [
+        {
+          "Name": "ConfigureTags",
+          "Service": "health"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "configure_tags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ConfigureTagsForOrganization",
+      "AuthorizedActions": [
+        {
+          "Name": "ConfigureTagsForOrganization",
+          "Service": "health"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "configure_tags_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
     {
       "Name": "DescribeAffectedAccountsForOrganization",
       "AuthorizedActions": [
@@ -487,6 +773,114 @@
       ]
     },
     {
+      "Name": "DescribeTagKeys",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeTagKeys",
+          "Service": "health"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "describe_tag_keys",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTagKeysForOrganization",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeTagKeysForOrganization",
+          "Service": "health"
+        },
+        {
+          "Name": "ListAccounts",
+          "Service": "organizations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "describe_tag_keys_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTags",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeTags",
+          "Service": "health"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "describe_tags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTagsForOrganization",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeTagsForOrganization",
+          "Service": "health"
+        },
+        {
+          "Name": "ListAccounts",
+          "Service": "organizations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "describe_tags_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTagsOnboardingStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeTagsOnboardingStatus",
+          "Service": "health"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "describe_tags_onboarding_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeTagsOnboardingStatusForOrganization",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeTagsOnboardingStatusForOrganization",
+          "Service": "health"
+        },
+        {
+          "Name": "ListAccounts",
+          "Service": "organizations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "describe_tags_onboarding_status_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DisableHealthServiceAccessForOrganization",
       "AuthorizedActions": [
         {
@@ -506,6 +900,42 @@
         {
           "Name": "health",
           "Method": "disable_health_service_access_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisableTags",
+      "AuthorizedActions": [
+        {
+          "Name": "DisableTags",
+          "Service": "health"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "disable_tags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisableTagsForOrganization",
+      "AuthorizedActions": [
+        {
+          "Name": "DisableTagsForOrganization",
+          "Service": "health"
+        },
+        {
+          "Name": "ListAccounts",
+          "Service": "organizations"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "disable_tags_for_organization",
           "Package": "Boto3"
         }
       ]
@@ -534,6 +964,38 @@
         {
           "Name": "health",
           "Method": "enable_health_service_access_for_organization",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EnableTags",
+      "AuthorizedActions": [
+        {
+          "Name": "EnableTags",
+          "Service": "health"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "enable_tags",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "EnableTagsForOrganization",
+      "AuthorizedActions": [
+        {
+          "Name": "EnableTagsForOrganization",
+          "Service": "health"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "health",
+          "Method": "enable_tags_for_organization",
           "Package": "Boto3"
         }
       ]

@@ -379,6 +379,7 @@ new cognito_idp.CognitoIdpActions()
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.actionGetClientToken">actionGetClientToken</a></code> | <code>string</code> | [Write] cognito-idp:GetClientToken. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.actionGetCSVHeader">actionGetCSVHeader</a></code> | <code>string</code> | [Read] cognito-idp:GetCSVHeader. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.actionGetDerivedToken">actionGetDerivedToken</a></code> | <code>string</code> | [Write] cognito-idp:GetDerivedToken. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.actionGetDevice">actionGetDevice</a></code> | <code>string</code> | [Read] cognito-idp:GetDevice. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.actionGetGroup">actionGetGroup</a></code> | <code>string</code> | [Read] cognito-idp:GetGroup. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.actionGetIdentityProviderByIdentifier">actionGetIdentityProviderByIdentifier</a></code> | <code>string</code> | [Read] cognito-idp:GetIdentityProviderByIdentifier. |
@@ -389,13 +390,17 @@ new cognito_idp.CognitoIdpActions()
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.actionGetUICustomization">actionGetUICustomization</a></code> | <code>string</code> | [Read] cognito-idp:GetUICustomization. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.actionGetUser">actionGetUser</a></code> | <code>string</code> | [Read] cognito-idp:GetUser. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.actionGetUserAttributeVerificationCode">actionGetUserAttributeVerificationCode</a></code> | <code>string</code> | [Read] cognito-idp:GetUserAttributeVerificationCode. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.actionGetUserPoolClientSessionConfiguration">actionGetUserPoolClientSessionConfiguration</a></code> | <code>string</code> | [Read] cognito-idp:GetUserPoolClientSessionConfiguration. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.actionGetUserPoolMfaConfig">actionGetUserPoolMfaConfig</a></code> | <code>string</code> | [Read] cognito-idp:GetUserPoolMfaConfig. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.actionGetUserPoolSessionConfiguration">actionGetUserPoolSessionConfiguration</a></code> | <code>string</code> | [Read] cognito-idp:GetUserPoolSessionConfiguration. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.actionGetWebACLForResource">actionGetWebACLForResource</a></code> | <code>string</code> | [Read] cognito-idp:GetWebACLForResource. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.actionSetLogDeliveryConfiguration">actionSetLogDeliveryConfiguration</a></code> | <code>string</code> | [Write] cognito-idp:SetLogDeliveryConfiguration. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.actionSetRiskConfiguration">actionSetRiskConfiguration</a></code> | <code>string</code> | [Write] cognito-idp:SetRiskConfiguration. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.actionSetUICustomization">actionSetUICustomization</a></code> | <code>string</code> | [Write] cognito-idp:SetUICustomization. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.actionSetUserMFAPreference">actionSetUserMFAPreference</a></code> | <code>string</code> | [Write] cognito-idp:SetUserMFAPreference. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.actionSetUserPoolClientSessionConfiguration">actionSetUserPoolClientSessionConfiguration</a></code> | <code>string</code> | [Write] cognito-idp:SetUserPoolClientSessionConfiguration. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.actionSetUserPoolMfaConfig">actionSetUserPoolMfaConfig</a></code> | <code>string</code> | [Write] cognito-idp:SetUserPoolMfaConfig. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.actionSetUserPoolSessionConfiguration">actionSetUserPoolSessionConfiguration</a></code> | <code>string</code> | [Write] cognito-idp:SetUserPoolSessionConfiguration. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.actionSetUserSettings">actionSetUserSettings</a></code> | <code>string</code> | [Write] cognito-idp:SetUserSettings. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.AddCustomAttributes">AddCustomAttributes</a></code> | <code>string</code> | [Write] cognito-idp:AddCustomAttributes. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.AddUserPoolClientSecret">AddUserPoolClientSecret</a></code> | <code>string</code> | [Write] cognito-idp:AddUserPoolClientSecret. |
@@ -417,9 +422,11 @@ new cognito_idp.CognitoIdpActions()
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.AdminListDevices">AdminListDevices</a></code> | <code>string</code> | [List] cognito-idp:AdminListDevices. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.AdminListGroupsForUser">AdminListGroupsForUser</a></code> | <code>string</code> | [List] cognito-idp:AdminListGroupsForUser. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.AdminListUserAuthEvents">AdminListUserAuthEvents</a></code> | <code>string</code> | [Read] cognito-idp:AdminListUserAuthEvents. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.AdminListUserSessions">AdminListUserSessions</a></code> | <code>string</code> | [List] cognito-idp:AdminListUserSessions. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.AdminRemoveUserFromGroup">AdminRemoveUserFromGroup</a></code> | <code>string</code> | [Write] cognito-idp:AdminRemoveUserFromGroup. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.AdminResetUserPassword">AdminResetUserPassword</a></code> | <code>string</code> | [Write] cognito-idp:AdminResetUserPassword. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.AdminRespondToAuthChallenge">AdminRespondToAuthChallenge</a></code> | <code>string</code> | [Write] cognito-idp:AdminRespondToAuthChallenge. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.AdminRevokeUserSession">AdminRevokeUserSession</a></code> | <code>string</code> | [Write] cognito-idp:AdminRevokeUserSession. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.AdminSetUserMFAPreference">AdminSetUserMFAPreference</a></code> | <code>string</code> | [Write] cognito-idp:AdminSetUserMFAPreference. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.AdminSetUserPassword">AdminSetUserPassword</a></code> | <code>string</code> | [Write] cognito-idp:AdminSetUserPassword. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.AdminSetUserSettings">AdminSetUserSettings</a></code> | <code>string</code> | [Write] cognito-idp:AdminSetUserSettings. |
@@ -434,10 +441,12 @@ new cognito_idp.CognitoIdpActions()
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.AssociateSoftwareToken">AssociateSoftwareToken</a></code> | <code>string</code> | [Write] cognito-idp:AssociateSoftwareToken. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.AssociateWebACL">AssociateWebACL</a></code> | <code>string</code> | [Write] cognito-idp:AssociateWebACL. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.CancelPointInTimeRecovery">CancelPointInTimeRecovery</a></code> | <code>string</code> | [Write] cognito-idp:CancelPointInTimeRecovery. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.ChangePassword">ChangePassword</a></code> | <code>string</code> | [Write] cognito-idp:ChangePassword. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.ConfirmDevice">ConfirmDevice</a></code> | <code>string</code> | [Write] cognito-idp:ConfirmDevice. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.ConfirmForgotPassword">ConfirmForgotPassword</a></code> | <code>string</code> | [Write] cognito-idp:ConfirmForgotPassword. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.ConfirmSignUp">ConfirmSignUp</a></code> | <code>string</code> | [Write] cognito-idp:ConfirmSignUp. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.CreateCIMDPolicy">CreateCIMDPolicy</a></code> | <code>string</code> | [Write] cognito-idp:CreateCIMDPolicy. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.CreateGroup">CreateGroup</a></code> | <code>string</code> | [Write] cognito-idp:CreateGroup. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.CreateIdentityProvider">CreateIdentityProvider</a></code> | <code>string</code> | [Write] cognito-idp:CreateIdentityProvider. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.CreateManagedLoginBranding">CreateManagedLoginBranding</a></code> | <code>string</code> | [Write] cognito-idp:CreateManagedLoginBranding. |
@@ -448,6 +457,7 @@ new cognito_idp.CognitoIdpActions()
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.CreateUserPoolClient">CreateUserPoolClient</a></code> | <code>string</code> | [Write] cognito-idp:CreateUserPoolClient. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.CreateUserPoolDomain">CreateUserPoolDomain</a></code> | <code>string</code> | [Write] cognito-idp:CreateUserPoolDomain. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.CreateUserPoolReplica">CreateUserPoolReplica</a></code> | <code>string</code> | [Write] cognito-idp:CreateUserPoolReplica. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.DeleteCIMDPolicy">DeleteCIMDPolicy</a></code> | <code>string</code> | [Write] cognito-idp:DeleteCIMDPolicy. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.DeleteGroup">DeleteGroup</a></code> | <code>string</code> | [Write] cognito-idp:DeleteGroup. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.DeleteIdentityProvider">DeleteIdentityProvider</a></code> | <code>string</code> | [Write] cognito-idp:DeleteIdentityProvider. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.DeleteManagedLoginBranding">DeleteManagedLoginBranding</a></code> | <code>string</code> | [Write] cognito-idp:DeleteManagedLoginBranding. |
@@ -460,9 +470,11 @@ new cognito_idp.CognitoIdpActions()
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.DeleteUserPoolClientSecret">DeleteUserPoolClientSecret</a></code> | <code>string</code> | [Write] cognito-idp:DeleteUserPoolClientSecret. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.DeleteUserPoolDomain">DeleteUserPoolDomain</a></code> | <code>string</code> | [Write] cognito-idp:DeleteUserPoolDomain. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.DeleteUserPoolReplica">DeleteUserPoolReplica</a></code> | <code>string</code> | [Write] cognito-idp:DeleteUserPoolReplica. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.DescribeCIMDPolicy">DescribeCIMDPolicy</a></code> | <code>string</code> | [Read] cognito-idp:DescribeCIMDPolicy. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.DescribeIdentityProvider">DescribeIdentityProvider</a></code> | <code>string</code> | [Read] cognito-idp:DescribeIdentityProvider. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.DescribeManagedLoginBranding">DescribeManagedLoginBranding</a></code> | <code>string</code> | [Read] cognito-idp:DescribeManagedLoginBranding. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.DescribeManagedLoginBrandingByClient">DescribeManagedLoginBrandingByClient</a></code> | <code>string</code> | [Read] cognito-idp:DescribeManagedLoginBrandingByClient. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.DescribePointInTimeRecovery">DescribePointInTimeRecovery</a></code> | <code>string</code> | [Read] cognito-idp:DescribePointInTimeRecovery. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.DescribeResourceServer">DescribeResourceServer</a></code> | <code>string</code> | [Read] cognito-idp:DescribeResourceServer. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.DescribeRiskConfiguration">DescribeRiskConfiguration</a></code> | <code>string</code> | [Read] cognito-idp:DescribeRiskConfiguration. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.DescribeTerms">DescribeTerms</a></code> | <code>string</code> | [Read] cognito-idp:DescribeTerms. |
@@ -476,9 +488,13 @@ new cognito_idp.CognitoIdpActions()
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.ForgotPassword">ForgotPassword</a></code> | <code>string</code> | [Write] cognito-idp:ForgotPassword. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.GlobalSignOut">GlobalSignOut</a></code> | <code>string</code> | [Write] cognito-idp:GlobalSignOut. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.InitiateAuth">InitiateAuth</a></code> | <code>string</code> | [Write] cognito-idp:InitiateAuth. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.InitiatePointInTimeRecovery">InitiatePointInTimeRecovery</a></code> | <code>string</code> | [Write] cognito-idp:InitiatePointInTimeRecovery. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.ListCIMDPolicies">ListCIMDPolicies</a></code> | <code>string</code> | [List] cognito-idp:ListCIMDPolicies. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.ListClientMetadataURLs">ListClientMetadataURLs</a></code> | <code>string</code> | [List] cognito-idp:ListClientMetadataURLs. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.ListDevices">ListDevices</a></code> | <code>string</code> | [List] cognito-idp:ListDevices. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.ListGroups">ListGroups</a></code> | <code>string</code> | [List] cognito-idp:ListGroups. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.ListIdentityProviders">ListIdentityProviders</a></code> | <code>string</code> | [List] cognito-idp:ListIdentityProviders. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.ListPointInTimeRecoveries">ListPointInTimeRecoveries</a></code> | <code>string</code> | [List] cognito-idp:ListPointInTimeRecoveries. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.ListResourceServers">ListResourceServers</a></code> | <code>string</code> | [List] cognito-idp:ListResourceServers. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.ListResourcesForWebACL">ListResourcesForWebACL</a></code> | <code>string</code> | [List] cognito-idp:ListResourcesForWebACL. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [List] cognito-idp:ListTagsForResource. |
@@ -489,17 +505,22 @@ new cognito_idp.CognitoIdpActions()
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.ListUserPoolReplicas">ListUserPoolReplicas</a></code> | <code>string</code> | [List] cognito-idp:ListUserPoolReplicas. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.ListUserPools">ListUserPools</a></code> | <code>string</code> | [List] cognito-idp:ListUserPools. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.ListUsers">ListUsers</a></code> | <code>string</code> | [List] cognito-idp:ListUsers. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.ListUserSessions">ListUserSessions</a></code> | <code>string</code> | [List] cognito-idp:ListUserSessions. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.ListUsersInGroup">ListUsersInGroup</a></code> | <code>string</code> | [List] cognito-idp:ListUsersInGroup. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.ResendConfirmationCode">ResendConfirmationCode</a></code> | <code>string</code> | [Write] cognito-idp:ResendConfirmationCode. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.RespondToAuthChallenge">RespondToAuthChallenge</a></code> | <code>string</code> | [Write] cognito-idp:RespondToAuthChallenge. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.RevokeToken">RevokeToken</a></code> | <code>string</code> | [Write] cognito-idp:RevokeToken. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.RevokeUserSession">RevokeUserSession</a></code> | <code>string</code> | [Write] cognito-idp:RevokeUserSession. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.SignUp">SignUp</a></code> | <code>string</code> | [Write] cognito-idp:SignUp. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.StartPointInTimeRecovery">StartPointInTimeRecovery</a></code> | <code>string</code> | [Write] cognito-idp:StartPointInTimeRecovery. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.StartUserImportJob">StartUserImportJob</a></code> | <code>string</code> | [Write] cognito-idp:StartUserImportJob. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.StopUserImportJob">StopUserImportJob</a></code> | <code>string</code> | [Write] cognito-idp:StopUserImportJob. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] cognito-idp:TagResource. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] cognito-idp:UntagResource. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.UpdateAuthEventFeedback">UpdateAuthEventFeedback</a></code> | <code>string</code> | [Write] cognito-idp:UpdateAuthEventFeedback. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.UpdateCIMDPolicy">UpdateCIMDPolicy</a></code> | <code>string</code> | [Write] cognito-idp:UpdateCIMDPolicy. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.UpdateClientMetadataURLState">UpdateClientMetadataURLState</a></code> | <code>string</code> | [Write] cognito-idp:UpdateClientMetadataURLState. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.UpdateDeviceStatus">UpdateDeviceStatus</a></code> | <code>string</code> | [Write] cognito-idp:UpdateDeviceStatus. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.UpdateGroup">UpdateGroup</a></code> | <code>string</code> | [Write] cognito-idp:UpdateGroup. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.UpdateIdentityProvider">UpdateIdentityProvider</a></code> | <code>string</code> | [Write] cognito-idp:UpdateIdentityProvider. |
@@ -538,6 +559,18 @@ public readonly actionGetCSVHeader: string;
 - *Type:* string
 
 [Read] cognito-idp:GetCSVHeader.
+
+---
+
+##### `actionGetDerivedToken`<sup>Required</sup> <a name="actionGetDerivedToken" id="@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.actionGetDerivedToken"></a>
+
+```typescript
+public readonly actionGetDerivedToken: string;
+```
+
+- *Type:* string
+
+[Write] cognito-idp:GetDerivedToken.
 
 ---
 
@@ -661,6 +694,18 @@ public readonly actionGetUserAttributeVerificationCode: string;
 
 ---
 
+##### `actionGetUserPoolClientSessionConfiguration`<sup>Required</sup> <a name="actionGetUserPoolClientSessionConfiguration" id="@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.actionGetUserPoolClientSessionConfiguration"></a>
+
+```typescript
+public readonly actionGetUserPoolClientSessionConfiguration: string;
+```
+
+- *Type:* string
+
+[Read] cognito-idp:GetUserPoolClientSessionConfiguration.
+
+---
+
 ##### `actionGetUserPoolMfaConfig`<sup>Required</sup> <a name="actionGetUserPoolMfaConfig" id="@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.actionGetUserPoolMfaConfig"></a>
 
 ```typescript
@@ -670,6 +715,18 @@ public readonly actionGetUserPoolMfaConfig: string;
 - *Type:* string
 
 [Read] cognito-idp:GetUserPoolMfaConfig.
+
+---
+
+##### `actionGetUserPoolSessionConfiguration`<sup>Required</sup> <a name="actionGetUserPoolSessionConfiguration" id="@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.actionGetUserPoolSessionConfiguration"></a>
+
+```typescript
+public readonly actionGetUserPoolSessionConfiguration: string;
+```
+
+- *Type:* string
+
+[Read] cognito-idp:GetUserPoolSessionConfiguration.
 
 ---
 
@@ -733,6 +790,18 @@ public readonly actionSetUserMFAPreference: string;
 
 ---
 
+##### `actionSetUserPoolClientSessionConfiguration`<sup>Required</sup> <a name="actionSetUserPoolClientSessionConfiguration" id="@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.actionSetUserPoolClientSessionConfiguration"></a>
+
+```typescript
+public readonly actionSetUserPoolClientSessionConfiguration: string;
+```
+
+- *Type:* string
+
+[Write] cognito-idp:SetUserPoolClientSessionConfiguration.
+
+---
+
 ##### `actionSetUserPoolMfaConfig`<sup>Required</sup> <a name="actionSetUserPoolMfaConfig" id="@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.actionSetUserPoolMfaConfig"></a>
 
 ```typescript
@@ -742,6 +811,18 @@ public readonly actionSetUserPoolMfaConfig: string;
 - *Type:* string
 
 [Write] cognito-idp:SetUserPoolMfaConfig.
+
+---
+
+##### `actionSetUserPoolSessionConfiguration`<sup>Required</sup> <a name="actionSetUserPoolSessionConfiguration" id="@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.actionSetUserPoolSessionConfiguration"></a>
+
+```typescript
+public readonly actionSetUserPoolSessionConfiguration: string;
+```
+
+- *Type:* string
+
+[Write] cognito-idp:SetUserPoolSessionConfiguration.
 
 ---
 
@@ -997,6 +1078,18 @@ public readonly AdminListUserAuthEvents: string;
 
 ---
 
+##### `AdminListUserSessions`<sup>Required</sup> <a name="AdminListUserSessions" id="@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.AdminListUserSessions"></a>
+
+```typescript
+public readonly AdminListUserSessions: string;
+```
+
+- *Type:* string
+
+[List] cognito-idp:AdminListUserSessions.
+
+---
+
 ##### `AdminRemoveUserFromGroup`<sup>Required</sup> <a name="AdminRemoveUserFromGroup" id="@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.AdminRemoveUserFromGroup"></a>
 
 ```typescript
@@ -1030,6 +1123,18 @@ public readonly AdminRespondToAuthChallenge: string;
 - *Type:* string
 
 [Write] cognito-idp:AdminRespondToAuthChallenge.
+
+---
+
+##### `AdminRevokeUserSession`<sup>Required</sup> <a name="AdminRevokeUserSession" id="@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.AdminRevokeUserSession"></a>
+
+```typescript
+public readonly AdminRevokeUserSession: string;
+```
+
+- *Type:* string
+
+[Write] cognito-idp:AdminRevokeUserSession.
 
 ---
 
@@ -1201,6 +1306,18 @@ public readonly AssociateWebACL: string;
 
 ---
 
+##### `CancelPointInTimeRecovery`<sup>Required</sup> <a name="CancelPointInTimeRecovery" id="@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.CancelPointInTimeRecovery"></a>
+
+```typescript
+public readonly CancelPointInTimeRecovery: string;
+```
+
+- *Type:* string
+
+[Write] cognito-idp:CancelPointInTimeRecovery.
+
+---
+
 ##### `ChangePassword`<sup>Required</sup> <a name="ChangePassword" id="@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.ChangePassword"></a>
 
 ```typescript
@@ -1246,6 +1363,18 @@ public readonly ConfirmSignUp: string;
 - *Type:* string
 
 [Write] cognito-idp:ConfirmSignUp.
+
+---
+
+##### `CreateCIMDPolicy`<sup>Required</sup> <a name="CreateCIMDPolicy" id="@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.CreateCIMDPolicy"></a>
+
+```typescript
+public readonly CreateCIMDPolicy: string;
+```
+
+- *Type:* string
+
+[Write] cognito-idp:CreateCIMDPolicy.
 
 ---
 
@@ -1366,6 +1495,18 @@ public readonly CreateUserPoolReplica: string;
 - *Type:* string
 
 [Write] cognito-idp:CreateUserPoolReplica.
+
+---
+
+##### `DeleteCIMDPolicy`<sup>Required</sup> <a name="DeleteCIMDPolicy" id="@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.DeleteCIMDPolicy"></a>
+
+```typescript
+public readonly DeleteCIMDPolicy: string;
+```
+
+- *Type:* string
+
+[Write] cognito-idp:DeleteCIMDPolicy.
 
 ---
 
@@ -1513,6 +1654,18 @@ public readonly DeleteUserPoolReplica: string;
 
 ---
 
+##### `DescribeCIMDPolicy`<sup>Required</sup> <a name="DescribeCIMDPolicy" id="@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.DescribeCIMDPolicy"></a>
+
+```typescript
+public readonly DescribeCIMDPolicy: string;
+```
+
+- *Type:* string
+
+[Read] cognito-idp:DescribeCIMDPolicy.
+
+---
+
 ##### `DescribeIdentityProvider`<sup>Required</sup> <a name="DescribeIdentityProvider" id="@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.DescribeIdentityProvider"></a>
 
 ```typescript
@@ -1546,6 +1699,18 @@ public readonly DescribeManagedLoginBrandingByClient: string;
 - *Type:* string
 
 [Read] cognito-idp:DescribeManagedLoginBrandingByClient.
+
+---
+
+##### `DescribePointInTimeRecovery`<sup>Required</sup> <a name="DescribePointInTimeRecovery" id="@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.DescribePointInTimeRecovery"></a>
+
+```typescript
+public readonly DescribePointInTimeRecovery: string;
+```
+
+- *Type:* string
+
+[Read] cognito-idp:DescribePointInTimeRecovery.
 
 ---
 
@@ -1705,6 +1870,42 @@ public readonly InitiateAuth: string;
 
 ---
 
+##### `InitiatePointInTimeRecovery`<sup>Required</sup> <a name="InitiatePointInTimeRecovery" id="@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.InitiatePointInTimeRecovery"></a>
+
+```typescript
+public readonly InitiatePointInTimeRecovery: string;
+```
+
+- *Type:* string
+
+[Write] cognito-idp:InitiatePointInTimeRecovery.
+
+---
+
+##### `ListCIMDPolicies`<sup>Required</sup> <a name="ListCIMDPolicies" id="@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.ListCIMDPolicies"></a>
+
+```typescript
+public readonly ListCIMDPolicies: string;
+```
+
+- *Type:* string
+
+[List] cognito-idp:ListCIMDPolicies.
+
+---
+
+##### `ListClientMetadataURLs`<sup>Required</sup> <a name="ListClientMetadataURLs" id="@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.ListClientMetadataURLs"></a>
+
+```typescript
+public readonly ListClientMetadataURLs: string;
+```
+
+- *Type:* string
+
+[List] cognito-idp:ListClientMetadataURLs.
+
+---
+
 ##### `ListDevices`<sup>Required</sup> <a name="ListDevices" id="@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.ListDevices"></a>
 
 ```typescript
@@ -1738,6 +1939,18 @@ public readonly ListIdentityProviders: string;
 - *Type:* string
 
 [List] cognito-idp:ListIdentityProviders.
+
+---
+
+##### `ListPointInTimeRecoveries`<sup>Required</sup> <a name="ListPointInTimeRecoveries" id="@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.ListPointInTimeRecoveries"></a>
+
+```typescript
+public readonly ListPointInTimeRecoveries: string;
+```
+
+- *Type:* string
+
+[List] cognito-idp:ListPointInTimeRecoveries.
 
 ---
 
@@ -1861,6 +2074,18 @@ public readonly ListUsers: string;
 
 ---
 
+##### `ListUserSessions`<sup>Required</sup> <a name="ListUserSessions" id="@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.ListUserSessions"></a>
+
+```typescript
+public readonly ListUserSessions: string;
+```
+
+- *Type:* string
+
+[List] cognito-idp:ListUserSessions.
+
+---
+
 ##### `ListUsersInGroup`<sup>Required</sup> <a name="ListUsersInGroup" id="@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.ListUsersInGroup"></a>
 
 ```typescript
@@ -1909,6 +2134,18 @@ public readonly RevokeToken: string;
 
 ---
 
+##### `RevokeUserSession`<sup>Required</sup> <a name="RevokeUserSession" id="@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.RevokeUserSession"></a>
+
+```typescript
+public readonly RevokeUserSession: string;
+```
+
+- *Type:* string
+
+[Write] cognito-idp:RevokeUserSession.
+
+---
+
 ##### `SERVICE_PREFIX`<sup>Required</sup> <a name="SERVICE_PREFIX" id="@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.SERVICE_PREFIX"></a>
 
 ```typescript
@@ -1930,6 +2167,18 @@ public readonly SignUp: string;
 - *Type:* string
 
 [Write] cognito-idp:SignUp.
+
+---
+
+##### `StartPointInTimeRecovery`<sup>Required</sup> <a name="StartPointInTimeRecovery" id="@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.StartPointInTimeRecovery"></a>
+
+```typescript
+public readonly StartPointInTimeRecovery: string;
+```
+
+- *Type:* string
+
+[Write] cognito-idp:StartPointInTimeRecovery.
 
 ---
 
@@ -1990,6 +2239,30 @@ public readonly UpdateAuthEventFeedback: string;
 - *Type:* string
 
 [Write] cognito-idp:UpdateAuthEventFeedback.
+
+---
+
+##### `UpdateCIMDPolicy`<sup>Required</sup> <a name="UpdateCIMDPolicy" id="@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.UpdateCIMDPolicy"></a>
+
+```typescript
+public readonly UpdateCIMDPolicy: string;
+```
+
+- *Type:* string
+
+[Write] cognito-idp:UpdateCIMDPolicy.
+
+---
+
+##### `UpdateClientMetadataURLState`<sup>Required</sup> <a name="UpdateClientMetadataURLState" id="@cdk_utils/iam.cognito_idp.CognitoIdpActions.property.UpdateClientMetadataURLState"></a>
+
+```typescript
+public readonly UpdateClientMetadataURLState: string;
+```
+
+- *Type:* string
+
+[Write] cognito-idp:UpdateClientMetadataURLState.
 
 ---
 
@@ -2380,9 +2653,11 @@ new cognito_idp.CognitoIdpOperations()
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.AdminListDevices">AdminListDevices</a></code> | <code>string[]</code> | IAM actions required for the AdminListDevices API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.AdminListGroupsForUser">AdminListGroupsForUser</a></code> | <code>string[]</code> | IAM actions required for the AdminListGroupsForUser API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.AdminListUserAuthEvents">AdminListUserAuthEvents</a></code> | <code>string[]</code> | IAM actions required for the AdminListUserAuthEvents API call. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.AdminListUserSessions">AdminListUserSessions</a></code> | <code>string[]</code> | IAM actions required for the AdminListUserSessions API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.AdminRemoveUserFromGroup">AdminRemoveUserFromGroup</a></code> | <code>string[]</code> | IAM actions required for the AdminRemoveUserFromGroup API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.AdminResetUserPassword">AdminResetUserPassword</a></code> | <code>string[]</code> | IAM actions required for the AdminResetUserPassword API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.AdminRespondToAuthChallenge">AdminRespondToAuthChallenge</a></code> | <code>string[]</code> | IAM actions required for the AdminRespondToAuthChallenge API call. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.AdminRevokeUserSession">AdminRevokeUserSession</a></code> | <code>string[]</code> | IAM actions required for the AdminRevokeUserSession API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.AdminSetUserMFAPreference">AdminSetUserMFAPreference</a></code> | <code>string[]</code> | IAM actions required for the AdminSetUserMFAPreference API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.AdminSetUserPassword">AdminSetUserPassword</a></code> | <code>string[]</code> | IAM actions required for the AdminSetUserPassword API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.AdminSetUserSettings">AdminSetUserSettings</a></code> | <code>string[]</code> | IAM actions required for the AdminSetUserSettings API call. |
@@ -2391,11 +2666,13 @@ new cognito_idp.CognitoIdpOperations()
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.AdminUpdateUserAttributes">AdminUpdateUserAttributes</a></code> | <code>string[]</code> | IAM actions required for the AdminUpdateUserAttributes API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.AdminUserGlobalSignOut">AdminUserGlobalSignOut</a></code> | <code>string[]</code> | IAM actions required for the AdminUserGlobalSignOut API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.AssociateSoftwareToken">AssociateSoftwareToken</a></code> | <code>string[]</code> | IAM actions required for the AssociateSoftwareToken API call. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.CancelPointInTimeRecovery">CancelPointInTimeRecovery</a></code> | <code>string[]</code> | IAM actions required for the CancelPointInTimeRecovery API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.ChangePassword">ChangePassword</a></code> | <code>string[]</code> | IAM actions required for the ChangePassword API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.CompleteWebAuthnRegistration">CompleteWebAuthnRegistration</a></code> | <code>string[]</code> | IAM actions required for the CompleteWebAuthnRegistration API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.ConfirmDevice">ConfirmDevice</a></code> | <code>string[]</code> | IAM actions required for the ConfirmDevice API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.ConfirmForgotPassword">ConfirmForgotPassword</a></code> | <code>string[]</code> | IAM actions required for the ConfirmForgotPassword API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.ConfirmSignUp">ConfirmSignUp</a></code> | <code>string[]</code> | IAM actions required for the ConfirmSignUp API call. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.CreateCIMDPolicy">CreateCIMDPolicy</a></code> | <code>string[]</code> | IAM actions required for the CreateCIMDPolicy API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.CreateGroup">CreateGroup</a></code> | <code>string[]</code> | IAM actions required for the CreateGroup API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.CreateIdentityProvider">CreateIdentityProvider</a></code> | <code>string[]</code> | IAM actions required for the CreateIdentityProvider API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.CreateManagedLoginBranding">CreateManagedLoginBranding</a></code> | <code>string[]</code> | IAM actions required for the CreateManagedLoginBranding API call. |
@@ -2406,6 +2683,7 @@ new cognito_idp.CognitoIdpOperations()
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.CreateUserPoolClient">CreateUserPoolClient</a></code> | <code>string[]</code> | IAM actions required for the CreateUserPoolClient API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.CreateUserPoolDomain">CreateUserPoolDomain</a></code> | <code>string[]</code> | IAM actions required for the CreateUserPoolDomain API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.CreateUserPoolReplica">CreateUserPoolReplica</a></code> | <code>string[]</code> | IAM actions required for the CreateUserPoolReplica API call. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.DeleteCIMDPolicy">DeleteCIMDPolicy</a></code> | <code>string[]</code> | IAM actions required for the DeleteCIMDPolicy API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.DeleteGroup">DeleteGroup</a></code> | <code>string[]</code> | IAM actions required for the DeleteGroup API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.DeleteIdentityProvider">DeleteIdentityProvider</a></code> | <code>string[]</code> | IAM actions required for the DeleteIdentityProvider API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.DeleteManagedLoginBranding">DeleteManagedLoginBranding</a></code> | <code>string[]</code> | IAM actions required for the DeleteManagedLoginBranding API call. |
@@ -2419,9 +2697,11 @@ new cognito_idp.CognitoIdpOperations()
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.DeleteUserPoolDomain">DeleteUserPoolDomain</a></code> | <code>string[]</code> | IAM actions required for the DeleteUserPoolDomain API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.DeleteUserPoolReplica">DeleteUserPoolReplica</a></code> | <code>string[]</code> | IAM actions required for the DeleteUserPoolReplica API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.DeleteWebAuthnCredential">DeleteWebAuthnCredential</a></code> | <code>string[]</code> | IAM actions required for the DeleteWebAuthnCredential API call. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.DescribeCIMDPolicy">DescribeCIMDPolicy</a></code> | <code>string[]</code> | IAM actions required for the DescribeCIMDPolicy API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.DescribeIdentityProvider">DescribeIdentityProvider</a></code> | <code>string[]</code> | IAM actions required for the DescribeIdentityProvider API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.DescribeManagedLoginBranding">DescribeManagedLoginBranding</a></code> | <code>string[]</code> | IAM actions required for the DescribeManagedLoginBranding API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.DescribeManagedLoginBrandingByClient">DescribeManagedLoginBrandingByClient</a></code> | <code>string[]</code> | IAM actions required for the DescribeManagedLoginBrandingByClient API call. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.DescribePointInTimeRecovery">DescribePointInTimeRecovery</a></code> | <code>string[]</code> | IAM actions required for the DescribePointInTimeRecovery API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.DescribeResourceServer">DescribeResourceServer</a></code> | <code>string[]</code> | IAM actions required for the DescribeResourceServer API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.DescribeRiskConfiguration">DescribeRiskConfiguration</a></code> | <code>string[]</code> | IAM actions required for the DescribeRiskConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.DescribeTerms">DescribeTerms</a></code> | <code>string[]</code> | IAM actions required for the DescribeTerms API call. |
@@ -2434,9 +2714,13 @@ new cognito_idp.CognitoIdpOperations()
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.ForgotPassword">ForgotPassword</a></code> | <code>string[]</code> | IAM actions required for the ForgotPassword API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.GlobalSignOut">GlobalSignOut</a></code> | <code>string[]</code> | IAM actions required for the GlobalSignOut API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.InitiateAuth">InitiateAuth</a></code> | <code>string[]</code> | IAM actions required for the InitiateAuth API call. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.InitiatePointInTimeRecovery">InitiatePointInTimeRecovery</a></code> | <code>string[]</code> | IAM actions required for the InitiatePointInTimeRecovery API call. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.ListCIMDPolicies">ListCIMDPolicies</a></code> | <code>string[]</code> | IAM actions required for the ListCIMDPolicies API call. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.ListClientMetadataURLs">ListClientMetadataURLs</a></code> | <code>string[]</code> | IAM actions required for the ListClientMetadataURLs API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.ListDevices">ListDevices</a></code> | <code>string[]</code> | IAM actions required for the ListDevices API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.ListGroups">ListGroups</a></code> | <code>string[]</code> | IAM actions required for the ListGroups API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.ListIdentityProviders">ListIdentityProviders</a></code> | <code>string[]</code> | IAM actions required for the ListIdentityProviders API call. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.ListPointInTimeRecoveries">ListPointInTimeRecoveries</a></code> | <code>string[]</code> | IAM actions required for the ListPointInTimeRecoveries API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.ListResourceServers">ListResourceServers</a></code> | <code>string[]</code> | IAM actions required for the ListResourceServers API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.ListTerms">ListTerms</a></code> | <code>string[]</code> | IAM actions required for the ListTerms API call. |
@@ -2446,10 +2730,12 @@ new cognito_idp.CognitoIdpOperations()
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.ListUserPoolReplicas">ListUserPoolReplicas</a></code> | <code>string[]</code> | IAM actions required for the ListUserPoolReplicas API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.ListUserPools">ListUserPools</a></code> | <code>string[]</code> | IAM actions required for the ListUserPools API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.ListUsers">ListUsers</a></code> | <code>string[]</code> | IAM actions required for the ListUsers API call. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.ListUserSessions">ListUserSessions</a></code> | <code>string[]</code> | IAM actions required for the ListUserSessions API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.ListUsersInGroup">ListUsersInGroup</a></code> | <code>string[]</code> | IAM actions required for the ListUsersInGroup API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.ListWebAuthnCredentials">ListWebAuthnCredentials</a></code> | <code>string[]</code> | IAM actions required for the ListWebAuthnCredentials API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.opGetClientToken">opGetClientToken</a></code> | <code>string[]</code> | IAM actions required for the GetClientToken API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.opGetCSVHeader">opGetCSVHeader</a></code> | <code>string[]</code> | IAM actions required for the GetCSVHeader API call. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.opGetDerivedToken">opGetDerivedToken</a></code> | <code>string[]</code> | IAM actions required for the GetDerivedToken API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.opGetDevice">opGetDevice</a></code> | <code>string[]</code> | IAM actions required for the GetDevice API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.opGetGroup">opGetGroup</a></code> | <code>string[]</code> | IAM actions required for the GetGroup API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.opGetIdentityProviderByIdentifier">opGetIdentityProviderByIdentifier</a></code> | <code>string[]</code> | IAM actions required for the GetIdentityProviderByIdentifier API call. |
@@ -2461,23 +2747,31 @@ new cognito_idp.CognitoIdpOperations()
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.opGetUser">opGetUser</a></code> | <code>string[]</code> | IAM actions required for the GetUser API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.opGetUserAttributeVerificationCode">opGetUserAttributeVerificationCode</a></code> | <code>string[]</code> | IAM actions required for the GetUserAttributeVerificationCode API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.opGetUserAuthFactors">opGetUserAuthFactors</a></code> | <code>string[]</code> | IAM actions required for the GetUserAuthFactors API call. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.opGetUserPoolClientSessionConfiguration">opGetUserPoolClientSessionConfiguration</a></code> | <code>string[]</code> | IAM actions required for the GetUserPoolClientSessionConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.opGetUserPoolMfaConfig">opGetUserPoolMfaConfig</a></code> | <code>string[]</code> | IAM actions required for the GetUserPoolMfaConfig API call. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.opGetUserPoolSessionConfiguration">opGetUserPoolSessionConfiguration</a></code> | <code>string[]</code> | IAM actions required for the GetUserPoolSessionConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.opSetLogDeliveryConfiguration">opSetLogDeliveryConfiguration</a></code> | <code>string[]</code> | IAM actions required for the SetLogDeliveryConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.opSetRiskConfiguration">opSetRiskConfiguration</a></code> | <code>string[]</code> | IAM actions required for the SetRiskConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.opSetUICustomization">opSetUICustomization</a></code> | <code>string[]</code> | IAM actions required for the SetUICustomization API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.opSetUserMFAPreference">opSetUserMFAPreference</a></code> | <code>string[]</code> | IAM actions required for the SetUserMFAPreference API call. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.opSetUserPoolClientSessionConfiguration">opSetUserPoolClientSessionConfiguration</a></code> | <code>string[]</code> | IAM actions required for the SetUserPoolClientSessionConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.opSetUserPoolMfaConfig">opSetUserPoolMfaConfig</a></code> | <code>string[]</code> | IAM actions required for the SetUserPoolMfaConfig API call. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.opSetUserPoolSessionConfiguration">opSetUserPoolSessionConfiguration</a></code> | <code>string[]</code> | IAM actions required for the SetUserPoolSessionConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.opSetUserSettings">opSetUserSettings</a></code> | <code>string[]</code> | IAM actions required for the SetUserSettings API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.ResendConfirmationCode">ResendConfirmationCode</a></code> | <code>string[]</code> | IAM actions required for the ResendConfirmationCode API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.RespondToAuthChallenge">RespondToAuthChallenge</a></code> | <code>string[]</code> | IAM actions required for the RespondToAuthChallenge API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.RevokeToken">RevokeToken</a></code> | <code>string[]</code> | IAM actions required for the RevokeToken API call. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.RevokeUserSession">RevokeUserSession</a></code> | <code>string[]</code> | IAM actions required for the RevokeUserSession API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.SignUp">SignUp</a></code> | <code>string[]</code> | IAM actions required for the SignUp API call. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.StartPointInTimeRecovery">StartPointInTimeRecovery</a></code> | <code>string[]</code> | IAM actions required for the StartPointInTimeRecovery API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.StartUserImportJob">StartUserImportJob</a></code> | <code>string[]</code> | IAM actions required for the StartUserImportJob API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.StartWebAuthnRegistration">StartWebAuthnRegistration</a></code> | <code>string[]</code> | IAM actions required for the StartWebAuthnRegistration API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.StopUserImportJob">StopUserImportJob</a></code> | <code>string[]</code> | IAM actions required for the StopUserImportJob API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.UpdateAuthEventFeedback">UpdateAuthEventFeedback</a></code> | <code>string[]</code> | IAM actions required for the UpdateAuthEventFeedback API call. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.UpdateCIMDPolicy">UpdateCIMDPolicy</a></code> | <code>string[]</code> | IAM actions required for the UpdateCIMDPolicy API call. |
+| <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.UpdateClientMetadataURLState">UpdateClientMetadataURLState</a></code> | <code>string[]</code> | IAM actions required for the UpdateClientMetadataURLState API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.UpdateDeviceStatus">UpdateDeviceStatus</a></code> | <code>string[]</code> | IAM actions required for the UpdateDeviceStatus API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.UpdateGroup">UpdateGroup</a></code> | <code>string[]</code> | IAM actions required for the UpdateGroup API call. |
 | <code><a href="#@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.UpdateIdentityProvider">UpdateIdentityProvider</a></code> | <code>string[]</code> | IAM actions required for the UpdateIdentityProvider API call. |
@@ -2735,6 +3029,18 @@ IAM actions required for the AdminListUserAuthEvents API call.
 
 ---
 
+##### `AdminListUserSessions`<sup>Required</sup> <a name="AdminListUserSessions" id="@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.AdminListUserSessions"></a>
+
+```typescript
+public readonly AdminListUserSessions: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the AdminListUserSessions API call.
+
+---
+
 ##### `AdminRemoveUserFromGroup`<sup>Required</sup> <a name="AdminRemoveUserFromGroup" id="@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.AdminRemoveUserFromGroup"></a>
 
 ```typescript
@@ -2768,6 +3074,18 @@ public readonly AdminRespondToAuthChallenge: string[];
 - *Type:* string[]
 
 IAM actions required for the AdminRespondToAuthChallenge API call.
+
+---
+
+##### `AdminRevokeUserSession`<sup>Required</sup> <a name="AdminRevokeUserSession" id="@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.AdminRevokeUserSession"></a>
+
+```typescript
+public readonly AdminRevokeUserSession: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the AdminRevokeUserSession API call.
 
 ---
 
@@ -2867,6 +3185,18 @@ IAM actions required for the AssociateSoftwareToken API call.
 
 ---
 
+##### `CancelPointInTimeRecovery`<sup>Required</sup> <a name="CancelPointInTimeRecovery" id="@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.CancelPointInTimeRecovery"></a>
+
+```typescript
+public readonly CancelPointInTimeRecovery: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CancelPointInTimeRecovery API call.
+
+---
+
 ##### `ChangePassword`<sup>Required</sup> <a name="ChangePassword" id="@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.ChangePassword"></a>
 
 ```typescript
@@ -2924,6 +3254,18 @@ public readonly ConfirmSignUp: string[];
 - *Type:* string[]
 
 IAM actions required for the ConfirmSignUp API call.
+
+---
+
+##### `CreateCIMDPolicy`<sup>Required</sup> <a name="CreateCIMDPolicy" id="@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.CreateCIMDPolicy"></a>
+
+```typescript
+public readonly CreateCIMDPolicy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateCIMDPolicy API call.
 
 ---
 
@@ -3044,6 +3386,18 @@ public readonly CreateUserPoolReplica: string[];
 - *Type:* string[]
 
 IAM actions required for the CreateUserPoolReplica API call.
+
+---
+
+##### `DeleteCIMDPolicy`<sup>Required</sup> <a name="DeleteCIMDPolicy" id="@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.DeleteCIMDPolicy"></a>
+
+```typescript
+public readonly DeleteCIMDPolicy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteCIMDPolicy API call.
 
 ---
 
@@ -3203,6 +3557,18 @@ IAM actions required for the DeleteWebAuthnCredential API call.
 
 ---
 
+##### `DescribeCIMDPolicy`<sup>Required</sup> <a name="DescribeCIMDPolicy" id="@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.DescribeCIMDPolicy"></a>
+
+```typescript
+public readonly DescribeCIMDPolicy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeCIMDPolicy API call.
+
+---
+
 ##### `DescribeIdentityProvider`<sup>Required</sup> <a name="DescribeIdentityProvider" id="@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.DescribeIdentityProvider"></a>
 
 ```typescript
@@ -3236,6 +3602,18 @@ public readonly DescribeManagedLoginBrandingByClient: string[];
 - *Type:* string[]
 
 IAM actions required for the DescribeManagedLoginBrandingByClient API call.
+
+---
+
+##### `DescribePointInTimeRecovery`<sup>Required</sup> <a name="DescribePointInTimeRecovery" id="@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.DescribePointInTimeRecovery"></a>
+
+```typescript
+public readonly DescribePointInTimeRecovery: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribePointInTimeRecovery API call.
 
 ---
 
@@ -3383,6 +3761,42 @@ IAM actions required for the InitiateAuth API call.
 
 ---
 
+##### `InitiatePointInTimeRecovery`<sup>Required</sup> <a name="InitiatePointInTimeRecovery" id="@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.InitiatePointInTimeRecovery"></a>
+
+```typescript
+public readonly InitiatePointInTimeRecovery: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the InitiatePointInTimeRecovery API call.
+
+---
+
+##### `ListCIMDPolicies`<sup>Required</sup> <a name="ListCIMDPolicies" id="@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.ListCIMDPolicies"></a>
+
+```typescript
+public readonly ListCIMDPolicies: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListCIMDPolicies API call.
+
+---
+
+##### `ListClientMetadataURLs`<sup>Required</sup> <a name="ListClientMetadataURLs" id="@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.ListClientMetadataURLs"></a>
+
+```typescript
+public readonly ListClientMetadataURLs: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListClientMetadataURLs API call.
+
+---
+
 ##### `ListDevices`<sup>Required</sup> <a name="ListDevices" id="@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.ListDevices"></a>
 
 ```typescript
@@ -3416,6 +3830,18 @@ public readonly ListIdentityProviders: string[];
 - *Type:* string[]
 
 IAM actions required for the ListIdentityProviders API call.
+
+---
+
+##### `ListPointInTimeRecoveries`<sup>Required</sup> <a name="ListPointInTimeRecoveries" id="@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.ListPointInTimeRecoveries"></a>
+
+```typescript
+public readonly ListPointInTimeRecoveries: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListPointInTimeRecoveries API call.
 
 ---
 
@@ -3527,6 +3953,18 @@ IAM actions required for the ListUsers API call.
 
 ---
 
+##### `ListUserSessions`<sup>Required</sup> <a name="ListUserSessions" id="@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.ListUserSessions"></a>
+
+```typescript
+public readonly ListUserSessions: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListUserSessions API call.
+
+---
+
 ##### `ListUsersInGroup`<sup>Required</sup> <a name="ListUsersInGroup" id="@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.ListUsersInGroup"></a>
 
 ```typescript
@@ -3572,6 +4010,18 @@ public readonly opGetCSVHeader: string[];
 - *Type:* string[]
 
 IAM actions required for the GetCSVHeader API call.
+
+---
+
+##### `opGetDerivedToken`<sup>Required</sup> <a name="opGetDerivedToken" id="@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.opGetDerivedToken"></a>
+
+```typescript
+public readonly opGetDerivedToken: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetDerivedToken API call.
 
 ---
 
@@ -3707,6 +4157,18 @@ IAM actions required for the GetUserAuthFactors API call.
 
 ---
 
+##### `opGetUserPoolClientSessionConfiguration`<sup>Required</sup> <a name="opGetUserPoolClientSessionConfiguration" id="@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.opGetUserPoolClientSessionConfiguration"></a>
+
+```typescript
+public readonly opGetUserPoolClientSessionConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetUserPoolClientSessionConfiguration API call.
+
+---
+
 ##### `opGetUserPoolMfaConfig`<sup>Required</sup> <a name="opGetUserPoolMfaConfig" id="@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.opGetUserPoolMfaConfig"></a>
 
 ```typescript
@@ -3716,6 +4178,18 @@ public readonly opGetUserPoolMfaConfig: string[];
 - *Type:* string[]
 
 IAM actions required for the GetUserPoolMfaConfig API call.
+
+---
+
+##### `opGetUserPoolSessionConfiguration`<sup>Required</sup> <a name="opGetUserPoolSessionConfiguration" id="@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.opGetUserPoolSessionConfiguration"></a>
+
+```typescript
+public readonly opGetUserPoolSessionConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetUserPoolSessionConfiguration API call.
 
 ---
 
@@ -3767,6 +4241,18 @@ IAM actions required for the SetUserMFAPreference API call.
 
 ---
 
+##### `opSetUserPoolClientSessionConfiguration`<sup>Required</sup> <a name="opSetUserPoolClientSessionConfiguration" id="@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.opSetUserPoolClientSessionConfiguration"></a>
+
+```typescript
+public readonly opSetUserPoolClientSessionConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the SetUserPoolClientSessionConfiguration API call.
+
+---
+
 ##### `opSetUserPoolMfaConfig`<sup>Required</sup> <a name="opSetUserPoolMfaConfig" id="@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.opSetUserPoolMfaConfig"></a>
 
 ```typescript
@@ -3776,6 +4262,18 @@ public readonly opSetUserPoolMfaConfig: string[];
 - *Type:* string[]
 
 IAM actions required for the SetUserPoolMfaConfig API call.
+
+---
+
+##### `opSetUserPoolSessionConfiguration`<sup>Required</sup> <a name="opSetUserPoolSessionConfiguration" id="@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.opSetUserPoolSessionConfiguration"></a>
+
+```typescript
+public readonly opSetUserPoolSessionConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the SetUserPoolSessionConfiguration API call.
 
 ---
 
@@ -3827,6 +4325,18 @@ IAM actions required for the RevokeToken API call.
 
 ---
 
+##### `RevokeUserSession`<sup>Required</sup> <a name="RevokeUserSession" id="@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.RevokeUserSession"></a>
+
+```typescript
+public readonly RevokeUserSession: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the RevokeUserSession API call.
+
+---
+
 ##### `SignUp`<sup>Required</sup> <a name="SignUp" id="@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.SignUp"></a>
 
 ```typescript
@@ -3836,6 +4346,18 @@ public readonly SignUp: string[];
 - *Type:* string[]
 
 IAM actions required for the SignUp API call.
+
+---
+
+##### `StartPointInTimeRecovery`<sup>Required</sup> <a name="StartPointInTimeRecovery" id="@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.StartPointInTimeRecovery"></a>
+
+```typescript
+public readonly StartPointInTimeRecovery: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StartPointInTimeRecovery API call.
 
 ---
 
@@ -3908,6 +4430,30 @@ public readonly UpdateAuthEventFeedback: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateAuthEventFeedback API call.
+
+---
+
+##### `UpdateCIMDPolicy`<sup>Required</sup> <a name="UpdateCIMDPolicy" id="@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.UpdateCIMDPolicy"></a>
+
+```typescript
+public readonly UpdateCIMDPolicy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateCIMDPolicy API call.
+
+---
+
+##### `UpdateClientMetadataURLState`<sup>Required</sup> <a name="UpdateClientMetadataURLState" id="@cdk_utils/iam.cognito_idp.CognitoIdpOperations.property.UpdateClientMetadataURLState"></a>
+
+```typescript
+public readonly UpdateClientMetadataURLState: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateClientMetadataURLState API call.
 
 ---
 

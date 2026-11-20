@@ -1765,6 +1765,7 @@ new guardduty.GuardDutyActions()
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.ListDetectors">ListDetectors</a></code> | <code>string</code> | [List] guardduty:ListDetectors. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.ListFilters">ListFilters</a></code> | <code>string</code> | [List] guardduty:ListFilters. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.ListFindings">ListFindings</a></code> | <code>string</code> | [List] guardduty:ListFindings. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.ListInvestigationRecords">ListInvestigationRecords</a></code> | <code>string</code> | [Read] guardduty:ListInvestigationRecords. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.ListInvestigations">ListInvestigations</a></code> | <code>string</code> | [List] guardduty:ListInvestigations. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.ListInvitations">ListInvitations</a></code> | <code>string</code> | [List] guardduty:ListInvitations. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyActions.property.ListIPSets">ListIPSets</a></code> | <code>string</code> | [List] guardduty:ListIPSets. |
@@ -2691,6 +2692,18 @@ public readonly ListFindings: string;
 
 ---
 
+##### `ListInvestigationRecords`<sup>Required</sup> <a name="ListInvestigationRecords" id="@cdk_utils/iam.guardduty.GuardDutyActions.property.ListInvestigationRecords"></a>
+
+```typescript
+public readonly ListInvestigationRecords: string;
+```
+
+- *Type:* string
+
+[Read] guardduty:ListInvestigationRecords.
+
+---
+
 ##### `ListInvestigations`<sup>Required</sup> <a name="ListInvestigations" id="@cdk_utils/iam.guardduty.GuardDutyActions.property.ListInvestigations"></a>
 
 ```typescript
@@ -3446,6 +3459,7 @@ new guardduty.GuardDutyOperations()
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.ListDetectors">ListDetectors</a></code> | <code>string[]</code> | IAM actions required for the ListDetectors API call. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.ListFilters">ListFilters</a></code> | <code>string[]</code> | IAM actions required for the ListFilters API call. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.ListFindings">ListFindings</a></code> | <code>string[]</code> | IAM actions required for the ListFindings API call. |
+| <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.ListInvestigationRecords">ListInvestigationRecords</a></code> | <code>string[]</code> | IAM actions required for the ListInvestigationRecords API call. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.ListInvestigations">ListInvestigations</a></code> | <code>string[]</code> | IAM actions required for the ListInvestigations API call. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.ListInvitations">ListInvitations</a></code> | <code>string[]</code> | IAM actions required for the ListInvitations API call. |
 | <code><a href="#@cdk_utils/iam.guardduty.GuardDutyOperations.property.ListIPSets">ListIPSets</a></code> | <code>string[]</code> | IAM actions required for the ListIPSets API call. |
@@ -4043,6 +4057,18 @@ public readonly ListFindings: string[];
 - *Type:* string[]
 
 IAM actions required for the ListFindings API call.
+
+---
+
+##### `ListInvestigationRecords`<sup>Required</sup> <a name="ListInvestigationRecords" id="@cdk_utils/iam.guardduty.GuardDutyOperations.property.ListInvestigationRecords"></a>
+
+```typescript
+public readonly ListInvestigationRecords: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListInvestigationRecords API call.
 
 ---
 

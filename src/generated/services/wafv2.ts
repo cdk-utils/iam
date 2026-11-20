@@ -65,6 +65,10 @@ export class Wafv2Actions {
 		"wafv2:GenerateMobileSdkReleaseUrl";
 	/** [Read] wafv2:GetDecryptedAPIKey */
 	static readonly actionGetDecryptedAPIKey = "wafv2:GetDecryptedAPIKey";
+	/** [Read] wafv2:GetEvent */
+	static readonly actionGetEvent = "wafv2:GetEvent";
+	/** [Read] wafv2:GetEventActor */
+	static readonly actionGetEventActor = "wafv2:GetEventActor";
 	/** [Read] wafv2:GetIPSet */
 	static readonly actionGetIPSet = "wafv2:GetIPSet";
 	/** [Read] wafv2:GetLoggingConfiguration */
@@ -108,6 +112,12 @@ export class Wafv2Actions {
 	/** [List] wafv2:ListAvailableManagedRuleGroups */
 	static readonly ListAvailableManagedRuleGroups =
 		"wafv2:ListAvailableManagedRuleGroups";
+	/** [List] wafv2:ListEventActors */
+	static readonly ListEventActors = "wafv2:ListEventActors";
+	/** [List] wafv2:ListEvents */
+	static readonly ListEvents = "wafv2:ListEvents";
+	/** [List] wafv2:ListEventsByWebACL */
+	static readonly ListEventsByWebACL = "wafv2:ListEventsByWebACL";
 	/** [List] wafv2:ListIPSets */
 	static readonly ListIPSets = "wafv2:ListIPSets";
 	/** [List] wafv2:ListLoggingConfigurations */
@@ -168,6 +178,8 @@ export class Wafv2Actions {
 		Wafv2Actions.DescribeTopContributorsByEvent,
 		Wafv2Actions.GenerateMobileSdkReleaseUrl,
 		Wafv2Actions.actionGetDecryptedAPIKey,
+		Wafv2Actions.actionGetEvent,
+		Wafv2Actions.actionGetEventActor,
 		Wafv2Actions.actionGetIPSet,
 		Wafv2Actions.actionGetLoggingConfiguration,
 		Wafv2Actions.actionGetManagedRuleSet,
@@ -218,6 +230,9 @@ export class Wafv2Actions {
 		Wafv2Actions.ListAPIKeys,
 		Wafv2Actions.ListAvailableManagedRuleGroupVersions,
 		Wafv2Actions.ListAvailableManagedRuleGroups,
+		Wafv2Actions.ListEventActors,
+		Wafv2Actions.ListEvents,
+		Wafv2Actions.ListEventsByWebACL,
 		Wafv2Actions.ListIPSets,
 		Wafv2Actions.ListLoggingConfigurations,
 		Wafv2Actions.ListManagedRuleSets,
@@ -1149,6 +1164,7 @@ export class Wafv2Operations {
 	/** IAM actions required for the CreateWebACL API call. */
 	static readonly CreateWebACL: string[] = [
 		"wafv2:CreateWebACL",
+		"iam:PassRole",
 		"wafv2:TagResource",
 	];
 	/** IAM actions required for the DeleteAPIKey API call. */
@@ -1321,7 +1337,10 @@ export class Wafv2Operations {
 	/** IAM actions required for the UpdateRuleGroup API call. */
 	static readonly UpdateRuleGroup: string[] = ["wafv2:UpdateRuleGroup"];
 	/** IAM actions required for the UpdateWebACL API call. */
-	static readonly UpdateWebACL: string[] = ["wafv2:UpdateWebACL"];
+	static readonly UpdateWebACL: string[] = [
+		"iam:PassRole",
+		"wafv2:UpdateWebACL",
+	];
 }
 
 /**

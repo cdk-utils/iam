@@ -38,6 +38,9 @@ export class AthenaActions {
 	/** [Write] athena:CreatePresignedNotebookUrl */
 	static readonly CreatePresignedNotebookUrl =
 		"athena:CreatePresignedNotebookUrl";
+	/** [Write] athena:CreateSystemTableConfiguration */
+	static readonly CreateSystemTableConfiguration =
+		"athena:CreateSystemTableConfiguration";
 	/** [Write] athena:CreateWorkGroup */
 	static readonly CreateWorkGroup = "athena:CreateWorkGroup";
 	/** [Write] athena:DeleteCapacityReservation */
@@ -51,6 +54,9 @@ export class AthenaActions {
 	static readonly DeleteNotebook = "athena:DeleteNotebook";
 	/** [Write] athena:DeletePreparedStatement */
 	static readonly DeletePreparedStatement = "athena:DeletePreparedStatement";
+	/** [Write] athena:DeleteSystemTableConfiguration */
+	static readonly DeleteSystemTableConfiguration =
+		"athena:DeleteSystemTableConfiguration";
 	/** [Write] athena:DeleteWorkGroup */
 	static readonly DeleteWorkGroup = "athena:DeleteWorkGroup";
 	/** [Write] athena:ExportNotebook */
@@ -109,6 +115,9 @@ export class AthenaActions {
 	static readonly actionGetSessionEndpoint = "athena:GetSessionEndpoint";
 	/** [Read] athena:GetSessionStatus */
 	static readonly actionGetSessionStatus = "athena:GetSessionStatus";
+	/** [Read] athena:GetSystemTableConfiguration */
+	static readonly actionGetSystemTableConfiguration =
+		"athena:GetSystemTableConfiguration";
 	/** [Read] athena:GetTable */
 	static readonly actionGetTable = "athena:GetTable";
 	/** [Read] athena:GetTableMetadata */
@@ -146,6 +155,8 @@ export class AthenaActions {
 	static readonly ListQueryExecutions = "athena:ListQueryExecutions";
 	/** [List] athena:ListSessions */
 	static readonly ListSessions = "athena:ListSessions";
+	/** [List] athena:ListSystemTableStatuses */
+	static readonly ListSystemTableStatuses = "athena:ListSystemTableStatuses";
 	/** [Read] athena:ListTableMetadata */
 	static readonly ListTableMetadata = "athena:ListTableMetadata";
 	/** [Read] athena:ListTagsForResource */
@@ -187,6 +198,9 @@ export class AthenaActions {
 	static readonly UpdateNotebookMetadata = "athena:UpdateNotebookMetadata";
 	/** [Write] athena:UpdatePreparedStatement */
 	static readonly UpdatePreparedStatement = "athena:UpdatePreparedStatement";
+	/** [Write] athena:UpdateSystemTableConfiguration */
+	static readonly UpdateSystemTableConfiguration =
+		"athena:UpdateSystemTableConfiguration";
 	/** [Write] athena:UpdateWorkGroup */
 	static readonly UpdateWorkGroup = "athena:UpdateWorkGroup";
 
@@ -218,6 +232,7 @@ export class AthenaActions {
 		AthenaActions.actionGetResourceDashboard,
 		AthenaActions.actionGetSession,
 		AthenaActions.actionGetSessionStatus,
+		AthenaActions.actionGetSystemTableConfiguration,
 		AthenaActions.actionGetTable,
 		AthenaActions.actionGetTableMetadata,
 		AthenaActions.actionGetTables,
@@ -237,12 +252,14 @@ export class AthenaActions {
 		AthenaActions.CreateNotebook,
 		AthenaActions.CreatePreparedStatement,
 		AthenaActions.CreatePresignedNotebookUrl,
+		AthenaActions.CreateSystemTableConfiguration,
 		AthenaActions.CreateWorkGroup,
 		AthenaActions.DeleteCapacityReservation,
 		AthenaActions.DeleteDataCatalog,
 		AthenaActions.DeleteNamedQuery,
 		AthenaActions.DeleteNotebook,
 		AthenaActions.DeletePreparedStatement,
+		AthenaActions.DeleteSystemTableConfiguration,
 		AthenaActions.DeleteWorkGroup,
 		AthenaActions.ExportNotebook,
 		AthenaActions.actionGetSessionEndpoint,
@@ -261,6 +278,7 @@ export class AthenaActions {
 		AthenaActions.UpdateNotebook,
 		AthenaActions.UpdateNotebookMetadata,
 		AthenaActions.UpdatePreparedStatement,
+		AthenaActions.UpdateSystemTableConfiguration,
 		AthenaActions.UpdateWorkGroup,
 	];
 	/** All list-level actions. */
@@ -276,6 +294,7 @@ export class AthenaActions {
 		AthenaActions.ListNotebookSessions,
 		AthenaActions.ListPreparedStatements,
 		AthenaActions.ListSessions,
+		AthenaActions.ListSystemTableStatuses,
 		AthenaActions.ListWorkGroups,
 	];
 	/** All permission-management-level actions. */
@@ -376,6 +395,34 @@ export interface AthenaSessionArnComponents {
 }
 
 /**
+ * Properties for building a system-table ARN.
+ */
+export interface AthenaSystemTableArnProps {
+	/** The TableName component of the ARN. */
+	readonly tableName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a system-table ARN.
+ */
+export interface AthenaSystemTableArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The TableName component. */
+	readonly tableName: string;
+}
+
+/**
  * Properties for building a workgroup ARN.
  */
 export interface AthenaWorkgroupArnProps {
@@ -409,6 +456,8 @@ const DatacatalogArnRegex =
 	/^arn:(?<partition>[^:]+):athena:(?<region>[^:]*):(?<account>[^:]*):datacatalog\/(?<dataCatalogName>[^:/?]+)$/;
 const SessionArnRegex =
 	/^arn:(?<partition>[^:]+):athena:(?<region>[^:]*):(?<account>[^:]*):workgroup\/(?<workGroupName>[^:/?]+)\/session\/(?<sessionId>[^:/?]+)$/;
+const SystemTableArnRegex =
+	/^arn:(?<partition>[^:]+):athena:(?<region>[^:]*):(?<account>[^:]*):system-table\/(?<tableName>[^:/?]+)$/;
 const WorkgroupArnRegex =
 	/^arn:(?<partition>[^:]+):athena:(?<region>[^:]*):(?<account>[^:]*):workgroup\/(?<workGroupName>[^:/?]+)$/;
 
@@ -513,6 +562,37 @@ export class AthenaResources {
 	}
 
 	/**
+	 * Builds an ARN for the system-table resource.
+	 */
+	static systemTable(props: AthenaSystemTableArnProps): string {
+		return `arn:${props.partition ?? "aws"}:athena:${props.region ?? "*"}:${props.account ?? "*"}:system-table/${props.tableName}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the system-table resource.
+	 */
+	static isValidSystemTableArn(arn: string): boolean {
+		return SystemTableArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a system-table ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseSystemTableArn(arn: string): AthenaSystemTableArnComponents {
+		const match = SystemTableArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid system-table ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			tableName: match.groups!.tableName,
+		};
+	}
+
+	/**
 	 * Builds an ARN for the workgroup resource.
 	 */
 	static workgroup(props: AthenaWorkgroupArnProps): string {
@@ -584,6 +664,11 @@ export class AthenaOperations {
 	static readonly CreatePresignedNotebookUrl: string[] = [
 		"athena:CreatePresignedNotebookUrl",
 	];
+	/** IAM actions required for the CreateSystemTableConfiguration API call. */
+	static readonly CreateSystemTableConfiguration: string[] = [
+		"athena:CreateSystemTableConfiguration",
+		"athena:TagResource",
+	];
 	/** IAM actions required for the CreateWorkGroup API call. */
 	static readonly CreateWorkGroup: string[] = [
 		"athena:CreateWorkGroup",
@@ -603,6 +688,10 @@ export class AthenaOperations {
 	/** IAM actions required for the DeletePreparedStatement API call. */
 	static readonly DeletePreparedStatement: string[] = [
 		"athena:DeletePreparedStatement",
+	];
+	/** IAM actions required for the DeleteSystemTableConfiguration API call. */
+	static readonly DeleteSystemTableConfiguration: string[] = [
+		"athena:DeleteSystemTableConfiguration",
 	];
 	/** IAM actions required for the DeleteWorkGroup API call. */
 	static readonly DeleteWorkGroup: string[] = ["athena:DeleteWorkGroup"];
@@ -662,6 +751,10 @@ export class AthenaOperations {
 	];
 	/** IAM actions required for the GetSessionStatus API call. */
 	static readonly opGetSessionStatus: string[] = ["athena:GetSessionStatus"];
+	/** IAM actions required for the GetSystemTableConfiguration API call. */
+	static readonly opGetSystemTableConfiguration: string[] = [
+		"athena:GetSystemTableConfiguration",
+	];
 	/** IAM actions required for the GetTableMetadata API call. */
 	static readonly opGetTableMetadata: string[] = ["athena:GetTableMetadata"];
 	/** IAM actions required for the GetWorkGroup API call. */
@@ -708,6 +801,10 @@ export class AthenaOperations {
 	];
 	/** IAM actions required for the ListSessions API call. */
 	static readonly ListSessions: string[] = ["athena:ListSessions"];
+	/** IAM actions required for the ListSystemTableStatuses API call. */
+	static readonly ListSystemTableStatuses: string[] = [
+		"athena:ListSystemTableStatuses",
+	];
 	/** IAM actions required for the ListTableMetadata API call. */
 	static readonly ListTableMetadata: string[] = ["athena:ListTableMetadata"];
 	/** IAM actions required for the ListTagsForResource API call. */
@@ -765,6 +862,10 @@ export class AthenaOperations {
 	static readonly UpdatePreparedStatement: string[] = [
 		"athena:UpdatePreparedStatement",
 	];
+	/** IAM actions required for the UpdateSystemTableConfiguration API call. */
+	static readonly UpdateSystemTableConfiguration: string[] = [
+		"athena:UpdateSystemTableConfiguration",
+	];
 	/** IAM actions required for the UpdateWorkGroup API call. */
 	static readonly UpdateWorkGroup: string[] = [
 		"iam:PassRole",
@@ -783,6 +884,11 @@ export class AthenaConditions {
 	];
 	/** Condition keys applicable to the CreateDataCatalog action. */
 	static readonly CreateDataCatalogConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the CreateSystemTableConfiguration action. */
+	static readonly CreateSystemTableConfigurationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];

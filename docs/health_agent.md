@@ -177,6 +177,180 @@ Defaults to "*".
 
 ---
 
+### HealthAgentDatasetArnComponents <a name="HealthAgentDatasetArnComponents" id="@cdk_utils/iam.health_agent.HealthAgentDatasetArnComponents"></a>
+
+Parsed components of a Dataset ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.health_agent.HealthAgentDatasetArnComponents.Initializer"></a>
+
+```typescript
+import { health_agent } from '@cdk_utils/iam'
+
+const healthAgentDatasetArnComponents: health_agent.HealthAgentDatasetArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentDatasetArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentDatasetArnComponents.property.datasetId">datasetId</a></code> | <code>string</code> | The DatasetId component. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentDatasetArnComponents.property.domainId">domainId</a></code> | <code>string</code> | The DomainId component. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentDatasetArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentDatasetArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.health_agent.HealthAgentDatasetArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `datasetId`<sup>Required</sup> <a name="datasetId" id="@cdk_utils/iam.health_agent.HealthAgentDatasetArnComponents.property.datasetId"></a>
+
+```typescript
+public readonly datasetId: string;
+```
+
+- *Type:* string
+
+The DatasetId component.
+
+---
+
+##### `domainId`<sup>Required</sup> <a name="domainId" id="@cdk_utils/iam.health_agent.HealthAgentDatasetArnComponents.property.domainId"></a>
+
+```typescript
+public readonly domainId: string;
+```
+
+- *Type:* string
+
+The DomainId component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.health_agent.HealthAgentDatasetArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.health_agent.HealthAgentDatasetArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### HealthAgentDatasetArnProps <a name="HealthAgentDatasetArnProps" id="@cdk_utils/iam.health_agent.HealthAgentDatasetArnProps"></a>
+
+Properties for building a Dataset ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.health_agent.HealthAgentDatasetArnProps.Initializer"></a>
+
+```typescript
+import { health_agent } from '@cdk_utils/iam'
+
+const healthAgentDatasetArnProps: health_agent.HealthAgentDatasetArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentDatasetArnProps.property.datasetId">datasetId</a></code> | <code>string</code> | The DatasetId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentDatasetArnProps.property.domainId">domainId</a></code> | <code>string</code> | The DomainId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentDatasetArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentDatasetArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentDatasetArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `datasetId`<sup>Required</sup> <a name="datasetId" id="@cdk_utils/iam.health_agent.HealthAgentDatasetArnProps.property.datasetId"></a>
+
+```typescript
+public readonly datasetId: string;
+```
+
+- *Type:* string
+
+The DatasetId component of the ARN.
+
+---
+
+##### `domainId`<sup>Required</sup> <a name="domainId" id="@cdk_utils/iam.health_agent.HealthAgentDatasetArnProps.property.domainId"></a>
+
+```typescript
+public readonly domainId: string;
+```
+
+- *Type:* string
+
+The DomainId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.health_agent.HealthAgentDatasetArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.health_agent.HealthAgentDatasetArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.health_agent.HealthAgentDatasetArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### HealthAgentDomainArnComponents <a name="HealthAgentDomainArnComponents" id="@cdk_utils/iam.health_agent.HealthAgentDomainArnComponents"></a>
 
 Parsed components of a Domain ARN.
@@ -486,6 +660,180 @@ Defaults to "aws".
 ---
 
 ##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.health_agent.HealthAgentIntegrationArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
+### HealthAgentMedicalCodingJobArnComponents <a name="HealthAgentMedicalCodingJobArnComponents" id="@cdk_utils/iam.health_agent.HealthAgentMedicalCodingJobArnComponents"></a>
+
+Parsed components of a MedicalCodingJob ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.health_agent.HealthAgentMedicalCodingJobArnComponents.Initializer"></a>
+
+```typescript
+import { health_agent } from '@cdk_utils/iam'
+
+const healthAgentMedicalCodingJobArnComponents: health_agent.HealthAgentMedicalCodingJobArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentMedicalCodingJobArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentMedicalCodingJobArnComponents.property.domainId">domainId</a></code> | <code>string</code> | The DomainId component. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentMedicalCodingJobArnComponents.property.jobId">jobId</a></code> | <code>string</code> | The JobId component. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentMedicalCodingJobArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentMedicalCodingJobArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.health_agent.HealthAgentMedicalCodingJobArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `domainId`<sup>Required</sup> <a name="domainId" id="@cdk_utils/iam.health_agent.HealthAgentMedicalCodingJobArnComponents.property.domainId"></a>
+
+```typescript
+public readonly domainId: string;
+```
+
+- *Type:* string
+
+The DomainId component.
+
+---
+
+##### `jobId`<sup>Required</sup> <a name="jobId" id="@cdk_utils/iam.health_agent.HealthAgentMedicalCodingJobArnComponents.property.jobId"></a>
+
+```typescript
+public readonly jobId: string;
+```
+
+- *Type:* string
+
+The JobId component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.health_agent.HealthAgentMedicalCodingJobArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.health_agent.HealthAgentMedicalCodingJobArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### HealthAgentMedicalCodingJobArnProps <a name="HealthAgentMedicalCodingJobArnProps" id="@cdk_utils/iam.health_agent.HealthAgentMedicalCodingJobArnProps"></a>
+
+Properties for building a MedicalCodingJob ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.health_agent.HealthAgentMedicalCodingJobArnProps.Initializer"></a>
+
+```typescript
+import { health_agent } from '@cdk_utils/iam'
+
+const healthAgentMedicalCodingJobArnProps: health_agent.HealthAgentMedicalCodingJobArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentMedicalCodingJobArnProps.property.domainId">domainId</a></code> | <code>string</code> | The DomainId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentMedicalCodingJobArnProps.property.jobId">jobId</a></code> | <code>string</code> | The JobId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentMedicalCodingJobArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentMedicalCodingJobArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentMedicalCodingJobArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `domainId`<sup>Required</sup> <a name="domainId" id="@cdk_utils/iam.health_agent.HealthAgentMedicalCodingJobArnProps.property.domainId"></a>
+
+```typescript
+public readonly domainId: string;
+```
+
+- *Type:* string
+
+The DomainId component of the ARN.
+
+---
+
+##### `jobId`<sup>Required</sup> <a name="jobId" id="@cdk_utils/iam.health_agent.HealthAgentMedicalCodingJobArnProps.property.jobId"></a>
+
+```typescript
+public readonly jobId: string;
+```
+
+- *Type:* string
+
+The JobId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.health_agent.HealthAgentMedicalCodingJobArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.health_agent.HealthAgentMedicalCodingJobArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.health_agent.HealthAgentMedicalCodingJobArnProps.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -1049,9 +1397,11 @@ new health_agent.HealthAgentActions()
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.actionGetAgent">actionGetAgent</a></code> | <code>string</code> | [Read] health-agent:GetAgent. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.actionGetCareTeamProvider">actionGetCareTeamProvider</a></code> | <code>string</code> | [Read] health-agent:GetCareTeamProvider. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.actionGetDataset">actionGetDataset</a></code> | <code>string</code> | [Read] health-agent:GetDataset. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.actionGetDomain">actionGetDomain</a></code> | <code>string</code> | [Read] health-agent:GetDomain. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.actionGetDomainAnalytics">actionGetDomainAnalytics</a></code> | <code>string</code> | [Read] health-agent:GetDomainAnalytics. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.actionGetIntegration">actionGetIntegration</a></code> | <code>string</code> | [Read] health-agent:GetIntegration. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.actionGetMedicalCodingJob">actionGetMedicalCodingJob</a></code> | <code>string</code> | [Read] health-agent:GetMedicalCodingJob. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.actionGetMedicalScribeListeningSession">actionGetMedicalScribeListeningSession</a></code> | <code>string</code> | [Read] health-agent:GetMedicalScribeListeningSession. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.actionGetPatient">actionGetPatient</a></code> | <code>string</code> | [Read] health-agent:GetPatient. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.actionGetPatientInsightsJob">actionGetPatientInsightsJob</a></code> | <code>string</code> | [Read] health-agent:GetPatientInsightsJob. |
@@ -1064,24 +1414,29 @@ new health_agent.HealthAgentActions()
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.BatchRefillPatientPharmacyPrescriptions">BatchRefillPatientPharmacyPrescriptions</a></code> | <code>string</code> | [Write] health-agent:BatchRefillPatientPharmacyPrescriptions. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.CancelAppointment">CancelAppointment</a></code> | <code>string</code> | [Write] health-agent:CancelAppointment. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.CreateAgent">CreateAgent</a></code> | <code>string</code> | [Write] health-agent:CreateAgent. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.CreateDataset">CreateDataset</a></code> | <code>string</code> | [Write] health-agent:CreateDataset. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.CreateDomain">CreateDomain</a></code> | <code>string</code> | [Write] health-agent:CreateDomain. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.CreateIntegration">CreateIntegration</a></code> | <code>string</code> | [Write] health-agent:CreateIntegration. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.CreateSession">CreateSession</a></code> | <code>string</code> | [Write] health-agent:CreateSession. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.CreateSubscription">CreateSubscription</a></code> | <code>string</code> | [Write] health-agent:CreateSubscription. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.DeactivateSubscription">DeactivateSubscription</a></code> | <code>string</code> | [Write] health-agent:DeactivateSubscription. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.DeleteAgent">DeleteAgent</a></code> | <code>string</code> | [Write] health-agent:DeleteAgent. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.DeleteDataset">DeleteDataset</a></code> | <code>string</code> | [Write] health-agent:DeleteDataset. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.DeleteDomain">DeleteDomain</a></code> | <code>string</code> | [Write] health-agent:DeleteDomain. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.DeleteIntegration">DeleteIntegration</a></code> | <code>string</code> | [Write] health-agent:DeleteIntegration. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.InvokeAgent">InvokeAgent</a></code> | <code>string</code> | [Write] health-agent:InvokeAgent. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.ListAgents">ListAgents</a></code> | <code>string</code> | [List] health-agent:ListAgents. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.ListAppointmentSlots">ListAppointmentSlots</a></code> | <code>string</code> | [Read] health-agent:ListAppointmentSlots. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.ListDatasets">ListDatasets</a></code> | <code>string</code> | [List] health-agent:ListDatasets. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.ListDomains">ListDomains</a></code> | <code>string</code> | [List] health-agent:ListDomains. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.ListIntegrations">ListIntegrations</a></code> | <code>string</code> | [List] health-agent:ListIntegrations. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.ListPatientAppointments">ListPatientAppointments</a></code> | <code>string</code> | [Read] health-agent:ListPatientAppointments. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.ListPatientInsuranceCoverages">ListPatientInsuranceCoverages</a></code> | <code>string</code> | [Read] health-agent:ListPatientInsuranceCoverages. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.ListPatientMedications">ListPatientMedications</a></code> | <code>string</code> | [Read] health-agent:ListPatientMedications. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.ListPatientPharmacyPrescriptions">ListPatientPharmacyPrescriptions</a></code> | <code>string</code> | [Read] health-agent:ListPatientPharmacyPrescriptions. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.ListProviders">ListProviders</a></code> | <code>string</code> | [Read] health-agent:ListProviders. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.ListSessionRecords">ListSessionRecords</a></code> | <code>string</code> | [List] health-agent:ListSessionRecords. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.ListSubscriptions">ListSubscriptions</a></code> | <code>string</code> | [List] health-agent:ListSubscriptions. |
@@ -1092,8 +1447,10 @@ new health_agent.HealthAgentActions()
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.ResetPassword">ResetPassword</a></code> | <code>string</code> | [Write] health-agent:ResetPassword. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.ScheduleAppointment">ScheduleAppointment</a></code> | <code>string</code> | [Write] health-agent:ScheduleAppointment. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.StartMedicalCodingJob">StartMedicalCodingJob</a></code> | <code>string</code> | [Write] health-agent:StartMedicalCodingJob. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.StartMedicalScribeListeningSession">StartMedicalScribeListeningSession</a></code> | <code>string</code> | [Write] health-agent:StartMedicalScribeListeningSession. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.StartPatientInsightsJob">StartPatientInsightsJob</a></code> | <code>string</code> | [Write] health-agent:StartPatientInsightsJob. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.SubmitFeedback">SubmitFeedback</a></code> | <code>string</code> | [Write] health-agent:SubmitFeedback. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.SubmitMedicationRenewal">SubmitMedicationRenewal</a></code> | <code>string</code> | [Write] health-agent:SubmitMedicationRenewal. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] health-agent:TagResource. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] health-agent:UntagResource. |
@@ -1124,6 +1481,18 @@ public readonly actionGetCareTeamProvider: string;
 - *Type:* string
 
 [Read] health-agent:GetCareTeamProvider.
+
+---
+
+##### `actionGetDataset`<sup>Required</sup> <a name="actionGetDataset" id="@cdk_utils/iam.health_agent.HealthAgentActions.property.actionGetDataset"></a>
+
+```typescript
+public readonly actionGetDataset: string;
+```
+
+- *Type:* string
+
+[Read] health-agent:GetDataset.
 
 ---
 
@@ -1160,6 +1529,18 @@ public readonly actionGetIntegration: string;
 - *Type:* string
 
 [Read] health-agent:GetIntegration.
+
+---
+
+##### `actionGetMedicalCodingJob`<sup>Required</sup> <a name="actionGetMedicalCodingJob" id="@cdk_utils/iam.health_agent.HealthAgentActions.property.actionGetMedicalCodingJob"></a>
+
+```typescript
+public readonly actionGetMedicalCodingJob: string;
+```
+
+- *Type:* string
+
+[Read] health-agent:GetMedicalCodingJob.
 
 ---
 
@@ -1307,6 +1688,18 @@ All write-level actions.
 
 ---
 
+##### `BatchRefillPatientPharmacyPrescriptions`<sup>Required</sup> <a name="BatchRefillPatientPharmacyPrescriptions" id="@cdk_utils/iam.health_agent.HealthAgentActions.property.BatchRefillPatientPharmacyPrescriptions"></a>
+
+```typescript
+public readonly BatchRefillPatientPharmacyPrescriptions: string;
+```
+
+- *Type:* string
+
+[Write] health-agent:BatchRefillPatientPharmacyPrescriptions.
+
+---
+
 ##### `CancelAppointment`<sup>Required</sup> <a name="CancelAppointment" id="@cdk_utils/iam.health_agent.HealthAgentActions.property.CancelAppointment"></a>
 
 ```typescript
@@ -1328,6 +1721,18 @@ public readonly CreateAgent: string;
 - *Type:* string
 
 [Write] health-agent:CreateAgent.
+
+---
+
+##### `CreateDataset`<sup>Required</sup> <a name="CreateDataset" id="@cdk_utils/iam.health_agent.HealthAgentActions.property.CreateDataset"></a>
+
+```typescript
+public readonly CreateDataset: string;
+```
+
+- *Type:* string
+
+[Write] health-agent:CreateDataset.
 
 ---
 
@@ -1403,6 +1808,18 @@ public readonly DeleteAgent: string;
 
 ---
 
+##### `DeleteDataset`<sup>Required</sup> <a name="DeleteDataset" id="@cdk_utils/iam.health_agent.HealthAgentActions.property.DeleteDataset"></a>
+
+```typescript
+public readonly DeleteDataset: string;
+```
+
+- *Type:* string
+
+[Write] health-agent:DeleteDataset.
+
+---
+
 ##### `DeleteDomain`<sup>Required</sup> <a name="DeleteDomain" id="@cdk_utils/iam.health_agent.HealthAgentActions.property.DeleteDomain"></a>
 
 ```typescript
@@ -1463,6 +1880,18 @@ public readonly ListAppointmentSlots: string;
 
 ---
 
+##### `ListDatasets`<sup>Required</sup> <a name="ListDatasets" id="@cdk_utils/iam.health_agent.HealthAgentActions.property.ListDatasets"></a>
+
+```typescript
+public readonly ListDatasets: string;
+```
+
+- *Type:* string
+
+[List] health-agent:ListDatasets.
+
+---
+
 ##### `ListDomains`<sup>Required</sup> <a name="ListDomains" id="@cdk_utils/iam.health_agent.HealthAgentActions.property.ListDomains"></a>
 
 ```typescript
@@ -1520,6 +1949,18 @@ public readonly ListPatientMedications: string;
 - *Type:* string
 
 [Read] health-agent:ListPatientMedications.
+
+---
+
+##### `ListPatientPharmacyPrescriptions`<sup>Required</sup> <a name="ListPatientPharmacyPrescriptions" id="@cdk_utils/iam.health_agent.HealthAgentActions.property.ListPatientPharmacyPrescriptions"></a>
+
+```typescript
+public readonly ListPatientPharmacyPrescriptions: string;
+```
+
+- *Type:* string
+
+[Read] health-agent:ListPatientPharmacyPrescriptions.
 
 ---
 
@@ -1643,6 +2084,18 @@ The IAM service prefix.
 
 ---
 
+##### `StartMedicalCodingJob`<sup>Required</sup> <a name="StartMedicalCodingJob" id="@cdk_utils/iam.health_agent.HealthAgentActions.property.StartMedicalCodingJob"></a>
+
+```typescript
+public readonly StartMedicalCodingJob: string;
+```
+
+- *Type:* string
+
+[Write] health-agent:StartMedicalCodingJob.
+
+---
+
 ##### `StartMedicalScribeListeningSession`<sup>Required</sup> <a name="StartMedicalScribeListeningSession" id="@cdk_utils/iam.health_agent.HealthAgentActions.property.StartMedicalScribeListeningSession"></a>
 
 ```typescript
@@ -1664,6 +2117,18 @@ public readonly StartPatientInsightsJob: string;
 - *Type:* string
 
 [Write] health-agent:StartPatientInsightsJob.
+
+---
+
+##### `SubmitFeedback`<sup>Required</sup> <a name="SubmitFeedback" id="@cdk_utils/iam.health_agent.HealthAgentActions.property.SubmitFeedback"></a>
+
+```typescript
+public readonly SubmitFeedback: string;
+```
+
+- *Type:* string
+
+[Write] health-agent:SubmitFeedback.
 
 ---
 
@@ -1926,19 +2391,26 @@ new health_agent.HealthAgentOperations()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentOperations.property.ActivateSubscription">ActivateSubscription</a></code> | <code>string[]</code> | IAM actions required for the ActivateSubscription API call. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentOperations.property.CreateDataset">CreateDataset</a></code> | <code>string[]</code> | IAM actions required for the CreateDataset API call. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentOperations.property.CreateDomain">CreateDomain</a></code> | <code>string[]</code> | IAM actions required for the CreateDomain API call. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentOperations.property.CreateSubscription">CreateSubscription</a></code> | <code>string[]</code> | IAM actions required for the CreateSubscription API call. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentOperations.property.DeactivateSubscription">DeactivateSubscription</a></code> | <code>string[]</code> | IAM actions required for the DeactivateSubscription API call. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentOperations.property.DeleteDataset">DeleteDataset</a></code> | <code>string[]</code> | IAM actions required for the DeleteDataset API call. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentOperations.property.DeleteDomain">DeleteDomain</a></code> | <code>string[]</code> | IAM actions required for the DeleteDomain API call. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentOperations.property.ListDatasets">ListDatasets</a></code> | <code>string[]</code> | IAM actions required for the ListDatasets API call. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentOperations.property.ListDomains">ListDomains</a></code> | <code>string[]</code> | IAM actions required for the ListDomains API call. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentOperations.property.ListSubscriptions">ListSubscriptions</a></code> | <code>string[]</code> | IAM actions required for the ListSubscriptions API call. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentOperations.property.opGetDataset">opGetDataset</a></code> | <code>string[]</code> | IAM actions required for the GetDataset API call. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentOperations.property.opGetDomain">opGetDomain</a></code> | <code>string[]</code> | IAM actions required for the GetDomain API call. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentOperations.property.opGetMedicalCodingJob">opGetMedicalCodingJob</a></code> | <code>string[]</code> | IAM actions required for the GetMedicalCodingJob API call. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentOperations.property.opGetMedicalScribeListeningSession">opGetMedicalScribeListeningSession</a></code> | <code>string[]</code> | IAM actions required for the GetMedicalScribeListeningSession API call. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentOperations.property.opGetPatientInsightsJob">opGetPatientInsightsJob</a></code> | <code>string[]</code> | IAM actions required for the GetPatientInsightsJob API call. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentOperations.property.opGetSubscription">opGetSubscription</a></code> | <code>string[]</code> | IAM actions required for the GetSubscription API call. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentOperations.property.StartMedicalCodingJob">StartMedicalCodingJob</a></code> | <code>string[]</code> | IAM actions required for the StartMedicalCodingJob API call. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentOperations.property.StartMedicalScribeListeningSession">StartMedicalScribeListeningSession</a></code> | <code>string[]</code> | IAM actions required for the StartMedicalScribeListeningSession API call. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentOperations.property.StartPatientInsightsJob">StartPatientInsightsJob</a></code> | <code>string[]</code> | IAM actions required for the StartPatientInsightsJob API call. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentOperations.property.SubmitFeedback">SubmitFeedback</a></code> | <code>string[]</code> | IAM actions required for the SubmitFeedback API call. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 
@@ -1953,6 +2425,18 @@ public readonly ActivateSubscription: string[];
 - *Type:* string[]
 
 IAM actions required for the ActivateSubscription API call.
+
+---
+
+##### `CreateDataset`<sup>Required</sup> <a name="CreateDataset" id="@cdk_utils/iam.health_agent.HealthAgentOperations.property.CreateDataset"></a>
+
+```typescript
+public readonly CreateDataset: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateDataset API call.
 
 ---
 
@@ -1992,6 +2476,18 @@ IAM actions required for the DeactivateSubscription API call.
 
 ---
 
+##### `DeleteDataset`<sup>Required</sup> <a name="DeleteDataset" id="@cdk_utils/iam.health_agent.HealthAgentOperations.property.DeleteDataset"></a>
+
+```typescript
+public readonly DeleteDataset: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteDataset API call.
+
+---
+
 ##### `DeleteDomain`<sup>Required</sup> <a name="DeleteDomain" id="@cdk_utils/iam.health_agent.HealthAgentOperations.property.DeleteDomain"></a>
 
 ```typescript
@@ -2001,6 +2497,18 @@ public readonly DeleteDomain: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteDomain API call.
+
+---
+
+##### `ListDatasets`<sup>Required</sup> <a name="ListDatasets" id="@cdk_utils/iam.health_agent.HealthAgentOperations.property.ListDatasets"></a>
+
+```typescript
+public readonly ListDatasets: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListDatasets API call.
 
 ---
 
@@ -2040,6 +2548,18 @@ IAM actions required for the ListTagsForResource API call.
 
 ---
 
+##### `opGetDataset`<sup>Required</sup> <a name="opGetDataset" id="@cdk_utils/iam.health_agent.HealthAgentOperations.property.opGetDataset"></a>
+
+```typescript
+public readonly opGetDataset: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetDataset API call.
+
+---
+
 ##### `opGetDomain`<sup>Required</sup> <a name="opGetDomain" id="@cdk_utils/iam.health_agent.HealthAgentOperations.property.opGetDomain"></a>
 
 ```typescript
@@ -2049,6 +2569,18 @@ public readonly opGetDomain: string[];
 - *Type:* string[]
 
 IAM actions required for the GetDomain API call.
+
+---
+
+##### `opGetMedicalCodingJob`<sup>Required</sup> <a name="opGetMedicalCodingJob" id="@cdk_utils/iam.health_agent.HealthAgentOperations.property.opGetMedicalCodingJob"></a>
+
+```typescript
+public readonly opGetMedicalCodingJob: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetMedicalCodingJob API call.
 
 ---
 
@@ -2088,6 +2620,18 @@ IAM actions required for the GetSubscription API call.
 
 ---
 
+##### `StartMedicalCodingJob`<sup>Required</sup> <a name="StartMedicalCodingJob" id="@cdk_utils/iam.health_agent.HealthAgentOperations.property.StartMedicalCodingJob"></a>
+
+```typescript
+public readonly StartMedicalCodingJob: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StartMedicalCodingJob API call.
+
+---
+
 ##### `StartMedicalScribeListeningSession`<sup>Required</sup> <a name="StartMedicalScribeListeningSession" id="@cdk_utils/iam.health_agent.HealthAgentOperations.property.StartMedicalScribeListeningSession"></a>
 
 ```typescript
@@ -2109,6 +2653,18 @@ public readonly StartPatientInsightsJob: string[];
 - *Type:* string[]
 
 IAM actions required for the StartPatientInsightsJob API call.
+
+---
+
+##### `SubmitFeedback`<sup>Required</sup> <a name="SubmitFeedback" id="@cdk_utils/iam.health_agent.HealthAgentOperations.property.SubmitFeedback"></a>
+
+```typescript
+public readonly SubmitFeedback: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the SubmitFeedback API call.
 
 ---
 
@@ -2159,17 +2715,23 @@ new health_agent.HealthAgentResources()
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentResources.agent">agent</a></code> | Builds an ARN for the Agent resource. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentResources.dataset">dataset</a></code> | Builds an ARN for the Dataset resource. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentResources.domain">domain</a></code> | Builds an ARN for the Domain resource. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentResources.integration">integration</a></code> | Builds an ARN for the Integration resource. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentResources.isValidAgentArn">isValidAgentArn</a></code> | Validates whether a string is a valid ARN for the Agent resource. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentResources.isValidDatasetArn">isValidDatasetArn</a></code> | Validates whether a string is a valid ARN for the Dataset resource. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentResources.isValidDomainArn">isValidDomainArn</a></code> | Validates whether a string is a valid ARN for the Domain resource. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentResources.isValidIntegrationArn">isValidIntegrationArn</a></code> | Validates whether a string is a valid ARN for the Integration resource. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentResources.isValidMedicalCodingJobArn">isValidMedicalCodingJobArn</a></code> | Validates whether a string is a valid ARN for the MedicalCodingJob resource. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentResources.isValidPatientInsightsJobArn">isValidPatientInsightsJobArn</a></code> | Validates whether a string is a valid ARN for the PatientInsightsJob resource. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentResources.isValidSessionArn">isValidSessionArn</a></code> | Validates whether a string is a valid ARN for the Session resource. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentResources.isValidSubscriptionArn">isValidSubscriptionArn</a></code> | Validates whether a string is a valid ARN for the Subscription resource. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentResources.medicalCodingJob">medicalCodingJob</a></code> | Builds an ARN for the MedicalCodingJob resource. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentResources.parseAgentArn">parseAgentArn</a></code> | Parses a Agent ARN into its components. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentResources.parseDatasetArn">parseDatasetArn</a></code> | Parses a Dataset ARN into its components. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentResources.parseDomainArn">parseDomainArn</a></code> | Parses a Domain ARN into its components. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentResources.parseIntegrationArn">parseIntegrationArn</a></code> | Parses a Integration ARN into its components. |
+| <code><a href="#@cdk_utils/iam.health_agent.HealthAgentResources.parseMedicalCodingJobArn">parseMedicalCodingJobArn</a></code> | Parses a MedicalCodingJob ARN into its components. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentResources.parsePatientInsightsJobArn">parsePatientInsightsJobArn</a></code> | Parses a PatientInsightsJob ARN into its components. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentResources.parseSessionArn">parseSessionArn</a></code> | Parses a Session ARN into its components. |
 | <code><a href="#@cdk_utils/iam.health_agent.HealthAgentResources.parseSubscriptionArn">parseSubscriptionArn</a></code> | Parses a Subscription ARN into its components. |
@@ -2192,6 +2754,22 @@ Builds an ARN for the Agent resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.health_agent.HealthAgentResources.agent.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.health_agent.HealthAgentAgentArnProps">HealthAgentAgentArnProps</a>
+
+---
+
+##### `dataset` <a name="dataset" id="@cdk_utils/iam.health_agent.HealthAgentResources.dataset"></a>
+
+```typescript
+import { health_agent } from '@cdk_utils/iam'
+
+health_agent.HealthAgentResources.dataset(props: HealthAgentDatasetArnProps)
+```
+
+Builds an ARN for the Dataset resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.health_agent.HealthAgentResources.dataset.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.health_agent.HealthAgentDatasetArnProps">HealthAgentDatasetArnProps</a>
 
 ---
 
@@ -2243,6 +2821,22 @@ Validates whether a string is a valid ARN for the Agent resource.
 
 ---
 
+##### `isValidDatasetArn` <a name="isValidDatasetArn" id="@cdk_utils/iam.health_agent.HealthAgentResources.isValidDatasetArn"></a>
+
+```typescript
+import { health_agent } from '@cdk_utils/iam'
+
+health_agent.HealthAgentResources.isValidDatasetArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the Dataset resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.health_agent.HealthAgentResources.isValidDatasetArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `isValidDomainArn` <a name="isValidDomainArn" id="@cdk_utils/iam.health_agent.HealthAgentResources.isValidDomainArn"></a>
 
 ```typescript
@@ -2270,6 +2864,22 @@ health_agent.HealthAgentResources.isValidIntegrationArn(arn: string)
 Validates whether a string is a valid ARN for the Integration resource.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.health_agent.HealthAgentResources.isValidIntegrationArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidMedicalCodingJobArn` <a name="isValidMedicalCodingJobArn" id="@cdk_utils/iam.health_agent.HealthAgentResources.isValidMedicalCodingJobArn"></a>
+
+```typescript
+import { health_agent } from '@cdk_utils/iam'
+
+health_agent.HealthAgentResources.isValidMedicalCodingJobArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the MedicalCodingJob resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.health_agent.HealthAgentResources.isValidMedicalCodingJobArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -2323,6 +2933,22 @@ Validates whether a string is a valid ARN for the Subscription resource.
 
 ---
 
+##### `medicalCodingJob` <a name="medicalCodingJob" id="@cdk_utils/iam.health_agent.HealthAgentResources.medicalCodingJob"></a>
+
+```typescript
+import { health_agent } from '@cdk_utils/iam'
+
+health_agent.HealthAgentResources.medicalCodingJob(props: HealthAgentMedicalCodingJobArnProps)
+```
+
+Builds an ARN for the MedicalCodingJob resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.health_agent.HealthAgentResources.medicalCodingJob.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.health_agent.HealthAgentMedicalCodingJobArnProps">HealthAgentMedicalCodingJobArnProps</a>
+
+---
+
 ##### `parseAgentArn` <a name="parseAgentArn" id="@cdk_utils/iam.health_agent.HealthAgentResources.parseAgentArn"></a>
 
 ```typescript
@@ -2334,6 +2960,22 @@ health_agent.HealthAgentResources.parseAgentArn(arn: string)
 Parses a Agent ARN into its components.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.health_agent.HealthAgentResources.parseAgentArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseDatasetArn` <a name="parseDatasetArn" id="@cdk_utils/iam.health_agent.HealthAgentResources.parseDatasetArn"></a>
+
+```typescript
+import { health_agent } from '@cdk_utils/iam'
+
+health_agent.HealthAgentResources.parseDatasetArn(arn: string)
+```
+
+Parses a Dataset ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.health_agent.HealthAgentResources.parseDatasetArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -2366,6 +3008,22 @@ health_agent.HealthAgentResources.parseIntegrationArn(arn: string)
 Parses a Integration ARN into its components.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.health_agent.HealthAgentResources.parseIntegrationArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseMedicalCodingJobArn` <a name="parseMedicalCodingJobArn" id="@cdk_utils/iam.health_agent.HealthAgentResources.parseMedicalCodingJobArn"></a>
+
+```typescript
+import { health_agent } from '@cdk_utils/iam'
+
+health_agent.HealthAgentResources.parseMedicalCodingJobArn(arn: string)
+```
+
+Parses a MedicalCodingJob ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.health_agent.HealthAgentResources.parseMedicalCodingJobArn.parameter.arn"></a>
 
 - *Type:* string
 

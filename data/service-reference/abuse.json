@@ -1,0 +1,105 @@
+{
+  "Name": "abuse",
+  "ServiceName": "Abuse Signal API",
+  "Actions": [
+    {
+      "Name": "CreateAbuseReport",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": true,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAbuseReportStatus",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": true,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListAbuseReportStatuses",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "CreateAbuseReport",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAbuseReport",
+          "Service": "abuse"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "abuse-signal",
+          "Method": "create_abuse_report",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAbuseReportStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAbuseReportStatus",
+          "Service": "abuse"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "abuse-signal",
+          "Method": "get_abuse_report_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAbuseReportStatuses",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAbuseReportStatuses",
+          "Service": "abuse"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "abuse-signal",
+          "Method": "list_abuse_report_statuses",
+          "Package": "Boto3"
+        }
+      ]
+    }
+  ],
+  "Version": "v1.5"
+}

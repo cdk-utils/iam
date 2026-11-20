@@ -311,6 +311,22 @@
       }
     },
     {
+      "Name": "GetUsageLinesEstimatedCost",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GetWorkloadEstimate",
       "Annotations": {
         "Properties": {
@@ -1074,6 +1090,22 @@
       ]
     },
     {
+      "Name": "GetUsageLinesEstimatedCost",
+      "AuthorizedActions": [
+        {
+          "Name": "GetUsageLinesEstimatedCost",
+          "Service": "bcm-pricing-calculator"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bcm-pricing-calculator",
+          "Method": "get_usage_lines_estimated_cost",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetWorkloadEstimate",
       "AuthorizedActions": [
         {
@@ -1367,6 +1399,9 @@
       "Name": "bill-estimate",
       "ARNFormats": [
         "arn:${Partition}:bcm-pricing-calculator::${Account}:bill-estimate/${BillEstimateId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
       ]
     },
     {

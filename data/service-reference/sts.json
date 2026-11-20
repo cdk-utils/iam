@@ -19,6 +19,8 @@
         "saml:sub",
         "saml:sub_type",
         "sts:ExternalId",
+        "sts:RequestContext/${ContextKey}",
+        "sts:RequestContextProviders",
         "sts:RoleSessionName",
         "sts:SourceIdentity",
         "sts:TransitiveTagKeys",
@@ -81,6 +83,7 @@
         "saml:surname",
         "saml:uid",
         "saml:x500UniqueIdentifier",
+        "sts:RequestContextProviders",
         "sts:RoleSessionName",
         "sts:SourceIdentity",
         "sts:TransitiveTagKeys"
@@ -159,6 +162,7 @@
         "graph.facebook.com:id",
         "idcs-${OciUniqueIdentifier}.identity.oraclecloud.com:rpst_id",
         "oidc.circleci.com/org/${OrgId}:oidc.circleci.com/project-id",
+        "sts:RequestContextProviders",
         "sts:RoleAuthorizedByIdp",
         "sts:RoleSessionName",
         "sts:SourceIdentity",
@@ -328,6 +332,25 @@
       }
     },
     {
+      "Name": "GetScopedCredentials",
+      "ActionConditionKeys": [
+        "sts:DurationSeconds"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GetServiceBearerToken",
       "ActionConditionKeys": [
         "sts:AWSServiceName",
@@ -369,7 +392,9 @@
         "aws:TagKeys",
         "sts:DurationSeconds",
         "sts:IdentityTokenAudience",
-        "sts:SigningAlgorithm"
+        "sts:IdentityTokenScope",
+        "sts:SigningAlgorithm",
+        "sts:SubjectMode"
       ],
       "Annotations": {
         "Properties": {
@@ -416,6 +441,8 @@
     {
       "Name": "SetSourceIdentity",
       "ActionConditionKeys": [
+        "sts:RequestContext/${ContextKey}",
+        "sts:RequestContextProviders",
         "sts:SourceIdentity"
       ],
       "Annotations": {
@@ -432,6 +459,31 @@
           "Name": "role"
         }
       ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SetWebIdentityTokenScope",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "sts:DurationSeconds",
+        "sts:IdentityTokenAudience",
+        "sts:IdentityTokenScope",
+        "sts:SigningAlgorithm",
+        "sts:SubjectMode"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -463,6 +515,8 @@
         "aws:RequestTag/${TagKey}",
         "aws:TagKeys",
         "saml:aud",
+        "sts:RequestContext/${ContextKey}",
+        "sts:RequestContextProviders",
         "sts:TransitiveTagKeys"
       ],
       "Annotations": {
@@ -1033,6 +1087,12 @@
       ]
     },
     {
+      "Name": "sts:IdentityTokenScope",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
+    {
       "Name": "sts:RequestContext/${ContextKey}",
       "Types": [
         "String"
@@ -1064,6 +1124,12 @@
     },
     {
       "Name": "sts:SourceIdentity",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "sts:SubjectMode",
       "Types": [
         "String"
       ]
@@ -1423,6 +1489,22 @@
       ]
     },
     {
+      "Name": "GetScopedCredentials",
+      "AuthorizedActions": [
+        {
+          "Name": "GetScopedCredentials",
+          "Service": "sts"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sts",
+          "Method": "get_scoped_credentials",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetSessionToken",
       "AuthorizedActions": [
         {
@@ -1443,6 +1525,10 @@
       "AuthorizedActions": [
         {
           "Name": "GetWebIdentityToken",
+          "Service": "sts"
+        },
+        {
+          "Name": "SetWebIdentityTokenScope",
           "Service": "sts"
         },
         {

@@ -17,6 +17,8 @@ export class KafkaActions {
 	/** [Write] kafka:BatchDisassociateScramSecret */
 	static readonly BatchDisassociateScramSecret =
 		"kafka:BatchDisassociateScramSecret";
+	/** [Write] kafka:CreateAssessment */
+	static readonly CreateAssessment = "kafka:CreateAssessment";
 	/** [Write] kafka:CreateChannel */
 	static readonly CreateChannel = "kafka:CreateChannel";
 	/** [Write] kafka:CreateCluster */
@@ -31,6 +33,8 @@ export class KafkaActions {
 	static readonly CreateTopic = "kafka:CreateTopic";
 	/** [Write] kafka:CreateVpcConnection */
 	static readonly CreateVpcConnection = "kafka:CreateVpcConnection";
+	/** [Write] kafka:DeleteAssessment */
+	static readonly DeleteAssessment = "kafka:DeleteAssessment";
 	/** [Write] kafka:DeleteChannel */
 	static readonly DeleteChannel = "kafka:DeleteChannel";
 	/** [Write] kafka:DeleteCluster */
@@ -45,6 +49,8 @@ export class KafkaActions {
 	static readonly DeleteTopic = "kafka:DeleteTopic";
 	/** [Write] kafka:DeleteVpcConnection */
 	static readonly DeleteVpcConnection = "kafka:DeleteVpcConnection";
+	/** [Read] kafka:DescribeAssessment */
+	static readonly DescribeAssessment = "kafka:DescribeAssessment";
 	/** [Read] kafka:DescribeChannel */
 	static readonly DescribeChannel = "kafka:DescribeChannel";
 	/** [Read] kafka:DescribeCluster */
@@ -67,6 +73,8 @@ export class KafkaActions {
 	static readonly DescribeTopic = "kafka:DescribeTopic";
 	/** [Read] kafka:DescribeTopicPartitions */
 	static readonly DescribeTopicPartitions = "kafka:DescribeTopicPartitions";
+	/** [Read] kafka:DescribeTopicReassignment */
+	static readonly DescribeTopicReassignment = "kafka:DescribeTopicReassignment";
 	/** [Read] kafka:DescribeVpcConnection */
 	static readonly DescribeVpcConnection = "kafka:DescribeVpcConnection";
 	/** [Read] kafka:GetBootstrapBrokers */
@@ -76,6 +84,10 @@ export class KafkaActions {
 	/** [List] kafka:GetCompatibleKafkaVersions */
 	static readonly actionGetCompatibleKafkaVersions =
 		"kafka:GetCompatibleKafkaVersions";
+	/** [List] kafka:ListAssessmentFindings */
+	static readonly ListAssessmentFindings = "kafka:ListAssessmentFindings";
+	/** [List] kafka:ListAssessments */
+	static readonly ListAssessments = "kafka:ListAssessments";
 	/** [List] kafka:ListChannels */
 	static readonly ListChannels = "kafka:ListChannels";
 	/** [List] kafka:ListClientVpcConnections */
@@ -103,6 +115,8 @@ export class KafkaActions {
 	static readonly ListScramSecrets = "kafka:ListScramSecrets";
 	/** [Read] kafka:ListTagsForResource */
 	static readonly ListTagsForResource = "kafka:ListTagsForResource";
+	/** [List] kafka:ListTopicReassignments */
+	static readonly ListTopicReassignments = "kafka:ListTopicReassignments";
 	/** [List] kafka:ListTopics */
 	static readonly ListTopics = "kafka:ListTopics";
 	/** [List] kafka:ListVpcConnections */
@@ -113,6 +127,10 @@ export class KafkaActions {
 	static readonly RebootBroker = "kafka:RebootBroker";
 	/** [Write] kafka:RejectClientVpcConnection */
 	static readonly RejectClientVpcConnection = "kafka:RejectClientVpcConnection";
+	/** [Write] kafka:StartTopicReassignment */
+	static readonly StartTopicReassignment = "kafka:StartTopicReassignment";
+	/** [Write] kafka:StopTopicReassignment */
+	static readonly StopTopicReassignment = "kafka:StopTopicReassignment";
 	/** [Tagging] kafka:TagResource */
 	static readonly TagResource = "kafka:TagResource";
 	/** [Tagging] kafka:UntagResource */
@@ -149,6 +167,7 @@ export class KafkaActions {
 
 	/** All read-level actions. */
 	static readonly AllReadActions: string[] = [
+		KafkaActions.DescribeAssessment,
 		KafkaActions.DescribeChannel,
 		KafkaActions.DescribeCluster,
 		KafkaActions.DescribeClusterOperation,
@@ -159,6 +178,7 @@ export class KafkaActions {
 		KafkaActions.DescribeReplicator,
 		KafkaActions.DescribeTopic,
 		KafkaActions.DescribeTopicPartitions,
+		KafkaActions.DescribeTopicReassignment,
 		KafkaActions.DescribeVpcConnection,
 		KafkaActions.actionGetBootstrapBrokers,
 		KafkaActions.actionGetClusterPolicy,
@@ -168,6 +188,7 @@ export class KafkaActions {
 	static readonly AllWriteActions: string[] = [
 		KafkaActions.BatchAssociateScramSecret,
 		KafkaActions.BatchDisassociateScramSecret,
+		KafkaActions.CreateAssessment,
 		KafkaActions.CreateChannel,
 		KafkaActions.CreateCluster,
 		KafkaActions.CreateClusterV2,
@@ -175,6 +196,7 @@ export class KafkaActions {
 		KafkaActions.CreateReplicator,
 		KafkaActions.CreateTopic,
 		KafkaActions.CreateVpcConnection,
+		KafkaActions.DeleteAssessment,
 		KafkaActions.DeleteChannel,
 		KafkaActions.DeleteCluster,
 		KafkaActions.DeleteClusterPolicy,
@@ -185,6 +207,8 @@ export class KafkaActions {
 		KafkaActions.PutClusterPolicy,
 		KafkaActions.RebootBroker,
 		KafkaActions.RejectClientVpcConnection,
+		KafkaActions.StartTopicReassignment,
+		KafkaActions.StopTopicReassignment,
 		KafkaActions.UpdateBrokerCount,
 		KafkaActions.UpdateBrokerStorage,
 		KafkaActions.UpdateBrokerType,
@@ -203,6 +227,8 @@ export class KafkaActions {
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [
 		KafkaActions.actionGetCompatibleKafkaVersions,
+		KafkaActions.ListAssessmentFindings,
+		KafkaActions.ListAssessments,
 		KafkaActions.ListChannels,
 		KafkaActions.ListClientVpcConnections,
 		KafkaActions.ListClusterOperations,
@@ -215,6 +241,7 @@ export class KafkaActions {
 		KafkaActions.ListNodes,
 		KafkaActions.ListReplicators,
 		KafkaActions.ListScramSecrets,
+		KafkaActions.ListTopicReassignments,
 		KafkaActions.ListTopics,
 		KafkaActions.ListVpcConnections,
 	];
@@ -225,6 +252,38 @@ export class KafkaActions {
 		KafkaActions.TagResource,
 		KafkaActions.UntagResource,
 	];
+}
+
+/**
+ * Properties for building a assessment ARN.
+ */
+export interface KafkaAssessmentArnProps {
+	/** The ClusterUuid component of the ARN. */
+	readonly clusterUuid: string;
+	/** The Uuid component of the ARN. */
+	readonly uuid: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a assessment ARN.
+ */
+export interface KafkaAssessmentArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ClusterUuid component. */
+	readonly clusterUuid: string;
+	/** The Uuid component. */
+	readonly uuid: string;
 }
 
 /**
@@ -436,6 +495,42 @@ export interface KafkaTopicArnComponents {
 }
 
 /**
+ * Properties for building a topic-reassignment ARN.
+ */
+export interface KafkaTopicReassignmentArnProps {
+	/** The ClusterName component of the ARN. */
+	readonly clusterName: string;
+	/** The ClusterUuid component of the ARN. */
+	readonly clusterUuid: string;
+	/** The Uuid component of the ARN. */
+	readonly uuid: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a topic-reassignment ARN.
+ */
+export interface KafkaTopicReassignmentArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ClusterName component. */
+	readonly clusterName: string;
+	/** The ClusterUuid component. */
+	readonly clusterUuid: string;
+	/** The Uuid component. */
+	readonly uuid: string;
+}
+
+/**
  * Properties for building a transactional-id ARN.
  */
 export interface KafkaTransactionalIdArnProps {
@@ -511,6 +606,8 @@ export interface KafkaVPCConnectionArnComponents {
 	readonly uuid: string;
 }
 
+const AssessmentArnRegex =
+	/^arn:(?<partition>[^:]+):kafka:(?<region>[^:]*):(?<account>[^:]*):assessment\/(?<clusterUuid>[^:/?]+)\/(?<uuid>[^:/?]+)$/;
 const ChannelArnRegex =
 	/^arn:(?<partition>[^:]+):kafka:(?<region>[^:]*):(?<account>[^:]*):channel\/(?<clusterName>[^:/?]+)\/(?<clusterUuid>[^:/?]+)\/(?<channelName>[^:/?]+)\/(?<uuid>[^:/?]+)$/;
 const ClusterArnRegex =
@@ -523,6 +620,8 @@ const ReplicatorArnRegex =
 	/^arn:(?<partition>[^:]+):kafka:(?<region>[^:]*):(?<account>[^:]*):replicator\/(?<replicatorName>[^:/?]+)\/(?<uuid>[^:/?]+)$/;
 const TopicArnRegex =
 	/^arn:(?<partition>[^:]+):kafka:(?<region>[^:]*):(?<account>[^:]*):topic\/(?<clusterName>[^:/?]+)\/(?<clusterUuid>[^:/?]+)\/(?<topicName>[^:/?]+)$/;
+const TopicReassignmentArnRegex =
+	/^arn:(?<partition>[^:]+):kafka:(?<region>[^:]*):(?<account>[^:]*):topic-reassignment\/(?<clusterName>[^:/?]+)\/(?<clusterUuid>[^:/?]+)\/(?<uuid>[^:/?]+)$/;
 const TransactionalIdArnRegex =
 	/^arn:(?<partition>[^:]+):kafka:(?<region>[^:]*):(?<account>[^:]*):transactional-id\/(?<clusterName>[^:/?]+)\/(?<clusterUuid>[^:/?]+)\/(?<transactionalId>[^:/?]+)$/;
 const VPCConnectionArnRegex =
@@ -532,6 +631,38 @@ const VPCConnectionArnRegex =
  * ARN builders, validators, and parsers for kafka resources.
  */
 export class KafkaResources {
+	/**
+	 * Builds an ARN for the assessment resource.
+	 */
+	static assessment(props: KafkaAssessmentArnProps): string {
+		return `arn:${props.partition ?? "aws"}:kafka:${props.region ?? "*"}:${props.account ?? "*"}:assessment/${props.clusterUuid}/${props.uuid}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the assessment resource.
+	 */
+	static isValidAssessmentArn(arn: string): boolean {
+		return AssessmentArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a assessment ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseAssessmentArn(arn: string): KafkaAssessmentArnComponents {
+		const match = AssessmentArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid assessment ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			clusterUuid: match.groups!.clusterUuid,
+			uuid: match.groups!.uuid,
+		};
+	}
+
 	/**
 	 * Builds an ARN for the channel resource.
 	 */
@@ -729,6 +860,41 @@ export class KafkaResources {
 	}
 
 	/**
+	 * Builds an ARN for the topic-reassignment resource.
+	 */
+	static topicReassignment(props: KafkaTopicReassignmentArnProps): string {
+		return `arn:${props.partition ?? "aws"}:kafka:${props.region ?? "*"}:${props.account ?? "*"}:topic-reassignment/${props.clusterName}/${props.clusterUuid}/${props.uuid}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the topic-reassignment resource.
+	 */
+	static isValidTopicReassignmentArn(arn: string): boolean {
+		return TopicReassignmentArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a topic-reassignment ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseTopicReassignmentArn(
+		arn: string,
+	): KafkaTopicReassignmentArnComponents {
+		const match = TopicReassignmentArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid topic-reassignment ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			clusterName: match.groups!.clusterName,
+			clusterUuid: match.groups!.clusterUuid,
+			uuid: match.groups!.uuid,
+		};
+	}
+
+	/**
 	 * Builds an ARN for the transactional-id resource.
 	 */
 	static transactionalId(props: KafkaTransactionalIdArnProps): string {
@@ -810,6 +976,11 @@ export class KafkaOperations {
 	static readonly BatchDisassociateScramSecret: string[] = [
 		"kafka:BatchDisassociateScramSecret",
 	];
+	/** IAM actions required for the CreateAssessment API call. */
+	static readonly CreateAssessment: string[] = [
+		"kafka:CreateAssessment",
+		"kafka:TagResource",
+	];
 	/** IAM actions required for the CreateChannel API call. */
 	static readonly CreateChannel: string[] = [
 		"kafka:CreateChannel",
@@ -846,6 +1017,8 @@ export class KafkaOperations {
 		"kafka:CreateVpcConnection",
 		"kafka:TagResource",
 	];
+	/** IAM actions required for the DeleteAssessment API call. */
+	static readonly DeleteAssessment: string[] = ["kafka:DeleteAssessment"];
 	/** IAM actions required for the DeleteChannel API call. */
 	static readonly DeleteChannel: string[] = ["kafka:DeleteChannel"];
 	/** IAM actions required for the DeleteCluster API call. */
@@ -864,6 +1037,8 @@ export class KafkaOperations {
 	];
 	/** IAM actions required for the DeleteVpcConnection API call. */
 	static readonly DeleteVpcConnection: string[] = ["kafka:DeleteVpcConnection"];
+	/** IAM actions required for the DescribeAssessment API call. */
+	static readonly DescribeAssessment: string[] = ["kafka:DescribeAssessment"];
 	/** IAM actions required for the DescribeChannel API call. */
 	static readonly DescribeChannel: string[] = ["kafka:DescribeChannel"];
 	/** IAM actions required for the DescribeCluster API call. */
@@ -903,6 +1078,10 @@ export class KafkaOperations {
 		"kafka-cluster:DescribeTopic",
 		"kafka-cluster:DescribeTopicDynamicConfiguration",
 	];
+	/** IAM actions required for the DescribeTopicReassignment API call. */
+	static readonly DescribeTopicReassignment: string[] = [
+		"kafka:DescribeTopicReassignment",
+	];
 	/** IAM actions required for the DescribeVpcConnection API call. */
 	static readonly DescribeVpcConnection: string[] = [
 		"kafka:DescribeVpcConnection",
@@ -917,6 +1096,12 @@ export class KafkaOperations {
 	static readonly opGetCompatibleKafkaVersions: string[] = [
 		"kafka:GetCompatibleKafkaVersions",
 	];
+	/** IAM actions required for the ListAssessmentFindings API call. */
+	static readonly ListAssessmentFindings: string[] = [
+		"kafka:ListAssessmentFindings",
+	];
+	/** IAM actions required for the ListAssessments API call. */
+	static readonly ListAssessments: string[] = ["kafka:ListAssessments"];
 	/** IAM actions required for the ListChannels API call. */
 	static readonly ListChannels: string[] = ["kafka:ListChannels"];
 	/** IAM actions required for the ListClientVpcConnections API call. */
@@ -951,6 +1136,10 @@ export class KafkaOperations {
 	static readonly ListScramSecrets: string[] = ["kafka:ListScramSecrets"];
 	/** IAM actions required for the ListTagsForResource API call. */
 	static readonly ListTagsForResource: string[] = ["kafka:ListTagsForResource"];
+	/** IAM actions required for the ListTopicReassignments API call. */
+	static readonly ListTopicReassignments: string[] = [
+		"kafka:ListTopicReassignments",
+	];
 	/** IAM actions required for the ListTopics API call. */
 	static readonly ListTopics: string[] = [
 		"kafka-cluster:Connect",
@@ -965,6 +1154,14 @@ export class KafkaOperations {
 	/** IAM actions required for the RejectClientVpcConnection API call. */
 	static readonly RejectClientVpcConnection: string[] = [
 		"kafka:RejectClientVpcConnection",
+	];
+	/** IAM actions required for the StartTopicReassignment API call. */
+	static readonly StartTopicReassignment: string[] = [
+		"kafka:StartTopicReassignment",
+	];
+	/** IAM actions required for the StopTopicReassignment API call. */
+	static readonly StopTopicReassignment: string[] = [
+		"kafka:StopTopicReassignment",
 	];
 	/** IAM actions required for the TagResource API call. */
 	static readonly TagResource: string[] = ["kafka:TagResource"];
@@ -1015,6 +1212,11 @@ export class KafkaOperations {
  * Condition key constants and builders for kafka.
  */
 export class KafkaConditions {
+	/** Condition keys applicable to the CreateAssessment action. */
+	static readonly CreateAssessmentConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateChannel action. */
 	static readonly CreateChannelConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",

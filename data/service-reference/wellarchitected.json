@@ -66,6 +66,26 @@
       }
     },
     {
+      "Name": "CreateAgentBasicProfile",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "CreateAgentContext",
       "ActionConditionKeys": [
         "aws:ResourceTag/${TagKey}"
@@ -108,6 +128,42 @@
           "Name": "agent-profile"
         }
       ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAgentOrganizationalProfile",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateAgentOrganizationalReport",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -387,6 +443,22 @@
       }
     },
     {
+      "Name": "DeleteAgentOrganizationalReport",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DeleteAgentProfile",
       "ActionConditionKeys": [
         "aws:ResourceTag/${TagKey}"
@@ -403,6 +475,54 @@
       "Resources": [
         {
           "Name": "agent-profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAgentProfilePolicy",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agent-profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteAgentRecommendationPolicy",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agent-recommendation"
         }
       ],
       "SupportedBy": {
@@ -723,7 +843,79 @@
       }
     },
     {
+      "Name": "GetAgentOrganizationalReport",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAgentOrganizationalReportData",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAgentPreferences",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GetAgentProfile",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agent-profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAgentProfilePolicy",
       "ActionConditionKeys": [
         "aws:ResourceTag/${TagKey}"
       ],
@@ -787,6 +979,30 @@
       "Resources": [
         {
           "Name": "agent-profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetAgentRecommendationPolicy",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agent-recommendation"
         }
       ],
       "SupportedBy": {
@@ -1134,7 +1350,7 @@
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
-          "IsList": false,
+          "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
           "IsWrite": false
@@ -1158,7 +1374,7 @@
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
-          "IsList": false,
+          "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
           "IsWrite": false
@@ -1175,11 +1391,27 @@
       }
     },
     {
+      "Name": "ListAgentOrganizationalReports",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListAgentProfiles",
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
-          "IsList": false,
+          "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
           "IsWrite": false
@@ -1198,7 +1430,7 @@
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
-          "IsList": false,
+          "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
           "IsWrite": false
@@ -1222,7 +1454,7 @@
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
-          "IsList": false,
+          "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
           "IsWrite": false
@@ -1246,7 +1478,7 @@
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
-          "IsList": false,
+          "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
           "IsWrite": false
@@ -1678,6 +1910,46 @@
       }
     },
     {
+      "Name": "PutAgentPreferences",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutAgentProfilePolicy",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agent-profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "PutAgentRecommendationFeedback",
       "ActionConditionKeys": [
         "aws:ResourceTag/${TagKey}"
@@ -1696,6 +1968,46 @@
           "Name": "agent-recommendation"
         }
       ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutAgentRecommendationPolicy",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agent-recommendation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "SendAgentOrganizationalReportDataToS3",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -1830,6 +2142,30 @@
     },
     {
       "Name": "UpdateAgentGoal",
+      "ActionConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "agent-profile"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateAgentOrganizationalProfile",
       "ActionConditionKeys": [
         "aws:ResourceTag/${TagKey}"
       ],
@@ -2288,6 +2624,26 @@
       ]
     },
     {
+      "Name": "CreateAgentBasicProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAgentBasicProfile",
+          "Service": "wellarchitected"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "create_agent_basic_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "CreateAgentContext",
       "AuthorizedActions": [
         {
@@ -2315,6 +2671,38 @@
         {
           "Name": "wellarchitected",
           "Method": "create_agent_goal",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAgentOrganizationalProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAgentOrganizationalProfile",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "create_agent_organizational_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateAgentOrganizationalReport",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAgentOrganizationalReport",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "create_agent_organizational_report",
           "Package": "Boto3"
         }
       ]
@@ -2553,6 +2941,22 @@
       ]
     },
     {
+      "Name": "DeleteAgentOrganizationalReport",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAgentOrganizationalReport",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "delete_agent_organizational_report",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DeleteAgentProfile",
       "AuthorizedActions": [
         {
@@ -2564,6 +2968,38 @@
         {
           "Name": "wellarchitected",
           "Method": "delete_agent_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAgentProfilePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAgentProfilePolicy",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "delete_agent_profile_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAgentRecommendationPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteAgentRecommendationPolicy",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "delete_agent_recommendation_policy",
           "Package": "Boto3"
         }
       ]
@@ -2777,6 +3213,54 @@
       ]
     },
     {
+      "Name": "GetAgentOrganizationalReport",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAgentOrganizationalReport",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "get_agent_organizational_report",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAgentOrganizationalReportData",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAgentOrganizationalReportData",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "get_agent_organizational_report_data",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAgentPreferences",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAgentPreferences",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "get_agent_preferences",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetAgentProfile",
       "AuthorizedActions": [
         {
@@ -2788,6 +3272,22 @@
         {
           "Name": "wellarchitected",
           "Method": "get_agent_profile",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAgentProfilePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAgentProfilePolicy",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "get_agent_profile_policy",
           "Package": "Boto3"
         }
       ]
@@ -2820,6 +3320,22 @@
         {
           "Name": "wellarchitected",
           "Method": "get_agent_recommendation_generation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAgentRecommendationPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "GetAgentRecommendationPolicy",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "get_agent_recommendation_policy",
           "Package": "Boto3"
         }
       ]
@@ -3096,6 +3612,22 @@
         {
           "Name": "wellarchitected",
           "Method": "list_agent_goals",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListAgentOrganizationalReports",
+      "AuthorizedActions": [
+        {
+          "Name": "ListAgentOrganizationalReports",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "list_agent_organizational_reports",
           "Package": "Boto3"
         }
       ]
@@ -3469,6 +4001,38 @@
       ]
     },
     {
+      "Name": "PutAgentPreferences",
+      "AuthorizedActions": [
+        {
+          "Name": "PutAgentPreferences",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "put_agent_preferences",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutAgentProfilePolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutAgentProfilePolicy",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "put_agent_profile_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "PutAgentRecommendationFeedback",
       "AuthorizedActions": [
         {
@@ -3480,6 +4044,38 @@
         {
           "Name": "wellarchitected",
           "Method": "put_agent_recommendation_feedback",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutAgentRecommendationPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "PutAgentRecommendationPolicy",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "put_agent_recommendation_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "SendAgentOrganizationalReportDataToS3",
+      "AuthorizedActions": [
+        {
+          "Name": "SendAgentOrganizationalReportDataToS3",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "send_agent_organizational_report_data_to_s3",
           "Package": "Boto3"
         }
       ]
@@ -3560,6 +4156,22 @@
         {
           "Name": "wellarchitected",
           "Method": "update_agent_goal",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateAgentOrganizationalProfile",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateAgentOrganizationalProfile",
+          "Service": "wellarchitected"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wellarchitected",
+          "Method": "update_agent_organizational_profile",
           "Package": "Boto3"
         }
       ]

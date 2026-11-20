@@ -261,6 +261,7 @@ export class BcmDataExportsOperations {
 		"sustainability:GetCarbonFootprintSummary",
 		"cost-optimization-hub:GetRecommendation",
 		"cost-optimization-hub:ListRecommendations",
+		"cur:PutReportDefinition",
 		"bcm-data-exports:TagResource",
 		"cur:PutReportDefinition",
 	];

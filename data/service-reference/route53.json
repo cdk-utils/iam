@@ -110,6 +110,13 @@
           "Name": "healthcheck"
         },
         {
+          "Name": "healthchecksource",
+          "ConditionKeys": [
+            "aws:RequestTag/${TagKey}",
+            "aws:TagKeys"
+          ]
+        },
+        {
           "Name": "hostedzone"
         }
       ],
@@ -151,6 +158,31 @@
       }
     },
     {
+      "Name": "CreateHealthCheckSource",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "healthchecksource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "CreateHostedZone",
       "ActionConditionKeys": [
         "route53:VPCs"
@@ -167,6 +199,21 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateIpGuardrailPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -209,6 +256,27 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "CreateResourceRecordSetProtections",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hostedzone"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -376,6 +444,27 @@
       }
     },
     {
+      "Name": "DeleteHealthCheckSource",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "healthchecksource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DeleteHostedZone",
       "Annotations": {
         "Properties": {
@@ -394,6 +483,21 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteIpGuardrailPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -436,6 +540,27 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteResourceRecordSetProtections",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hostedzone"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -740,6 +865,27 @@
       }
     },
     {
+      "Name": "GetHealthCheckSource",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "healthchecksource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GetHealthCheckStatus",
       "Annotations": {
         "Properties": {
@@ -816,6 +962,21 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "GetIpGuardrailPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -1014,6 +1175,22 @@
       }
     },
     {
+      "Name": "ListHealthCheckSources",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListHealthChecks",
       "Annotations": {
         "Properties": {
@@ -1027,6 +1204,27 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListHealthChecksBySource",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "healthchecksource"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -1081,6 +1279,21 @@
       }
     },
     {
+      "Name": "ListIpGuardrailPolicies",
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListQueryLoggingConfigs",
       "Annotations": {
         "Properties": {
@@ -1099,6 +1312,27 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "ListResourceRecordSetProtections",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "hostedzone"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -1154,6 +1388,9 @@
           "Name": "healthcheck"
         },
         {
+          "Name": "healthchecksource"
+        },
+        {
           "Name": "hostedzone"
         }
       ],
@@ -1176,6 +1413,9 @@
       "Resources": [
         {
           "Name": "healthcheck"
+        },
+        {
+          "Name": "healthchecksource"
         },
         {
           "Name": "hostedzone"
@@ -1382,6 +1622,21 @@
       }
     },
     {
+      "Name": "UpdateIpGuardrailPolicy",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "UpdateTrafficPolicyComment",
       "Annotations": {
         "Properties": {
@@ -1425,6 +1680,24 @@
     }
   ],
   "ConditionKeys": [
+    {
+      "Name": "aws:RequestTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:ResourceTag/${TagKey}",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "aws:TagKeys",
+      "Types": [
+        "ArrayOfString"
+      ]
+    },
     {
       "Name": "route53:ChangeResourceRecordSetsActions",
       "Types": [
@@ -1564,6 +1837,26 @@
       ]
     },
     {
+      "Name": "CreateHealthCheckSource",
+      "AuthorizedActions": [
+        {
+          "Name": "ChangeTagsForResource",
+          "Service": "route53"
+        },
+        {
+          "Name": "CreateHealthCheckSource",
+          "Service": "route53"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53",
+          "Method": "create_health_check_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "CreateHostedZone",
       "AuthorizedActions": [
         {
@@ -1607,6 +1900,22 @@
         {
           "Name": "route53",
           "Method": "create_query_logging_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateResourceRecordSetProtections",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateResourceRecordSetProtections",
+          "Service": "route53"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53",
+          "Method": "create_resource_record_set_protections",
           "Package": "Boto3"
         }
       ]
@@ -1740,6 +2049,22 @@
       ]
     },
     {
+      "Name": "DeleteHealthCheckSource",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteHealthCheckSource",
+          "Service": "route53"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53",
+          "Method": "delete_health_check_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DeleteHostedZone",
       "AuthorizedActions": [
         {
@@ -1783,6 +2108,22 @@
         {
           "Name": "route53",
           "Method": "delete_query_logging_config",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteResourceRecordSetProtections",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteResourceRecordSetProtections",
+          "Service": "route53"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53",
+          "Method": "delete_resource_record_set_protections",
           "Package": "Boto3"
         }
       ]
@@ -2028,6 +2369,22 @@
       ]
     },
     {
+      "Name": "GetHealthCheckSource",
+      "AuthorizedActions": [
+        {
+          "Name": "GetHealthCheckSource",
+          "Service": "route53"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53",
+          "Method": "get_health_check_source",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetHealthCheckStatus",
       "AuthorizedActions": [
         {
@@ -2252,6 +2609,22 @@
       ]
     },
     {
+      "Name": "ListHealthCheckSources",
+      "AuthorizedActions": [
+        {
+          "Name": "ListHealthCheckSources",
+          "Service": "route53"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53",
+          "Method": "list_health_check_sources",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListHealthChecks",
       "AuthorizedActions": [
         {
@@ -2263,6 +2636,22 @@
         {
           "Name": "route53",
           "Method": "list_health_checks",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListHealthChecksBySource",
+      "AuthorizedActions": [
+        {
+          "Name": "ListHealthChecksBySource",
+          "Service": "route53"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53",
+          "Method": "list_health_checks_by_source",
           "Package": "Boto3"
         }
       ]
@@ -2327,6 +2716,22 @@
         {
           "Name": "route53",
           "Method": "list_query_logging_configs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListResourceRecordSetProtections",
+      "AuthorizedActions": [
+        {
+          "Name": "ListResourceRecordSetProtections",
+          "Service": "route53"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "route53",
+          "Method": "list_resource_record_set_protections",
           "Package": "Boto3"
         }
       ]
@@ -2611,6 +3016,15 @@
       "Name": "healthcheck",
       "ARNFormats": [
         "arn:${Partition}:route53:::healthcheck/${Id}"
+      ]
+    },
+    {
+      "Name": "healthchecksource",
+      "ARNFormats": [
+        "arn:${Partition}:route53:::healthchecksource/${Id}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
       ]
     },
     {

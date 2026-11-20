@@ -167,6 +167,9 @@ export class WorkSpacesActions {
 	/** [Read] workspaces:GetTroubleshootingRecommendation */
 	static readonly actionGetTroubleshootingRecommendation =
 		"workspaces:GetTroubleshootingRecommendation";
+	/** [Read] workspaces:GetWorkspaceProactiveRecommendation */
+	static readonly actionGetWorkspaceProactiveRecommendation =
+		"workspaces:GetWorkspaceProactiveRecommendation";
 	/** [Write] workspaces:ImportClientBranding */
 	static readonly ImportClientBranding = "workspaces:ImportClientBranding";
 	/** [Write] workspaces:ImportCustomWorkspaceImage */
@@ -187,6 +190,12 @@ export class WorkSpacesActions {
 	/** [Read] workspaces:ListTroubleshootingRecommendations */
 	static readonly ListTroubleshootingRecommendations =
 		"workspaces:ListTroubleshootingRecommendations";
+	/** [Read] workspaces:ListWorkspaceProactiveRecommendationResources */
+	static readonly ListWorkspaceProactiveRecommendationResources =
+		"workspaces:ListWorkspaceProactiveRecommendationResources";
+	/** [Read] workspaces:ListWorkspaceProactiveRecommendations */
+	static readonly ListWorkspaceProactiveRecommendations =
+		"workspaces:ListWorkspaceProactiveRecommendations";
 	/** [Write] workspaces:MigrateWorkspace */
 	static readonly MigrateWorkspace = "workspaces:MigrateWorkspace";
 	/** [Write] workspaces:ModifyAccount */
@@ -289,8 +298,11 @@ export class WorkSpacesActions {
 		WorkSpacesActions.DescribeWorkspacesConnectionStatus,
 		WorkSpacesActions.actionGetAccountLink,
 		WorkSpacesActions.actionGetTroubleshootingRecommendation,
+		WorkSpacesActions.actionGetWorkspaceProactiveRecommendation,
 		WorkSpacesActions.InvokeTroubleshootingInvestigation,
 		WorkSpacesActions.ListTroubleshootingRecommendations,
+		WorkSpacesActions.ListWorkspaceProactiveRecommendationResources,
+		WorkSpacesActions.ListWorkspaceProactiveRecommendations,
 	];
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [

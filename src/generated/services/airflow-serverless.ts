@@ -12,6 +12,8 @@ export class AirflowServerlessActions {
 	/** The IAM service prefix. */
 	static readonly SERVICE_PREFIX = "airflow-serverless";
 
+	/** [Read] airflow-serverless:CreateAirflowUiUrl */
+	static readonly CreateAirflowUiUrl = "airflow-serverless:CreateAirflowUiUrl";
 	/** [Write] airflow-serverless:CreateWorkflow */
 	static readonly CreateWorkflow = "airflow-serverless:CreateWorkflow";
 	/** [Write] airflow-serverless:DeleteWorkflow */
@@ -47,6 +49,7 @@ export class AirflowServerlessActions {
 
 	/** All read-level actions. */
 	static readonly AllReadActions: string[] = [
+		AirflowServerlessActions.CreateAirflowUiUrl,
 		AirflowServerlessActions.actionGetTaskInstance,
 		AirflowServerlessActions.actionGetWorkflow,
 		AirflowServerlessActions.actionGetWorkflowRun,
@@ -147,6 +150,10 @@ export class AirflowServerlessResources {
  * API operation to required IAM actions mapping for airflow-serverless.
  */
 export class AirflowServerlessOperations {
+	/** IAM actions required for the CreateAirflowUiUrl API call. */
+	static readonly CreateAirflowUiUrl: string[] = [
+		"airflow-serverless:CreateAirflowUiUrl",
+	];
 	/** IAM actions required for the CreateWorkflow API call. */
 	static readonly CreateWorkflow: string[] = [
 		"airflow-serverless:CreateWorkflow",

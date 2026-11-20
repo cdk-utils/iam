@@ -16,6 +16,9 @@ export class NetworkManagerActions {
 	static readonly AcceptAttachment = "networkmanager:AcceptAttachment";
 	/** [Write] networkmanager:AssociateConnectPeer */
 	static readonly AssociateConnectPeer = "networkmanager:AssociateConnectPeer";
+	/** [Write] networkmanager:AssociateContextStore */
+	static readonly AssociateContextStore =
+		"networkmanager:AssociateContextStore";
 	/** [Write] networkmanager:AssociateCustomerGateway */
 	static readonly AssociateCustomerGateway =
 		"networkmanager:AssociateCustomerGateway";
@@ -31,6 +34,8 @@ export class NetworkManagerActions {
 	static readonly CreateConnectPeer = "networkmanager:CreateConnectPeer";
 	/** [Write] networkmanager:CreateConnection */
 	static readonly CreateConnection = "networkmanager:CreateConnection";
+	/** [Write] networkmanager:CreateContextStore */
+	static readonly CreateContextStore = "networkmanager:CreateContextStore";
 	/** [Write] networkmanager:CreateCoreNetwork */
 	static readonly CreateCoreNetwork = "networkmanager:CreateCoreNetwork";
 	/** [Write] networkmanager:CreateCoreNetworkPrefixListAssociation */
@@ -64,6 +69,8 @@ export class NetworkManagerActions {
 	static readonly DeleteConnectPeer = "networkmanager:DeleteConnectPeer";
 	/** [Write] networkmanager:DeleteConnection */
 	static readonly DeleteConnection = "networkmanager:DeleteConnection";
+	/** [Write] networkmanager:DeleteContextStore */
+	static readonly DeleteContextStore = "networkmanager:DeleteContextStore";
 	/** [Write] networkmanager:DeleteCoreNetwork */
 	static readonly DeleteCoreNetwork = "networkmanager:DeleteCoreNetwork";
 	/** [Write] networkmanager:DeleteCoreNetworkPolicyVersion */
@@ -93,6 +100,9 @@ export class NetworkManagerActions {
 	/** [Write] networkmanager:DisassociateConnectPeer */
 	static readonly DisassociateConnectPeer =
 		"networkmanager:DisassociateConnectPeer";
+	/** [Write] networkmanager:DisassociateContextStore */
+	static readonly DisassociateContextStore =
+		"networkmanager:DisassociateContextStore";
 	/** [Write] networkmanager:DisassociateCustomerGateway */
 	static readonly DisassociateCustomerGateway =
 		"networkmanager:DisassociateCustomerGateway";
@@ -114,6 +124,13 @@ export class NetworkManagerActions {
 		"networkmanager:GetConnectPeerAssociations";
 	/** [List] networkmanager:GetConnections */
 	static readonly actionGetConnections = "networkmanager:GetConnections";
+	/** [Read] networkmanager:GetContextStore */
+	static readonly actionGetContextStore = "networkmanager:GetContextStore";
+	/** [Read] networkmanager:GetContextStoreAssociation */
+	static readonly actionGetContextStoreAssociation =
+		"networkmanager:GetContextStoreAssociation";
+	/** [Read] networkmanager:GetContextVersion */
+	static readonly actionGetContextVersion = "networkmanager:GetContextVersion";
 	/** [Read] networkmanager:GetCoreNetwork */
 	static readonly actionGetCoreNetwork = "networkmanager:GetCoreNetwork";
 	/** [Read] networkmanager:GetCoreNetworkChangeEvents */
@@ -185,6 +202,15 @@ export class NetworkManagerActions {
 	static readonly ListAttachments = "networkmanager:ListAttachments";
 	/** [List] networkmanager:ListConnectPeers */
 	static readonly ListConnectPeers = "networkmanager:ListConnectPeers";
+	/** [Read] networkmanager:ListContextChanges */
+	static readonly ListContextChanges = "networkmanager:ListContextChanges";
+	/** [List] networkmanager:ListContextStoreAssociations */
+	static readonly ListContextStoreAssociations =
+		"networkmanager:ListContextStoreAssociations";
+	/** [List] networkmanager:ListContextStores */
+	static readonly ListContextStores = "networkmanager:ListContextStores";
+	/** [Read] networkmanager:ListContexts */
+	static readonly ListContexts = "networkmanager:ListContexts";
 	/** [List] networkmanager:ListCoreNetworkPolicyVersions */
 	static readonly ListCoreNetworkPolicyVersions =
 		"networkmanager:ListCoreNetworkPolicyVersions";
@@ -235,6 +261,8 @@ export class NetworkManagerActions {
 		"networkmanager:UpdateAttachmentNatConfiguration";
 	/** [Write] networkmanager:UpdateConnection */
 	static readonly UpdateConnection = "networkmanager:UpdateConnection";
+	/** [Write] networkmanager:UpdateContextStore */
+	static readonly UpdateContextStore = "networkmanager:UpdateContextStore";
 	/** [Write] networkmanager:UpdateCoreNetwork */
 	static readonly UpdateCoreNetwork = "networkmanager:UpdateCoreNetwork";
 	/** [Write] networkmanager:UpdateDevice */
@@ -259,6 +287,9 @@ export class NetworkManagerActions {
 		NetworkManagerActions.actionGetConnectAttachment,
 		NetworkManagerActions.actionGetConnectPeer,
 		NetworkManagerActions.actionGetConnectPeerAssociations,
+		NetworkManagerActions.actionGetContextStore,
+		NetworkManagerActions.actionGetContextStoreAssociation,
+		NetworkManagerActions.actionGetContextVersion,
 		NetworkManagerActions.actionGetCoreNetwork,
 		NetworkManagerActions.actionGetCoreNetworkChangeEvents,
 		NetworkManagerActions.actionGetCoreNetworkChangeSet,
@@ -275,18 +306,22 @@ export class NetworkManagerActions {
 		NetworkManagerActions.actionGetTransitGatewayPeering,
 		NetworkManagerActions.actionGetTransitGatewayRouteTableAttachment,
 		NetworkManagerActions.actionGetVpcAttachment,
+		NetworkManagerActions.ListContextChanges,
+		NetworkManagerActions.ListContexts,
 		NetworkManagerActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
 		NetworkManagerActions.AcceptAttachment,
 		NetworkManagerActions.AssociateConnectPeer,
+		NetworkManagerActions.AssociateContextStore,
 		NetworkManagerActions.AssociateCustomerGateway,
 		NetworkManagerActions.AssociateLink,
 		NetworkManagerActions.AssociateTransitGatewayConnectPeer,
 		NetworkManagerActions.CreateConnectAttachment,
 		NetworkManagerActions.CreateConnectPeer,
 		NetworkManagerActions.CreateConnection,
+		NetworkManagerActions.CreateContextStore,
 		NetworkManagerActions.CreateCoreNetwork,
 		NetworkManagerActions.CreateCoreNetworkPrefixListAssociation,
 		NetworkManagerActions.CreateDevice,
@@ -301,6 +336,7 @@ export class NetworkManagerActions {
 		NetworkManagerActions.DeleteAttachment,
 		NetworkManagerActions.DeleteConnectPeer,
 		NetworkManagerActions.DeleteConnection,
+		NetworkManagerActions.DeleteContextStore,
 		NetworkManagerActions.DeleteCoreNetwork,
 		NetworkManagerActions.DeleteCoreNetworkPolicyVersion,
 		NetworkManagerActions.DeleteCoreNetworkPrefixListAssociation,
@@ -311,6 +347,7 @@ export class NetworkManagerActions {
 		NetworkManagerActions.DeleteSite,
 		NetworkManagerActions.DeregisterTransitGateway,
 		NetworkManagerActions.DisassociateConnectPeer,
+		NetworkManagerActions.DisassociateContextStore,
 		NetworkManagerActions.DisassociateCustomerGateway,
 		NetworkManagerActions.DisassociateLink,
 		NetworkManagerActions.DisassociateTransitGatewayConnectPeer,
@@ -324,6 +361,7 @@ export class NetworkManagerActions {
 		NetworkManagerActions.StartRouteAnalysis,
 		NetworkManagerActions.UpdateAttachmentNatConfiguration,
 		NetworkManagerActions.UpdateConnection,
+		NetworkManagerActions.UpdateContextStore,
 		NetworkManagerActions.UpdateCoreNetwork,
 		NetworkManagerActions.UpdateDevice,
 		NetworkManagerActions.UpdateDirectConnectGatewayAttachment,
@@ -348,6 +386,8 @@ export class NetworkManagerActions {
 		NetworkManagerActions.ListAttachmentRoutingPolicyAssociations,
 		NetworkManagerActions.ListAttachments,
 		NetworkManagerActions.ListConnectPeers,
+		NetworkManagerActions.ListContextStoreAssociations,
+		NetworkManagerActions.ListContextStores,
 		NetworkManagerActions.ListCoreNetworkPolicyVersions,
 		NetworkManagerActions.ListCoreNetworkPrefixListAssociations,
 		NetworkManagerActions.ListCoreNetworkRoutingInformation,
@@ -440,6 +480,30 @@ export interface NetworkManagerConnectionArnComponents {
 	readonly account: string;
 	/** The GlobalNetworkId component. */
 	readonly globalNetworkId: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
+ * Properties for building a context-store ARN.
+ */
+export interface NetworkManagerContextStoreArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a context-store ARN.
+ */
+export interface NetworkManagerContextStoreArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
 	/** The ResourceId component. */
 	readonly resourceId: string;
 }
@@ -549,6 +613,34 @@ export interface NetworkManagerLinkArnComponents {
 }
 
 /**
+ * Properties for building a network-scope ARN.
+ */
+export interface NetworkManagerNetworkScopeArnProps {
+	/** The ResourceId component of the ARN. */
+	readonly resourceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a network-scope ARN.
+ */
+export interface NetworkManagerNetworkScopeArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ResourceId component. */
+	readonly resourceId: string;
+}
+
+/**
  * Properties for building a peering ARN.
  */
 export interface NetworkManagerPeeringArnProps {
@@ -606,6 +698,8 @@ const ConnectPeerArnRegex =
 	/^arn:(?<partition>[^:]+):networkmanager::(?<account>[^:]*):connect-peer\/(?<resourceId>[^:/?]+)$/;
 const ConnectionArnRegex =
 	/^arn:(?<partition>[^:]+):networkmanager::(?<account>[^:]*):connection\/(?<globalNetworkId>[^:/?]+)\/(?<resourceId>[^:/?]+)$/;
+const ContextStoreArnRegex =
+	/^arn:(?<partition>[^:]+):networkmanager::(?<account>[^:]*):context-store\/(?<resourceId>[^:/?]+)$/;
 const CoreNetworkArnRegex =
 	/^arn:(?<partition>[^:]+):networkmanager::(?<account>[^:]*):core-network\/(?<resourceId>[^:/?]+)$/;
 const DeviceArnRegex =
@@ -614,6 +708,8 @@ const GlobalNetworkArnRegex =
 	/^arn:(?<partition>[^:]+):networkmanager::(?<account>[^:]*):global-network\/(?<resourceId>[^:/?]+)$/;
 const LinkArnRegex =
 	/^arn:(?<partition>[^:]+):networkmanager::(?<account>[^:]*):link\/(?<globalNetworkId>[^:/?]+)\/(?<resourceId>[^:/?]+)$/;
+const NetworkScopeArnRegex =
+	/^arn:(?<partition>[^:]+):networkmanager:(?<region>[^:]*):(?<account>[^:]*):network-scope\/(?<resourceId>[^:/?]+)$/;
 const PeeringArnRegex =
 	/^arn:(?<partition>[^:]+):networkmanager::(?<account>[^:]*):peering\/(?<resourceId>[^:/?]+)$/;
 const SiteArnRegex =
@@ -716,6 +812,38 @@ export class NetworkManagerResources {
 			partition: match.groups.partition,
 			account: match.groups.account,
 			globalNetworkId: match.groups!.globalNetworkId,
+			resourceId: match.groups!.resourceId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the context-store resource.
+	 */
+	static contextStore(props: NetworkManagerContextStoreArnProps): string {
+		return `arn:${props.partition ?? "aws"}:networkmanager::${props.account ?? "*"}:context-store/${props.resourceId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the context-store resource.
+	 */
+	static isValidContextStoreArn(arn: string): boolean {
+		return ContextStoreArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a context-store ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseContextStoreArn(
+		arn: string,
+	): NetworkManagerContextStoreArnComponents {
+		const match = ContextStoreArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid context-store ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			account: match.groups.account,
 			resourceId: match.groups!.resourceId,
 		};
 	}
@@ -847,6 +975,39 @@ export class NetworkManagerResources {
 	}
 
 	/**
+	 * Builds an ARN for the network-scope resource.
+	 */
+	static networkScope(props: NetworkManagerNetworkScopeArnProps): string {
+		return `arn:${props.partition ?? "aws"}:networkmanager:${props.region ?? "*"}:${props.account ?? "*"}:network-scope/${props.resourceId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the network-scope resource.
+	 */
+	static isValidNetworkScopeArn(arn: string): boolean {
+		return NetworkScopeArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a network-scope ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseNetworkScopeArn(
+		arn: string,
+	): NetworkManagerNetworkScopeArnComponents {
+		const match = NetworkScopeArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid network-scope ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			resourceId: match.groups!.resourceId,
+		};
+	}
+
+	/**
 	 * Builds an ARN for the peering resource.
 	 */
 	static peering(props: NetworkManagerPeeringArnProps): string {
@@ -920,6 +1081,10 @@ export class NetworkManagerOperations {
 	static readonly AssociateConnectPeer: string[] = [
 		"networkmanager:AssociateConnectPeer",
 	];
+	/** IAM actions required for the AssociateContextStore API call. */
+	static readonly AssociateContextStore: string[] = [
+		"networkmanager:AssociateContextStore",
+	];
 	/** IAM actions required for the AssociateCustomerGateway API call. */
 	static readonly AssociateCustomerGateway: string[] = [
 		"networkmanager:AssociateCustomerGateway",
@@ -945,6 +1110,11 @@ export class NetworkManagerOperations {
 	/** IAM actions required for the CreateConnection API call. */
 	static readonly CreateConnection: string[] = [
 		"networkmanager:CreateConnection",
+		"networkmanager:TagResource",
+	];
+	/** IAM actions required for the CreateContextStore API call. */
+	static readonly CreateContextStore: string[] = [
+		"networkmanager:CreateContextStore",
 		"networkmanager:TagResource",
 	];
 	/** IAM actions required for the CreateCoreNetwork API call. */
@@ -1020,6 +1190,10 @@ export class NetworkManagerOperations {
 	static readonly DeleteConnection: string[] = [
 		"networkmanager:DeleteConnection",
 	];
+	/** IAM actions required for the DeleteContextStore API call. */
+	static readonly DeleteContextStore: string[] = [
+		"networkmanager:DeleteContextStore",
+	];
 	/** IAM actions required for the DeleteCoreNetwork API call. */
 	static readonly DeleteCoreNetwork: string[] = [
 		"networkmanager:DeleteCoreNetwork",
@@ -1060,6 +1234,10 @@ export class NetworkManagerOperations {
 	static readonly DisassociateConnectPeer: string[] = [
 		"networkmanager:DisassociateConnectPeer",
 	];
+	/** IAM actions required for the DisassociateContextStore API call. */
+	static readonly DisassociateContextStore: string[] = [
+		"networkmanager:DisassociateContextStore",
+	];
 	/** IAM actions required for the DisassociateCustomerGateway API call. */
 	static readonly DisassociateCustomerGateway: string[] = [
 		"networkmanager:DisassociateCustomerGateway",
@@ -1091,6 +1269,18 @@ export class NetworkManagerOperations {
 	/** IAM actions required for the GetConnections API call. */
 	static readonly opGetConnections: string[] = [
 		"networkmanager:GetConnections",
+	];
+	/** IAM actions required for the GetContextStore API call. */
+	static readonly opGetContextStore: string[] = [
+		"networkmanager:GetContextStore",
+	];
+	/** IAM actions required for the GetContextStoreAssociation API call. */
+	static readonly opGetContextStoreAssociation: string[] = [
+		"networkmanager:GetContextStoreAssociation",
+	];
+	/** IAM actions required for the GetContextVersion API call. */
+	static readonly opGetContextVersion: string[] = [
+		"networkmanager:GetContextVersion",
 	];
 	/** IAM actions required for the GetCoreNetwork API call. */
 	static readonly opGetCoreNetwork: string[] = [
@@ -1194,6 +1384,20 @@ export class NetworkManagerOperations {
 	static readonly ListConnectPeers: string[] = [
 		"networkmanager:ListConnectPeers",
 	];
+	/** IAM actions required for the ListContextChanges API call. */
+	static readonly ListContextChanges: string[] = [
+		"networkmanager:ListContextChanges",
+	];
+	/** IAM actions required for the ListContextStoreAssociations API call. */
+	static readonly ListContextStoreAssociations: string[] = [
+		"networkmanager:ListContextStoreAssociations",
+	];
+	/** IAM actions required for the ListContextStores API call. */
+	static readonly ListContextStores: string[] = [
+		"networkmanager:ListContextStores",
+	];
+	/** IAM actions required for the ListContexts API call. */
+	static readonly ListContexts: string[] = ["networkmanager:ListContexts"];
 	/** IAM actions required for the ListCoreNetworkPolicyVersions API call. */
 	static readonly ListCoreNetworkPolicyVersions: string[] = [
 		"networkmanager:ListCoreNetworkPolicyVersions",
@@ -1268,6 +1472,10 @@ export class NetworkManagerOperations {
 	static readonly UpdateConnection: string[] = [
 		"networkmanager:UpdateConnection",
 	];
+	/** IAM actions required for the UpdateContextStore API call. */
+	static readonly UpdateContextStore: string[] = [
+		"networkmanager:UpdateContextStore",
+	];
 	/** IAM actions required for the UpdateCoreNetwork API call. */
 	static readonly UpdateCoreNetwork: string[] = [
 		"networkmanager:UpdateCoreNetwork",
@@ -1300,6 +1508,11 @@ export class NetworkManagerOperations {
  * Condition key constants and builders for networkmanager.
  */
 export class NetworkManagerConditions {
+	/** Condition keys applicable to the AssociateContextStore action. */
+	static readonly AssociateContextStoreConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"networkmanager:tgwArn",
+	];
 	/** Condition keys applicable to the AssociateCustomerGateway action. */
 	static readonly AssociateCustomerGatewayConditionKeys: string[] = [
 		"networkmanager:cgwArn",
@@ -1320,6 +1533,11 @@ export class NetworkManagerConditions {
 	];
 	/** Condition keys applicable to the CreateConnection action. */
 	static readonly CreateConnectionConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the CreateContextStore action. */
+	static readonly CreateContextStoreConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
@@ -1378,8 +1596,17 @@ export class NetworkManagerConditions {
 		"networkmanager:subnetArns",
 		"networkmanager:vpcArn",
 	];
+	/** Condition keys applicable to the DeleteContextStore action. */
+	static readonly DeleteContextStoreConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the DeregisterTransitGateway action. */
 	static readonly DeregisterTransitGatewayConditionKeys: string[] = [
+		"networkmanager:tgwArn",
+	];
+	/** Condition keys applicable to the DisassociateContextStore action. */
+	static readonly DisassociateContextStoreConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
 		"networkmanager:tgwArn",
 	];
 	/** Condition keys applicable to the DisassociateCustomerGateway action. */
@@ -1389,6 +1616,31 @@ export class NetworkManagerConditions {
 	/** Condition keys applicable to the DisassociateTransitGatewayConnectPeer action. */
 	static readonly DisassociateTransitGatewayConnectPeerConditionKeys: string[] =
 		["networkmanager:tgwConnectPeerArn"];
+	/** Condition keys applicable to the GetContextStore action. */
+	static readonly actionGetContextStoreConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
+	/** Condition keys applicable to the GetContextStoreAssociation action. */
+	static readonly actionGetContextStoreAssociationConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"networkmanager:tgwArn",
+	];
+	/** Condition keys applicable to the GetContextVersion action. */
+	static readonly actionGetContextVersionConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
+	/** Condition keys applicable to the ListContextChanges action. */
+	static readonly ListContextChangesConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
+	/** Condition keys applicable to the ListContextStoreAssociations action. */
+	static readonly ListContextStoreAssociationsConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
+	/** Condition keys applicable to the ListContexts action. */
+	static readonly ListContextsConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the ListTagsForResource action. */
 	static readonly ListTagsForResourceConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
@@ -1405,6 +1657,10 @@ export class NetworkManagerConditions {
 	];
 	/** Condition keys applicable to the UntagResource action. */
 	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
+	/** Condition keys applicable to the UpdateContextStore action. */
+	static readonly UpdateContextStoreConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the UpdateDirectConnectGatewayAttachment action. */
 	static readonly UpdateDirectConnectGatewayAttachmentConditionKeys: string[] =
 		["aws:RequestTag/${TagKey}", "aws:TagKeys", "networkmanager:edgeLocations"];
@@ -1421,6 +1677,8 @@ export class NetworkManagerConditions {
 	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
 	static readonly AWS_TAG_KEYS = "aws:TagKeys";
+	/** Condition key: networkmanager:ManagedBy (String) */
+	static readonly MANAGED_BY = "networkmanager:ManagedBy";
 	/** Condition key: networkmanager:cgwArn (ARN) */
 	static readonly CGW_ARN = "networkmanager:cgwArn";
 	/** Condition key: networkmanager:directConnectGatewayArn (ARN) */
@@ -1460,6 +1718,13 @@ export class NetworkManagerConditions {
 	 */
 	static tagKeys(values: string[]): Record<string, Record<string, string[]>> {
 		return { "ForAllValues:StringEquals": { "aws:TagKeys": values } };
+	}
+
+	/**
+	 * Generates a condition block for `networkmanager:ManagedBy`.
+	 */
+	static managedBy(value: string): Record<string, Record<string, string>> {
+		return { StringEquals: { "networkmanager:ManagedBy": value } };
 	}
 
 	/**

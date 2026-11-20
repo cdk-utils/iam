@@ -57,6 +57,9 @@ export class BcmPricingCalculatorActions {
 	/** [Read] bcm-pricing-calculator:GetPreferences */
 	static readonly actionGetPreferences =
 		"bcm-pricing-calculator:GetPreferences";
+	/** [Read] bcm-pricing-calculator:GetUsageLinesEstimatedCost */
+	static readonly actionGetUsageLinesEstimatedCost =
+		"bcm-pricing-calculator:GetUsageLinesEstimatedCost";
 	/** [Read] bcm-pricing-calculator:GetWorkloadEstimate */
 	static readonly actionGetWorkloadEstimate =
 		"bcm-pricing-calculator:GetWorkloadEstimate";
@@ -124,6 +127,7 @@ export class BcmPricingCalculatorActions {
 		BcmPricingCalculatorActions.actionGetBillEstimate,
 		BcmPricingCalculatorActions.actionGetBillScenario,
 		BcmPricingCalculatorActions.actionGetPreferences,
+		BcmPricingCalculatorActions.actionGetUsageLinesEstimatedCost,
 		BcmPricingCalculatorActions.actionGetWorkloadEstimate,
 	];
 	/** All write-level actions. */
@@ -431,6 +435,10 @@ export class BcmPricingCalculatorOperations {
 	/** IAM actions required for the GetPreferences API call. */
 	static readonly opGetPreferences: string[] = [
 		"bcm-pricing-calculator:GetPreferences",
+	];
+	/** IAM actions required for the GetUsageLinesEstimatedCost API call. */
+	static readonly opGetUsageLinesEstimatedCost: string[] = [
+		"bcm-pricing-calculator:GetUsageLinesEstimatedCost",
 	];
 	/** IAM actions required for the GetWorkloadEstimate API call. */
 	static readonly opGetWorkloadEstimate: string[] = [

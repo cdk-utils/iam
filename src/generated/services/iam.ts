@@ -205,6 +205,12 @@ export class IAMActions {
 	static readonly actionGetPolicy = "iam:GetPolicy";
 	/** [Read] iam:GetPolicyVersion */
 	static readonly actionGetPolicyVersion = "iam:GetPolicyVersion";
+	/** [Read] iam:GetRequestAuthorizationDetails */
+	static readonly actionGetRequestAuthorizationDetails =
+		"iam:GetRequestAuthorizationDetails";
+	/** [Read] iam:GetRequestAuthorizationPolicy */
+	static readonly actionGetRequestAuthorizationPolicy =
+		"iam:GetRequestAuthorizationPolicy";
 	/** [Read] iam:GetRole */
 	static readonly actionGetRole = "iam:GetRole";
 	/** [Read] iam:GetRolePolicy */
@@ -403,6 +409,9 @@ export class IAMActions {
 	static readonly UpdateGroup = "iam:UpdateGroup";
 	/** [Write] iam:UpdateLoginProfile */
 	static readonly UpdateLoginProfile = "iam:UpdateLoginProfile";
+	/** [Write] iam:UpdateOpenIDConnectProvider */
+	static readonly UpdateOpenIDConnectProvider =
+		"iam:UpdateOpenIDConnectProvider";
 	/** [Write] iam:UpdateOpenIDConnectProviderThumbprint */
 	static readonly UpdateOpenIDConnectProviderThumbprint =
 		"iam:UpdateOpenIDConnectProviderThumbprint";
@@ -458,6 +467,8 @@ export class IAMActions {
 		IAMActions.actionGetOutboundWebIdentityFederationInfo,
 		IAMActions.actionGetPolicy,
 		IAMActions.actionGetPolicyVersion,
+		IAMActions.actionGetRequestAuthorizationDetails,
+		IAMActions.actionGetRequestAuthorizationPolicy,
 		IAMActions.actionGetRole,
 		IAMActions.actionGetRolePolicy,
 		IAMActions.actionGetRoleTemplateVersion,
@@ -535,6 +546,7 @@ export class IAMActions {
 		IAMActions.UpdateCloudFrontPublicKey,
 		IAMActions.UpdateGroup,
 		IAMActions.UpdateLoginProfile,
+		IAMActions.UpdateOpenIDConnectProvider,
 		IAMActions.UpdateOpenIDConnectProviderThumbprint,
 		IAMActions.UpdateRole,
 		IAMActions.UpdateRoleDescription,
@@ -1769,7 +1781,13 @@ export class IAMOperations {
 	/** IAM actions required for the GetPolicyVersion API call. */
 	static readonly opGetPolicyVersion: string[] = ["iam:GetPolicyVersion"];
 	/** IAM actions required for the GetRequestAuthorizationDetails API call. */
-	static readonly opGetRequestAuthorizationDetails: string[] = [];
+	static readonly opGetRequestAuthorizationDetails: string[] = [
+		"iam:GetRequestAuthorizationDetails",
+	];
+	/** IAM actions required for the GetRequestAuthorizationPolicy API call. */
+	static readonly opGetRequestAuthorizationPolicy: string[] = [
+		"iam:GetRequestAuthorizationPolicy",
+	];
 	/** IAM actions required for the GetRole API call. */
 	static readonly opGetRole: string[] = ["iam:GetRole"];
 	/** IAM actions required for the GetRolePolicy API call. */
@@ -2013,6 +2031,10 @@ export class IAMOperations {
 	static readonly UpdateGroup: string[] = ["iam:UpdateGroup"];
 	/** IAM actions required for the UpdateLoginProfile API call. */
 	static readonly UpdateLoginProfile: string[] = ["iam:UpdateLoginProfile"];
+	/** IAM actions required for the UpdateOpenIDConnectProvider API call. */
+	static readonly UpdateOpenIDConnectProvider: string[] = [
+		"iam:UpdateOpenIDConnectProvider",
+	];
 	/** IAM actions required for the UpdateOpenIDConnectProviderThumbprint API call. */
 	static readonly UpdateOpenIDConnectProviderThumbprint: string[] = [
 		"iam:UpdateOpenIDConnectProviderThumbprint",
@@ -2086,6 +2108,12 @@ export class IAMConditions {
 	static readonly CreateOpenIDConnectProviderConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
+		"iam:EnableIdentityCenterAssociation",
+		"iam:EnableIdentityPropagation",
+		"iam:RequestIdentityCenterInstanceArn",
+		"iam:RequestIdentityProviderIssuers",
+		"iam:ResourceIdentityCenterInstanceArn",
+		"iam:ResourceIdentityProviderIssuers",
 	];
 	/** Condition keys applicable to the CreatePolicy action. */
 	static readonly CreatePolicyConditionKeys: string[] = [
@@ -2103,6 +2131,12 @@ export class IAMConditions {
 	static readonly CreateSAMLProviderConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
+		"iam:EnableIdentityCenterAssociation",
+		"iam:EnableIdentityPropagation",
+		"iam:RequestIdentityCenterInstanceArn",
+		"iam:RequestIdentityProviderIssuers",
+		"iam:ResourceIdentityCenterInstanceArn",
+		"iam:ResourceIdentityProviderIssuers",
 	];
 	/** Condition keys applicable to the CreateServiceLinkedRole action. */
 	static readonly CreateServiceLinkedRoleConditionKeys: string[] = [
@@ -2280,6 +2314,14 @@ export class IAMConditions {
 	static readonly UpdateAssumeRolePolicyConditionKeys: string[] = [
 		"iam:PermissionsBoundary",
 	];
+	/** Condition keys applicable to the UpdateOpenIDConnectProvider action. */
+	static readonly UpdateOpenIDConnectProviderConditionKeys: string[] = [
+		"iam:EnableIdentityCenterAssociation",
+		"iam:EnableIdentityPropagation",
+		"iam:RequestIdentityCenterInstanceArn",
+		"iam:ResourceIdentityCenterInstanceArn",
+		"iam:ResourceIdentityProviderIssuers",
+	];
 	/** Condition keys applicable to the UpdateRole action. */
 	static readonly UpdateRoleConditionKeys: string[] = [
 		"iam:PermissionsBoundary",
@@ -2287,6 +2329,15 @@ export class IAMConditions {
 	/** Condition keys applicable to the UpdateRoleDescription action. */
 	static readonly UpdateRoleDescriptionConditionKeys: string[] = [
 		"iam:PermissionsBoundary",
+	];
+	/** Condition keys applicable to the UpdateSAMLProvider action. */
+	static readonly UpdateSAMLProviderConditionKeys: string[] = [
+		"iam:EnableIdentityCenterAssociation",
+		"iam:EnableIdentityPropagation",
+		"iam:RequestIdentityCenterInstanceArn",
+		"iam:RequestIdentityProviderIssuers",
+		"iam:ResourceIdentityCenterInstanceArn",
+		"iam:ResourceIdentityProviderIssuers",
 	];
 	/** Condition keys applicable to the UpdateServiceSpecificCredential action. */
 	static readonly UpdateServiceSpecificCredentialConditionKeys: string[] = [
@@ -2314,6 +2365,11 @@ export class IAMConditions {
 	static readonly DELEGATION_DURATION = "iam:DelegationDuration";
 	/** Condition key: iam:DelegationRequestOwner (ARN) */
 	static readonly DELEGATION_REQUEST_OWNER = "iam:DelegationRequestOwner";
+	/** Condition key: iam:EnableIdentityCenterAssociation (Bool) */
+	static readonly ENABLE_IDENTITY_CENTER_ASSOCIATION =
+		"iam:EnableIdentityCenterAssociation";
+	/** Condition key: iam:EnableIdentityPropagation (Bool) */
+	static readonly ENABLE_IDENTITY_PROPAGATION = "iam:EnableIdentityPropagation";
 	/** Condition key: iam:FIDO-FIPS-140-2-certification (String) */
 	static readonly FIDO_FIPS_140_2_CERTIFICATION =
 		"iam:FIDO-FIPS-140-2-certification";
@@ -2334,6 +2390,18 @@ export class IAMConditions {
 	static readonly POLICY_ARN = "iam:PolicyARN";
 	/** Condition key: iam:RegisterSecurityKey (String) */
 	static readonly REGISTER_SECURITY_KEY = "iam:RegisterSecurityKey";
+	/** Condition key: iam:RequestIdentityCenterInstanceArn (ARN) */
+	static readonly REQUEST_IDENTITY_CENTER_INSTANCE_ARN =
+		"iam:RequestIdentityCenterInstanceArn";
+	/** Condition key: iam:RequestIdentityProviderIssuers (ArrayOfString) */
+	static readonly REQUEST_IDENTITY_PROVIDER_ISSUERS =
+		"iam:RequestIdentityProviderIssuers";
+	/** Condition key: iam:ResourceIdentityCenterInstanceArn (ARN) */
+	static readonly RESOURCE_IDENTITY_CENTER_INSTANCE_ARN =
+		"iam:ResourceIdentityCenterInstanceArn";
+	/** Condition key: iam:ResourceIdentityProviderIssuers (ArrayOfString) */
+	static readonly RESOURCE_IDENTITY_PROVIDER_ISSUERS =
+		"iam:ResourceIdentityProviderIssuers";
 	/** Condition key: iam:ResourceTag/${TagKey} (String) */
 	static readonly RESOURCE_TAG = "iam:ResourceTag/${TagKey}";
 	/** Condition key: iam:RoleTemplateARN (ARN) */
@@ -2414,6 +2482,24 @@ export class IAMConditions {
 	}
 
 	/**
+	 * Generates a condition block for `iam:EnableIdentityCenterAssociation`.
+	 */
+	static enableIdentityCenterAssociation(
+		value: boolean,
+	): Record<string, Record<string, boolean>> {
+		return { Bool: { "iam:EnableIdentityCenterAssociation": value } };
+	}
+
+	/**
+	 * Generates a condition block for `iam:EnableIdentityPropagation`.
+	 */
+	static enableIdentityPropagation(
+		value: boolean,
+	): Record<string, Record<string, boolean>> {
+		return { Bool: { "iam:EnableIdentityPropagation": value } };
+	}
+
+	/**
 	 * Generates a condition block for `iam:FIDO-FIPS-140-2-certification`.
 	 */
 	static fidoFips1402Certification(
@@ -2490,6 +2576,50 @@ export class IAMConditions {
 		value: string,
 	): Record<string, Record<string, string>> {
 		return { StringEquals: { "iam:RegisterSecurityKey": value } };
+	}
+
+	/**
+	 * Generates a condition block for `iam:RequestIdentityCenterInstanceArn`.
+	 */
+	static requestIdentityCenterInstanceARN(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { ArnEquals: { "iam:RequestIdentityCenterInstanceArn": value } };
+	}
+
+	/**
+	 * Generates a condition block for `iam:RequestIdentityProviderIssuers`.
+	 */
+	static requestIdentityProviderIssuers(
+		values: string[],
+	): Record<string, Record<string, string[]>> {
+		return {
+			"ForAllValues:StringEquals": {
+				"iam:RequestIdentityProviderIssuers": values,
+			},
+		};
+	}
+
+	/**
+	 * Generates a condition block for `iam:ResourceIdentityCenterInstanceArn`.
+	 */
+	static resourceIdentityCenterInstanceARN(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { ArnEquals: { "iam:ResourceIdentityCenterInstanceArn": value } };
+	}
+
+	/**
+	 * Generates a condition block for `iam:ResourceIdentityProviderIssuers`.
+	 */
+	static resourceIdentityProviderIssuers(
+		values: string[],
+	): Record<string, Record<string, string[]>> {
+		return {
+			"ForAllValues:StringEquals": {
+				"iam:ResourceIdentityProviderIssuers": values,
+			},
+		};
 	}
 
 	/**

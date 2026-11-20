@@ -46,6 +46,11 @@ export class RtbfabricActions {
 	static readonly DeleteResponderGateway = "rtbfabric:DeleteResponderGateway";
 	/** [Write] rtbfabric:DisassociateCertificate */
 	static readonly DisassociateCertificate = "rtbfabric:DisassociateCertificate";
+	/** [Read] rtbfabric:GetAvailableModule */
+	static readonly actionGetAvailableModule = "rtbfabric:GetAvailableModule";
+	/** [Read] rtbfabric:GetAvailableModuleVersion */
+	static readonly actionGetAvailableModuleVersion =
+		"rtbfabric:GetAvailableModuleVersion";
 	/** [Read] rtbfabric:GetCertificateAssociation */
 	static readonly actionGetCertificateAssociation =
 		"rtbfabric:GetCertificateAssociation";
@@ -63,6 +68,13 @@ export class RtbfabricActions {
 	static readonly actionGetRequesterGateway = "rtbfabric:GetRequesterGateway";
 	/** [Read] rtbfabric:GetResponderGateway */
 	static readonly actionGetResponderGateway = "rtbfabric:GetResponderGateway";
+	/** [Read] rtbfabric:GetUpdate */
+	static readonly actionGetUpdate = "rtbfabric:GetUpdate";
+	/** [List] rtbfabric:ListAvailableModuleVersions */
+	static readonly ListAvailableModuleVersions =
+		"rtbfabric:ListAvailableModuleVersions";
+	/** [List] rtbfabric:ListAvailableModules */
+	static readonly ListAvailableModules = "rtbfabric:ListAvailableModules";
 	/** [List] rtbfabric:ListCertificateAssociations */
 	static readonly ListCertificateAssociations =
 		"rtbfabric:ListCertificateAssociations";
@@ -76,6 +88,10 @@ export class RtbfabricActions {
 	static readonly ListResponderGateways = "rtbfabric:ListResponderGateways";
 	/** [Read] rtbfabric:ListTagsForResource */
 	static readonly ListTagsForResource = "rtbfabric:ListTagsForResource";
+	/** [List] rtbfabric:ListUpdates */
+	static readonly ListUpdates = "rtbfabric:ListUpdates";
+	/** [Write] rtbfabric:PutLinkFlows */
+	static readonly PutLinkFlows = "rtbfabric:PutLinkFlows";
 	/** [Write] rtbfabric:RejectLink */
 	static readonly RejectLink = "rtbfabric:RejectLink";
 	/** [Tagging] rtbfabric:TagResource */
@@ -95,6 +111,8 @@ export class RtbfabricActions {
 
 	/** All read-level actions. */
 	static readonly AllReadActions: string[] = [
+		RtbfabricActions.actionGetAvailableModule,
+		RtbfabricActions.actionGetAvailableModuleVersion,
 		RtbfabricActions.actionGetCertificateAssociation,
 		RtbfabricActions.actionGetInboundExternalLink,
 		RtbfabricActions.actionGetLink,
@@ -102,6 +120,7 @@ export class RtbfabricActions {
 		RtbfabricActions.actionGetOutboundExternalLink,
 		RtbfabricActions.actionGetRequesterGateway,
 		RtbfabricActions.actionGetResponderGateway,
+		RtbfabricActions.actionGetUpdate,
 		RtbfabricActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
@@ -121,6 +140,7 @@ export class RtbfabricActions {
 		RtbfabricActions.DeleteRequesterGateway,
 		RtbfabricActions.DeleteResponderGateway,
 		RtbfabricActions.DisassociateCertificate,
+		RtbfabricActions.PutLinkFlows,
 		RtbfabricActions.RejectLink,
 		RtbfabricActions.UpdateLink,
 		RtbfabricActions.UpdateLinkModuleFlow,
@@ -130,11 +150,14 @@ export class RtbfabricActions {
 	];
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [
+		RtbfabricActions.ListAvailableModuleVersions,
+		RtbfabricActions.ListAvailableModules,
 		RtbfabricActions.ListCertificateAssociations,
 		RtbfabricActions.ListLinkRoutingRules,
 		RtbfabricActions.ListLinks,
 		RtbfabricActions.ListRequesterGateways,
 		RtbfabricActions.ListResponderGateways,
+		RtbfabricActions.ListUpdates,
 	];
 	/** All permission-management-level actions. */
 	static readonly AllPermissionManagementActions: string[] = [];
@@ -622,6 +645,14 @@ export class RtbfabricOperations {
 	static readonly DisassociateCertificate: string[] = [
 		"rtbfabric:DisassociateCertificate",
 	];
+	/** IAM actions required for the GetAvailableModule API call. */
+	static readonly opGetAvailableModule: string[] = [
+		"rtbfabric:GetAvailableModule",
+	];
+	/** IAM actions required for the GetAvailableModuleVersion API call. */
+	static readonly opGetAvailableModuleVersion: string[] = [
+		"rtbfabric:GetAvailableModuleVersion",
+	];
 	/** IAM actions required for the GetCertificateAssociation API call. */
 	static readonly opGetCertificateAssociation: string[] = [
 		"rtbfabric:GetCertificateAssociation",
@@ -648,6 +679,16 @@ export class RtbfabricOperations {
 	static readonly opGetResponderGateway: string[] = [
 		"rtbfabric:GetResponderGateway",
 	];
+	/** IAM actions required for the GetUpdate API call. */
+	static readonly opGetUpdate: string[] = ["rtbfabric:GetUpdate"];
+	/** IAM actions required for the ListAvailableModuleVersions API call. */
+	static readonly ListAvailableModuleVersions: string[] = [
+		"rtbfabric:ListAvailableModuleVersions",
+	];
+	/** IAM actions required for the ListAvailableModules API call. */
+	static readonly ListAvailableModules: string[] = [
+		"rtbfabric:ListAvailableModules",
+	];
 	/** IAM actions required for the ListCertificateAssociations API call. */
 	static readonly ListCertificateAssociations: string[] = [
 		"rtbfabric:ListCertificateAssociations",
@@ -670,6 +711,10 @@ export class RtbfabricOperations {
 	static readonly ListTagsForResource: string[] = [
 		"rtbfabric:ListTagsForResource",
 	];
+	/** IAM actions required for the ListUpdates API call. */
+	static readonly ListUpdates: string[] = ["rtbfabric:ListUpdates"];
+	/** IAM actions required for the PutLinkFlows API call. */
+	static readonly PutLinkFlows: string[] = ["rtbfabric:PutLinkFlows"];
 	/** IAM actions required for the RejectLink API call. */
 	static readonly RejectLink: string[] = ["rtbfabric:RejectLink"];
 	/** IAM actions required for the TagResource API call. */

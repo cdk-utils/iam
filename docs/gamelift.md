@@ -1664,6 +1664,7 @@ new gamelift.GameLiftActions()
 | <code><a href="#@cdk_utils/iam.gamelift.GameLiftActions.property.actionGetInstanceAccess">actionGetInstanceAccess</a></code> | <code>string</code> | [Read] gamelift:GetInstanceAccess. |
 | <code><a href="#@cdk_utils/iam.gamelift.GameLiftActions.property.actionGetPlayerConnectionDetails">actionGetPlayerConnectionDetails</a></code> | <code>string</code> | [Read] gamelift:GetPlayerConnectionDetails. |
 | <code><a href="#@cdk_utils/iam.gamelift.GameLiftActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
+| <code><a href="#@cdk_utils/iam.gamelift.GameLiftActions.property.AllowVendedLogDeliveryForResource">AllowVendedLogDeliveryForResource</a></code> | <code>string</code> | [PermissionManagement] gamelift:AllowVendedLogDeliveryForResource. |
 | <code><a href="#@cdk_utils/iam.gamelift.GameLiftActions.property.AllPermissionManagementActions">AllPermissionManagementActions</a></code> | <code>string[]</code> | All permission-management-level actions. |
 | <code><a href="#@cdk_utils/iam.gamelift.GameLiftActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
 | <code><a href="#@cdk_utils/iam.gamelift.GameLiftActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
@@ -1867,6 +1868,18 @@ public readonly AllListActions: string[];
 - *Type:* string[]
 
 All list-level actions.
+
+---
+
+##### `AllowVendedLogDeliveryForResource`<sup>Required</sup> <a name="AllowVendedLogDeliveryForResource" id="@cdk_utils/iam.gamelift.GameLiftActions.property.AllowVendedLogDeliveryForResource"></a>
+
+```typescript
+public readonly AllowVendedLogDeliveryForResource: string;
+```
+
+- *Type:* string
+
+[PermissionManagement] gamelift:AllowVendedLogDeliveryForResource.
 
 ---
 

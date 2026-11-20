@@ -360,6 +360,7 @@ new agent_registry.AgentRegistryActions()
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.CompleteRegistryRecordTokenAuth">CompleteRegistryRecordTokenAuth</a></code> | <code>string</code> | [Write] agent-registry:CompleteRegistryRecordTokenAuth. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.CreateRegistry">CreateRegistry</a></code> | <code>string</code> | [Write] agent-registry:CreateRegistry. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.CreateRegistryRecord">CreateRegistryRecord</a></code> | <code>string</code> | [Write] agent-registry:CreateRegistryRecord. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.DeleteRegistry">DeleteRegistry</a></code> | <code>string</code> | [Write] agent-registry:DeleteRegistry. |
@@ -487,6 +488,18 @@ public readonly AllWriteActions: string[];
 - *Type:* string[]
 
 All write-level actions.
+
+---
+
+##### `CompleteRegistryRecordTokenAuth`<sup>Required</sup> <a name="CompleteRegistryRecordTokenAuth" id="@cdk_utils/iam.agent_registry.AgentRegistryActions.property.CompleteRegistryRecordTokenAuth"></a>
+
+```typescript
+public readonly CompleteRegistryRecordTokenAuth: string;
+```
+
+- *Type:* string
+
+[Write] agent-registry:CompleteRegistryRecordTokenAuth.
 
 ---
 

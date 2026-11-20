@@ -378,6 +378,7 @@ new s3vectors.S3vectorsActions()
 | <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] s3vectors:TagResource. |
 | <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] s3vectors:UntagResource. |
 | <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsActions.property.UpdateIndexMode">UpdateIndexMode</a></code> | <code>string</code> | [Write] s3vectors:UpdateIndexMode. |
+| <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsActions.property.UpdateMetadataConfiguration">UpdateMetadataConfiguration</a></code> | <code>string</code> | [Write] s3vectors:UpdateMetadataConfiguration. |
 
 ---
 
@@ -705,6 +706,18 @@ public readonly UpdateIndexMode: string;
 
 ---
 
+##### `UpdateMetadataConfiguration`<sup>Required</sup> <a name="UpdateMetadataConfiguration" id="@cdk_utils/iam.s3vectors.S3vectorsActions.property.UpdateMetadataConfiguration"></a>
+
+```typescript
+public readonly UpdateMetadataConfiguration: string;
+```
+
+- *Type:* string
+
+[Write] s3vectors:UpdateMetadataConfiguration.
+
+---
+
 ### S3vectorsConditions <a name="S3vectorsConditions" id="@cdk_utils/iam.s3vectors.S3vectorsConditions"></a>
 
 Condition key constants and builders for s3vectors.
@@ -862,6 +875,7 @@ Generates a condition block for `s3vectors:VectorBucketTag/${TagKey}`.
 | <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
 | <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
 | <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsConditions.property.UpdateIndexModeConditionKeys">UpdateIndexModeConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateIndexMode action. |
+| <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsConditions.property.UpdateMetadataConfigurationConditionKeys">UpdateMetadataConfigurationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateMetadataConfiguration action. |
 | <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsConditions.property.VECTOR_BUCKET_TAG">VECTOR_BUCKET_TAG</a></code> | <code>string</code> | Condition key: s3vectors:VectorBucketTag/${TagKey} (String). |
 
 ---
@@ -1166,6 +1180,18 @@ Condition keys applicable to the UpdateIndexMode action.
 
 ---
 
+##### `UpdateMetadataConfigurationConditionKeys`<sup>Required</sup> <a name="UpdateMetadataConfigurationConditionKeys" id="@cdk_utils/iam.s3vectors.S3vectorsConditions.property.UpdateMetadataConfigurationConditionKeys"></a>
+
+```typescript
+public readonly UpdateMetadataConfigurationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateMetadataConfiguration action.
+
+---
+
 ##### `VECTOR_BUCKET_TAG`<sup>Required</sup> <a name="VECTOR_BUCKET_TAG" id="@cdk_utils/iam.s3vectors.S3vectorsConditions.property.VECTOR_BUCKET_TAG"></a>
 
 ```typescript
@@ -1223,6 +1249,7 @@ new s3vectors.S3vectorsOperations()
 | <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 | <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsOperations.property.UpdateIndexMode">UpdateIndexMode</a></code> | <code>string[]</code> | IAM actions required for the UpdateIndexMode API call. |
+| <code><a href="#@cdk_utils/iam.s3vectors.S3vectorsOperations.property.UpdateMetadataConfiguration">UpdateMetadataConfiguration</a></code> | <code>string[]</code> | IAM actions required for the UpdateMetadataConfiguration API call. |
 
 ---
 
@@ -1475,6 +1502,18 @@ public readonly UpdateIndexMode: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateIndexMode API call.
+
+---
+
+##### `UpdateMetadataConfiguration`<sup>Required</sup> <a name="UpdateMetadataConfiguration" id="@cdk_utils/iam.s3vectors.S3vectorsOperations.property.UpdateMetadataConfiguration"></a>
+
+```typescript
+public readonly UpdateMetadataConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateMetadataConfiguration API call.
 
 ---
 

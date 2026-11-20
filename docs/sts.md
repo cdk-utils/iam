@@ -609,11 +609,13 @@ new sts.STSActions()
 | <code><a href="#@cdk_utils/iam.sts.STSActions.property.actionGetCallerIdentity">actionGetCallerIdentity</a></code> | <code>string</code> | [Read] sts:GetCallerIdentity. |
 | <code><a href="#@cdk_utils/iam.sts.STSActions.property.actionGetDelegatedAccessToken">actionGetDelegatedAccessToken</a></code> | <code>string</code> | [Write] sts:GetDelegatedAccessToken. |
 | <code><a href="#@cdk_utils/iam.sts.STSActions.property.actionGetFederationToken">actionGetFederationToken</a></code> | <code>string</code> | [Write] sts:GetFederationToken. |
+| <code><a href="#@cdk_utils/iam.sts.STSActions.property.actionGetScopedCredentials">actionGetScopedCredentials</a></code> | <code>string</code> | [Write] sts:GetScopedCredentials. |
 | <code><a href="#@cdk_utils/iam.sts.STSActions.property.actionGetServiceBearerToken">actionGetServiceBearerToken</a></code> | <code>string</code> | [Read] sts:GetServiceBearerToken. |
 | <code><a href="#@cdk_utils/iam.sts.STSActions.property.actionGetSessionToken">actionGetSessionToken</a></code> | <code>string</code> | [Read] sts:GetSessionToken. |
 | <code><a href="#@cdk_utils/iam.sts.STSActions.property.actionGetWebIdentityToken">actionGetWebIdentityToken</a></code> | <code>string</code> | [Write] sts:GetWebIdentityToken. |
 | <code><a href="#@cdk_utils/iam.sts.STSActions.property.actionSetContext">actionSetContext</a></code> | <code>string</code> | [Write] sts:SetContext. |
 | <code><a href="#@cdk_utils/iam.sts.STSActions.property.actionSetSourceIdentity">actionSetSourceIdentity</a></code> | <code>string</code> | [Write] sts:SetSourceIdentity. |
+| <code><a href="#@cdk_utils/iam.sts.STSActions.property.actionSetWebIdentityTokenScope">actionSetWebIdentityTokenScope</a></code> | <code>string</code> | [Write] sts:SetWebIdentityTokenScope. |
 | <code><a href="#@cdk_utils/iam.sts.STSActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
 | <code><a href="#@cdk_utils/iam.sts.STSActions.property.AllPermissionManagementActions">AllPermissionManagementActions</a></code> | <code>string[]</code> | All permission-management-level actions. |
 | <code><a href="#@cdk_utils/iam.sts.STSActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
@@ -678,6 +680,18 @@ public readonly actionGetFederationToken: string;
 
 ---
 
+##### `actionGetScopedCredentials`<sup>Required</sup> <a name="actionGetScopedCredentials" id="@cdk_utils/iam.sts.STSActions.property.actionGetScopedCredentials"></a>
+
+```typescript
+public readonly actionGetScopedCredentials: string;
+```
+
+- *Type:* string
+
+[Write] sts:GetScopedCredentials.
+
+---
+
 ##### `actionGetServiceBearerToken`<sup>Required</sup> <a name="actionGetServiceBearerToken" id="@cdk_utils/iam.sts.STSActions.property.actionGetServiceBearerToken"></a>
 
 ```typescript
@@ -735,6 +749,18 @@ public readonly actionSetSourceIdentity: string;
 - *Type:* string
 
 [Write] sts:SetSourceIdentity.
+
+---
+
+##### `actionSetWebIdentityTokenScope`<sup>Required</sup> <a name="actionSetWebIdentityTokenScope" id="@cdk_utils/iam.sts.STSActions.property.actionSetWebIdentityTokenScope"></a>
+
+```typescript
+public readonly actionSetWebIdentityTokenScope: string;
+```
+
+- *Type:* string
+
+[Write] sts:SetWebIdentityTokenScope.
 
 ---
 
@@ -920,6 +946,7 @@ new sts.STSConditions()
 | <code><a href="#@cdk_utils/iam.sts.STSConditions.durationSeconds">durationSeconds</a></code> | Generates a condition block for `sts:DurationSeconds`. |
 | <code><a href="#@cdk_utils/iam.sts.STSConditions.externalId">externalId</a></code> | Generates a condition block for `sts:ExternalId`. |
 | <code><a href="#@cdk_utils/iam.sts.STSConditions.identityTokenAudience">identityTokenAudience</a></code> | Generates a condition block for `sts:IdentityTokenAudience`. |
+| <code><a href="#@cdk_utils/iam.sts.STSConditions.identityTokenScope">identityTokenScope</a></code> | Generates a condition block for `sts:IdentityTokenScope`. |
 | <code><a href="#@cdk_utils/iam.sts.STSConditions.requestContext">requestContext</a></code> | Generates a condition block for `sts:RequestContext/${ContextKey}`. |
 | <code><a href="#@cdk_utils/iam.sts.STSConditions.requestContextProviders">requestContextProviders</a></code> | Generates a condition block for `sts:RequestContextProviders`. |
 | <code><a href="#@cdk_utils/iam.sts.STSConditions.requestTag">requestTag</a></code> | Generates a condition block for `aws:RequestTag/${TagKey}`. |
@@ -928,6 +955,7 @@ new sts.STSConditions()
 | <code><a href="#@cdk_utils/iam.sts.STSConditions.roleSessionName">roleSessionName</a></code> | Generates a condition block for `sts:RoleSessionName`. |
 | <code><a href="#@cdk_utils/iam.sts.STSConditions.signingAlgorithm">signingAlgorithm</a></code> | Generates a condition block for `sts:SigningAlgorithm`. |
 | <code><a href="#@cdk_utils/iam.sts.STSConditions.sourceIdentity">sourceIdentity</a></code> | Generates a condition block for `sts:SourceIdentity`. |
+| <code><a href="#@cdk_utils/iam.sts.STSConditions.subjectMode">subjectMode</a></code> | Generates a condition block for `sts:SubjectMode`. |
 | <code><a href="#@cdk_utils/iam.sts.STSConditions.tagKeys">tagKeys</a></code> | Generates a condition block for `aws:TagKeys`. |
 | <code><a href="#@cdk_utils/iam.sts.STSConditions.taskPolicyARN">taskPolicyARN</a></code> | Generates a condition block for `sts:TaskPolicyArn`. |
 | <code><a href="#@cdk_utils/iam.sts.STSConditions.transitiveTagKeys">transitiveTagKeys</a></code> | Generates a condition block for `sts:TransitiveTagKeys`. |
@@ -993,6 +1021,22 @@ sts.STSConditions.identityTokenAudience(values: string[])
 Generates a condition block for `sts:IdentityTokenAudience`.
 
 ###### `values`<sup>Required</sup> <a name="values" id="@cdk_utils/iam.sts.STSConditions.identityTokenAudience.parameter.values"></a>
+
+- *Type:* string[]
+
+---
+
+##### `identityTokenScope` <a name="identityTokenScope" id="@cdk_utils/iam.sts.STSConditions.identityTokenScope"></a>
+
+```typescript
+import { sts } from '@cdk_utils/iam'
+
+sts.STSConditions.identityTokenScope(values: string[])
+```
+
+Generates a condition block for `sts:IdentityTokenScope`.
+
+###### `values`<sup>Required</sup> <a name="values" id="@cdk_utils/iam.sts.STSConditions.identityTokenScope.parameter.values"></a>
 
 - *Type:* string[]
 
@@ -1126,6 +1170,22 @@ Generates a condition block for `sts:SourceIdentity`.
 
 ---
 
+##### `subjectMode` <a name="subjectMode" id="@cdk_utils/iam.sts.STSConditions.subjectMode"></a>
+
+```typescript
+import { sts } from '@cdk_utils/iam'
+
+sts.STSConditions.subjectMode(value: string)
+```
+
+Generates a condition block for `sts:SubjectMode`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.sts.STSConditions.subjectMode.parameter.value"></a>
+
+- *Type:* string
+
+---
+
 ##### `tagKeys` <a name="tagKeys" id="@cdk_utils/iam.sts.STSConditions.tagKeys"></a>
 
 ```typescript
@@ -1180,10 +1240,12 @@ Generates a condition block for `sts:TransitiveTagKeys`.
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.sts.STSConditions.property.actionGetFederationTokenConditionKeys">actionGetFederationTokenConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetFederationToken action. |
+| <code><a href="#@cdk_utils/iam.sts.STSConditions.property.actionGetScopedCredentialsConditionKeys">actionGetScopedCredentialsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetScopedCredentials action. |
 | <code><a href="#@cdk_utils/iam.sts.STSConditions.property.actionGetServiceBearerTokenConditionKeys">actionGetServiceBearerTokenConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetServiceBearerToken action. |
 | <code><a href="#@cdk_utils/iam.sts.STSConditions.property.actionGetWebIdentityTokenConditionKeys">actionGetWebIdentityTokenConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetWebIdentityToken action. |
 | <code><a href="#@cdk_utils/iam.sts.STSConditions.property.actionSetContextConditionKeys">actionSetContextConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the SetContext action. |
 | <code><a href="#@cdk_utils/iam.sts.STSConditions.property.actionSetSourceIdentityConditionKeys">actionSetSourceIdentityConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the SetSourceIdentity action. |
+| <code><a href="#@cdk_utils/iam.sts.STSConditions.property.actionSetWebIdentityTokenScopeConditionKeys">actionSetWebIdentityTokenScopeConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the SetWebIdentityTokenScope action. |
 | <code><a href="#@cdk_utils/iam.sts.STSConditions.property.ACTOR">ACTOR</a></code> | <code>string</code> | Condition key: github.com/enterprises/${EnterpriseName}:actor (String). |
 | <code><a href="#@cdk_utils/iam.sts.STSConditions.property.ACTOR_ID">ACTOR_ID</a></code> | <code>string</code> | Condition key: github.com/enterprises/${EnterpriseName}:actor_id (String). |
 | <code><a href="#@cdk_utils/iam.sts.STSConditions.property.AMR">AMR</a></code> | <code>string</code> | Condition key: cognito-identity.amazonaws.com:amr (String). |
@@ -1227,6 +1289,7 @@ Generates a condition block for `sts:TransitiveTagKeys`.
 | <code><a href="#@cdk_utils/iam.sts.STSConditions.property.GOOGLE_ORGANIZATION_NUMBER">GOOGLE_ORGANIZATION_NUMBER</a></code> | <code>string</code> | Condition key: accounts.google.com:google/organization_number (Numeric). |
 | <code><a href="#@cdk_utils/iam.sts.STSConditions.property.ID">ID</a></code> | <code>string</code> | Condition key: graph.facebook.com:id (String). |
 | <code><a href="#@cdk_utils/iam.sts.STSConditions.property.IDENTITY_TOKEN_AUDIENCE">IDENTITY_TOKEN_AUDIENCE</a></code> | <code>string</code> | Condition key: sts:IdentityTokenAudience (ArrayOfString). |
+| <code><a href="#@cdk_utils/iam.sts.STSConditions.property.IDENTITY_TOKEN_SCOPE">IDENTITY_TOKEN_SCOPE</a></code> | <code>string</code> | Condition key: sts:IdentityTokenScope (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.sts.STSConditions.property.ISS">ISS</a></code> | <code>string</code> | Condition key: saml:iss (String). |
 | <code><a href="#@cdk_utils/iam.sts.STSConditions.property.JOB_WORKFLOW_REF">JOB_WORKFLOW_REF</a></code> | <code>string</code> | Condition key: github.com/enterprises/${EnterpriseName}:job_workflow_ref (String). |
 | <code><a href="#@cdk_utils/iam.sts.STSConditions.property.MAIL">MAIL</a></code> | <code>string</code> | Condition key: saml:mail (String). |
@@ -1259,6 +1322,7 @@ Generates a condition block for `sts:TransitiveTagKeys`.
 | <code><a href="#@cdk_utils/iam.sts.STSConditions.property.SOURCE_IDENTITY">SOURCE_IDENTITY</a></code> | <code>string</code> | Condition key: sts:SourceIdentity (String). |
 | <code><a href="#@cdk_utils/iam.sts.STSConditions.property.SUB">SUB</a></code> | <code>string</code> | Condition key: accounts.google.com:sub (String). |
 | <code><a href="#@cdk_utils/iam.sts.STSConditions.property.SUB_TYPE">SUB_TYPE</a></code> | <code>string</code> | Condition key: saml:sub_type (String). |
+| <code><a href="#@cdk_utils/iam.sts.STSConditions.property.SUBJECT_MODE">SUBJECT_MODE</a></code> | <code>string</code> | Condition key: sts:SubjectMode (String). |
 | <code><a href="#@cdk_utils/iam.sts.STSConditions.property.SURNAME">SURNAME</a></code> | <code>string</code> | Condition key: saml:surname (String). |
 | <code><a href="#@cdk_utils/iam.sts.STSConditions.property.TagGetWebIdentityTokenConditionKeys">TagGetWebIdentityTokenConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagGetWebIdentityToken action. |
 | <code><a href="#@cdk_utils/iam.sts.STSConditions.property.TagSessionConditionKeys">TagSessionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagSession action. |
@@ -1283,6 +1347,18 @@ public readonly actionGetFederationTokenConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the GetFederationToken action.
+
+---
+
+##### `actionGetScopedCredentialsConditionKeys`<sup>Required</sup> <a name="actionGetScopedCredentialsConditionKeys" id="@cdk_utils/iam.sts.STSConditions.property.actionGetScopedCredentialsConditionKeys"></a>
+
+```typescript
+public readonly actionGetScopedCredentialsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetScopedCredentials action.
 
 ---
 
@@ -1331,6 +1407,18 @@ public readonly actionSetSourceIdentityConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the SetSourceIdentity action.
+
+---
+
+##### `actionSetWebIdentityTokenScopeConditionKeys`<sup>Required</sup> <a name="actionSetWebIdentityTokenScopeConditionKeys" id="@cdk_utils/iam.sts.STSConditions.property.actionSetWebIdentityTokenScopeConditionKeys"></a>
+
+```typescript
+public readonly actionSetWebIdentityTokenScopeConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the SetWebIdentityTokenScope action.
 
 ---
 
@@ -1850,6 +1938,18 @@ Condition key: sts:IdentityTokenAudience (ArrayOfString).
 
 ---
 
+##### `IDENTITY_TOKEN_SCOPE`<sup>Required</sup> <a name="IDENTITY_TOKEN_SCOPE" id="@cdk_utils/iam.sts.STSConditions.property.IDENTITY_TOKEN_SCOPE"></a>
+
+```typescript
+public readonly IDENTITY_TOKEN_SCOPE: string;
+```
+
+- *Type:* string
+
+Condition key: sts:IdentityTokenScope (ArrayOfString).
+
+---
+
 ##### `ISS`<sup>Required</sup> <a name="ISS" id="@cdk_utils/iam.sts.STSConditions.property.ISS"></a>
 
 ```typescript
@@ -2234,6 +2334,18 @@ Condition key: saml:sub_type (String).
 
 ---
 
+##### `SUBJECT_MODE`<sup>Required</sup> <a name="SUBJECT_MODE" id="@cdk_utils/iam.sts.STSConditions.property.SUBJECT_MODE"></a>
+
+```typescript
+public readonly SUBJECT_MODE: string;
+```
+
+- *Type:* string
+
+Condition key: sts:SubjectMode (String).
+
+---
+
 ##### `SURNAME`<sup>Required</sup> <a name="SURNAME" id="@cdk_utils/iam.sts.STSConditions.property.SURNAME"></a>
 
 ```typescript
@@ -2411,6 +2523,7 @@ new sts.STSOperations()
 | <code><a href="#@cdk_utils/iam.sts.STSOperations.property.opGetCallerIdentity">opGetCallerIdentity</a></code> | <code>string[]</code> | IAM actions required for the GetCallerIdentity API call. |
 | <code><a href="#@cdk_utils/iam.sts.STSOperations.property.opGetDelegatedAccessToken">opGetDelegatedAccessToken</a></code> | <code>string[]</code> | IAM actions required for the GetDelegatedAccessToken API call. |
 | <code><a href="#@cdk_utils/iam.sts.STSOperations.property.opGetFederationToken">opGetFederationToken</a></code> | <code>string[]</code> | IAM actions required for the GetFederationToken API call. |
+| <code><a href="#@cdk_utils/iam.sts.STSOperations.property.opGetScopedCredentials">opGetScopedCredentials</a></code> | <code>string[]</code> | IAM actions required for the GetScopedCredentials API call. |
 | <code><a href="#@cdk_utils/iam.sts.STSOperations.property.opGetSessionToken">opGetSessionToken</a></code> | <code>string[]</code> | IAM actions required for the GetSessionToken API call. |
 | <code><a href="#@cdk_utils/iam.sts.STSOperations.property.opGetWebIdentityToken">opGetWebIdentityToken</a></code> | <code>string[]</code> | IAM actions required for the GetWebIdentityToken API call. |
 
@@ -2521,6 +2634,18 @@ public readonly opGetFederationToken: string[];
 - *Type:* string[]
 
 IAM actions required for the GetFederationToken API call.
+
+---
+
+##### `opGetScopedCredentials`<sup>Required</sup> <a name="opGetScopedCredentials" id="@cdk_utils/iam.sts.STSOperations.property.opGetScopedCredentials"></a>
+
+```typescript
+public readonly opGetScopedCredentials: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetScopedCredentials API call.
 
 ---
 

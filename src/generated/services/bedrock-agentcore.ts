@@ -240,6 +240,11 @@ export class BedrockAgentcoreActions {
 	static readonly actionGetABTest = "bedrock-agentcore:GetABTest";
 	/** [Read] bedrock-agentcore:GetAgentCard */
 	static readonly actionGetAgentCard = "bedrock-agentcore:GetAgentCard";
+	/** [Read] bedrock-agentcore:GetAgentInsight */
+	static readonly actionGetAgentInsight = "bedrock-agentcore:GetAgentInsight";
+	/** [Read] bedrock-agentcore:GetAgentInsightStore */
+	static readonly actionGetAgentInsightStore =
+		"bedrock-agentcore:GetAgentInsightStore";
 	/** [Read] bedrock-agentcore:GetAgentRuntime */
 	static readonly actionGetAgentRuntime = "bedrock-agentcore:GetAgentRuntime";
 	/** [Read] bedrock-agentcore:GetAgentRuntimeEndpoint */
@@ -401,12 +406,19 @@ export class BedrockAgentcoreActions {
 	static readonly InvokeHarness = "bedrock-agentcore:InvokeHarness";
 	/** [Read] bedrock-agentcore:InvokeRegistryMcp */
 	static readonly InvokeRegistryMcp = "bedrock-agentcore:InvokeRegistryMcp";
+	/** [Write] bedrock-agentcore:InvokeWebAnswer */
+	static readonly InvokeWebAnswer = "bedrock-agentcore:InvokeWebAnswer";
 	/** [PermissionManagement] bedrock-agentcore:InvokeWebSearch */
 	static readonly InvokeWebSearch = "bedrock-agentcore:InvokeWebSearch";
 	/** [List] bedrock-agentcore:ListABTests */
 	static readonly ListABTests = "bedrock-agentcore:ListABTests";
 	/** [List] bedrock-agentcore:ListActors */
 	static readonly ListActors = "bedrock-agentcore:ListActors";
+	/** [List] bedrock-agentcore:ListAgentInsightStores */
+	static readonly ListAgentInsightStores =
+		"bedrock-agentcore:ListAgentInsightStores";
+	/** [List] bedrock-agentcore:ListAgentInsights */
+	static readonly ListAgentInsights = "bedrock-agentcore:ListAgentInsights";
 	/** [List] bedrock-agentcore:ListAgentRuntimeEndpoints */
 	static readonly ListAgentRuntimeEndpoints =
 		"bedrock-agentcore:ListAgentRuntimeEndpoints";
@@ -598,6 +610,11 @@ export class BedrockAgentcoreActions {
 	static readonly UntagResource = "bedrock-agentcore:UntagResource";
 	/** [Write] bedrock-agentcore:UpdateABTest */
 	static readonly UpdateABTest = "bedrock-agentcore:UpdateABTest";
+	/** [Write] bedrock-agentcore:UpdateAgentInsight */
+	static readonly UpdateAgentInsight = "bedrock-agentcore:UpdateAgentInsight";
+	/** [Write] bedrock-agentcore:UpdateAgentInsightStore */
+	static readonly UpdateAgentInsightStore =
+		"bedrock-agentcore:UpdateAgentInsightStore";
 	/** [Write] bedrock-agentcore:UpdateAgentRuntime */
 	static readonly UpdateAgentRuntime = "bedrock-agentcore:UpdateAgentRuntime";
 	/** [Write] bedrock-agentcore:UpdateAgentRuntimeEndpoint */
@@ -681,6 +698,8 @@ export class BedrockAgentcoreActions {
 		BedrockAgentcoreActions.GatewayGetWebACLForResource,
 		BedrockAgentcoreActions.actionGetABTest,
 		BedrockAgentcoreActions.actionGetAgentCard,
+		BedrockAgentcoreActions.actionGetAgentInsight,
+		BedrockAgentcoreActions.actionGetAgentInsightStore,
 		BedrockAgentcoreActions.actionGetAgentRuntime,
 		BedrockAgentcoreActions.actionGetAgentRuntimeEndpoint,
 		BedrockAgentcoreActions.actionGetApiKeyCredentialProvider,
@@ -827,6 +846,7 @@ export class BedrockAgentcoreActions {
 		BedrockAgentcoreActions.InvokeAgentRuntimeWithWebSocketStreamForUser,
 		BedrockAgentcoreActions.InvokeCodeInterpreter,
 		BedrockAgentcoreActions.InvokeHarness,
+		BedrockAgentcoreActions.InvokeWebAnswer,
 		BedrockAgentcoreActions.PassCapacityProvider,
 		BedrockAgentcoreActions.ProcessPayment,
 		BedrockAgentcoreActions.PutResourcePolicy,
@@ -846,6 +866,8 @@ export class BedrockAgentcoreActions {
 		BedrockAgentcoreActions.StopRuntimeSession,
 		BedrockAgentcoreActions.SubmitRegistryRecordForApproval,
 		BedrockAgentcoreActions.UpdateABTest,
+		BedrockAgentcoreActions.UpdateAgentInsight,
+		BedrockAgentcoreActions.UpdateAgentInsightStore,
 		BedrockAgentcoreActions.UpdateAgentRuntime,
 		BedrockAgentcoreActions.UpdateAgentRuntimeEndpoint,
 		BedrockAgentcoreActions.UpdateApiKeyCredentialProvider,
@@ -881,6 +903,8 @@ export class BedrockAgentcoreActions {
 		BedrockAgentcoreActions.GatewayListResourcesForWebACL,
 		BedrockAgentcoreActions.ListABTests,
 		BedrockAgentcoreActions.ListActors,
+		BedrockAgentcoreActions.ListAgentInsightStores,
+		BedrockAgentcoreActions.ListAgentInsights,
 		BedrockAgentcoreActions.ListAgentRuntimeEndpoints,
 		BedrockAgentcoreActions.ListAgentRuntimeVersions,
 		BedrockAgentcoreActions.ListAgentRuntimeVersionsByCapacityProvider,
@@ -974,6 +998,34 @@ export interface BedrockAgentcoreAbTestArnComponents {
 	readonly account: string;
 	/** The ABTestId component. */
 	readonly abTestId: string;
+}
+
+/**
+ * Properties for building a agent-insight-store ARN.
+ */
+export interface BedrockAgentcoreAgentInsightStoreArnProps {
+	/** The AgentInsightStoreId component of the ARN. */
+	readonly agentInsightStoreId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a agent-insight-store ARN.
+ */
+export interface BedrockAgentcoreAgentInsightStoreArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AgentInsightStoreId component. */
+	readonly agentInsightStoreId: string;
 }
 
 /**
@@ -1821,6 +1873,30 @@ export interface BedrockAgentcoreTokenVaultArnComponents {
 }
 
 /**
+ * Properties for building a web-answer ARN.
+ */
+export interface BedrockAgentcoreWebAnswerArnProps {
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a web-answer ARN.
+ */
+export interface BedrockAgentcoreWebAnswerArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+}
+
+/**
  * Properties for building a web-search ARN.
  */
 export interface BedrockAgentcoreWebSearchArnProps {
@@ -1906,6 +1982,8 @@ export interface BedrockAgentcoreWorkloadIdentityDirectoryArnComponents {
 
 const AbTestArnRegex =
 	/^arn:(?<partition>[^:]+):bedrock-agentcore:(?<region>[^:]*):(?<account>[^:]*):ab-test\/(?<abTestId>[^:/?]+)$/;
+const AgentInsightStoreArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock-agentcore:(?<region>[^:]*):(?<account>[^:]*):agent-insight-store\/(?<agentInsightStoreId>[^:/?]+)$/;
 const ApikeycredentialproviderArnRegex =
 	/^arn:(?<partition>[^:]+):bedrock-agentcore:(?<region>[^:]*):(?<account>[^:]*):token-vault\/(?<tokenVaultId>[^:/?]+)\/apikeycredentialprovider\/(?<name>[^:/?]+)$/;
 const BatchEvaluateArnRegex =
@@ -1964,6 +2042,8 @@ const RuntimeEndpointArnRegex =
 	/^arn:(?<partition>[^:]+):bedrock-agentcore:(?<region>[^:]*):(?<account>[^:]*):runtime\/(?<runtimeId>[^:/?]+)\/runtime-endpoint\/(?<name>[^:/?]+)$/;
 const TokenVaultArnRegex =
 	/^arn:(?<partition>[^:]+):bedrock-agentcore:(?<region>[^:]*):(?<account>[^:]*):token-vault\/(?<tokenVaultId>[^:/?]+)$/;
+const WebAnswerArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock-agentcore:(?<region>[^:]*):aws:tool\/web-answer\.v1$/;
 const WebSearchArnRegex =
 	/^arn:(?<partition>[^:]+):bedrock-agentcore:(?<region>[^:]*):(?<account>[^:]*):tool\/web-search\.v1$/;
 const WorkloadIdentityArnRegex =
@@ -2003,6 +2083,41 @@ export class BedrockAgentcoreResources {
 			region: match.groups.region,
 			account: match.groups.account,
 			abTestId: match.groups!.abTestId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the agent-insight-store resource.
+	 */
+	static agentInsightStore(
+		props: BedrockAgentcoreAgentInsightStoreArnProps,
+	): string {
+		return `arn:${props.partition ?? "aws"}:bedrock-agentcore:${props.region ?? "*"}:${props.account ?? "*"}:agent-insight-store/${props.agentInsightStoreId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the agent-insight-store resource.
+	 */
+	static isValidAgentInsightStoreArn(arn: string): boolean {
+		return AgentInsightStoreArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a agent-insight-store ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseAgentInsightStoreArn(
+		arn: string,
+	): BedrockAgentcoreAgentInsightStoreArnComponents {
+		const match = AgentInsightStoreArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid agent-insight-store ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			agentInsightStoreId: match.groups!.agentInsightStoreId,
 		};
 	}
 
@@ -2978,6 +3093,38 @@ export class BedrockAgentcoreResources {
 	}
 
 	/**
+	 * Builds an ARN for the web-answer resource.
+	 */
+	static webAnswer(props: BedrockAgentcoreWebAnswerArnProps): string {
+		return `arn:${props.partition ?? "aws"}:bedrock-agentcore:${props.region ?? "*"}:aws:tool/web-answer.v1`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the web-answer resource.
+	 */
+	static isValidWebAnswerArn(arn: string): boolean {
+		return WebAnswerArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a web-answer ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseWebAnswerArn(
+		arn: string,
+	): BedrockAgentcoreWebAnswerArnComponents {
+		const match = WebAnswerArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid web-answer ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+		};
+	}
+
+	/**
 	 * Builds an ARN for the web-search resource.
 	 */
 	static webSearch(props: BedrockAgentcoreWebSearchArnProps): string {
@@ -3334,6 +3481,8 @@ export class BedrockAgentcoreOperations {
 	static readonly DeleteDatasetExamples: string[] = [
 		"bedrock-agentcore:DeleteDatasetExamples",
 	];
+	/** IAM actions required for the DeleteDatasetGeneration API call. */
+	static readonly DeleteDatasetGeneration: string[] = [];
 	/** IAM actions required for the DeleteEvaluator API call. */
 	static readonly DeleteEvaluator: string[] = [
 		"bedrock-agentcore:DeleteEvaluator",
@@ -3429,6 +3578,14 @@ export class BedrockAgentcoreOperations {
 	static readonly opGetABTest: string[] = ["bedrock-agentcore:GetABTest"];
 	/** IAM actions required for the GetAgentCard API call. */
 	static readonly opGetAgentCard: string[] = ["bedrock-agentcore:GetAgentCard"];
+	/** IAM actions required for the GetAgentInsight API call. */
+	static readonly opGetAgentInsight: string[] = [
+		"bedrock-agentcore:GetAgentInsight",
+	];
+	/** IAM actions required for the GetAgentInsightStore API call. */
+	static readonly opGetAgentInsightStore: string[] = [
+		"bedrock-agentcore:GetAgentInsightStore",
+	];
 	/** IAM actions required for the GetAgentRuntime API call. */
 	static readonly opGetAgentRuntime: string[] = [
 		"bedrock-agentcore:GetAgentRuntime",
@@ -3481,6 +3638,8 @@ export class BedrockAgentcoreOperations {
 	];
 	/** IAM actions required for the GetDataset API call. */
 	static readonly opGetDataset: string[] = ["bedrock-agentcore:GetDataset"];
+	/** IAM actions required for the GetDatasetGeneration API call. */
+	static readonly opGetDatasetGeneration: string[] = [];
 	/** IAM actions required for the GetEvaluator API call. */
 	static readonly opGetEvaluator: string[] = ["bedrock-agentcore:GetEvaluator"];
 	/** IAM actions required for the GetEvent API call. */
@@ -3634,10 +3793,20 @@ export class BedrockAgentcoreOperations {
 		"bedrock-agentcore:InvokeAgentRuntime",
 		"bedrock-agentcore:InvokeHarness",
 	];
+	/** IAM actions required for the InvokeWebSearch API call. */
+	static readonly InvokeWebSearch: string[] = [];
 	/** IAM actions required for the ListABTests API call. */
 	static readonly ListABTests: string[] = ["bedrock-agentcore:ListABTests"];
 	/** IAM actions required for the ListActors API call. */
 	static readonly ListActors: string[] = ["bedrock-agentcore:ListActors"];
+	/** IAM actions required for the ListAgentInsightStores API call. */
+	static readonly ListAgentInsightStores: string[] = [
+		"bedrock-agentcore:ListAgentInsightStores",
+	];
+	/** IAM actions required for the ListAgentInsights API call. */
+	static readonly ListAgentInsights: string[] = [
+		"bedrock-agentcore:ListAgentInsights",
+	];
 	/** IAM actions required for the ListAgentRuntimeEndpoints API call. */
 	static readonly ListAgentRuntimeEndpoints: string[] = [
 		"bedrock-agentcore:ListAgentRuntimeEndpoints",
@@ -3700,6 +3869,8 @@ export class BedrockAgentcoreOperations {
 	static readonly ListDatasetExamples: string[] = [
 		"bedrock-agentcore:ListDatasetExamples",
 	];
+	/** IAM actions required for the ListDatasetGenerations API call. */
+	static readonly ListDatasetGenerations: string[] = [];
 	/** IAM actions required for the ListDatasetVersions API call. */
 	static readonly ListDatasetVersions: string[] = [
 		"bedrock-agentcore:ListDatasetVersions",
@@ -3864,6 +4035,8 @@ export class BedrockAgentcoreOperations {
 	static readonly StartCodeInterpreterSession: string[] = [
 		"bedrock-agentcore:StartCodeInterpreterSession",
 	];
+	/** IAM actions required for the StartDatasetGeneration API call. */
+	static readonly StartDatasetGeneration: string[] = [];
 	/** IAM actions required for the StartMemoryExtractionJob API call. */
 	static readonly StartMemoryExtractionJob: string[] = [
 		"bedrock-agentcore:StartMemoryExtractionJob",
@@ -3909,6 +4082,14 @@ export class BedrockAgentcoreOperations {
 		"iam:PassRole",
 		"bedrock-agentcore:UpdateABTest",
 	];
+	/** IAM actions required for the UpdateAgentInsight API call. */
+	static readonly UpdateAgentInsight: string[] = [
+		"bedrock-agentcore:UpdateAgentInsight",
+	];
+	/** IAM actions required for the UpdateAgentInsightStore API call. */
+	static readonly UpdateAgentInsightStore: string[] = [
+		"bedrock-agentcore:UpdateAgentInsightStore",
+	];
 	/** IAM actions required for the UpdateAgentRuntime API call. */
 	static readonly UpdateAgentRuntime: string[] = [
 		"bedrock-agentcore:PassCapacityProvider",
@@ -3951,6 +4132,7 @@ export class BedrockAgentcoreOperations {
 	];
 	/** IAM actions required for the UpdateGateway API call. */
 	static readonly UpdateGateway: string[] = [
+		"bedrock-agentcore:CreateGateway",
 		"iam:PassRole",
 		"bedrock-agentcore:UpdateGateway",
 	];
@@ -4213,6 +4395,14 @@ export class BedrockAgentcoreConditions {
 		"bedrock-agentcore:actorId",
 		"bedrock-agentcore:namespaceVariable/${VariableName}",
 		"bedrock-agentcore:sessionId",
+	];
+	/** Condition keys applicable to the InvokeGateway action. */
+	static readonly InvokeGatewayConditionKeys: string[] = [
+		"bedrock-agentcore:InboundJwtClaim/aud",
+		"bedrock-agentcore:InboundJwtClaim/client_id",
+		"bedrock-agentcore:InboundJwtClaim/iss",
+		"bedrock-agentcore:InboundJwtClaim/scope",
+		"bedrock-agentcore:InboundJwtClaim/sub",
 	];
 	/** Condition keys applicable to the ListEvents action. */
 	static readonly ListEventsConditionKeys: string[] = [

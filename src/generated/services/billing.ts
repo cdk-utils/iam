@@ -416,8 +416,12 @@ export class BillingOperations {
 		"aws-portal:ModifyBilling",
 		"billing:RedeemCredits",
 	];
+	/** IAM actions required for the SplitCredit API call. */
+	static readonly SplitCredit: string[] = ["billing:SplitCredit"];
 	/** IAM actions required for the TagResource API call. */
 	static readonly TagResource: string[] = ["billing:TagResource"];
+	/** IAM actions required for the TransferCredit API call. */
+	static readonly TransferCredit: string[] = ["billing:TransferCredit"];
 	/** IAM actions required for the UntagResource API call. */
 	static readonly UntagResource: string[] = ["billing:UntagResource"];
 	/** IAM actions required for the UpdateBillingPreferences API call. */

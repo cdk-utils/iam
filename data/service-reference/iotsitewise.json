@@ -4292,6 +4292,10 @@
         {
           "Name": "CreateAccessPolicy",
           "Service": "iotsitewise"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "iotsitewise"
         }
       ],
       "SDK": [

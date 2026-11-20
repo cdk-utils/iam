@@ -27,12 +27,19 @@ export class Route53Actions {
 	static readonly CreateCidrCollection = "route53:CreateCidrCollection";
 	/** [Write] route53:CreateHealthCheck */
 	static readonly CreateHealthCheck = "route53:CreateHealthCheck";
+	/** [Write] route53:CreateHealthCheckSource */
+	static readonly CreateHealthCheckSource = "route53:CreateHealthCheckSource";
 	/** [Write] route53:CreateHostedZone */
 	static readonly CreateHostedZone = "route53:CreateHostedZone";
+	/** [Write] route53:CreateIpGuardrailPolicy */
+	static readonly CreateIpGuardrailPolicy = "route53:CreateIpGuardrailPolicy";
 	/** [Write] route53:CreateKeySigningKey */
 	static readonly CreateKeySigningKey = "route53:CreateKeySigningKey";
 	/** [Write] route53:CreateQueryLoggingConfig */
 	static readonly CreateQueryLoggingConfig = "route53:CreateQueryLoggingConfig";
+	/** [Write] route53:CreateResourceRecordSetProtections */
+	static readonly CreateResourceRecordSetProtections =
+		"route53:CreateResourceRecordSetProtections";
 	/** [Write] route53:CreateReusableDelegationSet */
 	static readonly CreateReusableDelegationSet =
 		"route53:CreateReusableDelegationSet";
@@ -53,12 +60,19 @@ export class Route53Actions {
 	static readonly DeleteCidrCollection = "route53:DeleteCidrCollection";
 	/** [Write] route53:DeleteHealthCheck */
 	static readonly DeleteHealthCheck = "route53:DeleteHealthCheck";
+	/** [Write] route53:DeleteHealthCheckSource */
+	static readonly DeleteHealthCheckSource = "route53:DeleteHealthCheckSource";
 	/** [Write] route53:DeleteHostedZone */
 	static readonly DeleteHostedZone = "route53:DeleteHostedZone";
+	/** [Write] route53:DeleteIpGuardrailPolicy */
+	static readonly DeleteIpGuardrailPolicy = "route53:DeleteIpGuardrailPolicy";
 	/** [Write] route53:DeleteKeySigningKey */
 	static readonly DeleteKeySigningKey = "route53:DeleteKeySigningKey";
 	/** [Write] route53:DeleteQueryLoggingConfig */
 	static readonly DeleteQueryLoggingConfig = "route53:DeleteQueryLoggingConfig";
+	/** [Write] route53:DeleteResourceRecordSetProtections */
+	static readonly DeleteResourceRecordSetProtections =
+		"route53:DeleteResourceRecordSetProtections";
 	/** [Write] route53:DeleteReusableDelegationSet */
 	static readonly DeleteReusableDelegationSet =
 		"route53:DeleteReusableDelegationSet";
@@ -94,6 +108,8 @@ export class Route53Actions {
 	/** [List] route53:GetHealthCheckLastFailureReason */
 	static readonly actionGetHealthCheckLastFailureReason =
 		"route53:GetHealthCheckLastFailureReason";
+	/** [Read] route53:GetHealthCheckSource */
+	static readonly actionGetHealthCheckSource = "route53:GetHealthCheckSource";
 	/** [List] route53:GetHealthCheckStatus */
 	static readonly actionGetHealthCheckStatus = "route53:GetHealthCheckStatus";
 	/** [List] route53:GetHostedZone */
@@ -102,6 +118,8 @@ export class Route53Actions {
 	static readonly actionGetHostedZoneCount = "route53:GetHostedZoneCount";
 	/** [Read] route53:GetHostedZoneLimit */
 	static readonly actionGetHostedZoneLimit = "route53:GetHostedZoneLimit";
+	/** [Read] route53:GetIpGuardrailPolicy */
+	static readonly actionGetIpGuardrailPolicy = "route53:GetIpGuardrailPolicy";
 	/** [Read] route53:GetQueryLoggingConfig */
 	static readonly actionGetQueryLoggingConfig = "route53:GetQueryLoggingConfig";
 	/** [List] route53:GetReusableDelegationSet */
@@ -126,16 +144,25 @@ export class Route53Actions {
 	static readonly ListCidrLocations = "route53:ListCidrLocations";
 	/** [Read] route53:ListGeoLocations */
 	static readonly ListGeoLocations = "route53:ListGeoLocations";
+	/** [List] route53:ListHealthCheckSources */
+	static readonly ListHealthCheckSources = "route53:ListHealthCheckSources";
 	/** [Read] route53:ListHealthChecks */
 	static readonly ListHealthChecks = "route53:ListHealthChecks";
+	/** [List] route53:ListHealthChecksBySource */
+	static readonly ListHealthChecksBySource = "route53:ListHealthChecksBySource";
 	/** [List] route53:ListHostedZones */
 	static readonly ListHostedZones = "route53:ListHostedZones";
 	/** [List] route53:ListHostedZonesByName */
 	static readonly ListHostedZonesByName = "route53:ListHostedZonesByName";
 	/** [List] route53:ListHostedZonesByVPC */
 	static readonly ListHostedZonesByVPC = "route53:ListHostedZonesByVPC";
+	/** [List] route53:ListIpGuardrailPolicies */
+	static readonly ListIpGuardrailPolicies = "route53:ListIpGuardrailPolicies";
 	/** [List] route53:ListQueryLoggingConfigs */
 	static readonly ListQueryLoggingConfigs = "route53:ListQueryLoggingConfigs";
+	/** [List] route53:ListResourceRecordSetProtections */
+	static readonly ListResourceRecordSetProtections =
+		"route53:ListResourceRecordSetProtections";
 	/** [List] route53:ListResourceRecordSets */
 	static readonly ListResourceRecordSets = "route53:ListResourceRecordSets";
 	/** [Read] route53:ListReusableDelegationSets */
@@ -170,6 +197,8 @@ export class Route53Actions {
 	static readonly UpdateHostedZoneComment = "route53:UpdateHostedZoneComment";
 	/** [Write] route53:UpdateHostedZoneFeatures */
 	static readonly UpdateHostedZoneFeatures = "route53:UpdateHostedZoneFeatures";
+	/** [Write] route53:UpdateIpGuardrailPolicy */
+	static readonly UpdateIpGuardrailPolicy = "route53:UpdateIpGuardrailPolicy";
 	/** [Write] route53:UpdateTrafficPolicyComment */
 	static readonly UpdateTrafficPolicyComment =
 		"route53:UpdateTrafficPolicyComment";
@@ -182,7 +211,9 @@ export class Route53Actions {
 		Route53Actions.actionGetAccountLimit,
 		Route53Actions.actionGetDNSSEC,
 		Route53Actions.actionGetHealthCheck,
+		Route53Actions.actionGetHealthCheckSource,
 		Route53Actions.actionGetHostedZoneLimit,
+		Route53Actions.actionGetIpGuardrailPolicy,
 		Route53Actions.actionGetQueryLoggingConfig,
 		Route53Actions.actionGetReusableDelegationSetLimit,
 		Route53Actions.actionGetTrafficPolicy,
@@ -204,9 +235,12 @@ export class Route53Actions {
 		Route53Actions.ChangeResourceRecordSets,
 		Route53Actions.CreateCidrCollection,
 		Route53Actions.CreateHealthCheck,
+		Route53Actions.CreateHealthCheckSource,
 		Route53Actions.CreateHostedZone,
+		Route53Actions.CreateIpGuardrailPolicy,
 		Route53Actions.CreateKeySigningKey,
 		Route53Actions.CreateQueryLoggingConfig,
+		Route53Actions.CreateResourceRecordSetProtections,
 		Route53Actions.CreateReusableDelegationSet,
 		Route53Actions.CreateTrafficPolicy,
 		Route53Actions.CreateTrafficPolicyInstance,
@@ -215,9 +249,12 @@ export class Route53Actions {
 		Route53Actions.DeactivateKeySigningKey,
 		Route53Actions.DeleteCidrCollection,
 		Route53Actions.DeleteHealthCheck,
+		Route53Actions.DeleteHealthCheckSource,
 		Route53Actions.DeleteHostedZone,
+		Route53Actions.DeleteIpGuardrailPolicy,
 		Route53Actions.DeleteKeySigningKey,
 		Route53Actions.DeleteQueryLoggingConfig,
+		Route53Actions.DeleteResourceRecordSetProtections,
 		Route53Actions.DeleteReusableDelegationSet,
 		Route53Actions.DeleteTrafficPolicy,
 		Route53Actions.DeleteTrafficPolicyInstance,
@@ -228,6 +265,7 @@ export class Route53Actions {
 		Route53Actions.UpdateHealthCheck,
 		Route53Actions.UpdateHostedZoneComment,
 		Route53Actions.UpdateHostedZoneFeatures,
+		Route53Actions.UpdateIpGuardrailPolicy,
 		Route53Actions.UpdateTrafficPolicyComment,
 		Route53Actions.UpdateTrafficPolicyInstance,
 	];
@@ -245,10 +283,14 @@ export class Route53Actions {
 		Route53Actions.ListCidrBlocks,
 		Route53Actions.ListCidrCollections,
 		Route53Actions.ListCidrLocations,
+		Route53Actions.ListHealthCheckSources,
+		Route53Actions.ListHealthChecksBySource,
 		Route53Actions.ListHostedZones,
 		Route53Actions.ListHostedZonesByName,
 		Route53Actions.ListHostedZonesByVPC,
+		Route53Actions.ListIpGuardrailPolicies,
 		Route53Actions.ListQueryLoggingConfigs,
+		Route53Actions.ListResourceRecordSetProtections,
 		Route53Actions.ListResourceRecordSets,
 		Route53Actions.ListTrafficPolicies,
 		Route53Actions.ListTrafficPolicyInstancesByHostedZone,
@@ -366,6 +408,34 @@ export interface Route53HealthcheckArnProps {
  * Parsed components of a healthcheck ARN.
  */
 export interface Route53HealthcheckArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Id component. */
+	readonly id: string;
+}
+
+/**
+ * Properties for building a healthchecksource ARN.
+ */
+export interface Route53HealthchecksourceArnProps {
+	/** The Id component of the ARN. */
+	readonly id: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a healthchecksource ARN.
+ */
+export interface Route53HealthchecksourceArnComponents {
 	/** AWS partition. */
 	readonly partition: string;
 	/** AWS region. */
@@ -524,6 +594,8 @@ const DelegationsetArnRegex =
 	/^arn:(?<partition>[^:]+):route53:::delegationset\/(?<id>[^:/?]+)$/;
 const HealthcheckArnRegex =
 	/^arn:(?<partition>[^:]+):route53:::healthcheck\/(?<id>[^:/?]+)$/;
+const HealthchecksourceArnRegex =
+	/^arn:(?<partition>[^:]+):route53:::healthchecksource\/(?<id>[^:/?]+)$/;
 const HostedzoneArnRegex =
 	/^arn:(?<partition>[^:]+):route53:::hostedzone\/(?<id>[^:/?]+)$/;
 const QueryloggingconfigArnRegex =
@@ -656,6 +728,39 @@ export class Route53Resources {
 		const match = HealthcheckArnRegex.exec(arn);
 		if (!match?.groups) {
 			throw new Error(`Invalid healthcheck ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			id: match.groups!.id,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the healthchecksource resource.
+	 */
+	static healthchecksource(props: Route53HealthchecksourceArnProps): string {
+		return `arn:${props.partition ?? "aws"}:route53:::healthchecksource/${props.id}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the healthchecksource resource.
+	 */
+	static isValidHealthchecksourceArn(arn: string): boolean {
+		return HealthchecksourceArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a healthchecksource ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseHealthchecksourceArn(
+		arn: string,
+	): Route53HealthchecksourceArnComponents {
+		const match = HealthchecksourceArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid healthchecksource ARN: ${arn}`);
 		}
 		return {
 			partition: match.groups.partition,
@@ -857,6 +962,11 @@ export class Route53Operations {
 	];
 	/** IAM actions required for the CreateHealthCheck API call. */
 	static readonly CreateHealthCheck: string[] = ["route53:CreateHealthCheck"];
+	/** IAM actions required for the CreateHealthCheckSource API call. */
+	static readonly CreateHealthCheckSource: string[] = [
+		"route53:ChangeTagsForResource",
+		"route53:CreateHealthCheckSource",
+	];
 	/** IAM actions required for the CreateHostedZone API call. */
 	static readonly CreateHostedZone: string[] = ["route53:CreateHostedZone"];
 	/** IAM actions required for the CreateKeySigningKey API call. */
@@ -866,6 +976,10 @@ export class Route53Operations {
 	/** IAM actions required for the CreateQueryLoggingConfig API call. */
 	static readonly CreateQueryLoggingConfig: string[] = [
 		"route53:CreateQueryLoggingConfig",
+	];
+	/** IAM actions required for the CreateResourceRecordSetProtections API call. */
+	static readonly CreateResourceRecordSetProtections: string[] = [
+		"route53:CreateResourceRecordSetProtections",
 	];
 	/** IAM actions required for the CreateReusableDelegationSet API call. */
 	static readonly CreateReusableDelegationSet: string[] = [
@@ -897,6 +1011,10 @@ export class Route53Operations {
 	];
 	/** IAM actions required for the DeleteHealthCheck API call. */
 	static readonly DeleteHealthCheck: string[] = ["route53:DeleteHealthCheck"];
+	/** IAM actions required for the DeleteHealthCheckSource API call. */
+	static readonly DeleteHealthCheckSource: string[] = [
+		"route53:DeleteHealthCheckSource",
+	];
 	/** IAM actions required for the DeleteHostedZone API call. */
 	static readonly DeleteHostedZone: string[] = ["route53:DeleteHostedZone"];
 	/** IAM actions required for the DeleteKeySigningKey API call. */
@@ -906,6 +1024,10 @@ export class Route53Operations {
 	/** IAM actions required for the DeleteQueryLoggingConfig API call. */
 	static readonly DeleteQueryLoggingConfig: string[] = [
 		"route53:DeleteQueryLoggingConfig",
+	];
+	/** IAM actions required for the DeleteResourceRecordSetProtections API call. */
+	static readonly DeleteResourceRecordSetProtections: string[] = [
+		"route53:DeleteResourceRecordSetProtections",
 	];
 	/** IAM actions required for the DeleteReusableDelegationSet API call. */
 	static readonly DeleteReusableDelegationSet: string[] = [
@@ -957,6 +1079,10 @@ export class Route53Operations {
 	static readonly opGetHealthCheckLastFailureReason: string[] = [
 		"route53:GetHealthCheckLastFailureReason",
 	];
+	/** IAM actions required for the GetHealthCheckSource API call. */
+	static readonly opGetHealthCheckSource: string[] = [
+		"route53:GetHealthCheckSource",
+	];
 	/** IAM actions required for the GetHealthCheckStatus API call. */
 	static readonly opGetHealthCheckStatus: string[] = [
 		"route53:GetHealthCheckStatus",
@@ -1003,8 +1129,16 @@ export class Route53Operations {
 	static readonly ListCidrLocations: string[] = ["route53:ListCidrLocations"];
 	/** IAM actions required for the ListGeoLocations API call. */
 	static readonly ListGeoLocations: string[] = ["route53:ListGeoLocations"];
+	/** IAM actions required for the ListHealthCheckSources API call. */
+	static readonly ListHealthCheckSources: string[] = [
+		"route53:ListHealthCheckSources",
+	];
 	/** IAM actions required for the ListHealthChecks API call. */
 	static readonly ListHealthChecks: string[] = ["route53:ListHealthChecks"];
+	/** IAM actions required for the ListHealthChecksBySource API call. */
+	static readonly ListHealthChecksBySource: string[] = [
+		"route53:ListHealthChecksBySource",
+	];
 	/** IAM actions required for the ListHostedZones API call. */
 	static readonly ListHostedZones: string[] = ["route53:ListHostedZones"];
 	/** IAM actions required for the ListHostedZonesByName API call. */
@@ -1018,6 +1152,10 @@ export class Route53Operations {
 	/** IAM actions required for the ListQueryLoggingConfigs API call. */
 	static readonly ListQueryLoggingConfigs: string[] = [
 		"route53:ListQueryLoggingConfigs",
+	];
+	/** IAM actions required for the ListResourceRecordSetProtections API call. */
+	static readonly ListResourceRecordSetProtections: string[] = [
+		"route53:ListResourceRecordSetProtections",
 	];
 	/** IAM actions required for the ListResourceRecordSets API call. */
 	static readonly ListResourceRecordSets: string[] = [
@@ -1095,6 +1233,11 @@ export class Route53Conditions {
 		"route53:ChangeResourceRecordSetsNormalizedRecordNames",
 		"route53:ChangeResourceRecordSetsRecordTypes",
 	];
+	/** Condition keys applicable to the CreateHealthCheckSource action. */
+	static readonly CreateHealthCheckSourceConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateHostedZone action. */
 	static readonly CreateHostedZoneConditionKeys: string[] = ["route53:VPCs"];
 	/** Condition keys applicable to the CreateVPCAssociationAuthorization action. */
@@ -1114,6 +1257,12 @@ export class Route53Conditions {
 		"route53:VPCs",
 	];
 
+	/** Condition key: aws:RequestTag/${TagKey} (String) */
+	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
+	/** Condition key: aws:ResourceTag/${TagKey} (String) */
+	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
+	/** Condition key: aws:TagKeys (ArrayOfString) */
+	static readonly AWS_TAG_KEYS = "aws:TagKeys";
 	/** Condition key: route53:ChangeResourceRecordSetsActions (ArrayOfString) */
 	static readonly CHANGE_RESOURCE_RECORD_SETS_ACTIONS =
 		"route53:ChangeResourceRecordSetsActions";
@@ -1125,6 +1274,27 @@ export class Route53Conditions {
 		"route53:ChangeResourceRecordSetsRecordTypes";
 	/** Condition key: route53:VPCs (String) */
 	static readonly VP_CS = "route53:VPCs";
+
+	/**
+	 * Generates a condition block for `aws:RequestTag/${TagKey}`.
+	 */
+	static requestTag(value: string): Record<string, Record<string, string>> {
+		return { StringEquals: { "aws:RequestTag/${TagKey}": value } };
+	}
+
+	/**
+	 * Generates a condition block for `aws:ResourceTag/${TagKey}`.
+	 */
+	static resourceTag(value: string): Record<string, Record<string, string>> {
+		return { StringEquals: { "aws:ResourceTag/${TagKey}": value } };
+	}
+
+	/**
+	 * Generates a condition block for `aws:TagKeys`.
+	 */
+	static tagKeys(values: string[]): Record<string, Record<string, string[]>> {
+		return { "ForAllValues:StringEquals": { "aws:TagKeys": values } };
+	}
 
 	/**
 	 * Generates a condition block for `route53:ChangeResourceRecordSetsActions`.

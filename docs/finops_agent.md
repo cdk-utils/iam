@@ -38,6 +38,7 @@ new finops_agent.FinopsAgentActions()
 | <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentActions.property.actionGetDocumentContent">actionGetDocumentContent</a></code> | <code>string</code> | [Read] finops-agent:GetDocumentContent. |
 | <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentActions.property.actionGetDocumentMetadata">actionGetDocumentMetadata</a></code> | <code>string</code> | [Read] finops-agent:GetDocumentMetadata. |
 | <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentActions.property.actionGetIntegration">actionGetIntegration</a></code> | <code>string</code> | [Read] finops-agent:GetIntegration. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentActions.property.actionGetOrganizationAccess">actionGetOrganizationAccess</a></code> | <code>string</code> | [Read] finops-agent:GetOrganizationAccess. |
 | <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentActions.property.actionGetTask">actionGetTask</a></code> | <code>string</code> | [Read] finops-agent:GetTask. |
 | <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentActions.property.actionGetTurn">actionGetTurn</a></code> | <code>string</code> | [Read] finops-agent:GetTurn. |
 | <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
@@ -80,6 +81,7 @@ new finops_agent.FinopsAgentActions()
 | <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentActions.property.UpdateAutomation">UpdateAutomation</a></code> | <code>string</code> | [Write] finops-agent:UpdateAutomation. |
 | <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentActions.property.UpdateConnection">UpdateConnection</a></code> | <code>string</code> | [Write] finops-agent:UpdateConnection. |
 | <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentActions.property.UpdateDocument">UpdateDocument</a></code> | <code>string</code> | [Write] finops-agent:UpdateDocument. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentActions.property.UpdateOrganizationAccess">UpdateOrganizationAccess</a></code> | <code>string</code> | [Write] finops-agent:UpdateOrganizationAccess. |
 
 ---
 
@@ -200,6 +202,18 @@ public readonly actionGetIntegration: string;
 - *Type:* string
 
 [Read] finops-agent:GetIntegration.
+
+---
+
+##### `actionGetOrganizationAccess`<sup>Required</sup> <a name="actionGetOrganizationAccess" id="@cdk_utils/iam.finops_agent.FinopsAgentActions.property.actionGetOrganizationAccess"></a>
+
+```typescript
+public readonly actionGetOrganizationAccess: string;
+```
+
+- *Type:* string
+
+[Read] finops-agent:GetOrganizationAccess.
 
 ---
 
@@ -704,6 +718,18 @@ public readonly UpdateDocument: string;
 - *Type:* string
 
 [Write] finops-agent:UpdateDocument.
+
+---
+
+##### `UpdateOrganizationAccess`<sup>Required</sup> <a name="UpdateOrganizationAccess" id="@cdk_utils/iam.finops_agent.FinopsAgentActions.property.UpdateOrganizationAccess"></a>
+
+```typescript
+public readonly UpdateOrganizationAccess: string;
+```
+
+- *Type:* string
+
+[Write] finops-agent:UpdateOrganizationAccess.
 
 ---
 

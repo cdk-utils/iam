@@ -17,6 +17,9 @@ export class OdbActions {
 		"odb:AcceptMarketplaceRegistration";
 	/** [Write] odb:AssociateIamRoleToResource */
 	static readonly AssociateIamRoleToResource = "odb:AssociateIamRoleToResource";
+	/** [Write] odb:AssociateVirtualMachinesToCloudVmCluster */
+	static readonly AssociateVirtualMachinesToCloudVmCluster =
+		"odb:AssociateVirtualMachinesToCloudVmCluster";
 	/** [Write] odb:AssociateVirtualMachinesToExadbVmCluster */
 	static readonly AssociateVirtualMachinesToExadbVmCluster =
 		"odb:AssociateVirtualMachinesToExadbVmCluster";
@@ -82,6 +85,9 @@ export class OdbActions {
 	/** [Write] odb:DisassociateIamRoleFromResource */
 	static readonly DisassociateIamRoleFromResource =
 		"odb:DisassociateIamRoleFromResource";
+	/** [Write] odb:DisassociateVirtualMachinesFromCloudVmCluster */
+	static readonly DisassociateVirtualMachinesFromCloudVmCluster =
+		"odb:DisassociateVirtualMachinesFromCloudVmCluster";
 	/** [Write] odb:DisassociateVirtualMachinesFromExadbVmCluster */
 	static readonly DisassociateVirtualMachinesFromExadbVmCluster =
 		"odb:DisassociateVirtualMachinesFromExadbVmCluster";
@@ -208,9 +214,17 @@ export class OdbActions {
 	/** [Write] odb:UpdateAutonomousDatabaseBackup */
 	static readonly UpdateAutonomousDatabaseBackup =
 		"odb:UpdateAutonomousDatabaseBackup";
+	/** [Write] odb:UpdateCloudAutonomousVmCluster */
+	static readonly UpdateCloudAutonomousVmCluster =
+		"odb:UpdateCloudAutonomousVmCluster";
 	/** [Write] odb:UpdateCloudExadataInfrastructure */
 	static readonly UpdateCloudExadataInfrastructure =
 		"odb:UpdateCloudExadataInfrastructure";
+	/** [Write] odb:UpdateCloudExadataInfrastructureStorageCapacity */
+	static readonly UpdateCloudExadataInfrastructureStorageCapacity =
+		"odb:UpdateCloudExadataInfrastructureStorageCapacity";
+	/** [Write] odb:UpdateCloudVmCluster */
+	static readonly UpdateCloudVmCluster = "odb:UpdateCloudVmCluster";
 	/** [Write] odb:UpdateExadbVmCluster */
 	static readonly UpdateExadbVmCluster = "odb:UpdateExadbVmCluster";
 	/** [Write] odb:UpdateExascaleCloudExadataInfrastructure */
@@ -251,6 +265,7 @@ export class OdbActions {
 	static readonly AllWriteActions: string[] = [
 		OdbActions.AcceptMarketplaceRegistration,
 		OdbActions.AssociateIamRoleToResource,
+		OdbActions.AssociateVirtualMachinesToCloudVmCluster,
 		OdbActions.AssociateVirtualMachinesToExadbVmCluster,
 		OdbActions.CreateAutonomousDatabase,
 		OdbActions.CreateAutonomousDatabaseBackup,
@@ -278,6 +293,7 @@ export class OdbActions {
 		OdbActions.DeleteOdbPeeringConnection,
 		OdbActions.DeleteResourcePolicy,
 		OdbActions.DisassociateIamRoleFromResource,
+		OdbActions.DisassociateVirtualMachinesFromCloudVmCluster,
 		OdbActions.DisassociateVirtualMachinesFromExadbVmCluster,
 		OdbActions.FailoverAutonomousDatabase,
 		OdbActions.InitializeService,
@@ -293,7 +309,10 @@ export class OdbActions {
 		OdbActions.SwitchoverAutonomousDatabase,
 		OdbActions.UpdateAutonomousDatabase,
 		OdbActions.UpdateAutonomousDatabaseBackup,
+		OdbActions.UpdateCloudAutonomousVmCluster,
 		OdbActions.UpdateCloudExadataInfrastructure,
+		OdbActions.UpdateCloudExadataInfrastructureStorageCapacity,
+		OdbActions.UpdateCloudVmCluster,
 		OdbActions.UpdateExadbVmCluster,
 		OdbActions.UpdateExascaleCloudExadataInfrastructure,
 		OdbActions.UpdateExascaleDbStorageVault,
@@ -984,6 +1003,8 @@ export class OdbOperations {
 		"odb:AssociateIamRoleToResource",
 		"iam:PassRole",
 	];
+	/** IAM actions required for the AssociateVirtualMachinesToCloudVmCluster API call. */
+	static readonly AssociateVirtualMachinesToCloudVmCluster: string[] = [];
 	/** IAM actions required for the AssociateVirtualMachinesToExadbVmCluster API call. */
 	static readonly AssociateVirtualMachinesToExadbVmCluster: string[] = [];
 	/** IAM actions required for the CreateAutonomousDatabase API call. */
@@ -1077,6 +1098,8 @@ export class OdbOperations {
 	static readonly DisassociateIamRoleFromResource: string[] = [
 		"odb:DisassociateIamRoleFromResource",
 	];
+	/** IAM actions required for the DisassociateVirtualMachinesFromCloudVmCluster API call. */
+	static readonly DisassociateVirtualMachinesFromCloudVmCluster: string[] = [];
 	/** IAM actions required for the DisassociateVirtualMachinesFromExadbVmCluster API call. */
 	static readonly DisassociateVirtualMachinesFromExadbVmCluster: string[] = [];
 	/** IAM actions required for the FailoverAutonomousDatabase API call. */
@@ -1232,17 +1255,26 @@ export class OdbOperations {
 	static readonly UntagResource: string[] = ["odb:UntagResource"];
 	/** IAM actions required for the UpdateAutonomousDatabase API call. */
 	static readonly UpdateAutonomousDatabase: string[] = [
-		"iam:PassRole",
 		"odb:UpdateAutonomousDatabase",
 	];
 	/** IAM actions required for the UpdateAutonomousDatabaseBackup API call. */
 	static readonly UpdateAutonomousDatabaseBackup: string[] = [
 		"odb:UpdateAutonomousDatabaseBackup",
 	];
+	/** IAM actions required for the UpdateCloudAutonomousVmCluster API call. */
+	static readonly UpdateCloudAutonomousVmCluster: string[] = [
+		"odb:UpdateCloudAutonomousVmCluster",
+	];
 	/** IAM actions required for the UpdateCloudExadataInfrastructure API call. */
 	static readonly UpdateCloudExadataInfrastructure: string[] = [
 		"odb:UpdateCloudExadataInfrastructure",
 	];
+	/** IAM actions required for the UpdateCloudExadataInfrastructureStorageCapacity API call. */
+	static readonly UpdateCloudExadataInfrastructureStorageCapacity: string[] = [
+		"odb:UpdateCloudExadataInfrastructureStorageCapacity",
+	];
+	/** IAM actions required for the UpdateCloudVmCluster API call. */
+	static readonly UpdateCloudVmCluster: string[] = ["odb:UpdateCloudVmCluster"];
 	/** IAM actions required for the UpdateExadbVmCluster API call. */
 	static readonly UpdateExadbVmCluster: string[] = ["odb:UpdateExadbVmCluster"];
 	/** IAM actions required for the UpdateExascaleCloudExadataInfrastructure API call. */

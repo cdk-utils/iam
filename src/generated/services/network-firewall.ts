@@ -153,6 +153,8 @@ export class NetworkFirewallActions {
 	/** [List] network-firewall:ListContainerAssociations */
 	static readonly ListContainerAssociations =
 		"network-firewall:ListContainerAssociations";
+	/** [List] network-firewall:ListContextStores */
+	static readonly ListContextStores = "network-firewall:ListContextStores";
 	/** [List] network-firewall:ListFirewallPolicies */
 	static readonly ListFirewallPolicies =
 		"network-firewall:ListFirewallPolicies";
@@ -173,6 +175,9 @@ export class NetworkFirewallActions {
 		"network-firewall:ListProxyConfigurations";
 	/** [List] network-firewall:ListProxyRuleGroups */
 	static readonly ListProxyRuleGroups = "network-firewall:ListProxyRuleGroups";
+	/** [List] network-firewall:ListResourcesInContextStore */
+	static readonly ListResourcesInContextStore =
+		"network-firewall:ListResourcesInContextStore";
 	/** [List] network-firewall:ListRuleGroups */
 	static readonly ListRuleGroups = "network-firewall:ListRuleGroups";
 	/** [List] network-firewall:ListTLSInspectionConfigurations */
@@ -334,6 +339,7 @@ export class NetworkFirewallActions {
 	static readonly AllListActions: string[] = [
 		NetworkFirewallActions.ListAnalysisReports,
 		NetworkFirewallActions.ListContainerAssociations,
+		NetworkFirewallActions.ListContextStores,
 		NetworkFirewallActions.ListFirewallPolicies,
 		NetworkFirewallActions.ListFirewallPoliciesV2,
 		NetworkFirewallActions.ListFirewalls,
@@ -341,6 +347,7 @@ export class NetworkFirewallActions {
 		NetworkFirewallActions.ListProxies,
 		NetworkFirewallActions.ListProxyConfigurations,
 		NetworkFirewallActions.ListProxyRuleGroups,
+		NetworkFirewallActions.ListResourcesInContextStore,
 		NetworkFirewallActions.ListRuleGroups,
 		NetworkFirewallActions.ListTLSInspectionConfigurations,
 		NetworkFirewallActions.ListTagsForResource,
@@ -1212,10 +1219,6 @@ export class NetworkFirewallOperations {
 	static readonly AssociateSubnets: string[] = [
 		"network-firewall:AssociateSubnets",
 	];
-	/** IAM actions required for the AttachRuleGroupsToProxyConfiguration API call. */
-	static readonly AttachRuleGroupsToProxyConfiguration: string[] = [
-		"network-firewall:AttachRuleGroupsToProxyConfiguration",
-	];
 	/** IAM actions required for the CreateContainerAssociation API call. */
 	static readonly CreateContainerAssociation: string[] = [
 		"network-firewall:CreateContainerAssociation",
@@ -1234,25 +1237,12 @@ export class NetworkFirewallOperations {
 		"network-firewall:ListTLSInspectionConfigurations",
 		"network-firewall:TagResource",
 	];
-	/** IAM actions required for the CreateProxy API call. */
-	static readonly CreateProxy: string[] = [
-		"network-firewall:CreateProxy",
+	/** IAM actions required for the CreateFirewallPolicyV2 API call. */
+	static readonly CreateFirewallPolicyV2: string[] = [
+		"network-firewall:CreateFirewallPolicyV2",
+		"network-firewall:ListRuleGroups",
+		"network-firewall:ListTLSInspectionConfigurations",
 		"network-firewall:TagResource",
-	];
-	/** IAM actions required for the CreateProxyConfiguration API call. */
-	static readonly CreateProxyConfiguration: string[] = [
-		"network-firewall:AttachRuleGroupsToProxyConfiguration",
-		"network-firewall:CreateProxyConfiguration",
-		"network-firewall:TagResource",
-	];
-	/** IAM actions required for the CreateProxyRuleGroup API call. */
-	static readonly CreateProxyRuleGroup: string[] = [
-		"network-firewall:CreateProxyRuleGroup",
-		"network-firewall:TagResource",
-	];
-	/** IAM actions required for the CreateProxyRules API call. */
-	static readonly CreateProxyRules: string[] = [
-		"network-firewall:CreateProxyRules",
 	];
 	/** IAM actions required for the CreateRuleGroup API call. */
 	static readonly CreateRuleGroup: string[] = [
@@ -1282,24 +1272,16 @@ export class NetworkFirewallOperations {
 	static readonly DeleteFirewallPolicy: string[] = [
 		"network-firewall:DeleteFirewallPolicy",
 	];
+	/** IAM actions required for the DeleteFirewallPolicyV2 API call. */
+	static readonly DeleteFirewallPolicyV2: string[] = [
+		"network-firewall:DeleteFirewallPolicyV2",
+	];
 	/** IAM actions required for the DeleteNetworkFirewallTransitGatewayAttachment API call. */
 	static readonly DeleteNetworkFirewallTransitGatewayAttachment: string[] = [
 		"network-firewall:DeleteNetworkFirewallTransitGatewayAttachment",
 	];
 	/** IAM actions required for the DeleteProxy API call. */
 	static readonly DeleteProxy: string[] = ["network-firewall:DeleteProxy"];
-	/** IAM actions required for the DeleteProxyConfiguration API call. */
-	static readonly DeleteProxyConfiguration: string[] = [
-		"network-firewall:DeleteProxyConfiguration",
-	];
-	/** IAM actions required for the DeleteProxyRuleGroup API call. */
-	static readonly DeleteProxyRuleGroup: string[] = [
-		"network-firewall:DeleteProxyRuleGroup",
-	];
-	/** IAM actions required for the DeleteProxyRules API call. */
-	static readonly DeleteProxyRules: string[] = [
-		"network-firewall:DeleteProxyRules",
-	];
 	/** IAM actions required for the DeleteResourcePolicy API call. */
 	static readonly DeleteResourcePolicy: string[] = [
 		"network-firewall:DeleteResourcePolicy",
@@ -1332,6 +1314,10 @@ export class NetworkFirewallOperations {
 	static readonly DescribeFirewallPolicy: string[] = [
 		"network-firewall:DescribeFirewallPolicy",
 	];
+	/** IAM actions required for the DescribeFirewallPolicyV2 API call. */
+	static readonly DescribeFirewallPolicyV2: string[] = [
+		"network-firewall:DescribeFirewallPolicyV2",
+	];
 	/** IAM actions required for the DescribeFlowOperation API call. */
 	static readonly DescribeFlowOperation: string[] = [
 		"network-firewall:DescribeFlowOperation",
@@ -1342,18 +1328,6 @@ export class NetworkFirewallOperations {
 	];
 	/** IAM actions required for the DescribeProxy API call. */
 	static readonly DescribeProxy: string[] = ["network-firewall:DescribeProxy"];
-	/** IAM actions required for the DescribeProxyConfiguration API call. */
-	static readonly DescribeProxyConfiguration: string[] = [
-		"network-firewall:DescribeProxyConfiguration",
-	];
-	/** IAM actions required for the DescribeProxyRule API call. */
-	static readonly DescribeProxyRule: string[] = [
-		"network-firewall:DescribeProxyRule",
-	];
-	/** IAM actions required for the DescribeProxyRuleGroup API call. */
-	static readonly DescribeProxyRuleGroup: string[] = [
-		"network-firewall:DescribeProxyRuleGroup",
-	];
 	/** IAM actions required for the DescribeResourcePolicy API call. */
 	static readonly DescribeResourcePolicy: string[] = [
 		"network-firewall:DescribeResourcePolicy",
@@ -1378,10 +1352,6 @@ export class NetworkFirewallOperations {
 	static readonly DescribeVpcEndpointAssociation: string[] = [
 		"network-firewall:DescribeVpcEndpointAssociation",
 	];
-	/** IAM actions required for the DetachRuleGroupsFromProxyConfiguration API call. */
-	static readonly DetachRuleGroupsFromProxyConfiguration: string[] = [
-		"network-firewall:DetachRuleGroupsFromProxyConfiguration",
-	];
 	/** IAM actions required for the DisassociateAvailabilityZones API call. */
 	static readonly DisassociateAvailabilityZones: string[] = [
 		"network-firewall:DisassociateAvailabilityZones",
@@ -1402,9 +1372,17 @@ export class NetworkFirewallOperations {
 	static readonly ListContainerAssociations: string[] = [
 		"network-firewall:ListContainerAssociations",
 	];
+	/** IAM actions required for the ListContextStores API call. */
+	static readonly ListContextStores: string[] = [
+		"network-firewall:ListContextStores",
+	];
 	/** IAM actions required for the ListFirewallPolicies API call. */
 	static readonly ListFirewallPolicies: string[] = [
 		"network-firewall:ListFirewallPolicies",
+	];
+	/** IAM actions required for the ListFirewallPoliciesV2 API call. */
+	static readonly ListFirewallPoliciesV2: string[] = [
+		"network-firewall:ListFirewallPoliciesV2",
 	];
 	/** IAM actions required for the ListFirewalls API call. */
 	static readonly ListFirewalls: string[] = ["network-firewall:ListFirewalls"];
@@ -1416,15 +1394,9 @@ export class NetworkFirewallOperations {
 	static readonly ListFlowOperations: string[] = [
 		"network-firewall:ListFlowOperations",
 	];
-	/** IAM actions required for the ListProxies API call. */
-	static readonly ListProxies: string[] = ["network-firewall:ListProxies"];
-	/** IAM actions required for the ListProxyConfigurations API call. */
-	static readonly ListProxyConfigurations: string[] = [
-		"network-firewall:ListProxyConfigurations",
-	];
-	/** IAM actions required for the ListProxyRuleGroups API call. */
-	static readonly ListProxyRuleGroups: string[] = [
-		"network-firewall:ListProxyRuleGroups",
+	/** IAM actions required for the ListResourcesInContextStore API call. */
+	static readonly ListResourcesInContextStore: string[] = [
+		"network-firewall:ListResourcesInContextStore",
 	];
 	/** IAM actions required for the ListRuleGroups API call. */
 	static readonly ListRuleGroups: string[] = [
@@ -1500,27 +1472,15 @@ export class NetworkFirewallOperations {
 	static readonly UpdateFirewallPolicyChangeProtection: string[] = [
 		"network-firewall:UpdateFirewallPolicyChangeProtection",
 	];
+	/** IAM actions required for the UpdateFirewallPolicyV2 API call. */
+	static readonly UpdateFirewallPolicyV2: string[] = [
+		"network-firewall:ListRuleGroups",
+		"network-firewall:ListTLSInspectionConfigurations",
+		"network-firewall:UpdateFirewallPolicyV2",
+	];
 	/** IAM actions required for the UpdateLoggingConfiguration API call. */
 	static readonly UpdateLoggingConfiguration: string[] = [
 		"network-firewall:UpdateLoggingConfiguration",
-	];
-	/** IAM actions required for the UpdateProxy API call. */
-	static readonly UpdateProxy: string[] = ["network-firewall:UpdateProxy"];
-	/** IAM actions required for the UpdateProxyConfiguration API call. */
-	static readonly UpdateProxyConfiguration: string[] = [
-		"network-firewall:UpdateProxyConfiguration",
-	];
-	/** IAM actions required for the UpdateProxyRule API call. */
-	static readonly UpdateProxyRule: string[] = [
-		"network-firewall:UpdateProxyRule",
-	];
-	/** IAM actions required for the UpdateProxyRuleGroupPriorities API call. */
-	static readonly UpdateProxyRuleGroupPriorities: string[] = [
-		"network-firewall:UpdateProxyRuleGroupPriorities",
-	];
-	/** IAM actions required for the UpdateProxyRulePriorities API call. */
-	static readonly UpdateProxyRulePriorities: string[] = [
-		"network-firewall:UpdateProxyRulePriorities",
 	];
 	/** IAM actions required for the UpdateProxySettings API call. */
 	static readonly UpdateProxySettings: string[] = [];

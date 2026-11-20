@@ -208,6 +208,8 @@ new health.HealthActions()
 | <code><a href="#@cdk_utils/iam.health.HealthActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
 | <code><a href="#@cdk_utils/iam.health.HealthActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
 | <code><a href="#@cdk_utils/iam.health.HealthActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
+| <code><a href="#@cdk_utils/iam.health.HealthActions.property.ConfigureTags">ConfigureTags</a></code> | <code>string</code> | [Write] health:ConfigureTags. |
+| <code><a href="#@cdk_utils/iam.health.HealthActions.property.ConfigureTagsForOrganization">ConfigureTagsForOrganization</a></code> | <code>string</code> | [Write] health:ConfigureTagsForOrganization. |
 | <code><a href="#@cdk_utils/iam.health.HealthActions.property.DescribeAffectedAccountsForOrganization">DescribeAffectedAccountsForOrganization</a></code> | <code>string</code> | [Read] health:DescribeAffectedAccountsForOrganization. |
 | <code><a href="#@cdk_utils/iam.health.HealthActions.property.DescribeAffectedEntities">DescribeAffectedEntities</a></code> | <code>string</code> | [Read] health:DescribeAffectedEntities. |
 | <code><a href="#@cdk_utils/iam.health.HealthActions.property.DescribeAffectedEntitiesForOrganization">DescribeAffectedEntitiesForOrganization</a></code> | <code>string</code> | [Read] health:DescribeAffectedEntitiesForOrganization. |
@@ -220,8 +222,18 @@ new health.HealthActions()
 | <code><a href="#@cdk_utils/iam.health.HealthActions.property.DescribeEventsForOrganization">DescribeEventsForOrganization</a></code> | <code>string</code> | [Read] health:DescribeEventsForOrganization. |
 | <code><a href="#@cdk_utils/iam.health.HealthActions.property.DescribeEventTypes">DescribeEventTypes</a></code> | <code>string</code> | [Read] health:DescribeEventTypes. |
 | <code><a href="#@cdk_utils/iam.health.HealthActions.property.DescribeHealthServiceStatusForOrganization">DescribeHealthServiceStatusForOrganization</a></code> | <code>string</code> | [Read] health:DescribeHealthServiceStatusForOrganization. |
+| <code><a href="#@cdk_utils/iam.health.HealthActions.property.DescribeTagKeys">DescribeTagKeys</a></code> | <code>string</code> | [Read] health:DescribeTagKeys. |
+| <code><a href="#@cdk_utils/iam.health.HealthActions.property.DescribeTagKeysForOrganization">DescribeTagKeysForOrganization</a></code> | <code>string</code> | [Read] health:DescribeTagKeysForOrganization. |
+| <code><a href="#@cdk_utils/iam.health.HealthActions.property.DescribeTags">DescribeTags</a></code> | <code>string</code> | [Read] health:DescribeTags. |
+| <code><a href="#@cdk_utils/iam.health.HealthActions.property.DescribeTagsForOrganization">DescribeTagsForOrganization</a></code> | <code>string</code> | [Read] health:DescribeTagsForOrganization. |
+| <code><a href="#@cdk_utils/iam.health.HealthActions.property.DescribeTagsOnboardingStatus">DescribeTagsOnboardingStatus</a></code> | <code>string</code> | [Read] health:DescribeTagsOnboardingStatus. |
+| <code><a href="#@cdk_utils/iam.health.HealthActions.property.DescribeTagsOnboardingStatusForOrganization">DescribeTagsOnboardingStatusForOrganization</a></code> | <code>string</code> | [Read] health:DescribeTagsOnboardingStatusForOrganization. |
 | <code><a href="#@cdk_utils/iam.health.HealthActions.property.DisableHealthServiceAccessForOrganization">DisableHealthServiceAccessForOrganization</a></code> | <code>string</code> | [PermissionManagement] health:DisableHealthServiceAccessForOrganization. |
+| <code><a href="#@cdk_utils/iam.health.HealthActions.property.DisableTags">DisableTags</a></code> | <code>string</code> | [Write] health:DisableTags. |
+| <code><a href="#@cdk_utils/iam.health.HealthActions.property.DisableTagsForOrganization">DisableTagsForOrganization</a></code> | <code>string</code> | [Write] health:DisableTagsForOrganization. |
 | <code><a href="#@cdk_utils/iam.health.HealthActions.property.EnableHealthServiceAccessForOrganization">EnableHealthServiceAccessForOrganization</a></code> | <code>string</code> | [PermissionManagement] health:EnableHealthServiceAccessForOrganization. |
+| <code><a href="#@cdk_utils/iam.health.HealthActions.property.EnableTags">EnableTags</a></code> | <code>string</code> | [Write] health:EnableTags. |
+| <code><a href="#@cdk_utils/iam.health.HealthActions.property.EnableTagsForOrganization">EnableTagsForOrganization</a></code> | <code>string</code> | [Write] health:EnableTagsForOrganization. |
 | <code><a href="#@cdk_utils/iam.health.HealthActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 
 ---
@@ -283,6 +295,30 @@ public readonly AllWriteActions: string[];
 - *Type:* string[]
 
 All write-level actions.
+
+---
+
+##### `ConfigureTags`<sup>Required</sup> <a name="ConfigureTags" id="@cdk_utils/iam.health.HealthActions.property.ConfigureTags"></a>
+
+```typescript
+public readonly ConfigureTags: string;
+```
+
+- *Type:* string
+
+[Write] health:ConfigureTags.
+
+---
+
+##### `ConfigureTagsForOrganization`<sup>Required</sup> <a name="ConfigureTagsForOrganization" id="@cdk_utils/iam.health.HealthActions.property.ConfigureTagsForOrganization"></a>
+
+```typescript
+public readonly ConfigureTagsForOrganization: string;
+```
+
+- *Type:* string
+
+[Write] health:ConfigureTagsForOrganization.
 
 ---
 
@@ -430,6 +466,78 @@ public readonly DescribeHealthServiceStatusForOrganization: string;
 
 ---
 
+##### `DescribeTagKeys`<sup>Required</sup> <a name="DescribeTagKeys" id="@cdk_utils/iam.health.HealthActions.property.DescribeTagKeys"></a>
+
+```typescript
+public readonly DescribeTagKeys: string;
+```
+
+- *Type:* string
+
+[Read] health:DescribeTagKeys.
+
+---
+
+##### `DescribeTagKeysForOrganization`<sup>Required</sup> <a name="DescribeTagKeysForOrganization" id="@cdk_utils/iam.health.HealthActions.property.DescribeTagKeysForOrganization"></a>
+
+```typescript
+public readonly DescribeTagKeysForOrganization: string;
+```
+
+- *Type:* string
+
+[Read] health:DescribeTagKeysForOrganization.
+
+---
+
+##### `DescribeTags`<sup>Required</sup> <a name="DescribeTags" id="@cdk_utils/iam.health.HealthActions.property.DescribeTags"></a>
+
+```typescript
+public readonly DescribeTags: string;
+```
+
+- *Type:* string
+
+[Read] health:DescribeTags.
+
+---
+
+##### `DescribeTagsForOrganization`<sup>Required</sup> <a name="DescribeTagsForOrganization" id="@cdk_utils/iam.health.HealthActions.property.DescribeTagsForOrganization"></a>
+
+```typescript
+public readonly DescribeTagsForOrganization: string;
+```
+
+- *Type:* string
+
+[Read] health:DescribeTagsForOrganization.
+
+---
+
+##### `DescribeTagsOnboardingStatus`<sup>Required</sup> <a name="DescribeTagsOnboardingStatus" id="@cdk_utils/iam.health.HealthActions.property.DescribeTagsOnboardingStatus"></a>
+
+```typescript
+public readonly DescribeTagsOnboardingStatus: string;
+```
+
+- *Type:* string
+
+[Read] health:DescribeTagsOnboardingStatus.
+
+---
+
+##### `DescribeTagsOnboardingStatusForOrganization`<sup>Required</sup> <a name="DescribeTagsOnboardingStatusForOrganization" id="@cdk_utils/iam.health.HealthActions.property.DescribeTagsOnboardingStatusForOrganization"></a>
+
+```typescript
+public readonly DescribeTagsOnboardingStatusForOrganization: string;
+```
+
+- *Type:* string
+
+[Read] health:DescribeTagsOnboardingStatusForOrganization.
+
+---
+
 ##### `DisableHealthServiceAccessForOrganization`<sup>Required</sup> <a name="DisableHealthServiceAccessForOrganization" id="@cdk_utils/iam.health.HealthActions.property.DisableHealthServiceAccessForOrganization"></a>
 
 ```typescript
@@ -442,6 +550,30 @@ public readonly DisableHealthServiceAccessForOrganization: string;
 
 ---
 
+##### `DisableTags`<sup>Required</sup> <a name="DisableTags" id="@cdk_utils/iam.health.HealthActions.property.DisableTags"></a>
+
+```typescript
+public readonly DisableTags: string;
+```
+
+- *Type:* string
+
+[Write] health:DisableTags.
+
+---
+
+##### `DisableTagsForOrganization`<sup>Required</sup> <a name="DisableTagsForOrganization" id="@cdk_utils/iam.health.HealthActions.property.DisableTagsForOrganization"></a>
+
+```typescript
+public readonly DisableTagsForOrganization: string;
+```
+
+- *Type:* string
+
+[Write] health:DisableTagsForOrganization.
+
+---
+
 ##### `EnableHealthServiceAccessForOrganization`<sup>Required</sup> <a name="EnableHealthServiceAccessForOrganization" id="@cdk_utils/iam.health.HealthActions.property.EnableHealthServiceAccessForOrganization"></a>
 
 ```typescript
@@ -451,6 +583,30 @@ public readonly EnableHealthServiceAccessForOrganization: string;
 - *Type:* string
 
 [PermissionManagement] health:EnableHealthServiceAccessForOrganization.
+
+---
+
+##### `EnableTags`<sup>Required</sup> <a name="EnableTags" id="@cdk_utils/iam.health.HealthActions.property.EnableTags"></a>
+
+```typescript
+public readonly EnableTags: string;
+```
+
+- *Type:* string
+
+[Write] health:EnableTags.
+
+---
+
+##### `EnableTagsForOrganization`<sup>Required</sup> <a name="EnableTagsForOrganization" id="@cdk_utils/iam.health.HealthActions.property.EnableTagsForOrganization"></a>
+
+```typescript
+public readonly EnableTagsForOrganization: string;
+```
+
+- *Type:* string
+
+[Write] health:EnableTagsForOrganization.
 
 ---
 
@@ -489,7 +645,10 @@ new health.HealthConditions()
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdk_utils/iam.health.HealthConditions.eventTypeCode">eventTypeCode</a></code> | Generates a condition block for `health:eventTypeCode`. |
+| <code><a href="#@cdk_utils/iam.health.HealthConditions.requestTag">requestTag</a></code> | Generates a condition block for `aws:RequestTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.health.HealthConditions.service">service</a></code> | Generates a condition block for `health:service`. |
+| <code><a href="#@cdk_utils/iam.health.HealthConditions.tagChannel">tagChannel</a></code> | Generates a condition block for `health:TagChannel`. |
+| <code><a href="#@cdk_utils/iam.health.HealthConditions.tagKeys">tagKeys</a></code> | Generates a condition block for `aws:TagKeys`. |
 
 ---
 
@@ -504,6 +663,22 @@ health.HealthConditions.eventTypeCode(value: string)
 Generates a condition block for `health:eventTypeCode`.
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.health.HealthConditions.eventTypeCode.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `requestTag` <a name="requestTag" id="@cdk_utils/iam.health.HealthConditions.requestTag"></a>
+
+```typescript
+import { health } from '@cdk_utils/iam'
+
+health.HealthConditions.requestTag(value: string)
+```
+
+Generates a condition block for `aws:RequestTag/${TagKey}`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.health.HealthConditions.requestTag.parameter.value"></a>
 
 - *Type:* string
 
@@ -525,15 +700,120 @@ Generates a condition block for `health:service`.
 
 ---
 
+##### `tagChannel` <a name="tagChannel" id="@cdk_utils/iam.health.HealthConditions.tagChannel"></a>
+
+```typescript
+import { health } from '@cdk_utils/iam'
+
+health.HealthConditions.tagChannel(values: string[])
+```
+
+Generates a condition block for `health:TagChannel`.
+
+###### `values`<sup>Required</sup> <a name="values" id="@cdk_utils/iam.health.HealthConditions.tagChannel.parameter.values"></a>
+
+- *Type:* string[]
+
+---
+
+##### `tagKeys` <a name="tagKeys" id="@cdk_utils/iam.health.HealthConditions.tagKeys"></a>
+
+```typescript
+import { health } from '@cdk_utils/iam'
+
+health.HealthConditions.tagKeys(values: string[])
+```
+
+Generates a condition block for `aws:TagKeys`.
+
+###### `values`<sup>Required</sup> <a name="values" id="@cdk_utils/iam.health.HealthConditions.tagKeys.parameter.values"></a>
+
+- *Type:* string[]
+
+---
+
 
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.health.HealthConditions.property.AWS_REQUEST_TAG">AWS_REQUEST_TAG</a></code> | <code>string</code> | Condition key: aws:RequestTag/${TagKey} (String). |
+| <code><a href="#@cdk_utils/iam.health.HealthConditions.property.AWS_TAG_KEYS">AWS_TAG_KEYS</a></code> | <code>string</code> | Condition key: aws:TagKeys (ArrayOfString). |
+| <code><a href="#@cdk_utils/iam.health.HealthConditions.property.ConfigureTagsConditionKeys">ConfigureTagsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ConfigureTags action. |
+| <code><a href="#@cdk_utils/iam.health.HealthConditions.property.ConfigureTagsForOrganizationConditionKeys">ConfigureTagsForOrganizationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ConfigureTagsForOrganization action. |
+| <code><a href="#@cdk_utils/iam.health.HealthConditions.property.DescribeAffectedAccountsForOrganizationConditionKeys">DescribeAffectedAccountsForOrganizationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeAffectedAccountsForOrganization action. |
 | <code><a href="#@cdk_utils/iam.health.HealthConditions.property.DescribeAffectedEntitiesConditionKeys">DescribeAffectedEntitiesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeAffectedEntities action. |
+| <code><a href="#@cdk_utils/iam.health.HealthConditions.property.DescribeAffectedEntitiesForOrganizationConditionKeys">DescribeAffectedEntitiesForOrganizationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeAffectedEntitiesForOrganization action. |
+| <code><a href="#@cdk_utils/iam.health.HealthConditions.property.DescribeEntityAggregatesConditionKeys">DescribeEntityAggregatesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeEntityAggregates action. |
+| <code><a href="#@cdk_utils/iam.health.HealthConditions.property.DescribeEntityAggregatesForOrganizationConditionKeys">DescribeEntityAggregatesForOrganizationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeEntityAggregatesForOrganization action. |
+| <code><a href="#@cdk_utils/iam.health.HealthConditions.property.DescribeEventAggregatesConditionKeys">DescribeEventAggregatesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeEventAggregates action. |
 | <code><a href="#@cdk_utils/iam.health.HealthConditions.property.DescribeEventDetailsConditionKeys">DescribeEventDetailsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeEventDetails action. |
+| <code><a href="#@cdk_utils/iam.health.HealthConditions.property.DescribeEventsConditionKeys">DescribeEventsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeEvents action. |
+| <code><a href="#@cdk_utils/iam.health.HealthConditions.property.DescribeEventsForOrganizationConditionKeys">DescribeEventsForOrganizationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeEventsForOrganization action. |
 | <code><a href="#@cdk_utils/iam.health.HealthConditions.property.EVENT_TYPE_CODE">EVENT_TYPE_CODE</a></code> | <code>string</code> | Condition key: health:eventTypeCode (String). |
 | <code><a href="#@cdk_utils/iam.health.HealthConditions.property.SERVICE">SERVICE</a></code> | <code>string</code> | Condition key: health:service (String). |
+| <code><a href="#@cdk_utils/iam.health.HealthConditions.property.TAG_CHANNEL">TAG_CHANNEL</a></code> | <code>string</code> | Condition key: health:TagChannel (ArrayOfString). |
+| <code><a href="#@cdk_utils/iam.health.HealthConditions.property.TAG_KEYS">TAG_KEYS</a></code> | <code>string</code> | Condition key: health:TagKeys (ArrayOfString). |
+
+---
+
+##### `AWS_REQUEST_TAG`<sup>Required</sup> <a name="AWS_REQUEST_TAG" id="@cdk_utils/iam.health.HealthConditions.property.AWS_REQUEST_TAG"></a>
+
+```typescript
+public readonly AWS_REQUEST_TAG: string;
+```
+
+- *Type:* string
+
+Condition key: aws:RequestTag/${TagKey} (String).
+
+---
+
+##### `AWS_TAG_KEYS`<sup>Required</sup> <a name="AWS_TAG_KEYS" id="@cdk_utils/iam.health.HealthConditions.property.AWS_TAG_KEYS"></a>
+
+```typescript
+public readonly AWS_TAG_KEYS: string;
+```
+
+- *Type:* string
+
+Condition key: aws:TagKeys (ArrayOfString).
+
+---
+
+##### `ConfigureTagsConditionKeys`<sup>Required</sup> <a name="ConfigureTagsConditionKeys" id="@cdk_utils/iam.health.HealthConditions.property.ConfigureTagsConditionKeys"></a>
+
+```typescript
+public readonly ConfigureTagsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ConfigureTags action.
+
+---
+
+##### `ConfigureTagsForOrganizationConditionKeys`<sup>Required</sup> <a name="ConfigureTagsForOrganizationConditionKeys" id="@cdk_utils/iam.health.HealthConditions.property.ConfigureTagsForOrganizationConditionKeys"></a>
+
+```typescript
+public readonly ConfigureTagsForOrganizationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ConfigureTagsForOrganization action.
+
+---
+
+##### `DescribeAffectedAccountsForOrganizationConditionKeys`<sup>Required</sup> <a name="DescribeAffectedAccountsForOrganizationConditionKeys" id="@cdk_utils/iam.health.HealthConditions.property.DescribeAffectedAccountsForOrganizationConditionKeys"></a>
+
+```typescript
+public readonly DescribeAffectedAccountsForOrganizationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DescribeAffectedAccountsForOrganization action.
 
 ---
 
@@ -549,6 +829,54 @@ Condition keys applicable to the DescribeAffectedEntities action.
 
 ---
 
+##### `DescribeAffectedEntitiesForOrganizationConditionKeys`<sup>Required</sup> <a name="DescribeAffectedEntitiesForOrganizationConditionKeys" id="@cdk_utils/iam.health.HealthConditions.property.DescribeAffectedEntitiesForOrganizationConditionKeys"></a>
+
+```typescript
+public readonly DescribeAffectedEntitiesForOrganizationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DescribeAffectedEntitiesForOrganization action.
+
+---
+
+##### `DescribeEntityAggregatesConditionKeys`<sup>Required</sup> <a name="DescribeEntityAggregatesConditionKeys" id="@cdk_utils/iam.health.HealthConditions.property.DescribeEntityAggregatesConditionKeys"></a>
+
+```typescript
+public readonly DescribeEntityAggregatesConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DescribeEntityAggregates action.
+
+---
+
+##### `DescribeEntityAggregatesForOrganizationConditionKeys`<sup>Required</sup> <a name="DescribeEntityAggregatesForOrganizationConditionKeys" id="@cdk_utils/iam.health.HealthConditions.property.DescribeEntityAggregatesForOrganizationConditionKeys"></a>
+
+```typescript
+public readonly DescribeEntityAggregatesForOrganizationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DescribeEntityAggregatesForOrganization action.
+
+---
+
+##### `DescribeEventAggregatesConditionKeys`<sup>Required</sup> <a name="DescribeEventAggregatesConditionKeys" id="@cdk_utils/iam.health.HealthConditions.property.DescribeEventAggregatesConditionKeys"></a>
+
+```typescript
+public readonly DescribeEventAggregatesConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DescribeEventAggregates action.
+
+---
+
 ##### `DescribeEventDetailsConditionKeys`<sup>Required</sup> <a name="DescribeEventDetailsConditionKeys" id="@cdk_utils/iam.health.HealthConditions.property.DescribeEventDetailsConditionKeys"></a>
 
 ```typescript
@@ -558,6 +886,30 @@ public readonly DescribeEventDetailsConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the DescribeEventDetails action.
+
+---
+
+##### `DescribeEventsConditionKeys`<sup>Required</sup> <a name="DescribeEventsConditionKeys" id="@cdk_utils/iam.health.HealthConditions.property.DescribeEventsConditionKeys"></a>
+
+```typescript
+public readonly DescribeEventsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DescribeEvents action.
+
+---
+
+##### `DescribeEventsForOrganizationConditionKeys`<sup>Required</sup> <a name="DescribeEventsForOrganizationConditionKeys" id="@cdk_utils/iam.health.HealthConditions.property.DescribeEventsForOrganizationConditionKeys"></a>
+
+```typescript
+public readonly DescribeEventsForOrganizationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DescribeEventsForOrganization action.
 
 ---
 
@@ -585,6 +937,30 @@ Condition key: health:service (String).
 
 ---
 
+##### `TAG_CHANNEL`<sup>Required</sup> <a name="TAG_CHANNEL" id="@cdk_utils/iam.health.HealthConditions.property.TAG_CHANNEL"></a>
+
+```typescript
+public readonly TAG_CHANNEL: string;
+```
+
+- *Type:* string
+
+Condition key: health:TagChannel (ArrayOfString).
+
+---
+
+##### `TAG_KEYS`<sup>Required</sup> <a name="TAG_KEYS" id="@cdk_utils/iam.health.HealthConditions.property.TAG_KEYS"></a>
+
+```typescript
+public readonly TAG_KEYS: string;
+```
+
+- *Type:* string
+
+Condition key: health:TagKeys (ArrayOfString).
+
+---
+
 ### HealthOperations <a name="HealthOperations" id="@cdk_utils/iam.health.HealthOperations"></a>
 
 API operation to required IAM actions mapping for health.
@@ -609,6 +985,8 @@ new health.HealthOperations()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.health.HealthOperations.property.ConfigureTags">ConfigureTags</a></code> | <code>string[]</code> | IAM actions required for the ConfigureTags API call. |
+| <code><a href="#@cdk_utils/iam.health.HealthOperations.property.ConfigureTagsForOrganization">ConfigureTagsForOrganization</a></code> | <code>string[]</code> | IAM actions required for the ConfigureTagsForOrganization API call. |
 | <code><a href="#@cdk_utils/iam.health.HealthOperations.property.DescribeAffectedAccountsForOrganization">DescribeAffectedAccountsForOrganization</a></code> | <code>string[]</code> | IAM actions required for the DescribeAffectedAccountsForOrganization API call. |
 | <code><a href="#@cdk_utils/iam.health.HealthOperations.property.DescribeAffectedEntities">DescribeAffectedEntities</a></code> | <code>string[]</code> | IAM actions required for the DescribeAffectedEntities API call. |
 | <code><a href="#@cdk_utils/iam.health.HealthOperations.property.DescribeAffectedEntitiesForOrganization">DescribeAffectedEntitiesForOrganization</a></code> | <code>string[]</code> | IAM actions required for the DescribeAffectedEntitiesForOrganization API call. |
@@ -622,8 +1000,42 @@ new health.HealthOperations()
 | <code><a href="#@cdk_utils/iam.health.HealthOperations.property.DescribeEventTypes">DescribeEventTypes</a></code> | <code>string[]</code> | IAM actions required for the DescribeEventTypes API call. |
 | <code><a href="#@cdk_utils/iam.health.HealthOperations.property.DescribeHealthServiceStatusForOrganization">DescribeHealthServiceStatusForOrganization</a></code> | <code>string[]</code> | IAM actions required for the DescribeHealthServiceStatusForOrganization API call. |
 | <code><a href="#@cdk_utils/iam.health.HealthOperations.property.DescribeServiceLifecycle">DescribeServiceLifecycle</a></code> | <code>string[]</code> | IAM actions required for the DescribeServiceLifecycle API call. |
+| <code><a href="#@cdk_utils/iam.health.HealthOperations.property.DescribeTagKeys">DescribeTagKeys</a></code> | <code>string[]</code> | IAM actions required for the DescribeTagKeys API call. |
+| <code><a href="#@cdk_utils/iam.health.HealthOperations.property.DescribeTagKeysForOrganization">DescribeTagKeysForOrganization</a></code> | <code>string[]</code> | IAM actions required for the DescribeTagKeysForOrganization API call. |
+| <code><a href="#@cdk_utils/iam.health.HealthOperations.property.DescribeTags">DescribeTags</a></code> | <code>string[]</code> | IAM actions required for the DescribeTags API call. |
+| <code><a href="#@cdk_utils/iam.health.HealthOperations.property.DescribeTagsForOrganization">DescribeTagsForOrganization</a></code> | <code>string[]</code> | IAM actions required for the DescribeTagsForOrganization API call. |
+| <code><a href="#@cdk_utils/iam.health.HealthOperations.property.DescribeTagsOnboardingStatus">DescribeTagsOnboardingStatus</a></code> | <code>string[]</code> | IAM actions required for the DescribeTagsOnboardingStatus API call. |
+| <code><a href="#@cdk_utils/iam.health.HealthOperations.property.DescribeTagsOnboardingStatusForOrganization">DescribeTagsOnboardingStatusForOrganization</a></code> | <code>string[]</code> | IAM actions required for the DescribeTagsOnboardingStatusForOrganization API call. |
 | <code><a href="#@cdk_utils/iam.health.HealthOperations.property.DisableHealthServiceAccessForOrganization">DisableHealthServiceAccessForOrganization</a></code> | <code>string[]</code> | IAM actions required for the DisableHealthServiceAccessForOrganization API call. |
+| <code><a href="#@cdk_utils/iam.health.HealthOperations.property.DisableTags">DisableTags</a></code> | <code>string[]</code> | IAM actions required for the DisableTags API call. |
+| <code><a href="#@cdk_utils/iam.health.HealthOperations.property.DisableTagsForOrganization">DisableTagsForOrganization</a></code> | <code>string[]</code> | IAM actions required for the DisableTagsForOrganization API call. |
 | <code><a href="#@cdk_utils/iam.health.HealthOperations.property.EnableHealthServiceAccessForOrganization">EnableHealthServiceAccessForOrganization</a></code> | <code>string[]</code> | IAM actions required for the EnableHealthServiceAccessForOrganization API call. |
+| <code><a href="#@cdk_utils/iam.health.HealthOperations.property.EnableTags">EnableTags</a></code> | <code>string[]</code> | IAM actions required for the EnableTags API call. |
+| <code><a href="#@cdk_utils/iam.health.HealthOperations.property.EnableTagsForOrganization">EnableTagsForOrganization</a></code> | <code>string[]</code> | IAM actions required for the EnableTagsForOrganization API call. |
+
+---
+
+##### `ConfigureTags`<sup>Required</sup> <a name="ConfigureTags" id="@cdk_utils/iam.health.HealthOperations.property.ConfigureTags"></a>
+
+```typescript
+public readonly ConfigureTags: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ConfigureTags API call.
+
+---
+
+##### `ConfigureTagsForOrganization`<sup>Required</sup> <a name="ConfigureTagsForOrganization" id="@cdk_utils/iam.health.HealthOperations.property.ConfigureTagsForOrganization"></a>
+
+```typescript
+public readonly ConfigureTagsForOrganization: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ConfigureTagsForOrganization API call.
 
 ---
 
@@ -783,6 +1195,78 @@ IAM actions required for the DescribeServiceLifecycle API call.
 
 ---
 
+##### `DescribeTagKeys`<sup>Required</sup> <a name="DescribeTagKeys" id="@cdk_utils/iam.health.HealthOperations.property.DescribeTagKeys"></a>
+
+```typescript
+public readonly DescribeTagKeys: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeTagKeys API call.
+
+---
+
+##### `DescribeTagKeysForOrganization`<sup>Required</sup> <a name="DescribeTagKeysForOrganization" id="@cdk_utils/iam.health.HealthOperations.property.DescribeTagKeysForOrganization"></a>
+
+```typescript
+public readonly DescribeTagKeysForOrganization: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeTagKeysForOrganization API call.
+
+---
+
+##### `DescribeTags`<sup>Required</sup> <a name="DescribeTags" id="@cdk_utils/iam.health.HealthOperations.property.DescribeTags"></a>
+
+```typescript
+public readonly DescribeTags: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeTags API call.
+
+---
+
+##### `DescribeTagsForOrganization`<sup>Required</sup> <a name="DescribeTagsForOrganization" id="@cdk_utils/iam.health.HealthOperations.property.DescribeTagsForOrganization"></a>
+
+```typescript
+public readonly DescribeTagsForOrganization: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeTagsForOrganization API call.
+
+---
+
+##### `DescribeTagsOnboardingStatus`<sup>Required</sup> <a name="DescribeTagsOnboardingStatus" id="@cdk_utils/iam.health.HealthOperations.property.DescribeTagsOnboardingStatus"></a>
+
+```typescript
+public readonly DescribeTagsOnboardingStatus: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeTagsOnboardingStatus API call.
+
+---
+
+##### `DescribeTagsOnboardingStatusForOrganization`<sup>Required</sup> <a name="DescribeTagsOnboardingStatusForOrganization" id="@cdk_utils/iam.health.HealthOperations.property.DescribeTagsOnboardingStatusForOrganization"></a>
+
+```typescript
+public readonly DescribeTagsOnboardingStatusForOrganization: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeTagsOnboardingStatusForOrganization API call.
+
+---
+
 ##### `DisableHealthServiceAccessForOrganization`<sup>Required</sup> <a name="DisableHealthServiceAccessForOrganization" id="@cdk_utils/iam.health.HealthOperations.property.DisableHealthServiceAccessForOrganization"></a>
 
 ```typescript
@@ -795,6 +1279,30 @@ IAM actions required for the DisableHealthServiceAccessForOrganization API call.
 
 ---
 
+##### `DisableTags`<sup>Required</sup> <a name="DisableTags" id="@cdk_utils/iam.health.HealthOperations.property.DisableTags"></a>
+
+```typescript
+public readonly DisableTags: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DisableTags API call.
+
+---
+
+##### `DisableTagsForOrganization`<sup>Required</sup> <a name="DisableTagsForOrganization" id="@cdk_utils/iam.health.HealthOperations.property.DisableTagsForOrganization"></a>
+
+```typescript
+public readonly DisableTagsForOrganization: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DisableTagsForOrganization API call.
+
+---
+
 ##### `EnableHealthServiceAccessForOrganization`<sup>Required</sup> <a name="EnableHealthServiceAccessForOrganization" id="@cdk_utils/iam.health.HealthOperations.property.EnableHealthServiceAccessForOrganization"></a>
 
 ```typescript
@@ -804,6 +1312,30 @@ public readonly EnableHealthServiceAccessForOrganization: string[];
 - *Type:* string[]
 
 IAM actions required for the EnableHealthServiceAccessForOrganization API call.
+
+---
+
+##### `EnableTags`<sup>Required</sup> <a name="EnableTags" id="@cdk_utils/iam.health.HealthOperations.property.EnableTags"></a>
+
+```typescript
+public readonly EnableTags: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the EnableTags API call.
+
+---
+
+##### `EnableTagsForOrganization`<sup>Required</sup> <a name="EnableTagsForOrganization" id="@cdk_utils/iam.health.HealthOperations.property.EnableTagsForOrganization"></a>
+
+```typescript
+public readonly EnableTagsForOrganization: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the EnableTagsForOrganization API call.
 
 ---
 

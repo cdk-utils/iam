@@ -701,6 +701,7 @@ new signin.SigninActions()
 | <code><a href="#@cdk_utils/iam.signin.SigninActions.property.Authenticate">Authenticate</a></code> | <code>string</code> | [Read] signin:Authenticate. |
 | <code><a href="#@cdk_utils/iam.signin.SigninActions.property.AuthorizeOAuth2Access">AuthorizeOAuth2Access</a></code> | <code>string</code> | [Read] signin:AuthorizeOAuth2Access. |
 | <code><a href="#@cdk_utils/iam.signin.SigninActions.property.CreateAccount">CreateAccount</a></code> | <code>string</code> | [Write] signin:CreateAccount. |
+| <code><a href="#@cdk_utils/iam.signin.SigninActions.property.CreateBearerToken">CreateBearerToken</a></code> | <code>string</code> | [Read] signin:CreateBearerToken. |
 | <code><a href="#@cdk_utils/iam.signin.SigninActions.property.CreateOAuth2PublicClient">CreateOAuth2PublicClient</a></code> | <code>string</code> | [Write] signin:CreateOAuth2PublicClient. |
 | <code><a href="#@cdk_utils/iam.signin.SigninActions.property.CreateOAuth2Token">CreateOAuth2Token</a></code> | <code>string</code> | [Read] signin:CreateOAuth2Token. |
 | <code><a href="#@cdk_utils/iam.signin.SigninActions.property.CreateTrustedIdentityPropagationApplicationForConsole">CreateTrustedIdentityPropagationApplicationForConsole</a></code> | <code>string</code> | [Write] signin:CreateTrustedIdentityPropagationApplicationForConsole. |
@@ -833,6 +834,18 @@ public readonly CreateAccount: string;
 - *Type:* string
 
 [Write] signin:CreateAccount.
+
+---
+
+##### `CreateBearerToken`<sup>Required</sup> <a name="CreateBearerToken" id="@cdk_utils/iam.signin.SigninActions.property.CreateBearerToken"></a>
+
+```typescript
+public readonly CreateBearerToken: string;
+```
+
+- *Type:* string
+
+[Read] signin:CreateBearerToken.
 
 ---
 
@@ -1269,6 +1282,8 @@ new signin.SigninOperations()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.signin.SigninOperations.property.BatchRevokeSessions">BatchRevokeSessions</a></code> | <code>string[]</code> | IAM actions required for the BatchRevokeSessions API call. |
+| <code><a href="#@cdk_utils/iam.signin.SigninOperations.property.CreateBearerToken">CreateBearerToken</a></code> | <code>string[]</code> | IAM actions required for the CreateBearerToken API call. |
 | <code><a href="#@cdk_utils/iam.signin.SigninOperations.property.CreateOAuth2Token">CreateOAuth2Token</a></code> | <code>string[]</code> | IAM actions required for the CreateOAuth2Token API call. |
 | <code><a href="#@cdk_utils/iam.signin.SigninOperations.property.CreateOAuth2TokenWithIAM">CreateOAuth2TokenWithIAM</a></code> | <code>string[]</code> | IAM actions required for the CreateOAuth2TokenWithIAM API call. |
 | <code><a href="#@cdk_utils/iam.signin.SigninOperations.property.CreateOAuth2TokenWithTokenExchange">CreateOAuth2TokenWithTokenExchange</a></code> | <code>string[]</code> | IAM actions required for the CreateOAuth2TokenWithTokenExchange API call. |
@@ -1276,11 +1291,37 @@ new signin.SigninOperations()
 | <code><a href="#@cdk_utils/iam.signin.SigninOperations.property.DeleteResourcePermissionStatement">DeleteResourcePermissionStatement</a></code> | <code>string[]</code> | IAM actions required for the DeleteResourcePermissionStatement API call. |
 | <code><a href="#@cdk_utils/iam.signin.SigninOperations.property.IntrospectOAuth2TokenWithIAM">IntrospectOAuth2TokenWithIAM</a></code> | <code>string[]</code> | IAM actions required for the IntrospectOAuth2TokenWithIAM API call. |
 | <code><a href="#@cdk_utils/iam.signin.SigninOperations.property.ListResourcePermissionStatements">ListResourcePermissionStatements</a></code> | <code>string[]</code> | IAM actions required for the ListResourcePermissionStatements API call. |
+| <code><a href="#@cdk_utils/iam.signin.SigninOperations.property.ListSessions">ListSessions</a></code> | <code>string[]</code> | IAM actions required for the ListSessions API call. |
 | <code><a href="#@cdk_utils/iam.signin.SigninOperations.property.opGetConsoleAuthorizationConfiguration">opGetConsoleAuthorizationConfiguration</a></code> | <code>string[]</code> | IAM actions required for the GetConsoleAuthorizationConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.signin.SigninOperations.property.opGetResourcePolicy">opGetResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the GetResourcePolicy API call. |
+| <code><a href="#@cdk_utils/iam.signin.SigninOperations.property.opGetSession">opGetSession</a></code> | <code>string[]</code> | IAM actions required for the GetSession API call. |
 | <code><a href="#@cdk_utils/iam.signin.SigninOperations.property.PutConsoleAuthorizationConfiguration">PutConsoleAuthorizationConfiguration</a></code> | <code>string[]</code> | IAM actions required for the PutConsoleAuthorizationConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.signin.SigninOperations.property.PutResourcePermissionStatement">PutResourcePermissionStatement</a></code> | <code>string[]</code> | IAM actions required for the PutResourcePermissionStatement API call. |
 | <code><a href="#@cdk_utils/iam.signin.SigninOperations.property.RevokeOAuth2TokenWithIAM">RevokeOAuth2TokenWithIAM</a></code> | <code>string[]</code> | IAM actions required for the RevokeOAuth2TokenWithIAM API call. |
+
+---
+
+##### `BatchRevokeSessions`<sup>Required</sup> <a name="BatchRevokeSessions" id="@cdk_utils/iam.signin.SigninOperations.property.BatchRevokeSessions"></a>
+
+```typescript
+public readonly BatchRevokeSessions: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the BatchRevokeSessions API call.
+
+---
+
+##### `CreateBearerToken`<sup>Required</sup> <a name="CreateBearerToken" id="@cdk_utils/iam.signin.SigninOperations.property.CreateBearerToken"></a>
+
+```typescript
+public readonly CreateBearerToken: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateBearerToken API call.
 
 ---
 
@@ -1368,6 +1409,18 @@ IAM actions required for the ListResourcePermissionStatements API call.
 
 ---
 
+##### `ListSessions`<sup>Required</sup> <a name="ListSessions" id="@cdk_utils/iam.signin.SigninOperations.property.ListSessions"></a>
+
+```typescript
+public readonly ListSessions: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListSessions API call.
+
+---
+
 ##### `opGetConsoleAuthorizationConfiguration`<sup>Required</sup> <a name="opGetConsoleAuthorizationConfiguration" id="@cdk_utils/iam.signin.SigninOperations.property.opGetConsoleAuthorizationConfiguration"></a>
 
 ```typescript
@@ -1389,6 +1442,18 @@ public readonly opGetResourcePolicy: string[];
 - *Type:* string[]
 
 IAM actions required for the GetResourcePolicy API call.
+
+---
+
+##### `opGetSession`<sup>Required</sup> <a name="opGetSession" id="@cdk_utils/iam.signin.SigninOperations.property.opGetSession"></a>
+
+```typescript
+public readonly opGetSession: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetSession API call.
 
 ---
 

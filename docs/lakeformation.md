@@ -1147,6 +1147,7 @@ new lakeformation.LakeFormationOperations()
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.opGetDataLakePrincipal">opGetDataLakePrincipal</a></code> | <code>string[]</code> | IAM actions required for the GetDataLakePrincipal API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.opGetDataLakeSettings">opGetDataLakeSettings</a></code> | <code>string[]</code> | IAM actions required for the GetDataLakeSettings API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.opGetEffectivePermissionsForPath">opGetEffectivePermissionsForPath</a></code> | <code>string[]</code> | IAM actions required for the GetEffectivePermissionsForPath API call. |
+| <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.opGetGlueFunctionSessionContext">opGetGlueFunctionSessionContext</a></code> | <code>string[]</code> | IAM actions required for the GetGlueFunctionSessionContext API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.opGetLFTag">opGetLFTag</a></code> | <code>string[]</code> | IAM actions required for the GetLFTag API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.opGetLFTagExpression">opGetLFTagExpression</a></code> | <code>string[]</code> | IAM actions required for the GetLFTagExpression API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.opGetQueryState">opGetQueryState</a></code> | <code>string[]</code> | IAM actions required for the GetQueryState API call. |
@@ -1155,6 +1156,7 @@ new lakeformation.LakeFormationOperations()
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.opGetRLSPolicy">opGetRLSPolicy</a></code> | <code>string[]</code> | IAM actions required for the GetRLSPolicy API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.opGetTableObjects">opGetTableObjects</a></code> | <code>string[]</code> | IAM actions required for the GetTableObjects API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.opGetTemporaryDataLocationCredentials">opGetTemporaryDataLocationCredentials</a></code> | <code>string[]</code> | IAM actions required for the GetTemporaryDataLocationCredentials API call. |
+| <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.opGetTemporaryGlueFunctionCredentials">opGetTemporaryGlueFunctionCredentials</a></code> | <code>string[]</code> | IAM actions required for the GetTemporaryGlueFunctionCredentials API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.opGetTemporaryGluePartitionCredentials">opGetTemporaryGluePartitionCredentials</a></code> | <code>string[]</code> | IAM actions required for the GetTemporaryGluePartitionCredentials API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.opGetTemporaryGlueTableCredentials">opGetTemporaryGlueTableCredentials</a></code> | <code>string[]</code> | IAM actions required for the GetTemporaryGlueTableCredentials API call. |
 | <code><a href="#@cdk_utils/iam.lakeformation.LakeFormationOperations.property.opGetWorkUnitResults">opGetWorkUnitResults</a></code> | <code>string[]</code> | IAM actions required for the GetWorkUnitResults API call. |
@@ -1670,6 +1672,18 @@ IAM actions required for the GetEffectivePermissionsForPath API call.
 
 ---
 
+##### `opGetGlueFunctionSessionContext`<sup>Required</sup> <a name="opGetGlueFunctionSessionContext" id="@cdk_utils/iam.lakeformation.LakeFormationOperations.property.opGetGlueFunctionSessionContext"></a>
+
+```typescript
+public readonly opGetGlueFunctionSessionContext: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetGlueFunctionSessionContext API call.
+
+---
+
 ##### `opGetLFTag`<sup>Required</sup> <a name="opGetLFTag" id="@cdk_utils/iam.lakeformation.LakeFormationOperations.property.opGetLFTag"></a>
 
 ```typescript
@@ -1763,6 +1777,18 @@ public readonly opGetTemporaryDataLocationCredentials: string[];
 - *Type:* string[]
 
 IAM actions required for the GetTemporaryDataLocationCredentials API call.
+
+---
+
+##### `opGetTemporaryGlueFunctionCredentials`<sup>Required</sup> <a name="opGetTemporaryGlueFunctionCredentials" id="@cdk_utils/iam.lakeformation.LakeFormationOperations.property.opGetTemporaryGlueFunctionCredentials"></a>
+
+```typescript
+public readonly opGetTemporaryGlueFunctionCredentials: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetTemporaryGlueFunctionCredentials API call.
 
 ---
 

@@ -180,8 +180,8 @@
         }
       ],
       "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -617,8 +617,8 @@
         }
       ],
       "SupportedBy": {
-        "IAM Access Analyzer Policy Generation": false,
-        "IAM Action Last Accessed": false
+        "IAM Access Analyzer Policy Generation": true,
+        "IAM Action Last Accessed": true
       }
     },
     {
@@ -1017,6 +1017,7 @@
       "Name": "GetKeyPolicy",
       "ActionConditionKeys": [
         "kms:CallerAccount",
+        "kms:PolicyName",
         "kms:ViaService"
       ],
       "Annotations": {
@@ -1305,6 +1306,7 @@
       "ActionConditionKeys": [
         "kms:BypassPolicyLockoutSafetyCheck",
         "kms:CallerAccount",
+        "kms:PolicyName",
         "kms:ViaService"
       ],
       "Annotations": {
@@ -1937,6 +1939,12 @@
       ]
     },
     {
+      "Name": "kms:PolicyName",
+      "Types": [
+        "String"
+      ]
+    },
+    {
       "Name": "kms:PrimaryRegion",
       "Types": [
         "String"
@@ -2280,6 +2288,12 @@
     },
     {
       "Name": "kms:RecipientAttestation:PCR8",
+      "Types": [
+        "String"
+      ]
+    },
+    {
+      "Name": "kms:RecipientAttestation:PCR8:ServiceName",
       "Types": [
         "String"
       ]

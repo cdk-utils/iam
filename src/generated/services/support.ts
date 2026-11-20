@@ -91,6 +91,8 @@ export class SupportActions {
 	static readonly ResolveInteraction = "support:ResolveInteraction";
 	/** [Read] support:SearchForCases */
 	static readonly SearchForCases = "support:SearchForCases";
+	/** [Read] support:SearchInteractions */
+	static readonly SearchInteractions = "support:SearchInteractions";
 	/** [Write] support:StartInteraction */
 	static readonly StartInteraction = "support:StartInteraction";
 	/** [Write] support:UpdateCaseSeverity */
@@ -124,6 +126,7 @@ export class SupportActions {
 		SupportActions.ListInteractionEntries,
 		SupportActions.ListInteractions,
 		SupportActions.SearchForCases,
+		SupportActions.SearchInteractions,
 	];
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [

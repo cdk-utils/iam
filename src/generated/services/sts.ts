@@ -30,6 +30,8 @@ export class STSActions {
 	static readonly actionGetDelegatedAccessToken = "sts:GetDelegatedAccessToken";
 	/** [Write] sts:GetFederationToken */
 	static readonly actionGetFederationToken = "sts:GetFederationToken";
+	/** [Write] sts:GetScopedCredentials */
+	static readonly actionGetScopedCredentials = "sts:GetScopedCredentials";
 	/** [Read] sts:GetServiceBearerToken */
 	static readonly actionGetServiceBearerToken = "sts:GetServiceBearerToken";
 	/** [Read] sts:GetSessionToken */
@@ -40,6 +42,9 @@ export class STSActions {
 	static readonly actionSetContext = "sts:SetContext";
 	/** [Write] sts:SetSourceIdentity */
 	static readonly actionSetSourceIdentity = "sts:SetSourceIdentity";
+	/** [Write] sts:SetWebIdentityTokenScope */
+	static readonly actionSetWebIdentityTokenScope =
+		"sts:SetWebIdentityTokenScope";
 	/** [Tagging] sts:TagGetWebIdentityToken */
 	static readonly TagGetWebIdentityToken = "sts:TagGetWebIdentityToken";
 	/** [Tagging] sts:TagSession */
@@ -61,9 +66,11 @@ export class STSActions {
 		STSActions.DecodeAuthorizationMessage,
 		STSActions.actionGetDelegatedAccessToken,
 		STSActions.actionGetFederationToken,
+		STSActions.actionGetScopedCredentials,
 		STSActions.actionGetWebIdentityToken,
 		STSActions.actionSetContext,
 		STSActions.actionSetSourceIdentity,
+		STSActions.actionSetWebIdentityTokenScope,
 	];
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [];
@@ -391,11 +398,16 @@ export class STSOperations {
 		"sts:GetFederationToken",
 		"sts:TagSession",
 	];
+	/** IAM actions required for the GetScopedCredentials API call. */
+	static readonly opGetScopedCredentials: string[] = [
+		"sts:GetScopedCredentials",
+	];
 	/** IAM actions required for the GetSessionToken API call. */
 	static readonly opGetSessionToken: string[] = ["sts:GetSessionToken"];
 	/** IAM actions required for the GetWebIdentityToken API call. */
 	static readonly opGetWebIdentityToken: string[] = [
 		"sts:GetWebIdentityToken",
+		"sts:SetWebIdentityTokenScope",
 		"sts:TagGetWebIdentityToken",
 	];
 }
@@ -420,6 +432,8 @@ export class STSConditions {
 		"saml:sub",
 		"saml:sub_type",
 		"sts:ExternalId",
+		"sts:RequestContext/${ContextKey}",
+		"sts:RequestContextProviders",
 		"sts:RoleSessionName",
 		"sts:SourceIdentity",
 		"sts:TransitiveTagKeys",
@@ -462,6 +476,7 @@ export class STSConditions {
 		"saml:surname",
 		"saml:uid",
 		"saml:x500UniqueIdentifier",
+		"sts:RequestContextProviders",
 		"sts:RoleSessionName",
 		"sts:SourceIdentity",
 		"sts:TransitiveTagKeys",
@@ -521,6 +536,7 @@ export class STSConditions {
 		"graph.facebook.com:id",
 		"idcs-${OciUniqueIdentifier}.identity.oraclecloud.com:rpst_id",
 		"oidc.circleci.com/org/${OrgId}:oidc.circleci.com/project-id",
+		"sts:RequestContextProviders",
 		"sts:RoleAuthorizedByIdp",
 		"sts:RoleSessionName",
 		"sts:SourceIdentity",
@@ -565,6 +581,10 @@ export class STSConditions {
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
+	/** Condition keys applicable to the GetScopedCredentials action. */
+	static readonly actionGetScopedCredentialsConditionKeys: string[] = [
+		"sts:DurationSeconds",
+	];
 	/** Condition keys applicable to the GetServiceBearerToken action. */
 	static readonly actionGetServiceBearerTokenConditionKeys: string[] = [
 		"sts:AWSServiceName",
@@ -576,7 +596,9 @@ export class STSConditions {
 		"aws:TagKeys",
 		"sts:DurationSeconds",
 		"sts:IdentityTokenAudience",
+		"sts:IdentityTokenScope",
 		"sts:SigningAlgorithm",
+		"sts:SubjectMode",
 	];
 	/** Condition keys applicable to the SetContext action. */
 	static readonly actionSetContextConditionKeys: string[] = [
@@ -585,7 +607,19 @@ export class STSConditions {
 	];
 	/** Condition keys applicable to the SetSourceIdentity action. */
 	static readonly actionSetSourceIdentityConditionKeys: string[] = [
+		"sts:RequestContext/${ContextKey}",
+		"sts:RequestContextProviders",
 		"sts:SourceIdentity",
+	];
+	/** Condition keys applicable to the SetWebIdentityTokenScope action. */
+	static readonly actionSetWebIdentityTokenScopeConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+		"sts:DurationSeconds",
+		"sts:IdentityTokenAudience",
+		"sts:IdentityTokenScope",
+		"sts:SigningAlgorithm",
+		"sts:SubjectMode",
 	];
 	/** Condition keys applicable to the TagGetWebIdentityToken action. */
 	static readonly TagGetWebIdentityTokenConditionKeys: string[] = [
@@ -597,6 +631,8 @@ export class STSConditions {
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"saml:aud",
+		"sts:RequestContext/${ContextKey}",
+		"sts:RequestContextProviders",
 		"sts:TransitiveTagKeys",
 	];
 
@@ -762,6 +798,8 @@ export class STSConditions {
 	static readonly EXTERNAL_ID = "sts:ExternalId";
 	/** Condition key: sts:IdentityTokenAudience (ArrayOfString) */
 	static readonly IDENTITY_TOKEN_AUDIENCE = "sts:IdentityTokenAudience";
+	/** Condition key: sts:IdentityTokenScope (ArrayOfString) */
+	static readonly IDENTITY_TOKEN_SCOPE = "sts:IdentityTokenScope";
 	/** Condition key: sts:RequestContext/${ContextKey} (String) */
 	static readonly REQUEST_CONTEXT = "sts:RequestContext/${ContextKey}";
 	/** Condition key: sts:RequestContextProviders (ArrayOfARN) */
@@ -774,6 +812,8 @@ export class STSConditions {
 	static readonly SIGNING_ALGORITHM = "sts:SigningAlgorithm";
 	/** Condition key: sts:SourceIdentity (String) */
 	static readonly SOURCE_IDENTITY = "sts:SourceIdentity";
+	/** Condition key: sts:SubjectMode (String) */
+	static readonly SUBJECT_MODE = "sts:SubjectMode";
 	/** Condition key: sts:TaskPolicyArn (ARN) */
 	static readonly TASK_POLICY_ARN = "sts:TaskPolicyArn";
 	/** Condition key: sts:TransitiveTagKeys (ArrayOfString) */
@@ -835,6 +875,17 @@ export class STSConditions {
 	}
 
 	/**
+	 * Generates a condition block for `sts:IdentityTokenScope`.
+	 */
+	static identityTokenScope(
+		values: string[],
+	): Record<string, Record<string, string[]>> {
+		return {
+			"ForAllValues:StringEquals": { "sts:IdentityTokenScope": values },
+		};
+	}
+
+	/**
 	 * Generates a condition block for `sts:RequestContext/${ContextKey}`.
 	 */
 	static requestContext(value: string): Record<string, Record<string, string>> {
@@ -884,6 +935,13 @@ export class STSConditions {
 	 */
 	static sourceIdentity(value: string): Record<string, Record<string, string>> {
 		return { StringEquals: { "sts:SourceIdentity": value } };
+	}
+
+	/**
+	 * Generates a condition block for `sts:SubjectMode`.
+	 */
+	static subjectMode(value: string): Record<string, Record<string, string>> {
+		return { StringEquals: { "sts:SubjectMode": value } };
 	}
 
 	/**

@@ -80,6 +80,9 @@ export class GlueActions {
 	static readonly CreateCrawler = "glue:CreateCrawler";
 	/** [Write] glue:CreateCustomEntityType */
 	static readonly CreateCustomEntityType = "glue:CreateCustomEntityType";
+	/** [Write] glue:CreateDataQualityEvaluationConfig */
+	static readonly CreateDataQualityEvaluationConfig =
+		"glue:CreateDataQualityEvaluationConfig";
 	/** [Write] glue:CreateDataQualityRuleset */
 	static readonly CreateDataQualityRuleset = "glue:CreateDataQualityRuleset";
 	/** [Write] glue:CreateDatabase */
@@ -153,6 +156,9 @@ export class GlueActions {
 	static readonly DeleteCrawler = "glue:DeleteCrawler";
 	/** [Write] glue:DeleteCustomEntityType */
 	static readonly DeleteCustomEntityType = "glue:DeleteCustomEntityType";
+	/** [Write] glue:DeleteDataQualityEvaluationConfig */
+	static readonly DeleteDataQualityEvaluationConfig =
+		"glue:DeleteDataQualityEvaluationConfig";
 	/** [Write] glue:DeleteDataQualityRuleset */
 	static readonly DeleteDataQualityRuleset = "glue:DeleteDataQualityRuleset";
 	/** [Write] glue:DeleteDatabase */
@@ -271,6 +277,9 @@ export class GlueActions {
 	/** [PermissionManagement] glue:GetDataPreviewStatement */
 	static readonly actionGetDataPreviewStatement =
 		"glue:GetDataPreviewStatement";
+	/** [Read] glue:GetDataQualityEvaluationConfig */
+	static readonly actionGetDataQualityEvaluationConfig =
+		"glue:GetDataQualityEvaluationConfig";
 	/** [Read] glue:GetDataQualityModel */
 	static readonly actionGetDataQualityModel = "glue:GetDataQualityModel";
 	/** [Read] glue:GetDataQualityModelResult */
@@ -457,6 +466,9 @@ export class GlueActions {
 	static readonly ListCrawls = "glue:ListCrawls";
 	/** [List] glue:ListCustomEntityTypes */
 	static readonly ListCustomEntityTypes = "glue:ListCustomEntityTypes";
+	/** [List] glue:ListDataQualityEvaluationConfigs */
+	static readonly ListDataQualityEvaluationConfigs =
+		"glue:ListDataQualityEvaluationConfigs";
 	/** [List] glue:ListDataQualityResults */
 	static readonly ListDataQualityResults = "glue:ListDataQualityResults";
 	/** [List] glue:ListDataQualityRuleRecommendationRuns */
@@ -474,6 +486,9 @@ export class GlueActions {
 	/** [List] glue:ListIntegrationResourceProperties */
 	static readonly ListIntegrationResourceProperties =
 		"glue:ListIntegrationResourceProperties";
+	/** [List] glue:ListIntegrationTableProperties */
+	static readonly ListIntegrationTableProperties =
+		"glue:ListIntegrationTableProperties";
 	/** [List] glue:ListJobUpgradeAnalyses */
 	static readonly ListJobUpgradeAnalyses = "glue:ListJobUpgradeAnalyses";
 	/** [List] glue:ListJobs */
@@ -639,6 +654,9 @@ export class GlueActions {
 	static readonly UpdateCrawler = "glue:UpdateCrawler";
 	/** [Write] glue:UpdateCrawlerSchedule */
 	static readonly UpdateCrawlerSchedule = "glue:UpdateCrawlerSchedule";
+	/** [Write] glue:UpdateDataQualityEvaluationConfig */
+	static readonly UpdateDataQualityEvaluationConfig =
+		"glue:UpdateDataQualityEvaluationConfig";
 	/** [Write] glue:UpdateDataQualityRuleset */
 	static readonly UpdateDataQualityRuleset = "glue:UpdateDataQualityRuleset";
 	/** [Write] glue:UpdateDatabase */
@@ -724,6 +742,7 @@ export class GlueActions {
 		GlueActions.actionGetCustomEntityType,
 		GlueActions.actionGetDashboardUrl,
 		GlueActions.actionGetDataCatalogEncryptionSettings,
+		GlueActions.actionGetDataQualityEvaluationConfig,
 		GlueActions.actionGetDataQualityModel,
 		GlueActions.actionGetDataQualityModelResult,
 		GlueActions.actionGetDataQualityResult,
@@ -806,6 +825,7 @@ export class GlueActions {
 		GlueActions.CreateConnection,
 		GlueActions.CreateCrawler,
 		GlueActions.CreateCustomEntityType,
+		GlueActions.CreateDataQualityEvaluationConfig,
 		GlueActions.CreateDataQualityRuleset,
 		GlueActions.CreateDatabase,
 		GlueActions.CreateDevEndpoint,
@@ -839,6 +859,7 @@ export class GlueActions {
 		GlueActions.DeleteConnectionType,
 		GlueActions.DeleteCrawler,
 		GlueActions.DeleteCustomEntityType,
+		GlueActions.DeleteDataQualityEvaluationConfig,
 		GlueActions.DeleteDataQualityRuleset,
 		GlueActions.DeleteDatabase,
 		GlueActions.DeleteDevEndpoint,
@@ -914,6 +935,7 @@ export class GlueActions {
 		GlueActions.UpdateConnection,
 		GlueActions.UpdateCrawler,
 		GlueActions.UpdateCrawlerSchedule,
+		GlueActions.UpdateDataQualityEvaluationConfig,
 		GlueActions.UpdateDataQualityRuleset,
 		GlueActions.UpdateDatabase,
 		GlueActions.UpdateDevEndpoint,
@@ -946,12 +968,14 @@ export class GlueActions {
 		GlueActions.ListCrawlers,
 		GlueActions.ListCrawls,
 		GlueActions.ListCustomEntityTypes,
+		GlueActions.ListDataQualityEvaluationConfigs,
 		GlueActions.ListDataQualityResults,
 		GlueActions.ListDataQualityRuleRecommendationRuns,
 		GlueActions.ListDataQualityRulesetEvaluationRuns,
 		GlueActions.ListDataQualityRulesets,
 		GlueActions.ListDevEndpoints,
 		GlueActions.ListIntegrationResourceProperties,
+		GlueActions.ListIntegrationTableProperties,
 		GlueActions.ListJobUpgradeAnalyses,
 		GlueActions.ListJobs,
 		GlueActions.ListMLTransforms,
@@ -1206,6 +1230,34 @@ export interface GlueCustomEntityTypeArnComponents {
 	readonly account: string;
 	/** The CustomEntityTypeId component. */
 	readonly customEntityTypeId: string;
+}
+
+/**
+ * Properties for building a dataQualityEvaluationConfig ARN.
+ */
+export interface GlueDataQualityEvaluationConfigArnProps {
+	/** The EvaluationConfigName component of the ARN. */
+	readonly evaluationConfigName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a dataQualityEvaluationConfig ARN.
+ */
+export interface GlueDataQualityEvaluationConfigArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The EvaluationConfigName component. */
+	readonly evaluationConfigName: string;
 }
 
 /**
@@ -1714,6 +1766,8 @@ const CrawlerArnRegex =
 	/^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):crawler\/(?<crawlerName>[^:/?]+)$/;
 const CustomEntityTypeArnRegex =
 	/^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):customEntityType\/(?<customEntityTypeId>[^:/?]+)$/;
+const DataQualityEvaluationConfigArnRegex =
+	/^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):dataQualityEvaluationConfig\/(?<evaluationConfigName>[^:/?]+)$/;
 const DataQualityRulesetArnRegex =
 	/^arn:(?<partition>[^:]+):glue:(?<region>[^:]*):(?<account>[^:]*):dataQualityRuleset\/(?<rulesetName>[^:/?]+)$/;
 const DatabaseArnRegex =
@@ -1969,6 +2023,41 @@ export class GlueResources {
 			region: match.groups.region,
 			account: match.groups.account,
 			customEntityTypeId: match.groups!.customEntityTypeId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the dataQualityEvaluationConfig resource.
+	 */
+	static dataQualityEvaluationConfig(
+		props: GlueDataQualityEvaluationConfigArnProps,
+	): string {
+		return `arn:${props.partition ?? "aws"}:glue:${props.region ?? "*"}:${props.account ?? "*"}:dataQualityEvaluationConfig/${props.evaluationConfigName}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the dataQualityEvaluationConfig resource.
+	 */
+	static isValidDataQualityEvaluationConfigArn(arn: string): boolean {
+		return DataQualityEvaluationConfigArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a dataQualityEvaluationConfig ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseDataQualityEvaluationConfigArn(
+		arn: string,
+	): GlueDataQualityEvaluationConfigArnComponents {
+		const match = DataQualityEvaluationConfigArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid dataQualityEvaluationConfig ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			evaluationConfigName: match.groups!.evaluationConfigName,
 		};
 	}
 
@@ -2644,6 +2733,12 @@ export class GlueOperations {
 		"glue:CreateCustomEntityType",
 		"glue:TagResource",
 	];
+	/** IAM actions required for the CreateDataQualityEvaluationConfig API call. */
+	static readonly CreateDataQualityEvaluationConfig: string[] = [
+		"glue:CreateDataQualityEvaluationConfig",
+		"iam:PassRole",
+		"glue:TagResource",
+	];
 	/** IAM actions required for the CreateDataQualityRuleset API call. */
 	static readonly CreateDataQualityRuleset: string[] = [
 		"glue:CreateDataQualityRuleset",
@@ -2790,6 +2885,10 @@ export class GlueOperations {
 	/** IAM actions required for the DeleteCustomEntityType API call. */
 	static readonly DeleteCustomEntityType: string[] = [
 		"glue:DeleteCustomEntityType",
+	];
+	/** IAM actions required for the DeleteDataQualityEvaluationConfig API call. */
+	static readonly DeleteDataQualityEvaluationConfig: string[] = [
+		"glue:DeleteDataQualityEvaluationConfig",
 	];
 	/** IAM actions required for the DeleteDataQualityRuleset API call. */
 	static readonly DeleteDataQualityRuleset: string[] = [
@@ -2942,6 +3041,10 @@ export class GlueOperations {
 	];
 	/** IAM actions required for the GetDataCatalogExportConfiguration API call. */
 	static readonly opGetDataCatalogExportConfiguration: string[] = [];
+	/** IAM actions required for the GetDataQualityEvaluationConfig API call. */
+	static readonly opGetDataQualityEvaluationConfig: string[] = [
+		"glue:GetDataQualityEvaluationConfig",
+	];
 	/** IAM actions required for the GetDataQualityModel API call. */
 	static readonly opGetDataQualityModel: string[] = [
 		"glue:GetDataQualityModel",
@@ -3008,6 +3111,10 @@ export class GlueOperations {
 	static readonly opGetJobRun: string[] = ["glue:GetJobRun"];
 	/** IAM actions required for the GetJobRuns API call. */
 	static readonly opGetJobRuns: string[] = ["glue:GetJobRuns"];
+	/** IAM actions required for the GetJobUpgradeAnalysis API call. */
+	static readonly opGetJobUpgradeAnalysis: string[] = [
+		"glue:GetJobUpgradeAnalysis",
+	];
 	/** IAM actions required for the GetJobs API call. */
 	static readonly opGetJobs: string[] = ["glue:GetJobs", "iam:PassRole"];
 	/** IAM actions required for the GetMLTaskRun API call. */
@@ -3139,6 +3246,10 @@ export class GlueOperations {
 	static readonly ListCustomEntityTypes: string[] = [
 		"glue:ListCustomEntityTypes",
 	];
+	/** IAM actions required for the ListDataQualityEvaluationConfigs API call. */
+	static readonly ListDataQualityEvaluationConfigs: string[] = [
+		"glue:ListDataQualityEvaluationConfigs",
+	];
 	/** IAM actions required for the ListDataQualityResults API call. */
 	static readonly ListDataQualityResults: string[] = [
 		"glue:ListDataQualityResults",
@@ -3182,7 +3293,9 @@ export class GlueOperations {
 		"glue:ListIntegrationResourceProperties",
 	];
 	/** IAM actions required for the ListIntegrationTableProperties API call. */
-	static readonly ListIntegrationTableProperties: string[] = [];
+	static readonly ListIntegrationTableProperties: string[] = [
+		"glue:ListIntegrationTableProperties",
+	];
 	/** IAM actions required for the ListIterableForms API call. */
 	static readonly ListIterableForms: string[] = [];
 	/** IAM actions required for the ListJobs API call. */
@@ -3316,6 +3429,10 @@ export class GlueOperations {
 		"glue:GetUsageProfile",
 		"glue:StartJobRun",
 	];
+	/** IAM actions required for the StartJobUpgradeAnalysis API call. */
+	static readonly StartJobUpgradeAnalysis: string[] = [
+		"glue:StartJobUpgradeAnalysis",
+	];
 	/** IAM actions required for the StartMLEvaluationTaskRun API call. */
 	static readonly StartMLEvaluationTaskRun: string[] = [
 		"glue:StartMLEvaluationTaskRun",
@@ -3342,6 +3459,10 @@ export class GlueOperations {
 	static readonly StopCrawler: string[] = ["glue:StopCrawler"];
 	/** IAM actions required for the StopCrawlerSchedule API call. */
 	static readonly StopCrawlerSchedule: string[] = ["glue:StopCrawlerSchedule"];
+	/** IAM actions required for the StopJobUpgradeAnalysis API call. */
+	static readonly StopJobUpgradeAnalysis: string[] = [
+		"glue:StopJobUpgradeAnalysis",
+	];
 	/** IAM actions required for the StopMaterializedViewRefreshTaskRun API call. */
 	static readonly StopMaterializedViewRefreshTaskRun: string[] = [];
 	/** IAM actions required for the StopSession API call. */
@@ -3397,6 +3518,11 @@ export class GlueOperations {
 	/** IAM actions required for the UpdateCrawlerSchedule API call. */
 	static readonly UpdateCrawlerSchedule: string[] = [
 		"glue:UpdateCrawlerSchedule",
+	];
+	/** IAM actions required for the UpdateDataQualityEvaluationConfig API call. */
+	static readonly UpdateDataQualityEvaluationConfig: string[] = [
+		"iam:PassRole",
+		"glue:UpdateDataQualityEvaluationConfig",
 	];
 	/** IAM actions required for the UpdateDataQualityRuleset API call. */
 	static readonly UpdateDataQualityRuleset: string[] = [
@@ -3520,6 +3646,9 @@ export class GlueConditions {
 	static readonly CreateConnectionConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
+		"glue:ConnectionType",
+		"glue:CredentialVendingMode",
+		"glue:InstanceUrl",
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the CreateCrawler action. */
@@ -3529,6 +3658,11 @@ export class GlueConditions {
 	];
 	/** Condition keys applicable to the CreateCustomEntityType action. */
 	static readonly CreateCustomEntityTypeConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the CreateDataQualityEvaluationConfig action. */
+	static readonly CreateDataQualityEvaluationConfigConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
@@ -3807,6 +3941,9 @@ export class GlueConditions {
 	];
 	/** Condition keys applicable to the UpdateConnection action. */
 	static readonly UpdateConnectionConditionKeys: string[] = [
+		"glue:ConnectionType",
+		"glue:CredentialVendingMode",
+		"glue:InstanceUrl",
 		"glue:LakeFormationPermissions",
 	];
 	/** Condition keys applicable to the UpdateDatabase action. */
@@ -3840,14 +3977,20 @@ export class GlueConditions {
 	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
 	static readonly AWS_TAG_KEYS = "aws:TagKeys";
+	/** Condition key: glue:ConnectionType (String) */
+	static readonly CONNECTION_TYPE = "glue:ConnectionType";
 	/** Condition key: glue:CredentialIssuingService (String) */
 	static readonly CREDENTIAL_ISSUING_SERVICE = "glue:CredentialIssuingService";
+	/** Condition key: glue:CredentialVendingMode (String) */
+	static readonly CREDENTIAL_VENDING_MODE = "glue:CredentialVendingMode";
 	/** Condition key: glue:EnabledForRedshiftAutoDiscovery (Bool) */
 	static readonly ENABLED_FOR_REDSHIFT_AUTO_DISCOVERY =
 		"glue:EnabledForRedshiftAutoDiscovery";
 	/** Condition key: glue:FederatedAuthorizationSource (String) */
 	static readonly FEDERATED_AUTHORIZATION_SOURCE =
 		"glue:FederatedAuthorizationSource";
+	/** Condition key: glue:InstanceUrl (String) */
+	static readonly INSTANCE_URL = "glue:InstanceUrl";
 	/** Condition key: glue:LakeFormationPermissions (String) */
 	static readonly LAKE_FORMATION_PERMISSIONS = "glue:LakeFormationPermissions";
 	/** Condition key: glue:RoleAssumedBy (String) */
@@ -3881,12 +4024,28 @@ export class GlueConditions {
 	}
 
 	/**
+	 * Generates a condition block for `glue:ConnectionType`.
+	 */
+	static connectionType(value: string): Record<string, Record<string, string>> {
+		return { StringEquals: { "glue:ConnectionType": value } };
+	}
+
+	/**
 	 * Generates a condition block for `glue:CredentialIssuingService`.
 	 */
 	static credentialIssuingService(
 		value: string,
 	): Record<string, Record<string, string>> {
 		return { StringEquals: { "glue:CredentialIssuingService": value } };
+	}
+
+	/**
+	 * Generates a condition block for `glue:CredentialVendingMode`.
+	 */
+	static credentialVendingMode(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "glue:CredentialVendingMode": value } };
 	}
 
 	/**
@@ -3905,6 +4064,13 @@ export class GlueConditions {
 		value: string,
 	): Record<string, Record<string, string>> {
 		return { StringEquals: { "glue:FederatedAuthorizationSource": value } };
+	}
+
+	/**
+	 * Generates a condition block for `glue:InstanceUrl`.
+	 */
+	static instanceURL(value: string): Record<string, Record<string, string>> {
+		return { StringEquals: { "glue:InstanceUrl": value } };
 	}
 
 	/**

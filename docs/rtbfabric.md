@@ -1048,6 +1048,8 @@ new rtbfabric.RtbfabricActions()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricActions.property.AcceptLink">AcceptLink</a></code> | <code>string</code> | [Write] rtbfabric:AcceptLink. |
+| <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricActions.property.actionGetAvailableModule">actionGetAvailableModule</a></code> | <code>string</code> | [Read] rtbfabric:GetAvailableModule. |
+| <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricActions.property.actionGetAvailableModuleVersion">actionGetAvailableModuleVersion</a></code> | <code>string</code> | [Read] rtbfabric:GetAvailableModuleVersion. |
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricActions.property.actionGetCertificateAssociation">actionGetCertificateAssociation</a></code> | <code>string</code> | [Read] rtbfabric:GetCertificateAssociation. |
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricActions.property.actionGetInboundExternalLink">actionGetInboundExternalLink</a></code> | <code>string</code> | [Read] rtbfabric:GetInboundExternalLink. |
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricActions.property.actionGetLink">actionGetLink</a></code> | <code>string</code> | [Read] rtbfabric:GetLink. |
@@ -1055,6 +1057,7 @@ new rtbfabric.RtbfabricActions()
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricActions.property.actionGetOutboundExternalLink">actionGetOutboundExternalLink</a></code> | <code>string</code> | [Read] rtbfabric:GetOutboundExternalLink. |
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricActions.property.actionGetRequesterGateway">actionGetRequesterGateway</a></code> | <code>string</code> | [Read] rtbfabric:GetRequesterGateway. |
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricActions.property.actionGetResponderGateway">actionGetResponderGateway</a></code> | <code>string</code> | [Read] rtbfabric:GetResponderGateway. |
+| <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricActions.property.actionGetUpdate">actionGetUpdate</a></code> | <code>string</code> | [Read] rtbfabric:GetUpdate. |
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricActions.property.AllPermissionManagementActions">AllPermissionManagementActions</a></code> | <code>string[]</code> | All permission-management-level actions. |
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
@@ -1074,12 +1077,16 @@ new rtbfabric.RtbfabricActions()
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricActions.property.DeleteRequesterGateway">DeleteRequesterGateway</a></code> | <code>string</code> | [Write] rtbfabric:DeleteRequesterGateway. |
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricActions.property.DeleteResponderGateway">DeleteResponderGateway</a></code> | <code>string</code> | [Write] rtbfabric:DeleteResponderGateway. |
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricActions.property.DisassociateCertificate">DisassociateCertificate</a></code> | <code>string</code> | [Write] rtbfabric:DisassociateCertificate. |
+| <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricActions.property.ListAvailableModules">ListAvailableModules</a></code> | <code>string</code> | [List] rtbfabric:ListAvailableModules. |
+| <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricActions.property.ListAvailableModuleVersions">ListAvailableModuleVersions</a></code> | <code>string</code> | [List] rtbfabric:ListAvailableModuleVersions. |
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricActions.property.ListCertificateAssociations">ListCertificateAssociations</a></code> | <code>string</code> | [List] rtbfabric:ListCertificateAssociations. |
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricActions.property.ListLinkRoutingRules">ListLinkRoutingRules</a></code> | <code>string</code> | [List] rtbfabric:ListLinkRoutingRules. |
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricActions.property.ListLinks">ListLinks</a></code> | <code>string</code> | [List] rtbfabric:ListLinks. |
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricActions.property.ListRequesterGateways">ListRequesterGateways</a></code> | <code>string</code> | [List] rtbfabric:ListRequesterGateways. |
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricActions.property.ListResponderGateways">ListResponderGateways</a></code> | <code>string</code> | [List] rtbfabric:ListResponderGateways. |
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Read] rtbfabric:ListTagsForResource. |
+| <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricActions.property.ListUpdates">ListUpdates</a></code> | <code>string</code> | [List] rtbfabric:ListUpdates. |
+| <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricActions.property.PutLinkFlows">PutLinkFlows</a></code> | <code>string</code> | [Write] rtbfabric:PutLinkFlows. |
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricActions.property.RejectLink">RejectLink</a></code> | <code>string</code> | [Write] rtbfabric:RejectLink. |
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] rtbfabric:TagResource. |
@@ -1101,6 +1108,30 @@ public readonly AcceptLink: string;
 - *Type:* string
 
 [Write] rtbfabric:AcceptLink.
+
+---
+
+##### `actionGetAvailableModule`<sup>Required</sup> <a name="actionGetAvailableModule" id="@cdk_utils/iam.rtbfabric.RtbfabricActions.property.actionGetAvailableModule"></a>
+
+```typescript
+public readonly actionGetAvailableModule: string;
+```
+
+- *Type:* string
+
+[Read] rtbfabric:GetAvailableModule.
+
+---
+
+##### `actionGetAvailableModuleVersion`<sup>Required</sup> <a name="actionGetAvailableModuleVersion" id="@cdk_utils/iam.rtbfabric.RtbfabricActions.property.actionGetAvailableModuleVersion"></a>
+
+```typescript
+public readonly actionGetAvailableModuleVersion: string;
+```
+
+- *Type:* string
+
+[Read] rtbfabric:GetAvailableModuleVersion.
 
 ---
 
@@ -1185,6 +1216,18 @@ public readonly actionGetResponderGateway: string;
 - *Type:* string
 
 [Read] rtbfabric:GetResponderGateway.
+
+---
+
+##### `actionGetUpdate`<sup>Required</sup> <a name="actionGetUpdate" id="@cdk_utils/iam.rtbfabric.RtbfabricActions.property.actionGetUpdate"></a>
+
+```typescript
+public readonly actionGetUpdate: string;
+```
+
+- *Type:* string
+
+[Read] rtbfabric:GetUpdate.
 
 ---
 
@@ -1416,6 +1459,30 @@ public readonly DisassociateCertificate: string;
 
 ---
 
+##### `ListAvailableModules`<sup>Required</sup> <a name="ListAvailableModules" id="@cdk_utils/iam.rtbfabric.RtbfabricActions.property.ListAvailableModules"></a>
+
+```typescript
+public readonly ListAvailableModules: string;
+```
+
+- *Type:* string
+
+[List] rtbfabric:ListAvailableModules.
+
+---
+
+##### `ListAvailableModuleVersions`<sup>Required</sup> <a name="ListAvailableModuleVersions" id="@cdk_utils/iam.rtbfabric.RtbfabricActions.property.ListAvailableModuleVersions"></a>
+
+```typescript
+public readonly ListAvailableModuleVersions: string;
+```
+
+- *Type:* string
+
+[List] rtbfabric:ListAvailableModuleVersions.
+
+---
+
 ##### `ListCertificateAssociations`<sup>Required</sup> <a name="ListCertificateAssociations" id="@cdk_utils/iam.rtbfabric.RtbfabricActions.property.ListCertificateAssociations"></a>
 
 ```typescript
@@ -1485,6 +1552,30 @@ public readonly ListTagsForResource: string;
 - *Type:* string
 
 [Read] rtbfabric:ListTagsForResource.
+
+---
+
+##### `ListUpdates`<sup>Required</sup> <a name="ListUpdates" id="@cdk_utils/iam.rtbfabric.RtbfabricActions.property.ListUpdates"></a>
+
+```typescript
+public readonly ListUpdates: string;
+```
+
+- *Type:* string
+
+[List] rtbfabric:ListUpdates.
+
+---
+
+##### `PutLinkFlows`<sup>Required</sup> <a name="PutLinkFlows" id="@cdk_utils/iam.rtbfabric.RtbfabricActions.property.PutLinkFlows"></a>
+
+```typescript
+public readonly PutLinkFlows: string;
+```
+
+- *Type:* string
+
+[Write] rtbfabric:PutLinkFlows.
 
 ---
 
@@ -2072,12 +2163,17 @@ new rtbfabric.RtbfabricOperations()
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricOperations.property.DeleteRequesterGateway">DeleteRequesterGateway</a></code> | <code>string[]</code> | IAM actions required for the DeleteRequesterGateway API call. |
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricOperations.property.DeleteResponderGateway">DeleteResponderGateway</a></code> | <code>string[]</code> | IAM actions required for the DeleteResponderGateway API call. |
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricOperations.property.DisassociateCertificate">DisassociateCertificate</a></code> | <code>string[]</code> | IAM actions required for the DisassociateCertificate API call. |
+| <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricOperations.property.ListAvailableModules">ListAvailableModules</a></code> | <code>string[]</code> | IAM actions required for the ListAvailableModules API call. |
+| <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricOperations.property.ListAvailableModuleVersions">ListAvailableModuleVersions</a></code> | <code>string[]</code> | IAM actions required for the ListAvailableModuleVersions API call. |
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricOperations.property.ListCertificateAssociations">ListCertificateAssociations</a></code> | <code>string[]</code> | IAM actions required for the ListCertificateAssociations API call. |
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricOperations.property.ListLinkRoutingRules">ListLinkRoutingRules</a></code> | <code>string[]</code> | IAM actions required for the ListLinkRoutingRules API call. |
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricOperations.property.ListLinks">ListLinks</a></code> | <code>string[]</code> | IAM actions required for the ListLinks API call. |
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricOperations.property.ListRequesterGateways">ListRequesterGateways</a></code> | <code>string[]</code> | IAM actions required for the ListRequesterGateways API call. |
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricOperations.property.ListResponderGateways">ListResponderGateways</a></code> | <code>string[]</code> | IAM actions required for the ListResponderGateways API call. |
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
+| <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricOperations.property.ListUpdates">ListUpdates</a></code> | <code>string[]</code> | IAM actions required for the ListUpdates API call. |
+| <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricOperations.property.opGetAvailableModule">opGetAvailableModule</a></code> | <code>string[]</code> | IAM actions required for the GetAvailableModule API call. |
+| <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricOperations.property.opGetAvailableModuleVersion">opGetAvailableModuleVersion</a></code> | <code>string[]</code> | IAM actions required for the GetAvailableModuleVersion API call. |
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricOperations.property.opGetCertificateAssociation">opGetCertificateAssociation</a></code> | <code>string[]</code> | IAM actions required for the GetCertificateAssociation API call. |
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricOperations.property.opGetInboundExternalLink">opGetInboundExternalLink</a></code> | <code>string[]</code> | IAM actions required for the GetInboundExternalLink API call. |
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricOperations.property.opGetLink">opGetLink</a></code> | <code>string[]</code> | IAM actions required for the GetLink API call. |
@@ -2085,6 +2181,8 @@ new rtbfabric.RtbfabricOperations()
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricOperations.property.opGetOutboundExternalLink">opGetOutboundExternalLink</a></code> | <code>string[]</code> | IAM actions required for the GetOutboundExternalLink API call. |
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricOperations.property.opGetRequesterGateway">opGetRequesterGateway</a></code> | <code>string[]</code> | IAM actions required for the GetRequesterGateway API call. |
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricOperations.property.opGetResponderGateway">opGetResponderGateway</a></code> | <code>string[]</code> | IAM actions required for the GetResponderGateway API call. |
+| <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricOperations.property.opGetUpdate">opGetUpdate</a></code> | <code>string[]</code> | IAM actions required for the GetUpdate API call. |
+| <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricOperations.property.PutLinkFlows">PutLinkFlows</a></code> | <code>string[]</code> | IAM actions required for the PutLinkFlows API call. |
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricOperations.property.RejectLink">RejectLink</a></code> | <code>string[]</code> | IAM actions required for the RejectLink API call. |
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.rtbfabric.RtbfabricOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
@@ -2276,6 +2374,30 @@ IAM actions required for the DisassociateCertificate API call.
 
 ---
 
+##### `ListAvailableModules`<sup>Required</sup> <a name="ListAvailableModules" id="@cdk_utils/iam.rtbfabric.RtbfabricOperations.property.ListAvailableModules"></a>
+
+```typescript
+public readonly ListAvailableModules: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListAvailableModules API call.
+
+---
+
+##### `ListAvailableModuleVersions`<sup>Required</sup> <a name="ListAvailableModuleVersions" id="@cdk_utils/iam.rtbfabric.RtbfabricOperations.property.ListAvailableModuleVersions"></a>
+
+```typescript
+public readonly ListAvailableModuleVersions: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListAvailableModuleVersions API call.
+
+---
+
 ##### `ListCertificateAssociations`<sup>Required</sup> <a name="ListCertificateAssociations" id="@cdk_utils/iam.rtbfabric.RtbfabricOperations.property.ListCertificateAssociations"></a>
 
 ```typescript
@@ -2345,6 +2467,42 @@ public readonly ListTagsForResource: string[];
 - *Type:* string[]
 
 IAM actions required for the ListTagsForResource API call.
+
+---
+
+##### `ListUpdates`<sup>Required</sup> <a name="ListUpdates" id="@cdk_utils/iam.rtbfabric.RtbfabricOperations.property.ListUpdates"></a>
+
+```typescript
+public readonly ListUpdates: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListUpdates API call.
+
+---
+
+##### `opGetAvailableModule`<sup>Required</sup> <a name="opGetAvailableModule" id="@cdk_utils/iam.rtbfabric.RtbfabricOperations.property.opGetAvailableModule"></a>
+
+```typescript
+public readonly opGetAvailableModule: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetAvailableModule API call.
+
+---
+
+##### `opGetAvailableModuleVersion`<sup>Required</sup> <a name="opGetAvailableModuleVersion" id="@cdk_utils/iam.rtbfabric.RtbfabricOperations.property.opGetAvailableModuleVersion"></a>
+
+```typescript
+public readonly opGetAvailableModuleVersion: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetAvailableModuleVersion API call.
 
 ---
 
@@ -2429,6 +2587,30 @@ public readonly opGetResponderGateway: string[];
 - *Type:* string[]
 
 IAM actions required for the GetResponderGateway API call.
+
+---
+
+##### `opGetUpdate`<sup>Required</sup> <a name="opGetUpdate" id="@cdk_utils/iam.rtbfabric.RtbfabricOperations.property.opGetUpdate"></a>
+
+```typescript
+public readonly opGetUpdate: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetUpdate API call.
+
+---
+
+##### `PutLinkFlows`<sup>Required</sup> <a name="PutLinkFlows" id="@cdk_utils/iam.rtbfabric.RtbfabricOperations.property.PutLinkFlows"></a>
+
+```typescript
+public readonly PutLinkFlows: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the PutLinkFlows API call.
 
 ---
 

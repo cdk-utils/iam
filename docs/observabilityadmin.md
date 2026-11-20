@@ -3,6 +3,180 @@
 
 ## Structs <a name="Structs" id="Structs"></a>
 
+### ObservabilityadminConnectorArnComponents <a name="ObservabilityadminConnectorArnComponents" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminConnectorArnComponents"></a>
+
+Parsed components of a connector ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminConnectorArnComponents.Initializer"></a>
+
+```typescript
+import { observabilityadmin } from '@cdk_utils/iam'
+
+const observabilityadminConnectorArnComponents: observabilityadmin.ObservabilityadminConnectorArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConnectorArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConnectorArnComponents.property.connectorId">connectorId</a></code> | <code>string</code> | The ConnectorId component. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConnectorArnComponents.property.connectorProvider">connectorProvider</a></code> | <code>string</code> | The ConnectorProvider component. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConnectorArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConnectorArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminConnectorArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `connectorId`<sup>Required</sup> <a name="connectorId" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminConnectorArnComponents.property.connectorId"></a>
+
+```typescript
+public readonly connectorId: string;
+```
+
+- *Type:* string
+
+The ConnectorId component.
+
+---
+
+##### `connectorProvider`<sup>Required</sup> <a name="connectorProvider" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminConnectorArnComponents.property.connectorProvider"></a>
+
+```typescript
+public readonly connectorProvider: string;
+```
+
+- *Type:* string
+
+The ConnectorProvider component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminConnectorArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminConnectorArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### ObservabilityadminConnectorArnProps <a name="ObservabilityadminConnectorArnProps" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminConnectorArnProps"></a>
+
+Properties for building a connector ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminConnectorArnProps.Initializer"></a>
+
+```typescript
+import { observabilityadmin } from '@cdk_utils/iam'
+
+const observabilityadminConnectorArnProps: observabilityadmin.ObservabilityadminConnectorArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConnectorArnProps.property.connectorId">connectorId</a></code> | <code>string</code> | The ConnectorId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConnectorArnProps.property.connectorProvider">connectorProvider</a></code> | <code>string</code> | The ConnectorProvider component of the ARN. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConnectorArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConnectorArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConnectorArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `connectorId`<sup>Required</sup> <a name="connectorId" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminConnectorArnProps.property.connectorId"></a>
+
+```typescript
+public readonly connectorId: string;
+```
+
+- *Type:* string
+
+The ConnectorId component of the ARN.
+
+---
+
+##### `connectorProvider`<sup>Required</sup> <a name="connectorProvider" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminConnectorArnProps.property.connectorProvider"></a>
+
+```typescript
+public readonly connectorProvider: string;
+```
+
+- *Type:* string
+
+The ConnectorProvider component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminConnectorArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminConnectorArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminConnectorArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### ObservabilityadminDatasetIntegrationArnComponents <a name="ObservabilityadminDatasetIntegrationArnComponents" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminDatasetIntegrationArnComponents"></a>
 
 Parsed components of a dataset-integration ARN.
@@ -595,6 +769,154 @@ Defaults to "*".
 
 ---
 
+### ObservabilityadminTelemetryEnrichmentArnComponents <a name="ObservabilityadminTelemetryEnrichmentArnComponents" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminTelemetryEnrichmentArnComponents"></a>
+
+Parsed components of a telemetry-enrichment ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminTelemetryEnrichmentArnComponents.Initializer"></a>
+
+```typescript
+import { observabilityadmin } from '@cdk_utils/iam'
+
+const observabilityadminTelemetryEnrichmentArnComponents: observabilityadmin.ObservabilityadminTelemetryEnrichmentArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminTelemetryEnrichmentArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminTelemetryEnrichmentArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminTelemetryEnrichmentArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminTelemetryEnrichmentArnComponents.property.telemetryEnrichmentId">telemetryEnrichmentId</a></code> | <code>string</code> | The TelemetryEnrichmentId component. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminTelemetryEnrichmentArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminTelemetryEnrichmentArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminTelemetryEnrichmentArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+##### `telemetryEnrichmentId`<sup>Required</sup> <a name="telemetryEnrichmentId" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminTelemetryEnrichmentArnComponents.property.telemetryEnrichmentId"></a>
+
+```typescript
+public readonly telemetryEnrichmentId: string;
+```
+
+- *Type:* string
+
+The TelemetryEnrichmentId component.
+
+---
+
+### ObservabilityadminTelemetryEnrichmentArnProps <a name="ObservabilityadminTelemetryEnrichmentArnProps" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminTelemetryEnrichmentArnProps"></a>
+
+Properties for building a telemetry-enrichment ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminTelemetryEnrichmentArnProps.Initializer"></a>
+
+```typescript
+import { observabilityadmin } from '@cdk_utils/iam'
+
+const observabilityadminTelemetryEnrichmentArnProps: observabilityadmin.ObservabilityadminTelemetryEnrichmentArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminTelemetryEnrichmentArnProps.property.telemetryEnrichmentId">telemetryEnrichmentId</a></code> | <code>string</code> | The TelemetryEnrichmentId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminTelemetryEnrichmentArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminTelemetryEnrichmentArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminTelemetryEnrichmentArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `telemetryEnrichmentId`<sup>Required</sup> <a name="telemetryEnrichmentId" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminTelemetryEnrichmentArnProps.property.telemetryEnrichmentId"></a>
+
+```typescript
+public readonly telemetryEnrichmentId: string;
+```
+
+- *Type:* string
+
+The TelemetryEnrichmentId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminTelemetryEnrichmentArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminTelemetryEnrichmentArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminTelemetryEnrichmentArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### ObservabilityadminTelemetryPipelineArnComponents <a name="ObservabilityadminTelemetryPipelineArnComponents" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminTelemetryPipelineArnComponents"></a>
 
 Parsed components of a telemetry-pipeline ARN.
@@ -918,6 +1240,9 @@ new observabilityadmin.ObservabilityadminActions()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.actionGetCentralizationRuleForOrganization">actionGetCentralizationRuleForOrganization</a></code> | <code>string</code> | [Read] observabilityadmin:GetCentralizationRuleForOrganization. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.actionGetConnector">actionGetConnector</a></code> | <code>string</code> | [Read] observabilityadmin:GetConnector. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.actionGetConnectorTelemetryManifest">actionGetConnectorTelemetryManifest</a></code> | <code>string</code> | [Read] observabilityadmin:GetConnectorTelemetryManifest. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.actionGetConnectorTelemetrySetup">actionGetConnectorTelemetrySetup</a></code> | <code>string</code> | [Read] observabilityadmin:GetConnectorTelemetrySetup. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.actionGetDatasetIntegration">actionGetDatasetIntegration</a></code> | <code>string</code> | [Read] observabilityadmin:GetDatasetIntegration. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.actionGetS3TableIntegration">actionGetS3TableIntegration</a></code> | <code>string</code> | [Read] observabilityadmin:GetS3TableIntegration. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.actionGetTelemetryEnrichmentStatus">actionGetTelemetryEnrichmentStatus</a></code> | <code>string</code> | [Read] observabilityadmin:GetTelemetryEnrichmentStatus. |
@@ -926,25 +1251,30 @@ new observabilityadmin.ObservabilityadminActions()
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.actionGetTelemetryPipeline">actionGetTelemetryPipeline</a></code> | <code>string</code> | [Read] observabilityadmin:GetTelemetryPipeline. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.actionGetTelemetryRule">actionGetTelemetryRule</a></code> | <code>string</code> | [Read] observabilityadmin:GetTelemetryRule. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.actionGetTelemetryRuleForOrganization">actionGetTelemetryRuleForOrganization</a></code> | <code>string</code> | [Read] observabilityadmin:GetTelemetryRuleForOrganization. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.actionGetThirdPartyTelemetryEnrichment">actionGetThirdPartyTelemetryEnrichment</a></code> | <code>string</code> | [Read] observabilityadmin:GetThirdPartyTelemetryEnrichment. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.AllPermissionManagementActions">AllPermissionManagementActions</a></code> | <code>string[]</code> | All permission-management-level actions. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.CreateCentralizationRuleForOrganization">CreateCentralizationRuleForOrganization</a></code> | <code>string</code> | [Write] observabilityadmin:CreateCentralizationRuleForOrganization. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.CreateConnector">CreateConnector</a></code> | <code>string</code> | [Write] observabilityadmin:CreateConnector. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.CreateDatasetIntegration">CreateDatasetIntegration</a></code> | <code>string</code> | [Write] observabilityadmin:CreateDatasetIntegration. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.CreateS3TableIntegration">CreateS3TableIntegration</a></code> | <code>string</code> | [Write] observabilityadmin:CreateS3TableIntegration. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.CreateTelemetryPipeline">CreateTelemetryPipeline</a></code> | <code>string</code> | [Write] observabilityadmin:CreateTelemetryPipeline. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.CreateTelemetryRule">CreateTelemetryRule</a></code> | <code>string</code> | [Write] observabilityadmin:CreateTelemetryRule. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.CreateTelemetryRuleForOrganization">CreateTelemetryRuleForOrganization</a></code> | <code>string</code> | [Write] observabilityadmin:CreateTelemetryRuleForOrganization. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.DeleteCentralizationRuleForOrganization">DeleteCentralizationRuleForOrganization</a></code> | <code>string</code> | [Write] observabilityadmin:DeleteCentralizationRuleForOrganization. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.DeleteConnector">DeleteConnector</a></code> | <code>string</code> | [Write] observabilityadmin:DeleteConnector. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.DeleteDatasetIntegration">DeleteDatasetIntegration</a></code> | <code>string</code> | [Write] observabilityadmin:DeleteDatasetIntegration. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.DeleteS3TableIntegration">DeleteS3TableIntegration</a></code> | <code>string</code> | [Write] observabilityadmin:DeleteS3TableIntegration. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.DeleteTelemetryPipeline">DeleteTelemetryPipeline</a></code> | <code>string</code> | [Write] observabilityadmin:DeleteTelemetryPipeline. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.DeleteTelemetryRule">DeleteTelemetryRule</a></code> | <code>string</code> | [Write] observabilityadmin:DeleteTelemetryRule. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.DeleteTelemetryRuleForOrganization">DeleteTelemetryRuleForOrganization</a></code> | <code>string</code> | [Write] observabilityadmin:DeleteTelemetryRuleForOrganization. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.ListCentralizationRulesForOrganization">ListCentralizationRulesForOrganization</a></code> | <code>string</code> | [List] observabilityadmin:ListCentralizationRulesForOrganization. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.ListConnectors">ListConnectors</a></code> | <code>string</code> | [List] observabilityadmin:ListConnectors. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.ListDatasetIntegrations">ListDatasetIntegrations</a></code> | <code>string</code> | [List] observabilityadmin:ListDatasetIntegrations. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.ListResourcesByConnector">ListResourcesByConnector</a></code> | <code>string</code> | [Read] observabilityadmin:ListResourcesByConnector. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.ListResourceTelemetry">ListResourceTelemetry</a></code> | <code>string</code> | [Read] observabilityadmin:ListResourceTelemetry. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.ListResourceTelemetryForOrganization">ListResourceTelemetryForOrganization</a></code> | <code>string</code> | [Read] observabilityadmin:ListResourceTelemetryForOrganization. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.ListS3TableIntegrations">ListS3TableIntegrations</a></code> | <code>string</code> | [List] observabilityadmin:ListS3TableIntegrations. |
@@ -952,13 +1282,18 @@ new observabilityadmin.ObservabilityadminActions()
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.ListTelemetryPipelines">ListTelemetryPipelines</a></code> | <code>string</code> | [List] observabilityadmin:ListTelemetryPipelines. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.ListTelemetryRules">ListTelemetryRules</a></code> | <code>string</code> | [List] observabilityadmin:ListTelemetryRules. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.ListTelemetryRulesForOrganization">ListTelemetryRulesForOrganization</a></code> | <code>string</code> | [List] observabilityadmin:ListTelemetryRulesForOrganization. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.ListThirdPartyTelemetryEnrichments">ListThirdPartyTelemetryEnrichments</a></code> | <code>string</code> | [List] observabilityadmin:ListThirdPartyTelemetryEnrichments. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.PutConnectorTelemetryManifest">PutConnectorTelemetryManifest</a></code> | <code>string</code> | [Write] observabilityadmin:PutConnectorTelemetryManifest. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.StartTelemetryEnrichment">StartTelemetryEnrichment</a></code> | <code>string</code> | [Write] observabilityadmin:StartTelemetryEnrichment. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.StartTelemetryEvaluation">StartTelemetryEvaluation</a></code> | <code>string</code> | [Write] observabilityadmin:StartTelemetryEvaluation. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.StartTelemetryEvaluationForOrganization">StartTelemetryEvaluationForOrganization</a></code> | <code>string</code> | [Write] observabilityadmin:StartTelemetryEvaluationForOrganization. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.StartTelemetryPipelineRefresh">StartTelemetryPipelineRefresh</a></code> | <code>string</code> | [Write] observabilityadmin:StartTelemetryPipelineRefresh. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.StartThirdPartyTelemetryEnrichment">StartThirdPartyTelemetryEnrichment</a></code> | <code>string</code> | [Write] observabilityadmin:StartThirdPartyTelemetryEnrichment. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.StopTelemetryEnrichment">StopTelemetryEnrichment</a></code> | <code>string</code> | [Write] observabilityadmin:StopTelemetryEnrichment. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.StopTelemetryEvaluation">StopTelemetryEvaluation</a></code> | <code>string</code> | [Write] observabilityadmin:StopTelemetryEvaluation. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.StopTelemetryEvaluationForOrganization">StopTelemetryEvaluationForOrganization</a></code> | <code>string</code> | [Write] observabilityadmin:StopTelemetryEvaluationForOrganization. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.StopThirdPartyTelemetryEnrichment">StopThirdPartyTelemetryEnrichment</a></code> | <code>string</code> | [Write] observabilityadmin:StopThirdPartyTelemetryEnrichment. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] observabilityadmin:TagResource. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.TestTelemetryPipeline">TestTelemetryPipeline</a></code> | <code>string</code> | [Read] observabilityadmin:TestTelemetryPipeline. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] observabilityadmin:UntagResource. |
@@ -980,6 +1315,42 @@ public readonly actionGetCentralizationRuleForOrganization: string;
 - *Type:* string
 
 [Read] observabilityadmin:GetCentralizationRuleForOrganization.
+
+---
+
+##### `actionGetConnector`<sup>Required</sup> <a name="actionGetConnector" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.actionGetConnector"></a>
+
+```typescript
+public readonly actionGetConnector: string;
+```
+
+- *Type:* string
+
+[Read] observabilityadmin:GetConnector.
+
+---
+
+##### `actionGetConnectorTelemetryManifest`<sup>Required</sup> <a name="actionGetConnectorTelemetryManifest" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.actionGetConnectorTelemetryManifest"></a>
+
+```typescript
+public readonly actionGetConnectorTelemetryManifest: string;
+```
+
+- *Type:* string
+
+[Read] observabilityadmin:GetConnectorTelemetryManifest.
+
+---
+
+##### `actionGetConnectorTelemetrySetup`<sup>Required</sup> <a name="actionGetConnectorTelemetrySetup" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.actionGetConnectorTelemetrySetup"></a>
+
+```typescript
+public readonly actionGetConnectorTelemetrySetup: string;
+```
+
+- *Type:* string
+
+[Read] observabilityadmin:GetConnectorTelemetrySetup.
 
 ---
 
@@ -1079,6 +1450,18 @@ public readonly actionGetTelemetryRuleForOrganization: string;
 
 ---
 
+##### `actionGetThirdPartyTelemetryEnrichment`<sup>Required</sup> <a name="actionGetThirdPartyTelemetryEnrichment" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.actionGetThirdPartyTelemetryEnrichment"></a>
+
+```typescript
+public readonly actionGetThirdPartyTelemetryEnrichment: string;
+```
+
+- *Type:* string
+
+[Read] observabilityadmin:GetThirdPartyTelemetryEnrichment.
+
+---
+
 ##### `AllListActions`<sup>Required</sup> <a name="AllListActions" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.AllListActions"></a>
 
 ```typescript
@@ -1148,6 +1531,18 @@ public readonly CreateCentralizationRuleForOrganization: string;
 - *Type:* string
 
 [Write] observabilityadmin:CreateCentralizationRuleForOrganization.
+
+---
+
+##### `CreateConnector`<sup>Required</sup> <a name="CreateConnector" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.CreateConnector"></a>
+
+```typescript
+public readonly CreateConnector: string;
+```
+
+- *Type:* string
+
+[Write] observabilityadmin:CreateConnector.
 
 ---
 
@@ -1223,6 +1618,18 @@ public readonly DeleteCentralizationRuleForOrganization: string;
 
 ---
 
+##### `DeleteConnector`<sup>Required</sup> <a name="DeleteConnector" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.DeleteConnector"></a>
+
+```typescript
+public readonly DeleteConnector: string;
+```
+
+- *Type:* string
+
+[Write] observabilityadmin:DeleteConnector.
+
+---
+
 ##### `DeleteDatasetIntegration`<sup>Required</sup> <a name="DeleteDatasetIntegration" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.DeleteDatasetIntegration"></a>
 
 ```typescript
@@ -1295,6 +1702,18 @@ public readonly ListCentralizationRulesForOrganization: string;
 
 ---
 
+##### `ListConnectors`<sup>Required</sup> <a name="ListConnectors" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.ListConnectors"></a>
+
+```typescript
+public readonly ListConnectors: string;
+```
+
+- *Type:* string
+
+[List] observabilityadmin:ListConnectors.
+
+---
+
 ##### `ListDatasetIntegrations`<sup>Required</sup> <a name="ListDatasetIntegrations" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.ListDatasetIntegrations"></a>
 
 ```typescript
@@ -1304,6 +1723,18 @@ public readonly ListDatasetIntegrations: string;
 - *Type:* string
 
 [List] observabilityadmin:ListDatasetIntegrations.
+
+---
+
+##### `ListResourcesByConnector`<sup>Required</sup> <a name="ListResourcesByConnector" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.ListResourcesByConnector"></a>
+
+```typescript
+public readonly ListResourcesByConnector: string;
+```
+
+- *Type:* string
+
+[Read] observabilityadmin:ListResourcesByConnector.
 
 ---
 
@@ -1391,6 +1822,30 @@ public readonly ListTelemetryRulesForOrganization: string;
 
 ---
 
+##### `ListThirdPartyTelemetryEnrichments`<sup>Required</sup> <a name="ListThirdPartyTelemetryEnrichments" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.ListThirdPartyTelemetryEnrichments"></a>
+
+```typescript
+public readonly ListThirdPartyTelemetryEnrichments: string;
+```
+
+- *Type:* string
+
+[List] observabilityadmin:ListThirdPartyTelemetryEnrichments.
+
+---
+
+##### `PutConnectorTelemetryManifest`<sup>Required</sup> <a name="PutConnectorTelemetryManifest" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.PutConnectorTelemetryManifest"></a>
+
+```typescript
+public readonly PutConnectorTelemetryManifest: string;
+```
+
+- *Type:* string
+
+[Write] observabilityadmin:PutConnectorTelemetryManifest.
+
+---
+
 ##### `SERVICE_PREFIX`<sup>Required</sup> <a name="SERVICE_PREFIX" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.SERVICE_PREFIX"></a>
 
 ```typescript
@@ -1439,6 +1894,30 @@ public readonly StartTelemetryEvaluationForOrganization: string;
 
 ---
 
+##### `StartTelemetryPipelineRefresh`<sup>Required</sup> <a name="StartTelemetryPipelineRefresh" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.StartTelemetryPipelineRefresh"></a>
+
+```typescript
+public readonly StartTelemetryPipelineRefresh: string;
+```
+
+- *Type:* string
+
+[Write] observabilityadmin:StartTelemetryPipelineRefresh.
+
+---
+
+##### `StartThirdPartyTelemetryEnrichment`<sup>Required</sup> <a name="StartThirdPartyTelemetryEnrichment" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.StartThirdPartyTelemetryEnrichment"></a>
+
+```typescript
+public readonly StartThirdPartyTelemetryEnrichment: string;
+```
+
+- *Type:* string
+
+[Write] observabilityadmin:StartThirdPartyTelemetryEnrichment.
+
+---
+
 ##### `StopTelemetryEnrichment`<sup>Required</sup> <a name="StopTelemetryEnrichment" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.StopTelemetryEnrichment"></a>
 
 ```typescript
@@ -1472,6 +1951,18 @@ public readonly StopTelemetryEvaluationForOrganization: string;
 - *Type:* string
 
 [Write] observabilityadmin:StopTelemetryEvaluationForOrganization.
+
+---
+
+##### `StopThirdPartyTelemetryEnrichment`<sup>Required</sup> <a name="StopThirdPartyTelemetryEnrichment" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminActions.property.StopThirdPartyTelemetryEnrichment"></a>
+
+```typescript
+public readonly StopThirdPartyTelemetryEnrichment: string;
+```
+
+- *Type:* string
+
+[Write] observabilityadmin:StopThirdPartyTelemetryEnrichment.
 
 ---
 
@@ -1605,17 +2096,35 @@ new observabilityadmin.ObservabilityadminConditions()
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.azureTelemetryRegion">azureTelemetryRegion</a></code> | Generates a condition block for `observabilityadmin:AzureTelemetryRegion`. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.centralizationBackupRegion">centralizationBackupRegion</a></code> | Generates a condition block for `observabilityadmin:CentralizationBackupRegion`. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.centralizationDestinationAccount">centralizationDestinationAccount</a></code> | Generates a condition block for `observabilityadmin:CentralizationDestinationAccount`. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.centralizationDestinationRegion">centralizationDestinationRegion</a></code> | Generates a condition block for `observabilityadmin:CentralizationDestinationRegion`. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.centralizationRuleName">centralizationRuleName</a></code> | Generates a condition block for `observabilityadmin:CentralizationRuleName`. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.centralizationSourceId">centralizationSourceId</a></code> | Generates a condition block for `observabilityadmin:CentralizationSourceId`. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.centralizationSourceOrganizationalUnitId">centralizationSourceOrganizationalUnitId</a></code> | Generates a condition block for `observabilityadmin:CentralizationSourceOrganizationalUnitId`. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.centralizationSourceRegions">centralizationSourceRegions</a></code> | Generates a condition block for `observabilityadmin:CentralizationSourceRegions`. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.requestTag">requestTag</a></code> | Generates a condition block for `aws:RequestTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.resourceTag">resourceTag</a></code> | Generates a condition block for `aws:ResourceTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.sourceType">sourceType</a></code> | Generates a condition block for `observabilityadmin:SourceType`. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.tagKeys">tagKeys</a></code> | Generates a condition block for `aws:TagKeys`. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.targetRegions">targetRegions</a></code> | Generates a condition block for `observabilityadmin:TargetRegions`. |
+
+---
+
+##### `azureTelemetryRegion` <a name="azureTelemetryRegion" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.azureTelemetryRegion"></a>
+
+```typescript
+import { observabilityadmin } from '@cdk_utils/iam'
+
+observabilityadmin.ObservabilityadminConditions.azureTelemetryRegion(values: string[])
+```
+
+Generates a condition block for `observabilityadmin:AzureTelemetryRegion`.
+
+###### `values`<sup>Required</sup> <a name="values" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.azureTelemetryRegion.parameter.values"></a>
+
+- *Type:* string[]
 
 ---
 
@@ -1694,6 +2203,22 @@ observabilityadmin.ObservabilityadminConditions.centralizationSourceId(values: s
 Generates a condition block for `observabilityadmin:CentralizationSourceId`.
 
 ###### `values`<sup>Required</sup> <a name="values" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.centralizationSourceId.parameter.values"></a>
+
+- *Type:* string[]
+
+---
+
+##### `centralizationSourceOrganizationalUnitId` <a name="centralizationSourceOrganizationalUnitId" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.centralizationSourceOrganizationalUnitId"></a>
+
+```typescript
+import { observabilityadmin } from '@cdk_utils/iam'
+
+observabilityadmin.ObservabilityadminConditions.centralizationSourceOrganizationalUnitId(values: string[])
+```
+
+Generates a condition block for `observabilityadmin:CentralizationSourceOrganizationalUnitId`.
+
+###### `values`<sup>Required</sup> <a name="values" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.centralizationSourceOrganizationalUnitId.parameter.values"></a>
 
 - *Type:* string[]
 
@@ -1804,13 +2329,16 @@ Generates a condition block for `observabilityadmin:TargetRegions`.
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.AWS_REQUEST_TAG">AWS_REQUEST_TAG</a></code> | <code>string</code> | Condition key: aws:RequestTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.AWS_RESOURCE_TAG">AWS_RESOURCE_TAG</a></code> | <code>string</code> | Condition key: aws:ResourceTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.AWS_TAG_KEYS">AWS_TAG_KEYS</a></code> | <code>string</code> | Condition key: aws:TagKeys (ArrayOfString). |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.AZURE_TELEMETRY_REGION">AZURE_TELEMETRY_REGION</a></code> | <code>string</code> | Condition key: observabilityadmin:AzureTelemetryRegion (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.CENTRALIZATION_BACKUP_REGION">CENTRALIZATION_BACKUP_REGION</a></code> | <code>string</code> | Condition key: observabilityadmin:CentralizationBackupRegion (String). |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.CENTRALIZATION_DESTINATION_ACCOUNT">CENTRALIZATION_DESTINATION_ACCOUNT</a></code> | <code>string</code> | Condition key: observabilityadmin:CentralizationDestinationAccount (String). |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.CENTRALIZATION_DESTINATION_REGION">CENTRALIZATION_DESTINATION_REGION</a></code> | <code>string</code> | Condition key: observabilityadmin:CentralizationDestinationRegion (String). |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.CENTRALIZATION_RULE_NAME">CENTRALIZATION_RULE_NAME</a></code> | <code>string</code> | Condition key: observabilityadmin:CentralizationRuleName (String). |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.CENTRALIZATION_SOURCE_ID">CENTRALIZATION_SOURCE_ID</a></code> | <code>string</code> | Condition key: observabilityadmin:CentralizationSourceId (ArrayOfString). |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.CENTRALIZATION_SOURCE_ORGANIZATIONAL_UNIT_ID">CENTRALIZATION_SOURCE_ORGANIZATIONAL_UNIT_ID</a></code> | <code>string</code> | Condition key: observabilityadmin:CentralizationSourceOrganizationalUnitId (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.CENTRALIZATION_SOURCE_REGIONS">CENTRALIZATION_SOURCE_REGIONS</a></code> | <code>string</code> | Condition key: observabilityadmin:CentralizationSourceRegions (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.CreateCentralizationRuleForOrganizationConditionKeys">CreateCentralizationRuleForOrganizationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateCentralizationRuleForOrganization action. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.CreateConnectorConditionKeys">CreateConnectorConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateConnector action. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.CreateDatasetIntegrationConditionKeys">CreateDatasetIntegrationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateDatasetIntegration action. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.CreateS3TableIntegrationConditionKeys">CreateS3TableIntegrationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateS3TableIntegration action. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.CreateTelemetryPipelineConditionKeys">CreateTelemetryPipelineConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateTelemetryPipeline action. |
@@ -1819,9 +2347,11 @@ Generates a condition block for `observabilityadmin:TargetRegions`.
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.DeleteCentralizationRuleForOrganizationConditionKeys">DeleteCentralizationRuleForOrganizationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteCentralizationRuleForOrganization action. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.ListResourceTelemetryConditionKeys">ListResourceTelemetryConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListResourceTelemetry action. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.ListResourceTelemetryForOrganizationConditionKeys">ListResourceTelemetryForOrganizationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListResourceTelemetryForOrganization action. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.PutConnectorTelemetryManifestConditionKeys">PutConnectorTelemetryManifestConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutConnectorTelemetryManifest action. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.SOURCE_TYPE">SOURCE_TYPE</a></code> | <code>string</code> | Condition key: observabilityadmin:SourceType (String). |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.StartTelemetryEvaluationConditionKeys">StartTelemetryEvaluationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartTelemetryEvaluation action. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.StartTelemetryEvaluationForOrganizationConditionKeys">StartTelemetryEvaluationForOrganizationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartTelemetryEvaluationForOrganization action. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.StartThirdPartyTelemetryEnrichmentConditionKeys">StartThirdPartyTelemetryEnrichmentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartThirdPartyTelemetryEnrichment action. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.TARGET_REGIONS">TARGET_REGIONS</a></code> | <code>string</code> | Condition key: observabilityadmin:TargetRegions (String). |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
@@ -1876,6 +2406,18 @@ public readonly AWS_TAG_KEYS: string;
 - *Type:* string
 
 Condition key: aws:TagKeys (ArrayOfString).
+
+---
+
+##### `AZURE_TELEMETRY_REGION`<sup>Required</sup> <a name="AZURE_TELEMETRY_REGION" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.AZURE_TELEMETRY_REGION"></a>
+
+```typescript
+public readonly AZURE_TELEMETRY_REGION: string;
+```
+
+- *Type:* string
+
+Condition key: observabilityadmin:AzureTelemetryRegion (ArrayOfString).
 
 ---
 
@@ -1939,6 +2481,18 @@ Condition key: observabilityadmin:CentralizationSourceId (ArrayOfString).
 
 ---
 
+##### `CENTRALIZATION_SOURCE_ORGANIZATIONAL_UNIT_ID`<sup>Required</sup> <a name="CENTRALIZATION_SOURCE_ORGANIZATIONAL_UNIT_ID" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.CENTRALIZATION_SOURCE_ORGANIZATIONAL_UNIT_ID"></a>
+
+```typescript
+public readonly CENTRALIZATION_SOURCE_ORGANIZATIONAL_UNIT_ID: string;
+```
+
+- *Type:* string
+
+Condition key: observabilityadmin:CentralizationSourceOrganizationalUnitId (ArrayOfString).
+
+---
+
 ##### `CENTRALIZATION_SOURCE_REGIONS`<sup>Required</sup> <a name="CENTRALIZATION_SOURCE_REGIONS" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.CENTRALIZATION_SOURCE_REGIONS"></a>
 
 ```typescript
@@ -1960,6 +2514,18 @@ public readonly CreateCentralizationRuleForOrganizationConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CreateCentralizationRuleForOrganization action.
+
+---
+
+##### `CreateConnectorConditionKeys`<sup>Required</sup> <a name="CreateConnectorConditionKeys" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.CreateConnectorConditionKeys"></a>
+
+```typescript
+public readonly CreateConnectorConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateConnector action.
 
 ---
 
@@ -2059,6 +2625,18 @@ Condition keys applicable to the ListResourceTelemetryForOrganization action.
 
 ---
 
+##### `PutConnectorTelemetryManifestConditionKeys`<sup>Required</sup> <a name="PutConnectorTelemetryManifestConditionKeys" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.PutConnectorTelemetryManifestConditionKeys"></a>
+
+```typescript
+public readonly PutConnectorTelemetryManifestConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the PutConnectorTelemetryManifest action.
+
+---
+
 ##### `SOURCE_TYPE`<sup>Required</sup> <a name="SOURCE_TYPE" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.SOURCE_TYPE"></a>
 
 ```typescript
@@ -2092,6 +2670,18 @@ public readonly StartTelemetryEvaluationForOrganizationConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the StartTelemetryEvaluationForOrganization action.
+
+---
+
+##### `StartThirdPartyTelemetryEnrichmentConditionKeys`<sup>Required</sup> <a name="StartThirdPartyTelemetryEnrichmentConditionKeys" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminConditions.property.StartThirdPartyTelemetryEnrichmentConditionKeys"></a>
+
+```typescript
+public readonly StartThirdPartyTelemetryEnrichmentConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the StartThirdPartyTelemetryEnrichment action.
 
 ---
 
@@ -2192,19 +2782,23 @@ new observabilityadmin.ObservabilityadminOperations()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.CreateCentralizationRuleForOrganization">CreateCentralizationRuleForOrganization</a></code> | <code>string[]</code> | IAM actions required for the CreateCentralizationRuleForOrganization API call. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.CreateConnector">CreateConnector</a></code> | <code>string[]</code> | IAM actions required for the CreateConnector API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.CreateDatasetIntegration">CreateDatasetIntegration</a></code> | <code>string[]</code> | IAM actions required for the CreateDatasetIntegration API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.CreateS3TableIntegration">CreateS3TableIntegration</a></code> | <code>string[]</code> | IAM actions required for the CreateS3TableIntegration API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.CreateTelemetryPipeline">CreateTelemetryPipeline</a></code> | <code>string[]</code> | IAM actions required for the CreateTelemetryPipeline API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.CreateTelemetryRule">CreateTelemetryRule</a></code> | <code>string[]</code> | IAM actions required for the CreateTelemetryRule API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.CreateTelemetryRuleForOrganization">CreateTelemetryRuleForOrganization</a></code> | <code>string[]</code> | IAM actions required for the CreateTelemetryRuleForOrganization API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.DeleteCentralizationRuleForOrganization">DeleteCentralizationRuleForOrganization</a></code> | <code>string[]</code> | IAM actions required for the DeleteCentralizationRuleForOrganization API call. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.DeleteConnector">DeleteConnector</a></code> | <code>string[]</code> | IAM actions required for the DeleteConnector API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.DeleteDatasetIntegration">DeleteDatasetIntegration</a></code> | <code>string[]</code> | IAM actions required for the DeleteDatasetIntegration API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.DeleteS3TableIntegration">DeleteS3TableIntegration</a></code> | <code>string[]</code> | IAM actions required for the DeleteS3TableIntegration API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.DeleteTelemetryPipeline">DeleteTelemetryPipeline</a></code> | <code>string[]</code> | IAM actions required for the DeleteTelemetryPipeline API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.DeleteTelemetryRule">DeleteTelemetryRule</a></code> | <code>string[]</code> | IAM actions required for the DeleteTelemetryRule API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.DeleteTelemetryRuleForOrganization">DeleteTelemetryRuleForOrganization</a></code> | <code>string[]</code> | IAM actions required for the DeleteTelemetryRuleForOrganization API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.ListCentralizationRulesForOrganization">ListCentralizationRulesForOrganization</a></code> | <code>string[]</code> | IAM actions required for the ListCentralizationRulesForOrganization API call. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.ListConnectors">ListConnectors</a></code> | <code>string[]</code> | IAM actions required for the ListConnectors API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.ListDatasetIntegrations">ListDatasetIntegrations</a></code> | <code>string[]</code> | IAM actions required for the ListDatasetIntegrations API call. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.ListResourcesByConnector">ListResourcesByConnector</a></code> | <code>string[]</code> | IAM actions required for the ListResourcesByConnector API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.ListResourceTelemetry">ListResourceTelemetry</a></code> | <code>string[]</code> | IAM actions required for the ListResourceTelemetry API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.ListResourceTelemetryForOrganization">ListResourceTelemetryForOrganization</a></code> | <code>string[]</code> | IAM actions required for the ListResourceTelemetryForOrganization API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.ListS3TableIntegrations">ListS3TableIntegrations</a></code> | <code>string[]</code> | IAM actions required for the ListS3TableIntegrations API call. |
@@ -2212,7 +2806,11 @@ new observabilityadmin.ObservabilityadminOperations()
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.ListTelemetryPipelines">ListTelemetryPipelines</a></code> | <code>string[]</code> | IAM actions required for the ListTelemetryPipelines API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.ListTelemetryRules">ListTelemetryRules</a></code> | <code>string[]</code> | IAM actions required for the ListTelemetryRules API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.ListTelemetryRulesForOrganization">ListTelemetryRulesForOrganization</a></code> | <code>string[]</code> | IAM actions required for the ListTelemetryRulesForOrganization API call. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.ListThirdPartyTelemetryEnrichments">ListThirdPartyTelemetryEnrichments</a></code> | <code>string[]</code> | IAM actions required for the ListThirdPartyTelemetryEnrichments API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.opGetCentralizationRuleForOrganization">opGetCentralizationRuleForOrganization</a></code> | <code>string[]</code> | IAM actions required for the GetCentralizationRuleForOrganization API call. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.opGetConnector">opGetConnector</a></code> | <code>string[]</code> | IAM actions required for the GetConnector API call. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.opGetConnectorTelemetryManifest">opGetConnectorTelemetryManifest</a></code> | <code>string[]</code> | IAM actions required for the GetConnectorTelemetryManifest API call. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.opGetConnectorTelemetrySetup">opGetConnectorTelemetrySetup</a></code> | <code>string[]</code> | IAM actions required for the GetConnectorTelemetrySetup API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.opGetDatasetIntegration">opGetDatasetIntegration</a></code> | <code>string[]</code> | IAM actions required for the GetDatasetIntegration API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.opGetS3TableIntegration">opGetS3TableIntegration</a></code> | <code>string[]</code> | IAM actions required for the GetS3TableIntegration API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.opGetTelemetryEnrichmentStatus">opGetTelemetryEnrichmentStatus</a></code> | <code>string[]</code> | IAM actions required for the GetTelemetryEnrichmentStatus API call. |
@@ -2221,12 +2819,17 @@ new observabilityadmin.ObservabilityadminOperations()
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.opGetTelemetryPipeline">opGetTelemetryPipeline</a></code> | <code>string[]</code> | IAM actions required for the GetTelemetryPipeline API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.opGetTelemetryRule">opGetTelemetryRule</a></code> | <code>string[]</code> | IAM actions required for the GetTelemetryRule API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.opGetTelemetryRuleForOrganization">opGetTelemetryRuleForOrganization</a></code> | <code>string[]</code> | IAM actions required for the GetTelemetryRuleForOrganization API call. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.opGetThirdPartyTelemetryEnrichment">opGetThirdPartyTelemetryEnrichment</a></code> | <code>string[]</code> | IAM actions required for the GetThirdPartyTelemetryEnrichment API call. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.PutConnectorTelemetryManifest">PutConnectorTelemetryManifest</a></code> | <code>string[]</code> | IAM actions required for the PutConnectorTelemetryManifest API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.StartTelemetryEnrichment">StartTelemetryEnrichment</a></code> | <code>string[]</code> | IAM actions required for the StartTelemetryEnrichment API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.StartTelemetryEvaluation">StartTelemetryEvaluation</a></code> | <code>string[]</code> | IAM actions required for the StartTelemetryEvaluation API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.StartTelemetryEvaluationForOrganization">StartTelemetryEvaluationForOrganization</a></code> | <code>string[]</code> | IAM actions required for the StartTelemetryEvaluationForOrganization API call. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.StartTelemetryPipelineRefresh">StartTelemetryPipelineRefresh</a></code> | <code>string[]</code> | IAM actions required for the StartTelemetryPipelineRefresh API call. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.StartThirdPartyTelemetryEnrichment">StartThirdPartyTelemetryEnrichment</a></code> | <code>string[]</code> | IAM actions required for the StartThirdPartyTelemetryEnrichment API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.StopTelemetryEnrichment">StopTelemetryEnrichment</a></code> | <code>string[]</code> | IAM actions required for the StopTelemetryEnrichment API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.StopTelemetryEvaluation">StopTelemetryEvaluation</a></code> | <code>string[]</code> | IAM actions required for the StopTelemetryEvaluation API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.StopTelemetryEvaluationForOrganization">StopTelemetryEvaluationForOrganization</a></code> | <code>string[]</code> | IAM actions required for the StopTelemetryEvaluationForOrganization API call. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.StopThirdPartyTelemetryEnrichment">StopThirdPartyTelemetryEnrichment</a></code> | <code>string[]</code> | IAM actions required for the StopThirdPartyTelemetryEnrichment API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.TestTelemetryPipeline">TestTelemetryPipeline</a></code> | <code>string[]</code> | IAM actions required for the TestTelemetryPipeline API call. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
@@ -2248,6 +2851,18 @@ public readonly CreateCentralizationRuleForOrganization: string[];
 - *Type:* string[]
 
 IAM actions required for the CreateCentralizationRuleForOrganization API call.
+
+---
+
+##### `CreateConnector`<sup>Required</sup> <a name="CreateConnector" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.CreateConnector"></a>
+
+```typescript
+public readonly CreateConnector: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateConnector API call.
 
 ---
 
@@ -2323,6 +2938,18 @@ IAM actions required for the DeleteCentralizationRuleForOrganization API call.
 
 ---
 
+##### `DeleteConnector`<sup>Required</sup> <a name="DeleteConnector" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.DeleteConnector"></a>
+
+```typescript
+public readonly DeleteConnector: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteConnector API call.
+
+---
+
 ##### `DeleteDatasetIntegration`<sup>Required</sup> <a name="DeleteDatasetIntegration" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.DeleteDatasetIntegration"></a>
 
 ```typescript
@@ -2395,6 +3022,18 @@ IAM actions required for the ListCentralizationRulesForOrganization API call.
 
 ---
 
+##### `ListConnectors`<sup>Required</sup> <a name="ListConnectors" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.ListConnectors"></a>
+
+```typescript
+public readonly ListConnectors: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListConnectors API call.
+
+---
+
 ##### `ListDatasetIntegrations`<sup>Required</sup> <a name="ListDatasetIntegrations" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.ListDatasetIntegrations"></a>
 
 ```typescript
@@ -2404,6 +3043,18 @@ public readonly ListDatasetIntegrations: string[];
 - *Type:* string[]
 
 IAM actions required for the ListDatasetIntegrations API call.
+
+---
+
+##### `ListResourcesByConnector`<sup>Required</sup> <a name="ListResourcesByConnector" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.ListResourcesByConnector"></a>
+
+```typescript
+public readonly ListResourcesByConnector: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListResourcesByConnector API call.
 
 ---
 
@@ -2491,6 +3142,18 @@ IAM actions required for the ListTelemetryRulesForOrganization API call.
 
 ---
 
+##### `ListThirdPartyTelemetryEnrichments`<sup>Required</sup> <a name="ListThirdPartyTelemetryEnrichments" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.ListThirdPartyTelemetryEnrichments"></a>
+
+```typescript
+public readonly ListThirdPartyTelemetryEnrichments: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListThirdPartyTelemetryEnrichments API call.
+
+---
+
 ##### `opGetCentralizationRuleForOrganization`<sup>Required</sup> <a name="opGetCentralizationRuleForOrganization" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.opGetCentralizationRuleForOrganization"></a>
 
 ```typescript
@@ -2500,6 +3163,42 @@ public readonly opGetCentralizationRuleForOrganization: string[];
 - *Type:* string[]
 
 IAM actions required for the GetCentralizationRuleForOrganization API call.
+
+---
+
+##### `opGetConnector`<sup>Required</sup> <a name="opGetConnector" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.opGetConnector"></a>
+
+```typescript
+public readonly opGetConnector: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetConnector API call.
+
+---
+
+##### `opGetConnectorTelemetryManifest`<sup>Required</sup> <a name="opGetConnectorTelemetryManifest" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.opGetConnectorTelemetryManifest"></a>
+
+```typescript
+public readonly opGetConnectorTelemetryManifest: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetConnectorTelemetryManifest API call.
+
+---
+
+##### `opGetConnectorTelemetrySetup`<sup>Required</sup> <a name="opGetConnectorTelemetrySetup" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.opGetConnectorTelemetrySetup"></a>
+
+```typescript
+public readonly opGetConnectorTelemetrySetup: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetConnectorTelemetrySetup API call.
 
 ---
 
@@ -2599,6 +3298,30 @@ IAM actions required for the GetTelemetryRuleForOrganization API call.
 
 ---
 
+##### `opGetThirdPartyTelemetryEnrichment`<sup>Required</sup> <a name="opGetThirdPartyTelemetryEnrichment" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.opGetThirdPartyTelemetryEnrichment"></a>
+
+```typescript
+public readonly opGetThirdPartyTelemetryEnrichment: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetThirdPartyTelemetryEnrichment API call.
+
+---
+
+##### `PutConnectorTelemetryManifest`<sup>Required</sup> <a name="PutConnectorTelemetryManifest" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.PutConnectorTelemetryManifest"></a>
+
+```typescript
+public readonly PutConnectorTelemetryManifest: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the PutConnectorTelemetryManifest API call.
+
+---
+
 ##### `StartTelemetryEnrichment`<sup>Required</sup> <a name="StartTelemetryEnrichment" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.StartTelemetryEnrichment"></a>
 
 ```typescript
@@ -2635,6 +3358,30 @@ IAM actions required for the StartTelemetryEvaluationForOrganization API call.
 
 ---
 
+##### `StartTelemetryPipelineRefresh`<sup>Required</sup> <a name="StartTelemetryPipelineRefresh" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.StartTelemetryPipelineRefresh"></a>
+
+```typescript
+public readonly StartTelemetryPipelineRefresh: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StartTelemetryPipelineRefresh API call.
+
+---
+
+##### `StartThirdPartyTelemetryEnrichment`<sup>Required</sup> <a name="StartThirdPartyTelemetryEnrichment" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.StartThirdPartyTelemetryEnrichment"></a>
+
+```typescript
+public readonly StartThirdPartyTelemetryEnrichment: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StartThirdPartyTelemetryEnrichment API call.
+
+---
+
 ##### `StopTelemetryEnrichment`<sup>Required</sup> <a name="StopTelemetryEnrichment" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.StopTelemetryEnrichment"></a>
 
 ```typescript
@@ -2668,6 +3415,18 @@ public readonly StopTelemetryEvaluationForOrganization: string[];
 - *Type:* string[]
 
 IAM actions required for the StopTelemetryEvaluationForOrganization API call.
+
+---
+
+##### `StopThirdPartyTelemetryEnrichment`<sup>Required</sup> <a name="StopThirdPartyTelemetryEnrichment" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminOperations.property.StopThirdPartyTelemetryEnrichment"></a>
+
+```typescript
+public readonly StopThirdPartyTelemetryEnrichment: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StopThirdPartyTelemetryEnrichment API call.
 
 ---
 
@@ -2801,24 +3560,46 @@ new observabilityadmin.ObservabilityadminResources()
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.connector">connector</a></code> | Builds an ARN for the connector resource. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.datasetIntegration">datasetIntegration</a></code> | Builds an ARN for the dataset-integration resource. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.isValidConnectorArn">isValidConnectorArn</a></code> | Validates whether a string is a valid ARN for the connector resource. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.isValidDatasetIntegrationArn">isValidDatasetIntegrationArn</a></code> | Validates whether a string is a valid ARN for the dataset-integration resource. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.isValidOrganizationCentralizationRuleArn">isValidOrganizationCentralizationRuleArn</a></code> | Validates whether a string is a valid ARN for the organization-centralization-rule resource. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.isValidOrganizationTelemetryRuleArn">isValidOrganizationTelemetryRuleArn</a></code> | Validates whether a string is a valid ARN for the organization-telemetry-rule resource. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.isValidS3tableintegrationArn">isValidS3tableintegrationArn</a></code> | Validates whether a string is a valid ARN for the s3tableintegration resource. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.isValidTelemetryEnrichmentArn">isValidTelemetryEnrichmentArn</a></code> | Validates whether a string is a valid ARN for the telemetry-enrichment resource. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.isValidTelemetryPipelineArn">isValidTelemetryPipelineArn</a></code> | Validates whether a string is a valid ARN for the telemetry-pipeline resource. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.isValidTelemetryRuleArn">isValidTelemetryRuleArn</a></code> | Validates whether a string is a valid ARN for the telemetry-rule resource. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.organizationCentralizationRule">organizationCentralizationRule</a></code> | Builds an ARN for the organization-centralization-rule resource. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.organizationTelemetryRule">organizationTelemetryRule</a></code> | Builds an ARN for the organization-telemetry-rule resource. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.parseConnectorArn">parseConnectorArn</a></code> | Parses a connector ARN into its components. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.parseDatasetIntegrationArn">parseDatasetIntegrationArn</a></code> | Parses a dataset-integration ARN into its components. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.parseOrganizationCentralizationRuleArn">parseOrganizationCentralizationRuleArn</a></code> | Parses a organization-centralization-rule ARN into its components. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.parseOrganizationTelemetryRuleArn">parseOrganizationTelemetryRuleArn</a></code> | Parses a organization-telemetry-rule ARN into its components. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.parseS3tableintegrationArn">parseS3tableintegrationArn</a></code> | Parses a s3tableintegration ARN into its components. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.parseTelemetryEnrichmentArn">parseTelemetryEnrichmentArn</a></code> | Parses a telemetry-enrichment ARN into its components. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.parseTelemetryPipelineArn">parseTelemetryPipelineArn</a></code> | Parses a telemetry-pipeline ARN into its components. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.parseTelemetryRuleArn">parseTelemetryRuleArn</a></code> | Parses a telemetry-rule ARN into its components. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.s3tableintegration">s3tableintegration</a></code> | Builds an ARN for the s3tableintegration resource. |
+| <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.telemetryEnrichment">telemetryEnrichment</a></code> | Builds an ARN for the telemetry-enrichment resource. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.telemetryPipeline">telemetryPipeline</a></code> | Builds an ARN for the telemetry-pipeline resource. |
 | <code><a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.telemetryRule">telemetryRule</a></code> | Builds an ARN for the telemetry-rule resource. |
+
+---
+
+##### `connector` <a name="connector" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.connector"></a>
+
+```typescript
+import { observabilityadmin } from '@cdk_utils/iam'
+
+observabilityadmin.ObservabilityadminResources.connector(props: ObservabilityadminConnectorArnProps)
+```
+
+Builds an ARN for the connector resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.connector.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminConnectorArnProps">ObservabilityadminConnectorArnProps</a>
 
 ---
 
@@ -2835,6 +3616,22 @@ Builds an ARN for the dataset-integration resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.datasetIntegration.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminDatasetIntegrationArnProps">ObservabilityadminDatasetIntegrationArnProps</a>
+
+---
+
+##### `isValidConnectorArn` <a name="isValidConnectorArn" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.isValidConnectorArn"></a>
+
+```typescript
+import { observabilityadmin } from '@cdk_utils/iam'
+
+observabilityadmin.ObservabilityadminResources.isValidConnectorArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the connector resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.isValidConnectorArn.parameter.arn"></a>
+
+- *Type:* string
 
 ---
 
@@ -2897,6 +3694,22 @@ observabilityadmin.ObservabilityadminResources.isValidS3tableintegrationArn(arn:
 Validates whether a string is a valid ARN for the s3tableintegration resource.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.isValidS3tableintegrationArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidTelemetryEnrichmentArn` <a name="isValidTelemetryEnrichmentArn" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.isValidTelemetryEnrichmentArn"></a>
+
+```typescript
+import { observabilityadmin } from '@cdk_utils/iam'
+
+observabilityadmin.ObservabilityadminResources.isValidTelemetryEnrichmentArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the telemetry-enrichment resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.isValidTelemetryEnrichmentArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -2966,6 +3779,22 @@ Builds an ARN for the organization-telemetry-rule resource.
 
 ---
 
+##### `parseConnectorArn` <a name="parseConnectorArn" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.parseConnectorArn"></a>
+
+```typescript
+import { observabilityadmin } from '@cdk_utils/iam'
+
+observabilityadmin.ObservabilityadminResources.parseConnectorArn(arn: string)
+```
+
+Parses a connector ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.parseConnectorArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `parseDatasetIntegrationArn` <a name="parseDatasetIntegrationArn" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.parseDatasetIntegrationArn"></a>
 
 ```typescript
@@ -3030,6 +3859,22 @@ Parses a s3tableintegration ARN into its components.
 
 ---
 
+##### `parseTelemetryEnrichmentArn` <a name="parseTelemetryEnrichmentArn" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.parseTelemetryEnrichmentArn"></a>
+
+```typescript
+import { observabilityadmin } from '@cdk_utils/iam'
+
+observabilityadmin.ObservabilityadminResources.parseTelemetryEnrichmentArn(arn: string)
+```
+
+Parses a telemetry-enrichment ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.parseTelemetryEnrichmentArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `parseTelemetryPipelineArn` <a name="parseTelemetryPipelineArn" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.parseTelemetryPipelineArn"></a>
 
 ```typescript
@@ -3075,6 +3920,22 @@ Builds an ARN for the s3tableintegration resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.s3tableintegration.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminS3tableintegrationArnProps">ObservabilityadminS3tableintegrationArnProps</a>
+
+---
+
+##### `telemetryEnrichment` <a name="telemetryEnrichment" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.telemetryEnrichment"></a>
+
+```typescript
+import { observabilityadmin } from '@cdk_utils/iam'
+
+observabilityadmin.ObservabilityadminResources.telemetryEnrichment(props: ObservabilityadminTelemetryEnrichmentArnProps)
+```
+
+Builds an ARN for the telemetry-enrichment resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.observabilityadmin.ObservabilityadminResources.telemetryEnrichment.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.observabilityadmin.ObservabilityadminTelemetryEnrichmentArnProps">ObservabilityadminTelemetryEnrichmentArnProps</a>
 
 ---
 

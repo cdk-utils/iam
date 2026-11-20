@@ -263,12 +263,22 @@ export class RDSActions {
 		"rds:DescribeValidDBInstanceModifications";
 	/** [Write] rds:DisableHttpEndpoint */
 	static readonly DisableHttpEndpoint = "rds:DisableHttpEndpoint";
+	/** [Write] rds:DisableInternetAccessGateway */
+	static readonly DisableInternetAccessGateway =
+		"rds:DisableInternetAccessGateway";
+	/** [Write] rds:DisableVpcNetworking */
+	static readonly DisableVpcNetworking = "rds:DisableVpcNetworking";
 	/** [Read] rds:DownloadCompleteDBLogFile */
 	static readonly DownloadCompleteDBLogFile = "rds:DownloadCompleteDBLogFile";
 	/** [Read] rds:DownloadDBLogFilePortion */
 	static readonly DownloadDBLogFilePortion = "rds:DownloadDBLogFilePortion";
 	/** [Write] rds:EnableHttpEndpoint */
 	static readonly EnableHttpEndpoint = "rds:EnableHttpEndpoint";
+	/** [Write] rds:EnableInternetAccessGateway */
+	static readonly EnableInternetAccessGateway =
+		"rds:EnableInternetAccessGateway";
+	/** [Write] rds:EnableVpcNetworking */
+	static readonly EnableVpcNetworking = "rds:EnableVpcNetworking";
 	/** [Write] rds:FailoverDBCluster */
 	static readonly FailoverDBCluster = "rds:FailoverDBCluster";
 	/** [Write] rds:FailoverGlobalCluster */
@@ -477,7 +487,11 @@ export class RDSActions {
 		RDSActions.DeleteTenantDatabase,
 		RDSActions.DeregisterDBProxyTargets,
 		RDSActions.DisableHttpEndpoint,
+		RDSActions.DisableInternetAccessGateway,
+		RDSActions.DisableVpcNetworking,
 		RDSActions.EnableHttpEndpoint,
+		RDSActions.EnableInternetAccessGateway,
+		RDSActions.EnableVpcNetworking,
 		RDSActions.FailoverDBCluster,
 		RDSActions.FailoverGlobalCluster,
 		RDSActions.ModifyActivityStream,
@@ -2241,6 +2255,8 @@ export class RDSOperations {
 		"rds:AddTagsToResource",
 		"rds:CreateDBCluster",
 		"rds:CreateDBInstance",
+		"rds:DisableVpcNetworking",
+		"rds:EnableInternetAccessGateway",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateDBClusterEndpoint API call. */
@@ -2643,6 +2659,7 @@ export class RDSOperations {
 	/** IAM actions required for the ModifyDBInstance API call. */
 	static readonly ModifyDBInstance: string[] = [
 		"rds:AddTagsToResource",
+		"rds:CreateTenantDatabase",
 		"rds:ModifyDBInstance",
 		"iam:PassRole",
 	];
@@ -2761,6 +2778,9 @@ export class RDSOperations {
 		"rds:AddRoleToDBCluster",
 		"rds:AddTagsToResource",
 		"rds:CreateDBInstance",
+		"rds:DisableVpcNetworking",
+		"rds:EnableInternetAccessGateway",
+		"rds:EnableVpcNetworking",
 		"iam:PassRole",
 		"rds:RestoreDBClusterFromSnapshot",
 	];
@@ -2769,6 +2789,9 @@ export class RDSOperations {
 		"rds:AddRoleToDBCluster",
 		"rds:AddTagsToResource",
 		"rds:CreateDBInstance",
+		"rds:DisableVpcNetworking",
+		"rds:EnableInternetAccessGateway",
+		"rds:EnableVpcNetworking",
 		"iam:PassRole",
 		"rds:RestoreDBClusterToPointInTime",
 	];
@@ -2929,6 +2952,7 @@ export class RDSConditions {
 		"rds:Piops",
 		"rds:StorageEncrypted",
 		"rds:StorageSize",
+		"rds:VpcNetworkingEnabled",
 		"rds:req-tag/${TagKey}",
 	];
 	/** Condition keys applicable to the CreateDBClusterEndpoint action. */
@@ -3084,6 +3108,7 @@ export class RDSConditions {
 		"rds:DatabaseName",
 		"rds:ManageMasterUserPassword",
 		"rds:StorageEncrypted",
+		"rds:VpcNetworkingEnabled",
 		"rds:req-tag/${TagKey}",
 	];
 	/** Condition keys applicable to the RestoreDBClusterFromSnapshot action. */
@@ -3093,6 +3118,7 @@ export class RDSConditions {
 		"rds:DatabaseClass",
 		"rds:Piops",
 		"rds:StorageSize",
+		"rds:VpcNetworkingEnabled",
 		"rds:req-tag/${TagKey}",
 	];
 	/** Condition keys applicable to the RestoreDBClusterToPointInTime action. */
@@ -3102,6 +3128,7 @@ export class RDSConditions {
 		"rds:DatabaseClass",
 		"rds:Piops",
 		"rds:StorageSize",
+		"rds:VpcNetworkingEnabled",
 		"rds:req-tag/${TagKey}",
 	];
 	/** Condition keys applicable to the RestoreDBInstanceFromDBSnapshot action. */
@@ -3174,6 +3201,8 @@ export class RDSConditions {
 	static readonly TENANT_DATABASE_NAME = "rds:TenantDatabaseName";
 	/** Condition key: rds:Vpc (Bool) */
 	static readonly VPC = "rds:Vpc";
+	/** Condition key: rds:VpcNetworkingEnabled (Bool) */
+	static readonly VPC_NETWORKING_ENABLED = "rds:VpcNetworkingEnabled";
 	/** Condition key: rds:cluster-pg-tag/${TagKey} (String) */
 	static readonly CLUSTER_PG_TAG = "rds:cluster-pg-tag/${TagKey}";
 	/** Condition key: rds:cluster-snapshot-tag/${TagKey} (String) */
@@ -3335,6 +3364,15 @@ export class RDSConditions {
 	 */
 	static vpc(value: boolean): Record<string, Record<string, boolean>> {
 		return { Bool: { "rds:Vpc": value } };
+	}
+
+	/**
+	 * Generates a condition block for `rds:VpcNetworkingEnabled`.
+	 */
+	static vpcNetworkingEnabled(
+		value: boolean,
+	): Record<string, Record<string, boolean>> {
+		return { Bool: { "rds:VpcNetworkingEnabled": value } };
 	}
 
 	/**
