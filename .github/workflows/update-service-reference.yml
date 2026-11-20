@@ -13,17 +13,21 @@ jobs:
       pull-requests: write
     steps:
       - name: Checkout
+        id: checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
           token: ${{ secrets.PROJEN_GITHUB_TOKEN }}
       - name: Setup Node.js
+        id: setup_node_js
         uses: actions/setup-node@v4
         with:
           node-version: 24.x
       - name: Install dependencies
+        id: install_dependencies
         run: npm ci
       - name: Update service reference
+        id: update_service_reference
         run: npx projen update-service-reference
       - name: Check for changes
         id: changes
@@ -36,6 +40,7 @@ jobs:
             echo "📦 Service reference updates detected"
           fi
       - name: Run projen build
+        id: run_projen_build
         if: steps.changes.outputs.changed == 'true'
         run: npx projen build
       - name: Create branch and push
@@ -64,6 +69,7 @@ jobs:
           git push origin $BRANCH_NAME
           echo "branch=$BRANCH_NAME" >> $GITHUB_OUTPUT
       - name: Create Pull Request
+        id: create_pull_request
         if: steps.changes.outputs.changed == 'true' && steps.push.outputs.branch
         env:
           GH_TOKEN: ${{ secrets.PROJEN_GITHUB_TOKEN }}

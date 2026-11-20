@@ -1,5 +1,5 @@
 import { CDKUtilsTemplate } from "@cdk_utils/projen_template";
-import { JsonPatch } from "projen";
+import { DependencyType, JsonPatch } from "projen";
 
 // The exact title the daily service-reference update PR is opened with. Shared by
 // the workflow (commit subject + PR title) and the Mergify auto-approve rule so
@@ -35,7 +35,9 @@ project.jest!.config.transform = {
 	"^.+\\.[t]sx?$": [
 		"ts-jest",
 		{
-			tsconfig: "tsconfig.dev.json",
+			// Follow projen's dev tsconfig wherever it lives (projen >=0.105 moved it
+			// from tsconfig.dev.json to test/tsconfig.json).
+			tsconfig: project.tsconfigDev.fileName,
 			isolatedModules: true,
 		},
 	],
@@ -260,5 +262,14 @@ mergifyFile?.addToArray("pull_request_rules", {
 		},
 	},
 });
+
+// Raise the projen floor. The template declares `projen@>=0.99.0` as a peer, and
+// projen pins the build-time devDependency to that peer's MINIMUM, so the repo
+// stays on 0.99.0 -- which still emits the Mergify `commit_message_template`
+// key that Mergify has removed (invalid config -> every Mergify check fails).
+// projen >=0.105.6 emits the declarative `commit_message_format` instead.
+// TODO: drop once @cdk_utils/projen_template raises its own projen peer floor.
+project.deps.removeDependency("projen", DependencyType.PEER);
+project.addPeerDeps("projen@>=0.105.6");
 
 project.synth();

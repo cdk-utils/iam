@@ -2,7 +2,7 @@
   "dependencies": [
     {
       "name": "@biomejs/biome",
-      "version": "^2",
+      "version": "^2.5",
       "type": "build"
     },
     {
@@ -19,7 +19,7 @@
     },
     {
       "name": "commit-and-tag-version",
-      "version": "^12",
+      "version": "^13",
       "type": "build"
     },
     {
@@ -28,7 +28,7 @@
     },
     {
       "name": "jest-junit",
-      "version": "^16",
+      "version": "^17",
       "type": "build"
     },
     {
@@ -81,12 +81,12 @@
     },
     {
       "name": "constructs",
-      "version": "^10.0.5",
+      "version": "^10.5.1",
       "type": "peer"
     },
     {
       "name": "projen",
-      "version": ">=0.99.0",
+      "version": ">=0.105.6",
       "type": "peer"
     }
   ],

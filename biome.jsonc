@@ -2,7 +2,7 @@
 {
   "assist": {
     "actions": {
-      "recommended": true
+      "preset": "recommended"
     },
     "enabled": true
   },
@@ -17,6 +17,7 @@
       "!.github/workflows/build.yml",
       "!.github/workflows/pull-request-lint.yml",
       "!.github/workflows/release.yml",
+      "!.github/workflows/self-mutation.yml",
       "!.github/workflows/stale.yml",
       "!.github/workflows/update-service-reference.yml",
       "!.github/workflows/upgrade-main.yml",
@@ -25,7 +26,9 @@
       "!.projen/deps.json",
       "!.projen/files.json",
       "!.projen/tasks.json",
-      "!tsconfig.dev.json"
+      "!projenrc/tsconfig.json",
+      "!test/tsconfig.json",
+      "!tsconfig.json"
     ]
   },
   "formatter": {
@@ -40,7 +43,7 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true
+      "preset": "recommended"
     }
   },
   "vcs": {
