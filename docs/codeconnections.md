@@ -480,6 +480,7 @@ new codeconnections.CodeconnectionsActions()
 | <code><a href="#@cdk_utils/iam.codeconnections.CodeconnectionsActions.property.actionGetInstallationUrl">actionGetInstallationUrl</a></code> | <code>string</code> | [Read] codeconnections:GetInstallationUrl. |
 | <code><a href="#@cdk_utils/iam.codeconnections.CodeconnectionsActions.property.actionGetRepositoryLink">actionGetRepositoryLink</a></code> | <code>string</code> | [Read] codeconnections:GetRepositoryLink. |
 | <code><a href="#@cdk_utils/iam.codeconnections.CodeconnectionsActions.property.actionGetRepositorySyncStatus">actionGetRepositorySyncStatus</a></code> | <code>string</code> | [Read] codeconnections:GetRepositorySyncStatus. |
+| <code><a href="#@cdk_utils/iam.codeconnections.CodeconnectionsActions.property.actionGetResourcePolicy">actionGetResourcePolicy</a></code> | <code>string</code> | [Read] codeconnections:GetResourcePolicy. |
 | <code><a href="#@cdk_utils/iam.codeconnections.CodeconnectionsActions.property.actionGetResourceSyncStatus">actionGetResourceSyncStatus</a></code> | <code>string</code> | [Read] codeconnections:GetResourceSyncStatus. |
 | <code><a href="#@cdk_utils/iam.codeconnections.CodeconnectionsActions.property.actionGetSyncBlockerSummary">actionGetSyncBlockerSummary</a></code> | <code>string</code> | [Read] codeconnections:GetSyncBlockerSummary. |
 | <code><a href="#@cdk_utils/iam.codeconnections.CodeconnectionsActions.property.actionGetSyncConfiguration">actionGetSyncConfiguration</a></code> | <code>string</code> | [Read] codeconnections:GetSyncConfiguration. |
@@ -601,6 +602,18 @@ public readonly actionGetRepositorySyncStatus: string;
 - *Type:* string
 
 [Read] codeconnections:GetRepositorySyncStatus.
+
+---
+
+##### `actionGetResourcePolicy`<sup>Required</sup> <a name="actionGetResourcePolicy" id="@cdk_utils/iam.codeconnections.CodeconnectionsActions.property.actionGetResourcePolicy"></a>
+
+```typescript
+public readonly actionGetResourcePolicy: string;
+```
+
+- *Type:* string
+
+[Read] codeconnections:GetResourcePolicy.
 
 ---
 

@@ -3,6 +3,34 @@
   "ServiceName": "Polly",
   "Actions": [
     {
+      "Name": "CreateVoice",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "voice",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DeleteLexicon",
       "Annotations": {
         "Properties": {
@@ -24,6 +52,30 @@
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": true,
         "IAM Action Last Accessed": true
+      }
+    },
+    {
+      "Name": "DeleteVoice",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "voice",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
       }
     },
     {
@@ -83,6 +135,30 @@
       }
     },
     {
+      "Name": "GetVoice",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "voice",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListLexicons",
       "Annotations": {
         "Properties": {
@@ -128,6 +204,12 @@
       "Resources": [
         {
           "Name": "lexicon",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "voice",
           "ConditionKeys": [
             "aws:ResourceTag/${TagKey}"
           ]
@@ -183,6 +265,12 @@
           "ConditionKeys": [
             "aws:ResourceTag/${TagKey}"
           ]
+        },
+        {
+          "Name": "voice",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
         }
       ],
       "SupportedBy": {
@@ -207,6 +295,12 @@
           "ConditionKeys": [
             "aws:ResourceTag/${TagKey}"
           ]
+        },
+        {
+          "Name": "voice",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
         }
       ],
       "SupportedBy": {
@@ -228,6 +322,12 @@
       "Resources": [
         {
           "Name": "lexicon",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "voice",
           "ConditionKeys": [
             "aws:ResourceTag/${TagKey}"
           ]
@@ -259,6 +359,12 @@
           "ConditionKeys": [
             "aws:ResourceTag/${TagKey}"
           ]
+        },
+        {
+          "Name": "voice",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
         }
       ],
       "SupportedBy": {
@@ -283,6 +389,12 @@
       "Resources": [
         {
           "Name": "lexicon",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "voice",
           "ConditionKeys": [
             "aws:ResourceTag/${TagKey}"
           ]
@@ -319,6 +431,10 @@
       "Name": "CreateVoice",
       "AuthorizedActions": [
         {
+          "Name": "CreateVoice",
+          "Service": "polly"
+        },
+        {
           "Name": "TagResource",
           "Service": "polly"
         }
@@ -349,6 +465,12 @@
     },
     {
       "Name": "DeleteVoice",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteVoice",
+          "Service": "polly"
+        }
+      ],
       "SDK": [
         {
           "Name": "polly",
@@ -407,6 +529,12 @@
     },
     {
       "Name": "GetVoice",
+      "AuthorizedActions": [
+        {
+          "Name": "GetVoice",
+          "Service": "polly"
+        }
+      ],
       "SDK": [
         {
           "Name": "polly",
@@ -569,6 +697,15 @@
       "Name": "lexicon",
       "ARNFormats": [
         "arn:${Partition}:polly:${Region}:${Account}:lexicon/${LexiconName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "voice",
+      "ARNFormats": [
+        "arn:${Partition}:polly:${Region}:${Account}:voice/${VoiceId}"
       ],
       "ConditionKeys": [
         "aws:ResourceTag/${TagKey}"

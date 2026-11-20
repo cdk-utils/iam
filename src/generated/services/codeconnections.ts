@@ -48,6 +48,8 @@ export class CodeconnectionsActions {
 	/** [Read] codeconnections:GetRepositorySyncStatus */
 	static readonly actionGetRepositorySyncStatus =
 		"codeconnections:GetRepositorySyncStatus";
+	/** [Read] codeconnections:GetResourcePolicy */
+	static readonly actionGetResourcePolicy = "codeconnections:GetResourcePolicy";
 	/** [Read] codeconnections:GetResourceSyncStatus */
 	static readonly actionGetResourceSyncStatus =
 		"codeconnections:GetResourceSyncStatus";
@@ -113,6 +115,7 @@ export class CodeconnectionsActions {
 		CodeconnectionsActions.actionGetInstallationUrl,
 		CodeconnectionsActions.actionGetRepositoryLink,
 		CodeconnectionsActions.actionGetRepositorySyncStatus,
+		CodeconnectionsActions.actionGetResourcePolicy,
 		CodeconnectionsActions.actionGetResourceSyncStatus,
 		CodeconnectionsActions.actionGetSyncBlockerSummary,
 		CodeconnectionsActions.actionGetSyncConfiguration,
