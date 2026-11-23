@@ -971,6 +971,7 @@
       "Name": "ReceiveQueueRecords",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2140,6 +2141,10 @@
     {
       "Name": "ReceiveQueueRecords",
       "AuthorizedActions": [
+        {
+          "Name": "ReceiveQueueRecords",
+          "Service": "kinesis"
+        },
         {
           "Name": "ReceiveQueueRecords",
           "Service": "kinesis"

@@ -10746,6 +10746,7 @@ new bedrock.BedrockOperations()
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.AgenticRetrieveStream">AgenticRetrieveStream</a></code> | <code>string[]</code> | IAM actions required for the AgenticRetrieveStream API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.ApplyGuardrail">ApplyGuardrail</a></code> | <code>string[]</code> | IAM actions required for the ApplyGuardrail API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.ArchiveProject">ArchiveProject</a></code> | <code>string[]</code> | IAM actions required for the ArchiveProject API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.AssociateAgentCollaborator">AssociateAgentCollaborator</a></code> | <code>string[]</code> | IAM actions required for the AssociateAgentCollaborator API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.AssociateAgentKnowledgeBase">AssociateAgentKnowledgeBase</a></code> | <code>string[]</code> | IAM actions required for the AssociateAgentKnowledgeBase API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.BatchDeleteAdvancedPromptOptimizationJob">BatchDeleteAdvancedPromptOptimizationJob</a></code> | <code>string[]</code> | IAM actions required for the BatchDeleteAdvancedPromptOptimizationJob API call. |
@@ -10785,6 +10786,7 @@ new bedrock.BedrockOperations()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.CreateModelCustomizationJob">CreateModelCustomizationJob</a></code> | <code>string[]</code> | IAM actions required for the CreateModelCustomizationJob API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.CreateModelImportJob">CreateModelImportJob</a></code> | <code>string[]</code> | IAM actions required for the CreateModelImportJob API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.CreateModelInvocationJob">CreateModelInvocationJob</a></code> | <code>string[]</code> | IAM actions required for the CreateModelInvocationJob API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.CreateProject">CreateProject</a></code> | <code>string[]</code> | IAM actions required for the CreateProject API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.CreatePrompt">CreatePrompt</a></code> | <code>string[]</code> | IAM actions required for the CreatePrompt API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.CreatePromptRouter">CreatePromptRouter</a></code> | <code>string[]</code> | IAM actions required for the CreatePromptRouter API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.CreatePromptVersion">CreatePromptVersion</a></code> | <code>string[]</code> | IAM actions required for the CreatePromptVersion API call. |
@@ -10793,6 +10795,7 @@ new bedrock.BedrockOperations()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.CreateRetrievalInstructionVersion">CreateRetrievalInstructionVersion</a></code> | <code>string[]</code> | IAM actions required for the CreateRetrievalInstructionVersion API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.CreateSession">CreateSession</a></code> | <code>string[]</code> | IAM actions required for the CreateSession API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.CreateVpcConfiguration">CreateVpcConfiguration</a></code> | <code>string[]</code> | IAM actions required for the CreateVpcConfiguration API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.DeleteAccountDataRetentionStorage">DeleteAccountDataRetentionStorage</a></code> | <code>string[]</code> | IAM actions required for the DeleteAccountDataRetentionStorage API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.DeleteAgent">DeleteAgent</a></code> | <code>string[]</code> | IAM actions required for the DeleteAgent API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.DeleteAgentActionGroup">DeleteAgentActionGroup</a></code> | <code>string[]</code> | IAM actions required for the DeleteAgentActionGroup API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.DeleteAgentAlias">DeleteAgentAlias</a></code> | <code>string[]</code> | IAM actions required for the DeleteAgentAlias API call. |
@@ -10819,6 +10822,8 @@ new bedrock.BedrockOperations()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.DeleteKnowledgeBaseDocuments">DeleteKnowledgeBaseDocuments</a></code> | <code>string[]</code> | IAM actions required for the DeleteKnowledgeBaseDocuments API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.DeleteMarketplaceModelEndpoint">DeleteMarketplaceModelEndpoint</a></code> | <code>string[]</code> | IAM actions required for the DeleteMarketplaceModelEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.DeleteModelInvocationLoggingConfiguration">DeleteModelInvocationLoggingConfiguration</a></code> | <code>string[]</code> | IAM actions required for the DeleteModelInvocationLoggingConfiguration API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.DeleteOrganizationDataRetentionStorage">DeleteOrganizationDataRetentionStorage</a></code> | <code>string[]</code> | IAM actions required for the DeleteOrganizationDataRetentionStorage API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.DeleteProjectDataRetentionStorage">DeleteProjectDataRetentionStorage</a></code> | <code>string[]</code> | IAM actions required for the DeleteProjectDataRetentionStorage API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.DeletePrompt">DeletePrompt</a></code> | <code>string[]</code> | IAM actions required for the DeletePrompt API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.DeletePromptRouter">DeletePromptRouter</a></code> | <code>string[]</code> | IAM actions required for the DeletePromptRouter API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.DeleteProvisionedModelThroughput">DeleteProvisionedModelThroughput</a></code> | <code>string[]</code> | IAM actions required for the DeleteProvisionedModelThroughput API call. |
@@ -10886,6 +10891,7 @@ new bedrock.BedrockOperations()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.ListModelCustomizationJobs">ListModelCustomizationJobs</a></code> | <code>string[]</code> | IAM actions required for the ListModelCustomizationJobs API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.ListModelImportJobs">ListModelImportJobs</a></code> | <code>string[]</code> | IAM actions required for the ListModelImportJobs API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.ListModelInvocationJobs">ListModelInvocationJobs</a></code> | <code>string[]</code> | IAM actions required for the ListModelInvocationJobs API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.ListProjects">ListProjects</a></code> | <code>string[]</code> | IAM actions required for the ListProjects API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.ListPromptRouters">ListPromptRouters</a></code> | <code>string[]</code> | IAM actions required for the ListPromptRouters API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.ListPrompts">ListPrompts</a></code> | <code>string[]</code> | IAM actions required for the ListPrompts API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.ListProvisionedModelThroughputs">ListProvisionedModelThroughputs</a></code> | <code>string[]</code> | IAM actions required for the ListProvisionedModelThroughputs API call. |
@@ -10893,8 +10899,10 @@ new bedrock.BedrockOperations()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.ListRetrievalInstructionVersions">ListRetrievalInstructionVersions</a></code> | <code>string[]</code> | IAM actions required for the ListRetrievalInstructionVersions API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.ListSessions">ListSessions</a></code> | <code>string[]</code> | IAM actions required for the ListSessions API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.ListTrustedAccessPrograms">ListTrustedAccessPrograms</a></code> | <code>string[]</code> | IAM actions required for the ListTrustedAccessPrograms API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.ListVpcConfigurations">ListVpcConfigurations</a></code> | <code>string[]</code> | IAM actions required for the ListVpcConfigurations API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetAccountDataRetention">opGetAccountDataRetention</a></code> | <code>string[]</code> | IAM actions required for the GetAccountDataRetention API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetAccountDataRetentionStorage">opGetAccountDataRetentionStorage</a></code> | <code>string[]</code> | IAM actions required for the GetAccountDataRetentionStorage API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetAdvancedPromptOptimizationJob">opGetAdvancedPromptOptimizationJob</a></code> | <code>string[]</code> | IAM actions required for the GetAdvancedPromptOptimizationJob API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetAgent">opGetAgent</a></code> | <code>string[]</code> | IAM actions required for the GetAgent API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetAgentActionGroup">opGetAgentActionGroup</a></code> | <code>string[]</code> | IAM actions required for the GetAgentActionGroup API call. |
@@ -10944,22 +10952,35 @@ new bedrock.BedrockOperations()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetModelImportJob">opGetModelImportJob</a></code> | <code>string[]</code> | IAM actions required for the GetModelImportJob API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetModelInvocationJob">opGetModelInvocationJob</a></code> | <code>string[]</code> | IAM actions required for the GetModelInvocationJob API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetModelInvocationLoggingConfiguration">opGetModelInvocationLoggingConfiguration</a></code> | <code>string[]</code> | IAM actions required for the GetModelInvocationLoggingConfiguration API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetOrganizationDataRetentionStorage">opGetOrganizationDataRetentionStorage</a></code> | <code>string[]</code> | IAM actions required for the GetOrganizationDataRetentionStorage API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetProject">opGetProject</a></code> | <code>string[]</code> | IAM actions required for the GetProject API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetProjectDataRetentionStorage">opGetProjectDataRetentionStorage</a></code> | <code>string[]</code> | IAM actions required for the GetProjectDataRetentionStorage API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetPrompt">opGetPrompt</a></code> | <code>string[]</code> | IAM actions required for the GetPrompt API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetPromptRouter">opGetPromptRouter</a></code> | <code>string[]</code> | IAM actions required for the GetPromptRouter API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetProvisionedModelThroughput">opGetProvisionedModelThroughput</a></code> | <code>string[]</code> | IAM actions required for the GetProvisionedModelThroughput API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetResourcePolicy">opGetResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the GetResourcePolicy API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetRetrievalInstruction">opGetRetrievalInstruction</a></code> | <code>string[]</code> | IAM actions required for the GetRetrievalInstruction API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetSession">opGetSession</a></code> | <code>string[]</code> | IAM actions required for the GetSession API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetTrustedAccessProgram">opGetTrustedAccessProgram</a></code> | <code>string[]</code> | IAM actions required for the GetTrustedAccessProgram API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetTrustedAccessProgramAccountEnrollment">opGetTrustedAccessProgramAccountEnrollment</a></code> | <code>string[]</code> | IAM actions required for the GetTrustedAccessProgramAccountEnrollment API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetTrustedAccessProgramOrganizationEnrollment">opGetTrustedAccessProgramOrganizationEnrollment</a></code> | <code>string[]</code> | IAM actions required for the GetTrustedAccessProgramOrganizationEnrollment API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetTrustedAccessProgramProjectEnrollment">opGetTrustedAccessProgramProjectEnrollment</a></code> | <code>string[]</code> | IAM actions required for the GetTrustedAccessProgramProjectEnrollment API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetUseCaseForModelAccess">opGetUseCaseForModelAccess</a></code> | <code>string[]</code> | IAM actions required for the GetUseCaseForModelAccess API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.opGetVpcConfiguration">opGetVpcConfiguration</a></code> | <code>string[]</code> | IAM actions required for the GetVpcConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.OptimizePrompt">OptimizePrompt</a></code> | <code>string[]</code> | IAM actions required for the OptimizePrompt API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.PrepareAgent">PrepareAgent</a></code> | <code>string[]</code> | IAM actions required for the PrepareAgent API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.PrepareFlow">PrepareFlow</a></code> | <code>string[]</code> | IAM actions required for the PrepareFlow API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.PutAccountDataRetention">PutAccountDataRetention</a></code> | <code>string[]</code> | IAM actions required for the PutAccountDataRetention API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.PutAccountDataRetentionStorage">PutAccountDataRetentionStorage</a></code> | <code>string[]</code> | IAM actions required for the PutAccountDataRetentionStorage API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.PutEnforcedGuardrailConfiguration">PutEnforcedGuardrailConfiguration</a></code> | <code>string[]</code> | IAM actions required for the PutEnforcedGuardrailConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.PutInvocationStep">PutInvocationStep</a></code> | <code>string[]</code> | IAM actions required for the PutInvocationStep API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.PutModelInvocationLoggingConfiguration">PutModelInvocationLoggingConfiguration</a></code> | <code>string[]</code> | IAM actions required for the PutModelInvocationLoggingConfiguration API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.PutOrganizationDataRetentionStorage">PutOrganizationDataRetentionStorage</a></code> | <code>string[]</code> | IAM actions required for the PutOrganizationDataRetentionStorage API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.PutProjectDataRetentionStorage">PutProjectDataRetentionStorage</a></code> | <code>string[]</code> | IAM actions required for the PutProjectDataRetentionStorage API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.PutResourcePolicy">PutResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the PutResourcePolicy API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.PutTrustedAccessProgramAccountEnrollment">PutTrustedAccessProgramAccountEnrollment</a></code> | <code>string[]</code> | IAM actions required for the PutTrustedAccessProgramAccountEnrollment API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.PutTrustedAccessProgramOrganizationEnrollment">PutTrustedAccessProgramOrganizationEnrollment</a></code> | <code>string[]</code> | IAM actions required for the PutTrustedAccessProgramOrganizationEnrollment API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.PutTrustedAccessProgramProjectEnrollment">PutTrustedAccessProgramProjectEnrollment</a></code> | <code>string[]</code> | IAM actions required for the PutTrustedAccessProgramProjectEnrollment API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.PutUseCaseForModelAccess">PutUseCaseForModelAccess</a></code> | <code>string[]</code> | IAM actions required for the PutUseCaseForModelAccess API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.RegisterMarketplaceModelEndpoint">RegisterMarketplaceModelEndpoint</a></code> | <code>string[]</code> | IAM actions required for the RegisterMarketplaceModelEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.Rerank">Rerank</a></code> | <code>string[]</code> | IAM actions required for the Rerank API call. |
@@ -10971,6 +10992,9 @@ new bedrock.BedrockOperations()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.StartAutomatedReasoningPolicyTestWorkflow">StartAutomatedReasoningPolicyTestWorkflow</a></code> | <code>string[]</code> | IAM actions required for the StartAutomatedReasoningPolicyTestWorkflow API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.StartFlowExecution">StartFlowExecution</a></code> | <code>string[]</code> | IAM actions required for the StartFlowExecution API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.StartIngestionJob">StartIngestionJob</a></code> | <code>string[]</code> | IAM actions required for the StartIngestionJob API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.StartTrustedAccessProgramAccountApplication">StartTrustedAccessProgramAccountApplication</a></code> | <code>string[]</code> | IAM actions required for the StartTrustedAccessProgramAccountApplication API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.StartTrustedAccessProgramOrganizationApplication">StartTrustedAccessProgramOrganizationApplication</a></code> | <code>string[]</code> | IAM actions required for the StartTrustedAccessProgramOrganizationApplication API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.StartTrustedAccessProgramProjectApplication">StartTrustedAccessProgramProjectApplication</a></code> | <code>string[]</code> | IAM actions required for the StartTrustedAccessProgramProjectApplication API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.StopAdvancedPromptOptimizationJob">StopAdvancedPromptOptimizationJob</a></code> | <code>string[]</code> | IAM actions required for the StopAdvancedPromptOptimizationJob API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.StopEvaluationJob">StopEvaluationJob</a></code> | <code>string[]</code> | IAM actions required for the StopEvaluationJob API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.StopFlowExecution">StopFlowExecution</a></code> | <code>string[]</code> | IAM actions required for the StopFlowExecution API call. |
@@ -10997,6 +11021,7 @@ new bedrock.BedrockOperations()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.UpdateGuardrail">UpdateGuardrail</a></code> | <code>string[]</code> | IAM actions required for the UpdateGuardrail API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.UpdateKnowledgeBase">UpdateKnowledgeBase</a></code> | <code>string[]</code> | IAM actions required for the UpdateKnowledgeBase API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.UpdateMarketplaceModelEndpoint">UpdateMarketplaceModelEndpoint</a></code> | <code>string[]</code> | IAM actions required for the UpdateMarketplaceModelEndpoint API call. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.UpdateProject">UpdateProject</a></code> | <code>string[]</code> | IAM actions required for the UpdateProject API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.UpdatePrompt">UpdatePrompt</a></code> | <code>string[]</code> | IAM actions required for the UpdatePrompt API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.UpdateProvisionedModelThroughput">UpdateProvisionedModelThroughput</a></code> | <code>string[]</code> | IAM actions required for the UpdateProvisionedModelThroughput API call. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockOperations.property.UpdateRetrievalInstruction">UpdateRetrievalInstruction</a></code> | <code>string[]</code> | IAM actions required for the UpdateRetrievalInstruction API call. |
@@ -11026,6 +11051,18 @@ public readonly ApplyGuardrail: string[];
 - *Type:* string[]
 
 IAM actions required for the ApplyGuardrail API call.
+
+---
+
+##### `ArchiveProject`<sup>Required</sup> <a name="ArchiveProject" id="@cdk_utils/iam.bedrock.BedrockOperations.property.ArchiveProject"></a>
+
+```typescript
+public readonly ArchiveProject: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ArchiveProject API call.
 
 ---
 
@@ -11497,6 +11534,18 @@ IAM actions required for the CreateModelInvocationJob API call.
 
 ---
 
+##### `CreateProject`<sup>Required</sup> <a name="CreateProject" id="@cdk_utils/iam.bedrock.BedrockOperations.property.CreateProject"></a>
+
+```typescript
+public readonly CreateProject: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateProject API call.
+
+---
+
 ##### `CreatePrompt`<sup>Required</sup> <a name="CreatePrompt" id="@cdk_utils/iam.bedrock.BedrockOperations.property.CreatePrompt"></a>
 
 ```typescript
@@ -11590,6 +11639,18 @@ public readonly CreateVpcConfiguration: string[];
 - *Type:* string[]
 
 IAM actions required for the CreateVpcConfiguration API call.
+
+---
+
+##### `DeleteAccountDataRetentionStorage`<sup>Required</sup> <a name="DeleteAccountDataRetentionStorage" id="@cdk_utils/iam.bedrock.BedrockOperations.property.DeleteAccountDataRetentionStorage"></a>
+
+```typescript
+public readonly DeleteAccountDataRetentionStorage: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteAccountDataRetentionStorage API call.
 
 ---
 
@@ -11902,6 +11963,30 @@ public readonly DeleteModelInvocationLoggingConfiguration: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteModelInvocationLoggingConfiguration API call.
+
+---
+
+##### `DeleteOrganizationDataRetentionStorage`<sup>Required</sup> <a name="DeleteOrganizationDataRetentionStorage" id="@cdk_utils/iam.bedrock.BedrockOperations.property.DeleteOrganizationDataRetentionStorage"></a>
+
+```typescript
+public readonly DeleteOrganizationDataRetentionStorage: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteOrganizationDataRetentionStorage API call.
+
+---
+
+##### `DeleteProjectDataRetentionStorage`<sup>Required</sup> <a name="DeleteProjectDataRetentionStorage" id="@cdk_utils/iam.bedrock.BedrockOperations.property.DeleteProjectDataRetentionStorage"></a>
+
+```typescript
+public readonly DeleteProjectDataRetentionStorage: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteProjectDataRetentionStorage API call.
 
 ---
 
@@ -12709,6 +12794,18 @@ IAM actions required for the ListModelInvocationJobs API call.
 
 ---
 
+##### `ListProjects`<sup>Required</sup> <a name="ListProjects" id="@cdk_utils/iam.bedrock.BedrockOperations.property.ListProjects"></a>
+
+```typescript
+public readonly ListProjects: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListProjects API call.
+
+---
+
 ##### `ListPromptRouters`<sup>Required</sup> <a name="ListPromptRouters" id="@cdk_utils/iam.bedrock.BedrockOperations.property.ListPromptRouters"></a>
 
 ```typescript
@@ -12793,6 +12890,18 @@ IAM actions required for the ListTagsForResource API call.
 
 ---
 
+##### `ListTrustedAccessPrograms`<sup>Required</sup> <a name="ListTrustedAccessPrograms" id="@cdk_utils/iam.bedrock.BedrockOperations.property.ListTrustedAccessPrograms"></a>
+
+```typescript
+public readonly ListTrustedAccessPrograms: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListTrustedAccessPrograms API call.
+
+---
+
 ##### `ListVpcConfigurations`<sup>Required</sup> <a name="ListVpcConfigurations" id="@cdk_utils/iam.bedrock.BedrockOperations.property.ListVpcConfigurations"></a>
 
 ```typescript
@@ -12814,6 +12923,18 @@ public readonly opGetAccountDataRetention: string[];
 - *Type:* string[]
 
 IAM actions required for the GetAccountDataRetention API call.
+
+---
+
+##### `opGetAccountDataRetentionStorage`<sup>Required</sup> <a name="opGetAccountDataRetentionStorage" id="@cdk_utils/iam.bedrock.BedrockOperations.property.opGetAccountDataRetentionStorage"></a>
+
+```typescript
+public readonly opGetAccountDataRetentionStorage: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetAccountDataRetentionStorage API call.
 
 ---
 
@@ -13405,6 +13526,42 @@ IAM actions required for the GetModelInvocationLoggingConfiguration API call.
 
 ---
 
+##### `opGetOrganizationDataRetentionStorage`<sup>Required</sup> <a name="opGetOrganizationDataRetentionStorage" id="@cdk_utils/iam.bedrock.BedrockOperations.property.opGetOrganizationDataRetentionStorage"></a>
+
+```typescript
+public readonly opGetOrganizationDataRetentionStorage: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetOrganizationDataRetentionStorage API call.
+
+---
+
+##### `opGetProject`<sup>Required</sup> <a name="opGetProject" id="@cdk_utils/iam.bedrock.BedrockOperations.property.opGetProject"></a>
+
+```typescript
+public readonly opGetProject: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetProject API call.
+
+---
+
+##### `opGetProjectDataRetentionStorage`<sup>Required</sup> <a name="opGetProjectDataRetentionStorage" id="@cdk_utils/iam.bedrock.BedrockOperations.property.opGetProjectDataRetentionStorage"></a>
+
+```typescript
+public readonly opGetProjectDataRetentionStorage: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetProjectDataRetentionStorage API call.
+
+---
+
 ##### `opGetPrompt`<sup>Required</sup> <a name="opGetPrompt" id="@cdk_utils/iam.bedrock.BedrockOperations.property.opGetPrompt"></a>
 
 ```typescript
@@ -13474,6 +13631,54 @@ public readonly opGetSession: string[];
 - *Type:* string[]
 
 IAM actions required for the GetSession API call.
+
+---
+
+##### `opGetTrustedAccessProgram`<sup>Required</sup> <a name="opGetTrustedAccessProgram" id="@cdk_utils/iam.bedrock.BedrockOperations.property.opGetTrustedAccessProgram"></a>
+
+```typescript
+public readonly opGetTrustedAccessProgram: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetTrustedAccessProgram API call.
+
+---
+
+##### `opGetTrustedAccessProgramAccountEnrollment`<sup>Required</sup> <a name="opGetTrustedAccessProgramAccountEnrollment" id="@cdk_utils/iam.bedrock.BedrockOperations.property.opGetTrustedAccessProgramAccountEnrollment"></a>
+
+```typescript
+public readonly opGetTrustedAccessProgramAccountEnrollment: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetTrustedAccessProgramAccountEnrollment API call.
+
+---
+
+##### `opGetTrustedAccessProgramOrganizationEnrollment`<sup>Required</sup> <a name="opGetTrustedAccessProgramOrganizationEnrollment" id="@cdk_utils/iam.bedrock.BedrockOperations.property.opGetTrustedAccessProgramOrganizationEnrollment"></a>
+
+```typescript
+public readonly opGetTrustedAccessProgramOrganizationEnrollment: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetTrustedAccessProgramOrganizationEnrollment API call.
+
+---
+
+##### `opGetTrustedAccessProgramProjectEnrollment`<sup>Required</sup> <a name="opGetTrustedAccessProgramProjectEnrollment" id="@cdk_utils/iam.bedrock.BedrockOperations.property.opGetTrustedAccessProgramProjectEnrollment"></a>
+
+```typescript
+public readonly opGetTrustedAccessProgramProjectEnrollment: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetTrustedAccessProgramProjectEnrollment API call.
 
 ---
 
@@ -13549,6 +13754,18 @@ IAM actions required for the PutAccountDataRetention API call.
 
 ---
 
+##### `PutAccountDataRetentionStorage`<sup>Required</sup> <a name="PutAccountDataRetentionStorage" id="@cdk_utils/iam.bedrock.BedrockOperations.property.PutAccountDataRetentionStorage"></a>
+
+```typescript
+public readonly PutAccountDataRetentionStorage: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the PutAccountDataRetentionStorage API call.
+
+---
+
 ##### `PutEnforcedGuardrailConfiguration`<sup>Required</sup> <a name="PutEnforcedGuardrailConfiguration" id="@cdk_utils/iam.bedrock.BedrockOperations.property.PutEnforcedGuardrailConfiguration"></a>
 
 ```typescript
@@ -13585,6 +13802,30 @@ IAM actions required for the PutModelInvocationLoggingConfiguration API call.
 
 ---
 
+##### `PutOrganizationDataRetentionStorage`<sup>Required</sup> <a name="PutOrganizationDataRetentionStorage" id="@cdk_utils/iam.bedrock.BedrockOperations.property.PutOrganizationDataRetentionStorage"></a>
+
+```typescript
+public readonly PutOrganizationDataRetentionStorage: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the PutOrganizationDataRetentionStorage API call.
+
+---
+
+##### `PutProjectDataRetentionStorage`<sup>Required</sup> <a name="PutProjectDataRetentionStorage" id="@cdk_utils/iam.bedrock.BedrockOperations.property.PutProjectDataRetentionStorage"></a>
+
+```typescript
+public readonly PutProjectDataRetentionStorage: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the PutProjectDataRetentionStorage API call.
+
+---
+
 ##### `PutResourcePolicy`<sup>Required</sup> <a name="PutResourcePolicy" id="@cdk_utils/iam.bedrock.BedrockOperations.property.PutResourcePolicy"></a>
 
 ```typescript
@@ -13594,6 +13835,42 @@ public readonly PutResourcePolicy: string[];
 - *Type:* string[]
 
 IAM actions required for the PutResourcePolicy API call.
+
+---
+
+##### `PutTrustedAccessProgramAccountEnrollment`<sup>Required</sup> <a name="PutTrustedAccessProgramAccountEnrollment" id="@cdk_utils/iam.bedrock.BedrockOperations.property.PutTrustedAccessProgramAccountEnrollment"></a>
+
+```typescript
+public readonly PutTrustedAccessProgramAccountEnrollment: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the PutTrustedAccessProgramAccountEnrollment API call.
+
+---
+
+##### `PutTrustedAccessProgramOrganizationEnrollment`<sup>Required</sup> <a name="PutTrustedAccessProgramOrganizationEnrollment" id="@cdk_utils/iam.bedrock.BedrockOperations.property.PutTrustedAccessProgramOrganizationEnrollment"></a>
+
+```typescript
+public readonly PutTrustedAccessProgramOrganizationEnrollment: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the PutTrustedAccessProgramOrganizationEnrollment API call.
+
+---
+
+##### `PutTrustedAccessProgramProjectEnrollment`<sup>Required</sup> <a name="PutTrustedAccessProgramProjectEnrollment" id="@cdk_utils/iam.bedrock.BedrockOperations.property.PutTrustedAccessProgramProjectEnrollment"></a>
+
+```typescript
+public readonly PutTrustedAccessProgramProjectEnrollment: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the PutTrustedAccessProgramProjectEnrollment API call.
 
 ---
 
@@ -13726,6 +14003,42 @@ public readonly StartIngestionJob: string[];
 - *Type:* string[]
 
 IAM actions required for the StartIngestionJob API call.
+
+---
+
+##### `StartTrustedAccessProgramAccountApplication`<sup>Required</sup> <a name="StartTrustedAccessProgramAccountApplication" id="@cdk_utils/iam.bedrock.BedrockOperations.property.StartTrustedAccessProgramAccountApplication"></a>
+
+```typescript
+public readonly StartTrustedAccessProgramAccountApplication: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StartTrustedAccessProgramAccountApplication API call.
+
+---
+
+##### `StartTrustedAccessProgramOrganizationApplication`<sup>Required</sup> <a name="StartTrustedAccessProgramOrganizationApplication" id="@cdk_utils/iam.bedrock.BedrockOperations.property.StartTrustedAccessProgramOrganizationApplication"></a>
+
+```typescript
+public readonly StartTrustedAccessProgramOrganizationApplication: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StartTrustedAccessProgramOrganizationApplication API call.
+
+---
+
+##### `StartTrustedAccessProgramProjectApplication`<sup>Required</sup> <a name="StartTrustedAccessProgramProjectApplication" id="@cdk_utils/iam.bedrock.BedrockOperations.property.StartTrustedAccessProgramProjectApplication"></a>
+
+```typescript
+public readonly StartTrustedAccessProgramProjectApplication: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StartTrustedAccessProgramProjectApplication API call.
 
 ---
 
@@ -14038,6 +14351,18 @@ public readonly UpdateMarketplaceModelEndpoint: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateMarketplaceModelEndpoint API call.
+
+---
+
+##### `UpdateProject`<sup>Required</sup> <a name="UpdateProject" id="@cdk_utils/iam.bedrock.BedrockOperations.property.UpdateProject"></a>
+
+```typescript
+public readonly UpdateProject: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateProject API call.
 
 ---
 

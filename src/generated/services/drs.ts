@@ -992,7 +992,9 @@ export class DRSOperations {
 	/** IAM actions required for the DeleteRecoveryPlan API call. */
 	static readonly DeleteRecoveryPlan: string[] = ["drs:DeleteRecoveryPlan"];
 	/** IAM actions required for the DeleteRecoveryPlanExecution API call. */
-	static readonly DeleteRecoveryPlanExecution: string[] = [];
+	static readonly DeleteRecoveryPlanExecution: string[] = [
+		"drs:DeleteRecoveryPlanExecution",
+	];
 	/** IAM actions required for the DeleteRecoveryPlanStep API call. */
 	static readonly DeleteRecoveryPlanStep: string[] = [
 		"drs:DeleteRecoveryPlanStep",
@@ -1060,7 +1062,9 @@ export class DRSOperations {
 		"drs:GetRecoveryPlanExecution",
 	];
 	/** IAM actions required for the GetRecoveryPlanExecutionStep API call. */
-	static readonly opGetRecoveryPlanExecutionStep: string[] = [];
+	static readonly opGetRecoveryPlanExecutionStep: string[] = [
+		"drs:GetRecoveryPlanExecutionStep",
+	];
 	/** IAM actions required for the GetRecoveryPlanStep API call. */
 	static readonly opGetRecoveryPlanStep: string[] = ["drs:GetRecoveryPlanStep"];
 	/** IAM actions required for the GetReplicationConfiguration API call. */

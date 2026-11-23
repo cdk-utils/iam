@@ -16,6 +16,8 @@ export class SageMakerActions {
 	static readonly AccessModelPackage = "sagemaker:AccessModelPackage";
 	/** [Write] sagemaker:AddAssociation */
 	static readonly AddAssociation = "sagemaker:AddAssociation";
+	/** [Write] sagemaker:AddInferenceGateway */
+	static readonly AddInferenceGateway = "sagemaker:AddInferenceGateway";
 	/** [Tagging] sagemaker:AddTags */
 	static readonly AddTags = "sagemaker:AddTags";
 	/** [Write] sagemaker:AssociateTrialComponent */
@@ -76,6 +78,8 @@ export class SageMakerActions {
 	static readonly CreateAutoMLJobV2 = "sagemaker:CreateAutoMLJobV2";
 	/** [Write] sagemaker:CreateCluster */
 	static readonly CreateCluster = "sagemaker:CreateCluster";
+	/** [Write] sagemaker:CreateClusterExtension */
+	static readonly CreateClusterExtension = "sagemaker:CreateClusterExtension";
 	/** [Write] sagemaker:CreateClusterSchedulerConfig */
 	static readonly CreateClusterSchedulerConfig =
 		"sagemaker:CreateClusterSchedulerConfig";
@@ -112,6 +116,9 @@ export class SageMakerActions {
 	static readonly CreateFeatureGroup = "sagemaker:CreateFeatureGroup";
 	/** [Write] sagemaker:CreateFlowDefinition */
 	static readonly CreateFlowDefinition = "sagemaker:CreateFlowDefinition";
+	/** [Write] sagemaker:CreateGlobalInferenceGateway */
+	static readonly CreateGlobalInferenceGateway =
+		"sagemaker:CreateGlobalInferenceGateway";
 	/** [Write] sagemaker:CreateHub */
 	static readonly CreateHub = "sagemaker:CreateHub";
 	/** [Read] sagemaker:CreateHubContentPresignedUrls */
@@ -253,6 +260,8 @@ export class SageMakerActions {
 	static readonly DeleteAssociation = "sagemaker:DeleteAssociation";
 	/** [Write] sagemaker:DeleteCluster */
 	static readonly DeleteCluster = "sagemaker:DeleteCluster";
+	/** [Write] sagemaker:DeleteClusterExtension */
+	static readonly DeleteClusterExtension = "sagemaker:DeleteClusterExtension";
 	/** [Write] sagemaker:DeleteClusterSchedulerConfig */
 	static readonly DeleteClusterSchedulerConfig =
 		"sagemaker:DeleteClusterSchedulerConfig";
@@ -289,6 +298,9 @@ export class SageMakerActions {
 	static readonly DeleteFeatureGroup = "sagemaker:DeleteFeatureGroup";
 	/** [Write] sagemaker:DeleteFlowDefinition */
 	static readonly DeleteFlowDefinition = "sagemaker:DeleteFlowDefinition";
+	/** [Write] sagemaker:DeleteGlobalInferenceGateway */
+	static readonly DeleteGlobalInferenceGateway =
+		"sagemaker:DeleteGlobalInferenceGateway";
 	/** [Write] sagemaker:DeleteHub */
 	static readonly DeleteHub = "sagemaker:DeleteHub";
 	/** [Write] sagemaker:DeleteHubContent */
@@ -414,10 +426,16 @@ export class SageMakerActions {
 	static readonly DescribeAutoMLJob = "sagemaker:DescribeAutoMLJob";
 	/** [Read] sagemaker:DescribeAutoMLJobV2 */
 	static readonly DescribeAutoMLJobV2 = "sagemaker:DescribeAutoMLJobV2";
+	/** [Read] sagemaker:DescribeCapacityReservation */
+	static readonly DescribeCapacityReservation =
+		"sagemaker:DescribeCapacityReservation";
 	/** [Read] sagemaker:DescribeCluster */
 	static readonly DescribeCluster = "sagemaker:DescribeCluster";
 	/** [Read] sagemaker:DescribeClusterEvent */
 	static readonly DescribeClusterEvent = "sagemaker:DescribeClusterEvent";
+	/** [Read] sagemaker:DescribeClusterExtension */
+	static readonly DescribeClusterExtension =
+		"sagemaker:DescribeClusterExtension";
 	/** [Read] sagemaker:DescribeClusterInference */
 	static readonly DescribeClusterInference =
 		"sagemaker:DescribeClusterInference";
@@ -461,6 +479,9 @@ export class SageMakerActions {
 	static readonly DescribeFeatureMetadata = "sagemaker:DescribeFeatureMetadata";
 	/** [Read] sagemaker:DescribeFlowDefinition */
 	static readonly DescribeFlowDefinition = "sagemaker:DescribeFlowDefinition";
+	/** [Read] sagemaker:DescribeGlobalInferenceGateway */
+	static readonly DescribeGlobalInferenceGateway =
+		"sagemaker:DescribeGlobalInferenceGateway";
 	/** [Read] sagemaker:DescribeHub */
 	static readonly DescribeHub = "sagemaker:DescribeHub";
 	/** [Read] sagemaker:DescribeHubContent */
@@ -550,6 +571,9 @@ export class SageMakerActions {
 	/** [Read] sagemaker:DescribeReservedCapacity */
 	static readonly DescribeReservedCapacity =
 		"sagemaker:DescribeReservedCapacity";
+	/** [Read] sagemaker:DescribeResourceAssociations */
+	static readonly DescribeResourceAssociations =
+		"sagemaker:DescribeResourceAssociations";
 	/** [Read] sagemaker:DescribeSharedModel */
 	static readonly DescribeSharedModel = "sagemaker:DescribeSharedModel";
 	/** [Read] sagemaker:DescribeSpace */
@@ -600,6 +624,9 @@ export class SageMakerActions {
 		"sagemaker:ExecuteTrainingOperation";
 	/** [Write] sagemaker:ExtendTrainingPlan */
 	static readonly ExtendTrainingPlan = "sagemaker:ExtendTrainingPlan";
+	/** [Read] sagemaker:GetCapacityReservationUsage */
+	static readonly actionGetCapacityReservationUsage =
+		"sagemaker:GetCapacityReservationUsage";
 	/** [Read] sagemaker:GetDeployments */
 	static readonly actionGetDeployments = "sagemaker:GetDeployments";
 	/** [Read] sagemaker:GetDeviceFleetReport */
@@ -642,6 +669,12 @@ export class SageMakerActions {
 	/** [Read] sagemaker:InvokeEndpointWithResponseStream */
 	static readonly InvokeEndpointWithResponseStream =
 		"sagemaker:InvokeEndpointWithResponseStream";
+	/** [Read] sagemaker:InvokeGlobalInferenceGateway */
+	static readonly InvokeGlobalInferenceGateway =
+		"sagemaker:InvokeGlobalInferenceGateway";
+	/** [Read] sagemaker:InvokeGlobalInferenceGatewayWithResponseStream */
+	static readonly InvokeGlobalInferenceGatewayWithResponseStream =
+		"sagemaker:InvokeGlobalInferenceGatewayWithResponseStream";
 	/** [Read] sagemaker:InvokeInferenceRouter */
 	static readonly InvokeInferenceRouter = "sagemaker:InvokeInferenceRouter";
 	/** [Read] sagemaker:InvokeInferenceRouterAsync */
@@ -673,8 +706,16 @@ export class SageMakerActions {
 	/** [List] sagemaker:ListCandidatesForAutoMLJob */
 	static readonly ListCandidatesForAutoMLJob =
 		"sagemaker:ListCandidatesForAutoMLJob";
+	/** [List] sagemaker:ListCapacityReservations */
+	static readonly ListCapacityReservations =
+		"sagemaker:ListCapacityReservations";
 	/** [List] sagemaker:ListClusterEvents */
 	static readonly ListClusterEvents = "sagemaker:ListClusterEvents";
+	/** [List] sagemaker:ListClusterExtensionVersions */
+	static readonly ListClusterExtensionVersions =
+		"sagemaker:ListClusterExtensionVersions";
+	/** [List] sagemaker:ListClusterExtensions */
+	static readonly ListClusterExtensions = "sagemaker:ListClusterExtensions";
 	/** [List] sagemaker:ListClusterNodes */
 	static readonly ListClusterNodes = "sagemaker:ListClusterNodes";
 	/** [List] sagemaker:ListClusterSchedulerConfigs */
@@ -713,6 +754,9 @@ export class SageMakerActions {
 	static readonly ListFeatureGroups = "sagemaker:ListFeatureGroups";
 	/** [List] sagemaker:ListFlowDefinitions */
 	static readonly ListFlowDefinitions = "sagemaker:ListFlowDefinitions";
+	/** [List] sagemaker:ListGlobalInferenceGateways */
+	static readonly ListGlobalInferenceGateways =
+		"sagemaker:ListGlobalInferenceGateways";
 	/** [List] sagemaker:ListHubContentVersions */
 	static readonly ListHubContentVersions = "sagemaker:ListHubContentVersions";
 	/** [List] sagemaker:ListHubContents */
@@ -735,6 +779,8 @@ export class SageMakerActions {
 	/** [List] sagemaker:ListInferenceExperiments */
 	static readonly ListInferenceExperiments =
 		"sagemaker:ListInferenceExperiments";
+	/** [List] sagemaker:ListInferenceGateways */
+	static readonly ListInferenceGateways = "sagemaker:ListInferenceGateways";
 	/** [List] sagemaker:ListInferenceRecommendationsJobSteps */
 	static readonly ListInferenceRecommendationsJobSteps =
 		"sagemaker:ListInferenceRecommendationsJobSteps";
@@ -877,6 +923,8 @@ export class SageMakerActions {
 	static readonly QueryLineage = "sagemaker:QueryLineage";
 	/** [Write] sagemaker:RegisterDevices */
 	static readonly RegisterDevices = "sagemaker:RegisterDevices";
+	/** [Write] sagemaker:RemoveInferenceGateway */
+	static readonly RemoveInferenceGateway = "sagemaker:RemoveInferenceGateway";
 	/** [Read] sagemaker:RenderUiTemplate */
 	static readonly RenderUiTemplate = "sagemaker:RenderUiTemplate";
 	/** [Write] sagemaker:RetryPipelineExecution */
@@ -982,6 +1030,8 @@ export class SageMakerActions {
 	static readonly UpdateArtifact = "sagemaker:UpdateArtifact";
 	/** [Write] sagemaker:UpdateCluster */
 	static readonly UpdateCluster = "sagemaker:UpdateCluster";
+	/** [Write] sagemaker:UpdateClusterExtension */
+	static readonly UpdateClusterExtension = "sagemaker:UpdateClusterExtension";
 	/** [Write] sagemaker:UpdateClusterInference */
 	static readonly UpdateClusterInference = "sagemaker:UpdateClusterInference";
 	/** [Write] sagemaker:UpdateClusterSchedulerConfig */
@@ -1012,6 +1062,9 @@ export class SageMakerActions {
 	static readonly UpdateFeatureGroup = "sagemaker:UpdateFeatureGroup";
 	/** [Write] sagemaker:UpdateFeatureMetadata */
 	static readonly UpdateFeatureMetadata = "sagemaker:UpdateFeatureMetadata";
+	/** [Write] sagemaker:UpdateGlobalInferenceGateway */
+	static readonly UpdateGlobalInferenceGateway =
+		"sagemaker:UpdateGlobalInferenceGateway";
 	/** [Write] sagemaker:UpdateHub */
 	static readonly UpdateHub = "sagemaker:UpdateHub";
 	/** [Write] sagemaker:UpdateHubContent */
@@ -1100,8 +1153,10 @@ export class SageMakerActions {
 		SageMakerActions.DescribeArtifact,
 		SageMakerActions.DescribeAutoMLJob,
 		SageMakerActions.DescribeAutoMLJobV2,
+		SageMakerActions.DescribeCapacityReservation,
 		SageMakerActions.DescribeCluster,
 		SageMakerActions.DescribeClusterEvent,
+		SageMakerActions.DescribeClusterExtension,
 		SageMakerActions.DescribeClusterInference,
 		SageMakerActions.DescribeClusterNode,
 		SageMakerActions.DescribeClusterSchedulerConfig,
@@ -1121,6 +1176,7 @@ export class SageMakerActions {
 		SageMakerActions.DescribeFeatureGroup,
 		SageMakerActions.DescribeFeatureMetadata,
 		SageMakerActions.DescribeFlowDefinition,
+		SageMakerActions.DescribeGlobalInferenceGateway,
 		SageMakerActions.DescribeHub,
 		SageMakerActions.DescribeHubContent,
 		SageMakerActions.DescribeHumanLoop,
@@ -1157,6 +1213,7 @@ export class SageMakerActions {
 		SageMakerActions.DescribeProcessingJob,
 		SageMakerActions.DescribeProject,
 		SageMakerActions.DescribeReservedCapacity,
+		SageMakerActions.DescribeResourceAssociations,
 		SageMakerActions.DescribeSharedModel,
 		SageMakerActions.DescribeSpace,
 		SageMakerActions.DescribeStudioLifecycleConfig,
@@ -1171,6 +1228,7 @@ export class SageMakerActions {
 		SageMakerActions.DescribeUserProfile,
 		SageMakerActions.DescribeWorkforce,
 		SageMakerActions.DescribeWorkteam,
+		SageMakerActions.actionGetCapacityReservationUsage,
 		SageMakerActions.actionGetDeployments,
 		SageMakerActions.actionGetDeviceFleetReport,
 		SageMakerActions.actionGetDeviceRegistration,
@@ -1187,6 +1245,8 @@ export class SageMakerActions {
 		SageMakerActions.InvokeEndpoint,
 		SageMakerActions.InvokeEndpointAsync,
 		SageMakerActions.InvokeEndpointWithResponseStream,
+		SageMakerActions.InvokeGlobalInferenceGateway,
+		SageMakerActions.InvokeGlobalInferenceGatewayWithResponseStream,
 		SageMakerActions.InvokeInferenceRouter,
 		SageMakerActions.InvokeInferenceRouterAsync,
 		SageMakerActions.RenderUiTemplate,
@@ -1196,6 +1256,7 @@ export class SageMakerActions {
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
 		SageMakerActions.AddAssociation,
+		SageMakerActions.AddInferenceGateway,
 		SageMakerActions.AssociateTrialComponent,
 		SageMakerActions.AttachClusterNodeNetworkInterface,
 		SageMakerActions.AttachClusterNodeVolume,
@@ -1219,6 +1280,7 @@ export class SageMakerActions {
 		SageMakerActions.CreateAutoMLJob,
 		SageMakerActions.CreateAutoMLJobV2,
 		SageMakerActions.CreateCluster,
+		SageMakerActions.CreateClusterExtension,
 		SageMakerActions.CreateClusterSchedulerConfig,
 		SageMakerActions.CreateCodeRepository,
 		SageMakerActions.CreateCompilationJob,
@@ -1235,6 +1297,7 @@ export class SageMakerActions {
 		SageMakerActions.CreateExperiment,
 		SageMakerActions.CreateFeatureGroup,
 		SageMakerActions.CreateFlowDefinition,
+		SageMakerActions.CreateGlobalInferenceGateway,
 		SageMakerActions.CreateHub,
 		SageMakerActions.CreateHubContentReference,
 		SageMakerActions.CreateHumanTaskUi,
@@ -1294,6 +1357,7 @@ export class SageMakerActions {
 		SageMakerActions.DeleteArtifact,
 		SageMakerActions.DeleteAssociation,
 		SageMakerActions.DeleteCluster,
+		SageMakerActions.DeleteClusterExtension,
 		SageMakerActions.DeleteClusterSchedulerConfig,
 		SageMakerActions.DeleteCodeRepository,
 		SageMakerActions.DeleteCompilationJob,
@@ -1309,6 +1373,7 @@ export class SageMakerActions {
 		SageMakerActions.DeleteExperiment,
 		SageMakerActions.DeleteFeatureGroup,
 		SageMakerActions.DeleteFlowDefinition,
+		SageMakerActions.DeleteGlobalInferenceGateway,
 		SageMakerActions.DeleteHub,
 		SageMakerActions.DeleteHubContent,
 		SageMakerActions.DeleteHubContentReference,
@@ -1366,6 +1431,7 @@ export class SageMakerActions {
 		SageMakerActions.PutRecord,
 		SageMakerActions.PutResourcePolicy,
 		SageMakerActions.RegisterDevices,
+		SageMakerActions.RemoveInferenceGateway,
 		SageMakerActions.RetryPipelineExecution,
 		SageMakerActions.Sample,
 		SageMakerActions.SampleTrainingSession,
@@ -1410,6 +1476,7 @@ export class SageMakerActions {
 		SageMakerActions.UpdateAppImageConfig,
 		SageMakerActions.UpdateArtifact,
 		SageMakerActions.UpdateCluster,
+		SageMakerActions.UpdateClusterExtension,
 		SageMakerActions.UpdateClusterInference,
 		SageMakerActions.UpdateClusterSchedulerConfig,
 		SageMakerActions.UpdateClusterSoftware,
@@ -1424,6 +1491,7 @@ export class SageMakerActions {
 		SageMakerActions.UpdateExperiment,
 		SageMakerActions.UpdateFeatureGroup,
 		SageMakerActions.UpdateFeatureMetadata,
+		SageMakerActions.UpdateGlobalInferenceGateway,
 		SageMakerActions.UpdateHub,
 		SageMakerActions.UpdateHubContent,
 		SageMakerActions.UpdateHubContentReference,
@@ -1470,7 +1538,10 @@ export class SageMakerActions {
 		SageMakerActions.ListAssociations,
 		SageMakerActions.ListAutoMLJobs,
 		SageMakerActions.ListCandidatesForAutoMLJob,
+		SageMakerActions.ListCapacityReservations,
 		SageMakerActions.ListClusterEvents,
+		SageMakerActions.ListClusterExtensionVersions,
+		SageMakerActions.ListClusterExtensions,
 		SageMakerActions.ListClusterNodes,
 		SageMakerActions.ListClusterSchedulerConfigs,
 		SageMakerActions.ListClusters,
@@ -1489,6 +1560,7 @@ export class SageMakerActions {
 		SageMakerActions.ListExperiments,
 		SageMakerActions.ListFeatureGroups,
 		SageMakerActions.ListFlowDefinitions,
+		SageMakerActions.ListGlobalInferenceGateways,
 		SageMakerActions.ListHubContentVersions,
 		SageMakerActions.ListHubContents,
 		SageMakerActions.ListHubs,
@@ -1499,6 +1571,7 @@ export class SageMakerActions {
 		SageMakerActions.ListImages,
 		SageMakerActions.ListInferenceComponents,
 		SageMakerActions.ListInferenceExperiments,
+		SageMakerActions.ListInferenceGateways,
 		SageMakerActions.ListInferenceRecommendationsJobSteps,
 		SageMakerActions.ListInferenceRecommendationsJobs,
 		SageMakerActions.ListInferenceRouters,
@@ -2314,6 +2387,42 @@ export interface SageMakerExperimentTrialComponentArnComponents {
 }
 
 /**
+ * Properties for building a extension ARN.
+ */
+export interface SageMakerExtensionArnProps {
+	/** The ClusterIdentifier component of the ARN. */
+	readonly clusterIdentifier: string;
+	/** The ExtensionName component of the ARN. */
+	readonly extensionName: string;
+	/** The ExtensionId component of the ARN. */
+	readonly extensionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a extension ARN.
+ */
+export interface SageMakerExtensionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ClusterIdentifier component. */
+	readonly clusterIdentifier: string;
+	/** The ExtensionName component. */
+	readonly extensionName: string;
+	/** The ExtensionId component. */
+	readonly extensionId: string;
+}
+
+/**
  * Properties for building a feature-group ARN.
  */
 export interface SageMakerFeatureGroupArnProps {
@@ -2367,6 +2476,34 @@ export interface SageMakerFlowDefinitionArnComponents {
 	readonly account: string;
 	/** The FlowDefinitionName component. */
 	readonly flowDefinitionName: string;
+}
+
+/**
+ * Properties for building a global-inference-gateway ARN.
+ */
+export interface SageMakerGlobalInferenceGatewayArnProps {
+	/** The GlobalInferenceGatewayId component of the ARN. */
+	readonly globalInferenceGatewayId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a global-inference-gateway ARN.
+ */
+export interface SageMakerGlobalInferenceGatewayArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The GlobalInferenceGatewayId component. */
+	readonly globalInferenceGatewayId: string;
 }
 
 /**
@@ -3462,6 +3599,34 @@ export interface SageMakerSharedModelEventArnComponents {
 }
 
 /**
+ * Properties for building a sm-capacity-reservation ARN.
+ */
+export interface SageMakerSmCapacityReservationArnProps {
+	/** The CapacityReservationId component of the ARN. */
+	readonly capacityReservationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a sm-capacity-reservation ARN.
+ */
+export interface SageMakerSmCapacityReservationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The CapacityReservationId component. */
+	readonly capacityReservationId: string;
+}
+
+/**
  * Properties for building a space ARN.
  */
 export interface SageMakerSpaceArnProps {
@@ -3773,10 +3938,14 @@ const ExperimentTrialArnRegex =
 	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):experiment-trial\/(?<trialName>[^:/?]+)$/;
 const ExperimentTrialComponentArnRegex =
 	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):experiment-trial-component\/(?<trialComponentName>[^:/?]+)$/;
+const ExtensionArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):extension\/(?<clusterIdentifier>[^:/?]+)\/(?<extensionName>[^:/?]+)\/(?<extensionId>[^:/?]+)$/;
 const FeatureGroupArnRegex =
 	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):feature-group\/(?<featureGroupName>[^:/?]+)$/;
 const FlowDefinitionArnRegex =
 	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):flow-definition\/(?<flowDefinitionName>[^:/?]+)$/;
+const GlobalInferenceGatewayArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):global-inference-gateway\/(?<globalInferenceGatewayId>[^:/?]+)$/;
 const HubArnRegex =
 	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):hub\/(?<hubName>[^:/?]+)$/;
 const HubContentArnRegex =
@@ -3853,6 +4022,8 @@ const SharedModelArnRegex =
 	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):shared-model\/(?<sharedModelId>[^:/?]+)$/;
 const SharedModelEventArnRegex =
 	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):shared-model-event\/(?<eventId>[^:/?]+)$/;
+const SmCapacityReservationArnRegex =
+	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):sm-capacity-reservation\/(?<capacityReservationId>[^:/?]+)$/;
 const SpaceArnRegex =
 	/^arn:(?<partition>[^:]+):sagemaker:(?<region>[^:]*):(?<account>[^:]*):space\/(?<domainId>[^:/?]+)\/(?<spaceName>[^:/?]+)$/;
 const StudioLifecycleConfigArnRegex =
@@ -4723,6 +4894,39 @@ export class SageMakerResources {
 	}
 
 	/**
+	 * Builds an ARN for the extension resource.
+	 */
+	static extension(props: SageMakerExtensionArnProps): string {
+		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:extension/${props.clusterIdentifier}/${props.extensionName}/${props.extensionId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the extension resource.
+	 */
+	static isValidExtensionArn(arn: string): boolean {
+		return ExtensionArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a extension ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseExtensionArn(arn: string): SageMakerExtensionArnComponents {
+		const match = ExtensionArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid extension ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			clusterIdentifier: match.groups!.clusterIdentifier,
+			extensionName: match.groups!.extensionName,
+			extensionId: match.groups!.extensionId,
+		};
+	}
+
+	/**
 	 * Builds an ARN for the feature-group resource.
 	 */
 	static featureGroup(props: SageMakerFeatureGroupArnProps): string {
@@ -4783,6 +4987,41 @@ export class SageMakerResources {
 			region: match.groups.region,
 			account: match.groups.account,
 			flowDefinitionName: match.groups!.flowDefinitionName,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the global-inference-gateway resource.
+	 */
+	static globalInferenceGateway(
+		props: SageMakerGlobalInferenceGatewayArnProps,
+	): string {
+		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:global-inference-gateway/${props.globalInferenceGatewayId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the global-inference-gateway resource.
+	 */
+	static isValidGlobalInferenceGatewayArn(arn: string): boolean {
+		return GlobalInferenceGatewayArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a global-inference-gateway ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseGlobalInferenceGatewayArn(
+		arn: string,
+	): SageMakerGlobalInferenceGatewayArnComponents {
+		const match = GlobalInferenceGatewayArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid global-inference-gateway ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			globalInferenceGatewayId: match.groups!.globalInferenceGatewayId,
 		};
 	}
 
@@ -6044,6 +6283,41 @@ export class SageMakerResources {
 	}
 
 	/**
+	 * Builds an ARN for the sm-capacity-reservation resource.
+	 */
+	static smCapacityReservation(
+		props: SageMakerSmCapacityReservationArnProps,
+	): string {
+		return `arn:${props.partition ?? "aws"}:sagemaker:${props.region ?? "*"}:${props.account ?? "*"}:sm-capacity-reservation/${props.capacityReservationId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the sm-capacity-reservation resource.
+	 */
+	static isValidSmCapacityReservationArn(arn: string): boolean {
+		return SmCapacityReservationArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a sm-capacity-reservation ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseSmCapacityReservationArn(
+		arn: string,
+	): SageMakerSmCapacityReservationArnComponents {
+		const match = SmCapacityReservationArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid sm-capacity-reservation ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			capacityReservationId: match.groups!.capacityReservationId,
+		};
+	}
+
+	/**
 	 * Builds an ARN for the space resource.
 	 */
 	static space(props: SageMakerSpaceArnProps): string {
@@ -6337,6 +6611,10 @@ export class SageMakerResources {
 export class SageMakerOperations {
 	/** IAM actions required for the AddAssociation API call. */
 	static readonly AddAssociation: string[] = ["sagemaker:AddAssociation"];
+	/** IAM actions required for the AddInferenceGateway API call. */
+	static readonly AddInferenceGateway: string[] = [
+		"sagemaker:AddInferenceGateway",
+	];
 	/** IAM actions required for the AddTags API call. */
 	static readonly AddTags: string[] = ["sagemaker:AddTags"];
 	/** IAM actions required for the AssociateTrialComponent API call. */
@@ -6450,7 +6728,10 @@ export class SageMakerOperations {
 		"sagemaker:UpdateClusterSoftware",
 	];
 	/** IAM actions required for the CreateClusterExtension API call. */
-	static readonly CreateClusterExtension: string[] = ["sagemaker:AddTags"];
+	static readonly CreateClusterExtension: string[] = [
+		"sagemaker:AddTags",
+		"sagemaker:CreateClusterExtension",
+	];
 	/** IAM actions required for the CreateClusterSchedulerConfig API call. */
 	static readonly CreateClusterSchedulerConfig: string[] = [
 		"sagemaker:AddTags",
@@ -6523,6 +6804,12 @@ export class SageMakerOperations {
 	static readonly CreateFlowDefinition: string[] = [
 		"sagemaker:AddTags",
 		"sagemaker:CreateFlowDefinition",
+		"iam:PassRole",
+	];
+	/** IAM actions required for the CreateGlobalInferenceGateway API call. */
+	static readonly CreateGlobalInferenceGateway: string[] = [
+		"sagemaker:AddTags",
+		"sagemaker:CreateGlobalInferenceGateway",
 		"iam:PassRole",
 	];
 	/** IAM actions required for the CreateHub API call. */
@@ -6809,7 +7096,9 @@ export class SageMakerOperations {
 	/** IAM actions required for the DeleteCluster API call. */
 	static readonly DeleteCluster: string[] = ["sagemaker:DeleteCluster"];
 	/** IAM actions required for the DeleteClusterExtension API call. */
-	static readonly DeleteClusterExtension: string[] = [];
+	static readonly DeleteClusterExtension: string[] = [
+		"sagemaker:DeleteClusterExtension",
+	];
 	/** IAM actions required for the DeleteClusterSchedulerConfig API call. */
 	static readonly DeleteClusterSchedulerConfig: string[] = [
 		"sagemaker:DeleteClusterSchedulerConfig",
@@ -6859,6 +7148,10 @@ export class SageMakerOperations {
 	/** IAM actions required for the DeleteFlowDefinition API call. */
 	static readonly DeleteFlowDefinition: string[] = [
 		"sagemaker:DeleteFlowDefinition",
+	];
+	/** IAM actions required for the DeleteGlobalInferenceGateway API call. */
+	static readonly DeleteGlobalInferenceGateway: string[] = [
+		"sagemaker:DeleteGlobalInferenceGateway",
 	];
 	/** IAM actions required for the DeleteHub API call. */
 	static readonly DeleteHub: string[] = ["sagemaker:DeleteHub"];
@@ -7016,6 +7309,10 @@ export class SageMakerOperations {
 	static readonly DescribeAutoMLJobV2: string[] = [
 		"sagemaker:DescribeAutoMLJobV2",
 	];
+	/** IAM actions required for the DescribeCapacityReservation API call. */
+	static readonly DescribeCapacityReservation: string[] = [
+		"sagemaker:DescribeCapacityReservation",
+	];
 	/** IAM actions required for the DescribeCluster API call. */
 	static readonly DescribeCluster: string[] = ["sagemaker:DescribeCluster"];
 	/** IAM actions required for the DescribeClusterEvent API call. */
@@ -7023,7 +7320,9 @@ export class SageMakerOperations {
 		"sagemaker:DescribeClusterEvent",
 	];
 	/** IAM actions required for the DescribeClusterExtension API call. */
-	static readonly DescribeClusterExtension: string[] = [];
+	static readonly DescribeClusterExtension: string[] = [
+		"sagemaker:DescribeClusterExtension",
+	];
 	/** IAM actions required for the DescribeClusterNode API call. */
 	static readonly DescribeClusterNode: string[] = [
 		"sagemaker:DescribeClusterNode",
@@ -7083,6 +7382,10 @@ export class SageMakerOperations {
 	/** IAM actions required for the DescribeFlowDefinition API call. */
 	static readonly DescribeFlowDefinition: string[] = [
 		"sagemaker:DescribeFlowDefinition",
+	];
+	/** IAM actions required for the DescribeGlobalInferenceGateway API call. */
+	static readonly DescribeGlobalInferenceGateway: string[] = [
+		"sagemaker:DescribeGlobalInferenceGateway",
 	];
 	/** IAM actions required for the DescribeHub API call. */
 	static readonly DescribeHub: string[] = ["sagemaker:DescribeHub"];
@@ -7210,6 +7513,10 @@ export class SageMakerOperations {
 	static readonly DescribeReservedCapacity: string[] = [
 		"sagemaker:DescribeReservedCapacity",
 	];
+	/** IAM actions required for the DescribeResourceAssociations API call. */
+	static readonly DescribeResourceAssociations: string[] = [
+		"sagemaker:DescribeResourceAssociations",
+	];
 	/** IAM actions required for the DescribeSpace API call. */
 	static readonly DescribeSpace: string[] = ["sagemaker:DescribeSpace"];
 	/** IAM actions required for the DescribeStudioLifecycleConfig API call. */
@@ -7282,6 +7589,10 @@ export class SageMakerOperations {
 	static readonly ExtendTrainingPlan: string[] = [
 		"sagemaker:ExtendTrainingPlan",
 	];
+	/** IAM actions required for the GetCapacityReservationUsage API call. */
+	static readonly opGetCapacityReservationUsage: string[] = [
+		"sagemaker:GetCapacityReservationUsage",
+	];
 	/** IAM actions required for the GetDeployments API call. */
 	static readonly opGetDeployments: string[] = [];
 	/** IAM actions required for the GetDeviceFleetReport API call. */
@@ -7342,6 +7653,10 @@ export class SageMakerOperations {
 		"sagemaker:CallWithBearerToken",
 		"sagemaker:InvokeEndpoint",
 	];
+	/** IAM actions required for the InvokeGlobalInferenceGateway API call. */
+	static readonly InvokeGlobalInferenceGateway: string[] = [];
+	/** IAM actions required for the InvokeGlobalInferenceGatewayWithResponseStream API call. */
+	static readonly InvokeGlobalInferenceGatewayWithResponseStream: string[] = [];
 	/** IAM actions required for the InvokeInferenceRouter API call. */
 	static readonly InvokeInferenceRouter: string[] = [];
 	/** IAM actions required for the InvokeInferenceRouterAsync API call. */
@@ -7380,12 +7695,20 @@ export class SageMakerOperations {
 	static readonly ListCandidatesForAutoMLJob: string[] = [
 		"sagemaker:ListCandidatesForAutoMLJob",
 	];
+	/** IAM actions required for the ListCapacityReservations API call. */
+	static readonly ListCapacityReservations: string[] = [
+		"sagemaker:ListCapacityReservations",
+	];
 	/** IAM actions required for the ListClusterEvents API call. */
 	static readonly ListClusterEvents: string[] = ["sagemaker:ListClusterEvents"];
 	/** IAM actions required for the ListClusterExtensionVersions API call. */
-	static readonly ListClusterExtensionVersions: string[] = [];
+	static readonly ListClusterExtensionVersions: string[] = [
+		"sagemaker:ListClusterExtensionVersions",
+	];
 	/** IAM actions required for the ListClusterExtensions API call. */
-	static readonly ListClusterExtensions: string[] = [];
+	static readonly ListClusterExtensions: string[] = [
+		"sagemaker:ListClusterExtensions",
+	];
 	/** IAM actions required for the ListClusterNodes API call. */
 	static readonly ListClusterNodes: string[] = ["sagemaker:ListClusterNodes"];
 	/** IAM actions required for the ListClusterOperations API call. */
@@ -7436,6 +7759,10 @@ export class SageMakerOperations {
 	static readonly ListFlowDefinitions: string[] = [
 		"sagemaker:ListFlowDefinitions",
 	];
+	/** IAM actions required for the ListGlobalInferenceGateways API call. */
+	static readonly ListGlobalInferenceGateways: string[] = [
+		"sagemaker:ListGlobalInferenceGateways",
+	];
 	/** IAM actions required for the ListHubContentVersions API call. */
 	static readonly ListHubContentVersions: string[] = [
 		"sagemaker:ListHubContentVersions",
@@ -7463,6 +7790,10 @@ export class SageMakerOperations {
 	/** IAM actions required for the ListInferenceExperiments API call. */
 	static readonly ListInferenceExperiments: string[] = [
 		"sagemaker:ListInferenceExperiments",
+	];
+	/** IAM actions required for the ListInferenceGateways API call. */
+	static readonly ListInferenceGateways: string[] = [
+		"sagemaker:ListInferenceGateways",
 	];
 	/** IAM actions required for the ListInferenceRecommendationsJobSteps API call. */
 	static readonly ListInferenceRecommendationsJobSteps: string[] = [
@@ -7632,6 +7963,11 @@ export class SageMakerOperations {
 	static readonly ListWorkforces: string[] = ["sagemaker:ListWorkforces"];
 	/** IAM actions required for the ListWorkteams API call. */
 	static readonly ListWorkteams: string[] = ["sagemaker:ListWorkteams"];
+	/** IAM actions required for the MoveClusterNodes API call. */
+	static readonly MoveClusterNodes: string[] = [
+		"sagemaker:BatchAddClusterNodes",
+		"sagemaker:BatchDeleteClusterNodes",
+	];
 	/** IAM actions required for the PutEndpointPolicy API call. */
 	static readonly PutEndpointPolicy: string[] = ["sagemaker:PutEndpointPolicy"];
 	/** IAM actions required for the PutModelPackageGroupPolicy API call. */
@@ -7644,6 +7980,10 @@ export class SageMakerOperations {
 	static readonly QueryLineage: string[] = ["sagemaker:QueryLineage"];
 	/** IAM actions required for the RegisterDevices API call. */
 	static readonly RegisterDevices: string[] = [];
+	/** IAM actions required for the RemoveInferenceGateway API call. */
+	static readonly RemoveInferenceGateway: string[] = [
+		"sagemaker:RemoveInferenceGateway",
+	];
 	/** IAM actions required for the RenderUiTemplate API call. */
 	static readonly RenderUiTemplate: string[] = [
 		"iam:PassRole",
@@ -7802,7 +8142,9 @@ export class SageMakerOperations {
 		"sagemaker:UpdateClusterSoftware",
 	];
 	/** IAM actions required for the UpdateClusterExtension API call. */
-	static readonly UpdateClusterExtension: string[] = [];
+	static readonly UpdateClusterExtension: string[] = [
+		"sagemaker:UpdateClusterExtension",
+	];
 	/** IAM actions required for the UpdateClusterSchedulerConfig API call. */
 	static readonly UpdateClusterSchedulerConfig: string[] = [
 		"sagemaker:UpdateClusterSchedulerConfig",
@@ -7845,6 +8187,10 @@ export class SageMakerOperations {
 	/** IAM actions required for the UpdateFeatureMetadata API call. */
 	static readonly UpdateFeatureMetadata: string[] = [
 		"sagemaker:UpdateFeatureMetadata",
+	];
+	/** IAM actions required for the UpdateGlobalInferenceGateway API call. */
+	static readonly UpdateGlobalInferenceGateway: string[] = [
+		"sagemaker:UpdateGlobalInferenceGateway",
 	];
 	/** IAM actions required for the UpdateHub API call. */
 	static readonly UpdateHub: string[] = ["sagemaker:UpdateHub"];
@@ -8048,6 +8394,11 @@ export class SageMakerConditions {
 		"sagemaker:VpcSecurityGroupIds",
 		"sagemaker:VpcSubnets",
 	];
+	/** Condition keys applicable to the CreateClusterExtension action. */
+	static readonly CreateClusterExtensionConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateClusterSchedulerConfig action. */
 	static readonly CreateClusterSchedulerConfigConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
@@ -8162,6 +8513,11 @@ export class SageMakerConditions {
 		"aws:TagKeys",
 		"sagemaker:WorkteamArn",
 		"sagemaker:WorkteamType",
+	];
+	/** Condition keys applicable to the CreateGlobalInferenceGateway action. */
+	static readonly CreateGlobalInferenceGatewayConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateHub action. */
 	static readonly CreateHubConditionKeys: string[] = [
@@ -8488,8 +8844,12 @@ export class SageMakerConditions {
 	static readonly DeleteTagsConditionKeys: string[] = ["aws:TagKeys"];
 	/** Condition keys applicable to the DescribePipeline action. */
 	static readonly DescribePipelineConditionKeys: string[] = [
+		"sagemaker:PipelineVersionAlias",
 		"sagemaker:PipelineVersionId",
 	];
+	/** Condition keys applicable to the DescribePipelineDefinitionForExecution action. */
+	static readonly DescribePipelineDefinitionForExecutionConditionKeys: string[] =
+		["sagemaker:PipelineVersionAlias", "sagemaker:PipelineVersionId"];
 	/** Condition keys applicable to the ImportHubContent action. */
 	static readonly ImportHubContentConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
@@ -8503,6 +8863,11 @@ export class SageMakerConditions {
 	/** Condition keys applicable to the InvokeEndpointAsync action. */
 	static readonly InvokeEndpointAsyncConditionKeys: string[] = [
 		"sagemaker:SourceInferenceRouterArn",
+	];
+	/** Condition keys applicable to the ListPipelineExecutions action. */
+	static readonly ListPipelineExecutionsConditionKeys: string[] = [
+		"sagemaker:PipelineVersionAlias",
+		"sagemaker:PipelineVersionId",
 	];
 	/** Condition keys applicable to the PutRecord action. */
 	static readonly PutRecordConditionKeys: string[] = [
@@ -8520,6 +8885,12 @@ export class SageMakerConditions {
 	];
 	/** Condition keys applicable to the StartPipelineExecution action. */
 	static readonly StartPipelineExecutionConditionKeys: string[] = [
+		"sagemaker:PipelineVersionAlias",
+		"sagemaker:PipelineVersionId",
+	];
+	/** Condition keys applicable to the StopPipelineExecution action. */
+	static readonly StopPipelineExecutionConditionKeys: string[] = [
+		"sagemaker:PipelineVersionAlias",
 		"sagemaker:PipelineVersionId",
 	];
 	/** Condition keys applicable to the UpdateCluster action. */
@@ -8570,6 +8941,7 @@ export class SageMakerConditions {
 	];
 	/** Condition keys applicable to the UpdatePipelineVersion action. */
 	static readonly UpdatePipelineVersionConditionKeys: string[] = [
+		"sagemaker:PipelineVersionAlias",
 		"sagemaker:PipelineVersionId",
 	];
 	/** Condition keys applicable to the UpdateProject action. */
@@ -8722,6 +9094,8 @@ export class SageMakerConditions {
 	static readonly OUTPUT_KMS_KEY_ARN = "sagemaker:OutputKmsKeyArn";
 	/** Condition key: sagemaker:OwnerUserProfileArn (ARN) */
 	static readonly OWNER_USER_PROFILE_ARN = "sagemaker:OwnerUserProfileArn";
+	/** Condition key: sagemaker:PipelineVersionAlias (String) */
+	static readonly PIPELINE_VERSION_ALIAS = "sagemaker:PipelineVersionAlias";
 	/** Condition key: sagemaker:PipelineVersionId (String) */
 	static readonly PIPELINE_VERSION_ID = "sagemaker:PipelineVersionId";
 	/** Condition key: sagemaker:RemoteAccess (String) */
@@ -9213,6 +9587,15 @@ export class SageMakerConditions {
 		value: string,
 	): Record<string, Record<string, string>> {
 		return { ArnEquals: { "sagemaker:OwnerUserProfileArn": value } };
+	}
+
+	/**
+	 * Generates a condition block for `sagemaker:PipelineVersionAlias`.
+	 */
+	static pipelineVersionAlias(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "sagemaker:PipelineVersionAlias": value } };
 	}
 
 	/**

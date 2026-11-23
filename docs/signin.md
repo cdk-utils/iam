@@ -693,6 +693,7 @@ new signin.SigninActions()
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.signin.SigninActions.property.actionGetConsoleAuthorizationConfiguration">actionGetConsoleAuthorizationConfiguration</a></code> | <code>string</code> | [Read] signin:GetConsoleAuthorizationConfiguration. |
 | <code><a href="#@cdk_utils/iam.signin.SigninActions.property.actionGetResourcePolicy">actionGetResourcePolicy</a></code> | <code>string</code> | [Read] signin:GetResourcePolicy. |
+| <code><a href="#@cdk_utils/iam.signin.SigninActions.property.actionGetSession">actionGetSession</a></code> | <code>string</code> | [Read] signin:GetSession. |
 | <code><a href="#@cdk_utils/iam.signin.SigninActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
 | <code><a href="#@cdk_utils/iam.signin.SigninActions.property.AllPermissionManagementActions">AllPermissionManagementActions</a></code> | <code>string[]</code> | All permission-management-level actions. |
 | <code><a href="#@cdk_utils/iam.signin.SigninActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
@@ -700,6 +701,7 @@ new signin.SigninActions()
 | <code><a href="#@cdk_utils/iam.signin.SigninActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
 | <code><a href="#@cdk_utils/iam.signin.SigninActions.property.Authenticate">Authenticate</a></code> | <code>string</code> | [Read] signin:Authenticate. |
 | <code><a href="#@cdk_utils/iam.signin.SigninActions.property.AuthorizeOAuth2Access">AuthorizeOAuth2Access</a></code> | <code>string</code> | [Read] signin:AuthorizeOAuth2Access. |
+| <code><a href="#@cdk_utils/iam.signin.SigninActions.property.BatchRevokeSessions">BatchRevokeSessions</a></code> | <code>string</code> | [Write] signin:BatchRevokeSessions. |
 | <code><a href="#@cdk_utils/iam.signin.SigninActions.property.CreateAccount">CreateAccount</a></code> | <code>string</code> | [Write] signin:CreateAccount. |
 | <code><a href="#@cdk_utils/iam.signin.SigninActions.property.CreateBearerToken">CreateBearerToken</a></code> | <code>string</code> | [Read] signin:CreateBearerToken. |
 | <code><a href="#@cdk_utils/iam.signin.SigninActions.property.CreateOAuth2PublicClient">CreateOAuth2PublicClient</a></code> | <code>string</code> | [Write] signin:CreateOAuth2PublicClient. |
@@ -709,6 +711,7 @@ new signin.SigninActions()
 | <code><a href="#@cdk_utils/iam.signin.SigninActions.property.DeleteResourcePermissionStatement">DeleteResourcePermissionStatement</a></code> | <code>string</code> | [Write] signin:DeleteResourcePermissionStatement. |
 | <code><a href="#@cdk_utils/iam.signin.SigninActions.property.IntrospectOAuth2Token">IntrospectOAuth2Token</a></code> | <code>string</code> | [Read] signin:IntrospectOAuth2Token. |
 | <code><a href="#@cdk_utils/iam.signin.SigninActions.property.ListResourcePermissionStatements">ListResourcePermissionStatements</a></code> | <code>string</code> | [List] signin:ListResourcePermissionStatements. |
+| <code><a href="#@cdk_utils/iam.signin.SigninActions.property.ListSessions">ListSessions</a></code> | <code>string</code> | [List] signin:ListSessions. |
 | <code><a href="#@cdk_utils/iam.signin.SigninActions.property.ListTrustedIdentityPropagationApplicationsForConsole">ListTrustedIdentityPropagationApplicationsForConsole</a></code> | <code>string</code> | [List] signin:ListTrustedIdentityPropagationApplicationsForConsole. |
 | <code><a href="#@cdk_utils/iam.signin.SigninActions.property.PutConsoleAuthorizationConfiguration">PutConsoleAuthorizationConfiguration</a></code> | <code>string</code> | [Write] signin:PutConsoleAuthorizationConfiguration. |
 | <code><a href="#@cdk_utils/iam.signin.SigninActions.property.PutResourcePermissionStatement">PutResourcePermissionStatement</a></code> | <code>string</code> | [Write] signin:PutResourcePermissionStatement. |
@@ -738,6 +741,18 @@ public readonly actionGetResourcePolicy: string;
 - *Type:* string
 
 [Read] signin:GetResourcePolicy.
+
+---
+
+##### `actionGetSession`<sup>Required</sup> <a name="actionGetSession" id="@cdk_utils/iam.signin.SigninActions.property.actionGetSession"></a>
+
+```typescript
+public readonly actionGetSession: string;
+```
+
+- *Type:* string
+
+[Read] signin:GetSession.
 
 ---
 
@@ -822,6 +837,18 @@ public readonly AuthorizeOAuth2Access: string;
 - *Type:* string
 
 [Read] signin:AuthorizeOAuth2Access.
+
+---
+
+##### `BatchRevokeSessions`<sup>Required</sup> <a name="BatchRevokeSessions" id="@cdk_utils/iam.signin.SigninActions.property.BatchRevokeSessions"></a>
+
+```typescript
+public readonly BatchRevokeSessions: string;
+```
+
+- *Type:* string
+
+[Write] signin:BatchRevokeSessions.
 
 ---
 
@@ -933,6 +960,18 @@ public readonly ListResourcePermissionStatements: string;
 
 ---
 
+##### `ListSessions`<sup>Required</sup> <a name="ListSessions" id="@cdk_utils/iam.signin.SigninActions.property.ListSessions"></a>
+
+```typescript
+public readonly ListSessions: string;
+```
+
+- *Type:* string
+
+[List] signin:ListSessions.
+
+---
+
 ##### `ListTrustedIdentityPropagationApplicationsForConsole`<sup>Required</sup> <a name="ListTrustedIdentityPropagationApplicationsForConsole" id="@cdk_utils/iam.signin.SigninActions.property.ListTrustedIdentityPropagationApplicationsForConsole"></a>
 
 ```typescript
@@ -1021,6 +1060,7 @@ new signin.SigninConditions()
 | <code><a href="#@cdk_utils/iam.signin.SigninConditions.oAuthRedirectURI">oAuthRedirectURI</a></code> | Generates a condition block for `signin:OAuthRedirectUri`. |
 | <code><a href="#@cdk_utils/iam.signin.SigninConditions.oAuthTokenType">oAuthTokenType</a></code> | Generates a condition block for `signin:OAuthTokenType`. |
 | <code><a href="#@cdk_utils/iam.signin.SigninConditions.principalARN">principalARN</a></code> | Generates a condition block for `signin:PrincipalArn`. |
+| <code><a href="#@cdk_utils/iam.signin.SigninConditions.putSignInDurationBlock">putSignInDurationBlock</a></code> | Generates a condition block for `signin:PutSignInDurationBlock`. |
 
 ---
 
@@ -1120,6 +1160,22 @@ Generates a condition block for `signin:PrincipalArn`.
 
 ---
 
+##### `putSignInDurationBlock` <a name="putSignInDurationBlock" id="@cdk_utils/iam.signin.SigninConditions.putSignInDurationBlock"></a>
+
+```typescript
+import { signin } from '@cdk_utils/iam'
+
+signin.SigninConditions.putSignInDurationBlock(value: boolean)
+```
+
+Generates a condition block for `signin:PutSignInDurationBlock`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.signin.SigninConditions.putSignInDurationBlock.parameter.value"></a>
+
+- *Type:* boolean
+
+---
+
 
 #### Constants <a name="Constants" id="Constants"></a>
 
@@ -1127,6 +1183,7 @@ Generates a condition block for `signin:PrincipalArn`.
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.signin.SigninConditions.property.AuthenticateConditionKeys">AuthenticateConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the Authenticate action. |
 | <code><a href="#@cdk_utils/iam.signin.SigninConditions.property.CreateOAuth2PublicClientConditionKeys">CreateOAuth2PublicClientConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateOAuth2PublicClient action. |
+| <code><a href="#@cdk_utils/iam.signin.SigninConditions.property.CreateOAuth2TokenConditionKeys">CreateOAuth2TokenConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateOAuth2Token action. |
 | <code><a href="#@cdk_utils/iam.signin.SigninConditions.property.IntrospectOAuth2TokenConditionKeys">IntrospectOAuth2TokenConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the IntrospectOAuth2Token action. |
 | <code><a href="#@cdk_utils/iam.signin.SigninConditions.property.O_AUTH_CLIENT_AUTHENTICATION">O_AUTH_CLIENT_AUTHENTICATION</a></code> | <code>string</code> | Condition key: signin:OAuthClientAuthentication (String). |
 | <code><a href="#@cdk_utils/iam.signin.SigninConditions.property.O_AUTH_CLIENT_ID">O_AUTH_CLIENT_ID</a></code> | <code>string</code> | Condition key: signin:OAuthClientId (String). |
@@ -1134,6 +1191,7 @@ Generates a condition block for `signin:PrincipalArn`.
 | <code><a href="#@cdk_utils/iam.signin.SigninConditions.property.O_AUTH_REDIRECT_URI">O_AUTH_REDIRECT_URI</a></code> | <code>string</code> | Condition key: signin:OAuthRedirectUri (String). |
 | <code><a href="#@cdk_utils/iam.signin.SigninConditions.property.O_AUTH_TOKEN_TYPE">O_AUTH_TOKEN_TYPE</a></code> | <code>string</code> | Condition key: signin:OAuthTokenType (String). |
 | <code><a href="#@cdk_utils/iam.signin.SigninConditions.property.PRINCIPAL_ARN">PRINCIPAL_ARN</a></code> | <code>string</code> | Condition key: signin:PrincipalArn (ARN). |
+| <code><a href="#@cdk_utils/iam.signin.SigninConditions.property.PUT_SIGN_IN_DURATION_BLOCK">PUT_SIGN_IN_DURATION_BLOCK</a></code> | <code>string</code> | Condition key: signin:PutSignInDurationBlock (Bool). |
 | <code><a href="#@cdk_utils/iam.signin.SigninConditions.property.RevokeOAuth2TokenConditionKeys">RevokeOAuth2TokenConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the RevokeOAuth2Token action. |
 
 ---
@@ -1159,6 +1217,18 @@ public readonly CreateOAuth2PublicClientConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CreateOAuth2PublicClient action.
+
+---
+
+##### `CreateOAuth2TokenConditionKeys`<sup>Required</sup> <a name="CreateOAuth2TokenConditionKeys" id="@cdk_utils/iam.signin.SigninConditions.property.CreateOAuth2TokenConditionKeys"></a>
+
+```typescript
+public readonly CreateOAuth2TokenConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateOAuth2Token action.
 
 ---
 
@@ -1243,6 +1313,18 @@ public readonly PRINCIPAL_ARN: string;
 - *Type:* string
 
 Condition key: signin:PrincipalArn (ARN).
+
+---
+
+##### `PUT_SIGN_IN_DURATION_BLOCK`<sup>Required</sup> <a name="PUT_SIGN_IN_DURATION_BLOCK" id="@cdk_utils/iam.signin.SigninConditions.property.PUT_SIGN_IN_DURATION_BLOCK"></a>
+
+```typescript
+public readonly PUT_SIGN_IN_DURATION_BLOCK: string;
+```
+
+- *Type:* string
+
+Condition key: signin:PutSignInDurationBlock (Bool).
 
 ---
 

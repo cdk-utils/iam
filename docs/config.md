@@ -3108,6 +3108,7 @@ new config.ConfigConditions()
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdk_utils/iam.config.ConfigConditions.configurationRecorderServicePrincipal">configurationRecorderServicePrincipal</a></code> | Generates a condition block for `config:ConfigurationRecorderServicePrincipal`. |
+| <code><a href="#@cdk_utils/iam.config.ConfigConditions.conformancePackType">conformancePackType</a></code> | Generates a condition block for `config:ConformancePackType`. |
 | <code><a href="#@cdk_utils/iam.config.ConfigConditions.requestTag">requestTag</a></code> | Generates a condition block for `aws:RequestTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.config.ConfigConditions.resourceTag">resourceTag</a></code> | Generates a condition block for `aws:ResourceTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.config.ConfigConditions.tagKeys">tagKeys</a></code> | Generates a condition block for `aws:TagKeys`. |
@@ -3125,6 +3126,22 @@ config.ConfigConditions.configurationRecorderServicePrincipal(value: string)
 Generates a condition block for `config:ConfigurationRecorderServicePrincipal`.
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.config.ConfigConditions.configurationRecorderServicePrincipal.parameter.value"></a>
+
+- *Type:* string
+
+---
+
+##### `conformancePackType` <a name="conformancePackType" id="@cdk_utils/iam.config.ConfigConditions.conformancePackType"></a>
+
+```typescript
+import { config } from '@cdk_utils/iam'
+
+config.ConfigConditions.conformancePackType(value: string)
+```
+
+Generates a condition block for `config:ConformancePackType`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.config.ConfigConditions.conformancePackType.parameter.value"></a>
 
 - *Type:* string
 
@@ -3188,6 +3205,8 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.config.ConfigConditions.property.AWS_RESOURCE_TAG">AWS_RESOURCE_TAG</a></code> | <code>string</code> | Condition key: aws:ResourceTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.config.ConfigConditions.property.AWS_TAG_KEYS">AWS_TAG_KEYS</a></code> | <code>string</code> | Condition key: aws:TagKeys (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.config.ConfigConditions.property.CONFIGURATION_RECORDER_SERVICE_PRINCIPAL">CONFIGURATION_RECORDER_SERVICE_PRINCIPAL</a></code> | <code>string</code> | Condition key: config:ConfigurationRecorderServicePrincipal (String). |
+| <code><a href="#@cdk_utils/iam.config.ConfigConditions.property.CONFORMANCE_PACK_TYPE">CONFORMANCE_PACK_TYPE</a></code> | <code>string</code> | Condition key: config:ConformancePackType (String). |
+| <code><a href="#@cdk_utils/iam.config.ConfigConditions.property.DeleteConformancePackConditionKeys">DeleteConformancePackConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteConformancePack action. |
 | <code><a href="#@cdk_utils/iam.config.ConfigConditions.property.DeleteServiceLinkedConfigurationRecorderConditionKeys">DeleteServiceLinkedConfigurationRecorderConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteServiceLinkedConfigurationRecorder action. |
 | <code><a href="#@cdk_utils/iam.config.ConfigConditions.property.DescribeConfigurationRecordersConditionKeys">DescribeConfigurationRecordersConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeConfigurationRecorders action. |
 | <code><a href="#@cdk_utils/iam.config.ConfigConditions.property.DescribeConfigurationRecorderStatusConditionKeys">DescribeConfigurationRecorderStatusConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribeConfigurationRecorderStatus action. |
@@ -3195,6 +3214,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.config.ConfigConditions.property.PutConfigRuleConditionKeys">PutConfigRuleConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutConfigRule action. |
 | <code><a href="#@cdk_utils/iam.config.ConfigConditions.property.PutConfigurationAggregatorConditionKeys">PutConfigurationAggregatorConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutConfigurationAggregator action. |
 | <code><a href="#@cdk_utils/iam.config.ConfigConditions.property.PutConfigurationRecorderConditionKeys">PutConfigurationRecorderConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutConfigurationRecorder action. |
+| <code><a href="#@cdk_utils/iam.config.ConfigConditions.property.PutConformancePackConditionKeys">PutConformancePackConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutConformancePack action. |
 | <code><a href="#@cdk_utils/iam.config.ConfigConditions.property.PutConnectorConditionKeys">PutConnectorConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutConnector action. |
 | <code><a href="#@cdk_utils/iam.config.ConfigConditions.property.PutServiceLinkedConfigurationRecorderConditionKeys">PutServiceLinkedConfigurationRecorderConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutServiceLinkedConfigurationRecorder action. |
 | <code><a href="#@cdk_utils/iam.config.ConfigConditions.property.PutStoredQueryConditionKeys">PutStoredQueryConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutStoredQuery action. |
@@ -3261,6 +3281,30 @@ public readonly CONFIGURATION_RECORDER_SERVICE_PRINCIPAL: string;
 - *Type:* string
 
 Condition key: config:ConfigurationRecorderServicePrincipal (String).
+
+---
+
+##### `CONFORMANCE_PACK_TYPE`<sup>Required</sup> <a name="CONFORMANCE_PACK_TYPE" id="@cdk_utils/iam.config.ConfigConditions.property.CONFORMANCE_PACK_TYPE"></a>
+
+```typescript
+public readonly CONFORMANCE_PACK_TYPE: string;
+```
+
+- *Type:* string
+
+Condition key: config:ConformancePackType (String).
+
+---
+
+##### `DeleteConformancePackConditionKeys`<sup>Required</sup> <a name="DeleteConformancePackConditionKeys" id="@cdk_utils/iam.config.ConfigConditions.property.DeleteConformancePackConditionKeys"></a>
+
+```typescript
+public readonly DeleteConformancePackConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DeleteConformancePack action.
 
 ---
 
@@ -3345,6 +3389,18 @@ public readonly PutConfigurationRecorderConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the PutConfigurationRecorder action.
+
+---
+
+##### `PutConformancePackConditionKeys`<sup>Required</sup> <a name="PutConformancePackConditionKeys" id="@cdk_utils/iam.config.ConfigConditions.property.PutConformancePackConditionKeys"></a>
+
+```typescript
+public readonly PutConformancePackConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the PutConformancePack action.
 
 ---
 

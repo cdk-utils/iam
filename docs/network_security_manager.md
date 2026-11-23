@@ -1671,8 +1671,10 @@ new network_security_manager.NetworkSecurityManagerActions()
 | <code><a href="#@cdk_utils/iam.network_security_manager.NetworkSecurityManagerActions.property.ListAggregateResourceSynchronizationStatuses">ListAggregateResourceSynchronizationStatuses</a></code> | <code>string</code> | [Read] network-security-manager:ListAggregateResourceSynchronizationStatuses. |
 | <code><a href="#@cdk_utils/iam.network_security_manager.NetworkSecurityManagerActions.property.ListDeployments">ListDeployments</a></code> | <code>string</code> | [List] network-security-manager:ListDeployments. |
 | <code><a href="#@cdk_utils/iam.network_security_manager.NetworkSecurityManagerActions.property.ListDeploymentSnapshots">ListDeploymentSnapshots</a></code> | <code>string</code> | [Read] network-security-manager:ListDeploymentSnapshots. |
+| <code><a href="#@cdk_utils/iam.network_security_manager.NetworkSecurityManagerActions.property.ListEntityCoverages">ListEntityCoverages</a></code> | <code>string</code> | [Read] network-security-manager:ListEntityCoverages. |
 | <code><a href="#@cdk_utils/iam.network_security_manager.NetworkSecurityManagerActions.property.ListPolicies">ListPolicies</a></code> | <code>string</code> | [List] network-security-manager:ListPolicies. |
 | <code><a href="#@cdk_utils/iam.network_security_manager.NetworkSecurityManagerActions.property.ListPolicySnapshots">ListPolicySnapshots</a></code> | <code>string</code> | [Read] network-security-manager:ListPolicySnapshots. |
+| <code><a href="#@cdk_utils/iam.network_security_manager.NetworkSecurityManagerActions.property.ListProtectedResourceCoverages">ListProtectedResourceCoverages</a></code> | <code>string</code> | [Read] network-security-manager:ListProtectedResourceCoverages. |
 | <code><a href="#@cdk_utils/iam.network_security_manager.NetworkSecurityManagerActions.property.ListResourceAssociations">ListResourceAssociations</a></code> | <code>string</code> | [Read] network-security-manager:ListResourceAssociations. |
 | <code><a href="#@cdk_utils/iam.network_security_manager.NetworkSecurityManagerActions.property.ListResourceSynchronizationStatuses">ListResourceSynchronizationStatuses</a></code> | <code>string</code> | [Read] network-security-manager:ListResourceSynchronizationStatuses. |
 | <code><a href="#@cdk_utils/iam.network_security_manager.NetworkSecurityManagerActions.property.ListRules">ListRules</a></code> | <code>string</code> | [List] network-security-manager:ListRules. |
@@ -2078,6 +2080,18 @@ public readonly ListDeploymentSnapshots: string;
 
 ---
 
+##### `ListEntityCoverages`<sup>Required</sup> <a name="ListEntityCoverages" id="@cdk_utils/iam.network_security_manager.NetworkSecurityManagerActions.property.ListEntityCoverages"></a>
+
+```typescript
+public readonly ListEntityCoverages: string;
+```
+
+- *Type:* string
+
+[Read] network-security-manager:ListEntityCoverages.
+
+---
+
 ##### `ListPolicies`<sup>Required</sup> <a name="ListPolicies" id="@cdk_utils/iam.network_security_manager.NetworkSecurityManagerActions.property.ListPolicies"></a>
 
 ```typescript
@@ -2099,6 +2113,18 @@ public readonly ListPolicySnapshots: string;
 - *Type:* string
 
 [Read] network-security-manager:ListPolicySnapshots.
+
+---
+
+##### `ListProtectedResourceCoverages`<sup>Required</sup> <a name="ListProtectedResourceCoverages" id="@cdk_utils/iam.network_security_manager.NetworkSecurityManagerActions.property.ListProtectedResourceCoverages"></a>
+
+```typescript
+public readonly ListProtectedResourceCoverages: string;
+```
+
+- *Type:* string
+
+[Read] network-security-manager:ListProtectedResourceCoverages.
 
 ---
 
@@ -2340,9 +2366,26 @@ new network_security_manager.NetworkSecurityManagerConditions()
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdk_utils/iam.network_security_manager.NetworkSecurityManagerConditions.protectedResourceARN">protectedResourceARN</a></code> | Generates a condition block for `network-security-manager:ProtectedResourceArn`. |
 | <code><a href="#@cdk_utils/iam.network_security_manager.NetworkSecurityManagerConditions.requestTag">requestTag</a></code> | Generates a condition block for `aws:RequestTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.network_security_manager.NetworkSecurityManagerConditions.resourceTag">resourceTag</a></code> | Generates a condition block for `aws:ResourceTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.network_security_manager.NetworkSecurityManagerConditions.tagKeys">tagKeys</a></code> | Generates a condition block for `aws:TagKeys`. |
+
+---
+
+##### `protectedResourceARN` <a name="protectedResourceARN" id="@cdk_utils/iam.network_security_manager.NetworkSecurityManagerConditions.protectedResourceARN"></a>
+
+```typescript
+import { network_security_manager } from '@cdk_utils/iam'
+
+network_security_manager.NetworkSecurityManagerConditions.protectedResourceARN(value: string)
+```
+
+Generates a condition block for `network-security-manager:ProtectedResourceArn`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.network_security_manager.NetworkSecurityManagerConditions.protectedResourceARN.parameter.value"></a>
+
+- *Type:* string
 
 ---
 
@@ -2412,9 +2455,11 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.network_security_manager.NetworkSecurityManagerConditions.property.CreateScopeSnapshotConditionKeys">CreateScopeSnapshotConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateScopeSnapshot action. |
 | <code><a href="#@cdk_utils/iam.network_security_manager.NetworkSecurityManagerConditions.property.CreateTemplateConditionKeys">CreateTemplateConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateTemplate action. |
 | <code><a href="#@cdk_utils/iam.network_security_manager.NetworkSecurityManagerConditions.property.CreateTemplateSnapshotConditionKeys">CreateTemplateSnapshotConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateTemplateSnapshot action. |
+| <code><a href="#@cdk_utils/iam.network_security_manager.NetworkSecurityManagerConditions.property.ListProtectedResourceCoveragesConditionKeys">ListProtectedResourceCoveragesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListProtectedResourceCoverages action. |
 | <code><a href="#@cdk_utils/iam.network_security_manager.NetworkSecurityManagerConditions.property.ListResourceAssociationsConditionKeys">ListResourceAssociationsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListResourceAssociations action. |
 | <code><a href="#@cdk_utils/iam.network_security_manager.NetworkSecurityManagerConditions.property.ListResourceSynchronizationStatusesConditionKeys">ListResourceSynchronizationStatusesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListResourceSynchronizationStatuses action. |
 | <code><a href="#@cdk_utils/iam.network_security_manager.NetworkSecurityManagerConditions.property.ListTagsForResourceConditionKeys">ListTagsForResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListTagsForResource action. |
+| <code><a href="#@cdk_utils/iam.network_security_manager.NetworkSecurityManagerConditions.property.PROTECTED_RESOURCE_ARN">PROTECTED_RESOURCE_ARN</a></code> | <code>string</code> | Condition key: network-security-manager:ProtectedResourceArn (ARN). |
 | <code><a href="#@cdk_utils/iam.network_security_manager.NetworkSecurityManagerConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
 | <code><a href="#@cdk_utils/iam.network_security_manager.NetworkSecurityManagerConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
 
@@ -2576,6 +2621,18 @@ Condition keys applicable to the CreateTemplateSnapshot action.
 
 ---
 
+##### `ListProtectedResourceCoveragesConditionKeys`<sup>Required</sup> <a name="ListProtectedResourceCoveragesConditionKeys" id="@cdk_utils/iam.network_security_manager.NetworkSecurityManagerConditions.property.ListProtectedResourceCoveragesConditionKeys"></a>
+
+```typescript
+public readonly ListProtectedResourceCoveragesConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ListProtectedResourceCoverages action.
+
+---
+
 ##### `ListResourceAssociationsConditionKeys`<sup>Required</sup> <a name="ListResourceAssociationsConditionKeys" id="@cdk_utils/iam.network_security_manager.NetworkSecurityManagerConditions.property.ListResourceAssociationsConditionKeys"></a>
 
 ```typescript
@@ -2609,6 +2666,18 @@ public readonly ListTagsForResourceConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the ListTagsForResource action.
+
+---
+
+##### `PROTECTED_RESOURCE_ARN`<sup>Required</sup> <a name="PROTECTED_RESOURCE_ARN" id="@cdk_utils/iam.network_security_manager.NetworkSecurityManagerConditions.property.PROTECTED_RESOURCE_ARN"></a>
+
+```typescript
+public readonly PROTECTED_RESOURCE_ARN: string;
+```
+
+- *Type:* string
+
+Condition key: network-security-manager:ProtectedResourceArn (ARN).
 
 ---
 
@@ -2681,8 +2750,10 @@ new network_security_manager.NetworkSecurityManagerOperations()
 | <code><a href="#@cdk_utils/iam.network_security_manager.NetworkSecurityManagerOperations.property.ListAggregateResourceSynchronizationStatuses">ListAggregateResourceSynchronizationStatuses</a></code> | <code>string[]</code> | IAM actions required for the ListAggregateResourceSynchronizationStatuses API call. |
 | <code><a href="#@cdk_utils/iam.network_security_manager.NetworkSecurityManagerOperations.property.ListDeployments">ListDeployments</a></code> | <code>string[]</code> | IAM actions required for the ListDeployments API call. |
 | <code><a href="#@cdk_utils/iam.network_security_manager.NetworkSecurityManagerOperations.property.ListDeploymentSnapshots">ListDeploymentSnapshots</a></code> | <code>string[]</code> | IAM actions required for the ListDeploymentSnapshots API call. |
+| <code><a href="#@cdk_utils/iam.network_security_manager.NetworkSecurityManagerOperations.property.ListEntityCoverages">ListEntityCoverages</a></code> | <code>string[]</code> | IAM actions required for the ListEntityCoverages API call. |
 | <code><a href="#@cdk_utils/iam.network_security_manager.NetworkSecurityManagerOperations.property.ListPolicies">ListPolicies</a></code> | <code>string[]</code> | IAM actions required for the ListPolicies API call. |
 | <code><a href="#@cdk_utils/iam.network_security_manager.NetworkSecurityManagerOperations.property.ListPolicySnapshots">ListPolicySnapshots</a></code> | <code>string[]</code> | IAM actions required for the ListPolicySnapshots API call. |
+| <code><a href="#@cdk_utils/iam.network_security_manager.NetworkSecurityManagerOperations.property.ListProtectedResourceCoverages">ListProtectedResourceCoverages</a></code> | <code>string[]</code> | IAM actions required for the ListProtectedResourceCoverages API call. |
 | <code><a href="#@cdk_utils/iam.network_security_manager.NetworkSecurityManagerOperations.property.ListResourceAssociations">ListResourceAssociations</a></code> | <code>string[]</code> | IAM actions required for the ListResourceAssociations API call. |
 | <code><a href="#@cdk_utils/iam.network_security_manager.NetworkSecurityManagerOperations.property.ListResourceSynchronizationStatuses">ListResourceSynchronizationStatuses</a></code> | <code>string[]</code> | IAM actions required for the ListResourceSynchronizationStatuses API call. |
 | <code><a href="#@cdk_utils/iam.network_security_manager.NetworkSecurityManagerOperations.property.ListRules">ListRules</a></code> | <code>string[]</code> | IAM actions required for the ListRules API call. |
@@ -2961,6 +3032,18 @@ IAM actions required for the ListDeploymentSnapshots API call.
 
 ---
 
+##### `ListEntityCoverages`<sup>Required</sup> <a name="ListEntityCoverages" id="@cdk_utils/iam.network_security_manager.NetworkSecurityManagerOperations.property.ListEntityCoverages"></a>
+
+```typescript
+public readonly ListEntityCoverages: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListEntityCoverages API call.
+
+---
+
 ##### `ListPolicies`<sup>Required</sup> <a name="ListPolicies" id="@cdk_utils/iam.network_security_manager.NetworkSecurityManagerOperations.property.ListPolicies"></a>
 
 ```typescript
@@ -2982,6 +3065,18 @@ public readonly ListPolicySnapshots: string[];
 - *Type:* string[]
 
 IAM actions required for the ListPolicySnapshots API call.
+
+---
+
+##### `ListProtectedResourceCoverages`<sup>Required</sup> <a name="ListProtectedResourceCoverages" id="@cdk_utils/iam.network_security_manager.NetworkSecurityManagerOperations.property.ListProtectedResourceCoverages"></a>
+
+```typescript
+public readonly ListProtectedResourceCoverages: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListProtectedResourceCoverages API call.
 
 ---
 

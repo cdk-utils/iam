@@ -1413,6 +1413,7 @@ new transcribe.TranscribeActions()
 | <code><a href="#@cdk_utils/iam.transcribe.TranscribeActions.property.StartStreamTranscriptionWebSocket">StartStreamTranscriptionWebSocket</a></code> | <code>string</code> | [Write] transcribe:StartStreamTranscriptionWebSocket. |
 | <code><a href="#@cdk_utils/iam.transcribe.TranscribeActions.property.StartTranscriptionJob">StartTranscriptionJob</a></code> | <code>string</code> | [Write] transcribe:StartTranscriptionJob. |
 | <code><a href="#@cdk_utils/iam.transcribe.TranscribeActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] transcribe:TagResource. |
+| <code><a href="#@cdk_utils/iam.transcribe.TranscribeActions.property.TranscribeAudio">TranscribeAudio</a></code> | <code>string</code> | [Write] transcribe:TranscribeAudio. |
 | <code><a href="#@cdk_utils/iam.transcribe.TranscribeActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] transcribe:UntagResource. |
 | <code><a href="#@cdk_utils/iam.transcribe.TranscribeActions.property.UpdateCallAnalyticsCategory">UpdateCallAnalyticsCategory</a></code> | <code>string</code> | [Write] transcribe:UpdateCallAnalyticsCategory. |
 | <code><a href="#@cdk_utils/iam.transcribe.TranscribeActions.property.UpdateLanguageModel">UpdateLanguageModel</a></code> | <code>string</code> | [Write] transcribe:UpdateLanguageModel. |
@@ -2046,6 +2047,18 @@ public readonly TagResource: string;
 
 ---
 
+##### `TranscribeAudio`<sup>Required</sup> <a name="TranscribeAudio" id="@cdk_utils/iam.transcribe.TranscribeActions.property.TranscribeAudio"></a>
+
+```typescript
+public readonly TranscribeAudio: string;
+```
+
+- *Type:* string
+
+[Write] transcribe:TranscribeAudio.
+
+---
+
 ##### `UntagResource`<sup>Required</sup> <a name="UntagResource" id="@cdk_utils/iam.transcribe.TranscribeActions.property.UntagResource"></a>
 
 ```typescript
@@ -2566,6 +2579,7 @@ new transcribe.TranscribeOperations()
 | <code><a href="#@cdk_utils/iam.transcribe.TranscribeOperations.property.StartMedicalTranscriptionJob">StartMedicalTranscriptionJob</a></code> | <code>string[]</code> | IAM actions required for the StartMedicalTranscriptionJob API call. |
 | <code><a href="#@cdk_utils/iam.transcribe.TranscribeOperations.property.StartTranscriptionJob">StartTranscriptionJob</a></code> | <code>string[]</code> | IAM actions required for the StartTranscriptionJob API call. |
 | <code><a href="#@cdk_utils/iam.transcribe.TranscribeOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
+| <code><a href="#@cdk_utils/iam.transcribe.TranscribeOperations.property.TranscribeAudio">TranscribeAudio</a></code> | <code>string[]</code> | IAM actions required for the TranscribeAudio API call. |
 | <code><a href="#@cdk_utils/iam.transcribe.TranscribeOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 | <code><a href="#@cdk_utils/iam.transcribe.TranscribeOperations.property.UpdateCallAnalyticsCategory">UpdateCallAnalyticsCategory</a></code> | <code>string[]</code> | IAM actions required for the UpdateCallAnalyticsCategory API call. |
 | <code><a href="#@cdk_utils/iam.transcribe.TranscribeOperations.property.UpdateLanguageModel">UpdateLanguageModel</a></code> | <code>string[]</code> | IAM actions required for the UpdateLanguageModel API call. |
@@ -3028,6 +3042,18 @@ public readonly TagResource: string[];
 - *Type:* string[]
 
 IAM actions required for the TagResource API call.
+
+---
+
+##### `TranscribeAudio`<sup>Required</sup> <a name="TranscribeAudio" id="@cdk_utils/iam.transcribe.TranscribeOperations.property.TranscribeAudio"></a>
+
+```typescript
+public readonly TranscribeAudio: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the TranscribeAudio API call.
 
 ---
 

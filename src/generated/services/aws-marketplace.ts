@@ -210,6 +210,9 @@ export class AWSMarketplaceActions {
 	/** [List] aws-marketplace:ListIssuedTaxInvoices */
 	static readonly ListIssuedTaxInvoices =
 		"aws-marketplace:ListIssuedTaxInvoices";
+	/** [List] aws-marketplace:ListListingAttributes */
+	static readonly ListListingAttributes =
+		"aws-marketplace:ListListingAttributes";
 	/** [List] aws-marketplace:ListPayables */
 	static readonly ListPayables = "aws-marketplace:ListPayables";
 	/** [List] aws-marketplace:ListPrivateListings */
@@ -415,6 +418,7 @@ export class AWSMarketplaceActions {
 		AWSMarketplaceActions.ListFulfillmentOptions,
 		AWSMarketplaceActions.ListInvoiceSubmissionTasks,
 		AWSMarketplaceActions.ListIssuedTaxInvoices,
+		AWSMarketplaceActions.ListListingAttributes,
 		AWSMarketplaceActions.ListPayables,
 		AWSMarketplaceActions.ListPrivateListings,
 		AWSMarketplaceActions.ListPrivateMarketplaceRequests,
@@ -2072,6 +2076,10 @@ export class AWSMarketplaceOperations {
 	/** IAM actions required for the ListFulfillmentOptions API call. */
 	static readonly ListFulfillmentOptions: string[] = [
 		"aws-marketplace:ListFulfillmentOptions",
+	];
+	/** IAM actions required for the ListListingAttributes API call. */
+	static readonly ListListingAttributes: string[] = [
+		"aws-marketplace:ListListingAttributes",
 	];
 	/** IAM actions required for the ListPurchaseOptions API call. */
 	static readonly ListPurchaseOptions: string[] = [

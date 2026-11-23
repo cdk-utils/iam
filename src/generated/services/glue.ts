@@ -2852,8 +2852,6 @@ export class GlueOperations {
 	];
 	/** IAM actions required for the DeleteAsset API call. */
 	static readonly DeleteAsset: string[] = [];
-	/** IAM actions required for the DeleteAssetType API call. */
-	static readonly DeleteAssetType: string[] = [];
 	/** IAM actions required for the DeleteAttachment API call. */
 	static readonly DeleteAttachment: string[] = [];
 	/** IAM actions required for the DeleteBlueprint API call. */
@@ -3332,8 +3330,6 @@ export class GlueOperations {
 	];
 	/** IAM actions required for the PutAsset API call. */
 	static readonly PutAsset: string[] = [];
-	/** IAM actions required for the PutAssetType API call. */
-	static readonly PutAssetType: string[] = [];
 	/** IAM actions required for the PutAttachment API call. */
 	static readonly PutAttachment: string[] = [];
 	/** IAM actions required for the PutDataCatalogEncryptionSettings API call. */

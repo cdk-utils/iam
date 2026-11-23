@@ -405,6 +405,7 @@
       "Name": "DeleteRecoveryPlanExecution",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1013,6 +1014,7 @@
       "Name": "GetRecoveryPlanExecutionStep",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2576,6 +2578,12 @@
     },
     {
       "Name": "DeleteRecoveryPlanExecution",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteRecoveryPlanExecution",
+          "Service": "drs"
+        }
+      ],
       "SDK": [
         {
           "Name": "drs",
@@ -2890,6 +2898,12 @@
     },
     {
       "Name": "GetRecoveryPlanExecutionStep",
+      "AuthorizedActions": [
+        {
+          "Name": "GetRecoveryPlanExecutionStep",
+          "Service": "drs"
+        }
+      ],
       "SDK": [
         {
           "Name": "drs",

@@ -48,6 +48,9 @@ export class PartnercentralActions {
 	/** [Write] partnercentral:CancelBusinessPlanSubmissionTask */
 	static readonly CancelBusinessPlanSubmissionTask =
 		"partnercentral:CancelBusinessPlanSubmissionTask";
+	/** [Write] partnercentral:CancelChannelContract */
+	static readonly CancelChannelContract =
+		"partnercentral:CancelChannelContract";
 	/** [Write] partnercentral:CancelChannelHandshake */
 	static readonly CancelChannelHandshake =
 		"partnercentral:CancelChannelHandshake";
@@ -69,6 +72,9 @@ export class PartnercentralActions {
 		"partnercentral:CreateBusinessPlanItem";
 	/** [Write] partnercentral:CreateCampaign */
 	static readonly CreateCampaign = "partnercentral:CreateCampaign";
+	/** [Write] partnercentral:CreateChannelContract */
+	static readonly CreateChannelContract =
+		"partnercentral:CreateChannelContract";
 	/** [Write] partnercentral:CreateChannelHandshake */
 	static readonly CreateChannelHandshake =
 		"partnercentral:CreateChannelHandshake";
@@ -213,6 +219,9 @@ export class PartnercentralActions {
 	/** [Read] partnercentral:GetCampaignTemplate */
 	static readonly actionGetCampaignTemplate =
 		"partnercentral:GetCampaignTemplate";
+	/** [Read] partnercentral:GetChannelContract */
+	static readonly actionGetChannelContract =
+		"partnercentral:GetChannelContract";
 	/** [Read] partnercentral:GetCollaborationChannel */
 	static readonly actionGetCollaborationChannel =
 		"partnercentral:GetCollaborationChannel";
@@ -346,6 +355,8 @@ export class PartnercentralActions {
 	static readonly ListCampaignAssets = "partnercentral:ListCampaignAssets";
 	/** [List] partnercentral:ListCampaigns */
 	static readonly ListCampaigns = "partnercentral:ListCampaigns";
+	/** [List] partnercentral:ListChannelContracts */
+	static readonly ListChannelContracts = "partnercentral:ListChannelContracts";
 	/** [List] partnercentral:ListChannelHandshakes */
 	static readonly ListChannelHandshakes =
 		"partnercentral:ListChannelHandshakes";
@@ -598,6 +609,7 @@ export class PartnercentralActions {
 		PartnercentralActions.actionGetCampaignAssetActivationTask,
 		PartnercentralActions.actionGetCampaignAssetExportTask,
 		PartnercentralActions.actionGetCampaignTemplate,
+		PartnercentralActions.actionGetChannelContract,
 		PartnercentralActions.actionGetCollaborationChannel,
 		PartnercentralActions.actionGetConnection,
 		PartnercentralActions.actionGetConnectionInvitation,
@@ -653,6 +665,7 @@ export class PartnercentralActions {
 		PartnercentralActions.CancelBenefitApplication,
 		PartnercentralActions.CancelBusinessPlan,
 		PartnercentralActions.CancelBusinessPlanSubmissionTask,
+		PartnercentralActions.CancelChannelContract,
 		PartnercentralActions.CancelChannelHandshake,
 		PartnercentralActions.CancelConnection,
 		PartnercentralActions.CancelConnectionInvitation,
@@ -661,6 +674,7 @@ export class PartnercentralActions {
 		PartnercentralActions.CreateBusinessPlan,
 		PartnercentralActions.CreateBusinessPlanItem,
 		PartnercentralActions.CreateCampaign,
+		PartnercentralActions.CreateChannelContract,
 		PartnercentralActions.CreateChannelHandshake,
 		PartnercentralActions.CreateCollaborationChannelMembers,
 		PartnercentralActions.CreateCollaborationChannelRequest,
@@ -755,6 +769,7 @@ export class PartnercentralActions {
 		PartnercentralActions.ListBusinessPlans,
 		PartnercentralActions.ListCampaignAssets,
 		PartnercentralActions.ListCampaigns,
+		PartnercentralActions.ListChannelContracts,
 		PartnercentralActions.ListChannelHandshakes,
 		PartnercentralActions.ListCollaborationChannels,
 		PartnercentralActions.ListConnectionInvitations,
@@ -959,6 +974,38 @@ export interface PartnercentralCampaignArnComponents {
 	readonly catalog: string;
 	/** The CampaignId component. */
 	readonly campaignId: string;
+}
+
+/**
+ * Properties for building a ChannelContract ARN.
+ */
+export interface PartnercentralChannelContractArnProps {
+	/** The Catalog component of the ARN. */
+	readonly catalog: string;
+	/** The Identifier component of the ARN. */
+	readonly identifier: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a ChannelContract ARN.
+ */
+export interface PartnercentralChannelContractArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The Catalog component. */
+	readonly catalog: string;
+	/** The Identifier component. */
+	readonly identifier: string;
 }
 
 /**
@@ -1851,6 +1898,8 @@ const BusinessPlanArnRegex =
 	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/business-plan\/(?<identifier>[^:/?]+)$/;
 const CampaignArnRegex =
 	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/campaign\/(?<campaignId>[^:/?]+)$/;
+const ChannelContractArnRegex =
+	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/channel-contract\/(?<identifier>[^:/?]+)$/;
 const ChannelHandshakeArnRegex =
 	/^arn:(?<partition>[^:]+):partnercentral:(?<region>[^:]*):(?<account>[^:]*):catalog\/(?<catalog>[^:/?]+)\/channel-handshake\/(?<identifier>[^:/?]+)$/;
 const ConnectionArnRegex =
@@ -2077,6 +2126,40 @@ export class PartnercentralResources {
 			account: match.groups.account,
 			catalog: match.groups!.catalog,
 			campaignId: match.groups!.campaignId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the ChannelContract resource.
+	 */
+	static channelContract(props: PartnercentralChannelContractArnProps): string {
+		return `arn:${props.partition ?? "aws"}:partnercentral:${props.region ?? "*"}:${props.account ?? "*"}:catalog/${props.catalog}/channel-contract/${props.identifier}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the ChannelContract resource.
+	 */
+	static isValidChannelContractArn(arn: string): boolean {
+		return ChannelContractArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a ChannelContract ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseChannelContractArn(
+		arn: string,
+	): PartnercentralChannelContractArnComponents {
+		const match = ChannelContractArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid ChannelContract ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			catalog: match.groups!.catalog,
+			identifier: match.groups!.identifier,
 		};
 	}
 
@@ -3071,6 +3154,8 @@ export class PartnercentralOperations {
 	static readonly CancelBenefitApplication: string[] = [
 		"partnercentral:CancelBenefitApplication",
 	];
+	/** IAM actions required for the CancelChannelContract API call. */
+	static readonly CancelChannelContract: string[] = [];
 	/** IAM actions required for the CancelChannelHandshake API call. */
 	static readonly CancelChannelHandshake: string[] = [
 		"partnercentral:CancelChannelHandshake",
@@ -3092,6 +3177,8 @@ export class PartnercentralOperations {
 		"partnercentral:CreateBenefitApplication",
 		"partnercentral:TagResource",
 	];
+	/** IAM actions required for the CreateChannelContract API call. */
+	static readonly CreateChannelContract: string[] = [];
 	/** IAM actions required for the CreateChannelHandshake API call. */
 	static readonly CreateChannelHandshake: string[] = [
 		"partnercentral:CreateChannelHandshake",
@@ -3215,6 +3302,10 @@ export class PartnercentralOperations {
 	static readonly opGetBenefitApplication: string[] = [
 		"partnercentral:GetBenefitApplication",
 	];
+	/** IAM actions required for the GetChannelContract API call. */
+	static readonly opGetChannelContract: string[] = [
+		"partnercentral:GetChannelContract",
+	];
 	/** IAM actions required for the GetConnection API call. */
 	static readonly opGetConnection: string[] = ["partnercentral:GetConnection"];
 	/** IAM actions required for the GetConnectionInvitation API call. */
@@ -3331,6 +3422,10 @@ export class PartnercentralOperations {
 	];
 	/** IAM actions required for the ListBenefits API call. */
 	static readonly ListBenefits: string[] = ["partnercentral:ListBenefits"];
+	/** IAM actions required for the ListChannelContracts API call. */
+	static readonly ListChannelContracts: string[] = [
+		"partnercentral:ListChannelContracts",
+	];
 	/** IAM actions required for the ListChannelHandshakes API call. */
 	static readonly ListChannelHandshakes: string[] = [
 		"partnercentral:ListChannelHandshakes",
@@ -3686,6 +3781,12 @@ export class PartnercentralConditions {
 		"partnercentral:AllowAwsEngagement",
 		"partnercentral:Catalog",
 	];
+	/** Condition keys applicable to the CancelChannelContract action. */
+	static readonly CancelChannelContractConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"partnercentral:Catalog",
+		"partnercentral:ChannelContractType",
+	];
 	/** Condition keys applicable to the CancelChannelHandshake action. */
 	static readonly CancelChannelHandshakeConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
@@ -3735,6 +3836,14 @@ export class PartnercentralConditions {
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the CreateChannelContract action. */
+	static readonly CreateChannelContractConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:ResourceTag/${TagKey}",
+		"aws:TagKeys",
+		"partnercentral:Catalog",
+		"partnercentral:ChannelContractType",
 	];
 	/** Condition keys applicable to the CreateChannelHandshake action. */
 	static readonly CreateChannelHandshakeConditionKeys: string[] = [
@@ -3982,6 +4091,12 @@ export class PartnercentralConditions {
 	static readonly actionGetCampaignTemplateConditionKeys: string[] = [
 		"partnercentral:Catalog",
 	];
+	/** Condition keys applicable to the GetChannelContract action. */
+	static readonly actionGetChannelContractConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"partnercentral:Catalog",
+		"partnercentral:ChannelContractType",
+	];
 	/** Condition keys applicable to the GetConnection action. */
 	static readonly actionGetConnectionConditionKeys: string[] = [
 		"partnercentral:Catalog",
@@ -4164,6 +4279,11 @@ export class PartnercentralConditions {
 	/** Condition keys applicable to the ListCampaigns action. */
 	static readonly ListCampaignsConditionKeys: string[] = [
 		"partnercentral:Catalog",
+	];
+	/** Condition keys applicable to the ListChannelContracts action. */
+	static readonly ListChannelContractsConditionKeys: string[] = [
+		"partnercentral:Catalog",
+		"partnercentral:ChannelContractType",
 	];
 	/** Condition keys applicable to the ListChannelHandshakes action. */
 	static readonly ListChannelHandshakesConditionKeys: string[] = [
@@ -4553,6 +4673,8 @@ export class PartnercentralConditions {
 		"partnercentral:BusinessPlanItemType";
 	/** Condition key: partnercentral:Catalog (String) */
 	static readonly CATALOG = "partnercentral:Catalog";
+	/** Condition key: partnercentral:ChannelContractType (String) */
+	static readonly CHANNEL_CONTRACT_TYPE = "partnercentral:ChannelContractType";
 	/** Condition key: partnercentral:ChannelHandshakeType (String) */
 	static readonly CHANNEL_HANDSHAKE_TYPE =
 		"partnercentral:ChannelHandshakeType";
@@ -4618,6 +4740,15 @@ export class PartnercentralConditions {
 	 */
 	static catalog(value: string): Record<string, Record<string, string>> {
 		return { StringEquals: { "partnercentral:Catalog": value } };
+	}
+
+	/**
+	 * Generates a condition block for `partnercentral:ChannelContractType`.
+	 */
+	static channelContractType(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "partnercentral:ChannelContractType": value } };
 	}
 
 	/**

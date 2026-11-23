@@ -3173,6 +3173,7 @@ new odb.OdbOperations()
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.ListAutonomousDatabaseCharacterSets">ListAutonomousDatabaseCharacterSets</a></code> | <code>string[]</code> | IAM actions required for the ListAutonomousDatabaseCharacterSets API call. |
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.ListAutonomousDatabaseClones">ListAutonomousDatabaseClones</a></code> | <code>string[]</code> | IAM actions required for the ListAutonomousDatabaseClones API call. |
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.ListAutonomousDatabasePeers">ListAutonomousDatabasePeers</a></code> | <code>string[]</code> | IAM actions required for the ListAutonomousDatabasePeers API call. |
+| <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.ListAutonomousDatabaseRefreshableClones">ListAutonomousDatabaseRefreshableClones</a></code> | <code>string[]</code> | IAM actions required for the ListAutonomousDatabaseRefreshableClones API call. |
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.ListAutonomousDatabases">ListAutonomousDatabases</a></code> | <code>string[]</code> | IAM actions required for the ListAutonomousDatabases API call. |
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.ListAutonomousDatabaseVersions">ListAutonomousDatabaseVersions</a></code> | <code>string[]</code> | IAM actions required for the ListAutonomousDatabaseVersions API call. |
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.ListAutonomousVirtualMachines">ListAutonomousVirtualMachines</a></code> | <code>string[]</code> | IAM actions required for the ListAutonomousVirtualMachines API call. |
@@ -3210,6 +3211,7 @@ new odb.OdbOperations()
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.RestoreAutonomousDatabase">RestoreAutonomousDatabase</a></code> | <code>string[]</code> | IAM actions required for the RestoreAutonomousDatabase API call. |
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.ShrinkAutonomousDatabase">ShrinkAutonomousDatabase</a></code> | <code>string[]</code> | IAM actions required for the ShrinkAutonomousDatabase API call. |
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.StartAutonomousDatabase">StartAutonomousDatabase</a></code> | <code>string[]</code> | IAM actions required for the StartAutonomousDatabase API call. |
+| <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.StartAutonomousDatabaseRefresh">StartAutonomousDatabaseRefresh</a></code> | <code>string[]</code> | IAM actions required for the StartAutonomousDatabaseRefresh API call. |
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.StartDbNode">StartDbNode</a></code> | <code>string[]</code> | IAM actions required for the StartDbNode API call. |
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.StopAutonomousDatabase">StopAutonomousDatabase</a></code> | <code>string[]</code> | IAM actions required for the StopAutonomousDatabase API call. |
 | <code><a href="#@cdk_utils/iam.odb.OdbOperations.property.StopDbNode">StopDbNode</a></code> | <code>string[]</code> | IAM actions required for the StopDbNode API call. |
@@ -3611,6 +3613,18 @@ public readonly ListAutonomousDatabasePeers: string[];
 - *Type:* string[]
 
 IAM actions required for the ListAutonomousDatabasePeers API call.
+
+---
+
+##### `ListAutonomousDatabaseRefreshableClones`<sup>Required</sup> <a name="ListAutonomousDatabaseRefreshableClones" id="@cdk_utils/iam.odb.OdbOperations.property.ListAutonomousDatabaseRefreshableClones"></a>
+
+```typescript
+public readonly ListAutonomousDatabaseRefreshableClones: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListAutonomousDatabaseRefreshableClones API call.
 
 ---
 
@@ -4055,6 +4069,18 @@ public readonly StartAutonomousDatabase: string[];
 - *Type:* string[]
 
 IAM actions required for the StartAutonomousDatabase API call.
+
+---
+
+##### `StartAutonomousDatabaseRefresh`<sup>Required</sup> <a name="StartAutonomousDatabaseRefresh" id="@cdk_utils/iam.odb.OdbOperations.property.StartAutonomousDatabaseRefresh"></a>
+
+```typescript
+public readonly StartAutonomousDatabaseRefresh: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StartAutonomousDatabaseRefresh API call.
 
 ---
 

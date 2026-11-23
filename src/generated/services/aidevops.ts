@@ -17,6 +17,20 @@ export class AidevopsActions {
 		"aidevops:AllowVendedLogDeliveryForResource";
 	/** [Write] aidevops:AssociateService */
 	static readonly AssociateService = "aidevops:AssociateService";
+	/** [Write] aidevops:BatchCreateAccessProfileAssignment */
+	static readonly BatchCreateAccessProfileAssignment =
+		"aidevops:BatchCreateAccessProfileAssignment";
+	/** [Write] aidevops:BatchDeleteAccessProfileAssignment */
+	static readonly BatchDeleteAccessProfileAssignment =
+		"aidevops:BatchDeleteAccessProfileAssignment";
+	/** [Write] aidevops:BatchDeleteAccessProfileEntitlement */
+	static readonly BatchDeleteAccessProfileEntitlement =
+		"aidevops:BatchDeleteAccessProfileEntitlement";
+	/** [Write] aidevops:BatchPutAccessProfileEntitlement */
+	static readonly BatchPutAccessProfileEntitlement =
+		"aidevops:BatchPutAccessProfileEntitlement";
+	/** [Write] aidevops:CreateAccessProfile */
+	static readonly CreateAccessProfile = "aidevops:CreateAccessProfile";
 	/** [Write] aidevops:CreateAccessToken */
 	static readonly CreateAccessToken = "aidevops:CreateAccessToken";
 	/** [Write] aidevops:CreateAgentSpace */
@@ -38,6 +52,8 @@ export class AidevopsActions {
 	static readonly CreatePrivateConnection = "aidevops:CreatePrivateConnection";
 	/** [Write] aidevops:CreateTrigger */
 	static readonly CreateTrigger = "aidevops:CreateTrigger";
+	/** [Write] aidevops:DeleteAccessProfile */
+	static readonly DeleteAccessProfile = "aidevops:DeleteAccessProfile";
 	/** [Write] aidevops:DeleteAgentSpace */
 	static readonly DeleteAgentSpace = "aidevops:DeleteAgentSpace";
 	/** [Write] aidevops:DeleteAsset */
@@ -69,6 +85,8 @@ export class AidevopsActions {
 	static readonly EnableOperatorApp = "aidevops:EnableOperatorApp";
 	/** [Write] aidevops:EndChatForCase */
 	static readonly EndChatForCase = "aidevops:EndChatForCase";
+	/** [Read] aidevops:GetAccessProfile */
+	static readonly actionGetAccessProfile = "aidevops:GetAccessProfile";
 	/** [Read] aidevops:GetAccessToken */
 	static readonly actionGetAccessToken = "aidevops:GetAccessToken";
 	/** [Read] aidevops:GetAccountUsage */
@@ -105,6 +123,14 @@ export class AidevopsActions {
 	static readonly actionGetTrigger = "aidevops:GetTrigger";
 	/** [Write] aidevops:InitiateChatForCase */
 	static readonly InitiateChatForCase = "aidevops:InitiateChatForCase";
+	/** [List] aidevops:ListAccessProfileAssignments */
+	static readonly ListAccessProfileAssignments =
+		"aidevops:ListAccessProfileAssignments";
+	/** [List] aidevops:ListAccessProfileEntitlements */
+	static readonly ListAccessProfileEntitlements =
+		"aidevops:ListAccessProfileEntitlements";
+	/** [List] aidevops:ListAccessProfiles */
+	static readonly ListAccessProfiles = "aidevops:ListAccessProfiles";
 	/** [List] aidevops:ListAccessTokens */
 	static readonly ListAccessTokens = "aidevops:ListAccessTokens";
 	/** [Read] aidevops:ListAgentSpaceMetrics */
@@ -179,6 +205,11 @@ export class AidevopsActions {
 	static readonly TagResource = "aidevops:TagResource";
 	/** [Tagging] aidevops:UntagResource */
 	static readonly UntagResource = "aidevops:UntagResource";
+	/** [Write] aidevops:UpdateAccessProfile */
+	static readonly UpdateAccessProfile = "aidevops:UpdateAccessProfile";
+	/** [Write] aidevops:UpdateAccessProfilesOrder */
+	static readonly UpdateAccessProfilesOrder =
+		"aidevops:UpdateAccessProfilesOrder";
 	/** [Write] aidevops:UpdateAgentSpace */
 	static readonly UpdateAgentSpace = "aidevops:UpdateAgentSpace";
 	/** [Write] aidevops:UpdateApprovalAction */
@@ -214,6 +245,7 @@ export class AidevopsActions {
 	static readonly AllReadActions: string[] = [
 		AidevopsActions.DescribePrivateConnection,
 		AidevopsActions.DescribeServices,
+		AidevopsActions.actionGetAccessProfile,
 		AidevopsActions.actionGetAccessToken,
 		AidevopsActions.actionGetAccountUsage,
 		AidevopsActions.actionGetAgentSpace,
@@ -239,6 +271,11 @@ export class AidevopsActions {
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
 		AidevopsActions.AssociateService,
+		AidevopsActions.BatchCreateAccessProfileAssignment,
+		AidevopsActions.BatchDeleteAccessProfileAssignment,
+		AidevopsActions.BatchDeleteAccessProfileEntitlement,
+		AidevopsActions.BatchPutAccessProfileEntitlement,
+		AidevopsActions.CreateAccessProfile,
 		AidevopsActions.CreateAccessToken,
 		AidevopsActions.CreateAgentSpace,
 		AidevopsActions.CreateAsset,
@@ -249,6 +286,7 @@ export class AidevopsActions {
 		AidevopsActions.CreateOneTimeLoginSession,
 		AidevopsActions.CreatePrivateConnection,
 		AidevopsActions.CreateTrigger,
+		AidevopsActions.DeleteAccessProfile,
 		AidevopsActions.DeleteAgentSpace,
 		AidevopsActions.DeleteAsset,
 		AidevopsActions.DeleteAssetFile,
@@ -268,6 +306,8 @@ export class AidevopsActions {
 		AidevopsActions.RotateAccessToken,
 		AidevopsActions.SendMessage,
 		AidevopsActions.StopPlan,
+		AidevopsActions.UpdateAccessProfile,
+		AidevopsActions.UpdateAccessProfilesOrder,
 		AidevopsActions.UpdateAgentSpace,
 		AidevopsActions.UpdateApprovalAction,
 		AidevopsActions.UpdateAsset,
@@ -285,6 +325,9 @@ export class AidevopsActions {
 	];
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [
+		AidevopsActions.ListAccessProfileAssignments,
+		AidevopsActions.ListAccessProfileEntitlements,
+		AidevopsActions.ListAccessProfiles,
 		AidevopsActions.ListAccessTokens,
 		AidevopsActions.ListAgentSpaces,
 		AidevopsActions.ListAssetChanges,
@@ -319,6 +362,38 @@ export class AidevopsActions {
 		AidevopsActions.TagResource,
 		AidevopsActions.UntagResource,
 	];
+}
+
+/**
+ * Properties for building a access-profile ARN.
+ */
+export interface AidevopsAccessProfileArnProps {
+	/** The AgentSpaceId component of the ARN. */
+	readonly agentSpaceId: string;
+	/** The AccessProfileId component of the ARN. */
+	readonly accessProfileId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a access-profile ARN.
+ */
+export interface AidevopsAccessProfileArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AgentSpaceId component. */
+	readonly agentSpaceId: string;
+	/** The AccessProfileId component. */
+	readonly accessProfileId: string;
 }
 
 /**
@@ -501,6 +576,8 @@ export interface AidevopsTriggerArnComponents {
 	readonly triggerId: string;
 }
 
+const AccessProfileArnRegex =
+	/^arn:(?<partition>[^:]+):aidevops:(?<region>[^:]*):(?<account>[^:]*):agentspace\/(?<agentSpaceId>[^:/?]+)\/access-profile\/(?<accessProfileId>[^:/?]+)$/;
 const AgentspaceArnRegex =
 	/^arn:(?<partition>[^:]+):aidevops:(?<region>[^:]*):(?<account>[^:]*):agentspace\/(?<agentSpaceId>[^:/?]+)$/;
 const AssetArnRegex =
@@ -518,6 +595,40 @@ const TriggerArnRegex =
  * ARN builders, validators, and parsers for aidevops resources.
  */
 export class AidevopsResources {
+	/**
+	 * Builds an ARN for the access-profile resource.
+	 */
+	static accessProfile(props: AidevopsAccessProfileArnProps): string {
+		return `arn:${props.partition ?? "aws"}:aidevops:${props.region ?? "*"}:${props.account ?? "*"}:agentspace/${props.agentSpaceId}/access-profile/${props.accessProfileId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the access-profile resource.
+	 */
+	static isValidAccessProfileArn(arn: string): boolean {
+		return AccessProfileArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a access-profile ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseAccessProfileArn(
+		arn: string,
+	): AidevopsAccessProfileArnComponents {
+		const match = AccessProfileArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid access-profile ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			agentSpaceId: match.groups!.agentSpaceId,
+			accessProfileId: match.groups!.accessProfileId,
+		};
+	}
+
 	/**
 	 * Builds an ARN for the agentspace resource.
 	 */

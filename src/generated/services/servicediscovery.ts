@@ -387,16 +387,19 @@ export class ServiceDiscoveryConditions {
 	/** Condition keys applicable to the CreateHttpNamespace action. */
 	static readonly CreateHttpNamespaceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
+		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreatePrivateDnsNamespace action. */
 	static readonly CreatePrivateDnsNamespaceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
+		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreatePublicDnsNamespace action. */
 	static readonly CreatePublicDnsNamespaceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
+		"aws:ResourceTag/${TagKey}",
 		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateService action. */

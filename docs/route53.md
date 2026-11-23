@@ -1520,6 +1520,7 @@ new route53.Route53Actions()
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.actionGetHealthCheckSource">actionGetHealthCheckSource</a></code> | <code>string</code> | [Read] route53:GetHealthCheckSource. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.actionGetHealthCheckStatus">actionGetHealthCheckStatus</a></code> | <code>string</code> | [List] route53:GetHealthCheckStatus. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.actionGetHostedZone">actionGetHostedZone</a></code> | <code>string</code> | [List] route53:GetHostedZone. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.actionGetHostedZoneChangeBatch">actionGetHostedZoneChangeBatch</a></code> | <code>string</code> | [List] route53:GetHostedZoneChangeBatch. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.actionGetHostedZoneCount">actionGetHostedZoneCount</a></code> | <code>string</code> | [List] route53:GetHostedZoneCount. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.actionGetHostedZoneLimit">actionGetHostedZoneLimit</a></code> | <code>string</code> | [Read] route53:GetHostedZoneLimit. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.actionGetIpGuardrailPolicy">actionGetIpGuardrailPolicy</a></code> | <code>string</code> | [Read] route53:GetIpGuardrailPolicy. |
@@ -1575,6 +1576,7 @@ new route53.Route53Actions()
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.ListHealthChecks">ListHealthChecks</a></code> | <code>string</code> | [Read] route53:ListHealthChecks. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.ListHealthChecksBySource">ListHealthChecksBySource</a></code> | <code>string</code> | [List] route53:ListHealthChecksBySource. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.ListHealthCheckSources">ListHealthCheckSources</a></code> | <code>string</code> | [List] route53:ListHealthCheckSources. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.ListHostedZoneChangeBatches">ListHostedZoneChangeBatches</a></code> | <code>string</code> | [List] route53:ListHostedZoneChangeBatches. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.ListHostedZones">ListHostedZones</a></code> | <code>string</code> | [List] route53:ListHostedZones. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.ListHostedZonesByName">ListHostedZonesByName</a></code> | <code>string</code> | [List] route53:ListHostedZonesByName. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.ListHostedZonesByVPC">ListHostedZonesByVPC</a></code> | <code>string</code> | [List] route53:ListHostedZonesByVPC. |
@@ -1596,6 +1598,7 @@ new route53.Route53Actions()
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.UpdateHealthCheck">UpdateHealthCheck</a></code> | <code>string</code> | [Write] route53:UpdateHealthCheck. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.UpdateHostedZoneComment">UpdateHostedZoneComment</a></code> | <code>string</code> | [Write] route53:UpdateHostedZoneComment. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.UpdateHostedZoneFeatures">UpdateHostedZoneFeatures</a></code> | <code>string</code> | [Write] route53:UpdateHostedZoneFeatures. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.UpdateHostedZoneTier">UpdateHostedZoneTier</a></code> | <code>string</code> | [Write] route53:UpdateHostedZoneTier. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.UpdateIpGuardrailPolicy">UpdateIpGuardrailPolicy</a></code> | <code>string</code> | [Write] route53:UpdateIpGuardrailPolicy. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.UpdateTrafficPolicyComment">UpdateTrafficPolicyComment</a></code> | <code>string</code> | [Write] route53:UpdateTrafficPolicyComment. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Actions.property.UpdateTrafficPolicyInstance">UpdateTrafficPolicyInstance</a></code> | <code>string</code> | [Write] route53:UpdateTrafficPolicyInstance. |
@@ -1731,6 +1734,18 @@ public readonly actionGetHostedZone: string;
 - *Type:* string
 
 [List] route53:GetHostedZone.
+
+---
+
+##### `actionGetHostedZoneChangeBatch`<sup>Required</sup> <a name="actionGetHostedZoneChangeBatch" id="@cdk_utils/iam.route53.Route53Actions.property.actionGetHostedZoneChangeBatch"></a>
+
+```typescript
+public readonly actionGetHostedZoneChangeBatch: string;
+```
+
+- *Type:* string
+
+[List] route53:GetHostedZoneChangeBatch.
 
 ---
 
@@ -2394,6 +2409,18 @@ public readonly ListHealthCheckSources: string;
 
 ---
 
+##### `ListHostedZoneChangeBatches`<sup>Required</sup> <a name="ListHostedZoneChangeBatches" id="@cdk_utils/iam.route53.Route53Actions.property.ListHostedZoneChangeBatches"></a>
+
+```typescript
+public readonly ListHostedZoneChangeBatches: string;
+```
+
+- *Type:* string
+
+[List] route53:ListHostedZoneChangeBatches.
+
+---
+
 ##### `ListHostedZones`<sup>Required</sup> <a name="ListHostedZones" id="@cdk_utils/iam.route53.Route53Actions.property.ListHostedZones"></a>
 
 ```typescript
@@ -2643,6 +2670,18 @@ public readonly UpdateHostedZoneFeatures: string;
 - *Type:* string
 
 [Write] route53:UpdateHostedZoneFeatures.
+
+---
+
+##### `UpdateHostedZoneTier`<sup>Required</sup> <a name="UpdateHostedZoneTier" id="@cdk_utils/iam.route53.Route53Actions.property.UpdateHostedZoneTier"></a>
+
+```typescript
+public readonly UpdateHostedZoneTier: string;
+```
+
+- *Type:* string
+
+[Write] route53:UpdateHostedZoneTier.
 
 ---
 
@@ -3092,10 +3131,12 @@ new route53.Route53Operations()
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListHealthChecks">ListHealthChecks</a></code> | <code>string[]</code> | IAM actions required for the ListHealthChecks API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListHealthChecksBySource">ListHealthChecksBySource</a></code> | <code>string[]</code> | IAM actions required for the ListHealthChecksBySource API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListHealthCheckSources">ListHealthCheckSources</a></code> | <code>string[]</code> | IAM actions required for the ListHealthCheckSources API call. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListHostedZoneChangeBatches">ListHostedZoneChangeBatches</a></code> | <code>string[]</code> | IAM actions required for the ListHostedZoneChangeBatches API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListHostedZones">ListHostedZones</a></code> | <code>string[]</code> | IAM actions required for the ListHostedZones API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListHostedZonesByName">ListHostedZonesByName</a></code> | <code>string[]</code> | IAM actions required for the ListHostedZonesByName API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListHostedZonesByVPC">ListHostedZonesByVPC</a></code> | <code>string[]</code> | IAM actions required for the ListHostedZonesByVPC API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListQueryLoggingConfigs">ListQueryLoggingConfigs</a></code> | <code>string[]</code> | IAM actions required for the ListQueryLoggingConfigs API call. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListResourceRecordSetChanges">ListResourceRecordSetChanges</a></code> | <code>string[]</code> | IAM actions required for the ListResourceRecordSetChanges API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListResourceRecordSetProtections">ListResourceRecordSetProtections</a></code> | <code>string[]</code> | IAM actions required for the ListResourceRecordSetProtections API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListResourceRecordSets">ListResourceRecordSets</a></code> | <code>string[]</code> | IAM actions required for the ListResourceRecordSets API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.ListReusableDelegationSets">ListReusableDelegationSets</a></code> | <code>string[]</code> | IAM actions required for the ListReusableDelegationSets API call. |
@@ -3118,6 +3159,7 @@ new route53.Route53Operations()
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.opGetHealthCheckSource">opGetHealthCheckSource</a></code> | <code>string[]</code> | IAM actions required for the GetHealthCheckSource API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.opGetHealthCheckStatus">opGetHealthCheckStatus</a></code> | <code>string[]</code> | IAM actions required for the GetHealthCheckStatus API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.opGetHostedZone">opGetHostedZone</a></code> | <code>string[]</code> | IAM actions required for the GetHostedZone API call. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.opGetHostedZoneChangeBatch">opGetHostedZoneChangeBatch</a></code> | <code>string[]</code> | IAM actions required for the GetHostedZoneChangeBatch API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.opGetHostedZoneCount">opGetHostedZoneCount</a></code> | <code>string[]</code> | IAM actions required for the GetHostedZoneCount API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.opGetHostedZoneLimit">opGetHostedZoneLimit</a></code> | <code>string[]</code> | IAM actions required for the GetHostedZoneLimit API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.opGetQueryLoggingConfig">opGetQueryLoggingConfig</a></code> | <code>string[]</code> | IAM actions required for the GetQueryLoggingConfig API call. |
@@ -3130,6 +3172,7 @@ new route53.Route53Operations()
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.UpdateHealthCheck">UpdateHealthCheck</a></code> | <code>string[]</code> | IAM actions required for the UpdateHealthCheck API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.UpdateHostedZoneComment">UpdateHostedZoneComment</a></code> | <code>string[]</code> | IAM actions required for the UpdateHostedZoneComment API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.UpdateHostedZoneFeatures">UpdateHostedZoneFeatures</a></code> | <code>string[]</code> | IAM actions required for the UpdateHostedZoneFeatures API call. |
+| <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.UpdateHostedZoneTier">UpdateHostedZoneTier</a></code> | <code>string[]</code> | IAM actions required for the UpdateHostedZoneTier API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.UpdateTrafficPolicyComment">UpdateTrafficPolicyComment</a></code> | <code>string[]</code> | IAM actions required for the UpdateTrafficPolicyComment API call. |
 | <code><a href="#@cdk_utils/iam.route53.Route53Operations.property.UpdateTrafficPolicyInstance">UpdateTrafficPolicyInstance</a></code> | <code>string[]</code> | IAM actions required for the UpdateTrafficPolicyInstance API call. |
 
@@ -3603,6 +3646,18 @@ IAM actions required for the ListHealthCheckSources API call.
 
 ---
 
+##### `ListHostedZoneChangeBatches`<sup>Required</sup> <a name="ListHostedZoneChangeBatches" id="@cdk_utils/iam.route53.Route53Operations.property.ListHostedZoneChangeBatches"></a>
+
+```typescript
+public readonly ListHostedZoneChangeBatches: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListHostedZoneChangeBatches API call.
+
+---
+
 ##### `ListHostedZones`<sup>Required</sup> <a name="ListHostedZones" id="@cdk_utils/iam.route53.Route53Operations.property.ListHostedZones"></a>
 
 ```typescript
@@ -3648,6 +3703,18 @@ public readonly ListQueryLoggingConfigs: string[];
 - *Type:* string[]
 
 IAM actions required for the ListQueryLoggingConfigs API call.
+
+---
+
+##### `ListResourceRecordSetChanges`<sup>Required</sup> <a name="ListResourceRecordSetChanges" id="@cdk_utils/iam.route53.Route53Operations.property.ListResourceRecordSetChanges"></a>
+
+```typescript
+public readonly ListResourceRecordSetChanges: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListResourceRecordSetChanges API call.
 
 ---
 
@@ -3915,6 +3982,18 @@ IAM actions required for the GetHostedZone API call.
 
 ---
 
+##### `opGetHostedZoneChangeBatch`<sup>Required</sup> <a name="opGetHostedZoneChangeBatch" id="@cdk_utils/iam.route53.Route53Operations.property.opGetHostedZoneChangeBatch"></a>
+
+```typescript
+public readonly opGetHostedZoneChangeBatch: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetHostedZoneChangeBatch API call.
+
+---
+
 ##### `opGetHostedZoneCount`<sup>Required</sup> <a name="opGetHostedZoneCount" id="@cdk_utils/iam.route53.Route53Operations.property.opGetHostedZoneCount"></a>
 
 ```typescript
@@ -4056,6 +4135,18 @@ public readonly UpdateHostedZoneFeatures: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateHostedZoneFeatures API call.
+
+---
+
+##### `UpdateHostedZoneTier`<sup>Required</sup> <a name="UpdateHostedZoneTier" id="@cdk_utils/iam.route53.Route53Operations.property.UpdateHostedZoneTier"></a>
+
+```typescript
+public readonly UpdateHostedZoneTier: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateHostedZoneTier API call.
 
 ---
 

@@ -80,11 +80,17 @@ export class NetworkSecurityManagerActions {
 		"network-security-manager:ListDeploymentSnapshots";
 	/** [List] network-security-manager:ListDeployments */
 	static readonly ListDeployments = "network-security-manager:ListDeployments";
+	/** [Read] network-security-manager:ListEntityCoverages */
+	static readonly ListEntityCoverages =
+		"network-security-manager:ListEntityCoverages";
 	/** [List] network-security-manager:ListPolicies */
 	static readonly ListPolicies = "network-security-manager:ListPolicies";
 	/** [Read] network-security-manager:ListPolicySnapshots */
 	static readonly ListPolicySnapshots =
 		"network-security-manager:ListPolicySnapshots";
+	/** [Read] network-security-manager:ListProtectedResourceCoverages */
+	static readonly ListProtectedResourceCoverages =
+		"network-security-manager:ListProtectedResourceCoverages";
 	/** [Read] network-security-manager:ListResourceAssociations */
 	static readonly ListResourceAssociations =
 		"network-security-manager:ListResourceAssociations";
@@ -137,7 +143,9 @@ export class NetworkSecurityManagerActions {
 		NetworkSecurityManagerActions.actionGetTemplate,
 		NetworkSecurityManagerActions.ListAggregateResourceSynchronizationStatuses,
 		NetworkSecurityManagerActions.ListDeploymentSnapshots,
+		NetworkSecurityManagerActions.ListEntityCoverages,
 		NetworkSecurityManagerActions.ListPolicySnapshots,
+		NetworkSecurityManagerActions.ListProtectedResourceCoverages,
 		NetworkSecurityManagerActions.ListResourceAssociations,
 		NetworkSecurityManagerActions.ListResourceSynchronizationStatuses,
 		NetworkSecurityManagerActions.ListRuleSnapshots,
@@ -974,6 +982,10 @@ export class NetworkSecurityManagerOperations {
 	static readonly ListDeployments: string[] = [
 		"network-security-manager:ListDeployments",
 	];
+	/** IAM actions required for the ListEntityCoverages API call. */
+	static readonly ListEntityCoverages: string[] = [
+		"network-security-manager:ListEntityCoverages",
+	];
 	/** IAM actions required for the ListPolicies API call. */
 	static readonly ListPolicies: string[] = [
 		"network-security-manager:ListPolicies",
@@ -981,6 +993,10 @@ export class NetworkSecurityManagerOperations {
 	/** IAM actions required for the ListPolicySnapshots API call. */
 	static readonly ListPolicySnapshots: string[] = [
 		"network-security-manager:ListPolicySnapshots",
+	];
+	/** IAM actions required for the ListProtectedResourceCoverages API call. */
+	static readonly ListProtectedResourceCoverages: string[] = [
+		"network-security-manager:ListProtectedResourceCoverages",
 	];
 	/** IAM actions required for the ListResourceAssociations API call. */
 	static readonly ListResourceAssociations: string[] = [
@@ -1104,6 +1120,10 @@ export class NetworkSecurityManagerConditions {
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
+	/** Condition keys applicable to the ListProtectedResourceCoverages action. */
+	static readonly ListProtectedResourceCoveragesConditionKeys: string[] = [
+		"network-security-manager:ProtectedResourceArn",
+	];
 	/** Condition keys applicable to the ListResourceAssociations action. */
 	static readonly ListResourceAssociationsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
@@ -1134,6 +1154,9 @@ export class NetworkSecurityManagerConditions {
 	static readonly AWS_RESOURCE_TAG = "aws:ResourceTag/${TagKey}";
 	/** Condition key: aws:TagKeys (ArrayOfString) */
 	static readonly AWS_TAG_KEYS = "aws:TagKeys";
+	/** Condition key: network-security-manager:ProtectedResourceArn (ARN) */
+	static readonly PROTECTED_RESOURCE_ARN =
+		"network-security-manager:ProtectedResourceArn";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.
@@ -1154,5 +1177,16 @@ export class NetworkSecurityManagerConditions {
 	 */
 	static tagKeys(values: string[]): Record<string, Record<string, string[]>> {
 		return { "ForAllValues:StringEquals": { "aws:TagKeys": values } };
+	}
+
+	/**
+	 * Generates a condition block for `network-security-manager:ProtectedResourceArn`.
+	 */
+	static protectedResourceARN(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return {
+			ArnEquals: { "network-security-manager:ProtectedResourceArn": value },
+		};
 	}
 }

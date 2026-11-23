@@ -3,6 +3,178 @@
 
 ## Structs <a name="Structs" id="Structs"></a>
 
+### AgentRegistryPublisherArnComponents <a name="AgentRegistryPublisherArnComponents" id="@cdk_utils/iam.agent_registry.AgentRegistryPublisherArnComponents"></a>
+
+Parsed components of a publisher ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.agent_registry.AgentRegistryPublisherArnComponents.Initializer"></a>
+
+```typescript
+import { agent_registry } from '@cdk_utils/iam'
+
+const agentRegistryPublisherArnComponents: agent_registry.AgentRegistryPublisherArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryPublisherArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryPublisherArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryPublisherArnComponents.property.publisherId">publisherId</a></code> | <code>string</code> | The PublisherId component. |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryPublisherArnComponents.property.publisherType">publisherType</a></code> | <code>string</code> | The PublisherType component. |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryPublisherArnComponents.property.publisherValue">publisherValue</a></code> | <code>string</code> | The PublisherValue component. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.agent_registry.AgentRegistryPublisherArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.agent_registry.AgentRegistryPublisherArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `publisherId`<sup>Required</sup> <a name="publisherId" id="@cdk_utils/iam.agent_registry.AgentRegistryPublisherArnComponents.property.publisherId"></a>
+
+```typescript
+public readonly publisherId: string;
+```
+
+- *Type:* string
+
+The PublisherId component.
+
+---
+
+##### `publisherType`<sup>Required</sup> <a name="publisherType" id="@cdk_utils/iam.agent_registry.AgentRegistryPublisherArnComponents.property.publisherType"></a>
+
+```typescript
+public readonly publisherType: string;
+```
+
+- *Type:* string
+
+The PublisherType component.
+
+---
+
+##### `publisherValue`<sup>Required</sup> <a name="publisherValue" id="@cdk_utils/iam.agent_registry.AgentRegistryPublisherArnComponents.property.publisherValue"></a>
+
+```typescript
+public readonly publisherValue: string;
+```
+
+- *Type:* string
+
+The PublisherValue component.
+
+---
+
+### AgentRegistryPublisherArnProps <a name="AgentRegistryPublisherArnProps" id="@cdk_utils/iam.agent_registry.AgentRegistryPublisherArnProps"></a>
+
+Properties for building a publisher ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.agent_registry.AgentRegistryPublisherArnProps.Initializer"></a>
+
+```typescript
+import { agent_registry } from '@cdk_utils/iam'
+
+const agentRegistryPublisherArnProps: agent_registry.AgentRegistryPublisherArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryPublisherArnProps.property.publisherId">publisherId</a></code> | <code>string</code> | The PublisherId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryPublisherArnProps.property.publisherType">publisherType</a></code> | <code>string</code> | The PublisherType component of the ARN. |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryPublisherArnProps.property.publisherValue">publisherValue</a></code> | <code>string</code> | The PublisherValue component of the ARN. |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryPublisherArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryPublisherArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+
+---
+
+##### `publisherId`<sup>Required</sup> <a name="publisherId" id="@cdk_utils/iam.agent_registry.AgentRegistryPublisherArnProps.property.publisherId"></a>
+
+```typescript
+public readonly publisherId: string;
+```
+
+- *Type:* string
+
+The PublisherId component of the ARN.
+
+---
+
+##### `publisherType`<sup>Required</sup> <a name="publisherType" id="@cdk_utils/iam.agent_registry.AgentRegistryPublisherArnProps.property.publisherType"></a>
+
+```typescript
+public readonly publisherType: string;
+```
+
+- *Type:* string
+
+The PublisherType component of the ARN.
+
+---
+
+##### `publisherValue`<sup>Required</sup> <a name="publisherValue" id="@cdk_utils/iam.agent_registry.AgentRegistryPublisherArnProps.property.publisherValue"></a>
+
+```typescript
+public readonly publisherValue: string;
+```
+
+- *Type:* string
+
+The PublisherValue component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.agent_registry.AgentRegistryPublisherArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.agent_registry.AgentRegistryPublisherArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
 ### AgentRegistryRegistryArnComponents <a name="AgentRegistryRegistryArnComponents" id="@cdk_utils/iam.agent_registry.AgentRegistryRegistryArnComponents"></a>
 
 Parsed components of a registry ARN.
@@ -352,6 +524,7 @@ new agent_registry.AgentRegistryActions()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.actionGetDiscoverableRegistryRecord">actionGetDiscoverableRegistryRecord</a></code> | <code>string</code> | [Read] agent-registry:GetDiscoverableRegistryRecord. |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.actionGetPublisher">actionGetPublisher</a></code> | <code>string</code> | [Read] agent-registry:GetPublisher. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.actionGetRegistry">actionGetRegistry</a></code> | <code>string</code> | [Read] agent-registry:GetRegistry. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.actionGetRegistryRecord">actionGetRegistryRecord</a></code> | <code>string</code> | [Read] agent-registry:GetRegistryRecord. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.actionGetResourcePolicy">actionGetResourcePolicy</a></code> | <code>string</code> | [Read] agent-registry:GetResourcePolicy. |
@@ -360,14 +533,20 @@ new agent_registry.AgentRegistryActions()
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.AssociatePublisher">AssociatePublisher</a></code> | <code>string</code> | [Write] agent-registry:AssociatePublisher. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.CompleteRegistryRecordTokenAuth">CompleteRegistryRecordTokenAuth</a></code> | <code>string</code> | [Write] agent-registry:CompleteRegistryRecordTokenAuth. |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.CreatePublisher">CreatePublisher</a></code> | <code>string</code> | [Write] agent-registry:CreatePublisher. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.CreateRegistry">CreateRegistry</a></code> | <code>string</code> | [Write] agent-registry:CreateRegistry. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.CreateRegistryRecord">CreateRegistryRecord</a></code> | <code>string</code> | [Write] agent-registry:CreateRegistryRecord. |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.DeletePublisher">DeletePublisher</a></code> | <code>string</code> | [Write] agent-registry:DeletePublisher. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.DeleteRegistry">DeleteRegistry</a></code> | <code>string</code> | [Write] agent-registry:DeleteRegistry. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.DeleteRegistryRecord">DeleteRegistryRecord</a></code> | <code>string</code> | [Write] agent-registry:DeleteRegistryRecord. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.DeleteResourcePolicy">DeleteResourcePolicy</a></code> | <code>string</code> | [Write] agent-registry:DeleteResourcePolicy. |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.DisassociatePublisher">DisassociatePublisher</a></code> | <code>string</code> | [Write] agent-registry:DisassociatePublisher. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.InvokeRegistryMcp">InvokeRegistryMcp</a></code> | <code>string</code> | [Read] agent-registry:InvokeRegistryMcp. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.ListDiscoverableRegistryRecords">ListDiscoverableRegistryRecords</a></code> | <code>string</code> | [List] agent-registry:ListDiscoverableRegistryRecords. |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.ListPublisherAssociations">ListPublisherAssociations</a></code> | <code>string</code> | [List] agent-registry:ListPublisherAssociations. |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.ListPublishers">ListPublishers</a></code> | <code>string</code> | [List] agent-registry:ListPublishers. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.ListRegistries">ListRegistries</a></code> | <code>string</code> | [List] agent-registry:ListRegistries. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.ListRegistryRecords">ListRegistryRecords</a></code> | <code>string</code> | [List] agent-registry:ListRegistryRecords. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [List] agent-registry:ListTagsForResource. |
@@ -377,9 +556,11 @@ new agent_registry.AgentRegistryActions()
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.SubmitRegistryRecordForApproval">SubmitRegistryRecordForApproval</a></code> | <code>string</code> | [Write] agent-registry:SubmitRegistryRecordForApproval. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] agent-registry:TagResource. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] agent-registry:UntagResource. |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.UpdatePublisherAssociationApprovalStatus">UpdatePublisherAssociationApprovalStatus</a></code> | <code>string</code> | [Write] agent-registry:UpdatePublisherAssociationApprovalStatus. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.UpdateRegistry">UpdateRegistry</a></code> | <code>string</code> | [Write] agent-registry:UpdateRegistry. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.UpdateRegistryRecord">UpdateRegistryRecord</a></code> | <code>string</code> | [Write] agent-registry:UpdateRegistryRecord. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.UpdateRegistryRecordStatus">UpdateRegistryRecordStatus</a></code> | <code>string</code> | [Write] agent-registry:UpdateRegistryRecordStatus. |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryActions.property.ValidatePublisher">ValidatePublisher</a></code> | <code>string</code> | [Write] agent-registry:ValidatePublisher. |
 
 ---
 
@@ -392,6 +573,18 @@ public readonly actionGetDiscoverableRegistryRecord: string;
 - *Type:* string
 
 [Read] agent-registry:GetDiscoverableRegistryRecord.
+
+---
+
+##### `actionGetPublisher`<sup>Required</sup> <a name="actionGetPublisher" id="@cdk_utils/iam.agent_registry.AgentRegistryActions.property.actionGetPublisher"></a>
+
+```typescript
+public readonly actionGetPublisher: string;
+```
+
+- *Type:* string
+
+[Read] agent-registry:GetPublisher.
 
 ---
 
@@ -491,6 +684,18 @@ All write-level actions.
 
 ---
 
+##### `AssociatePublisher`<sup>Required</sup> <a name="AssociatePublisher" id="@cdk_utils/iam.agent_registry.AgentRegistryActions.property.AssociatePublisher"></a>
+
+```typescript
+public readonly AssociatePublisher: string;
+```
+
+- *Type:* string
+
+[Write] agent-registry:AssociatePublisher.
+
+---
+
 ##### `CompleteRegistryRecordTokenAuth`<sup>Required</sup> <a name="CompleteRegistryRecordTokenAuth" id="@cdk_utils/iam.agent_registry.AgentRegistryActions.property.CompleteRegistryRecordTokenAuth"></a>
 
 ```typescript
@@ -500,6 +705,18 @@ public readonly CompleteRegistryRecordTokenAuth: string;
 - *Type:* string
 
 [Write] agent-registry:CompleteRegistryRecordTokenAuth.
+
+---
+
+##### `CreatePublisher`<sup>Required</sup> <a name="CreatePublisher" id="@cdk_utils/iam.agent_registry.AgentRegistryActions.property.CreatePublisher"></a>
+
+```typescript
+public readonly CreatePublisher: string;
+```
+
+- *Type:* string
+
+[Write] agent-registry:CreatePublisher.
 
 ---
 
@@ -524,6 +741,18 @@ public readonly CreateRegistryRecord: string;
 - *Type:* string
 
 [Write] agent-registry:CreateRegistryRecord.
+
+---
+
+##### `DeletePublisher`<sup>Required</sup> <a name="DeletePublisher" id="@cdk_utils/iam.agent_registry.AgentRegistryActions.property.DeletePublisher"></a>
+
+```typescript
+public readonly DeletePublisher: string;
+```
+
+- *Type:* string
+
+[Write] agent-registry:DeletePublisher.
 
 ---
 
@@ -563,6 +792,18 @@ public readonly DeleteResourcePolicy: string;
 
 ---
 
+##### `DisassociatePublisher`<sup>Required</sup> <a name="DisassociatePublisher" id="@cdk_utils/iam.agent_registry.AgentRegistryActions.property.DisassociatePublisher"></a>
+
+```typescript
+public readonly DisassociatePublisher: string;
+```
+
+- *Type:* string
+
+[Write] agent-registry:DisassociatePublisher.
+
+---
+
 ##### `InvokeRegistryMcp`<sup>Required</sup> <a name="InvokeRegistryMcp" id="@cdk_utils/iam.agent_registry.AgentRegistryActions.property.InvokeRegistryMcp"></a>
 
 ```typescript
@@ -584,6 +825,30 @@ public readonly ListDiscoverableRegistryRecords: string;
 - *Type:* string
 
 [List] agent-registry:ListDiscoverableRegistryRecords.
+
+---
+
+##### `ListPublisherAssociations`<sup>Required</sup> <a name="ListPublisherAssociations" id="@cdk_utils/iam.agent_registry.AgentRegistryActions.property.ListPublisherAssociations"></a>
+
+```typescript
+public readonly ListPublisherAssociations: string;
+```
+
+- *Type:* string
+
+[List] agent-registry:ListPublisherAssociations.
+
+---
+
+##### `ListPublishers`<sup>Required</sup> <a name="ListPublishers" id="@cdk_utils/iam.agent_registry.AgentRegistryActions.property.ListPublishers"></a>
+
+```typescript
+public readonly ListPublishers: string;
+```
+
+- *Type:* string
+
+[List] agent-registry:ListPublishers.
 
 ---
 
@@ -695,6 +960,18 @@ public readonly UntagResource: string;
 
 ---
 
+##### `UpdatePublisherAssociationApprovalStatus`<sup>Required</sup> <a name="UpdatePublisherAssociationApprovalStatus" id="@cdk_utils/iam.agent_registry.AgentRegistryActions.property.UpdatePublisherAssociationApprovalStatus"></a>
+
+```typescript
+public readonly UpdatePublisherAssociationApprovalStatus: string;
+```
+
+- *Type:* string
+
+[Write] agent-registry:UpdatePublisherAssociationApprovalStatus.
+
+---
+
 ##### `UpdateRegistry`<sup>Required</sup> <a name="UpdateRegistry" id="@cdk_utils/iam.agent_registry.AgentRegistryActions.property.UpdateRegistry"></a>
 
 ```typescript
@@ -728,6 +1005,18 @@ public readonly UpdateRegistryRecordStatus: string;
 - *Type:* string
 
 [Write] agent-registry:UpdateRegistryRecordStatus.
+
+---
+
+##### `ValidatePublisher`<sup>Required</sup> <a name="ValidatePublisher" id="@cdk_utils/iam.agent_registry.AgentRegistryActions.property.ValidatePublisher"></a>
+
+```typescript
+public readonly ValidatePublisher: string;
+```
+
+- *Type:* string
+
+[Write] agent-registry:ValidatePublisher.
 
 ---
 
@@ -849,6 +1138,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryConditions.property.AWS_REQUEST_TAG">AWS_REQUEST_TAG</a></code> | <code>string</code> | Condition key: aws:RequestTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryConditions.property.AWS_RESOURCE_TAG">AWS_RESOURCE_TAG</a></code> | <code>string</code> | Condition key: aws:ResourceTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryConditions.property.AWS_TAG_KEYS">AWS_TAG_KEYS</a></code> | <code>string</code> | Condition key: aws:TagKeys (ArrayOfString). |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryConditions.property.CreatePublisherConditionKeys">CreatePublisherConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreatePublisher action. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryConditions.property.CreateRegistryConditionKeys">CreateRegistryConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateRegistry action. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryConditions.property.CreateRegistryRecordConditionKeys">CreateRegistryRecordConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateRegistryRecord action. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryConditions.property.RECORD_CREATOR_ACCOUNT">RECORD_CREATOR_ACCOUNT</a></code> | <code>string</code> | Condition key: agent-registry:RecordCreatorAccount (String). |
@@ -891,6 +1181,18 @@ public readonly AWS_TAG_KEYS: string;
 - *Type:* string
 
 Condition key: aws:TagKeys (ArrayOfString).
+
+---
+
+##### `CreatePublisherConditionKeys`<sup>Required</sup> <a name="CreatePublisherConditionKeys" id="@cdk_utils/iam.agent_registry.AgentRegistryConditions.property.CreatePublisherConditionKeys"></a>
+
+```typescript
+public readonly CreatePublisherConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreatePublisher action.
 
 ---
 
@@ -990,24 +1292,45 @@ new agent_registry.AgentRegistryOperations()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.AssociatePublisher">AssociatePublisher</a></code> | <code>string[]</code> | IAM actions required for the AssociatePublisher API call. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.BatchGetDiscoverableRegistryRecord">BatchGetDiscoverableRegistryRecord</a></code> | <code>string[]</code> | IAM actions required for the BatchGetDiscoverableRegistryRecord API call. |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.CreatePublisher">CreatePublisher</a></code> | <code>string[]</code> | IAM actions required for the CreatePublisher API call. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.CreateRegistry">CreateRegistry</a></code> | <code>string[]</code> | IAM actions required for the CreateRegistry API call. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.CreateRegistryRecord">CreateRegistryRecord</a></code> | <code>string[]</code> | IAM actions required for the CreateRegistryRecord API call. |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.DeletePublisher">DeletePublisher</a></code> | <code>string[]</code> | IAM actions required for the DeletePublisher API call. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.DeleteRegistry">DeleteRegistry</a></code> | <code>string[]</code> | IAM actions required for the DeleteRegistry API call. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.DeleteRegistryRecord">DeleteRegistryRecord</a></code> | <code>string[]</code> | IAM actions required for the DeleteRegistryRecord API call. |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.DisassociatePublisher">DisassociatePublisher</a></code> | <code>string[]</code> | IAM actions required for the DisassociatePublisher API call. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.ListDiscoverableRegistryRecords">ListDiscoverableRegistryRecords</a></code> | <code>string[]</code> | IAM actions required for the ListDiscoverableRegistryRecords API call. |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.ListPublisherAssociations">ListPublisherAssociations</a></code> | <code>string[]</code> | IAM actions required for the ListPublisherAssociations API call. |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.ListPublishers">ListPublishers</a></code> | <code>string[]</code> | IAM actions required for the ListPublishers API call. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.ListRegistries">ListRegistries</a></code> | <code>string[]</code> | IAM actions required for the ListRegistries API call. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.ListRegistryRecords">ListRegistryRecords</a></code> | <code>string[]</code> | IAM actions required for the ListRegistryRecords API call. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.opGetPublisher">opGetPublisher</a></code> | <code>string[]</code> | IAM actions required for the GetPublisher API call. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.opGetRegistry">opGetRegistry</a></code> | <code>string[]</code> | IAM actions required for the GetRegistry API call. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.opGetRegistryRecord">opGetRegistryRecord</a></code> | <code>string[]</code> | IAM actions required for the GetRegistryRecord API call. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.SearchDiscoverableRegistryRecords">SearchDiscoverableRegistryRecords</a></code> | <code>string[]</code> | IAM actions required for the SearchDiscoverableRegistryRecords API call. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.SubmitRegistryRecordForApproval">SubmitRegistryRecordForApproval</a></code> | <code>string[]</code> | IAM actions required for the SubmitRegistryRecordForApproval API call. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.UpdatePublisherAssociationApprovalStatus">UpdatePublisherAssociationApprovalStatus</a></code> | <code>string[]</code> | IAM actions required for the UpdatePublisherAssociationApprovalStatus API call. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.UpdateRegistry">UpdateRegistry</a></code> | <code>string[]</code> | IAM actions required for the UpdateRegistry API call. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.UpdateRegistryRecord">UpdateRegistryRecord</a></code> | <code>string[]</code> | IAM actions required for the UpdateRegistryRecord API call. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.UpdateRegistryRecordStatus">UpdateRegistryRecordStatus</a></code> | <code>string[]</code> | IAM actions required for the UpdateRegistryRecordStatus API call. |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.ValidatePublisher">ValidatePublisher</a></code> | <code>string[]</code> | IAM actions required for the ValidatePublisher API call. |
+
+---
+
+##### `AssociatePublisher`<sup>Required</sup> <a name="AssociatePublisher" id="@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.AssociatePublisher"></a>
+
+```typescript
+public readonly AssociatePublisher: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the AssociatePublisher API call.
 
 ---
 
@@ -1020,6 +1343,18 @@ public readonly BatchGetDiscoverableRegistryRecord: string[];
 - *Type:* string[]
 
 IAM actions required for the BatchGetDiscoverableRegistryRecord API call.
+
+---
+
+##### `CreatePublisher`<sup>Required</sup> <a name="CreatePublisher" id="@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.CreatePublisher"></a>
+
+```typescript
+public readonly CreatePublisher: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreatePublisher API call.
 
 ---
 
@@ -1047,6 +1382,18 @@ IAM actions required for the CreateRegistryRecord API call.
 
 ---
 
+##### `DeletePublisher`<sup>Required</sup> <a name="DeletePublisher" id="@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.DeletePublisher"></a>
+
+```typescript
+public readonly DeletePublisher: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeletePublisher API call.
+
+---
+
 ##### `DeleteRegistry`<sup>Required</sup> <a name="DeleteRegistry" id="@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.DeleteRegistry"></a>
 
 ```typescript
@@ -1071,6 +1418,18 @@ IAM actions required for the DeleteRegistryRecord API call.
 
 ---
 
+##### `DisassociatePublisher`<sup>Required</sup> <a name="DisassociatePublisher" id="@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.DisassociatePublisher"></a>
+
+```typescript
+public readonly DisassociatePublisher: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DisassociatePublisher API call.
+
+---
+
 ##### `ListDiscoverableRegistryRecords`<sup>Required</sup> <a name="ListDiscoverableRegistryRecords" id="@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.ListDiscoverableRegistryRecords"></a>
 
 ```typescript
@@ -1080,6 +1439,30 @@ public readonly ListDiscoverableRegistryRecords: string[];
 - *Type:* string[]
 
 IAM actions required for the ListDiscoverableRegistryRecords API call.
+
+---
+
+##### `ListPublisherAssociations`<sup>Required</sup> <a name="ListPublisherAssociations" id="@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.ListPublisherAssociations"></a>
+
+```typescript
+public readonly ListPublisherAssociations: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListPublisherAssociations API call.
+
+---
+
+##### `ListPublishers`<sup>Required</sup> <a name="ListPublishers" id="@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.ListPublishers"></a>
+
+```typescript
+public readonly ListPublishers: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListPublishers API call.
 
 ---
 
@@ -1116,6 +1499,18 @@ public readonly ListTagsForResource: string[];
 - *Type:* string[]
 
 IAM actions required for the ListTagsForResource API call.
+
+---
+
+##### `opGetPublisher`<sup>Required</sup> <a name="opGetPublisher" id="@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.opGetPublisher"></a>
+
+```typescript
+public readonly opGetPublisher: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetPublisher API call.
 
 ---
 
@@ -1191,6 +1586,18 @@ IAM actions required for the UntagResource API call.
 
 ---
 
+##### `UpdatePublisherAssociationApprovalStatus`<sup>Required</sup> <a name="UpdatePublisherAssociationApprovalStatus" id="@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.UpdatePublisherAssociationApprovalStatus"></a>
+
+```typescript
+public readonly UpdatePublisherAssociationApprovalStatus: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdatePublisherAssociationApprovalStatus API call.
+
+---
+
 ##### `UpdateRegistry`<sup>Required</sup> <a name="UpdateRegistry" id="@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.UpdateRegistry"></a>
 
 ```typescript
@@ -1227,6 +1634,18 @@ IAM actions required for the UpdateRegistryRecordStatus API call.
 
 ---
 
+##### `ValidatePublisher`<sup>Required</sup> <a name="ValidatePublisher" id="@cdk_utils/iam.agent_registry.AgentRegistryOperations.property.ValidatePublisher"></a>
+
+```typescript
+public readonly ValidatePublisher: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ValidatePublisher API call.
+
+---
+
 ### AgentRegistryResources <a name="AgentRegistryResources" id="@cdk_utils/iam.agent_registry.AgentRegistryResources"></a>
 
 ARN builders, validators, and parsers for agent-registry resources.
@@ -1249,12 +1668,31 @@ new agent_registry.AgentRegistryResources()
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryResources.isValidPublisherArn">isValidPublisherArn</a></code> | Validates whether a string is a valid ARN for the publisher resource. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryResources.isValidRegistryArn">isValidRegistryArn</a></code> | Validates whether a string is a valid ARN for the registry resource. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryResources.isValidRegistryRecordArn">isValidRegistryRecordArn</a></code> | Validates whether a string is a valid ARN for the registry-record resource. |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryResources.parsePublisherArn">parsePublisherArn</a></code> | Parses a publisher ARN into its components. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryResources.parseRegistryArn">parseRegistryArn</a></code> | Parses a registry ARN into its components. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryResources.parseRegistryRecordArn">parseRegistryRecordArn</a></code> | Parses a registry-record ARN into its components. |
+| <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryResources.publisher">publisher</a></code> | Builds an ARN for the publisher resource. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryResources.registry">registry</a></code> | Builds an ARN for the registry resource. |
 | <code><a href="#@cdk_utils/iam.agent_registry.AgentRegistryResources.registryRecord">registryRecord</a></code> | Builds an ARN for the registry-record resource. |
+
+---
+
+##### `isValidPublisherArn` <a name="isValidPublisherArn" id="@cdk_utils/iam.agent_registry.AgentRegistryResources.isValidPublisherArn"></a>
+
+```typescript
+import { agent_registry } from '@cdk_utils/iam'
+
+agent_registry.AgentRegistryResources.isValidPublisherArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the publisher resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.agent_registry.AgentRegistryResources.isValidPublisherArn.parameter.arn"></a>
+
+- *Type:* string
 
 ---
 
@@ -1290,6 +1728,22 @@ Validates whether a string is a valid ARN for the registry-record resource.
 
 ---
 
+##### `parsePublisherArn` <a name="parsePublisherArn" id="@cdk_utils/iam.agent_registry.AgentRegistryResources.parsePublisherArn"></a>
+
+```typescript
+import { agent_registry } from '@cdk_utils/iam'
+
+agent_registry.AgentRegistryResources.parsePublisherArn(arn: string)
+```
+
+Parses a publisher ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.agent_registry.AgentRegistryResources.parsePublisherArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `parseRegistryArn` <a name="parseRegistryArn" id="@cdk_utils/iam.agent_registry.AgentRegistryResources.parseRegistryArn"></a>
 
 ```typescript
@@ -1319,6 +1773,22 @@ Parses a registry-record ARN into its components.
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.agent_registry.AgentRegistryResources.parseRegistryRecordArn.parameter.arn"></a>
 
 - *Type:* string
+
+---
+
+##### `publisher` <a name="publisher" id="@cdk_utils/iam.agent_registry.AgentRegistryResources.publisher"></a>
+
+```typescript
+import { agent_registry } from '@cdk_utils/iam'
+
+agent_registry.AgentRegistryResources.publisher(props: AgentRegistryPublisherArnProps)
+```
+
+Builds an ARN for the publisher resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.agent_registry.AgentRegistryResources.publisher.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.agent_registry.AgentRegistryPublisherArnProps">AgentRegistryPublisherArnProps</a>
 
 ---
 

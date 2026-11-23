@@ -16,6 +16,8 @@ export class SigninActions {
 	static readonly Authenticate = "signin:Authenticate";
 	/** [Read] signin:AuthorizeOAuth2Access */
 	static readonly AuthorizeOAuth2Access = "signin:AuthorizeOAuth2Access";
+	/** [Write] signin:BatchRevokeSessions */
+	static readonly BatchRevokeSessions = "signin:BatchRevokeSessions";
 	/** [Write] signin:CreateAccount */
 	static readonly CreateAccount = "signin:CreateAccount";
 	/** [Read] signin:CreateBearerToken */
@@ -38,11 +40,15 @@ export class SigninActions {
 		"signin:GetConsoleAuthorizationConfiguration";
 	/** [Read] signin:GetResourcePolicy */
 	static readonly actionGetResourcePolicy = "signin:GetResourcePolicy";
+	/** [Read] signin:GetSession */
+	static readonly actionGetSession = "signin:GetSession";
 	/** [Read] signin:IntrospectOAuth2Token */
 	static readonly IntrospectOAuth2Token = "signin:IntrospectOAuth2Token";
 	/** [List] signin:ListResourcePermissionStatements */
 	static readonly ListResourcePermissionStatements =
 		"signin:ListResourcePermissionStatements";
+	/** [List] signin:ListSessions */
+	static readonly ListSessions = "signin:ListSessions";
 	/** [List] signin:ListTrustedIdentityPropagationApplicationsForConsole */
 	static readonly ListTrustedIdentityPropagationApplicationsForConsole =
 		"signin:ListTrustedIdentityPropagationApplicationsForConsole";
@@ -63,10 +69,12 @@ export class SigninActions {
 		SigninActions.CreateOAuth2Token,
 		SigninActions.actionGetConsoleAuthorizationConfiguration,
 		SigninActions.actionGetResourcePolicy,
+		SigninActions.actionGetSession,
 		SigninActions.IntrospectOAuth2Token,
 	];
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
+		SigninActions.BatchRevokeSessions,
 		SigninActions.CreateAccount,
 		SigninActions.CreateOAuth2PublicClient,
 		SigninActions.CreateTrustedIdentityPropagationApplicationForConsole,
@@ -79,6 +87,7 @@ export class SigninActions {
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [
 		SigninActions.ListResourcePermissionStatements,
+		SigninActions.ListSessions,
 		SigninActions.ListTrustedIdentityPropagationApplicationsForConsole,
 	];
 	/** All permission-management-level actions. */
@@ -404,7 +413,9 @@ export class SigninResources {
  */
 export class SigninOperations {
 	/** IAM actions required for the BatchRevokeSessions API call. */
-	static readonly BatchRevokeSessions: string[] = [];
+	static readonly BatchRevokeSessions: string[] = [
+		"signin:BatchRevokeSessions",
+	];
 	/** IAM actions required for the CreateBearerToken API call. */
 	static readonly CreateBearerToken: string[] = [];
 	/** IAM actions required for the CreateOAuth2Token API call. */
@@ -430,7 +441,7 @@ export class SigninOperations {
 	/** IAM actions required for the GetResourcePolicy API call. */
 	static readonly opGetResourcePolicy: string[] = ["signin:GetResourcePolicy"];
 	/** IAM actions required for the GetSession API call. */
-	static readonly opGetSession: string[] = [];
+	static readonly opGetSession: string[] = ["signin:GetSession"];
 	/** IAM actions required for the IntrospectOAuth2TokenWithIAM API call. */
 	static readonly IntrospectOAuth2TokenWithIAM: string[] = [
 		"signin:IntrospectOAuth2Token",
@@ -440,7 +451,7 @@ export class SigninOperations {
 		"signin:ListResourcePermissionStatements",
 	];
 	/** IAM actions required for the ListSessions API call. */
-	static readonly ListSessions: string[] = [];
+	static readonly ListSessions: string[] = ["signin:ListSessions"];
 	/** IAM actions required for the PutConsoleAuthorizationConfiguration API call. */
 	static readonly PutConsoleAuthorizationConfiguration: string[] = [
 		"signin:PutConsoleAuthorizationConfiguration",
@@ -465,6 +476,10 @@ export class SigninConditions {
 	static readonly CreateOAuth2PublicClientConditionKeys: string[] = [
 		"signin:OAuthRedirectUri",
 	];
+	/** Condition keys applicable to the CreateOAuth2Token action. */
+	static readonly CreateOAuth2TokenConditionKeys: string[] = [
+		"signin:PutSignInDurationBlock",
+	];
 	/** Condition keys applicable to the IntrospectOAuth2Token action. */
 	static readonly IntrospectOAuth2TokenConditionKeys: string[] = [
 		"signin:OAuthClientId",
@@ -488,6 +503,8 @@ export class SigninConditions {
 	static readonly O_AUTH_TOKEN_TYPE = "signin:OAuthTokenType";
 	/** Condition key: signin:PrincipalArn (ARN) */
 	static readonly PRINCIPAL_ARN = "signin:PrincipalArn";
+	/** Condition key: signin:PutSignInDurationBlock (Bool) */
+	static readonly PUT_SIGN_IN_DURATION_BLOCK = "signin:PutSignInDurationBlock";
 
 	/**
 	 * Generates a condition block for `signin:OAuthClientAuthentication`.
@@ -533,5 +550,14 @@ export class SigninConditions {
 	 */
 	static principalARN(value: string): Record<string, Record<string, string>> {
 		return { ArnEquals: { "signin:PrincipalArn": value } };
+	}
+
+	/**
+	 * Generates a condition block for `signin:PutSignInDurationBlock`.
+	 */
+	static putSignInDurationBlock(
+		value: boolean,
+	): Record<string, Record<string, boolean>> {
+		return { Bool: { "signin:PutSignInDurationBlock": value } };
 	}
 }

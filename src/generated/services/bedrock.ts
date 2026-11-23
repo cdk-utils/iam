@@ -3563,6 +3563,8 @@ export class BedrockOperations {
 		"bedrock:CallWithBearerToken",
 		"bedrock:InvokeAutomatedReasoningPolicy",
 	];
+	/** IAM actions required for the ArchiveProject API call. */
+	static readonly ArchiveProject: string[] = [];
 	/** IAM actions required for the AssociateAgentCollaborator API call. */
 	static readonly AssociateAgentCollaborator: string[] = [
 		"bedrock:AssociateAgentCollaborator",
@@ -3764,6 +3766,8 @@ export class BedrockOperations {
 		"iam:PassRole",
 		"bedrock:TagResource",
 	];
+	/** IAM actions required for the CreateProject API call. */
+	static readonly CreateProject: string[] = ["bedrock:TagResource"];
 	/** IAM actions required for the CreatePrompt API call. */
 	static readonly CreatePrompt: string[] = [
 		"bedrock:CreatePrompt",
@@ -3802,6 +3806,8 @@ export class BedrockOperations {
 	];
 	/** IAM actions required for the CreateVpcConfiguration API call. */
 	static readonly CreateVpcConfiguration: string[] = [];
+	/** IAM actions required for the DeleteAccountDataRetentionStorage API call. */
+	static readonly DeleteAccountDataRetentionStorage: string[] = [];
 	/** IAM actions required for the DeleteAgent API call. */
 	static readonly DeleteAgent: string[] = ["bedrock:DeleteAgent"];
 	/** IAM actions required for the DeleteAgentActionGroup API call. */
@@ -3897,6 +3903,10 @@ export class BedrockOperations {
 	static readonly DeleteModelInvocationLoggingConfiguration: string[] = [
 		"bedrock:DeleteModelInvocationLoggingConfiguration",
 	];
+	/** IAM actions required for the DeleteOrganizationDataRetentionStorage API call. */
+	static readonly DeleteOrganizationDataRetentionStorage: string[] = [];
+	/** IAM actions required for the DeleteProjectDataRetentionStorage API call. */
+	static readonly DeleteProjectDataRetentionStorage: string[] = [];
 	/** IAM actions required for the DeletePrompt API call. */
 	static readonly DeletePrompt: string[] = ["bedrock:DeletePrompt"];
 	/** IAM actions required for the DeletePromptRouter API call. */
@@ -3952,6 +3962,8 @@ export class BedrockOperations {
 		"bedrock:CallWithBearerToken",
 		"bedrock:GetAccountDataRetention",
 	];
+	/** IAM actions required for the GetAccountDataRetentionStorage API call. */
+	static readonly opGetAccountDataRetentionStorage: string[] = [];
 	/** IAM actions required for the GetAdvancedPromptOptimizationJob API call. */
 	static readonly opGetAdvancedPromptOptimizationJob: string[] = [
 		"bedrock:CallWithBearerToken",
@@ -4136,6 +4148,12 @@ export class BedrockOperations {
 		"bedrock:CallWithBearerToken",
 		"bedrock:GetModelInvocationLoggingConfiguration",
 	];
+	/** IAM actions required for the GetOrganizationDataRetentionStorage API call. */
+	static readonly opGetOrganizationDataRetentionStorage: string[] = [];
+	/** IAM actions required for the GetProject API call. */
+	static readonly opGetProject: string[] = [];
+	/** IAM actions required for the GetProjectDataRetentionStorage API call. */
+	static readonly opGetProjectDataRetentionStorage: string[] = [];
 	/** IAM actions required for the GetPrompt API call. */
 	static readonly opGetPrompt: string[] = ["bedrock:GetPrompt"];
 	/** IAM actions required for the GetPromptRouter API call. */
@@ -4156,6 +4174,15 @@ export class BedrockOperations {
 	];
 	/** IAM actions required for the GetSession API call. */
 	static readonly opGetSession: string[] = ["bedrock:GetSession"];
+	/** IAM actions required for the GetTrustedAccessProgram API call. */
+	static readonly opGetTrustedAccessProgram: string[] = [];
+	/** IAM actions required for the GetTrustedAccessProgramAccountEnrollment API call. */
+	static readonly opGetTrustedAccessProgramAccountEnrollment: string[] = [];
+	/** IAM actions required for the GetTrustedAccessProgramOrganizationEnrollment API call. */
+	static readonly opGetTrustedAccessProgramOrganizationEnrollment: string[] =
+		[];
+	/** IAM actions required for the GetTrustedAccessProgramProjectEnrollment API call. */
+	static readonly opGetTrustedAccessProgramProjectEnrollment: string[] = [];
 	/** IAM actions required for the GetUseCaseForModelAccess API call. */
 	static readonly opGetUseCaseForModelAccess: string[] = [
 		"bedrock:CallWithBearerToken",
@@ -4372,6 +4399,8 @@ export class BedrockOperations {
 		"bedrock:CallWithBearerToken",
 		"bedrock:ListModelInvocationJobs",
 	];
+	/** IAM actions required for the ListProjects API call. */
+	static readonly ListProjects: string[] = [];
 	/** IAM actions required for the ListPromptRouters API call. */
 	static readonly ListPromptRouters: string[] = [
 		"bedrock:CallWithBearerToken",
@@ -4399,6 +4428,10 @@ export class BedrockOperations {
 		"bedrock:CallWithBearerToken",
 		"bedrock:ListTagsForResource",
 	];
+	/** IAM actions required for the ListTrustedAccessPrograms API call. */
+	static readonly ListTrustedAccessPrograms: string[] = [
+		"bedrock:CallWithBearerToken",
+	];
 	/** IAM actions required for the ListVpcConfigurations API call. */
 	static readonly ListVpcConfigurations: string[] = [];
 	/** IAM actions required for the OptimizePrompt API call. */
@@ -4412,6 +4445,8 @@ export class BedrockOperations {
 		"bedrock:CallWithBearerToken",
 		"bedrock:PutAccountDataRetention",
 	];
+	/** IAM actions required for the PutAccountDataRetentionStorage API call. */
+	static readonly PutAccountDataRetentionStorage: string[] = [];
 	/** IAM actions required for the PutEnforcedGuardrailConfiguration API call. */
 	static readonly PutEnforcedGuardrailConfiguration: string[] = [
 		"bedrock:PutEnforcedGuardrailConfiguration",
@@ -4424,8 +4459,18 @@ export class BedrockOperations {
 		"iam:PassRole",
 		"bedrock:PutModelInvocationLoggingConfiguration",
 	];
+	/** IAM actions required for the PutOrganizationDataRetentionStorage API call. */
+	static readonly PutOrganizationDataRetentionStorage: string[] = [];
+	/** IAM actions required for the PutProjectDataRetentionStorage API call. */
+	static readonly PutProjectDataRetentionStorage: string[] = [];
 	/** IAM actions required for the PutResourcePolicy API call. */
 	static readonly PutResourcePolicy: string[] = ["bedrock:PutResourcePolicy"];
+	/** IAM actions required for the PutTrustedAccessProgramAccountEnrollment API call. */
+	static readonly PutTrustedAccessProgramAccountEnrollment: string[] = [];
+	/** IAM actions required for the PutTrustedAccessProgramOrganizationEnrollment API call. */
+	static readonly PutTrustedAccessProgramOrganizationEnrollment: string[] = [];
+	/** IAM actions required for the PutTrustedAccessProgramProjectEnrollment API call. */
+	static readonly PutTrustedAccessProgramProjectEnrollment: string[] = [];
 	/** IAM actions required for the PutUseCaseForModelAccess API call. */
 	static readonly PutUseCaseForModelAccess: string[] = [
 		"bedrock:CallWithBearerToken",
@@ -4470,6 +4515,13 @@ export class BedrockOperations {
 		"bedrock:AssociateThirdPartyKnowledgeBase",
 		"bedrock:StartIngestionJob",
 	];
+	/** IAM actions required for the StartTrustedAccessProgramAccountApplication API call. */
+	static readonly StartTrustedAccessProgramAccountApplication: string[] = [];
+	/** IAM actions required for the StartTrustedAccessProgramOrganizationApplication API call. */
+	static readonly StartTrustedAccessProgramOrganizationApplication: string[] =
+		[];
+	/** IAM actions required for the StartTrustedAccessProgramProjectApplication API call. */
+	static readonly StartTrustedAccessProgramProjectApplication: string[] = [];
 	/** IAM actions required for the StopAdvancedPromptOptimizationJob API call. */
 	static readonly StopAdvancedPromptOptimizationJob: string[] = [
 		"bedrock:StopAdvancedPromptOptimizationJob",
@@ -4570,6 +4622,8 @@ export class BedrockOperations {
 		"iam:PassRole",
 		"bedrock:UpdateMarketplaceModelEndpoint",
 	];
+	/** IAM actions required for the UpdateProject API call. */
+	static readonly UpdateProject: string[] = [];
 	/** IAM actions required for the UpdatePrompt API call. */
 	static readonly UpdatePrompt: string[] = ["bedrock:UpdatePrompt"];
 	/** IAM actions required for the UpdateProvisionedModelThroughput API call. */

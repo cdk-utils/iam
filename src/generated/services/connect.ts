@@ -4365,7 +4365,7 @@ export class ConnectOperations {
 		"connect:ActivateEvaluationForm",
 	];
 	/** IAM actions required for the ApproveTimeOff API call. */
-	static readonly ApproveTimeOff: string[] = ["connect:ApproveTimeOff"];
+	static readonly ApproveTimeOff: string[] = [];
 	/** IAM actions required for the AssociateAnalyticsDataSet API call. */
 	static readonly AssociateAnalyticsDataSet: string[] = [
 		"connect:AssociateAnalyticsDataSet",
@@ -5314,7 +5314,7 @@ export class ConnectOperations {
 	/** IAM actions required for the PutUserStatus API call. */
 	static readonly PutUserStatus: string[] = ["connect:PutUserStatus"];
 	/** IAM actions required for the RejectTimeOff API call. */
-	static readonly RejectTimeOff: string[] = ["connect:RejectTimeOff"];
+	static readonly RejectTimeOff: string[] = [];
 	/** IAM actions required for the ReleasePhoneNumber API call. */
 	static readonly ReleasePhoneNumber: string[] = ["connect:ReleasePhoneNumber"];
 	/** IAM actions required for the ReplicateInstance API call. */

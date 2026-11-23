@@ -8387,16 +8387,6 @@
       ]
     },
     {
-      "Name": "DeleteAssetType",
-      "SDK": [
-        {
-          "Name": "glue",
-          "Method": "delete_asset_type",
-          "Package": "Boto3"
-        }
-      ]
-    },
-    {
       "Name": "DeleteAttachment",
       "SDK": [
         {
@@ -11082,16 +11072,6 @@
         {
           "Name": "glue",
           "Method": "put_asset",
-          "Package": "Boto3"
-        }
-      ]
-    },
-    {
-      "Name": "PutAssetType",
-      "SDK": [
-        {
-          "Name": "glue",
-          "Method": "put_asset_type",
           "Package": "Boto3"
         }
       ]

@@ -6129,6 +6129,16 @@
       ]
     },
     {
+      "Name": "ArchiveProject",
+      "SDK": [
+        {
+          "Name": "bedrock",
+          "Method": "archive_project",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "AssociateAgentCollaborator",
       "AuthorizedActions": [
         {
@@ -7010,6 +7020,22 @@
       ]
     },
     {
+      "Name": "CreateProject",
+      "AuthorizedActions": [
+        {
+          "Name": "TagResource",
+          "Service": "bedrock"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bedrock",
+          "Method": "create_project",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "CreatePrompt",
       "AuthorizedActions": [
         {
@@ -7159,6 +7185,16 @@
         {
           "Name": "bedrock-agent",
           "Method": "create_vpc_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAccountDataRetentionStorage",
+      "SDK": [
+        {
+          "Name": "bedrock",
+          "Method": "delete_account_data_retention_storage",
           "Package": "Boto3"
         }
       ]
@@ -7616,6 +7652,26 @@
       ]
     },
     {
+      "Name": "DeleteOrganizationDataRetentionStorage",
+      "SDK": [
+        {
+          "Name": "bedrock",
+          "Method": "delete_organization_data_retention_storage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProjectDataRetentionStorage",
+      "SDK": [
+        {
+          "Name": "bedrock",
+          "Method": "delete_project_data_retention_storage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DeletePrompt",
       "AuthorizedActions": [
         {
@@ -7862,6 +7918,16 @@
         {
           "Name": "bedrock",
           "Method": "get_account_data_retention",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAccountDataRetentionStorage",
+      "SDK": [
+        {
+          "Name": "bedrock",
+          "Method": "get_account_data_retention_storage",
           "Package": "Boto3"
         }
       ]
@@ -8719,6 +8785,36 @@
       ]
     },
     {
+      "Name": "GetOrganizationDataRetentionStorage",
+      "SDK": [
+        {
+          "Name": "bedrock",
+          "Method": "get_organization_data_retention_storage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetProject",
+      "SDK": [
+        {
+          "Name": "bedrock",
+          "Method": "get_project",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetProjectDataRetentionStorage",
+      "SDK": [
+        {
+          "Name": "bedrock",
+          "Method": "get_project_data_retention_storage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetPrompt",
       "AuthorizedActions": [
         {
@@ -8823,6 +8919,46 @@
         {
           "Name": "bedrock-agent-runtime",
           "Method": "get_session",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTrustedAccessProgram",
+      "SDK": [
+        {
+          "Name": "bedrock",
+          "Method": "get_trusted_access_program",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTrustedAccessProgramAccountEnrollment",
+      "SDK": [
+        {
+          "Name": "bedrock",
+          "Method": "get_trusted_access_program_account_enrollment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTrustedAccessProgramOrganizationEnrollment",
+      "SDK": [
+        {
+          "Name": "bedrock",
+          "Method": "get_trusted_access_program_organization_enrollment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetTrustedAccessProgramProjectEnrollment",
+      "SDK": [
+        {
+          "Name": "bedrock",
+          "Method": "get_trusted_access_program_project_enrollment",
           "Package": "Boto3"
         }
       ]
@@ -9830,6 +9966,16 @@
       ]
     },
     {
+      "Name": "ListProjects",
+      "SDK": [
+        {
+          "Name": "bedrock",
+          "Method": "list_projects",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListPromptRouters",
       "AuthorizedActions": [
         {
@@ -9974,6 +10120,22 @@
       ]
     },
     {
+      "Name": "ListTrustedAccessPrograms",
+      "AuthorizedActions": [
+        {
+          "Name": "CallWithBearerToken",
+          "Service": "bedrock"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "bedrock",
+          "Method": "list_trusted_access_programs",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListVpcConfigurations",
       "SDK": [
         {
@@ -10052,6 +10214,16 @@
       ]
     },
     {
+      "Name": "PutAccountDataRetentionStorage",
+      "SDK": [
+        {
+          "Name": "bedrock",
+          "Method": "put_account_data_retention_storage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "PutEnforcedGuardrailConfiguration",
       "AuthorizedActions": [
         {
@@ -10113,6 +10285,26 @@
       ]
     },
     {
+      "Name": "PutOrganizationDataRetentionStorage",
+      "SDK": [
+        {
+          "Name": "bedrock",
+          "Method": "put_organization_data_retention_storage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutProjectDataRetentionStorage",
+      "SDK": [
+        {
+          "Name": "bedrock",
+          "Method": "put_project_data_retention_storage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "PutResourcePolicy",
       "AuthorizedActions": [
         {
@@ -10129,6 +10321,36 @@
         {
           "Name": "bedrock-agent",
           "Method": "put_resource_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutTrustedAccessProgramAccountEnrollment",
+      "SDK": [
+        {
+          "Name": "bedrock",
+          "Method": "put_trusted_access_program_account_enrollment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutTrustedAccessProgramOrganizationEnrollment",
+      "SDK": [
+        {
+          "Name": "bedrock",
+          "Method": "put_trusted_access_program_organization_enrollment",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutTrustedAccessProgramProjectEnrollment",
+      "SDK": [
+        {
+          "Name": "bedrock",
+          "Method": "put_trusted_access_program_project_enrollment",
           "Package": "Boto3"
         }
       ]
@@ -10329,6 +10551,36 @@
         {
           "Name": "bedrock-agent",
           "Method": "start_ingestion_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartTrustedAccessProgramAccountApplication",
+      "SDK": [
+        {
+          "Name": "bedrock",
+          "Method": "start_trusted_access_program_account_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartTrustedAccessProgramOrganizationApplication",
+      "SDK": [
+        {
+          "Name": "bedrock",
+          "Method": "start_trusted_access_program_organization_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartTrustedAccessProgramProjectApplication",
+      "SDK": [
+        {
+          "Name": "bedrock",
+          "Method": "start_trusted_access_program_project_application",
           "Package": "Boto3"
         }
       ]
@@ -10857,6 +11109,16 @@
         {
           "Name": "bedrock",
           "Method": "update_marketplace_model_endpoint",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateProject",
+      "SDK": [
+        {
+          "Name": "bedrock",
+          "Method": "update_project",
           "Package": "Boto3"
         }
       ]

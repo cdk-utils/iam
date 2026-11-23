@@ -3728,6 +3728,7 @@ new aws_marketplace.AWSMarketplaceActions()
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.ListFulfillmentOptions">ListFulfillmentOptions</a></code> | <code>string</code> | [List] aws-marketplace:ListFulfillmentOptions. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.ListInvoiceSubmissionTasks">ListInvoiceSubmissionTasks</a></code> | <code>string</code> | [List] aws-marketplace:ListInvoiceSubmissionTasks. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.ListIssuedTaxInvoices">ListIssuedTaxInvoices</a></code> | <code>string</code> | [List] aws-marketplace:ListIssuedTaxInvoices. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.ListListingAttributes">ListListingAttributes</a></code> | <code>string</code> | [List] aws-marketplace:ListListingAttributes. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.ListPayables">ListPayables</a></code> | <code>string</code> | [List] aws-marketplace:ListPayables. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.ListPrivateListings">ListPrivateListings</a></code> | <code>string</code> | [List] aws-marketplace:ListPrivateListings. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.ListPrivateMarketplaceRequests">ListPrivateMarketplaceRequests</a></code> | <code>string</code> | [List] aws-marketplace:ListPrivateMarketplaceRequests. |
@@ -4717,6 +4718,18 @@ public readonly ListIssuedTaxInvoices: string;
 - *Type:* string
 
 [List] aws-marketplace:ListIssuedTaxInvoices.
+
+---
+
+##### `ListListingAttributes`<sup>Required</sup> <a name="ListListingAttributes" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceActions.property.ListListingAttributes"></a>
+
+```typescript
+public readonly ListListingAttributes: string;
+```
+
+- *Type:* string
+
+[List] aws-marketplace:ListListingAttributes.
 
 ---
 
@@ -6241,6 +6254,7 @@ new aws_marketplace.AWSMarketplaceOperations()
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.ListDeploymentConfigurationJobs">ListDeploymentConfigurationJobs</a></code> | <code>string[]</code> | IAM actions required for the ListDeploymentConfigurationJobs API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.ListEntities">ListEntities</a></code> | <code>string[]</code> | IAM actions required for the ListEntities API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.ListFulfillmentOptions">ListFulfillmentOptions</a></code> | <code>string[]</code> | IAM actions required for the ListFulfillmentOptions API call. |
+| <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.ListListingAttributes">ListListingAttributes</a></code> | <code>string[]</code> | IAM actions required for the ListListingAttributes API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.ListPurchaseOptions">ListPurchaseOptions</a></code> | <code>string[]</code> | IAM actions required for the ListPurchaseOptions API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.MeterUsage">MeterUsage</a></code> | <code>string[]</code> | IAM actions required for the MeterUsage API call. |
@@ -6643,6 +6657,18 @@ public readonly ListFulfillmentOptions: string[];
 - *Type:* string[]
 
 IAM actions required for the ListFulfillmentOptions API call.
+
+---
+
+##### `ListListingAttributes`<sup>Required</sup> <a name="ListListingAttributes" id="@cdk_utils/iam.aws_marketplace.AWSMarketplaceOperations.property.ListListingAttributes"></a>
+
+```typescript
+public readonly ListListingAttributes: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListListingAttributes API call.
 
 ---
 

@@ -5409,6 +5409,7 @@ new bedrock_agentcore.BedrockAgentcoreActions()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.actionGetConfigurationBundleVersion">actionGetConfigurationBundleVersion</a></code> | <code>string</code> | [Read] bedrock-agentcore:GetConfigurationBundleVersion. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.actionGetConsentPortal">actionGetConsentPortal</a></code> | <code>string</code> | [Read] bedrock-agentcore:GetConsentPortal. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.actionGetDataset">actionGetDataset</a></code> | <code>string</code> | [Read] bedrock-agentcore:GetDataset. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.actionGetDatasetGeneration">actionGetDatasetGeneration</a></code> | <code>string</code> | [Read] bedrock-agentcore:GetDatasetGeneration. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.actionGetEvaluator">actionGetEvaluator</a></code> | <code>string</code> | [Read] bedrock-agentcore:GetEvaluator. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.actionGetEvent">actionGetEvent</a></code> | <code>string</code> | [Read] bedrock-agentcore:GetEvent. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.actionGetGateway">actionGetGateway</a></code> | <code>string</code> | [Read] bedrock-agentcore:GetGateway. |
@@ -5508,6 +5509,7 @@ new bedrock_agentcore.BedrockAgentcoreActions()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.DeleteConsentPortal">DeleteConsentPortal</a></code> | <code>string</code> | [Write] bedrock-agentcore:DeleteConsentPortal. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.DeleteDataset">DeleteDataset</a></code> | <code>string</code> | [Write] bedrock-agentcore:DeleteDataset. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.DeleteDatasetExamples">DeleteDatasetExamples</a></code> | <code>string</code> | [Write] bedrock-agentcore:DeleteDatasetExamples. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.DeleteDatasetGeneration">DeleteDatasetGeneration</a></code> | <code>string</code> | [Write] bedrock-agentcore:DeleteDatasetGeneration. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.DeleteEvaluator">DeleteEvaluator</a></code> | <code>string</code> | [Write] bedrock-agentcore:DeleteEvaluator. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.DeleteEvent">DeleteEvent</a></code> | <code>string</code> | [Write] bedrock-agentcore:DeleteEvent. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.DeleteGateway">DeleteGateway</a></code> | <code>string</code> | [Write] bedrock-agentcore:DeleteGateway. |
@@ -5570,6 +5572,7 @@ new bedrock_agentcore.BedrockAgentcoreActions()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.ListConfigurationBundleVersions">ListConfigurationBundleVersions</a></code> | <code>string</code> | [List] bedrock-agentcore:ListConfigurationBundleVersions. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.ListConsentPortals">ListConsentPortals</a></code> | <code>string</code> | [List] bedrock-agentcore:ListConsentPortals. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.ListDatasetExamples">ListDatasetExamples</a></code> | <code>string</code> | [List] bedrock-agentcore:ListDatasetExamples. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.ListDatasetGenerations">ListDatasetGenerations</a></code> | <code>string</code> | [List] bedrock-agentcore:ListDatasetGenerations. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.ListDatasets">ListDatasets</a></code> | <code>string</code> | [List] bedrock-agentcore:ListDatasets. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.ListDatasetVersions">ListDatasetVersions</a></code> | <code>string</code> | [List] bedrock-agentcore:ListDatasetVersions. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.ListEvaluators">ListEvaluators</a></code> | <code>string</code> | [List] bedrock-agentcore:ListEvaluators. |
@@ -5619,6 +5622,7 @@ new bedrock_agentcore.BedrockAgentcoreActions()
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.StartBatchEvaluation">StartBatchEvaluation</a></code> | <code>string</code> | [Write] bedrock-agentcore:StartBatchEvaluation. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.StartBrowserSession">StartBrowserSession</a></code> | <code>string</code> | [Write] bedrock-agentcore:StartBrowserSession. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.StartCodeInterpreterSession">StartCodeInterpreterSession</a></code> | <code>string</code> | [Write] bedrock-agentcore:StartCodeInterpreterSession. |
+| <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.StartDatasetGeneration">StartDatasetGeneration</a></code> | <code>string</code> | [Write] bedrock-agentcore:StartDatasetGeneration. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.StartMemoryExtractionJob">StartMemoryExtractionJob</a></code> | <code>string</code> | [Write] bedrock-agentcore:StartMemoryExtractionJob. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.StartPolicyGeneration">StartPolicyGeneration</a></code> | <code>string</code> | [Write] bedrock-agentcore:StartPolicyGeneration. |
 | <code><a href="#@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.StartRecommendation">StartRecommendation</a></code> | <code>string</code> | [Write] bedrock-agentcore:StartRecommendation. |
@@ -5878,6 +5882,18 @@ public readonly actionGetDataset: string;
 - *Type:* string
 
 [Read] bedrock-agentcore:GetDataset.
+
+---
+
+##### `actionGetDatasetGeneration`<sup>Required</sup> <a name="actionGetDatasetGeneration" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.actionGetDatasetGeneration"></a>
+
+```typescript
+public readonly actionGetDatasetGeneration: string;
+```
+
+- *Type:* string
+
+[Read] bedrock-agentcore:GetDatasetGeneration.
 
 ---
 
@@ -7069,6 +7085,18 @@ public readonly DeleteDatasetExamples: string;
 
 ---
 
+##### `DeleteDatasetGeneration`<sup>Required</sup> <a name="DeleteDatasetGeneration" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.DeleteDatasetGeneration"></a>
+
+```typescript
+public readonly DeleteDatasetGeneration: string;
+```
+
+- *Type:* string
+
+[Write] bedrock-agentcore:DeleteDatasetGeneration.
+
+---
+
 ##### `DeleteEvaluator`<sup>Required</sup> <a name="DeleteEvaluator" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.DeleteEvaluator"></a>
 
 ```typescript
@@ -7813,6 +7841,18 @@ public readonly ListDatasetExamples: string;
 
 ---
 
+##### `ListDatasetGenerations`<sup>Required</sup> <a name="ListDatasetGenerations" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.ListDatasetGenerations"></a>
+
+```typescript
+public readonly ListDatasetGenerations: string;
+```
+
+- *Type:* string
+
+[List] bedrock-agentcore:ListDatasetGenerations.
+
+---
+
 ##### `ListDatasets`<sup>Required</sup> <a name="ListDatasets" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.ListDatasets"></a>
 
 ```typescript
@@ -8398,6 +8438,18 @@ public readonly StartCodeInterpreterSession: string;
 - *Type:* string
 
 [Write] bedrock-agentcore:StartCodeInterpreterSession.
+
+---
+
+##### `StartDatasetGeneration`<sup>Required</sup> <a name="StartDatasetGeneration" id="@cdk_utils/iam.bedrock_agentcore.BedrockAgentcoreActions.property.StartDatasetGeneration"></a>
+
+```typescript
+public readonly StartDatasetGeneration: string;
+```
+
+- *Type:* string
+
+[Write] bedrock-agentcore:StartDatasetGeneration.
 
 ---
 

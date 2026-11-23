@@ -1421,6 +1421,27 @@
       }
     },
     {
+      "Name": "ListListingAttributes",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "Listing"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListPayables",
       "Annotations": {
         "Properties": {
@@ -3207,6 +3228,22 @@
         {
           "Name": "marketplace-discovery",
           "Method": "list_fulfillment_options",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListListingAttributes",
+      "AuthorizedActions": [
+        {
+          "Name": "ListListingAttributes",
+          "Service": "aws-marketplace"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "marketplace-discovery",
+          "Method": "list_listing_attributes",
           "Package": "Boto3"
         }
       ]

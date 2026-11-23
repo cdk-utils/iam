@@ -1494,6 +1494,10 @@ export class ConfigConditions {
 	static readonly AllowVendedLogDeliveryForResourceConditionKeys: string[] = [
 		"config:ConfigurationRecorderServicePrincipal",
 	];
+	/** Condition keys applicable to the DeleteConformancePack action. */
+	static readonly DeleteConformancePackConditionKeys: string[] = [
+		"config:ConformancePackType",
+	];
 	/** Condition keys applicable to the DeleteServiceLinkedConfigurationRecorder action. */
 	static readonly DeleteServiceLinkedConfigurationRecorderConditionKeys: string[] =
 		["config:ConfigurationRecorderServicePrincipal"];
@@ -1524,6 +1528,10 @@ export class ConfigConditions {
 	static readonly PutConfigurationRecorderConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the PutConformancePack action. */
+	static readonly PutConformancePackConditionKeys: string[] = [
+		"config:ConformancePackType",
 	];
 	/** Condition keys applicable to the PutConnector action. */
 	static readonly PutConnectorConditionKeys: string[] = [
@@ -1566,6 +1574,8 @@ export class ConfigConditions {
 	/** Condition key: config:ConfigurationRecorderServicePrincipal (String) */
 	static readonly CONFIGURATION_RECORDER_SERVICE_PRINCIPAL =
 		"config:ConfigurationRecorderServicePrincipal";
+	/** Condition key: config:ConformancePackType (String) */
+	static readonly CONFORMANCE_PACK_TYPE = "config:ConformancePackType";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.
@@ -1597,5 +1607,14 @@ export class ConfigConditions {
 		return {
 			StringEquals: { "config:ConfigurationRecorderServicePrincipal": value },
 		};
+	}
+
+	/**
+	 * Generates a condition block for `config:ConformancePackType`.
+	 */
+	static conformancePackType(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "config:ConformancePackType": value } };
 	}
 }

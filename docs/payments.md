@@ -270,24 +270,28 @@ new payments.PaymentsActions()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.AcceptFinancingApplicationTerms">AcceptFinancingApplicationTerms</a></code> | <code>string</code> | [Write] payments:AcceptFinancingApplicationTerms. |
+| <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.actionGetAccountBalance">actionGetAccountBalance</a></code> | <code>string</code> | [Read] payments:GetAccountBalance. |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.actionGetConnectedAccount">actionGetConnectedAccount</a></code> | <code>string</code> | [Read] payments:GetConnectedAccount. |
+| <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.actionGetFinancialRecord">actionGetFinancialRecord</a></code> | <code>string</code> | [Read] payments:GetFinancialRecord. |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.actionGetFinancingApplication">actionGetFinancingApplication</a></code> | <code>string</code> | [Read] payments:GetFinancingApplication. |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.actionGetFinancingLine">actionGetFinancingLine</a></code> | <code>string</code> | [Read] payments:GetFinancingLine. |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.actionGetFinancingLineWithdrawal">actionGetFinancingLineWithdrawal</a></code> | <code>string</code> | [Read] payments:GetFinancingLineWithdrawal. |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.actionGetFinancingOption">actionGetFinancingOption</a></code> | <code>string</code> | [Read] payments:GetFinancingOption. |
-| <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.actionGetPaymentInstrument">actionGetPaymentInstrument</a></code> | <code>string</code> | [List] payments:GetPaymentInstrument. |
+| <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.actionGetPaymentInstrument">actionGetPaymentInstrument</a></code> | <code>string</code> | [Read] payments:GetPaymentInstrument. |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.actionGetPaymentStatus">actionGetPaymentStatus</a></code> | <code>string</code> | [Read] payments:GetPaymentStatus. |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.AllPermissionManagementActions">AllPermissionManagementActions</a></code> | <code>string[]</code> | All permission-management-level actions. |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
+| <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.BatchGetFinancialRecord">BatchGetFinancialRecord</a></code> | <code>string</code> | [Read] payments:BatchGetFinancialRecord. |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.CreateConnectedAccount">CreateConnectedAccount</a></code> | <code>string</code> | [Write] payments:CreateConnectedAccount. |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.CreateFinancingApplication">CreateFinancingApplication</a></code> | <code>string</code> | [Write] payments:CreateFinancingApplication. |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.CreatePaymentInstrument">CreatePaymentInstrument</a></code> | <code>string</code> | [Write] payments:CreatePaymentInstrument. |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.DeleteConnectedAccount">DeleteConnectedAccount</a></code> | <code>string</code> | [Write] payments:DeleteConnectedAccount. |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.DeletePaymentInstrument">DeletePaymentInstrument</a></code> | <code>string</code> | [Write] payments:DeletePaymentInstrument. |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.ListConnectedAccounts">ListConnectedAccounts</a></code> | <code>string</code> | [List] payments:ListConnectedAccounts. |
+| <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.ListFinancialRecords">ListFinancialRecords</a></code> | <code>string</code> | [List] payments:ListFinancialRecords. |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.ListFinancingApplications">ListFinancingApplications</a></code> | <code>string</code> | [List] payments:ListFinancingApplications. |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.ListFinancingLines">ListFinancingLines</a></code> | <code>string</code> | [List] payments:ListFinancingLines. |
 | <code><a href="#@cdk_utils/iam.payments.PaymentsActions.property.ListFinancingLineWithdrawals">ListFinancingLineWithdrawals</a></code> | <code>string</code> | [List] payments:ListFinancingLineWithdrawals. |
@@ -318,6 +322,18 @@ public readonly AcceptFinancingApplicationTerms: string;
 
 ---
 
+##### `actionGetAccountBalance`<sup>Required</sup> <a name="actionGetAccountBalance" id="@cdk_utils/iam.payments.PaymentsActions.property.actionGetAccountBalance"></a>
+
+```typescript
+public readonly actionGetAccountBalance: string;
+```
+
+- *Type:* string
+
+[Read] payments:GetAccountBalance.
+
+---
+
 ##### `actionGetConnectedAccount`<sup>Required</sup> <a name="actionGetConnectedAccount" id="@cdk_utils/iam.payments.PaymentsActions.property.actionGetConnectedAccount"></a>
 
 ```typescript
@@ -327,6 +343,18 @@ public readonly actionGetConnectedAccount: string;
 - *Type:* string
 
 [Read] payments:GetConnectedAccount.
+
+---
+
+##### `actionGetFinancialRecord`<sup>Required</sup> <a name="actionGetFinancialRecord" id="@cdk_utils/iam.payments.PaymentsActions.property.actionGetFinancialRecord"></a>
+
+```typescript
+public readonly actionGetFinancialRecord: string;
+```
+
+- *Type:* string
+
+[Read] payments:GetFinancialRecord.
 
 ---
 
@@ -386,7 +414,7 @@ public readonly actionGetPaymentInstrument: string;
 
 - *Type:* string
 
-[List] payments:GetPaymentInstrument.
+[Read] payments:GetPaymentInstrument.
 
 ---
 
@@ -462,6 +490,18 @@ All write-level actions.
 
 ---
 
+##### `BatchGetFinancialRecord`<sup>Required</sup> <a name="BatchGetFinancialRecord" id="@cdk_utils/iam.payments.PaymentsActions.property.BatchGetFinancialRecord"></a>
+
+```typescript
+public readonly BatchGetFinancialRecord: string;
+```
+
+- *Type:* string
+
+[Read] payments:BatchGetFinancialRecord.
+
+---
+
 ##### `CreateConnectedAccount`<sup>Required</sup> <a name="CreateConnectedAccount" id="@cdk_utils/iam.payments.PaymentsActions.property.CreateConnectedAccount"></a>
 
 ```typescript
@@ -531,6 +571,18 @@ public readonly ListConnectedAccounts: string;
 - *Type:* string
 
 [List] payments:ListConnectedAccounts.
+
+---
+
+##### `ListFinancialRecords`<sup>Required</sup> <a name="ListFinancialRecords" id="@cdk_utils/iam.payments.PaymentsActions.property.ListFinancialRecords"></a>
+
+```typescript
+public readonly ListFinancialRecords: string;
+```
+
+- *Type:* string
+
+[List] payments:ListFinancialRecords.
 
 ---
 
@@ -886,6 +938,111 @@ public readonly UntagResourceConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the UntagResource action.
+
+---
+
+### PaymentsOperations <a name="PaymentsOperations" id="@cdk_utils/iam.payments.PaymentsOperations"></a>
+
+API operation to required IAM actions mapping for payments.
+
+#### Initializers <a name="Initializers" id="@cdk_utils/iam.payments.PaymentsOperations.Initializer"></a>
+
+```typescript
+import { payments } from '@cdk_utils/iam'
+
+new payments.PaymentsOperations()
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+
+---
+
+
+
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.payments.PaymentsOperations.property.BatchGetFinancialRecord">BatchGetFinancialRecord</a></code> | <code>string[]</code> | IAM actions required for the BatchGetFinancialRecord API call. |
+| <code><a href="#@cdk_utils/iam.payments.PaymentsOperations.property.ListFinancialRecords">ListFinancialRecords</a></code> | <code>string[]</code> | IAM actions required for the ListFinancialRecords API call. |
+| <code><a href="#@cdk_utils/iam.payments.PaymentsOperations.property.ListPaymentInstruments">ListPaymentInstruments</a></code> | <code>string[]</code> | IAM actions required for the ListPaymentInstruments API call. |
+| <code><a href="#@cdk_utils/iam.payments.PaymentsOperations.property.opGetAccountBalance">opGetAccountBalance</a></code> | <code>string[]</code> | IAM actions required for the GetAccountBalance API call. |
+| <code><a href="#@cdk_utils/iam.payments.PaymentsOperations.property.opGetFinancialRecord">opGetFinancialRecord</a></code> | <code>string[]</code> | IAM actions required for the GetFinancialRecord API call. |
+| <code><a href="#@cdk_utils/iam.payments.PaymentsOperations.property.opGetPaymentInstrument">opGetPaymentInstrument</a></code> | <code>string[]</code> | IAM actions required for the GetPaymentInstrument API call. |
+
+---
+
+##### `BatchGetFinancialRecord`<sup>Required</sup> <a name="BatchGetFinancialRecord" id="@cdk_utils/iam.payments.PaymentsOperations.property.BatchGetFinancialRecord"></a>
+
+```typescript
+public readonly BatchGetFinancialRecord: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the BatchGetFinancialRecord API call.
+
+---
+
+##### `ListFinancialRecords`<sup>Required</sup> <a name="ListFinancialRecords" id="@cdk_utils/iam.payments.PaymentsOperations.property.ListFinancialRecords"></a>
+
+```typescript
+public readonly ListFinancialRecords: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListFinancialRecords API call.
+
+---
+
+##### `ListPaymentInstruments`<sup>Required</sup> <a name="ListPaymentInstruments" id="@cdk_utils/iam.payments.PaymentsOperations.property.ListPaymentInstruments"></a>
+
+```typescript
+public readonly ListPaymentInstruments: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListPaymentInstruments API call.
+
+---
+
+##### `opGetAccountBalance`<sup>Required</sup> <a name="opGetAccountBalance" id="@cdk_utils/iam.payments.PaymentsOperations.property.opGetAccountBalance"></a>
+
+```typescript
+public readonly opGetAccountBalance: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetAccountBalance API call.
+
+---
+
+##### `opGetFinancialRecord`<sup>Required</sup> <a name="opGetFinancialRecord" id="@cdk_utils/iam.payments.PaymentsOperations.property.opGetFinancialRecord"></a>
+
+```typescript
+public readonly opGetFinancialRecord: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetFinancialRecord API call.
+
+---
+
+##### `opGetPaymentInstrument`<sup>Required</sup> <a name="opGetPaymentInstrument" id="@cdk_utils/iam.payments.PaymentsOperations.property.opGetPaymentInstrument"></a>
+
+```typescript
+public readonly opGetPaymentInstrument: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetPaymentInstrument API call.
 
 ---
 

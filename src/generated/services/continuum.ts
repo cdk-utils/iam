@@ -611,7 +611,10 @@ export class ContinuumOperations {
 		"continuum:StartIntegrationAuthorization",
 	];
 	/** IAM actions required for the UpdateCollector API call. */
-	static readonly UpdateCollector: string[] = [];
+	static readonly UpdateCollector: string[] = [
+		"iam:PassRole",
+		"continuum:UpdateCollector",
+	];
 	/** IAM actions required for the UpdateEnvironment API call. */
 	static readonly UpdateEnvironment: string[] = ["continuum:UpdateEnvironment"];
 	/** IAM actions required for the UpdateIntegration API call. */

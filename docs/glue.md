@@ -9508,7 +9508,6 @@ new glue.GlueOperations()
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.CreateUserDefinedFunction">CreateUserDefinedFunction</a></code> | <code>string[]</code> | IAM actions required for the CreateUserDefinedFunction API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.CreateWorkflow">CreateWorkflow</a></code> | <code>string[]</code> | IAM actions required for the CreateWorkflow API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.DeleteAsset">DeleteAsset</a></code> | <code>string[]</code> | IAM actions required for the DeleteAsset API call. |
-| <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.DeleteAssetType">DeleteAssetType</a></code> | <code>string[]</code> | IAM actions required for the DeleteAssetType API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.DeleteAttachment">DeleteAttachment</a></code> | <code>string[]</code> | IAM actions required for the DeleteAttachment API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.DeleteBlueprint">DeleteBlueprint</a></code> | <code>string[]</code> | IAM actions required for the DeleteBlueprint API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.DeleteCatalog">DeleteCatalog</a></code> | <code>string[]</code> | IAM actions required for the DeleteCatalog API call. |
@@ -9684,7 +9683,6 @@ new glue.GlueOperations()
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.opGetWorkflowRuns">opGetWorkflowRuns</a></code> | <code>string[]</code> | IAM actions required for the GetWorkflowRuns API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.PublishDataQualityResultV2">PublishDataQualityResultV2</a></code> | <code>string[]</code> | IAM actions required for the PublishDataQualityResultV2 API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.PutAsset">PutAsset</a></code> | <code>string[]</code> | IAM actions required for the PutAsset API call. |
-| <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.PutAssetType">PutAssetType</a></code> | <code>string[]</code> | IAM actions required for the PutAssetType API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.PutAttachment">PutAttachment</a></code> | <code>string[]</code> | IAM actions required for the PutAttachment API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.PutDataCatalogEncryptionSettings">PutDataCatalogEncryptionSettings</a></code> | <code>string[]</code> | IAM actions required for the PutDataCatalogEncryptionSettings API call. |
 | <code><a href="#@cdk_utils/iam.glue.GlueOperations.property.PutDataCatalogExportConfiguration">PutDataCatalogExportConfiguration</a></code> | <code>string[]</code> | IAM actions required for the PutDataCatalogExportConfiguration API call. |
@@ -10482,18 +10480,6 @@ public readonly DeleteAsset: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteAsset API call.
-
----
-
-##### `DeleteAssetType`<sup>Required</sup> <a name="DeleteAssetType" id="@cdk_utils/iam.glue.GlueOperations.property.DeleteAssetType"></a>
-
-```typescript
-public readonly DeleteAssetType: string[];
-```
-
-- *Type:* string[]
-
-IAM actions required for the DeleteAssetType API call.
 
 ---
 
@@ -12594,18 +12580,6 @@ public readonly PutAsset: string[];
 - *Type:* string[]
 
 IAM actions required for the PutAsset API call.
-
----
-
-##### `PutAssetType`<sup>Required</sup> <a name="PutAssetType" id="@cdk_utils/iam.glue.GlueOperations.property.PutAssetType"></a>
-
-```typescript
-public readonly PutAssetType: string[];
-```
-
-- *Type:* string[]
-
-IAM actions required for the PutAssetType API call.
 
 ---
 

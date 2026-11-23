@@ -3,6 +3,180 @@
 
 ## Structs <a name="Structs" id="Structs"></a>
 
+### AidevopsAccessProfileArnComponents <a name="AidevopsAccessProfileArnComponents" id="@cdk_utils/iam.aidevops.AidevopsAccessProfileArnComponents"></a>
+
+Parsed components of a access-profile ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.aidevops.AidevopsAccessProfileArnComponents.Initializer"></a>
+
+```typescript
+import { aidevops } from '@cdk_utils/iam'
+
+const aidevopsAccessProfileArnComponents: aidevops.AidevopsAccessProfileArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsAccessProfileArnComponents.property.accessProfileId">accessProfileId</a></code> | <code>string</code> | The AccessProfileId component. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsAccessProfileArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsAccessProfileArnComponents.property.agentSpaceId">agentSpaceId</a></code> | <code>string</code> | The AgentSpaceId component. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsAccessProfileArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsAccessProfileArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `accessProfileId`<sup>Required</sup> <a name="accessProfileId" id="@cdk_utils/iam.aidevops.AidevopsAccessProfileArnComponents.property.accessProfileId"></a>
+
+```typescript
+public readonly accessProfileId: string;
+```
+
+- *Type:* string
+
+The AccessProfileId component.
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.aidevops.AidevopsAccessProfileArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `agentSpaceId`<sup>Required</sup> <a name="agentSpaceId" id="@cdk_utils/iam.aidevops.AidevopsAccessProfileArnComponents.property.agentSpaceId"></a>
+
+```typescript
+public readonly agentSpaceId: string;
+```
+
+- *Type:* string
+
+The AgentSpaceId component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.aidevops.AidevopsAccessProfileArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.aidevops.AidevopsAccessProfileArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### AidevopsAccessProfileArnProps <a name="AidevopsAccessProfileArnProps" id="@cdk_utils/iam.aidevops.AidevopsAccessProfileArnProps"></a>
+
+Properties for building a access-profile ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.aidevops.AidevopsAccessProfileArnProps.Initializer"></a>
+
+```typescript
+import { aidevops } from '@cdk_utils/iam'
+
+const aidevopsAccessProfileArnProps: aidevops.AidevopsAccessProfileArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsAccessProfileArnProps.property.accessProfileId">accessProfileId</a></code> | <code>string</code> | The AccessProfileId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsAccessProfileArnProps.property.agentSpaceId">agentSpaceId</a></code> | <code>string</code> | The AgentSpaceId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsAccessProfileArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsAccessProfileArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsAccessProfileArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `accessProfileId`<sup>Required</sup> <a name="accessProfileId" id="@cdk_utils/iam.aidevops.AidevopsAccessProfileArnProps.property.accessProfileId"></a>
+
+```typescript
+public readonly accessProfileId: string;
+```
+
+- *Type:* string
+
+The AccessProfileId component of the ARN.
+
+---
+
+##### `agentSpaceId`<sup>Required</sup> <a name="agentSpaceId" id="@cdk_utils/iam.aidevops.AidevopsAccessProfileArnProps.property.agentSpaceId"></a>
+
+```typescript
+public readonly agentSpaceId: string;
+```
+
+- *Type:* string
+
+The AgentSpaceId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.aidevops.AidevopsAccessProfileArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.aidevops.AidevopsAccessProfileArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.aidevops.AidevopsAccessProfileArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### AidevopsAgentspaceArnComponents <a name="AidevopsAgentspaceArnComponents" id="@cdk_utils/iam.aidevops.AidevopsAgentspaceArnComponents"></a>
 
 Parsed components of a agentspace ARN.
@@ -995,6 +1169,7 @@ new aidevops.AidevopsActions()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.actionGetAccessProfile">actionGetAccessProfile</a></code> | <code>string</code> | [Read] aidevops:GetAccessProfile. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.actionGetAccessToken">actionGetAccessToken</a></code> | <code>string</code> | [Read] aidevops:GetAccessToken. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.actionGetAccountUsage">actionGetAccountUsage</a></code> | <code>string</code> | [Read] aidevops:GetAccountUsage. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.actionGetAgentSpace">actionGetAgentSpace</a></code> | <code>string</code> | [Read] aidevops:GetAgentSpace. |
@@ -1019,6 +1194,11 @@ new aidevops.AidevopsActions()
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.AssociateService">AssociateService</a></code> | <code>string</code> | [Write] aidevops:AssociateService. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.BatchCreateAccessProfileAssignment">BatchCreateAccessProfileAssignment</a></code> | <code>string</code> | [Write] aidevops:BatchCreateAccessProfileAssignment. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.BatchDeleteAccessProfileAssignment">BatchDeleteAccessProfileAssignment</a></code> | <code>string</code> | [Write] aidevops:BatchDeleteAccessProfileAssignment. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.BatchDeleteAccessProfileEntitlement">BatchDeleteAccessProfileEntitlement</a></code> | <code>string</code> | [Write] aidevops:BatchDeleteAccessProfileEntitlement. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.BatchPutAccessProfileEntitlement">BatchPutAccessProfileEntitlement</a></code> | <code>string</code> | [Write] aidevops:BatchPutAccessProfileEntitlement. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.CreateAccessProfile">CreateAccessProfile</a></code> | <code>string</code> | [Write] aidevops:CreateAccessProfile. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.CreateAccessToken">CreateAccessToken</a></code> | <code>string</code> | [Write] aidevops:CreateAccessToken. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.CreateAgentSpace">CreateAgentSpace</a></code> | <code>string</code> | [Write] aidevops:CreateAgentSpace. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.CreateAsset">CreateAsset</a></code> | <code>string</code> | [Write] aidevops:CreateAsset. |
@@ -1029,6 +1209,7 @@ new aidevops.AidevopsActions()
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.CreateOneTimeLoginSession">CreateOneTimeLoginSession</a></code> | <code>string</code> | [Write] aidevops:CreateOneTimeLoginSession. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.CreatePrivateConnection">CreatePrivateConnection</a></code> | <code>string</code> | [Write] aidevops:CreatePrivateConnection. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.CreateTrigger">CreateTrigger</a></code> | <code>string</code> | [Write] aidevops:CreateTrigger. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.DeleteAccessProfile">DeleteAccessProfile</a></code> | <code>string</code> | [Write] aidevops:DeleteAccessProfile. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.DeleteAgentSpace">DeleteAgentSpace</a></code> | <code>string</code> | [Write] aidevops:DeleteAgentSpace. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.DeleteAsset">DeleteAsset</a></code> | <code>string</code> | [Write] aidevops:DeleteAsset. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.DeleteAssetFile">DeleteAssetFile</a></code> | <code>string</code> | [Write] aidevops:DeleteAssetFile. |
@@ -1045,6 +1226,9 @@ new aidevops.AidevopsActions()
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.EnableOperatorApp">EnableOperatorApp</a></code> | <code>string</code> | [Write] aidevops:EnableOperatorApp. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.EndChatForCase">EndChatForCase</a></code> | <code>string</code> | [Write] aidevops:EndChatForCase. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.InitiateChatForCase">InitiateChatForCase</a></code> | <code>string</code> | [Write] aidevops:InitiateChatForCase. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.ListAccessProfileAssignments">ListAccessProfileAssignments</a></code> | <code>string</code> | [List] aidevops:ListAccessProfileAssignments. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.ListAccessProfileEntitlements">ListAccessProfileEntitlements</a></code> | <code>string</code> | [List] aidevops:ListAccessProfileEntitlements. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.ListAccessProfiles">ListAccessProfiles</a></code> | <code>string</code> | [List] aidevops:ListAccessProfiles. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.ListAccessTokens">ListAccessTokens</a></code> | <code>string</code> | [List] aidevops:ListAccessTokens. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.ListAgentSpaceMetrics">ListAgentSpaceMetrics</a></code> | <code>string</code> | [Read] aidevops:ListAgentSpaceMetrics. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.ListAgentSpaces">ListAgentSpaces</a></code> | <code>string</code> | [List] aidevops:ListAgentSpaces. |
@@ -1081,6 +1265,8 @@ new aidevops.AidevopsActions()
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.StopPlan">StopPlan</a></code> | <code>string</code> | [Write] aidevops:StopPlan. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] aidevops:TagResource. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] aidevops:UntagResource. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.UpdateAccessProfile">UpdateAccessProfile</a></code> | <code>string</code> | [Write] aidevops:UpdateAccessProfile. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.UpdateAccessProfilesOrder">UpdateAccessProfilesOrder</a></code> | <code>string</code> | [Write] aidevops:UpdateAccessProfilesOrder. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.UpdateAgentSpace">UpdateAgentSpace</a></code> | <code>string</code> | [Write] aidevops:UpdateAgentSpace. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.UpdateApprovalAction">UpdateApprovalAction</a></code> | <code>string</code> | [Write] aidevops:UpdateApprovalAction. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.UpdateAsset">UpdateAsset</a></code> | <code>string</code> | [Write] aidevops:UpdateAsset. |
@@ -1095,6 +1281,18 @@ new aidevops.AidevopsActions()
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.UpdateRecommendation">UpdateRecommendation</a></code> | <code>string</code> | [Write] aidevops:UpdateRecommendation. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.UpdateTrigger">UpdateTrigger</a></code> | <code>string</code> | [Write] aidevops:UpdateTrigger. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsActions.property.ValidateAwsAssociations">ValidateAwsAssociations</a></code> | <code>string</code> | [Write] aidevops:ValidateAwsAssociations. |
+
+---
+
+##### `actionGetAccessProfile`<sup>Required</sup> <a name="actionGetAccessProfile" id="@cdk_utils/iam.aidevops.AidevopsActions.property.actionGetAccessProfile"></a>
+
+```typescript
+public readonly actionGetAccessProfile: string;
+```
+
+- *Type:* string
+
+[Read] aidevops:GetAccessProfile.
 
 ---
 
@@ -1386,6 +1584,66 @@ public readonly AssociateService: string;
 
 ---
 
+##### `BatchCreateAccessProfileAssignment`<sup>Required</sup> <a name="BatchCreateAccessProfileAssignment" id="@cdk_utils/iam.aidevops.AidevopsActions.property.BatchCreateAccessProfileAssignment"></a>
+
+```typescript
+public readonly BatchCreateAccessProfileAssignment: string;
+```
+
+- *Type:* string
+
+[Write] aidevops:BatchCreateAccessProfileAssignment.
+
+---
+
+##### `BatchDeleteAccessProfileAssignment`<sup>Required</sup> <a name="BatchDeleteAccessProfileAssignment" id="@cdk_utils/iam.aidevops.AidevopsActions.property.BatchDeleteAccessProfileAssignment"></a>
+
+```typescript
+public readonly BatchDeleteAccessProfileAssignment: string;
+```
+
+- *Type:* string
+
+[Write] aidevops:BatchDeleteAccessProfileAssignment.
+
+---
+
+##### `BatchDeleteAccessProfileEntitlement`<sup>Required</sup> <a name="BatchDeleteAccessProfileEntitlement" id="@cdk_utils/iam.aidevops.AidevopsActions.property.BatchDeleteAccessProfileEntitlement"></a>
+
+```typescript
+public readonly BatchDeleteAccessProfileEntitlement: string;
+```
+
+- *Type:* string
+
+[Write] aidevops:BatchDeleteAccessProfileEntitlement.
+
+---
+
+##### `BatchPutAccessProfileEntitlement`<sup>Required</sup> <a name="BatchPutAccessProfileEntitlement" id="@cdk_utils/iam.aidevops.AidevopsActions.property.BatchPutAccessProfileEntitlement"></a>
+
+```typescript
+public readonly BatchPutAccessProfileEntitlement: string;
+```
+
+- *Type:* string
+
+[Write] aidevops:BatchPutAccessProfileEntitlement.
+
+---
+
+##### `CreateAccessProfile`<sup>Required</sup> <a name="CreateAccessProfile" id="@cdk_utils/iam.aidevops.AidevopsActions.property.CreateAccessProfile"></a>
+
+```typescript
+public readonly CreateAccessProfile: string;
+```
+
+- *Type:* string
+
+[Write] aidevops:CreateAccessProfile.
+
+---
+
 ##### `CreateAccessToken`<sup>Required</sup> <a name="CreateAccessToken" id="@cdk_utils/iam.aidevops.AidevopsActions.property.CreateAccessToken"></a>
 
 ```typescript
@@ -1503,6 +1761,18 @@ public readonly CreateTrigger: string;
 - *Type:* string
 
 [Write] aidevops:CreateTrigger.
+
+---
+
+##### `DeleteAccessProfile`<sup>Required</sup> <a name="DeleteAccessProfile" id="@cdk_utils/iam.aidevops.AidevopsActions.property.DeleteAccessProfile"></a>
+
+```typescript
+public readonly DeleteAccessProfile: string;
+```
+
+- *Type:* string
+
+[Write] aidevops:DeleteAccessProfile.
 
 ---
 
@@ -1695,6 +1965,42 @@ public readonly InitiateChatForCase: string;
 - *Type:* string
 
 [Write] aidevops:InitiateChatForCase.
+
+---
+
+##### `ListAccessProfileAssignments`<sup>Required</sup> <a name="ListAccessProfileAssignments" id="@cdk_utils/iam.aidevops.AidevopsActions.property.ListAccessProfileAssignments"></a>
+
+```typescript
+public readonly ListAccessProfileAssignments: string;
+```
+
+- *Type:* string
+
+[List] aidevops:ListAccessProfileAssignments.
+
+---
+
+##### `ListAccessProfileEntitlements`<sup>Required</sup> <a name="ListAccessProfileEntitlements" id="@cdk_utils/iam.aidevops.AidevopsActions.property.ListAccessProfileEntitlements"></a>
+
+```typescript
+public readonly ListAccessProfileEntitlements: string;
+```
+
+- *Type:* string
+
+[List] aidevops:ListAccessProfileEntitlements.
+
+---
+
+##### `ListAccessProfiles`<sup>Required</sup> <a name="ListAccessProfiles" id="@cdk_utils/iam.aidevops.AidevopsActions.property.ListAccessProfiles"></a>
+
+```typescript
+public readonly ListAccessProfiles: string;
+```
+
+- *Type:* string
+
+[List] aidevops:ListAccessProfiles.
 
 ---
 
@@ -2127,6 +2433,30 @@ public readonly UntagResource: string;
 - *Type:* string
 
 [Tagging] aidevops:UntagResource.
+
+---
+
+##### `UpdateAccessProfile`<sup>Required</sup> <a name="UpdateAccessProfile" id="@cdk_utils/iam.aidevops.AidevopsActions.property.UpdateAccessProfile"></a>
+
+```typescript
+public readonly UpdateAccessProfile: string;
+```
+
+- *Type:* string
+
+[Write] aidevops:UpdateAccessProfile.
+
+---
+
+##### `UpdateAccessProfilesOrder`<sup>Required</sup> <a name="UpdateAccessProfilesOrder" id="@cdk_utils/iam.aidevops.AidevopsActions.property.UpdateAccessProfilesOrder"></a>
+
+```typescript
+public readonly UpdateAccessProfilesOrder: string;
+```
+
+- *Type:* string
+
+[Write] aidevops:UpdateAccessProfilesOrder.
 
 ---
 
@@ -3890,15 +4220,18 @@ new aidevops.AidevopsResources()
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsResources.accessProfile">accessProfile</a></code> | Builds an ARN for the access-profile resource. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsResources.agentspace">agentspace</a></code> | Builds an ARN for the agentspace resource. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsResources.asset">asset</a></code> | Builds an ARN for the asset resource. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsResources.associations">associations</a></code> | Builds an ARN for the associations resource. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsResources.isValidAccessProfileArn">isValidAccessProfileArn</a></code> | Validates whether a string is a valid ARN for the access-profile resource. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsResources.isValidAgentspaceArn">isValidAgentspaceArn</a></code> | Validates whether a string is a valid ARN for the agentspace resource. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsResources.isValidAssetArn">isValidAssetArn</a></code> | Validates whether a string is a valid ARN for the asset resource. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsResources.isValidAssociationsArn">isValidAssociationsArn</a></code> | Validates whether a string is a valid ARN for the associations resource. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsResources.isValidPrivateConnectionArn">isValidPrivateConnectionArn</a></code> | Validates whether a string is a valid ARN for the private-connection resource. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsResources.isValidServiceArn">isValidServiceArn</a></code> | Validates whether a string is a valid ARN for the service resource. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsResources.isValidTriggerArn">isValidTriggerArn</a></code> | Validates whether a string is a valid ARN for the trigger resource. |
+| <code><a href="#@cdk_utils/iam.aidevops.AidevopsResources.parseAccessProfileArn">parseAccessProfileArn</a></code> | Parses a access-profile ARN into its components. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsResources.parseAgentspaceArn">parseAgentspaceArn</a></code> | Parses a agentspace ARN into its components. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsResources.parseAssetArn">parseAssetArn</a></code> | Parses a asset ARN into its components. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsResources.parseAssociationsArn">parseAssociationsArn</a></code> | Parses a associations ARN into its components. |
@@ -3908,6 +4241,22 @@ new aidevops.AidevopsResources()
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsResources.privateConnection">privateConnection</a></code> | Builds an ARN for the private-connection resource. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsResources.service">service</a></code> | Builds an ARN for the service resource. |
 | <code><a href="#@cdk_utils/iam.aidevops.AidevopsResources.trigger">trigger</a></code> | Builds an ARN for the trigger resource. |
+
+---
+
+##### `accessProfile` <a name="accessProfile" id="@cdk_utils/iam.aidevops.AidevopsResources.accessProfile"></a>
+
+```typescript
+import { aidevops } from '@cdk_utils/iam'
+
+aidevops.AidevopsResources.accessProfile(props: AidevopsAccessProfileArnProps)
+```
+
+Builds an ARN for the access-profile resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.aidevops.AidevopsResources.accessProfile.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.aidevops.AidevopsAccessProfileArnProps">AidevopsAccessProfileArnProps</a>
 
 ---
 
@@ -3956,6 +4305,22 @@ Builds an ARN for the associations resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.aidevops.AidevopsResources.associations.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.aidevops.AidevopsAssociationsArnProps">AidevopsAssociationsArnProps</a>
+
+---
+
+##### `isValidAccessProfileArn` <a name="isValidAccessProfileArn" id="@cdk_utils/iam.aidevops.AidevopsResources.isValidAccessProfileArn"></a>
+
+```typescript
+import { aidevops } from '@cdk_utils/iam'
+
+aidevops.AidevopsResources.isValidAccessProfileArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the access-profile resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.aidevops.AidevopsResources.isValidAccessProfileArn.parameter.arn"></a>
+
+- *Type:* string
 
 ---
 
@@ -4050,6 +4415,22 @@ aidevops.AidevopsResources.isValidTriggerArn(arn: string)
 Validates whether a string is a valid ARN for the trigger resource.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.aidevops.AidevopsResources.isValidTriggerArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseAccessProfileArn` <a name="parseAccessProfileArn" id="@cdk_utils/iam.aidevops.AidevopsResources.parseAccessProfileArn"></a>
+
+```typescript
+import { aidevops } from '@cdk_utils/iam'
+
+aidevops.AidevopsResources.parseAccessProfileArn(arn: string)
+```
+
+Parses a access-profile ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.aidevops.AidevopsResources.parseAccessProfileArn.parameter.arn"></a>
 
 - *Type:* string
 

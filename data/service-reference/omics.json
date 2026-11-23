@@ -883,9 +883,6 @@
       "Resources": [
         {
           "Name": "readSet"
-        },
-        {
-          "Name": "sequenceStore"
         }
       ],
       "SupportedBy": {
@@ -970,9 +967,6 @@
       "Resources": [
         {
           "Name": "readSet"
-        },
-        {
-          "Name": "sequenceStore"
         }
       ],
       "SupportedBy": {
@@ -994,9 +988,6 @@
       "Resources": [
         {
           "Name": "reference"
-        },
-        {
-          "Name": "referenceStore"
         }
       ],
       "SupportedBy": {
@@ -1039,9 +1030,6 @@
       "Resources": [
         {
           "Name": "reference"
-        },
-        {
-          "Name": "referenceStore"
         }
       ],
       "SupportedBy": {

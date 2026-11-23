@@ -1218,6 +1218,10 @@ export class Wafv2Operations {
 	];
 	/** IAM actions required for the GetDecryptedAPIKey API call. */
 	static readonly opGetDecryptedAPIKey: string[] = ["wafv2:GetDecryptedAPIKey"];
+	/** IAM actions required for the GetEvent API call. */
+	static readonly opGetEvent: string[] = ["wafv2:GetEvent"];
+	/** IAM actions required for the GetEventActor API call. */
+	static readonly opGetEventActor: string[] = ["wafv2:GetEventActor"];
 	/** IAM actions required for the GetIPSet API call. */
 	static readonly opGetIPSet: string[] = ["wafv2:GetIPSet"];
 	/** IAM actions required for the GetLoggingConfiguration API call. */
@@ -1278,6 +1282,12 @@ export class Wafv2Operations {
 	static readonly ListAvailableManagedRuleGroups: string[] = [
 		"wafv2:ListAvailableManagedRuleGroups",
 	];
+	/** IAM actions required for the ListEventActors API call. */
+	static readonly ListEventActors: string[] = ["wafv2:ListEventActors"];
+	/** IAM actions required for the ListEvents API call. */
+	static readonly ListEvents: string[] = ["wafv2:ListEvents"];
+	/** IAM actions required for the ListEventsByWebACL API call. */
+	static readonly ListEventsByWebACL: string[] = ["wafv2:ListEventsByWebACL"];
 	/** IAM actions required for the ListIPSets API call. */
 	static readonly ListIPSets: string[] = ["wafv2:ListIPSets"];
 	/** IAM actions required for the ListLoggingConfigurations API call. */

@@ -54,7 +54,6 @@
       ],
       "Annotations": {
         "Properties": {
-          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -6760,7 +6759,6 @@
       ],
       "Annotations": {
         "Properties": {
-          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -10461,12 +10459,6 @@
     },
     {
       "Name": "ApproveTimeOff",
-      "AuthorizedActions": [
-        {
-          "Name": "ApproveTimeOff",
-          "Service": "connect"
-        }
-      ],
       "SDK": [
         {
           "Name": "connectscheduling",
@@ -14944,12 +14936,6 @@
     },
     {
       "Name": "RejectTimeOff",
-      "AuthorizedActions": [
-        {
-          "Name": "RejectTimeOff",
-          "Service": "connect"
-        }
-      ],
       "SDK": [
         {
           "Name": "connectscheduling",

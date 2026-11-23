@@ -31,6 +31,8 @@ export class FsxActions {
 		"fsx:CreateAndAttachS3AccessPoint";
 	/** [Write] fsx:CreateBackup */
 	static readonly CreateBackup = "fsx:CreateBackup";
+	/** [Write] fsx:CreateClusterPeer */
+	static readonly CreateClusterPeer = "fsx:CreateClusterPeer";
 	/** [Write] fsx:CreateDataRepositoryAssociation */
 	static readonly CreateDataRepositoryAssociation =
 		"fsx:CreateDataRepositoryAssociation";
@@ -42,17 +44,29 @@ export class FsxActions {
 	static readonly CreateFileSystem = "fsx:CreateFileSystem";
 	/** [Write] fsx:CreateFileSystemFromBackup */
 	static readonly CreateFileSystemFromBackup = "fsx:CreateFileSystemFromBackup";
+	/** [Write] fsx:CreateSnapmirrorPolicy */
+	static readonly CreateSnapmirrorPolicy = "fsx:CreateSnapmirrorPolicy";
+	/** [Write] fsx:CreateSnapmirrorRelationship */
+	static readonly CreateSnapmirrorRelationship =
+		"fsx:CreateSnapmirrorRelationship";
 	/** [Write] fsx:CreateSnapshot */
 	static readonly CreateSnapshot = "fsx:CreateSnapshot";
+	/** [Write] fsx:CreateSnapshotPolicy */
+	static readonly CreateSnapshotPolicy = "fsx:CreateSnapshotPolicy";
 	/** [Write] fsx:CreateStorageVirtualMachine */
 	static readonly CreateStorageVirtualMachine =
 		"fsx:CreateStorageVirtualMachine";
+	/** [Write] fsx:CreateStorageVirtualMachinePeer */
+	static readonly CreateStorageVirtualMachinePeer =
+		"fsx:CreateStorageVirtualMachinePeer";
 	/** [Write] fsx:CreateVolume */
 	static readonly CreateVolume = "fsx:CreateVolume";
 	/** [Write] fsx:CreateVolumeFromBackup */
 	static readonly CreateVolumeFromBackup = "fsx:CreateVolumeFromBackup";
 	/** [Write] fsx:DeleteBackup */
 	static readonly DeleteBackup = "fsx:DeleteBackup";
+	/** [Write] fsx:DeleteClusterPeer */
+	static readonly DeleteClusterPeer = "fsx:DeleteClusterPeer";
 	/** [Write] fsx:DeleteDataRepositoryAssociation */
 	static readonly DeleteDataRepositoryAssociation =
 		"fsx:DeleteDataRepositoryAssociation";
@@ -62,11 +76,21 @@ export class FsxActions {
 	static readonly DeleteFileSystem = "fsx:DeleteFileSystem";
 	/** [PermissionManagement] fsx:DeleteResourcePolicy */
 	static readonly DeleteResourcePolicy = "fsx:DeleteResourcePolicy";
+	/** [Write] fsx:DeleteSnapmirrorPolicy */
+	static readonly DeleteSnapmirrorPolicy = "fsx:DeleteSnapmirrorPolicy";
+	/** [Write] fsx:DeleteSnapmirrorRelationship */
+	static readonly DeleteSnapmirrorRelationship =
+		"fsx:DeleteSnapmirrorRelationship";
 	/** [Write] fsx:DeleteSnapshot */
 	static readonly DeleteSnapshot = "fsx:DeleteSnapshot";
+	/** [Write] fsx:DeleteSnapshotPolicy */
+	static readonly DeleteSnapshotPolicy = "fsx:DeleteSnapshotPolicy";
 	/** [Write] fsx:DeleteStorageVirtualMachine */
 	static readonly DeleteStorageVirtualMachine =
 		"fsx:DeleteStorageVirtualMachine";
+	/** [Write] fsx:DeleteStorageVirtualMachinePeer */
+	static readonly DeleteStorageVirtualMachinePeer =
+		"fsx:DeleteStorageVirtualMachinePeer";
 	/** [Write] fsx:DeleteVolume */
 	static readonly DeleteVolume = "fsx:DeleteVolume";
 	/** [Read] fsx:DescribeAssociatedFileGateways */
@@ -74,6 +98,8 @@ export class FsxActions {
 		"fsx:DescribeAssociatedFileGateways";
 	/** [Read] fsx:DescribeBackups */
 	static readonly DescribeBackups = "fsx:DescribeBackups";
+	/** [Read] fsx:DescribeClusterPeers */
+	static readonly DescribeClusterPeers = "fsx:DescribeClusterPeers";
 	/** [Read] fsx:DescribeDataRepositoryAssociations */
 	static readonly DescribeDataRepositoryAssociations =
 		"fsx:DescribeDataRepositoryAssociations";
@@ -92,8 +118,18 @@ export class FsxActions {
 	/** [Read] fsx:DescribeSharedVpcConfiguration */
 	static readonly DescribeSharedVpcConfiguration =
 		"fsx:DescribeSharedVpcConfiguration";
+	/** [Read] fsx:DescribeSnapmirrorPolicies */
+	static readonly DescribeSnapmirrorPolicies = "fsx:DescribeSnapmirrorPolicies";
+	/** [Read] fsx:DescribeSnapmirrorRelationships */
+	static readonly DescribeSnapmirrorRelationships =
+		"fsx:DescribeSnapmirrorRelationships";
+	/** [Read] fsx:DescribeSnapshotPolicies */
+	static readonly DescribeSnapshotPolicies = "fsx:DescribeSnapshotPolicies";
 	/** [Read] fsx:DescribeSnapshots */
 	static readonly DescribeSnapshots = "fsx:DescribeSnapshots";
+	/** [Read] fsx:DescribeStorageVirtualMachinePeers */
+	static readonly DescribeStorageVirtualMachinePeers =
+		"fsx:DescribeStorageVirtualMachinePeers";
 	/** [Read] fsx:DescribeStorageVirtualMachines */
 	static readonly DescribeStorageVirtualMachines =
 		"fsx:DescribeStorageVirtualMachines";
@@ -128,6 +164,8 @@ export class FsxActions {
 	static readonly TagResource = "fsx:TagResource";
 	/** [Tagging] fsx:UntagResource */
 	static readonly UntagResource = "fsx:UntagResource";
+	/** [Write] fsx:UpdateClusterPeer */
+	static readonly UpdateClusterPeer = "fsx:UpdateClusterPeer";
 	/** [Write] fsx:UpdateDataRepositoryAssociation */
 	static readonly UpdateDataRepositoryAssociation =
 		"fsx:UpdateDataRepositoryAssociation";
@@ -138,11 +176,21 @@ export class FsxActions {
 	/** [Write] fsx:UpdateSharedVpcConfiguration */
 	static readonly UpdateSharedVpcConfiguration =
 		"fsx:UpdateSharedVpcConfiguration";
+	/** [Write] fsx:UpdateSnapmirrorPolicy */
+	static readonly UpdateSnapmirrorPolicy = "fsx:UpdateSnapmirrorPolicy";
+	/** [Write] fsx:UpdateSnapmirrorRelationship */
+	static readonly UpdateSnapmirrorRelationship =
+		"fsx:UpdateSnapmirrorRelationship";
 	/** [Write] fsx:UpdateSnapshot */
 	static readonly UpdateSnapshot = "fsx:UpdateSnapshot";
+	/** [Write] fsx:UpdateSnapshotPolicy */
+	static readonly UpdateSnapshotPolicy = "fsx:UpdateSnapshotPolicy";
 	/** [Write] fsx:UpdateStorageVirtualMachine */
 	static readonly UpdateStorageVirtualMachine =
 		"fsx:UpdateStorageVirtualMachine";
+	/** [Write] fsx:UpdateStorageVirtualMachinePeer */
+	static readonly UpdateStorageVirtualMachinePeer =
+		"fsx:UpdateStorageVirtualMachinePeer";
 	/** [Write] fsx:UpdateVolume */
 	static readonly UpdateVolume = "fsx:UpdateVolume";
 
@@ -150,6 +198,7 @@ export class FsxActions {
 	static readonly AllReadActions: string[] = [
 		FsxActions.DescribeAssociatedFileGateways,
 		FsxActions.DescribeBackups,
+		FsxActions.DescribeClusterPeers,
 		FsxActions.DescribeDataRepositoryAssociations,
 		FsxActions.DescribeDataRepositoryTasks,
 		FsxActions.DescribeFileCaches,
@@ -157,7 +206,11 @@ export class FsxActions {
 		FsxActions.DescribeFileSystems,
 		FsxActions.DescribeS3AccessPointAttachments,
 		FsxActions.DescribeSharedVpcConfiguration,
+		FsxActions.DescribeSnapmirrorPolicies,
+		FsxActions.DescribeSnapmirrorRelationships,
+		FsxActions.DescribeSnapshotPolicies,
 		FsxActions.DescribeSnapshots,
+		FsxActions.DescribeStorageVirtualMachinePeers,
 		FsxActions.DescribeStorageVirtualMachines,
 		FsxActions.DescribeVolumes,
 		FsxActions.ListTagsForResource,
@@ -171,21 +224,31 @@ export class FsxActions {
 		FsxActions.CopySnapshotAndUpdateVolume,
 		FsxActions.CreateAndAttachS3AccessPoint,
 		FsxActions.CreateBackup,
+		FsxActions.CreateClusterPeer,
 		FsxActions.CreateDataRepositoryAssociation,
 		FsxActions.CreateDataRepositoryTask,
 		FsxActions.CreateFileCache,
 		FsxActions.CreateFileSystem,
 		FsxActions.CreateFileSystemFromBackup,
+		FsxActions.CreateSnapmirrorPolicy,
+		FsxActions.CreateSnapmirrorRelationship,
 		FsxActions.CreateSnapshot,
+		FsxActions.CreateSnapshotPolicy,
 		FsxActions.CreateStorageVirtualMachine,
+		FsxActions.CreateStorageVirtualMachinePeer,
 		FsxActions.CreateVolume,
 		FsxActions.CreateVolumeFromBackup,
 		FsxActions.DeleteBackup,
+		FsxActions.DeleteClusterPeer,
 		FsxActions.DeleteDataRepositoryAssociation,
 		FsxActions.DeleteFileCache,
 		FsxActions.DeleteFileSystem,
+		FsxActions.DeleteSnapmirrorPolicy,
+		FsxActions.DeleteSnapmirrorRelationship,
 		FsxActions.DeleteSnapshot,
+		FsxActions.DeleteSnapshotPolicy,
 		FsxActions.DeleteStorageVirtualMachine,
+		FsxActions.DeleteStorageVirtualMachinePeer,
 		FsxActions.DeleteVolume,
 		FsxActions.DetachAndDeleteS3AccessPoint,
 		FsxActions.DisassociateFileGateway,
@@ -193,12 +256,17 @@ export class FsxActions {
 		FsxActions.ReleaseFileSystemNfsV3Locks,
 		FsxActions.RestoreVolumeFromSnapshot,
 		FsxActions.StartMisconfiguredStateRecovery,
+		FsxActions.UpdateClusterPeer,
 		FsxActions.UpdateDataRepositoryAssociation,
 		FsxActions.UpdateFileCache,
 		FsxActions.UpdateFileSystem,
 		FsxActions.UpdateSharedVpcConfiguration,
+		FsxActions.UpdateSnapmirrorPolicy,
+		FsxActions.UpdateSnapmirrorRelationship,
 		FsxActions.UpdateSnapshot,
+		FsxActions.UpdateSnapshotPolicy,
 		FsxActions.UpdateStorageVirtualMachine,
+		FsxActions.UpdateStorageVirtualMachinePeer,
 		FsxActions.UpdateVolume,
 	];
 	/** All list-level actions. */
@@ -279,6 +347,38 @@ export interface FsxBackupArnComponents {
 }
 
 /**
+ * Properties for building a cluster-peer ARN.
+ */
+export interface FsxClusterPeerArnProps {
+	/** The FileSystemId component of the ARN. */
+	readonly fileSystemId: string;
+	/** The ClusterPeerId component of the ARN. */
+	readonly clusterPeerId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a cluster-peer ARN.
+ */
+export interface FsxClusterPeerArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FileSystemId component. */
+	readonly fileSystemId: string;
+	/** The ClusterPeerId component. */
+	readonly clusterPeerId: string;
+}
+
+/**
  * Properties for building a file-cache ARN.
  */
 export interface FsxFileCacheArnProps {
@@ -335,6 +435,74 @@ export interface FsxFileSystemArnComponents {
 }
 
 /**
+ * Properties for building a snapmirror-policy ARN.
+ */
+export interface FsxSnapmirrorPolicyArnProps {
+	/** The FileSystemIdOrStorageVirtualMachineId component of the ARN. */
+	readonly fileSystemIdOrStorageVirtualMachineId: string;
+	/** The SnapmirrorPolicyId component of the ARN. */
+	readonly snapmirrorPolicyId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a snapmirror-policy ARN.
+ */
+export interface FsxSnapmirrorPolicyArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FileSystemIdOrStorageVirtualMachineId component. */
+	readonly fileSystemIdOrStorageVirtualMachineId: string;
+	/** The SnapmirrorPolicyId component. */
+	readonly snapmirrorPolicyId: string;
+}
+
+/**
+ * Properties for building a snapmirror-relationship ARN.
+ */
+export interface FsxSnapmirrorRelationshipArnProps {
+	/** The FileSystemId component of the ARN. */
+	readonly fileSystemId: string;
+	/** The VolumeId component of the ARN. */
+	readonly volumeId: string;
+	/** The SnapmirrorRelationshipId component of the ARN. */
+	readonly snapmirrorRelationshipId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a snapmirror-relationship ARN.
+ */
+export interface FsxSnapmirrorRelationshipArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FileSystemId component. */
+	readonly fileSystemId: string;
+	/** The VolumeId component. */
+	readonly volumeId: string;
+	/** The SnapmirrorRelationshipId component. */
+	readonly snapmirrorRelationshipId: string;
+}
+
+/**
  * Properties for building a snapshot ARN.
  */
 export interface FsxSnapshotArnProps {
@@ -367,6 +535,38 @@ export interface FsxSnapshotArnComponents {
 }
 
 /**
+ * Properties for building a snapshot-policy ARN.
+ */
+export interface FsxSnapshotPolicyArnProps {
+	/** The FileSystemIdOrStorageVirtualMachineId component of the ARN. */
+	readonly fileSystemIdOrStorageVirtualMachineId: string;
+	/** The SnapshotPolicyId component of the ARN. */
+	readonly snapshotPolicyId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a snapshot-policy ARN.
+ */
+export interface FsxSnapshotPolicyArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FileSystemIdOrStorageVirtualMachineId component. */
+	readonly fileSystemIdOrStorageVirtualMachineId: string;
+	/** The SnapshotPolicyId component. */
+	readonly snapshotPolicyId: string;
+}
+
+/**
  * Properties for building a storage-virtual-machine ARN.
  */
 export interface FsxStorageVirtualMachineArnProps {
@@ -396,6 +596,42 @@ export interface FsxStorageVirtualMachineArnComponents {
 	readonly fileSystemId: string;
 	/** The StorageVirtualMachineId component. */
 	readonly storageVirtualMachineId: string;
+}
+
+/**
+ * Properties for building a svm-peer ARN.
+ */
+export interface FsxSvmPeerArnProps {
+	/** The FileSystemId component of the ARN. */
+	readonly fileSystemId: string;
+	/** The StorageVirtualMachineId component of the ARN. */
+	readonly storageVirtualMachineId: string;
+	/** The StorageVirtualMachinePeerId component of the ARN. */
+	readonly storageVirtualMachinePeerId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a svm-peer ARN.
+ */
+export interface FsxSvmPeerArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The FileSystemId component. */
+	readonly fileSystemId: string;
+	/** The StorageVirtualMachineId component. */
+	readonly storageVirtualMachineId: string;
+	/** The StorageVirtualMachinePeerId component. */
+	readonly storageVirtualMachinePeerId: string;
 }
 
 /**
@@ -462,14 +698,24 @@ const AssociationArnRegex =
 	/^arn:(?<partition>[^:]+):fsx:(?<region>[^:]*):(?<account>[^:]*):association\/(?<fileSystemIdOrFileCacheId>[^:/?]+)\/(?<dataRepositoryAssociationId>[^:/?]+)$/;
 const BackupArnRegex =
 	/^arn:(?<partition>[^:]+):fsx:(?<region>[^:]*):(?<account>[^:]*):backup\/(?<backupId>[^:/?]+)$/;
+const ClusterPeerArnRegex =
+	/^arn:(?<partition>[^:]+):fsx:(?<region>[^:]*):(?<account>[^:]*):cluster-peer\/(?<fileSystemId>[^:/?]+)\/(?<clusterPeerId>[^:/?]+)$/;
 const FileCacheArnRegex =
 	/^arn:(?<partition>[^:]+):fsx:(?<region>[^:]*):(?<account>[^:]*):file-cache\/(?<fileCacheId>[^:/?]+)$/;
 const FileSystemArnRegex =
 	/^arn:(?<partition>[^:]+):fsx:(?<region>[^:]*):(?<account>[^:]*):file-system\/(?<fileSystemId>[^:/?]+)$/;
+const SnapmirrorPolicyArnRegex =
+	/^arn:(?<partition>[^:]+):fsx:(?<region>[^:]*):(?<account>[^:]*):snapmirror-policy\/(?<fileSystemIdOrStorageVirtualMachineId>[^:/?]+)\/(?<snapmirrorPolicyId>[^:/?]+)$/;
+const SnapmirrorRelationshipArnRegex =
+	/^arn:(?<partition>[^:]+):fsx:(?<region>[^:]*):(?<account>[^:]*):snapmirror-relationship\/(?<fileSystemId>[^:/?]+)\/(?<volumeId>[^:/?]+)\/(?<snapmirrorRelationshipId>[^:/?]+)$/;
 const SnapshotArnRegex =
 	/^arn:(?<partition>[^:]+):fsx:(?<region>[^:]*):(?<account>[^:]*):snapshot\/(?<volumeId>[^:/?]+)\/(?<snapshotId>[^:/?]+)$/;
+const SnapshotPolicyArnRegex =
+	/^arn:(?<partition>[^:]+):fsx:(?<region>[^:]*):(?<account>[^:]*):snapshot-policy\/(?<fileSystemIdOrStorageVirtualMachineId>[^:/?]+)\/(?<snapshotPolicyId>[^:/?]+)$/;
 const StorageVirtualMachineArnRegex =
 	/^arn:(?<partition>[^:]+):fsx:(?<region>[^:]*):(?<account>[^:]*):storage-virtual-machine\/(?<fileSystemId>[^:/?]+)\/(?<storageVirtualMachineId>[^:/?]+)$/;
+const SvmPeerArnRegex =
+	/^arn:(?<partition>[^:]+):fsx:(?<region>[^:]*):(?<account>[^:]*):svm-peer\/(?<fileSystemId>[^:/?]+)\/(?<storageVirtualMachineId>[^:/?]+)\/(?<storageVirtualMachinePeerId>[^:/?]+)$/;
 const TaskArnRegex =
 	/^arn:(?<partition>[^:]+):fsx:(?<region>[^:]*):(?<account>[^:]*):task\/(?<taskId>[^:/?]+)$/;
 const VolumeArnRegex =
@@ -543,6 +789,38 @@ export class FsxResources {
 	}
 
 	/**
+	 * Builds an ARN for the cluster-peer resource.
+	 */
+	static clusterPeer(props: FsxClusterPeerArnProps): string {
+		return `arn:${props.partition ?? "aws"}:fsx:${props.region ?? "*"}:${props.account ?? "*"}:cluster-peer/${props.fileSystemId}/${props.clusterPeerId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the cluster-peer resource.
+	 */
+	static isValidClusterPeerArn(arn: string): boolean {
+		return ClusterPeerArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a cluster-peer ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseClusterPeerArn(arn: string): FsxClusterPeerArnComponents {
+		const match = ClusterPeerArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid cluster-peer ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			fileSystemId: match.groups!.fileSystemId,
+			clusterPeerId: match.groups!.clusterPeerId,
+		};
+	}
+
+	/**
 	 * Builds an ARN for the file-cache resource.
 	 */
 	static fileCache(props: FsxFileCacheArnProps): string {
@@ -605,6 +883,78 @@ export class FsxResources {
 	}
 
 	/**
+	 * Builds an ARN for the snapmirror-policy resource.
+	 */
+	static snapmirrorPolicy(props: FsxSnapmirrorPolicyArnProps): string {
+		return `arn:${props.partition ?? "aws"}:fsx:${props.region ?? "*"}:${props.account ?? "*"}:snapmirror-policy/${props.fileSystemIdOrStorageVirtualMachineId}/${props.snapmirrorPolicyId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the snapmirror-policy resource.
+	 */
+	static isValidSnapmirrorPolicyArn(arn: string): boolean {
+		return SnapmirrorPolicyArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a snapmirror-policy ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseSnapmirrorPolicyArn(
+		arn: string,
+	): FsxSnapmirrorPolicyArnComponents {
+		const match = SnapmirrorPolicyArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid snapmirror-policy ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			fileSystemIdOrStorageVirtualMachineId:
+				match.groups!.fileSystemIdOrStorageVirtualMachineId,
+			snapmirrorPolicyId: match.groups!.snapmirrorPolicyId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the snapmirror-relationship resource.
+	 */
+	static snapmirrorRelationship(
+		props: FsxSnapmirrorRelationshipArnProps,
+	): string {
+		return `arn:${props.partition ?? "aws"}:fsx:${props.region ?? "*"}:${props.account ?? "*"}:snapmirror-relationship/${props.fileSystemId}/${props.volumeId}/${props.snapmirrorRelationshipId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the snapmirror-relationship resource.
+	 */
+	static isValidSnapmirrorRelationshipArn(arn: string): boolean {
+		return SnapmirrorRelationshipArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a snapmirror-relationship ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseSnapmirrorRelationshipArn(
+		arn: string,
+	): FsxSnapmirrorRelationshipArnComponents {
+		const match = SnapmirrorRelationshipArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid snapmirror-relationship ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			fileSystemId: match.groups!.fileSystemId,
+			volumeId: match.groups!.volumeId,
+			snapmirrorRelationshipId: match.groups!.snapmirrorRelationshipId,
+		};
+	}
+
+	/**
 	 * Builds an ARN for the snapshot resource.
 	 */
 	static snapshot(props: FsxSnapshotArnProps): string {
@@ -633,6 +983,39 @@ export class FsxResources {
 			account: match.groups.account,
 			volumeId: match.groups!.volumeId,
 			snapshotId: match.groups!.snapshotId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the snapshot-policy resource.
+	 */
+	static snapshotPolicy(props: FsxSnapshotPolicyArnProps): string {
+		return `arn:${props.partition ?? "aws"}:fsx:${props.region ?? "*"}:${props.account ?? "*"}:snapshot-policy/${props.fileSystemIdOrStorageVirtualMachineId}/${props.snapshotPolicyId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the snapshot-policy resource.
+	 */
+	static isValidSnapshotPolicyArn(arn: string): boolean {
+		return SnapshotPolicyArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a snapshot-policy ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseSnapshotPolicyArn(arn: string): FsxSnapshotPolicyArnComponents {
+		const match = SnapshotPolicyArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid snapshot-policy ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			fileSystemIdOrStorageVirtualMachineId:
+				match.groups!.fileSystemIdOrStorageVirtualMachineId,
+			snapshotPolicyId: match.groups!.snapshotPolicyId,
 		};
 	}
 
@@ -669,6 +1052,39 @@ export class FsxResources {
 			account: match.groups.account,
 			fileSystemId: match.groups!.fileSystemId,
 			storageVirtualMachineId: match.groups!.storageVirtualMachineId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the svm-peer resource.
+	 */
+	static svmPeer(props: FsxSvmPeerArnProps): string {
+		return `arn:${props.partition ?? "aws"}:fsx:${props.region ?? "*"}:${props.account ?? "*"}:svm-peer/${props.fileSystemId}/${props.storageVirtualMachineId}/${props.storageVirtualMachinePeerId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the svm-peer resource.
+	 */
+	static isValidSvmPeerArn(arn: string): boolean {
+		return SvmPeerArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a svm-peer ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseSvmPeerArn(arn: string): FsxSvmPeerArnComponents {
+		const match = SvmPeerArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid svm-peer ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			fileSystemId: match.groups!.fileSystemId,
+			storageVirtualMachineId: match.groups!.storageVirtualMachineId,
+			storageVirtualMachinePeerId: match.groups!.storageVirtualMachinePeerId,
 		};
 	}
 
@@ -934,6 +1350,11 @@ export class FsxConditions {
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
+	/** Condition keys applicable to the CreateClusterPeer action. */
+	static readonly CreateClusterPeerConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateDataRepositoryAssociation action. */
 	static readonly CreateDataRepositoryAssociationConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
@@ -959,13 +1380,33 @@ export class FsxConditions {
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
+	/** Condition keys applicable to the CreateSnapmirrorPolicy action. */
+	static readonly CreateSnapmirrorPolicyConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the CreateSnapmirrorRelationship action. */
+	static readonly CreateSnapmirrorRelationshipConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateSnapshot action. */
 	static readonly CreateSnapshotConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
+	/** Condition keys applicable to the CreateSnapshotPolicy action. */
+	static readonly CreateSnapshotPolicyConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateStorageVirtualMachine action. */
 	static readonly CreateStorageVirtualMachineConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the CreateStorageVirtualMachinePeer action. */
+	static readonly CreateStorageVirtualMachinePeerConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
@@ -1006,6 +1447,8 @@ export class FsxConditions {
 		"fsx:NfsDataRepositoryEncryptionInTransitEnabled";
 	/** Condition key: fsx:ParentVolumeId (String) */
 	static readonly PARENT_VOLUME_ID = "fsx:ParentVolumeId";
+	/** Condition key: fsx:SnapmirrorSourcePath (String) */
+	static readonly SNAPMIRROR_SOURCE_PATH = "fsx:SnapmirrorSourcePath";
 	/** Condition key: fsx:StorageVirtualMachineId (String) */
 	static readonly STORAGE_VIRTUAL_MACHINE_ID = "fsx:StorageVirtualMachineId";
 
@@ -1073,6 +1516,15 @@ export class FsxConditions {
 	 */
 	static parentVolumeId(value: string): Record<string, Record<string, string>> {
 		return { StringEquals: { "fsx:ParentVolumeId": value } };
+	}
+
+	/**
+	 * Generates a condition block for `fsx:SnapmirrorSourcePath`.
+	 */
+	static snapmirrorSourcePath(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "fsx:SnapmirrorSourcePath": value } };
 	}
 
 	/**
