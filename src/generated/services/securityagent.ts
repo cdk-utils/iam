@@ -151,6 +151,8 @@ export class SecurityagentActions {
 		"securityagent:GetDesignReviewFeedback";
 	/** [Read] securityagent:GetIntegration */
 	static readonly actionGetIntegration = "securityagent:GetIntegration";
+	/** [Read] securityagent:GetPentestEstimate */
+	static readonly actionGetPentestEstimate = "securityagent:GetPentestEstimate";
 	/** [Read] securityagent:GetProviderRegistrationManifest */
 	static readonly actionGetProviderRegistrationManifest =
 		"securityagent:GetProviderRegistrationManifest";
@@ -248,6 +250,9 @@ export class SecurityagentActions {
 	static readonly StartCodeRemediation = "securityagent:StartCodeRemediation";
 	/** [Write] securityagent:StartCodeReviewJob */
 	static readonly StartCodeReviewJob = "securityagent:StartCodeReviewJob";
+	/** [Write] securityagent:StartPentestEstimationRun */
+	static readonly StartPentestEstimationRun =
+		"securityagent:StartPentestEstimationRun";
 	/** [Write] securityagent:StartPentestJob */
 	static readonly StartPentestJob = "securityagent:StartPentestJob";
 	/** [Write] securityagent:StartThreatModelJob */
@@ -256,6 +261,9 @@ export class SecurityagentActions {
 	static readonly StartValidationRun = "securityagent:StartValidationRun";
 	/** [Write] securityagent:StopCodeReviewJob */
 	static readonly StopCodeReviewJob = "securityagent:StopCodeReviewJob";
+	/** [Write] securityagent:StopPentestEstimationRun */
+	static readonly StopPentestEstimationRun =
+		"securityagent:StopPentestEstimationRun";
 	/** [Write] securityagent:StopPentestJob */
 	static readonly StopPentestJob = "securityagent:StopPentestJob";
 	/** [Write] securityagent:StopThreatModelJob */
@@ -329,6 +337,7 @@ export class SecurityagentActions {
 		SecurityagentActions.actionGetDesignReviewArtifact,
 		SecurityagentActions.actionGetDesignReviewFeedback,
 		SecurityagentActions.actionGetIntegration,
+		SecurityagentActions.actionGetPentestEstimate,
 		SecurityagentActions.actionGetProviderRegistrationManifest,
 		SecurityagentActions.actionGetSecurityRequirement,
 		SecurityagentActions.actionGetSecurityRequirementPack,
@@ -377,10 +386,12 @@ export class SecurityagentActions {
 		SecurityagentActions.ResumePentestJob,
 		SecurityagentActions.StartCodeRemediation,
 		SecurityagentActions.StartCodeReviewJob,
+		SecurityagentActions.StartPentestEstimationRun,
 		SecurityagentActions.StartPentestJob,
 		SecurityagentActions.StartThreatModelJob,
 		SecurityagentActions.StartValidationRun,
 		SecurityagentActions.StopCodeReviewJob,
+		SecurityagentActions.StopPentestEstimationRun,
 		SecurityagentActions.StopPentestJob,
 		SecurityagentActions.StopThreatModelJob,
 		SecurityagentActions.ToggleManagedSecurityRequirement,

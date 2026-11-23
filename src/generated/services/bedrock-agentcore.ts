@@ -161,6 +161,9 @@ export class BedrockAgentcoreActions {
 	/** [Write] bedrock-agentcore:DeleteDatasetExamples */
 	static readonly DeleteDatasetExamples =
 		"bedrock-agentcore:DeleteDatasetExamples";
+	/** [Write] bedrock-agentcore:DeleteDatasetGeneration */
+	static readonly DeleteDatasetGeneration =
+		"bedrock-agentcore:DeleteDatasetGeneration";
 	/** [Write] bedrock-agentcore:DeleteEvaluator */
 	static readonly DeleteEvaluator = "bedrock-agentcore:DeleteEvaluator";
 	/** [Write] bedrock-agentcore:DeleteEvent */
@@ -283,6 +286,9 @@ export class BedrockAgentcoreActions {
 	static readonly actionGetConsentPortal = "bedrock-agentcore:GetConsentPortal";
 	/** [Read] bedrock-agentcore:GetDataset */
 	static readonly actionGetDataset = "bedrock-agentcore:GetDataset";
+	/** [Read] bedrock-agentcore:GetDatasetGeneration */
+	static readonly actionGetDatasetGeneration =
+		"bedrock-agentcore:GetDatasetGeneration";
 	/** [Read] bedrock-agentcore:GetEvaluator */
 	static readonly actionGetEvaluator = "bedrock-agentcore:GetEvaluator";
 	/** [Read] bedrock-agentcore:GetEvent */
@@ -461,6 +467,9 @@ export class BedrockAgentcoreActions {
 	static readonly ListConsentPortals = "bedrock-agentcore:ListConsentPortals";
 	/** [List] bedrock-agentcore:ListDatasetExamples */
 	static readonly ListDatasetExamples = "bedrock-agentcore:ListDatasetExamples";
+	/** [List] bedrock-agentcore:ListDatasetGenerations */
+	static readonly ListDatasetGenerations =
+		"bedrock-agentcore:ListDatasetGenerations";
 	/** [List] bedrock-agentcore:ListDatasetVersions */
 	static readonly ListDatasetVersions = "bedrock-agentcore:ListDatasetVersions";
 	/** [List] bedrock-agentcore:ListDatasets */
@@ -581,6 +590,9 @@ export class BedrockAgentcoreActions {
 	/** [Write] bedrock-agentcore:StartCodeInterpreterSession */
 	static readonly StartCodeInterpreterSession =
 		"bedrock-agentcore:StartCodeInterpreterSession";
+	/** [Write] bedrock-agentcore:StartDatasetGeneration */
+	static readonly StartDatasetGeneration =
+		"bedrock-agentcore:StartDatasetGeneration";
 	/** [Write] bedrock-agentcore:StartMemoryExtractionJob */
 	static readonly StartMemoryExtractionJob =
 		"bedrock-agentcore:StartMemoryExtractionJob";
@@ -714,6 +726,7 @@ export class BedrockAgentcoreActions {
 		BedrockAgentcoreActions.actionGetConfigurationBundleVersion,
 		BedrockAgentcoreActions.actionGetConsentPortal,
 		BedrockAgentcoreActions.actionGetDataset,
+		BedrockAgentcoreActions.actionGetDatasetGeneration,
 		BedrockAgentcoreActions.actionGetEvaluator,
 		BedrockAgentcoreActions.actionGetEvent,
 		BedrockAgentcoreActions.actionGetGateway,
@@ -807,6 +820,7 @@ export class BedrockAgentcoreActions {
 		BedrockAgentcoreActions.DeleteConsentPortal,
 		BedrockAgentcoreActions.DeleteDataset,
 		BedrockAgentcoreActions.DeleteDatasetExamples,
+		BedrockAgentcoreActions.DeleteDatasetGeneration,
 		BedrockAgentcoreActions.DeleteEvaluator,
 		BedrockAgentcoreActions.DeleteEvent,
 		BedrockAgentcoreActions.DeleteGateway,
@@ -857,6 +871,7 @@ export class BedrockAgentcoreActions {
 		BedrockAgentcoreActions.StartBatchEvaluation,
 		BedrockAgentcoreActions.StartBrowserSession,
 		BedrockAgentcoreActions.StartCodeInterpreterSession,
+		BedrockAgentcoreActions.StartDatasetGeneration,
 		BedrockAgentcoreActions.StartMemoryExtractionJob,
 		BedrockAgentcoreActions.StartPolicyGeneration,
 		BedrockAgentcoreActions.StartRecommendation,
@@ -920,6 +935,7 @@ export class BedrockAgentcoreActions {
 		BedrockAgentcoreActions.ListConfigurationBundles,
 		BedrockAgentcoreActions.ListConsentPortals,
 		BedrockAgentcoreActions.ListDatasetExamples,
+		BedrockAgentcoreActions.ListDatasetGenerations,
 		BedrockAgentcoreActions.ListDatasetVersions,
 		BedrockAgentcoreActions.ListDatasets,
 		BedrockAgentcoreActions.ListEvaluators,
@@ -3482,7 +3498,9 @@ export class BedrockAgentcoreOperations {
 		"bedrock-agentcore:DeleteDatasetExamples",
 	];
 	/** IAM actions required for the DeleteDatasetGeneration API call. */
-	static readonly DeleteDatasetGeneration: string[] = [];
+	static readonly DeleteDatasetGeneration: string[] = [
+		"bedrock-agentcore:DeleteDatasetGeneration",
+	];
 	/** IAM actions required for the DeleteEvaluator API call. */
 	static readonly DeleteEvaluator: string[] = [
 		"bedrock-agentcore:DeleteEvaluator",
@@ -3639,7 +3657,9 @@ export class BedrockAgentcoreOperations {
 	/** IAM actions required for the GetDataset API call. */
 	static readonly opGetDataset: string[] = ["bedrock-agentcore:GetDataset"];
 	/** IAM actions required for the GetDatasetGeneration API call. */
-	static readonly opGetDatasetGeneration: string[] = [];
+	static readonly opGetDatasetGeneration: string[] = [
+		"bedrock-agentcore:GetDatasetGeneration",
+	];
 	/** IAM actions required for the GetEvaluator API call. */
 	static readonly opGetEvaluator: string[] = ["bedrock-agentcore:GetEvaluator"];
 	/** IAM actions required for the GetEvent API call. */
@@ -3870,7 +3890,9 @@ export class BedrockAgentcoreOperations {
 		"bedrock-agentcore:ListDatasetExamples",
 	];
 	/** IAM actions required for the ListDatasetGenerations API call. */
-	static readonly ListDatasetGenerations: string[] = [];
+	static readonly ListDatasetGenerations: string[] = [
+		"bedrock-agentcore:ListDatasetGenerations",
+	];
 	/** IAM actions required for the ListDatasetVersions API call. */
 	static readonly ListDatasetVersions: string[] = [
 		"bedrock-agentcore:ListDatasetVersions",

@@ -524,6 +524,7 @@
       "Name": "GetEvent",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -544,6 +545,7 @@
       "Name": "GetEventActor",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -945,6 +947,7 @@
       "Name": "ListEventActors",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -960,6 +963,7 @@
       "Name": "ListEvents",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -975,6 +979,7 @@
       "Name": "ListEventsByWebACL",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1950,6 +1955,38 @@
       ]
     },
     {
+      "Name": "GetEvent",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEvent",
+          "Service": "wafv2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wafv2",
+          "Method": "get_event",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetEventActor",
+      "AuthorizedActions": [
+        {
+          "Name": "GetEventActor",
+          "Service": "wafv2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wafv2",
+          "Method": "get_event_actor",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetIPSet",
       "AuthorizedActions": [
         {
@@ -2241,6 +2278,54 @@
         {
           "Name": "wafv2",
           "Method": "list_available_managed_rule_groups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEventActors",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEventActors",
+          "Service": "wafv2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wafv2",
+          "Method": "list_event_actors",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEvents",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEvents",
+          "Service": "wafv2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wafv2",
+          "Method": "list_events",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListEventsByWebACL",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEventsByWebACL",
+          "Service": "wafv2"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "wafv2",
+          "Method": "list_events_by_web_acl",
           "Package": "Boto3"
         }
       ]

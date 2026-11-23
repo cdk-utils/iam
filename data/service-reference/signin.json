@@ -67,6 +67,22 @@
       }
     },
     {
+      "Name": "BatchRevokeSessions",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "CreateAccount",
       "Annotations": {
         "Properties": {
@@ -135,6 +151,9 @@
     },
     {
       "Name": "CreateOAuth2Token",
+      "ActionConditionKeys": [
+        "signin:PutSignInDurationBlock"
+      ],
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
@@ -261,6 +280,22 @@
       }
     },
     {
+      "Name": "GetSession",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "IntrospectOAuth2Token",
       "ActionConditionKeys": [
         "signin:OAuthClientId",
@@ -292,6 +327,22 @@
     },
     {
       "Name": "ListResourcePermissionStatements",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListSessions",
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
@@ -419,11 +470,23 @@
       "Types": [
         "ARN"
       ]
+    },
+    {
+      "Name": "signin:PutSignInDurationBlock",
+      "Types": [
+        "Bool"
+      ]
     }
   ],
   "Operations": [
     {
       "Name": "BatchRevokeSessions",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchRevokeSessions",
+          "Service": "signin"
+        }
+      ],
       "SDK": [
         {
           "Name": "signin",
@@ -550,6 +613,12 @@
     },
     {
       "Name": "GetSession",
+      "AuthorizedActions": [
+        {
+          "Name": "GetSession",
+          "Service": "signin"
+        }
+      ],
       "SDK": [
         {
           "Name": "signin",
@@ -592,6 +661,12 @@
     },
     {
       "Name": "ListSessions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSessions",
+          "Service": "signin"
+        }
+      ],
       "SDK": [
         {
           "Name": "signin",

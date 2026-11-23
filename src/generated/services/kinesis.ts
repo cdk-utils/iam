@@ -668,6 +668,7 @@ export class KinesisOperations {
 	/** IAM actions required for the ReceiveQueueRecords API call. */
 	static readonly ReceiveQueueRecords: string[] = [
 		"kinesis:ReceiveQueueRecords",
+		"kinesis:ReceiveQueueRecords",
 	];
 	/** IAM actions required for the RegisterStreamConsumer API call. */
 	static readonly RegisterStreamConsumer: string[] = [

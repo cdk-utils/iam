@@ -3955,6 +3955,206 @@ Defaults to "*".
 
 ---
 
+### SageMakerExtensionArnComponents <a name="SageMakerExtensionArnComponents" id="@cdk_utils/iam.sagemaker.SageMakerExtensionArnComponents"></a>
+
+Parsed components of a extension ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.sagemaker.SageMakerExtensionArnComponents.Initializer"></a>
+
+```typescript
+import { sagemaker } from '@cdk_utils/iam'
+
+const sageMakerExtensionArnComponents: sagemaker.SageMakerExtensionArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerExtensionArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerExtensionArnComponents.property.clusterIdentifier">clusterIdentifier</a></code> | <code>string</code> | The ClusterIdentifier component. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerExtensionArnComponents.property.extensionId">extensionId</a></code> | <code>string</code> | The ExtensionId component. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerExtensionArnComponents.property.extensionName">extensionName</a></code> | <code>string</code> | The ExtensionName component. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerExtensionArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerExtensionArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.sagemaker.SageMakerExtensionArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `clusterIdentifier`<sup>Required</sup> <a name="clusterIdentifier" id="@cdk_utils/iam.sagemaker.SageMakerExtensionArnComponents.property.clusterIdentifier"></a>
+
+```typescript
+public readonly clusterIdentifier: string;
+```
+
+- *Type:* string
+
+The ClusterIdentifier component.
+
+---
+
+##### `extensionId`<sup>Required</sup> <a name="extensionId" id="@cdk_utils/iam.sagemaker.SageMakerExtensionArnComponents.property.extensionId"></a>
+
+```typescript
+public readonly extensionId: string;
+```
+
+- *Type:* string
+
+The ExtensionId component.
+
+---
+
+##### `extensionName`<sup>Required</sup> <a name="extensionName" id="@cdk_utils/iam.sagemaker.SageMakerExtensionArnComponents.property.extensionName"></a>
+
+```typescript
+public readonly extensionName: string;
+```
+
+- *Type:* string
+
+The ExtensionName component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.sagemaker.SageMakerExtensionArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.sagemaker.SageMakerExtensionArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### SageMakerExtensionArnProps <a name="SageMakerExtensionArnProps" id="@cdk_utils/iam.sagemaker.SageMakerExtensionArnProps"></a>
+
+Properties for building a extension ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.sagemaker.SageMakerExtensionArnProps.Initializer"></a>
+
+```typescript
+import { sagemaker } from '@cdk_utils/iam'
+
+const sageMakerExtensionArnProps: sagemaker.SageMakerExtensionArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerExtensionArnProps.property.clusterIdentifier">clusterIdentifier</a></code> | <code>string</code> | The ClusterIdentifier component of the ARN. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerExtensionArnProps.property.extensionId">extensionId</a></code> | <code>string</code> | The ExtensionId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerExtensionArnProps.property.extensionName">extensionName</a></code> | <code>string</code> | The ExtensionName component of the ARN. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerExtensionArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerExtensionArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerExtensionArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `clusterIdentifier`<sup>Required</sup> <a name="clusterIdentifier" id="@cdk_utils/iam.sagemaker.SageMakerExtensionArnProps.property.clusterIdentifier"></a>
+
+```typescript
+public readonly clusterIdentifier: string;
+```
+
+- *Type:* string
+
+The ClusterIdentifier component of the ARN.
+
+---
+
+##### `extensionId`<sup>Required</sup> <a name="extensionId" id="@cdk_utils/iam.sagemaker.SageMakerExtensionArnProps.property.extensionId"></a>
+
+```typescript
+public readonly extensionId: string;
+```
+
+- *Type:* string
+
+The ExtensionId component of the ARN.
+
+---
+
+##### `extensionName`<sup>Required</sup> <a name="extensionName" id="@cdk_utils/iam.sagemaker.SageMakerExtensionArnProps.property.extensionName"></a>
+
+```typescript
+public readonly extensionName: string;
+```
+
+- *Type:* string
+
+The ExtensionName component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.sagemaker.SageMakerExtensionArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.sagemaker.SageMakerExtensionArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.sagemaker.SageMakerExtensionArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### SageMakerFeatureGroupArnComponents <a name="SageMakerFeatureGroupArnComponents" id="@cdk_utils/iam.sagemaker.SageMakerFeatureGroupArnComponents"></a>
 
 Parsed components of a feature-group ARN.
@@ -4238,6 +4438,154 @@ Defaults to "aws".
 ---
 
 ##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.sagemaker.SageMakerFlowDefinitionArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
+### SageMakerGlobalInferenceGatewayArnComponents <a name="SageMakerGlobalInferenceGatewayArnComponents" id="@cdk_utils/iam.sagemaker.SageMakerGlobalInferenceGatewayArnComponents"></a>
+
+Parsed components of a global-inference-gateway ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.sagemaker.SageMakerGlobalInferenceGatewayArnComponents.Initializer"></a>
+
+```typescript
+import { sagemaker } from '@cdk_utils/iam'
+
+const sageMakerGlobalInferenceGatewayArnComponents: sagemaker.SageMakerGlobalInferenceGatewayArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerGlobalInferenceGatewayArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerGlobalInferenceGatewayArnComponents.property.globalInferenceGatewayId">globalInferenceGatewayId</a></code> | <code>string</code> | The GlobalInferenceGatewayId component. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerGlobalInferenceGatewayArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerGlobalInferenceGatewayArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.sagemaker.SageMakerGlobalInferenceGatewayArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `globalInferenceGatewayId`<sup>Required</sup> <a name="globalInferenceGatewayId" id="@cdk_utils/iam.sagemaker.SageMakerGlobalInferenceGatewayArnComponents.property.globalInferenceGatewayId"></a>
+
+```typescript
+public readonly globalInferenceGatewayId: string;
+```
+
+- *Type:* string
+
+The GlobalInferenceGatewayId component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.sagemaker.SageMakerGlobalInferenceGatewayArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.sagemaker.SageMakerGlobalInferenceGatewayArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### SageMakerGlobalInferenceGatewayArnProps <a name="SageMakerGlobalInferenceGatewayArnProps" id="@cdk_utils/iam.sagemaker.SageMakerGlobalInferenceGatewayArnProps"></a>
+
+Properties for building a global-inference-gateway ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.sagemaker.SageMakerGlobalInferenceGatewayArnProps.Initializer"></a>
+
+```typescript
+import { sagemaker } from '@cdk_utils/iam'
+
+const sageMakerGlobalInferenceGatewayArnProps: sagemaker.SageMakerGlobalInferenceGatewayArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerGlobalInferenceGatewayArnProps.property.globalInferenceGatewayId">globalInferenceGatewayId</a></code> | <code>string</code> | The GlobalInferenceGatewayId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerGlobalInferenceGatewayArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerGlobalInferenceGatewayArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerGlobalInferenceGatewayArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `globalInferenceGatewayId`<sup>Required</sup> <a name="globalInferenceGatewayId" id="@cdk_utils/iam.sagemaker.SageMakerGlobalInferenceGatewayArnProps.property.globalInferenceGatewayId"></a>
+
+```typescript
+public readonly globalInferenceGatewayId: string;
+```
+
+- *Type:* string
+
+The GlobalInferenceGatewayId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.sagemaker.SageMakerGlobalInferenceGatewayArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.sagemaker.SageMakerGlobalInferenceGatewayArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.sagemaker.SageMakerGlobalInferenceGatewayArnProps.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -10057,6 +10405,154 @@ Defaults to "*".
 
 ---
 
+### SageMakerSmCapacityReservationArnComponents <a name="SageMakerSmCapacityReservationArnComponents" id="@cdk_utils/iam.sagemaker.SageMakerSmCapacityReservationArnComponents"></a>
+
+Parsed components of a sm-capacity-reservation ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.sagemaker.SageMakerSmCapacityReservationArnComponents.Initializer"></a>
+
+```typescript
+import { sagemaker } from '@cdk_utils/iam'
+
+const sageMakerSmCapacityReservationArnComponents: sagemaker.SageMakerSmCapacityReservationArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerSmCapacityReservationArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerSmCapacityReservationArnComponents.property.capacityReservationId">capacityReservationId</a></code> | <code>string</code> | The CapacityReservationId component. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerSmCapacityReservationArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerSmCapacityReservationArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.sagemaker.SageMakerSmCapacityReservationArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `capacityReservationId`<sup>Required</sup> <a name="capacityReservationId" id="@cdk_utils/iam.sagemaker.SageMakerSmCapacityReservationArnComponents.property.capacityReservationId"></a>
+
+```typescript
+public readonly capacityReservationId: string;
+```
+
+- *Type:* string
+
+The CapacityReservationId component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.sagemaker.SageMakerSmCapacityReservationArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.sagemaker.SageMakerSmCapacityReservationArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### SageMakerSmCapacityReservationArnProps <a name="SageMakerSmCapacityReservationArnProps" id="@cdk_utils/iam.sagemaker.SageMakerSmCapacityReservationArnProps"></a>
+
+Properties for building a sm-capacity-reservation ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.sagemaker.SageMakerSmCapacityReservationArnProps.Initializer"></a>
+
+```typescript
+import { sagemaker } from '@cdk_utils/iam'
+
+const sageMakerSmCapacityReservationArnProps: sagemaker.SageMakerSmCapacityReservationArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerSmCapacityReservationArnProps.property.capacityReservationId">capacityReservationId</a></code> | <code>string</code> | The CapacityReservationId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerSmCapacityReservationArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerSmCapacityReservationArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerSmCapacityReservationArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `capacityReservationId`<sup>Required</sup> <a name="capacityReservationId" id="@cdk_utils/iam.sagemaker.SageMakerSmCapacityReservationArnProps.property.capacityReservationId"></a>
+
+```typescript
+public readonly capacityReservationId: string;
+```
+
+- *Type:* string
+
+The CapacityReservationId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.sagemaker.SageMakerSmCapacityReservationArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.sagemaker.SageMakerSmCapacityReservationArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.sagemaker.SageMakerSmCapacityReservationArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### SageMakerSpaceArnComponents <a name="SageMakerSpaceArnComponents" id="@cdk_utils/iam.sagemaker.SageMakerSpaceArnComponents"></a>
 
 Parsed components of a space ARN.
@@ -11468,6 +11964,7 @@ new sagemaker.SageMakerActions()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.AccessModelPackage">AccessModelPackage</a></code> | <code>string</code> | [Read] sagemaker:AccessModelPackage. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.actionGetCapacityReservationUsage">actionGetCapacityReservationUsage</a></code> | <code>string</code> | [Read] sagemaker:GetCapacityReservationUsage. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.actionGetDeployments">actionGetDeployments</a></code> | <code>string</code> | [Read] sagemaker:GetDeployments. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.actionGetDeviceFleetReport">actionGetDeviceFleetReport</a></code> | <code>string</code> | [Read] sagemaker:GetDeviceFleetReport. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.actionGetDeviceRegistration">actionGetDeviceRegistration</a></code> | <code>string</code> | [Read] sagemaker:GetDeviceRegistration. |
@@ -11482,6 +11979,7 @@ new sagemaker.SageMakerActions()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.actionGetSearchSuggestions">actionGetSearchSuggestions</a></code> | <code>string</code> | [Read] sagemaker:GetSearchSuggestions. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.actionGetTrainingOperationResult">actionGetTrainingOperationResult</a></code> | <code>string</code> | [Read] sagemaker:GetTrainingOperationResult. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.AddAssociation">AddAssociation</a></code> | <code>string</code> | [Write] sagemaker:AddAssociation. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.AddInferenceGateway">AddInferenceGateway</a></code> | <code>string</code> | [Write] sagemaker:AddInferenceGateway. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.AddTags">AddTags</a></code> | <code>string</code> | [Tagging] sagemaker:AddTags. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.AllPermissionManagementActions">AllPermissionManagementActions</a></code> | <code>string[]</code> | All permission-management-level actions. |
@@ -11515,6 +12013,7 @@ new sagemaker.SageMakerActions()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.CreateAutoMLJob">CreateAutoMLJob</a></code> | <code>string</code> | [Write] sagemaker:CreateAutoMLJob. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.CreateAutoMLJobV2">CreateAutoMLJobV2</a></code> | <code>string</code> | [Write] sagemaker:CreateAutoMLJobV2. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.CreateCluster">CreateCluster</a></code> | <code>string</code> | [Write] sagemaker:CreateCluster. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.CreateClusterExtension">CreateClusterExtension</a></code> | <code>string</code> | [Write] sagemaker:CreateClusterExtension. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.CreateClusterSchedulerConfig">CreateClusterSchedulerConfig</a></code> | <code>string</code> | [Write] sagemaker:CreateClusterSchedulerConfig. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.CreateCodeRepository">CreateCodeRepository</a></code> | <code>string</code> | [Write] sagemaker:CreateCodeRepository. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.CreateCompilationJob">CreateCompilationJob</a></code> | <code>string</code> | [Write] sagemaker:CreateCompilationJob. |
@@ -11531,6 +12030,7 @@ new sagemaker.SageMakerActions()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.CreateExperiment">CreateExperiment</a></code> | <code>string</code> | [Write] sagemaker:CreateExperiment. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.CreateFeatureGroup">CreateFeatureGroup</a></code> | <code>string</code> | [Write] sagemaker:CreateFeatureGroup. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.CreateFlowDefinition">CreateFlowDefinition</a></code> | <code>string</code> | [Write] sagemaker:CreateFlowDefinition. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.CreateGlobalInferenceGateway">CreateGlobalInferenceGateway</a></code> | <code>string</code> | [Write] sagemaker:CreateGlobalInferenceGateway. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.CreateHub">CreateHub</a></code> | <code>string</code> | [Write] sagemaker:CreateHub. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.CreateHubContentPresignedUrls">CreateHubContentPresignedUrls</a></code> | <code>string</code> | [Read] sagemaker:CreateHubContentPresignedUrls. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.CreateHubContentReference">CreateHubContentReference</a></code> | <code>string</code> | [Write] sagemaker:CreateHubContentReference. |
@@ -11591,6 +12091,7 @@ new sagemaker.SageMakerActions()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DeleteArtifact">DeleteArtifact</a></code> | <code>string</code> | [Write] sagemaker:DeleteArtifact. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DeleteAssociation">DeleteAssociation</a></code> | <code>string</code> | [Write] sagemaker:DeleteAssociation. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DeleteCluster">DeleteCluster</a></code> | <code>string</code> | [Write] sagemaker:DeleteCluster. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DeleteClusterExtension">DeleteClusterExtension</a></code> | <code>string</code> | [Write] sagemaker:DeleteClusterExtension. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DeleteClusterSchedulerConfig">DeleteClusterSchedulerConfig</a></code> | <code>string</code> | [Write] sagemaker:DeleteClusterSchedulerConfig. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DeleteCodeRepository">DeleteCodeRepository</a></code> | <code>string</code> | [Write] sagemaker:DeleteCodeRepository. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DeleteCompilationJob">DeleteCompilationJob</a></code> | <code>string</code> | [Write] sagemaker:DeleteCompilationJob. |
@@ -11607,6 +12108,7 @@ new sagemaker.SageMakerActions()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DeleteExperiment">DeleteExperiment</a></code> | <code>string</code> | [Write] sagemaker:DeleteExperiment. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DeleteFeatureGroup">DeleteFeatureGroup</a></code> | <code>string</code> | [Write] sagemaker:DeleteFeatureGroup. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DeleteFlowDefinition">DeleteFlowDefinition</a></code> | <code>string</code> | [Write] sagemaker:DeleteFlowDefinition. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DeleteGlobalInferenceGateway">DeleteGlobalInferenceGateway</a></code> | <code>string</code> | [Write] sagemaker:DeleteGlobalInferenceGateway. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DeleteHub">DeleteHub</a></code> | <code>string</code> | [Write] sagemaker:DeleteHub. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DeleteHubContent">DeleteHubContent</a></code> | <code>string</code> | [Write] sagemaker:DeleteHubContent. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DeleteHubContentReference">DeleteHubContentReference</a></code> | <code>string</code> | [Write] sagemaker:DeleteHubContentReference. |
@@ -11662,8 +12164,10 @@ new sagemaker.SageMakerActions()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeArtifact">DescribeArtifact</a></code> | <code>string</code> | [Read] sagemaker:DescribeArtifact. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeAutoMLJob">DescribeAutoMLJob</a></code> | <code>string</code> | [Read] sagemaker:DescribeAutoMLJob. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeAutoMLJobV2">DescribeAutoMLJobV2</a></code> | <code>string</code> | [Read] sagemaker:DescribeAutoMLJobV2. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeCapacityReservation">DescribeCapacityReservation</a></code> | <code>string</code> | [Read] sagemaker:DescribeCapacityReservation. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeCluster">DescribeCluster</a></code> | <code>string</code> | [Read] sagemaker:DescribeCluster. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeClusterEvent">DescribeClusterEvent</a></code> | <code>string</code> | [Read] sagemaker:DescribeClusterEvent. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeClusterExtension">DescribeClusterExtension</a></code> | <code>string</code> | [Read] sagemaker:DescribeClusterExtension. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeClusterInference">DescribeClusterInference</a></code> | <code>string</code> | [Read] sagemaker:DescribeClusterInference. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeClusterNode">DescribeClusterNode</a></code> | <code>string</code> | [Read] sagemaker:DescribeClusterNode. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeClusterSchedulerConfig">DescribeClusterSchedulerConfig</a></code> | <code>string</code> | [Read] sagemaker:DescribeClusterSchedulerConfig. |
@@ -11683,6 +12187,7 @@ new sagemaker.SageMakerActions()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeFeatureGroup">DescribeFeatureGroup</a></code> | <code>string</code> | [Read] sagemaker:DescribeFeatureGroup. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeFeatureMetadata">DescribeFeatureMetadata</a></code> | <code>string</code> | [Read] sagemaker:DescribeFeatureMetadata. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeFlowDefinition">DescribeFlowDefinition</a></code> | <code>string</code> | [Read] sagemaker:DescribeFlowDefinition. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeGlobalInferenceGateway">DescribeGlobalInferenceGateway</a></code> | <code>string</code> | [Read] sagemaker:DescribeGlobalInferenceGateway. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeHub">DescribeHub</a></code> | <code>string</code> | [Read] sagemaker:DescribeHub. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeHubContent">DescribeHubContent</a></code> | <code>string</code> | [Read] sagemaker:DescribeHubContent. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeHumanLoop">DescribeHumanLoop</a></code> | <code>string</code> | [Read] sagemaker:DescribeHumanLoop. |
@@ -11719,6 +12224,7 @@ new sagemaker.SageMakerActions()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeProcessingJob">DescribeProcessingJob</a></code> | <code>string</code> | [Read] sagemaker:DescribeProcessingJob. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeProject">DescribeProject</a></code> | <code>string</code> | [Read] sagemaker:DescribeProject. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeReservedCapacity">DescribeReservedCapacity</a></code> | <code>string</code> | [Read] sagemaker:DescribeReservedCapacity. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeResourceAssociations">DescribeResourceAssociations</a></code> | <code>string</code> | [Read] sagemaker:DescribeResourceAssociations. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeSharedModel">DescribeSharedModel</a></code> | <code>string</code> | [Read] sagemaker:DescribeSharedModel. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeSpace">DescribeSpace</a></code> | <code>string</code> | [Read] sagemaker:DescribeSpace. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeStudioLifecycleConfig">DescribeStudioLifecycleConfig</a></code> | <code>string</code> | [Read] sagemaker:DescribeStudioLifecycleConfig. |
@@ -11744,6 +12250,8 @@ new sagemaker.SageMakerActions()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.InvokeEndpoint">InvokeEndpoint</a></code> | <code>string</code> | [Read] sagemaker:InvokeEndpoint. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.InvokeEndpointAsync">InvokeEndpointAsync</a></code> | <code>string</code> | [Read] sagemaker:InvokeEndpointAsync. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.InvokeEndpointWithResponseStream">InvokeEndpointWithResponseStream</a></code> | <code>string</code> | [Read] sagemaker:InvokeEndpointWithResponseStream. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.InvokeGlobalInferenceGateway">InvokeGlobalInferenceGateway</a></code> | <code>string</code> | [Read] sagemaker:InvokeGlobalInferenceGateway. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.InvokeGlobalInferenceGatewayWithResponseStream">InvokeGlobalInferenceGatewayWithResponseStream</a></code> | <code>string</code> | [Read] sagemaker:InvokeGlobalInferenceGatewayWithResponseStream. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.InvokeInferenceRouter">InvokeInferenceRouter</a></code> | <code>string</code> | [Read] sagemaker:InvokeInferenceRouter. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.InvokeInferenceRouterAsync">InvokeInferenceRouterAsync</a></code> | <code>string</code> | [Read] sagemaker:InvokeInferenceRouterAsync. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ListActions">ListActions</a></code> | <code>string</code> | [List] sagemaker:ListActions. |
@@ -11758,7 +12266,10 @@ new sagemaker.SageMakerActions()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ListAssociations">ListAssociations</a></code> | <code>string</code> | [List] sagemaker:ListAssociations. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ListAutoMLJobs">ListAutoMLJobs</a></code> | <code>string</code> | [List] sagemaker:ListAutoMLJobs. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ListCandidatesForAutoMLJob">ListCandidatesForAutoMLJob</a></code> | <code>string</code> | [List] sagemaker:ListCandidatesForAutoMLJob. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ListCapacityReservations">ListCapacityReservations</a></code> | <code>string</code> | [List] sagemaker:ListCapacityReservations. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ListClusterEvents">ListClusterEvents</a></code> | <code>string</code> | [List] sagemaker:ListClusterEvents. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ListClusterExtensions">ListClusterExtensions</a></code> | <code>string</code> | [List] sagemaker:ListClusterExtensions. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ListClusterExtensionVersions">ListClusterExtensionVersions</a></code> | <code>string</code> | [List] sagemaker:ListClusterExtensionVersions. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ListClusterNodes">ListClusterNodes</a></code> | <code>string</code> | [List] sagemaker:ListClusterNodes. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ListClusters">ListClusters</a></code> | <code>string</code> | [List] sagemaker:ListClusters. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ListClusterSchedulerConfigs">ListClusterSchedulerConfigs</a></code> | <code>string</code> | [List] sagemaker:ListClusterSchedulerConfigs. |
@@ -11777,6 +12288,7 @@ new sagemaker.SageMakerActions()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ListExperiments">ListExperiments</a></code> | <code>string</code> | [List] sagemaker:ListExperiments. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ListFeatureGroups">ListFeatureGroups</a></code> | <code>string</code> | [List] sagemaker:ListFeatureGroups. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ListFlowDefinitions">ListFlowDefinitions</a></code> | <code>string</code> | [List] sagemaker:ListFlowDefinitions. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ListGlobalInferenceGateways">ListGlobalInferenceGateways</a></code> | <code>string</code> | [List] sagemaker:ListGlobalInferenceGateways. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ListHubContents">ListHubContents</a></code> | <code>string</code> | [List] sagemaker:ListHubContents. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ListHubContentVersions">ListHubContentVersions</a></code> | <code>string</code> | [List] sagemaker:ListHubContentVersions. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ListHubs">ListHubs</a></code> | <code>string</code> | [List] sagemaker:ListHubs. |
@@ -11787,6 +12299,7 @@ new sagemaker.SageMakerActions()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ListImageVersions">ListImageVersions</a></code> | <code>string</code> | [List] sagemaker:ListImageVersions. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ListInferenceComponents">ListInferenceComponents</a></code> | <code>string</code> | [List] sagemaker:ListInferenceComponents. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ListInferenceExperiments">ListInferenceExperiments</a></code> | <code>string</code> | [List] sagemaker:ListInferenceExperiments. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ListInferenceGateways">ListInferenceGateways</a></code> | <code>string</code> | [List] sagemaker:ListInferenceGateways. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ListInferenceRecommendationsJobs">ListInferenceRecommendationsJobs</a></code> | <code>string</code> | [List] sagemaker:ListInferenceRecommendationsJobs. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ListInferenceRecommendationsJobSteps">ListInferenceRecommendationsJobSteps</a></code> | <code>string</code> | [List] sagemaker:ListInferenceRecommendationsJobSteps. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.ListInferenceRouters">ListInferenceRouters</a></code> | <code>string</code> | [List] sagemaker:ListInferenceRouters. |
@@ -11850,6 +12363,7 @@ new sagemaker.SageMakerActions()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.PutResourcePolicy">PutResourcePolicy</a></code> | <code>string</code> | [Write] sagemaker:PutResourcePolicy. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.QueryLineage">QueryLineage</a></code> | <code>string</code> | [List] sagemaker:QueryLineage. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.RegisterDevices">RegisterDevices</a></code> | <code>string</code> | [Write] sagemaker:RegisterDevices. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.RemoveInferenceGateway">RemoveInferenceGateway</a></code> | <code>string</code> | [Write] sagemaker:RemoveInferenceGateway. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.RenderUiTemplate">RenderUiTemplate</a></code> | <code>string</code> | [Read] sagemaker:RenderUiTemplate. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.RetryPipelineExecution">RetryPipelineExecution</a></code> | <code>string</code> | [Write] sagemaker:RetryPipelineExecution. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.Sample">Sample</a></code> | <code>string</code> | [Write] sagemaker:Sample. |
@@ -11898,6 +12412,7 @@ new sagemaker.SageMakerActions()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.UpdateAppImageConfig">UpdateAppImageConfig</a></code> | <code>string</code> | [Write] sagemaker:UpdateAppImageConfig. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.UpdateArtifact">UpdateArtifact</a></code> | <code>string</code> | [Write] sagemaker:UpdateArtifact. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.UpdateCluster">UpdateCluster</a></code> | <code>string</code> | [Write] sagemaker:UpdateCluster. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.UpdateClusterExtension">UpdateClusterExtension</a></code> | <code>string</code> | [Write] sagemaker:UpdateClusterExtension. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.UpdateClusterInference">UpdateClusterInference</a></code> | <code>string</code> | [Write] sagemaker:UpdateClusterInference. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.UpdateClusterSchedulerConfig">UpdateClusterSchedulerConfig</a></code> | <code>string</code> | [Write] sagemaker:UpdateClusterSchedulerConfig. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.UpdateClusterSoftware">UpdateClusterSoftware</a></code> | <code>string</code> | [Write] sagemaker:UpdateClusterSoftware. |
@@ -11912,6 +12427,7 @@ new sagemaker.SageMakerActions()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.UpdateExperiment">UpdateExperiment</a></code> | <code>string</code> | [Write] sagemaker:UpdateExperiment. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.UpdateFeatureGroup">UpdateFeatureGroup</a></code> | <code>string</code> | [Write] sagemaker:UpdateFeatureGroup. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.UpdateFeatureMetadata">UpdateFeatureMetadata</a></code> | <code>string</code> | [Write] sagemaker:UpdateFeatureMetadata. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.UpdateGlobalInferenceGateway">UpdateGlobalInferenceGateway</a></code> | <code>string</code> | [Write] sagemaker:UpdateGlobalInferenceGateway. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.UpdateHub">UpdateHub</a></code> | <code>string</code> | [Write] sagemaker:UpdateHub. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.UpdateHubContent">UpdateHubContent</a></code> | <code>string</code> | [Write] sagemaker:UpdateHubContent. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerActions.property.UpdateHubContentReference">UpdateHubContentReference</a></code> | <code>string</code> | [Write] sagemaker:UpdateHubContentReference. |
@@ -11955,6 +12471,18 @@ public readonly AccessModelPackage: string;
 - *Type:* string
 
 [Read] sagemaker:AccessModelPackage.
+
+---
+
+##### `actionGetCapacityReservationUsage`<sup>Required</sup> <a name="actionGetCapacityReservationUsage" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.actionGetCapacityReservationUsage"></a>
+
+```typescript
+public readonly actionGetCapacityReservationUsage: string;
+```
+
+- *Type:* string
+
+[Read] sagemaker:GetCapacityReservationUsage.
 
 ---
 
@@ -12123,6 +12651,18 @@ public readonly AddAssociation: string;
 - *Type:* string
 
 [Write] sagemaker:AddAssociation.
+
+---
+
+##### `AddInferenceGateway`<sup>Required</sup> <a name="AddInferenceGateway" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.AddInferenceGateway"></a>
+
+```typescript
+public readonly AddInferenceGateway: string;
+```
+
+- *Type:* string
+
+[Write] sagemaker:AddInferenceGateway.
 
 ---
 
@@ -12522,6 +13062,18 @@ public readonly CreateCluster: string;
 
 ---
 
+##### `CreateClusterExtension`<sup>Required</sup> <a name="CreateClusterExtension" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.CreateClusterExtension"></a>
+
+```typescript
+public readonly CreateClusterExtension: string;
+```
+
+- *Type:* string
+
+[Write] sagemaker:CreateClusterExtension.
+
+---
+
 ##### `CreateClusterSchedulerConfig`<sup>Required</sup> <a name="CreateClusterSchedulerConfig" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.CreateClusterSchedulerConfig"></a>
 
 ```typescript
@@ -12711,6 +13263,18 @@ public readonly CreateFlowDefinition: string;
 - *Type:* string
 
 [Write] sagemaker:CreateFlowDefinition.
+
+---
+
+##### `CreateGlobalInferenceGateway`<sup>Required</sup> <a name="CreateGlobalInferenceGateway" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.CreateGlobalInferenceGateway"></a>
+
+```typescript
+public readonly CreateGlobalInferenceGateway: string;
+```
+
+- *Type:* string
+
+[Write] sagemaker:CreateGlobalInferenceGateway.
 
 ---
 
@@ -13434,6 +13998,18 @@ public readonly DeleteCluster: string;
 
 ---
 
+##### `DeleteClusterExtension`<sup>Required</sup> <a name="DeleteClusterExtension" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.DeleteClusterExtension"></a>
+
+```typescript
+public readonly DeleteClusterExtension: string;
+```
+
+- *Type:* string
+
+[Write] sagemaker:DeleteClusterExtension.
+
+---
+
 ##### `DeleteClusterSchedulerConfig`<sup>Required</sup> <a name="DeleteClusterSchedulerConfig" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.DeleteClusterSchedulerConfig"></a>
 
 ```typescript
@@ -13623,6 +14199,18 @@ public readonly DeleteFlowDefinition: string;
 - *Type:* string
 
 [Write] sagemaker:DeleteFlowDefinition.
+
+---
+
+##### `DeleteGlobalInferenceGateway`<sup>Required</sup> <a name="DeleteGlobalInferenceGateway" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.DeleteGlobalInferenceGateway"></a>
+
+```typescript
+public readonly DeleteGlobalInferenceGateway: string;
+```
+
+- *Type:* string
+
+[Write] sagemaker:DeleteGlobalInferenceGateway.
 
 ---
 
@@ -14286,6 +14874,18 @@ public readonly DescribeAutoMLJobV2: string;
 
 ---
 
+##### `DescribeCapacityReservation`<sup>Required</sup> <a name="DescribeCapacityReservation" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeCapacityReservation"></a>
+
+```typescript
+public readonly DescribeCapacityReservation: string;
+```
+
+- *Type:* string
+
+[Read] sagemaker:DescribeCapacityReservation.
+
+---
+
 ##### `DescribeCluster`<sup>Required</sup> <a name="DescribeCluster" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeCluster"></a>
 
 ```typescript
@@ -14307,6 +14907,18 @@ public readonly DescribeClusterEvent: string;
 - *Type:* string
 
 [Read] sagemaker:DescribeClusterEvent.
+
+---
+
+##### `DescribeClusterExtension`<sup>Required</sup> <a name="DescribeClusterExtension" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeClusterExtension"></a>
+
+```typescript
+public readonly DescribeClusterExtension: string;
+```
+
+- *Type:* string
+
+[Read] sagemaker:DescribeClusterExtension.
 
 ---
 
@@ -14535,6 +15147,18 @@ public readonly DescribeFlowDefinition: string;
 - *Type:* string
 
 [Read] sagemaker:DescribeFlowDefinition.
+
+---
+
+##### `DescribeGlobalInferenceGateway`<sup>Required</sup> <a name="DescribeGlobalInferenceGateway" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeGlobalInferenceGateway"></a>
+
+```typescript
+public readonly DescribeGlobalInferenceGateway: string;
+```
+
+- *Type:* string
+
+[Read] sagemaker:DescribeGlobalInferenceGateway.
 
 ---
 
@@ -14970,6 +15594,18 @@ public readonly DescribeReservedCapacity: string;
 
 ---
 
+##### `DescribeResourceAssociations`<sup>Required</sup> <a name="DescribeResourceAssociations" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeResourceAssociations"></a>
+
+```typescript
+public readonly DescribeResourceAssociations: string;
+```
+
+- *Type:* string
+
+[Read] sagemaker:DescribeResourceAssociations.
+
+---
+
 ##### `DescribeSharedModel`<sup>Required</sup> <a name="DescribeSharedModel" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.DescribeSharedModel"></a>
 
 ```typescript
@@ -15270,6 +15906,30 @@ public readonly InvokeEndpointWithResponseStream: string;
 
 ---
 
+##### `InvokeGlobalInferenceGateway`<sup>Required</sup> <a name="InvokeGlobalInferenceGateway" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.InvokeGlobalInferenceGateway"></a>
+
+```typescript
+public readonly InvokeGlobalInferenceGateway: string;
+```
+
+- *Type:* string
+
+[Read] sagemaker:InvokeGlobalInferenceGateway.
+
+---
+
+##### `InvokeGlobalInferenceGatewayWithResponseStream`<sup>Required</sup> <a name="InvokeGlobalInferenceGatewayWithResponseStream" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.InvokeGlobalInferenceGatewayWithResponseStream"></a>
+
+```typescript
+public readonly InvokeGlobalInferenceGatewayWithResponseStream: string;
+```
+
+- *Type:* string
+
+[Read] sagemaker:InvokeGlobalInferenceGatewayWithResponseStream.
+
+---
+
 ##### `InvokeInferenceRouter`<sup>Required</sup> <a name="InvokeInferenceRouter" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.InvokeInferenceRouter"></a>
 
 ```typescript
@@ -15438,6 +16098,18 @@ public readonly ListCandidatesForAutoMLJob: string;
 
 ---
 
+##### `ListCapacityReservations`<sup>Required</sup> <a name="ListCapacityReservations" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.ListCapacityReservations"></a>
+
+```typescript
+public readonly ListCapacityReservations: string;
+```
+
+- *Type:* string
+
+[List] sagemaker:ListCapacityReservations.
+
+---
+
 ##### `ListClusterEvents`<sup>Required</sup> <a name="ListClusterEvents" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.ListClusterEvents"></a>
 
 ```typescript
@@ -15447,6 +16119,30 @@ public readonly ListClusterEvents: string;
 - *Type:* string
 
 [List] sagemaker:ListClusterEvents.
+
+---
+
+##### `ListClusterExtensions`<sup>Required</sup> <a name="ListClusterExtensions" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.ListClusterExtensions"></a>
+
+```typescript
+public readonly ListClusterExtensions: string;
+```
+
+- *Type:* string
+
+[List] sagemaker:ListClusterExtensions.
+
+---
+
+##### `ListClusterExtensionVersions`<sup>Required</sup> <a name="ListClusterExtensionVersions" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.ListClusterExtensionVersions"></a>
+
+```typescript
+public readonly ListClusterExtensionVersions: string;
+```
+
+- *Type:* string
+
+[List] sagemaker:ListClusterExtensionVersions.
 
 ---
 
@@ -15666,6 +16362,18 @@ public readonly ListFlowDefinitions: string;
 
 ---
 
+##### `ListGlobalInferenceGateways`<sup>Required</sup> <a name="ListGlobalInferenceGateways" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.ListGlobalInferenceGateways"></a>
+
+```typescript
+public readonly ListGlobalInferenceGateways: string;
+```
+
+- *Type:* string
+
+[List] sagemaker:ListGlobalInferenceGateways.
+
+---
+
 ##### `ListHubContents`<sup>Required</sup> <a name="ListHubContents" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.ListHubContents"></a>
 
 ```typescript
@@ -15783,6 +16491,18 @@ public readonly ListInferenceExperiments: string;
 - *Type:* string
 
 [List] sagemaker:ListInferenceExperiments.
+
+---
+
+##### `ListInferenceGateways`<sup>Required</sup> <a name="ListInferenceGateways" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.ListInferenceGateways"></a>
+
+```typescript
+public readonly ListInferenceGateways: string;
+```
+
+- *Type:* string
+
+[List] sagemaker:ListInferenceGateways.
 
 ---
 
@@ -16542,6 +17262,18 @@ public readonly RegisterDevices: string;
 
 ---
 
+##### `RemoveInferenceGateway`<sup>Required</sup> <a name="RemoveInferenceGateway" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.RemoveInferenceGateway"></a>
+
+```typescript
+public readonly RemoveInferenceGateway: string;
+```
+
+- *Type:* string
+
+[Write] sagemaker:RemoveInferenceGateway.
+
+---
+
 ##### `RenderUiTemplate`<sup>Required</sup> <a name="RenderUiTemplate" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.RenderUiTemplate"></a>
 
 ```typescript
@@ -17118,6 +17850,18 @@ public readonly UpdateCluster: string;
 
 ---
 
+##### `UpdateClusterExtension`<sup>Required</sup> <a name="UpdateClusterExtension" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.UpdateClusterExtension"></a>
+
+```typescript
+public readonly UpdateClusterExtension: string;
+```
+
+- *Type:* string
+
+[Write] sagemaker:UpdateClusterExtension.
+
+---
+
 ##### `UpdateClusterInference`<sup>Required</sup> <a name="UpdateClusterInference" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.UpdateClusterInference"></a>
 
 ```typescript
@@ -17283,6 +18027,18 @@ public readonly UpdateFeatureMetadata: string;
 - *Type:* string
 
 [Write] sagemaker:UpdateFeatureMetadata.
+
+---
+
+##### `UpdateGlobalInferenceGateway`<sup>Required</sup> <a name="UpdateGlobalInferenceGateway" id="@cdk_utils/iam.sagemaker.SageMakerActions.property.UpdateGlobalInferenceGateway"></a>
+
+```typescript
+public readonly UpdateGlobalInferenceGateway: string;
+```
+
+- *Type:* string
+
+[Write] sagemaker:UpdateGlobalInferenceGateway.
 
 ---
 
@@ -17725,6 +18481,7 @@ new sagemaker.SageMakerConditions()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.outputKMSKey">outputKMSKey</a></code> | Generates a condition block for `sagemaker:OutputKmsKey`. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.outputKMSKeyARN">outputKMSKeyARN</a></code> | Generates a condition block for `sagemaker:OutputKmsKeyArn`. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.ownerUserProfileARN">ownerUserProfileARN</a></code> | Generates a condition block for `sagemaker:OwnerUserProfileArn`. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.pipelineVersionAlias">pipelineVersionAlias</a></code> | Generates a condition block for `sagemaker:PipelineVersionAlias`. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.pipelineVersionId">pipelineVersionId</a></code> | Generates a condition block for `sagemaker:PipelineVersionId`. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.remoteAccess">remoteAccess</a></code> | Generates a condition block for `sagemaker:RemoteAccess`. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.requestTag">requestTag</a></code> | Generates a condition block for `aws:RequestTag/${TagKey}`. |
@@ -18470,6 +19227,22 @@ Generates a condition block for `sagemaker:OwnerUserProfileArn`.
 
 ---
 
+##### `pipelineVersionAlias` <a name="pipelineVersionAlias" id="@cdk_utils/iam.sagemaker.SageMakerConditions.pipelineVersionAlias"></a>
+
+```typescript
+import { sagemaker } from '@cdk_utils/iam'
+
+sagemaker.SageMakerConditions.pipelineVersionAlias(value: string)
+```
+
+Generates a condition block for `sagemaker:PipelineVersionAlias`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.sagemaker.SageMakerConditions.pipelineVersionAlias.parameter.value"></a>
+
+- *Type:* string
+
+---
+
 ##### `pipelineVersionId` <a name="pipelineVersionId" id="@cdk_utils/iam.sagemaker.SageMakerConditions.pipelineVersionId"></a>
 
 ```typescript
@@ -18847,6 +19620,7 @@ Generates a condition block for `sagemaker:WorkteamType`.
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.CreateAutoMLJobConditionKeys">CreateAutoMLJobConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateAutoMLJob action. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.CreateAutoMLJobV2ConditionKeys">CreateAutoMLJobV2ConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateAutoMLJobV2 action. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.CreateClusterConditionKeys">CreateClusterConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateCluster action. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.CreateClusterExtensionConditionKeys">CreateClusterExtensionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateClusterExtension action. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.CreateClusterSchedulerConfigConditionKeys">CreateClusterSchedulerConfigConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateClusterSchedulerConfig action. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.CreateCodeRepositoryConditionKeys">CreateCodeRepositoryConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateCodeRepository action. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.CreateCompilationJobConditionKeys">CreateCompilationJobConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateCompilationJob action. |
@@ -18863,6 +19637,7 @@ Generates a condition block for `sagemaker:WorkteamType`.
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.CreateExperimentConditionKeys">CreateExperimentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateExperiment action. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.CreateFeatureGroupConditionKeys">CreateFeatureGroupConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateFeatureGroup action. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.CreateFlowDefinitionConditionKeys">CreateFlowDefinitionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateFlowDefinition action. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.CreateGlobalInferenceGatewayConditionKeys">CreateGlobalInferenceGatewayConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateGlobalInferenceGateway action. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.CreateHubConditionKeys">CreateHubConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateHub action. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.CreateHubContentReferenceConditionKeys">CreateHubContentReferenceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateHubContentReference action. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.CreateHumanTaskUiConditionKeys">CreateHumanTaskUiConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateHumanTaskUi action. |
@@ -18912,6 +19687,7 @@ Generates a condition block for `sagemaker:WorkteamType`.
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.DeleteSpaceConditionKeys">DeleteSpaceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteSpace action. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.DeleteTagsConditionKeys">DeleteTagsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteTags action. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.DescribePipelineConditionKeys">DescribePipelineConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribePipeline action. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.DescribePipelineDefinitionForExecutionConditionKeys">DescribePipelineDefinitionForExecutionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DescribePipelineDefinitionForExecution action. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.DIRECT_GATED_MODEL_ACCESS">DIRECT_GATED_MODEL_ACCESS</a></code> | <code>string</code> | Condition key: sagemaker:DirectGatedModelAccess (String). |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.DIRECT_INTERNET_ACCESS">DIRECT_INTERNET_ACCESS</a></code> | <code>string</code> | Condition key: sagemaker:DirectInternetAccess (String). |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.DOMAIN_ID">DOMAIN_ID</a></code> | <code>string</code> | Condition key: sagemaker:DomainId (String). |
@@ -18940,6 +19716,7 @@ Generates a condition block for `sagemaker:WorkteamType`.
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.InvokeEndpointConditionKeys">InvokeEndpointConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the InvokeEndpoint action. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.IS_UPDATE_RECORD">IS_UPDATE_RECORD</a></code> | <code>string</code> | Condition key: sagemaker:IsUpdateRecord (Bool). |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.KEEP_ALIVE_PERIOD">KEEP_ALIVE_PERIOD</a></code> | <code>string</code> | Condition key: sagemaker:KeepAlivePeriod (Numeric). |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.ListPipelineExecutionsConditionKeys">ListPipelineExecutionsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListPipelineExecutions action. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.MAX_RUNTIME_IN_SECONDS">MAX_RUNTIME_IN_SECONDS</a></code> | <code>string</code> | Condition key: sagemaker:MaxRuntimeInSeconds (Numeric). |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.MINIMUM_INSTANCE_METADATA_SERVICE_VERSION">MINIMUM_INSTANCE_METADATA_SERVICE_VERSION</a></code> | <code>string</code> | Condition key: sagemaker:MinimumInstanceMetadataServiceVersion (String). |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.MODEL_APPROVAL_STATUS">MODEL_APPROVAL_STATUS</a></code> | <code>string</code> | Condition key: sagemaker:ModelApprovalStatus (String). |
@@ -18951,6 +19728,7 @@ Generates a condition block for `sagemaker:WorkteamType`.
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.OUTPUT_KMS_KEY">OUTPUT_KMS_KEY</a></code> | <code>string</code> | Condition key: sagemaker:OutputKmsKey (ARN). |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.OUTPUT_KMS_KEY_ARN">OUTPUT_KMS_KEY_ARN</a></code> | <code>string</code> | Condition key: sagemaker:OutputKmsKeyArn (ARN). |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.OWNER_USER_PROFILE_ARN">OWNER_USER_PROFILE_ARN</a></code> | <code>string</code> | Condition key: sagemaker:OwnerUserProfileArn (ARN). |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.PIPELINE_VERSION_ALIAS">PIPELINE_VERSION_ALIAS</a></code> | <code>string</code> | Condition key: sagemaker:PipelineVersionAlias (String). |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.PIPELINE_VERSION_ID">PIPELINE_VERSION_ID</a></code> | <code>string</code> | Condition key: sagemaker:PipelineVersionId (String). |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.PutRecordConditionKeys">PutRecordConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutRecord action. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.RegisterDevicesConditionKeys">RegisterDevicesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the RegisterDevices action. |
@@ -18964,6 +19742,7 @@ Generates a condition block for `sagemaker:WorkteamType`.
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.SOURCE_INFERENCE_ROUTER_ARN">SOURCE_INFERENCE_ROUTER_ARN</a></code> | <code>string</code> | Condition key: sagemaker:SourceInferenceRouterArn (ARN). |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.SPACE_SHARING_TYPE">SPACE_SHARING_TYPE</a></code> | <code>string</code> | Condition key: sagemaker:SpaceSharingType (String). |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.StartPipelineExecutionConditionKeys">StartPipelineExecutionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartPipelineExecution action. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.StopPipelineExecutionConditionKeys">StopPipelineExecutionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StopPipelineExecution action. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.STUDIO_LIFECYCLE_CONFIG_ARNS">STUDIO_LIFECYCLE_CONFIG_ARNS</a></code> | <code>string</code> | Condition key: sagemaker:StudioLifecycleConfigArns (ArrayOfARN). |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.TAGGING_ACTION">TAGGING_ACTION</a></code> | <code>string</code> | Condition key: sagemaker:TaggingAction (String). |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerConditions.property.TARGET_MODEL">TARGET_MODEL</a></code> | <code>string</code> | Condition key: sagemaker:TargetModel (String). |
@@ -19228,6 +20007,18 @@ Condition keys applicable to the CreateCluster action.
 
 ---
 
+##### `CreateClusterExtensionConditionKeys`<sup>Required</sup> <a name="CreateClusterExtensionConditionKeys" id="@cdk_utils/iam.sagemaker.SageMakerConditions.property.CreateClusterExtensionConditionKeys"></a>
+
+```typescript
+public readonly CreateClusterExtensionConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateClusterExtension action.
+
+---
+
 ##### `CreateClusterSchedulerConfigConditionKeys`<sup>Required</sup> <a name="CreateClusterSchedulerConfigConditionKeys" id="@cdk_utils/iam.sagemaker.SageMakerConditions.property.CreateClusterSchedulerConfigConditionKeys"></a>
 
 ```typescript
@@ -19417,6 +20208,18 @@ public readonly CreateFlowDefinitionConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CreateFlowDefinition action.
+
+---
+
+##### `CreateGlobalInferenceGatewayConditionKeys`<sup>Required</sup> <a name="CreateGlobalInferenceGatewayConditionKeys" id="@cdk_utils/iam.sagemaker.SageMakerConditions.property.CreateGlobalInferenceGatewayConditionKeys"></a>
+
+```typescript
+public readonly CreateGlobalInferenceGatewayConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateGlobalInferenceGateway action.
 
 ---
 
@@ -20008,6 +20811,18 @@ Condition keys applicable to the DescribePipeline action.
 
 ---
 
+##### `DescribePipelineDefinitionForExecutionConditionKeys`<sup>Required</sup> <a name="DescribePipelineDefinitionForExecutionConditionKeys" id="@cdk_utils/iam.sagemaker.SageMakerConditions.property.DescribePipelineDefinitionForExecutionConditionKeys"></a>
+
+```typescript
+public readonly DescribePipelineDefinitionForExecutionConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DescribePipelineDefinitionForExecution action.
+
+---
+
 ##### `DIRECT_GATED_MODEL_ACCESS`<sup>Required</sup> <a name="DIRECT_GATED_MODEL_ACCESS" id="@cdk_utils/iam.sagemaker.SageMakerConditions.property.DIRECT_GATED_MODEL_ACCESS"></a>
 
 ```typescript
@@ -20344,6 +21159,18 @@ Condition key: sagemaker:KeepAlivePeriod (Numeric).
 
 ---
 
+##### `ListPipelineExecutionsConditionKeys`<sup>Required</sup> <a name="ListPipelineExecutionsConditionKeys" id="@cdk_utils/iam.sagemaker.SageMakerConditions.property.ListPipelineExecutionsConditionKeys"></a>
+
+```typescript
+public readonly ListPipelineExecutionsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ListPipelineExecutions action.
+
+---
+
 ##### `MAX_RUNTIME_IN_SECONDS`<sup>Required</sup> <a name="MAX_RUNTIME_IN_SECONDS" id="@cdk_utils/iam.sagemaker.SageMakerConditions.property.MAX_RUNTIME_IN_SECONDS"></a>
 
 ```typescript
@@ -20473,6 +21300,18 @@ public readonly OWNER_USER_PROFILE_ARN: string;
 - *Type:* string
 
 Condition key: sagemaker:OwnerUserProfileArn (ARN).
+
+---
+
+##### `PIPELINE_VERSION_ALIAS`<sup>Required</sup> <a name="PIPELINE_VERSION_ALIAS" id="@cdk_utils/iam.sagemaker.SageMakerConditions.property.PIPELINE_VERSION_ALIAS"></a>
+
+```typescript
+public readonly PIPELINE_VERSION_ALIAS: string;
+```
+
+- *Type:* string
+
+Condition key: sagemaker:PipelineVersionAlias (String).
 
 ---
 
@@ -20629,6 +21468,18 @@ public readonly StartPipelineExecutionConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the StartPipelineExecution action.
+
+---
+
+##### `StopPipelineExecutionConditionKeys`<sup>Required</sup> <a name="StopPipelineExecutionConditionKeys" id="@cdk_utils/iam.sagemaker.SageMakerConditions.property.StopPipelineExecutionConditionKeys"></a>
+
+```typescript
+public readonly StopPipelineExecutionConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the StopPipelineExecution action.
 
 ---
 
@@ -20909,6 +21760,7 @@ new sagemaker.SageMakerOperations()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.AddAssociation">AddAssociation</a></code> | <code>string[]</code> | IAM actions required for the AddAssociation API call. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.AddInferenceGateway">AddInferenceGateway</a></code> | <code>string[]</code> | IAM actions required for the AddInferenceGateway API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.AddTags">AddTags</a></code> | <code>string[]</code> | IAM actions required for the AddTags API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.AssociateTrialComponent">AssociateTrialComponent</a></code> | <code>string[]</code> | IAM actions required for the AssociateTrialComponent API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.AttachClusterNodeNetworkInterface">AttachClusterNodeNetworkInterface</a></code> | <code>string[]</code> | IAM actions required for the AttachClusterNodeNetworkInterface API call. |
@@ -20951,6 +21803,7 @@ new sagemaker.SageMakerOperations()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.CreateExperiment">CreateExperiment</a></code> | <code>string[]</code> | IAM actions required for the CreateExperiment API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.CreateFeatureGroup">CreateFeatureGroup</a></code> | <code>string[]</code> | IAM actions required for the CreateFeatureGroup API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.CreateFlowDefinition">CreateFlowDefinition</a></code> | <code>string[]</code> | IAM actions required for the CreateFlowDefinition API call. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.CreateGlobalInferenceGateway">CreateGlobalInferenceGateway</a></code> | <code>string[]</code> | IAM actions required for the CreateGlobalInferenceGateway API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.CreateHub">CreateHub</a></code> | <code>string[]</code> | IAM actions required for the CreateHub API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.CreateHubContentPresignedUrls">CreateHubContentPresignedUrls</a></code> | <code>string[]</code> | IAM actions required for the CreateHubContentPresignedUrls API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.CreateHubContentReference">CreateHubContentReference</a></code> | <code>string[]</code> | IAM actions required for the CreateHubContentReference API call. |
@@ -21025,6 +21878,7 @@ new sagemaker.SageMakerOperations()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DeleteExperiment">DeleteExperiment</a></code> | <code>string[]</code> | IAM actions required for the DeleteExperiment API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DeleteFeatureGroup">DeleteFeatureGroup</a></code> | <code>string[]</code> | IAM actions required for the DeleteFeatureGroup API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DeleteFlowDefinition">DeleteFlowDefinition</a></code> | <code>string[]</code> | IAM actions required for the DeleteFlowDefinition API call. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DeleteGlobalInferenceGateway">DeleteGlobalInferenceGateway</a></code> | <code>string[]</code> | IAM actions required for the DeleteGlobalInferenceGateway API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DeleteHub">DeleteHub</a></code> | <code>string[]</code> | IAM actions required for the DeleteHub API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DeleteHubContent">DeleteHubContent</a></code> | <code>string[]</code> | IAM actions required for the DeleteHubContent API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DeleteHubContentReference">DeleteHubContentReference</a></code> | <code>string[]</code> | IAM actions required for the DeleteHubContentReference API call. |
@@ -21077,6 +21931,7 @@ new sagemaker.SageMakerOperations()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeArtifact">DescribeArtifact</a></code> | <code>string[]</code> | IAM actions required for the DescribeArtifact API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeAutoMLJob">DescribeAutoMLJob</a></code> | <code>string[]</code> | IAM actions required for the DescribeAutoMLJob API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeAutoMLJobV2">DescribeAutoMLJobV2</a></code> | <code>string[]</code> | IAM actions required for the DescribeAutoMLJobV2 API call. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeCapacityReservation">DescribeCapacityReservation</a></code> | <code>string[]</code> | IAM actions required for the DescribeCapacityReservation API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeCluster">DescribeCluster</a></code> | <code>string[]</code> | IAM actions required for the DescribeCluster API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeClusterEvent">DescribeClusterEvent</a></code> | <code>string[]</code> | IAM actions required for the DescribeClusterEvent API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeClusterExtension">DescribeClusterExtension</a></code> | <code>string[]</code> | IAM actions required for the DescribeClusterExtension API call. |
@@ -21099,6 +21954,7 @@ new sagemaker.SageMakerOperations()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeFeatureGroup">DescribeFeatureGroup</a></code> | <code>string[]</code> | IAM actions required for the DescribeFeatureGroup API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeFeatureMetadata">DescribeFeatureMetadata</a></code> | <code>string[]</code> | IAM actions required for the DescribeFeatureMetadata API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeFlowDefinition">DescribeFlowDefinition</a></code> | <code>string[]</code> | IAM actions required for the DescribeFlowDefinition API call. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeGlobalInferenceGateway">DescribeGlobalInferenceGateway</a></code> | <code>string[]</code> | IAM actions required for the DescribeGlobalInferenceGateway API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeHub">DescribeHub</a></code> | <code>string[]</code> | IAM actions required for the DescribeHub API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeHubContent">DescribeHubContent</a></code> | <code>string[]</code> | IAM actions required for the DescribeHubContent API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeHumanLoop">DescribeHumanLoop</a></code> | <code>string[]</code> | IAM actions required for the DescribeHumanLoop API call. |
@@ -21135,6 +21991,7 @@ new sagemaker.SageMakerOperations()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeProcessingJob">DescribeProcessingJob</a></code> | <code>string[]</code> | IAM actions required for the DescribeProcessingJob API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeProject">DescribeProject</a></code> | <code>string[]</code> | IAM actions required for the DescribeProject API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeReservedCapacity">DescribeReservedCapacity</a></code> | <code>string[]</code> | IAM actions required for the DescribeReservedCapacity API call. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeResourceAssociations">DescribeResourceAssociations</a></code> | <code>string[]</code> | IAM actions required for the DescribeResourceAssociations API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeSpace">DescribeSpace</a></code> | <code>string[]</code> | IAM actions required for the DescribeSpace API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeStudioLifecycleConfig">DescribeStudioLifecycleConfig</a></code> | <code>string[]</code> | IAM actions required for the DescribeStudioLifecycleConfig API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeSubscribedWorkteam">DescribeSubscribedWorkteam</a></code> | <code>string[]</code> | IAM actions required for the DescribeSubscribedWorkteam API call. |
@@ -21159,6 +22016,8 @@ new sagemaker.SageMakerOperations()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.InvokeEndpoint">InvokeEndpoint</a></code> | <code>string[]</code> | IAM actions required for the InvokeEndpoint API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.InvokeEndpointAsync">InvokeEndpointAsync</a></code> | <code>string[]</code> | IAM actions required for the InvokeEndpointAsync API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.InvokeEndpointWithResponseStream">InvokeEndpointWithResponseStream</a></code> | <code>string[]</code> | IAM actions required for the InvokeEndpointWithResponseStream API call. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.InvokeGlobalInferenceGateway">InvokeGlobalInferenceGateway</a></code> | <code>string[]</code> | IAM actions required for the InvokeGlobalInferenceGateway API call. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.InvokeGlobalInferenceGatewayWithResponseStream">InvokeGlobalInferenceGatewayWithResponseStream</a></code> | <code>string[]</code> | IAM actions required for the InvokeGlobalInferenceGatewayWithResponseStream API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.InvokeInferenceRouter">InvokeInferenceRouter</a></code> | <code>string[]</code> | IAM actions required for the InvokeInferenceRouter API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.InvokeInferenceRouterAsync">InvokeInferenceRouterAsync</a></code> | <code>string[]</code> | IAM actions required for the InvokeInferenceRouterAsync API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListActions">ListActions</a></code> | <code>string[]</code> | IAM actions required for the ListActions API call. |
@@ -21173,6 +22032,7 @@ new sagemaker.SageMakerOperations()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListAssociations">ListAssociations</a></code> | <code>string[]</code> | IAM actions required for the ListAssociations API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListAutoMLJobs">ListAutoMLJobs</a></code> | <code>string[]</code> | IAM actions required for the ListAutoMLJobs API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListCandidatesForAutoMLJob">ListCandidatesForAutoMLJob</a></code> | <code>string[]</code> | IAM actions required for the ListCandidatesForAutoMLJob API call. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListCapacityReservations">ListCapacityReservations</a></code> | <code>string[]</code> | IAM actions required for the ListCapacityReservations API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListClusterEvents">ListClusterEvents</a></code> | <code>string[]</code> | IAM actions required for the ListClusterEvents API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListClusterExtensions">ListClusterExtensions</a></code> | <code>string[]</code> | IAM actions required for the ListClusterExtensions API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListClusterExtensionVersions">ListClusterExtensionVersions</a></code> | <code>string[]</code> | IAM actions required for the ListClusterExtensionVersions API call. |
@@ -21195,6 +22055,7 @@ new sagemaker.SageMakerOperations()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListExperiments">ListExperiments</a></code> | <code>string[]</code> | IAM actions required for the ListExperiments API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListFeatureGroups">ListFeatureGroups</a></code> | <code>string[]</code> | IAM actions required for the ListFeatureGroups API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListFlowDefinitions">ListFlowDefinitions</a></code> | <code>string[]</code> | IAM actions required for the ListFlowDefinitions API call. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListGlobalInferenceGateways">ListGlobalInferenceGateways</a></code> | <code>string[]</code> | IAM actions required for the ListGlobalInferenceGateways API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListHubContents">ListHubContents</a></code> | <code>string[]</code> | IAM actions required for the ListHubContents API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListHubContentVersions">ListHubContentVersions</a></code> | <code>string[]</code> | IAM actions required for the ListHubContentVersions API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListHubs">ListHubs</a></code> | <code>string[]</code> | IAM actions required for the ListHubs API call. |
@@ -21205,6 +22066,7 @@ new sagemaker.SageMakerOperations()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListImageVersions">ListImageVersions</a></code> | <code>string[]</code> | IAM actions required for the ListImageVersions API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListInferenceComponents">ListInferenceComponents</a></code> | <code>string[]</code> | IAM actions required for the ListInferenceComponents API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListInferenceExperiments">ListInferenceExperiments</a></code> | <code>string[]</code> | IAM actions required for the ListInferenceExperiments API call. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListInferenceGateways">ListInferenceGateways</a></code> | <code>string[]</code> | IAM actions required for the ListInferenceGateways API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListInferenceRecommendationsJobs">ListInferenceRecommendationsJobs</a></code> | <code>string[]</code> | IAM actions required for the ListInferenceRecommendationsJobs API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListInferenceRecommendationsJobSteps">ListInferenceRecommendationsJobSteps</a></code> | <code>string[]</code> | IAM actions required for the ListInferenceRecommendationsJobSteps API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListInferenceRouters">ListInferenceRouters</a></code> | <code>string[]</code> | IAM actions required for the ListInferenceRouters API call. |
@@ -21258,6 +22120,8 @@ new sagemaker.SageMakerOperations()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListUserProfiles">ListUserProfiles</a></code> | <code>string[]</code> | IAM actions required for the ListUserProfiles API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListWorkforces">ListWorkforces</a></code> | <code>string[]</code> | IAM actions required for the ListWorkforces API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListWorkteams">ListWorkteams</a></code> | <code>string[]</code> | IAM actions required for the ListWorkteams API call. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.MoveClusterNodes">MoveClusterNodes</a></code> | <code>string[]</code> | IAM actions required for the MoveClusterNodes API call. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.opGetCapacityReservationUsage">opGetCapacityReservationUsage</a></code> | <code>string[]</code> | IAM actions required for the GetCapacityReservationUsage API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.opGetDeployments">opGetDeployments</a></code> | <code>string[]</code> | IAM actions required for the GetDeployments API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.opGetDeviceFleetReport">opGetDeviceFleetReport</a></code> | <code>string[]</code> | IAM actions required for the GetDeviceFleetReport API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.opGetDeviceRegistration">opGetDeviceRegistration</a></code> | <code>string[]</code> | IAM actions required for the GetDeviceRegistration API call. |
@@ -21275,6 +22139,7 @@ new sagemaker.SageMakerOperations()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.PutRecord">PutRecord</a></code> | <code>string[]</code> | IAM actions required for the PutRecord API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.QueryLineage">QueryLineage</a></code> | <code>string[]</code> | IAM actions required for the QueryLineage API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.RegisterDevices">RegisterDevices</a></code> | <code>string[]</code> | IAM actions required for the RegisterDevices API call. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.RemoveInferenceGateway">RemoveInferenceGateway</a></code> | <code>string[]</code> | IAM actions required for the RemoveInferenceGateway API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.RenderUiTemplate">RenderUiTemplate</a></code> | <code>string[]</code> | IAM actions required for the RenderUiTemplate API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.RetryPipelineExecution">RetryPipelineExecution</a></code> | <code>string[]</code> | IAM actions required for the RetryPipelineExecution API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.Sample">Sample</a></code> | <code>string[]</code> | IAM actions required for the Sample API call. |
@@ -21334,6 +22199,7 @@ new sagemaker.SageMakerOperations()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.UpdateExperiment">UpdateExperiment</a></code> | <code>string[]</code> | IAM actions required for the UpdateExperiment API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.UpdateFeatureGroup">UpdateFeatureGroup</a></code> | <code>string[]</code> | IAM actions required for the UpdateFeatureGroup API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.UpdateFeatureMetadata">UpdateFeatureMetadata</a></code> | <code>string[]</code> | IAM actions required for the UpdateFeatureMetadata API call. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.UpdateGlobalInferenceGateway">UpdateGlobalInferenceGateway</a></code> | <code>string[]</code> | IAM actions required for the UpdateGlobalInferenceGateway API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.UpdateHub">UpdateHub</a></code> | <code>string[]</code> | IAM actions required for the UpdateHub API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.UpdateHubContent">UpdateHubContent</a></code> | <code>string[]</code> | IAM actions required for the UpdateHubContent API call. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerOperations.property.UpdateHubContentReference">UpdateHubContentReference</a></code> | <code>string[]</code> | IAM actions required for the UpdateHubContentReference API call. |
@@ -21377,6 +22243,18 @@ public readonly AddAssociation: string[];
 - *Type:* string[]
 
 IAM actions required for the AddAssociation API call.
+
+---
+
+##### `AddInferenceGateway`<sup>Required</sup> <a name="AddInferenceGateway" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.AddInferenceGateway"></a>
+
+```typescript
+public readonly AddInferenceGateway: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the AddInferenceGateway API call.
 
 ---
 
@@ -21881,6 +22759,18 @@ public readonly CreateFlowDefinition: string[];
 - *Type:* string[]
 
 IAM actions required for the CreateFlowDefinition API call.
+
+---
+
+##### `CreateGlobalInferenceGateway`<sup>Required</sup> <a name="CreateGlobalInferenceGateway" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.CreateGlobalInferenceGateway"></a>
+
+```typescript
+public readonly CreateGlobalInferenceGateway: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateGlobalInferenceGateway API call.
 
 ---
 
@@ -22772,6 +23662,18 @@ IAM actions required for the DeleteFlowDefinition API call.
 
 ---
 
+##### `DeleteGlobalInferenceGateway`<sup>Required</sup> <a name="DeleteGlobalInferenceGateway" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.DeleteGlobalInferenceGateway"></a>
+
+```typescript
+public readonly DeleteGlobalInferenceGateway: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteGlobalInferenceGateway API call.
+
+---
+
 ##### `DeleteHub`<sup>Required</sup> <a name="DeleteHub" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.DeleteHub"></a>
 
 ```typescript
@@ -23396,6 +24298,18 @@ IAM actions required for the DescribeAutoMLJobV2 API call.
 
 ---
 
+##### `DescribeCapacityReservation`<sup>Required</sup> <a name="DescribeCapacityReservation" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeCapacityReservation"></a>
+
+```typescript
+public readonly DescribeCapacityReservation: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeCapacityReservation API call.
+
+---
+
 ##### `DescribeCluster`<sup>Required</sup> <a name="DescribeCluster" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeCluster"></a>
 
 ```typescript
@@ -23657,6 +24571,18 @@ public readonly DescribeFlowDefinition: string[];
 - *Type:* string[]
 
 IAM actions required for the DescribeFlowDefinition API call.
+
+---
+
+##### `DescribeGlobalInferenceGateway`<sup>Required</sup> <a name="DescribeGlobalInferenceGateway" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeGlobalInferenceGateway"></a>
+
+```typescript
+public readonly DescribeGlobalInferenceGateway: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeGlobalInferenceGateway API call.
 
 ---
 
@@ -24092,6 +25018,18 @@ IAM actions required for the DescribeReservedCapacity API call.
 
 ---
 
+##### `DescribeResourceAssociations`<sup>Required</sup> <a name="DescribeResourceAssociations" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeResourceAssociations"></a>
+
+```typescript
+public readonly DescribeResourceAssociations: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeResourceAssociations API call.
+
+---
+
 ##### `DescribeSpace`<sup>Required</sup> <a name="DescribeSpace" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.DescribeSpace"></a>
 
 ```typescript
@@ -24380,6 +25318,30 @@ IAM actions required for the InvokeEndpointWithResponseStream API call.
 
 ---
 
+##### `InvokeGlobalInferenceGateway`<sup>Required</sup> <a name="InvokeGlobalInferenceGateway" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.InvokeGlobalInferenceGateway"></a>
+
+```typescript
+public readonly InvokeGlobalInferenceGateway: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the InvokeGlobalInferenceGateway API call.
+
+---
+
+##### `InvokeGlobalInferenceGatewayWithResponseStream`<sup>Required</sup> <a name="InvokeGlobalInferenceGatewayWithResponseStream" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.InvokeGlobalInferenceGatewayWithResponseStream"></a>
+
+```typescript
+public readonly InvokeGlobalInferenceGatewayWithResponseStream: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the InvokeGlobalInferenceGatewayWithResponseStream API call.
+
+---
+
 ##### `InvokeInferenceRouter`<sup>Required</sup> <a name="InvokeInferenceRouter" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.InvokeInferenceRouter"></a>
 
 ```typescript
@@ -24545,6 +25507,18 @@ public readonly ListCandidatesForAutoMLJob: string[];
 - *Type:* string[]
 
 IAM actions required for the ListCandidatesForAutoMLJob API call.
+
+---
+
+##### `ListCapacityReservations`<sup>Required</sup> <a name="ListCapacityReservations" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListCapacityReservations"></a>
+
+```typescript
+public readonly ListCapacityReservations: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListCapacityReservations API call.
 
 ---
 
@@ -24812,6 +25786,18 @@ IAM actions required for the ListFlowDefinitions API call.
 
 ---
 
+##### `ListGlobalInferenceGateways`<sup>Required</sup> <a name="ListGlobalInferenceGateways" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListGlobalInferenceGateways"></a>
+
+```typescript
+public readonly ListGlobalInferenceGateways: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListGlobalInferenceGateways API call.
+
+---
+
 ##### `ListHubContents`<sup>Required</sup> <a name="ListHubContents" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListHubContents"></a>
 
 ```typescript
@@ -24929,6 +25915,18 @@ public readonly ListInferenceExperiments: string[];
 - *Type:* string[]
 
 IAM actions required for the ListInferenceExperiments API call.
+
+---
+
+##### `ListInferenceGateways`<sup>Required</sup> <a name="ListInferenceGateways" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.ListInferenceGateways"></a>
+
+```typescript
+public readonly ListInferenceGateways: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListInferenceGateways API call.
 
 ---
 
@@ -25568,6 +26566,30 @@ IAM actions required for the ListWorkteams API call.
 
 ---
 
+##### `MoveClusterNodes`<sup>Required</sup> <a name="MoveClusterNodes" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.MoveClusterNodes"></a>
+
+```typescript
+public readonly MoveClusterNodes: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the MoveClusterNodes API call.
+
+---
+
+##### `opGetCapacityReservationUsage`<sup>Required</sup> <a name="opGetCapacityReservationUsage" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.opGetCapacityReservationUsage"></a>
+
+```typescript
+public readonly opGetCapacityReservationUsage: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetCapacityReservationUsage API call.
+
+---
+
 ##### `opGetDeployments`<sup>Required</sup> <a name="opGetDeployments" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.opGetDeployments"></a>
 
 ```typescript
@@ -25769,6 +26791,18 @@ public readonly RegisterDevices: string[];
 - *Type:* string[]
 
 IAM actions required for the RegisterDevices API call.
+
+---
+
+##### `RemoveInferenceGateway`<sup>Required</sup> <a name="RemoveInferenceGateway" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.RemoveInferenceGateway"></a>
+
+```typescript
+public readonly RemoveInferenceGateway: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the RemoveInferenceGateway API call.
 
 ---
 
@@ -26480,6 +27514,18 @@ IAM actions required for the UpdateFeatureMetadata API call.
 
 ---
 
+##### `UpdateGlobalInferenceGateway`<sup>Required</sup> <a name="UpdateGlobalInferenceGateway" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.UpdateGlobalInferenceGateway"></a>
+
+```typescript
+public readonly UpdateGlobalInferenceGateway: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateGlobalInferenceGateway API call.
+
+---
+
 ##### `UpdateHub`<sup>Required</sup> <a name="UpdateHub" id="@cdk_utils/iam.sagemaker.SageMakerOperations.property.UpdateHub"></a>
 
 ```typescript
@@ -26900,8 +27946,10 @@ new sagemaker.SageMakerResources()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.experiment">experiment</a></code> | Builds an ARN for the experiment resource. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.experimentTrial">experimentTrial</a></code> | Builds an ARN for the experiment-trial resource. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.experimentTrialComponent">experimentTrialComponent</a></code> | Builds an ARN for the experiment-trial-component resource. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.extension">extension</a></code> | Builds an ARN for the extension resource. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.featureGroup">featureGroup</a></code> | Builds an ARN for the feature-group resource. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.flowDefinition">flowDefinition</a></code> | Builds an ARN for the flow-definition resource. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.globalInferenceGateway">globalInferenceGateway</a></code> | Builds an ARN for the global-inference-gateway resource. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.hub">hub</a></code> | Builds an ARN for the hub resource. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.hubContent">hubContent</a></code> | Builds an ARN for the hub-content resource. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.humanLoop">humanLoop</a></code> | Builds an ARN for the human-loop resource. |
@@ -26939,8 +27987,10 @@ new sagemaker.SageMakerResources()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.isValidExperimentArn">isValidExperimentArn</a></code> | Validates whether a string is a valid ARN for the experiment resource. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.isValidExperimentTrialArn">isValidExperimentTrialArn</a></code> | Validates whether a string is a valid ARN for the experiment-trial resource. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.isValidExperimentTrialComponentArn">isValidExperimentTrialComponentArn</a></code> | Validates whether a string is a valid ARN for the experiment-trial-component resource. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.isValidExtensionArn">isValidExtensionArn</a></code> | Validates whether a string is a valid ARN for the extension resource. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.isValidFeatureGroupArn">isValidFeatureGroupArn</a></code> | Validates whether a string is a valid ARN for the feature-group resource. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.isValidFlowDefinitionArn">isValidFlowDefinitionArn</a></code> | Validates whether a string is a valid ARN for the flow-definition resource. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.isValidGlobalInferenceGatewayArn">isValidGlobalInferenceGatewayArn</a></code> | Validates whether a string is a valid ARN for the global-inference-gateway resource. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.isValidHubArn">isValidHubArn</a></code> | Validates whether a string is a valid ARN for the hub resource. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.isValidHubContentArn">isValidHubContentArn</a></code> | Validates whether a string is a valid ARN for the hub-content resource. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.isValidHumanLoopArn">isValidHumanLoopArn</a></code> | Validates whether a string is a valid ARN for the human-loop resource. |
@@ -26979,6 +28029,7 @@ new sagemaker.SageMakerResources()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.isValidSagemakerCatalogArn">isValidSagemakerCatalogArn</a></code> | Validates whether a string is a valid ARN for the sagemaker-catalog resource. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.isValidSharedModelArn">isValidSharedModelArn</a></code> | Validates whether a string is a valid ARN for the shared-model resource. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.isValidSharedModelEventArn">isValidSharedModelEventArn</a></code> | Validates whether a string is a valid ARN for the shared-model-event resource. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.isValidSmCapacityReservationArn">isValidSmCapacityReservationArn</a></code> | Validates whether a string is a valid ARN for the sm-capacity-reservation resource. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.isValidSpaceArn">isValidSpaceArn</a></code> | Validates whether a string is a valid ARN for the space resource. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.isValidStudioLifecycleConfigArn">isValidStudioLifecycleConfigArn</a></code> | Validates whether a string is a valid ARN for the studio-lifecycle-config resource. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.isValidTrainingJobArn">isValidTrainingJobArn</a></code> | Validates whether a string is a valid ARN for the training-job resource. |
@@ -27032,8 +28083,10 @@ new sagemaker.SageMakerResources()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.parseExperimentArn">parseExperimentArn</a></code> | Parses a experiment ARN into its components. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.parseExperimentTrialArn">parseExperimentTrialArn</a></code> | Parses a experiment-trial ARN into its components. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.parseExperimentTrialComponentArn">parseExperimentTrialComponentArn</a></code> | Parses a experiment-trial-component ARN into its components. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.parseExtensionArn">parseExtensionArn</a></code> | Parses a extension ARN into its components. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.parseFeatureGroupArn">parseFeatureGroupArn</a></code> | Parses a feature-group ARN into its components. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.parseFlowDefinitionArn">parseFlowDefinitionArn</a></code> | Parses a flow-definition ARN into its components. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.parseGlobalInferenceGatewayArn">parseGlobalInferenceGatewayArn</a></code> | Parses a global-inference-gateway ARN into its components. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.parseHubArn">parseHubArn</a></code> | Parses a hub ARN into its components. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.parseHubContentArn">parseHubContentArn</a></code> | Parses a hub-content ARN into its components. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.parseHumanLoopArn">parseHumanLoopArn</a></code> | Parses a human-loop ARN into its components. |
@@ -27072,6 +28125,7 @@ new sagemaker.SageMakerResources()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.parseSagemakerCatalogArn">parseSagemakerCatalogArn</a></code> | Parses a sagemaker-catalog ARN into its components. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.parseSharedModelArn">parseSharedModelArn</a></code> | Parses a shared-model ARN into its components. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.parseSharedModelEventArn">parseSharedModelEventArn</a></code> | Parses a shared-model-event ARN into its components. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.parseSmCapacityReservationArn">parseSmCapacityReservationArn</a></code> | Parses a sm-capacity-reservation ARN into its components. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.parseSpaceArn">parseSpaceArn</a></code> | Parses a space ARN into its components. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.parseStudioLifecycleConfigArn">parseStudioLifecycleConfigArn</a></code> | Parses a studio-lifecycle-config ARN into its components. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.parseTrainingJobArn">parseTrainingJobArn</a></code> | Parses a training-job ARN into its components. |
@@ -27090,6 +28144,7 @@ new sagemaker.SageMakerResources()
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.sagemakerCatalog">sagemakerCatalog</a></code> | Builds an ARN for the sagemaker-catalog resource. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.sharedModel">sharedModel</a></code> | Builds an ARN for the shared-model resource. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.sharedModelEvent">sharedModelEvent</a></code> | Builds an ARN for the shared-model-event resource. |
+| <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.smCapacityReservation">smCapacityReservation</a></code> | Builds an ARN for the sm-capacity-reservation resource. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.space">space</a></code> | Builds an ARN for the space resource. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.studioLifecycleConfig">studioLifecycleConfig</a></code> | Builds an ARN for the studio-lifecycle-config resource. |
 | <code><a href="#@cdk_utils/iam.sagemaker.SageMakerResources.trainingJob">trainingJob</a></code> | Builds an ARN for the training-job resource. |
@@ -27518,6 +28573,22 @@ Builds an ARN for the experiment-trial-component resource.
 
 ---
 
+##### `extension` <a name="extension" id="@cdk_utils/iam.sagemaker.SageMakerResources.extension"></a>
+
+```typescript
+import { sagemaker } from '@cdk_utils/iam'
+
+sagemaker.SageMakerResources.extension(props: SageMakerExtensionArnProps)
+```
+
+Builds an ARN for the extension resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.sagemaker.SageMakerResources.extension.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.sagemaker.SageMakerExtensionArnProps">SageMakerExtensionArnProps</a>
+
+---
+
 ##### `featureGroup` <a name="featureGroup" id="@cdk_utils/iam.sagemaker.SageMakerResources.featureGroup"></a>
 
 ```typescript
@@ -27547,6 +28618,22 @@ Builds an ARN for the flow-definition resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.sagemaker.SageMakerResources.flowDefinition.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.sagemaker.SageMakerFlowDefinitionArnProps">SageMakerFlowDefinitionArnProps</a>
+
+---
+
+##### `globalInferenceGateway` <a name="globalInferenceGateway" id="@cdk_utils/iam.sagemaker.SageMakerResources.globalInferenceGateway"></a>
+
+```typescript
+import { sagemaker } from '@cdk_utils/iam'
+
+sagemaker.SageMakerResources.globalInferenceGateway(props: SageMakerGlobalInferenceGatewayArnProps)
+```
+
+Builds an ARN for the global-inference-gateway resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.sagemaker.SageMakerResources.globalInferenceGateway.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.sagemaker.SageMakerGlobalInferenceGatewayArnProps">SageMakerGlobalInferenceGatewayArnProps</a>
 
 ---
 
@@ -28142,6 +29229,22 @@ Validates whether a string is a valid ARN for the experiment-trial-component res
 
 ---
 
+##### `isValidExtensionArn` <a name="isValidExtensionArn" id="@cdk_utils/iam.sagemaker.SageMakerResources.isValidExtensionArn"></a>
+
+```typescript
+import { sagemaker } from '@cdk_utils/iam'
+
+sagemaker.SageMakerResources.isValidExtensionArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the extension resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.sagemaker.SageMakerResources.isValidExtensionArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `isValidFeatureGroupArn` <a name="isValidFeatureGroupArn" id="@cdk_utils/iam.sagemaker.SageMakerResources.isValidFeatureGroupArn"></a>
 
 ```typescript
@@ -28169,6 +29272,22 @@ sagemaker.SageMakerResources.isValidFlowDefinitionArn(arn: string)
 Validates whether a string is a valid ARN for the flow-definition resource.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.sagemaker.SageMakerResources.isValidFlowDefinitionArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidGlobalInferenceGatewayArn` <a name="isValidGlobalInferenceGatewayArn" id="@cdk_utils/iam.sagemaker.SageMakerResources.isValidGlobalInferenceGatewayArn"></a>
+
+```typescript
+import { sagemaker } from '@cdk_utils/iam'
+
+sagemaker.SageMakerResources.isValidGlobalInferenceGatewayArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the global-inference-gateway resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.sagemaker.SageMakerResources.isValidGlobalInferenceGatewayArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -28777,6 +29896,22 @@ sagemaker.SageMakerResources.isValidSharedModelEventArn(arn: string)
 Validates whether a string is a valid ARN for the shared-model-event resource.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.sagemaker.SageMakerResources.isValidSharedModelEventArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidSmCapacityReservationArn` <a name="isValidSmCapacityReservationArn" id="@cdk_utils/iam.sagemaker.SageMakerResources.isValidSmCapacityReservationArn"></a>
+
+```typescript
+import { sagemaker } from '@cdk_utils/iam'
+
+sagemaker.SageMakerResources.isValidSmCapacityReservationArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the sm-capacity-reservation resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.sagemaker.SageMakerResources.isValidSmCapacityReservationArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -29630,6 +30765,22 @@ Parses a experiment-trial-component ARN into its components.
 
 ---
 
+##### `parseExtensionArn` <a name="parseExtensionArn" id="@cdk_utils/iam.sagemaker.SageMakerResources.parseExtensionArn"></a>
+
+```typescript
+import { sagemaker } from '@cdk_utils/iam'
+
+sagemaker.SageMakerResources.parseExtensionArn(arn: string)
+```
+
+Parses a extension ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.sagemaker.SageMakerResources.parseExtensionArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `parseFeatureGroupArn` <a name="parseFeatureGroupArn" id="@cdk_utils/iam.sagemaker.SageMakerResources.parseFeatureGroupArn"></a>
 
 ```typescript
@@ -29657,6 +30808,22 @@ sagemaker.SageMakerResources.parseFlowDefinitionArn(arn: string)
 Parses a flow-definition ARN into its components.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.sagemaker.SageMakerResources.parseFlowDefinitionArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseGlobalInferenceGatewayArn` <a name="parseGlobalInferenceGatewayArn" id="@cdk_utils/iam.sagemaker.SageMakerResources.parseGlobalInferenceGatewayArn"></a>
+
+```typescript
+import { sagemaker } from '@cdk_utils/iam'
+
+sagemaker.SageMakerResources.parseGlobalInferenceGatewayArn(arn: string)
+```
+
+Parses a global-inference-gateway ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.sagemaker.SageMakerResources.parseGlobalInferenceGatewayArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -30270,6 +31437,22 @@ Parses a shared-model-event ARN into its components.
 
 ---
 
+##### `parseSmCapacityReservationArn` <a name="parseSmCapacityReservationArn" id="@cdk_utils/iam.sagemaker.SageMakerResources.parseSmCapacityReservationArn"></a>
+
+```typescript
+import { sagemaker } from '@cdk_utils/iam'
+
+sagemaker.SageMakerResources.parseSmCapacityReservationArn(arn: string)
+```
+
+Parses a sm-capacity-reservation ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.sagemaker.SageMakerResources.parseSmCapacityReservationArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `parseSpaceArn` <a name="parseSpaceArn" id="@cdk_utils/iam.sagemaker.SageMakerResources.parseSpaceArn"></a>
 
 ```typescript
@@ -30555,6 +31738,22 @@ Builds an ARN for the shared-model-event resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.sagemaker.SageMakerResources.sharedModelEvent.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.sagemaker.SageMakerSharedModelEventArnProps">SageMakerSharedModelEventArnProps</a>
+
+---
+
+##### `smCapacityReservation` <a name="smCapacityReservation" id="@cdk_utils/iam.sagemaker.SageMakerResources.smCapacityReservation"></a>
+
+```typescript
+import { sagemaker } from '@cdk_utils/iam'
+
+sagemaker.SageMakerResources.smCapacityReservation(props: SageMakerSmCapacityReservationArnProps)
+```
+
+Builds an ARN for the sm-capacity-reservation resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.sagemaker.SageMakerResources.smCapacityReservation.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.sagemaker.SageMakerSmCapacityReservationArnProps">SageMakerSmCapacityReservationArnProps</a>
 
 ---
 

@@ -1255,6 +1255,27 @@
       }
     },
     {
+      "Name": "DeleteDatasetGeneration",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": true,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DeleteEvaluator",
       "Annotations": {
         "Properties": {
@@ -2254,6 +2275,27 @@
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetDatasetGeneration",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": true,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3763,6 +3805,27 @@
       }
     },
     {
+      "Name": "ListDatasetGenerations",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": true,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListDatasetVersions",
       "Annotations": {
         "Properties": {
@@ -4815,6 +4878,26 @@
         },
         {
           "Name": "code-interpreter-custom"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "StartDatasetGeneration",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "dataset"
         }
       ],
       "SupportedBy": {
@@ -7195,6 +7278,12 @@
     },
     {
       "Name": "DeleteDatasetGeneration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteDatasetGeneration",
+          "Service": "bedrock-agentcore"
+        }
+      ],
       "SDK": [
         {
           "Name": "bedrock-agentcore",
@@ -7897,6 +7986,12 @@
     },
     {
       "Name": "GetDatasetGeneration",
+      "AuthorizedActions": [
+        {
+          "Name": "GetDatasetGeneration",
+          "Service": "bedrock-agentcore"
+        }
+      ],
       "SDK": [
         {
           "Name": "bedrock-agentcore",
@@ -8915,6 +9010,12 @@
     },
     {
       "Name": "ListDatasetGenerations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListDatasetGenerations",
+          "Service": "bedrock-agentcore"
+        }
+      ],
       "SDK": [
         {
           "Name": "bedrock-agentcore",

@@ -56,6 +56,27 @@
       }
     },
     {
+      "Name": "AddInferenceGateway",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "global-inference-gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "AddTags",
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
@@ -151,10 +172,16 @@
           "Name": "experiment-trial-component"
         },
         {
+          "Name": "extension"
+        },
+        {
           "Name": "feature-group"
         },
         {
           "Name": "flow-definition"
+        },
+        {
+          "Name": "global-inference-gateway"
         },
         {
           "Name": "hub"
@@ -244,6 +271,9 @@
         },
         {
           "Name": "reserved-capacity"
+        },
+        {
+          "Name": "sm-capacity-reservation"
         },
         {
           "Name": "space"
@@ -917,6 +947,34 @@
       }
     },
     {
+      "Name": "CreateClusterExtension",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "extension"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "CreateClusterSchedulerConfig",
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
@@ -1349,6 +1407,31 @@
       "Resources": [
         {
           "Name": "flow-definition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateGlobalInferenceGateway",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "global-inference-gateway"
         }
       ],
       "SupportedBy": {
@@ -2929,6 +3012,30 @@
       }
     },
     {
+      "Name": "DeleteClusterExtension",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "extension"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DeleteClusterSchedulerConfig",
       "Annotations": {
         "Properties": {
@@ -3254,6 +3361,27 @@
       "Resources": [
         {
           "Name": "flow-definition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteGlobalInferenceGateway",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "global-inference-gateway"
         }
       ],
       "SupportedBy": {
@@ -4097,10 +4225,16 @@
           "Name": "experiment-trial-component"
         },
         {
+          "Name": "extension"
+        },
+        {
           "Name": "feature-group"
         },
         {
           "Name": "flow-definition"
+        },
+        {
+          "Name": "global-inference-gateway"
         },
         {
           "Name": "hub"
@@ -4190,6 +4324,9 @@
         },
         {
           "Name": "reserved-capacity"
+        },
+        {
+          "Name": "sm-capacity-reservation"
         },
         {
           "Name": "space"
@@ -4620,6 +4757,27 @@
       }
     },
     {
+      "Name": "DescribeCapacityReservation",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "sm-capacity-reservation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DescribeCluster",
       "Annotations": {
         "Properties": {
@@ -4654,6 +4812,30 @@
       "Resources": [
         {
           "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeClusterExtension",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "extension"
         }
       ],
       "SupportedBy": {
@@ -5048,6 +5230,27 @@
       "Resources": [
         {
           "Name": "flow-definition"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeGlobalInferenceGateway",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "global-inference-gateway"
         }
       ],
       "SupportedBy": {
@@ -5690,6 +5893,7 @@
     {
       "Name": "DescribePipeline",
       "ActionConditionKeys": [
+        "sagemaker:PipelineVersionAlias",
         "sagemaker:PipelineVersionId"
       ],
       "Annotations": {
@@ -5713,6 +5917,10 @@
     },
     {
       "Name": "DescribePipelineDefinitionForExecution",
+      "ActionConditionKeys": [
+        "sagemaker:PipelineVersionAlias",
+        "sagemaker:PipelineVersionId"
+      ],
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
@@ -5809,6 +6017,27 @@
       "Resources": [
         {
           "Name": "reserved-capacity"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DescribeResourceAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "sm-capacity-reservation"
         }
       ],
       "SupportedBy": {
@@ -6248,6 +6477,27 @@
       }
     },
     {
+      "Name": "GetCapacityReservationUsage",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "sm-capacity-reservation"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GetDeployments",
       "Annotations": {
         "Properties": {
@@ -6600,6 +6850,46 @@
       }
     },
     {
+      "Name": "InvokeGlobalInferenceGateway",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "global-inference-gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "InvokeGlobalInferenceGatewayWithResponseStream",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "global-inference-gateway"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "InvokeInferenceRouter",
       "Annotations": {
         "Properties": {
@@ -6840,7 +7130,60 @@
       }
     },
     {
+      "Name": "ListCapacityReservations",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListClusterEvents",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListClusterExtensionVersions",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListClusterExtensions",
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
@@ -7150,6 +7493,22 @@
       }
     },
     {
+      "Name": "ListGlobalInferenceGateways",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListHubContentVersions",
       "Annotations": {
         "Properties": {
@@ -7322,6 +7681,27 @@
           "IsWrite": false
         }
       },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListInferenceGateways",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "global-inference-gateway"
+        }
+      ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -7818,6 +8198,10 @@
     },
     {
       "Name": "ListPipelineExecutions",
+      "ActionConditionKeys": [
+        "sagemaker:PipelineVersionAlias",
+        "sagemaker:PipelineVersionId"
+      ],
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
@@ -8168,10 +8552,16 @@
           "Name": "experiment-trial-component"
         },
         {
+          "Name": "extension"
+        },
+        {
           "Name": "feature-group"
         },
         {
           "Name": "flow-definition"
+        },
+        {
+          "Name": "global-inference-gateway"
         },
         {
           "Name": "hub"
@@ -8264,6 +8654,9 @@
         },
         {
           "Name": "reserved-capacity"
+        },
+        {
+          "Name": "sm-capacity-reservation"
         },
         {
           "Name": "space"
@@ -8608,6 +9001,27 @@
       "Resources": [
         {
           "Name": "device"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "RemoveInferenceGateway",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "global-inference-gateway"
         }
       ],
       "SupportedBy": {
@@ -9006,6 +9420,7 @@
     {
       "Name": "StartPipelineExecution",
       "ActionConditionKeys": [
+        "sagemaker:PipelineVersionAlias",
         "sagemaker:PipelineVersionId"
       ],
       "Annotations": {
@@ -9388,6 +9803,10 @@
     },
     {
       "Name": "StopPipelineExecution",
+      "ActionConditionKeys": [
+        "sagemaker:PipelineVersionAlias",
+        "sagemaker:PipelineVersionId"
+      ],
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
@@ -9602,6 +10021,30 @@
         },
         {
           "Name": "training-plan"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateClusterExtension",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "cluster"
+        },
+        {
+          "Name": "extension"
         }
       ],
       "SupportedBy": {
@@ -9906,6 +10349,27 @@
       "Resources": [
         {
           "Name": "feature-group"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateGlobalInferenceGateway",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "global-inference-gateway"
         }
       ],
       "SupportedBy": {
@@ -10380,6 +10844,7 @@
     {
       "Name": "UpdatePipelineVersion",
       "ActionConditionKeys": [
+        "sagemaker:PipelineVersionAlias",
         "sagemaker:PipelineVersionId"
       ],
       "Annotations": {
@@ -10928,6 +11393,12 @@
       ]
     },
     {
+      "Name": "sagemaker:PipelineVersionAlias",
+      "Types": [
+        "String"
+      ]
+    },
+    {
       "Name": "sagemaker:PipelineVersionId",
       "Types": [
         "String"
@@ -11067,6 +11538,22 @@
         {
           "Name": "sagemaker",
           "Method": "add_association",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "AddInferenceGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "AddInferenceGateway",
+          "Service": "sagemaker"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker",
+          "Method": "add_inference_gateway",
           "Package": "Boto3"
         }
       ]
@@ -11587,6 +12074,10 @@
         {
           "Name": "AddTags",
           "Service": "sagemaker"
+        },
+        {
+          "Name": "CreateClusterExtension",
+          "Service": "sagemaker"
         }
       ],
       "SDK": [
@@ -11927,6 +12418,35 @@
         {
           "Name": "sagemaker",
           "Method": "create_flow_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateGlobalInferenceGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "AddTags",
+          "Service": "sagemaker"
+        },
+        {
+          "Name": "CreateGlobalInferenceGateway",
+          "Service": "sagemaker"
+        },
+        {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "sagemaker.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker",
+          "Method": "create_global_inference_gateway",
           "Package": "Boto3"
         }
       ]
@@ -13233,6 +13753,12 @@
     },
     {
       "Name": "DeleteClusterExtension",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteClusterExtension",
+          "Service": "sagemaker"
+        }
+      ],
       "SDK": [
         {
           "Name": "sagemaker",
@@ -13475,6 +14001,22 @@
         {
           "Name": "sagemaker",
           "Method": "delete_flow_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteGlobalInferenceGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteGlobalInferenceGateway",
+          "Service": "sagemaker"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker",
+          "Method": "delete_global_inference_gateway",
           "Package": "Boto3"
         }
       ]
@@ -14306,6 +14848,22 @@
       ]
     },
     {
+      "Name": "DescribeCapacityReservation",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeCapacityReservation",
+          "Service": "sagemaker"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker",
+          "Method": "describe_capacity_reservation",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DescribeCluster",
       "AuthorizedActions": [
         {
@@ -14339,6 +14897,12 @@
     },
     {
       "Name": "DescribeClusterExtension",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeClusterExtension",
+          "Service": "sagemaker"
+        }
+      ],
       "SDK": [
         {
           "Name": "sagemaker",
@@ -14617,6 +15181,22 @@
         {
           "Name": "sagemaker",
           "Method": "describe_flow_definition",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeGlobalInferenceGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeGlobalInferenceGateway",
+          "Service": "sagemaker"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker",
+          "Method": "describe_global_inference_gateway",
           "Package": "Boto3"
         }
       ]
@@ -15198,6 +15778,22 @@
       ]
     },
     {
+      "Name": "DescribeResourceAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeResourceAssociations",
+          "Service": "sagemaker"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker",
+          "Method": "describe_resource_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DescribeSpace",
       "AuthorizedActions": [
         {
@@ -15518,6 +16114,22 @@
       ]
     },
     {
+      "Name": "GetCapacityReservationUsage",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCapacityReservationUsage",
+          "Service": "sagemaker"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker",
+          "Method": "get_capacity_reservation_usage",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "GetDeployments",
       "SDK": [
         {
@@ -15777,6 +16389,26 @@
       ]
     },
     {
+      "Name": "InvokeGlobalInferenceGateway",
+      "SDK": [
+        {
+          "Name": "sagemaker-gateway-runtime",
+          "Method": "invoke_global_inference_gateway",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "InvokeGlobalInferenceGatewayWithResponseStream",
+      "SDK": [
+        {
+          "Name": "sagemaker-gateway-runtime",
+          "Method": "invoke_global_inference_gateway_with_response_stream",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "InvokeInferenceRouter",
       "SDK": [
         {
@@ -15989,6 +16621,22 @@
       ]
     },
     {
+      "Name": "ListCapacityReservations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCapacityReservations",
+          "Service": "sagemaker"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker",
+          "Method": "list_capacity_reservations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListClusterEvents",
       "AuthorizedActions": [
         {
@@ -16006,6 +16654,12 @@
     },
     {
       "Name": "ListClusterExtensionVersions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListClusterExtensionVersions",
+          "Service": "sagemaker"
+        }
+      ],
       "SDK": [
         {
           "Name": "sagemaker",
@@ -16016,6 +16670,12 @@
     },
     {
       "Name": "ListClusterExtensions",
+      "AuthorizedActions": [
+        {
+          "Name": "ListClusterExtensions",
+          "Service": "sagemaker"
+        }
+      ],
       "SDK": [
         {
           "Name": "sagemaker",
@@ -16299,6 +16959,22 @@
       ]
     },
     {
+      "Name": "ListGlobalInferenceGateways",
+      "AuthorizedActions": [
+        {
+          "Name": "ListGlobalInferenceGateways",
+          "Service": "sagemaker"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker",
+          "Method": "list_global_inference_gateways",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListHubContentVersions",
       "AuthorizedActions": [
         {
@@ -16454,6 +17130,22 @@
         {
           "Name": "sagemaker",
           "Method": "list_inference_experiments",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListInferenceGateways",
+      "AuthorizedActions": [
+        {
+          "Name": "ListInferenceGateways",
+          "Service": "sagemaker"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker",
+          "Method": "list_inference_gateways",
           "Package": "Boto3"
         }
       ]
@@ -17301,6 +17993,26 @@
       ]
     },
     {
+      "Name": "MoveClusterNodes",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchAddClusterNodes",
+          "Service": "sagemaker"
+        },
+        {
+          "Name": "BatchDeleteClusterNodes",
+          "Service": "sagemaker"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker",
+          "Method": "move_cluster_nodes",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "PutEndpointPolicy",
       "AuthorizedActions": [
         {
@@ -17370,6 +18082,22 @@
         {
           "Name": "sagemaker",
           "Method": "register_devices",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "RemoveInferenceGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "RemoveInferenceGateway",
+          "Service": "sagemaker"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker",
+          "Method": "remove_inference_gateway",
           "Package": "Boto3"
         }
       ]
@@ -18118,6 +18846,12 @@
     },
     {
       "Name": "UpdateClusterExtension",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateClusterExtension",
+          "Service": "sagemaker"
+        }
+      ],
       "SDK": [
         {
           "Name": "sagemaker",
@@ -18327,6 +19061,22 @@
         {
           "Name": "sagemaker",
           "Method": "update_feature_metadata",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateGlobalInferenceGateway",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateGlobalInferenceGateway",
+          "Service": "sagemaker"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "sagemaker",
+          "Method": "update_global_inference_gateway",
           "Package": "Boto3"
         }
       ]
@@ -19147,6 +19897,16 @@
       ]
     },
     {
+      "Name": "extension",
+      "ARNFormats": [
+        "arn:${Partition}:sagemaker:${Region}:${Account}:extension/${ClusterIdentifier}/${ExtensionName}/${ExtensionId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "sagemaker:ResourceTag/${TagKey}"
+      ]
+    },
+    {
       "Name": "feature-group",
       "ARNFormats": [
         "arn:${Partition}:sagemaker:${Region}:${Account}:feature-group/${FeatureGroupName}"
@@ -19160,6 +19920,16 @@
       "Name": "flow-definition",
       "ARNFormats": [
         "arn:${Partition}:sagemaker:${Region}:${Account}:flow-definition/${FlowDefinitionName}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "sagemaker:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "global-inference-gateway",
+      "ARNFormats": [
+        "arn:${Partition}:sagemaker:${Region}:${Account}:global-inference-gateway/${GlobalInferenceGatewayId}"
       ],
       "ConditionKeys": [
         "aws:ResourceTag/${TagKey}",
@@ -19523,6 +20293,16 @@
       "Name": "shared-model-event",
       "ARNFormats": [
         "arn:${Partition}:sagemaker:${Region}:${Account}:shared-model-event/${EventId}"
+      ]
+    },
+    {
+      "Name": "sm-capacity-reservation",
+      "ARNFormats": [
+        "arn:${Partition}:sagemaker:${Region}:${Account}:sm-capacity-reservation/${CapacityReservationId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}",
+        "sagemaker:ResourceTag/${TagKey}"
       ]
     },
     {

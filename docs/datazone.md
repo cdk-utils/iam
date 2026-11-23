@@ -4322,6 +4322,7 @@ new datazone.DatazoneOperations()
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.UpdateAccountPool">UpdateAccountPool</a></code> | <code>string[]</code> | IAM actions required for the UpdateAccountPool API call. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.UpdateAssetFilter">UpdateAssetFilter</a></code> | <code>string[]</code> | IAM actions required for the UpdateAssetFilter API call. |
+| <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.UpdateAssetOwner">UpdateAssetOwner</a></code> | <code>string[]</code> | IAM actions required for the UpdateAssetOwner API call. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.UpdateConnection">UpdateConnection</a></code> | <code>string[]</code> | IAM actions required for the UpdateConnection API call. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.UpdateDataSource">UpdateDataSource</a></code> | <code>string[]</code> | IAM actions required for the UpdateDataSource API call. |
 | <code><a href="#@cdk_utils/iam.datazone.DatazoneOperations.property.UpdateDesignation">UpdateDesignation</a></code> | <code>string[]</code> | IAM actions required for the UpdateDesignation API call. |
@@ -6431,6 +6432,18 @@ public readonly UpdateAssetFilter: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateAssetFilter API call.
+
+---
+
+##### `UpdateAssetOwner`<sup>Required</sup> <a name="UpdateAssetOwner" id="@cdk_utils/iam.datazone.DatazoneOperations.property.UpdateAssetOwner"></a>
+
+```typescript
+public readonly UpdateAssetOwner: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateAssetOwner API call.
 
 ---
 

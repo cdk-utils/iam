@@ -2640,6 +2640,8 @@ export class RDSOperations {
 	];
 	/** IAM actions required for the ModifyDBCluster API call. */
 	static readonly ModifyDBCluster: string[] = [
+		"rds:DisableInternetAccessGateway",
+		"rds:EnableVpcNetworking",
 		"rds:ModifyDBCluster",
 		"rds:ModifyDBInstance",
 		"iam:PassRole",

@@ -6082,10 +6082,12 @@ new quicksight.QuickSightActions()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.actionGetAuthCode">actionGetAuthCode</a></code> | <code>string</code> | [Read] quicksight:GetAuthCode. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.actionGetCustomPermissionsSummary">actionGetCustomPermissionsSummary</a></code> | <code>string</code> | [Read] quicksight:GetCustomPermissionsSummary. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.actionGetDashboardEmbedUrl">actionGetDashboardEmbedUrl</a></code> | <code>string</code> | [Read] quicksight:GetDashboardEmbedUrl. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.actionGetEffectiveCustomPermissions">actionGetEffectiveCustomPermissions</a></code> | <code>string</code> | [Read] quicksight:GetEffectiveCustomPermissions. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.actionGetFlowMetadata">actionGetFlowMetadata</a></code> | <code>string</code> | [Read] quicksight:GetFlowMetadata. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.actionGetFlowPermissions">actionGetFlowPermissions</a></code> | <code>string</code> | [Read] quicksight:GetFlowPermissions. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.actionGetGroupMapping">actionGetGroupMapping</a></code> | <code>string</code> | [Read] quicksight:GetGroupMapping. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.actionGetIdentityContext">actionGetIdentityContext</a></code> | <code>string</code> | [Read] quicksight:GetIdentityContext. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.actionGetPolicyAssignment">actionGetPolicyAssignment</a></code> | <code>string</code> | [Read] quicksight:GetPolicyAssignment. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.actionGetSessionEmbedUrl">actionGetSessionEmbedUrl</a></code> | <code>string</code> | [Read] quicksight:GetSessionEmbedUrl. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.actionSetGroupMapping">actionSetGroupMapping</a></code> | <code>string</code> | [Write] quicksight:SetGroupMapping. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
@@ -6097,9 +6099,11 @@ new quicksight.QuickSightActions()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.AuthorizeOAuthAccess">AuthorizeOAuthAccess</a></code> | <code>string</code> | [Write] quicksight:AuthorizeOAuthAccess. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.BatchCreateTopicReviewedAnswer">BatchCreateTopicReviewedAnswer</a></code> | <code>string</code> | [Write] quicksight:BatchCreateTopicReviewedAnswer. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.BatchDeleteKnowledgeBase">BatchDeleteKnowledgeBase</a></code> | <code>string</code> | [Write] quicksight:BatchDeleteKnowledgeBase. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.BatchDeletePolicyAssignmentByPolicy">BatchDeletePolicyAssignmentByPolicy</a></code> | <code>string</code> | [Write] quicksight:BatchDeletePolicyAssignmentByPolicy. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.BatchDeleteTopicReviewedAnswer">BatchDeleteTopicReviewedAnswer</a></code> | <code>string</code> | [Write] quicksight:BatchDeleteTopicReviewedAnswer. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.BatchDescribeUserLimits">BatchDescribeUserLimits</a></code> | <code>string</code> | [Read] quicksight:BatchDescribeUserLimits. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.BatchGetPreferences">BatchGetPreferences</a></code> | <code>string</code> | [Read] quicksight:BatchGetPreferences. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.BatchPutPolicyAssignmentByPolicy">BatchPutPolicyAssignmentByPolicy</a></code> | <code>string</code> | [Write] quicksight:BatchPutPolicyAssignmentByPolicy. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.BatchUpdatePreferences">BatchUpdatePreferences</a></code> | <code>string</code> | [Write] quicksight:BatchUpdatePreferences. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CancelIngestion">CancelIngestion</a></code> | <code>string</code> | [Write] quicksight:CancelIngestion. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CreateAccessControlApplication">CreateAccessControlApplication</a></code> | <code>string</code> | [Write] quicksight:CreateAccessControlApplication. |
@@ -6129,6 +6133,7 @@ new quicksight.QuickSightActions()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CreateInboundConnector">CreateInboundConnector</a></code> | <code>string</code> | [Write] quicksight:CreateInboundConnector. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CreateIngestion">CreateIngestion</a></code> | <code>string</code> | [Write] quicksight:CreateIngestion. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CreateKnowledgeBase">CreateKnowledgeBase</a></code> | <code>string</code> | [Write] quicksight:CreateKnowledgeBase. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CreateKnowledgeBaseRefreshSchedule">CreateKnowledgeBaseRefreshSchedule</a></code> | <code>string</code> | [Write] quicksight:CreateKnowledgeBaseRefreshSchedule. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CreateLimitsProfile">CreateLimitsProfile</a></code> | <code>string</code> | [Write] quicksight:CreateLimitsProfile. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CreateNamespace">CreateNamespace</a></code> | <code>string</code> | [Write] quicksight:CreateNamespace. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.CreateOAuthClientApplication">CreateOAuthClientApplication</a></code> | <code>string</code> | [Write] quicksight:CreateOAuthClientApplication. |
@@ -6176,9 +6181,11 @@ new quicksight.QuickSightActions()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteIdentityPropagationConfig">DeleteIdentityPropagationConfig</a></code> | <code>string</code> | [Write] quicksight:DeleteIdentityPropagationConfig. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteInboundConnector">DeleteInboundConnector</a></code> | <code>string</code> | [Write] quicksight:DeleteInboundConnector. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteKnowledgeBase">DeleteKnowledgeBase</a></code> | <code>string</code> | [Write] quicksight:DeleteKnowledgeBase. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteKnowledgeBaseRefreshSchedule">DeleteKnowledgeBaseRefreshSchedule</a></code> | <code>string</code> | [Write] quicksight:DeleteKnowledgeBaseRefreshSchedule. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteLimitsProfile">DeleteLimitsProfile</a></code> | <code>string</code> | [Write] quicksight:DeleteLimitsProfile. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteNamespace">DeleteNamespace</a></code> | <code>string</code> | [Write] quicksight:DeleteNamespace. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteOAuthClientApplication">DeleteOAuthClientApplication</a></code> | <code>string</code> | [Write] quicksight:DeleteOAuthClientApplication. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DeletePolicyAssignment">DeletePolicyAssignment</a></code> | <code>string</code> | [Write] quicksight:DeletePolicyAssignment. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteRefreshSchedule">DeleteRefreshSchedule</a></code> | <code>string</code> | [Write] quicksight:DeleteRefreshSchedule. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteRoleCustomPermission">DeleteRoleCustomPermission</a></code> | <code>string</code> | [Write] quicksight:DeleteRoleCustomPermission. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteRoleMembership">DeleteRoleMembership</a></code> | <code>string</code> | [Write] quicksight:DeleteRoleMembership. |
@@ -6245,6 +6252,7 @@ new quicksight.QuickSightActions()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeKeyRegistration">DescribeKeyRegistration</a></code> | <code>string</code> | [Read] quicksight:DescribeKeyRegistration. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeKnowledgeBase">DescribeKnowledgeBase</a></code> | <code>string</code> | [Read] quicksight:DescribeKnowledgeBase. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeKnowledgeBasePermissions">DescribeKnowledgeBasePermissions</a></code> | <code>string</code> | [PermissionManagement] quicksight:DescribeKnowledgeBasePermissions. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeKnowledgeBaseRefreshSchedule">DescribeKnowledgeBaseRefreshSchedule</a></code> | <code>string</code> | [Read] quicksight:DescribeKnowledgeBaseRefreshSchedule. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeLimitsProfile">DescribeLimitsProfile</a></code> | <code>string</code> | [Read] quicksight:DescribeLimitsProfile. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeNamespace">DescribeNamespace</a></code> | <code>string</code> | [Read] quicksight:DescribeNamespace. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeOAuthClientApplication">DescribeOAuthClientApplication</a></code> | <code>string</code> | [Read] quicksight:DescribeOAuthClientApplication. |
@@ -6305,10 +6313,12 @@ new quicksight.QuickSightActions()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListInboundConnectors">ListInboundConnectors</a></code> | <code>string</code> | [List] quicksight:ListInboundConnectors. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListIngestions">ListIngestions</a></code> | <code>string</code> | [List] quicksight:ListIngestions. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListKMSKeysForUser">ListKMSKeysForUser</a></code> | <code>string</code> | [List] quicksight:ListKMSKeysForUser. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListKnowledgeBaseRefreshSchedules">ListKnowledgeBaseRefreshSchedules</a></code> | <code>string</code> | [List] quicksight:ListKnowledgeBaseRefreshSchedules. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListKnowledgeBases">ListKnowledgeBases</a></code> | <code>string</code> | [List] quicksight:ListKnowledgeBases. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListLimitsProfiles">ListLimitsProfiles</a></code> | <code>string</code> | [List] quicksight:ListLimitsProfiles. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListNamespaces">ListNamespaces</a></code> | <code>string</code> | [List] quicksight:ListNamespaces. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListOAuthClientApplications">ListOAuthClientApplications</a></code> | <code>string</code> | [List] quicksight:ListOAuthClientApplications. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListPrincipalsForPolicy">ListPrincipalsForPolicy</a></code> | <code>string</code> | [List] quicksight:ListPrincipalsForPolicy. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListRefreshSchedules">ListRefreshSchedules</a></code> | <code>string</code> | [List] quicksight:ListRefreshSchedules. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListRoleMemberships">ListRoleMemberships</a></code> | <code>string</code> | [List] quicksight:ListRoleMemberships. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.ListSelfUpgrades">ListSelfUpgrades</a></code> | <code>string</code> | [List] quicksight:ListSelfUpgrades. |
@@ -6333,6 +6343,7 @@ new quicksight.QuickSightActions()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.PassTopic">PassTopic</a></code> | <code>string</code> | [Read] quicksight:PassTopic. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.PredictQAResults">PredictQAResults</a></code> | <code>string</code> | [Read] quicksight:PredictQAResults. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.PutDataSetRefreshProperties">PutDataSetRefreshProperties</a></code> | <code>string</code> | [Write] quicksight:PutDataSetRefreshProperties. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.PutPolicyAssignment">PutPolicyAssignment</a></code> | <code>string</code> | [Write] quicksight:PutPolicyAssignment. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.QuickSuiteUsageMetrics">QuickSuiteUsageMetrics</a></code> | <code>string</code> | [Read] quicksight:QuickSuiteUsageMetrics. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.RegisterCustomerManagedKey">RegisterCustomerManagedKey</a></code> | <code>string</code> | [Write] quicksight:RegisterCustomerManagedKey. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.RegisterUser">RegisterUser</a></code> | <code>string</code> | [Write] quicksight:RegisterUser. |
@@ -6415,6 +6426,7 @@ new quicksight.QuickSightActions()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateKeyRegistration">UpdateKeyRegistration</a></code> | <code>string</code> | [Write] quicksight:UpdateKeyRegistration. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateKnowledgeBase">UpdateKnowledgeBase</a></code> | <code>string</code> | [Write] quicksight:UpdateKnowledgeBase. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateKnowledgeBasePermissions">UpdateKnowledgeBasePermissions</a></code> | <code>string</code> | [PermissionManagement] quicksight:UpdateKnowledgeBasePermissions. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateKnowledgeBaseRefreshSchedule">UpdateKnowledgeBaseRefreshSchedule</a></code> | <code>string</code> | [Write] quicksight:UpdateKnowledgeBaseRefreshSchedule. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateLimitsProfile">UpdateLimitsProfile</a></code> | <code>string</code> | [Write] quicksight:UpdateLimitsProfile. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateOAuthClientApplication">UpdateOAuthClientApplication</a></code> | <code>string</code> | [Write] quicksight:UpdateOAuthClientApplication. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightActions.property.UpdatePublicSharingSettings">UpdatePublicSharingSettings</a></code> | <code>string</code> | [Write] quicksight:UpdatePublicSharingSettings. |
@@ -6505,6 +6517,18 @@ public readonly actionGetDashboardEmbedUrl: string;
 
 ---
 
+##### `actionGetEffectiveCustomPermissions`<sup>Required</sup> <a name="actionGetEffectiveCustomPermissions" id="@cdk_utils/iam.quicksight.QuickSightActions.property.actionGetEffectiveCustomPermissions"></a>
+
+```typescript
+public readonly actionGetEffectiveCustomPermissions: string;
+```
+
+- *Type:* string
+
+[Read] quicksight:GetEffectiveCustomPermissions.
+
+---
+
 ##### `actionGetFlowMetadata`<sup>Required</sup> <a name="actionGetFlowMetadata" id="@cdk_utils/iam.quicksight.QuickSightActions.property.actionGetFlowMetadata"></a>
 
 ```typescript
@@ -6550,6 +6574,18 @@ public readonly actionGetIdentityContext: string;
 - *Type:* string
 
 [Read] quicksight:GetIdentityContext.
+
+---
+
+##### `actionGetPolicyAssignment`<sup>Required</sup> <a name="actionGetPolicyAssignment" id="@cdk_utils/iam.quicksight.QuickSightActions.property.actionGetPolicyAssignment"></a>
+
+```typescript
+public readonly actionGetPolicyAssignment: string;
+```
+
+- *Type:* string
+
+[Read] quicksight:GetPolicyAssignment.
 
 ---
 
@@ -6685,6 +6721,18 @@ public readonly BatchDeleteKnowledgeBase: string;
 
 ---
 
+##### `BatchDeletePolicyAssignmentByPolicy`<sup>Required</sup> <a name="BatchDeletePolicyAssignmentByPolicy" id="@cdk_utils/iam.quicksight.QuickSightActions.property.BatchDeletePolicyAssignmentByPolicy"></a>
+
+```typescript
+public readonly BatchDeletePolicyAssignmentByPolicy: string;
+```
+
+- *Type:* string
+
+[Write] quicksight:BatchDeletePolicyAssignmentByPolicy.
+
+---
+
 ##### `BatchDeleteTopicReviewedAnswer`<sup>Required</sup> <a name="BatchDeleteTopicReviewedAnswer" id="@cdk_utils/iam.quicksight.QuickSightActions.property.BatchDeleteTopicReviewedAnswer"></a>
 
 ```typescript
@@ -6718,6 +6766,18 @@ public readonly BatchGetPreferences: string;
 - *Type:* string
 
 [Read] quicksight:BatchGetPreferences.
+
+---
+
+##### `BatchPutPolicyAssignmentByPolicy`<sup>Required</sup> <a name="BatchPutPolicyAssignmentByPolicy" id="@cdk_utils/iam.quicksight.QuickSightActions.property.BatchPutPolicyAssignmentByPolicy"></a>
+
+```typescript
+public readonly BatchPutPolicyAssignmentByPolicy: string;
+```
+
+- *Type:* string
+
+[Write] quicksight:BatchPutPolicyAssignmentByPolicy.
 
 ---
 
@@ -7066,6 +7126,18 @@ public readonly CreateKnowledgeBase: string;
 - *Type:* string
 
 [Write] quicksight:CreateKnowledgeBase.
+
+---
+
+##### `CreateKnowledgeBaseRefreshSchedule`<sup>Required</sup> <a name="CreateKnowledgeBaseRefreshSchedule" id="@cdk_utils/iam.quicksight.QuickSightActions.property.CreateKnowledgeBaseRefreshSchedule"></a>
+
+```typescript
+public readonly CreateKnowledgeBaseRefreshSchedule: string;
+```
+
+- *Type:* string
+
+[Write] quicksight:CreateKnowledgeBaseRefreshSchedule.
 
 ---
 
@@ -7633,6 +7705,18 @@ public readonly DeleteKnowledgeBase: string;
 
 ---
 
+##### `DeleteKnowledgeBaseRefreshSchedule`<sup>Required</sup> <a name="DeleteKnowledgeBaseRefreshSchedule" id="@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteKnowledgeBaseRefreshSchedule"></a>
+
+```typescript
+public readonly DeleteKnowledgeBaseRefreshSchedule: string;
+```
+
+- *Type:* string
+
+[Write] quicksight:DeleteKnowledgeBaseRefreshSchedule.
+
+---
+
 ##### `DeleteLimitsProfile`<sup>Required</sup> <a name="DeleteLimitsProfile" id="@cdk_utils/iam.quicksight.QuickSightActions.property.DeleteLimitsProfile"></a>
 
 ```typescript
@@ -7666,6 +7750,18 @@ public readonly DeleteOAuthClientApplication: string;
 - *Type:* string
 
 [Write] quicksight:DeleteOAuthClientApplication.
+
+---
+
+##### `DeletePolicyAssignment`<sup>Required</sup> <a name="DeletePolicyAssignment" id="@cdk_utils/iam.quicksight.QuickSightActions.property.DeletePolicyAssignment"></a>
+
+```typescript
+public readonly DeletePolicyAssignment: string;
+```
+
+- *Type:* string
+
+[Write] quicksight:DeletePolicyAssignment.
 
 ---
 
@@ -8461,6 +8557,18 @@ public readonly DescribeKnowledgeBasePermissions: string;
 
 ---
 
+##### `DescribeKnowledgeBaseRefreshSchedule`<sup>Required</sup> <a name="DescribeKnowledgeBaseRefreshSchedule" id="@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeKnowledgeBaseRefreshSchedule"></a>
+
+```typescript
+public readonly DescribeKnowledgeBaseRefreshSchedule: string;
+```
+
+- *Type:* string
+
+[Read] quicksight:DescribeKnowledgeBaseRefreshSchedule.
+
+---
+
 ##### `DescribeLimitsProfile`<sup>Required</sup> <a name="DescribeLimitsProfile" id="@cdk_utils/iam.quicksight.QuickSightActions.property.DescribeLimitsProfile"></a>
 
 ```typescript
@@ -9181,6 +9289,18 @@ public readonly ListKMSKeysForUser: string;
 
 ---
 
+##### `ListKnowledgeBaseRefreshSchedules`<sup>Required</sup> <a name="ListKnowledgeBaseRefreshSchedules" id="@cdk_utils/iam.quicksight.QuickSightActions.property.ListKnowledgeBaseRefreshSchedules"></a>
+
+```typescript
+public readonly ListKnowledgeBaseRefreshSchedules: string;
+```
+
+- *Type:* string
+
+[List] quicksight:ListKnowledgeBaseRefreshSchedules.
+
+---
+
 ##### `ListKnowledgeBases`<sup>Required</sup> <a name="ListKnowledgeBases" id="@cdk_utils/iam.quicksight.QuickSightActions.property.ListKnowledgeBases"></a>
 
 ```typescript
@@ -9226,6 +9346,18 @@ public readonly ListOAuthClientApplications: string;
 - *Type:* string
 
 [List] quicksight:ListOAuthClientApplications.
+
+---
+
+##### `ListPrincipalsForPolicy`<sup>Required</sup> <a name="ListPrincipalsForPolicy" id="@cdk_utils/iam.quicksight.QuickSightActions.property.ListPrincipalsForPolicy"></a>
+
+```typescript
+public readonly ListPrincipalsForPolicy: string;
+```
+
+- *Type:* string
+
+[List] quicksight:ListPrincipalsForPolicy.
 
 ---
 
@@ -9514,6 +9646,18 @@ public readonly PutDataSetRefreshProperties: string;
 - *Type:* string
 
 [Write] quicksight:PutDataSetRefreshProperties.
+
+---
+
+##### `PutPolicyAssignment`<sup>Required</sup> <a name="PutPolicyAssignment" id="@cdk_utils/iam.quicksight.QuickSightActions.property.PutPolicyAssignment"></a>
+
+```typescript
+public readonly PutPolicyAssignment: string;
+```
+
+- *Type:* string
+
+[Write] quicksight:PutPolicyAssignment.
 
 ---
 
@@ -10498,6 +10642,18 @@ public readonly UpdateKnowledgeBasePermissions: string;
 - *Type:* string
 
 [PermissionManagement] quicksight:UpdateKnowledgeBasePermissions.
+
+---
+
+##### `UpdateKnowledgeBaseRefreshSchedule`<sup>Required</sup> <a name="UpdateKnowledgeBaseRefreshSchedule" id="@cdk_utils/iam.quicksight.QuickSightActions.property.UpdateKnowledgeBaseRefreshSchedule"></a>
+
+```typescript
+public readonly UpdateKnowledgeBaseRefreshSchedule: string;
+```
+
+- *Type:* string
+
+[Write] quicksight:UpdateKnowledgeBaseRefreshSchedule.
 
 ---
 
@@ -12124,9 +12280,13 @@ new quicksight.QuickSightOperations()
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.BatchCreateTopicReviewedAnswer">BatchCreateTopicReviewedAnswer</a></code> | <code>string[]</code> | IAM actions required for the BatchCreateTopicReviewedAnswer API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.BatchDeleteKnowledgeBase">BatchDeleteKnowledgeBase</a></code> | <code>string[]</code> | IAM actions required for the BatchDeleteKnowledgeBase API call. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.BatchDeletePolicyAssignmentByPolicy">BatchDeletePolicyAssignmentByPolicy</a></code> | <code>string[]</code> | IAM actions required for the BatchDeletePolicyAssignmentByPolicy API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.BatchDeleteTopicReviewedAnswer">BatchDeleteTopicReviewedAnswer</a></code> | <code>string[]</code> | IAM actions required for the BatchDeleteTopicReviewedAnswer API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.BatchDescribeUserLimits">BatchDescribeUserLimits</a></code> | <code>string[]</code> | IAM actions required for the BatchDescribeUserLimits API call. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.BatchPutPolicyAssignmentByPolicy">BatchPutPolicyAssignmentByPolicy</a></code> | <code>string[]</code> | IAM actions required for the BatchPutPolicyAssignmentByPolicy API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.CancelIngestion">CancelIngestion</a></code> | <code>string[]</code> | IAM actions required for the CancelIngestion API call. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.CreateAccessControlApplication">CreateAccessControlApplication</a></code> | <code>string[]</code> | IAM actions required for the CreateAccessControlApplication API call. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.CreateAccessControlApplicationSecret">CreateAccessControlApplicationSecret</a></code> | <code>string[]</code> | IAM actions required for the CreateAccessControlApplicationSecret API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.CreateAccountCustomization">CreateAccountCustomization</a></code> | <code>string[]</code> | IAM actions required for the CreateAccountCustomization API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.CreateAccountSubscription">CreateAccountSubscription</a></code> | <code>string[]</code> | IAM actions required for the CreateAccountSubscription API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.CreateActionConnector">CreateActionConnector</a></code> | <code>string[]</code> | IAM actions required for the CreateActionConnector API call. |
@@ -12145,8 +12305,10 @@ new quicksight.QuickSightOperations()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.CreateGroup">CreateGroup</a></code> | <code>string[]</code> | IAM actions required for the CreateGroup API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.CreateGroupMembership">CreateGroupMembership</a></code> | <code>string[]</code> | IAM actions required for the CreateGroupMembership API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.CreateIAMPolicyAssignment">CreateIAMPolicyAssignment</a></code> | <code>string[]</code> | IAM actions required for the CreateIAMPolicyAssignment API call. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.CreateInboundConnector">CreateInboundConnector</a></code> | <code>string[]</code> | IAM actions required for the CreateInboundConnector API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.CreateIngestion">CreateIngestion</a></code> | <code>string[]</code> | IAM actions required for the CreateIngestion API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.CreateKnowledgeBase">CreateKnowledgeBase</a></code> | <code>string[]</code> | IAM actions required for the CreateKnowledgeBase API call. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.CreateKnowledgeBaseRefreshSchedule">CreateKnowledgeBaseRefreshSchedule</a></code> | <code>string[]</code> | IAM actions required for the CreateKnowledgeBaseRefreshSchedule API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.CreateLimitsProfile">CreateLimitsProfile</a></code> | <code>string[]</code> | IAM actions required for the CreateLimitsProfile API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.CreateNamespace">CreateNamespace</a></code> | <code>string[]</code> | IAM actions required for the CreateNamespace API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.CreateOAuthClientApplication">CreateOAuthClientApplication</a></code> | <code>string[]</code> | IAM actions required for the CreateOAuthClientApplication API call. |
@@ -12161,6 +12323,8 @@ new quicksight.QuickSightOperations()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.CreateTopicRefreshSchedule">CreateTopicRefreshSchedule</a></code> | <code>string[]</code> | IAM actions required for the CreateTopicRefreshSchedule API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.CreateTopicV2">CreateTopicV2</a></code> | <code>string[]</code> | IAM actions required for the CreateTopicV2 API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.CreateVPCConnection">CreateVPCConnection</a></code> | <code>string[]</code> | IAM actions required for the CreateVPCConnection API call. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DeleteAccessControlApplication">DeleteAccessControlApplication</a></code> | <code>string[]</code> | IAM actions required for the DeleteAccessControlApplication API call. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DeleteAccessControlApplicationSecret">DeleteAccessControlApplicationSecret</a></code> | <code>string[]</code> | IAM actions required for the DeleteAccessControlApplicationSecret API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DeleteAccountCustomization">DeleteAccountCustomization</a></code> | <code>string[]</code> | IAM actions required for the DeleteAccountCustomization API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DeleteAccountCustomPermission">DeleteAccountCustomPermission</a></code> | <code>string[]</code> | IAM actions required for the DeleteAccountCustomPermission API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DeleteAccountSubscription">DeleteAccountSubscription</a></code> | <code>string[]</code> | IAM actions required for the DeleteAccountSubscription API call. |
@@ -12185,10 +12349,13 @@ new quicksight.QuickSightOperations()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DeleteGroupMembership">DeleteGroupMembership</a></code> | <code>string[]</code> | IAM actions required for the DeleteGroupMembership API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DeleteIAMPolicyAssignment">DeleteIAMPolicyAssignment</a></code> | <code>string[]</code> | IAM actions required for the DeleteIAMPolicyAssignment API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DeleteIdentityPropagationConfig">DeleteIdentityPropagationConfig</a></code> | <code>string[]</code> | IAM actions required for the DeleteIdentityPropagationConfig API call. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DeleteInboundConnector">DeleteInboundConnector</a></code> | <code>string[]</code> | IAM actions required for the DeleteInboundConnector API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DeleteKnowledgeBase">DeleteKnowledgeBase</a></code> | <code>string[]</code> | IAM actions required for the DeleteKnowledgeBase API call. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DeleteKnowledgeBaseRefreshSchedule">DeleteKnowledgeBaseRefreshSchedule</a></code> | <code>string[]</code> | IAM actions required for the DeleteKnowledgeBaseRefreshSchedule API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DeleteLimitsProfile">DeleteLimitsProfile</a></code> | <code>string[]</code> | IAM actions required for the DeleteLimitsProfile API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DeleteNamespace">DeleteNamespace</a></code> | <code>string[]</code> | IAM actions required for the DeleteNamespace API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DeleteOAuthClientApplication">DeleteOAuthClientApplication</a></code> | <code>string[]</code> | IAM actions required for the DeleteOAuthClientApplication API call. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DeletePolicyAssignment">DeletePolicyAssignment</a></code> | <code>string[]</code> | IAM actions required for the DeletePolicyAssignment API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DeleteRefreshSchedule">DeleteRefreshSchedule</a></code> | <code>string[]</code> | IAM actions required for the DeleteRefreshSchedule API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DeleteRoleCustomPermission">DeleteRoleCustomPermission</a></code> | <code>string[]</code> | IAM actions required for the DeleteRoleCustomPermission API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DeleteRoleMembership">DeleteRoleMembership</a></code> | <code>string[]</code> | IAM actions required for the DeleteRoleMembership API call. |
@@ -12204,6 +12371,7 @@ new quicksight.QuickSightOperations()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DeleteUserByPrincipalId">DeleteUserByPrincipalId</a></code> | <code>string[]</code> | IAM actions required for the DeleteUserByPrincipalId API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DeleteUserCustomPermission">DeleteUserCustomPermission</a></code> | <code>string[]</code> | IAM actions required for the DeleteUserCustomPermission API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DeleteVPCConnection">DeleteVPCConnection</a></code> | <code>string[]</code> | IAM actions required for the DeleteVPCConnection API call. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeAccessControlApplication">DescribeAccessControlApplication</a></code> | <code>string[]</code> | IAM actions required for the DescribeAccessControlApplication API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeAccountCustomization">DescribeAccountCustomization</a></code> | <code>string[]</code> | IAM actions required for the DescribeAccountCustomization API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeAccountCustomPermission">DescribeAccountCustomPermission</a></code> | <code>string[]</code> | IAM actions required for the DescribeAccountCustomPermission API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeAccountSettings">DescribeAccountSettings</a></code> | <code>string[]</code> | IAM actions required for the DescribeAccountSettings API call. |
@@ -12245,11 +12413,13 @@ new quicksight.QuickSightOperations()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeGroup">DescribeGroup</a></code> | <code>string[]</code> | IAM actions required for the DescribeGroup API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeGroupMembership">DescribeGroupMembership</a></code> | <code>string[]</code> | IAM actions required for the DescribeGroupMembership API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeIAMPolicyAssignment">DescribeIAMPolicyAssignment</a></code> | <code>string[]</code> | IAM actions required for the DescribeIAMPolicyAssignment API call. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeInboundConnector">DescribeInboundConnector</a></code> | <code>string[]</code> | IAM actions required for the DescribeInboundConnector API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeIngestion">DescribeIngestion</a></code> | <code>string[]</code> | IAM actions required for the DescribeIngestion API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeIpRestriction">DescribeIpRestriction</a></code> | <code>string[]</code> | IAM actions required for the DescribeIpRestriction API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeKeyRegistration">DescribeKeyRegistration</a></code> | <code>string[]</code> | IAM actions required for the DescribeKeyRegistration API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeKnowledgeBase">DescribeKnowledgeBase</a></code> | <code>string[]</code> | IAM actions required for the DescribeKnowledgeBase API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeKnowledgeBasePermissions">DescribeKnowledgeBasePermissions</a></code> | <code>string[]</code> | IAM actions required for the DescribeKnowledgeBasePermissions API call. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeKnowledgeBaseRefreshSchedule">DescribeKnowledgeBaseRefreshSchedule</a></code> | <code>string[]</code> | IAM actions required for the DescribeKnowledgeBaseRefreshSchedule API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeLimitsProfile">DescribeLimitsProfile</a></code> | <code>string[]</code> | IAM actions required for the DescribeLimitsProfile API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeNamespace">DescribeNamespace</a></code> | <code>string[]</code> | IAM actions required for the DescribeNamespace API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeOAuthClientApplication">DescribeOAuthClientApplication</a></code> | <code>string[]</code> | IAM actions required for the DescribeOAuthClientApplication API call. |
@@ -12279,6 +12449,7 @@ new quicksight.QuickSightOperations()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.GenerateEmbedUrlForAnonymousUser">GenerateEmbedUrlForAnonymousUser</a></code> | <code>string[]</code> | IAM actions required for the GenerateEmbedUrlForAnonymousUser API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.GenerateEmbedUrlForRegisteredUser">GenerateEmbedUrlForRegisteredUser</a></code> | <code>string[]</code> | IAM actions required for the GenerateEmbedUrlForRegisteredUser API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.GenerateEmbedUrlForRegisteredUserWithIdentity">GenerateEmbedUrlForRegisteredUserWithIdentity</a></code> | <code>string[]</code> | IAM actions required for the GenerateEmbedUrlForRegisteredUserWithIdentity API call. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.ListAccessControlApplications">ListAccessControlApplications</a></code> | <code>string[]</code> | IAM actions required for the ListAccessControlApplications API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.ListActionConnectors">ListActionConnectors</a></code> | <code>string[]</code> | IAM actions required for the ListActionConnectors API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.ListAgents">ListAgents</a></code> | <code>string[]</code> | IAM actions required for the ListAgents API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.ListAnalyses">ListAnalyses</a></code> | <code>string[]</code> | IAM actions required for the ListAnalyses API call. |
@@ -12302,11 +12473,15 @@ new quicksight.QuickSightOperations()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.ListIAMPolicyAssignments">ListIAMPolicyAssignments</a></code> | <code>string[]</code> | IAM actions required for the ListIAMPolicyAssignments API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.ListIAMPolicyAssignmentsForUser">ListIAMPolicyAssignmentsForUser</a></code> | <code>string[]</code> | IAM actions required for the ListIAMPolicyAssignmentsForUser API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.ListIdentityPropagationConfigs">ListIdentityPropagationConfigs</a></code> | <code>string[]</code> | IAM actions required for the ListIdentityPropagationConfigs API call. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.ListInboundConnectorApplicationAssociations">ListInboundConnectorApplicationAssociations</a></code> | <code>string[]</code> | IAM actions required for the ListInboundConnectorApplicationAssociations API call. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.ListInboundConnectors">ListInboundConnectors</a></code> | <code>string[]</code> | IAM actions required for the ListInboundConnectors API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.ListIngestions">ListIngestions</a></code> | <code>string[]</code> | IAM actions required for the ListIngestions API call. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.ListKnowledgeBaseRefreshSchedules">ListKnowledgeBaseRefreshSchedules</a></code> | <code>string[]</code> | IAM actions required for the ListKnowledgeBaseRefreshSchedules API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.ListKnowledgeBases">ListKnowledgeBases</a></code> | <code>string[]</code> | IAM actions required for the ListKnowledgeBases API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.ListLimitsProfiles">ListLimitsProfiles</a></code> | <code>string[]</code> | IAM actions required for the ListLimitsProfiles API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.ListNamespaces">ListNamespaces</a></code> | <code>string[]</code> | IAM actions required for the ListNamespaces API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.ListOAuthClientApplications">ListOAuthClientApplications</a></code> | <code>string[]</code> | IAM actions required for the ListOAuthClientApplications API call. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.ListPrincipalsForPolicy">ListPrincipalsForPolicy</a></code> | <code>string[]</code> | IAM actions required for the ListPrincipalsForPolicy API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.ListRefreshSchedules">ListRefreshSchedules</a></code> | <code>string[]</code> | IAM actions required for the ListRefreshSchedules API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.ListRoleMemberships">ListRoleMemberships</a></code> | <code>string[]</code> | IAM actions required for the ListRoleMemberships API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.ListSelfUpgrades">ListSelfUpgrades</a></code> | <code>string[]</code> | IAM actions required for the ListSelfUpgrades API call. |
@@ -12331,9 +12506,11 @@ new quicksight.QuickSightOperations()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.opGetFlowMetadata">opGetFlowMetadata</a></code> | <code>string[]</code> | IAM actions required for the GetFlowMetadata API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.opGetFlowPermissions">opGetFlowPermissions</a></code> | <code>string[]</code> | IAM actions required for the GetFlowPermissions API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.opGetIdentityContext">opGetIdentityContext</a></code> | <code>string[]</code> | IAM actions required for the GetIdentityContext API call. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.opGetPolicyAssignment">opGetPolicyAssignment</a></code> | <code>string[]</code> | IAM actions required for the GetPolicyAssignment API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.opGetSessionEmbedUrl">opGetSessionEmbedUrl</a></code> | <code>string[]</code> | IAM actions required for the GetSessionEmbedUrl API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.PredictQAResults">PredictQAResults</a></code> | <code>string[]</code> | IAM actions required for the PredictQAResults API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.PutDataSetRefreshProperties">PutDataSetRefreshProperties</a></code> | <code>string[]</code> | IAM actions required for the PutDataSetRefreshProperties API call. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.PutPolicyAssignment">PutPolicyAssignment</a></code> | <code>string[]</code> | IAM actions required for the PutPolicyAssignment API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.RegisterUser">RegisterUser</a></code> | <code>string[]</code> | IAM actions required for the RegisterUser API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.RestoreAnalysis">RestoreAnalysis</a></code> | <code>string[]</code> | IAM actions required for the RestoreAnalysis API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.SearchActionConnectors">SearchActionConnectors</a></code> | <code>string[]</code> | IAM actions required for the SearchActionConnectors API call. |
@@ -12357,6 +12534,8 @@ new quicksight.QuickSightOperations()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.StartDashboardSnapshotJobSchedule">StartDashboardSnapshotJobSchedule</a></code> | <code>string[]</code> | IAM actions required for the StartDashboardSnapshotJobSchedule API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateAccessControlApplication">UpdateAccessControlApplication</a></code> | <code>string[]</code> | IAM actions required for the UpdateAccessControlApplication API call. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateAccessControlApplicationSecret">UpdateAccessControlApplicationSecret</a></code> | <code>string[]</code> | IAM actions required for the UpdateAccessControlApplicationSecret API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateAccountCustomization">UpdateAccountCustomization</a></code> | <code>string[]</code> | IAM actions required for the UpdateAccountCustomization API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateAccountCustomPermission">UpdateAccountCustomPermission</a></code> | <code>string[]</code> | IAM actions required for the UpdateAccountCustomPermission API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateAccountSettings">UpdateAccountSettings</a></code> | <code>string[]</code> | IAM actions required for the UpdateAccountSettings API call. |
@@ -12391,10 +12570,13 @@ new quicksight.QuickSightOperations()
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateGroup">UpdateGroup</a></code> | <code>string[]</code> | IAM actions required for the UpdateGroup API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateIAMPolicyAssignment">UpdateIAMPolicyAssignment</a></code> | <code>string[]</code> | IAM actions required for the UpdateIAMPolicyAssignment API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateIdentityPropagationConfig">UpdateIdentityPropagationConfig</a></code> | <code>string[]</code> | IAM actions required for the UpdateIdentityPropagationConfig API call. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateInboundConnector">UpdateInboundConnector</a></code> | <code>string[]</code> | IAM actions required for the UpdateInboundConnector API call. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateInboundConnectorApplicationAssociations">UpdateInboundConnectorApplicationAssociations</a></code> | <code>string[]</code> | IAM actions required for the UpdateInboundConnectorApplicationAssociations API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateIpRestriction">UpdateIpRestriction</a></code> | <code>string[]</code> | IAM actions required for the UpdateIpRestriction API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateKeyRegistration">UpdateKeyRegistration</a></code> | <code>string[]</code> | IAM actions required for the UpdateKeyRegistration API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateKnowledgeBase">UpdateKnowledgeBase</a></code> | <code>string[]</code> | IAM actions required for the UpdateKnowledgeBase API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateKnowledgeBasePermissions">UpdateKnowledgeBasePermissions</a></code> | <code>string[]</code> | IAM actions required for the UpdateKnowledgeBasePermissions API call. |
+| <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateKnowledgeBaseRefreshSchedule">UpdateKnowledgeBaseRefreshSchedule</a></code> | <code>string[]</code> | IAM actions required for the UpdateKnowledgeBaseRefreshSchedule API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateLimitsProfile">UpdateLimitsProfile</a></code> | <code>string[]</code> | IAM actions required for the UpdateLimitsProfile API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateOAuthClientApplication">UpdateOAuthClientApplication</a></code> | <code>string[]</code> | IAM actions required for the UpdateOAuthClientApplication API call. |
 | <code><a href="#@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdatePublicSharingSettings">UpdatePublicSharingSettings</a></code> | <code>string[]</code> | IAM actions required for the UpdatePublicSharingSettings API call. |
@@ -12450,6 +12632,18 @@ IAM actions required for the BatchDeleteKnowledgeBase API call.
 
 ---
 
+##### `BatchDeletePolicyAssignmentByPolicy`<sup>Required</sup> <a name="BatchDeletePolicyAssignmentByPolicy" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.BatchDeletePolicyAssignmentByPolicy"></a>
+
+```typescript
+public readonly BatchDeletePolicyAssignmentByPolicy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the BatchDeletePolicyAssignmentByPolicy API call.
+
+---
+
 ##### `BatchDeleteTopicReviewedAnswer`<sup>Required</sup> <a name="BatchDeleteTopicReviewedAnswer" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.BatchDeleteTopicReviewedAnswer"></a>
 
 ```typescript
@@ -12474,6 +12668,18 @@ IAM actions required for the BatchDescribeUserLimits API call.
 
 ---
 
+##### `BatchPutPolicyAssignmentByPolicy`<sup>Required</sup> <a name="BatchPutPolicyAssignmentByPolicy" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.BatchPutPolicyAssignmentByPolicy"></a>
+
+```typescript
+public readonly BatchPutPolicyAssignmentByPolicy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the BatchPutPolicyAssignmentByPolicy API call.
+
+---
+
 ##### `CancelIngestion`<sup>Required</sup> <a name="CancelIngestion" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.CancelIngestion"></a>
 
 ```typescript
@@ -12483,6 +12689,30 @@ public readonly CancelIngestion: string[];
 - *Type:* string[]
 
 IAM actions required for the CancelIngestion API call.
+
+---
+
+##### `CreateAccessControlApplication`<sup>Required</sup> <a name="CreateAccessControlApplication" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.CreateAccessControlApplication"></a>
+
+```typescript
+public readonly CreateAccessControlApplication: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateAccessControlApplication API call.
+
+---
+
+##### `CreateAccessControlApplicationSecret`<sup>Required</sup> <a name="CreateAccessControlApplicationSecret" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.CreateAccessControlApplicationSecret"></a>
+
+```typescript
+public readonly CreateAccessControlApplicationSecret: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateAccessControlApplicationSecret API call.
 
 ---
 
@@ -12702,6 +12932,18 @@ IAM actions required for the CreateIAMPolicyAssignment API call.
 
 ---
 
+##### `CreateInboundConnector`<sup>Required</sup> <a name="CreateInboundConnector" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.CreateInboundConnector"></a>
+
+```typescript
+public readonly CreateInboundConnector: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateInboundConnector API call.
+
+---
+
 ##### `CreateIngestion`<sup>Required</sup> <a name="CreateIngestion" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.CreateIngestion"></a>
 
 ```typescript
@@ -12723,6 +12965,18 @@ public readonly CreateKnowledgeBase: string[];
 - *Type:* string[]
 
 IAM actions required for the CreateKnowledgeBase API call.
+
+---
+
+##### `CreateKnowledgeBaseRefreshSchedule`<sup>Required</sup> <a name="CreateKnowledgeBaseRefreshSchedule" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.CreateKnowledgeBaseRefreshSchedule"></a>
+
+```typescript
+public readonly CreateKnowledgeBaseRefreshSchedule: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateKnowledgeBaseRefreshSchedule API call.
 
 ---
 
@@ -12891,6 +13145,30 @@ public readonly CreateVPCConnection: string[];
 - *Type:* string[]
 
 IAM actions required for the CreateVPCConnection API call.
+
+---
+
+##### `DeleteAccessControlApplication`<sup>Required</sup> <a name="DeleteAccessControlApplication" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.DeleteAccessControlApplication"></a>
+
+```typescript
+public readonly DeleteAccessControlApplication: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteAccessControlApplication API call.
+
+---
+
+##### `DeleteAccessControlApplicationSecret`<sup>Required</sup> <a name="DeleteAccessControlApplicationSecret" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.DeleteAccessControlApplicationSecret"></a>
+
+```typescript
+public readonly DeleteAccessControlApplicationSecret: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteAccessControlApplicationSecret API call.
 
 ---
 
@@ -13182,6 +13460,18 @@ IAM actions required for the DeleteIdentityPropagationConfig API call.
 
 ---
 
+##### `DeleteInboundConnector`<sup>Required</sup> <a name="DeleteInboundConnector" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.DeleteInboundConnector"></a>
+
+```typescript
+public readonly DeleteInboundConnector: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteInboundConnector API call.
+
+---
+
 ##### `DeleteKnowledgeBase`<sup>Required</sup> <a name="DeleteKnowledgeBase" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.DeleteKnowledgeBase"></a>
 
 ```typescript
@@ -13191,6 +13481,18 @@ public readonly DeleteKnowledgeBase: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteKnowledgeBase API call.
+
+---
+
+##### `DeleteKnowledgeBaseRefreshSchedule`<sup>Required</sup> <a name="DeleteKnowledgeBaseRefreshSchedule" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.DeleteKnowledgeBaseRefreshSchedule"></a>
+
+```typescript
+public readonly DeleteKnowledgeBaseRefreshSchedule: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteKnowledgeBaseRefreshSchedule API call.
 
 ---
 
@@ -13227,6 +13529,18 @@ public readonly DeleteOAuthClientApplication: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteOAuthClientApplication API call.
+
+---
+
+##### `DeletePolicyAssignment`<sup>Required</sup> <a name="DeletePolicyAssignment" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.DeletePolicyAssignment"></a>
+
+```typescript
+public readonly DeletePolicyAssignment: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeletePolicyAssignment API call.
 
 ---
 
@@ -13407,6 +13721,18 @@ public readonly DeleteVPCConnection: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteVPCConnection API call.
+
+---
+
+##### `DescribeAccessControlApplication`<sup>Required</sup> <a name="DescribeAccessControlApplication" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeAccessControlApplication"></a>
+
+```typescript
+public readonly DescribeAccessControlApplication: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeAccessControlApplication API call.
 
 ---
 
@@ -13902,6 +14228,18 @@ IAM actions required for the DescribeIAMPolicyAssignment API call.
 
 ---
 
+##### `DescribeInboundConnector`<sup>Required</sup> <a name="DescribeInboundConnector" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeInboundConnector"></a>
+
+```typescript
+public readonly DescribeInboundConnector: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeInboundConnector API call.
+
+---
+
 ##### `DescribeIngestion`<sup>Required</sup> <a name="DescribeIngestion" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeIngestion"></a>
 
 ```typescript
@@ -13959,6 +14297,18 @@ public readonly DescribeKnowledgeBasePermissions: string[];
 - *Type:* string[]
 
 IAM actions required for the DescribeKnowledgeBasePermissions API call.
+
+---
+
+##### `DescribeKnowledgeBaseRefreshSchedule`<sup>Required</sup> <a name="DescribeKnowledgeBaseRefreshSchedule" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.DescribeKnowledgeBaseRefreshSchedule"></a>
+
+```typescript
+public readonly DescribeKnowledgeBaseRefreshSchedule: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeKnowledgeBaseRefreshSchedule API call.
 
 ---
 
@@ -14310,6 +14660,18 @@ IAM actions required for the GenerateEmbedUrlForRegisteredUserWithIdentity API c
 
 ---
 
+##### `ListAccessControlApplications`<sup>Required</sup> <a name="ListAccessControlApplications" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.ListAccessControlApplications"></a>
+
+```typescript
+public readonly ListAccessControlApplications: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListAccessControlApplications API call.
+
+---
+
 ##### `ListActionConnectors`<sup>Required</sup> <a name="ListActionConnectors" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.ListActionConnectors"></a>
 
 ```typescript
@@ -14586,6 +14948,30 @@ IAM actions required for the ListIdentityPropagationConfigs API call.
 
 ---
 
+##### `ListInboundConnectorApplicationAssociations`<sup>Required</sup> <a name="ListInboundConnectorApplicationAssociations" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.ListInboundConnectorApplicationAssociations"></a>
+
+```typescript
+public readonly ListInboundConnectorApplicationAssociations: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListInboundConnectorApplicationAssociations API call.
+
+---
+
+##### `ListInboundConnectors`<sup>Required</sup> <a name="ListInboundConnectors" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.ListInboundConnectors"></a>
+
+```typescript
+public readonly ListInboundConnectors: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListInboundConnectors API call.
+
+---
+
 ##### `ListIngestions`<sup>Required</sup> <a name="ListIngestions" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.ListIngestions"></a>
 
 ```typescript
@@ -14595,6 +14981,18 @@ public readonly ListIngestions: string[];
 - *Type:* string[]
 
 IAM actions required for the ListIngestions API call.
+
+---
+
+##### `ListKnowledgeBaseRefreshSchedules`<sup>Required</sup> <a name="ListKnowledgeBaseRefreshSchedules" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.ListKnowledgeBaseRefreshSchedules"></a>
+
+```typescript
+public readonly ListKnowledgeBaseRefreshSchedules: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListKnowledgeBaseRefreshSchedules API call.
 
 ---
 
@@ -14643,6 +15041,18 @@ public readonly ListOAuthClientApplications: string[];
 - *Type:* string[]
 
 IAM actions required for the ListOAuthClientApplications API call.
+
+---
+
+##### `ListPrincipalsForPolicy`<sup>Required</sup> <a name="ListPrincipalsForPolicy" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.ListPrincipalsForPolicy"></a>
+
+```typescript
+public readonly ListPrincipalsForPolicy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListPrincipalsForPolicy API call.
 
 ---
 
@@ -14934,6 +15344,18 @@ IAM actions required for the GetIdentityContext API call.
 
 ---
 
+##### `opGetPolicyAssignment`<sup>Required</sup> <a name="opGetPolicyAssignment" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.opGetPolicyAssignment"></a>
+
+```typescript
+public readonly opGetPolicyAssignment: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetPolicyAssignment API call.
+
+---
+
 ##### `opGetSessionEmbedUrl`<sup>Required</sup> <a name="opGetSessionEmbedUrl" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.opGetSessionEmbedUrl"></a>
 
 ```typescript
@@ -14967,6 +15389,18 @@ public readonly PutDataSetRefreshProperties: string[];
 - *Type:* string[]
 
 IAM actions required for the PutDataSetRefreshProperties API call.
+
+---
+
+##### `PutPolicyAssignment`<sup>Required</sup> <a name="PutPolicyAssignment" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.PutPolicyAssignment"></a>
+
+```typescript
+public readonly PutPolicyAssignment: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the PutPolicyAssignment API call.
 
 ---
 
@@ -15243,6 +15677,30 @@ public readonly UntagResource: string[];
 - *Type:* string[]
 
 IAM actions required for the UntagResource API call.
+
+---
+
+##### `UpdateAccessControlApplication`<sup>Required</sup> <a name="UpdateAccessControlApplication" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateAccessControlApplication"></a>
+
+```typescript
+public readonly UpdateAccessControlApplication: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateAccessControlApplication API call.
+
+---
+
+##### `UpdateAccessControlApplicationSecret`<sup>Required</sup> <a name="UpdateAccessControlApplicationSecret" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateAccessControlApplicationSecret"></a>
+
+```typescript
+public readonly UpdateAccessControlApplicationSecret: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateAccessControlApplicationSecret API call.
 
 ---
 
@@ -15654,6 +16112,30 @@ IAM actions required for the UpdateIdentityPropagationConfig API call.
 
 ---
 
+##### `UpdateInboundConnector`<sup>Required</sup> <a name="UpdateInboundConnector" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateInboundConnector"></a>
+
+```typescript
+public readonly UpdateInboundConnector: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateInboundConnector API call.
+
+---
+
+##### `UpdateInboundConnectorApplicationAssociations`<sup>Required</sup> <a name="UpdateInboundConnectorApplicationAssociations" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateInboundConnectorApplicationAssociations"></a>
+
+```typescript
+public readonly UpdateInboundConnectorApplicationAssociations: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateInboundConnectorApplicationAssociations API call.
+
+---
+
 ##### `UpdateIpRestriction`<sup>Required</sup> <a name="UpdateIpRestriction" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateIpRestriction"></a>
 
 ```typescript
@@ -15699,6 +16181,18 @@ public readonly UpdateKnowledgeBasePermissions: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateKnowledgeBasePermissions API call.
+
+---
+
+##### `UpdateKnowledgeBaseRefreshSchedule`<sup>Required</sup> <a name="UpdateKnowledgeBaseRefreshSchedule" id="@cdk_utils/iam.quicksight.QuickSightOperations.property.UpdateKnowledgeBaseRefreshSchedule"></a>
+
+```typescript
+public readonly UpdateKnowledgeBaseRefreshSchedule: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateKnowledgeBaseRefreshSchedule API call.
 
 ---
 

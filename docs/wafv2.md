@@ -3759,6 +3759,9 @@ new wafv2.Wafv2Operations()
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Operations.property.ListAPIKeys">ListAPIKeys</a></code> | <code>string[]</code> | IAM actions required for the ListAPIKeys API call. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Operations.property.ListAvailableManagedRuleGroups">ListAvailableManagedRuleGroups</a></code> | <code>string[]</code> | IAM actions required for the ListAvailableManagedRuleGroups API call. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Operations.property.ListAvailableManagedRuleGroupVersions">ListAvailableManagedRuleGroupVersions</a></code> | <code>string[]</code> | IAM actions required for the ListAvailableManagedRuleGroupVersions API call. |
+| <code><a href="#@cdk_utils/iam.wafv2.Wafv2Operations.property.ListEventActors">ListEventActors</a></code> | <code>string[]</code> | IAM actions required for the ListEventActors API call. |
+| <code><a href="#@cdk_utils/iam.wafv2.Wafv2Operations.property.ListEvents">ListEvents</a></code> | <code>string[]</code> | IAM actions required for the ListEvents API call. |
+| <code><a href="#@cdk_utils/iam.wafv2.Wafv2Operations.property.ListEventsByWebACL">ListEventsByWebACL</a></code> | <code>string[]</code> | IAM actions required for the ListEventsByWebACL API call. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Operations.property.ListIPSets">ListIPSets</a></code> | <code>string[]</code> | IAM actions required for the ListIPSets API call. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Operations.property.ListLoggingConfigurations">ListLoggingConfigurations</a></code> | <code>string[]</code> | IAM actions required for the ListLoggingConfigurations API call. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Operations.property.ListManagedRuleSets">ListManagedRuleSets</a></code> | <code>string[]</code> | IAM actions required for the ListManagedRuleSets API call. |
@@ -3770,6 +3773,8 @@ new wafv2.Wafv2Operations()
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Operations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Operations.property.ListWebACLs">ListWebACLs</a></code> | <code>string[]</code> | IAM actions required for the ListWebACLs API call. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Operations.property.opGetDecryptedAPIKey">opGetDecryptedAPIKey</a></code> | <code>string[]</code> | IAM actions required for the GetDecryptedAPIKey API call. |
+| <code><a href="#@cdk_utils/iam.wafv2.Wafv2Operations.property.opGetEvent">opGetEvent</a></code> | <code>string[]</code> | IAM actions required for the GetEvent API call. |
+| <code><a href="#@cdk_utils/iam.wafv2.Wafv2Operations.property.opGetEventActor">opGetEventActor</a></code> | <code>string[]</code> | IAM actions required for the GetEventActor API call. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Operations.property.opGetIPSet">opGetIPSet</a></code> | <code>string[]</code> | IAM actions required for the GetIPSet API call. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Operations.property.opGetLoggingConfiguration">opGetLoggingConfiguration</a></code> | <code>string[]</code> | IAM actions required for the GetLoggingConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Operations.property.opGetManagedRuleSet">opGetManagedRuleSet</a></code> | <code>string[]</code> | IAM actions required for the GetManagedRuleSet API call. |
@@ -4074,6 +4079,42 @@ IAM actions required for the ListAvailableManagedRuleGroupVersions API call.
 
 ---
 
+##### `ListEventActors`<sup>Required</sup> <a name="ListEventActors" id="@cdk_utils/iam.wafv2.Wafv2Operations.property.ListEventActors"></a>
+
+```typescript
+public readonly ListEventActors: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListEventActors API call.
+
+---
+
+##### `ListEvents`<sup>Required</sup> <a name="ListEvents" id="@cdk_utils/iam.wafv2.Wafv2Operations.property.ListEvents"></a>
+
+```typescript
+public readonly ListEvents: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListEvents API call.
+
+---
+
+##### `ListEventsByWebACL`<sup>Required</sup> <a name="ListEventsByWebACL" id="@cdk_utils/iam.wafv2.Wafv2Operations.property.ListEventsByWebACL"></a>
+
+```typescript
+public readonly ListEventsByWebACL: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListEventsByWebACL API call.
+
+---
+
 ##### `ListIPSets`<sup>Required</sup> <a name="ListIPSets" id="@cdk_utils/iam.wafv2.Wafv2Operations.property.ListIPSets"></a>
 
 ```typescript
@@ -4203,6 +4244,30 @@ public readonly opGetDecryptedAPIKey: string[];
 - *Type:* string[]
 
 IAM actions required for the GetDecryptedAPIKey API call.
+
+---
+
+##### `opGetEvent`<sup>Required</sup> <a name="opGetEvent" id="@cdk_utils/iam.wafv2.Wafv2Operations.property.opGetEvent"></a>
+
+```typescript
+public readonly opGetEvent: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetEvent API call.
+
+---
+
+##### `opGetEventActor`<sup>Required</sup> <a name="opGetEventActor" id="@cdk_utils/iam.wafv2.Wafv2Operations.property.opGetEventActor"></a>
+
+```typescript
+public readonly opGetEventActor: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetEventActor API call.
 
 ---
 

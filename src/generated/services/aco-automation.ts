@@ -18,6 +18,9 @@ export class AcoAutomationActions {
 	static readonly CreateAutomationRule = "aco-automation:CreateAutomationRule";
 	/** [Write] aco-automation:DeleteAutomationRule */
 	static readonly DeleteAutomationRule = "aco-automation:DeleteAutomationRule";
+	/** [Write] aco-automation:DeleteOrganizationEnrollmentConfiguration */
+	static readonly DeleteOrganizationEnrollmentConfiguration =
+		"aco-automation:DeleteOrganizationEnrollmentConfiguration";
 	/** [Write] aco-automation:DisassociateAccounts */
 	static readonly DisassociateAccounts = "aco-automation:DisassociateAccounts";
 	/** [Read] aco-automation:GetAutomationEvent */
@@ -46,6 +49,12 @@ export class AcoAutomationActions {
 		"aco-automation:ListAutomationRulePreviewSummaries";
 	/** [List] aco-automation:ListAutomationRules */
 	static readonly ListAutomationRules = "aco-automation:ListAutomationRules";
+	/** [List] aco-automation:ListOrganizationEnrollmentConfigurations */
+	static readonly ListOrganizationEnrollmentConfigurations =
+		"aco-automation:ListOrganizationEnrollmentConfigurations";
+	/** [List] aco-automation:ListOrganizationalUnits */
+	static readonly ListOrganizationalUnits =
+		"aco-automation:ListOrganizationalUnits";
 	/** [List] aco-automation:ListRecommendedActionSummaries */
 	static readonly ListRecommendedActionSummaries =
 		"aco-automation:ListRecommendedActionSummaries";
@@ -54,6 +63,9 @@ export class AcoAutomationActions {
 		"aco-automation:ListRecommendedActions";
 	/** [List] aco-automation:ListTagsForResource */
 	static readonly ListTagsForResource = "aco-automation:ListTagsForResource";
+	/** [Write] aco-automation:PutOrganizationEnrollmentConfiguration */
+	static readonly PutOrganizationEnrollmentConfiguration =
+		"aco-automation:PutOrganizationEnrollmentConfiguration";
 	/** [Write] aco-automation:RollbackAutomationEvent */
 	static readonly RollbackAutomationEvent =
 		"aco-automation:RollbackAutomationEvent";
@@ -80,7 +92,9 @@ export class AcoAutomationActions {
 		AcoAutomationActions.AssociateAccounts,
 		AcoAutomationActions.CreateAutomationRule,
 		AcoAutomationActions.DeleteAutomationRule,
+		AcoAutomationActions.DeleteOrganizationEnrollmentConfiguration,
 		AcoAutomationActions.DisassociateAccounts,
+		AcoAutomationActions.PutOrganizationEnrollmentConfiguration,
 		AcoAutomationActions.RollbackAutomationEvent,
 		AcoAutomationActions.StartAutomationEvent,
 		AcoAutomationActions.UpdateAutomationRule,
@@ -95,6 +109,8 @@ export class AcoAutomationActions {
 		AcoAutomationActions.ListAutomationRulePreview,
 		AcoAutomationActions.ListAutomationRulePreviewSummaries,
 		AcoAutomationActions.ListAutomationRules,
+		AcoAutomationActions.ListOrganizationEnrollmentConfigurations,
+		AcoAutomationActions.ListOrganizationalUnits,
 		AcoAutomationActions.ListRecommendedActionSummaries,
 		AcoAutomationActions.ListRecommendedActions,
 		AcoAutomationActions.ListTagsForResource,
@@ -189,6 +205,10 @@ export class AcoAutomationOperations {
 	static readonly DeleteAutomationRule: string[] = [
 		"aco-automation:DeleteAutomationRule",
 	];
+	/** IAM actions required for the DeleteOrganizationEnrollmentConfiguration API call. */
+	static readonly DeleteOrganizationEnrollmentConfiguration: string[] = [
+		"aco-automation:DeleteOrganizationEnrollmentConfiguration",
+	];
 	/** IAM actions required for the DisassociateAccounts API call. */
 	static readonly DisassociateAccounts: string[] = [
 		"aco-automation:DisassociateAccounts",
@@ -232,6 +252,14 @@ export class AcoAutomationOperations {
 	static readonly ListAutomationRules: string[] = [
 		"aco-automation:ListAutomationRules",
 	];
+	/** IAM actions required for the ListOrganizationEnrollmentConfigurations API call. */
+	static readonly ListOrganizationEnrollmentConfigurations: string[] = [
+		"aco-automation:ListOrganizationEnrollmentConfigurations",
+	];
+	/** IAM actions required for the ListOrganizationalUnits API call. */
+	static readonly ListOrganizationalUnits: string[] = [
+		"aco-automation:ListOrganizationalUnits",
+	];
 	/** IAM actions required for the ListRecommendedActionSummaries API call. */
 	static readonly ListRecommendedActionSummaries: string[] = [
 		"aco-automation:ListRecommendedActionSummaries",
@@ -244,6 +272,10 @@ export class AcoAutomationOperations {
 	/** IAM actions required for the ListTagsForResource API call. */
 	static readonly ListTagsForResource: string[] = [
 		"aco-automation:ListTagsForResource",
+	];
+	/** IAM actions required for the PutOrganizationEnrollmentConfiguration API call. */
+	static readonly PutOrganizationEnrollmentConfiguration: string[] = [
+		"aco-automation:PutOrganizationEnrollmentConfiguration",
 	];
 	/** IAM actions required for the RollbackAutomationEvent API call. */
 	static readonly RollbackAutomationEvent: string[] = [

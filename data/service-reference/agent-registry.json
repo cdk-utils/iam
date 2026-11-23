@@ -3,6 +3,30 @@
   "ServiceName": "Agent Registry",
   "Actions": [
     {
+      "Name": "AssociatePublisher",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "publisher"
+        },
+        {
+          "Name": "registry-record"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "CompleteRegistryRecordTokenAuth",
       "Annotations": {
         "Properties": {
@@ -15,6 +39,31 @@
       "Resources": [
         {
           "Name": "registry"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreatePublisher",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "publisher"
         }
       ],
       "SupportedBy": {
@@ -60,6 +109,27 @@
       "Resources": [
         {
           "Name": "registry"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeletePublisher",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "publisher"
         }
       ],
       "SupportedBy": {
@@ -121,7 +191,31 @@
       },
       "Resources": [
         {
+          "Name": "publisher"
+        },
+        {
           "Name": "registry"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DisassociatePublisher",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "registry-record"
         }
       ],
       "SupportedBy": {
@@ -143,6 +237,27 @@
       "Resources": [
         {
           "Name": "registry-record"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetPublisher",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "publisher"
         }
       ],
       "SupportedBy": {
@@ -204,6 +319,9 @@
       },
       "Resources": [
         {
+          "Name": "publisher"
+        },
+        {
           "Name": "registry"
         }
       ],
@@ -248,6 +366,43 @@
           "Name": "registry"
         }
       ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPublisherAssociations",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "publisher"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListPublishers",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -303,6 +458,9 @@
       },
       "Resources": [
         {
+          "Name": "publisher"
+        },
+        {
           "Name": "registry"
         },
         {
@@ -325,6 +483,9 @@
         }
       },
       "Resources": [
+        {
+          "Name": "publisher"
+        },
         {
           "Name": "registry"
         }
@@ -393,6 +554,9 @@
       },
       "Resources": [
         {
+          "Name": "publisher"
+        },
+        {
           "Name": "registry"
         },
         {
@@ -420,8 +584,32 @@
       },
       "Resources": [
         {
+          "Name": "publisher"
+        },
+        {
           "Name": "registry"
         },
+        {
+          "Name": "registry-record"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdatePublisherAssociationApprovalStatus",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
         {
           "Name": "registry-record"
         }
@@ -493,6 +681,27 @@
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
       }
+    },
+    {
+      "Name": "ValidatePublisher",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "publisher"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
     }
   ],
   "ConditionKeys": [
@@ -529,6 +738,22 @@
   ],
   "Operations": [
     {
+      "Name": "AssociatePublisher",
+      "AuthorizedActions": [
+        {
+          "Name": "AssociatePublisher",
+          "Service": "agent-registry"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "agent-registry-control",
+          "Method": "associate_publisher",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "BatchGetDiscoverableRegistryRecord",
       "AuthorizedActions": [
         {
@@ -540,6 +765,26 @@
         {
           "Name": "agent-registry",
           "Method": "batch_get_discoverable_registry_record",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreatePublisher",
+      "AuthorizedActions": [
+        {
+          "Name": "CreatePublisher",
+          "Service": "agent-registry"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "agent-registry"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "agent-registry-control",
+          "Method": "create_publisher",
           "Package": "Boto3"
         }
       ]
@@ -602,6 +847,22 @@
       ]
     },
     {
+      "Name": "DeletePublisher",
+      "AuthorizedActions": [
+        {
+          "Name": "DeletePublisher",
+          "Service": "agent-registry"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "agent-registry-control",
+          "Method": "delete_publisher",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DeleteRegistry",
       "AuthorizedActions": [
         {
@@ -629,6 +890,38 @@
         {
           "Name": "agent-registry-control",
           "Method": "delete_registry_record",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DisassociatePublisher",
+      "AuthorizedActions": [
+        {
+          "Name": "DisassociatePublisher",
+          "Service": "agent-registry"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "agent-registry-control",
+          "Method": "disassociate_publisher",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPublisher",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPublisher",
+          "Service": "agent-registry"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "agent-registry-control",
+          "Method": "get_publisher",
           "Package": "Boto3"
         }
       ]
@@ -677,6 +970,38 @@
         {
           "Name": "agent-registry",
           "Method": "list_discoverable_registry_records",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPublisherAssociations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPublisherAssociations",
+          "Service": "agent-registry"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "agent-registry-control",
+          "Method": "list_publisher_associations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPublishers",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPublishers",
+          "Service": "agent-registry"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "agent-registry-control",
+          "Method": "list_publishers",
           "Package": "Boto3"
         }
       ]
@@ -794,6 +1119,22 @@
       ]
     },
     {
+      "Name": "UpdatePublisherAssociationApprovalStatus",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdatePublisherAssociationApprovalStatus",
+          "Service": "agent-registry"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "agent-registry-control",
+          "Method": "update_publisher_association_approval_status",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "UpdateRegistry",
       "AuthorizedActions": [
         {
@@ -857,9 +1198,34 @@
           "Package": "Boto3"
         }
       ]
+    },
+    {
+      "Name": "ValidatePublisher",
+      "AuthorizedActions": [
+        {
+          "Name": "ValidatePublisher",
+          "Service": "agent-registry"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "agent-registry-control",
+          "Method": "validate_publisher",
+          "Package": "Boto3"
+        }
+      ]
     }
   ],
   "Resources": [
+    {
+      "Name": "publisher",
+      "ARNFormats": [
+        "arn:${Partition}:agent-registry::${Account}:publisher/${PublisherType}/${PublisherValue}/${PublisherId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
     {
       "Name": "registry",
       "ARNFormats": [

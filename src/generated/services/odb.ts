@@ -1169,6 +1169,8 @@ export class OdbOperations {
 	static readonly ListAutonomousDatabasePeers: string[] = [
 		"odb:ListAutonomousDatabasePeers",
 	];
+	/** IAM actions required for the ListAutonomousDatabaseRefreshableClones API call. */
+	static readonly ListAutonomousDatabaseRefreshableClones: string[] = [];
 	/** IAM actions required for the ListAutonomousDatabaseVersions API call. */
 	static readonly ListAutonomousDatabaseVersions: string[] = [
 		"odb:ListAutonomousDatabaseVersions",
@@ -1237,6 +1239,8 @@ export class OdbOperations {
 	static readonly StartAutonomousDatabase: string[] = [
 		"odb:StartAutonomousDatabase",
 	];
+	/** IAM actions required for the StartAutonomousDatabaseRefresh API call. */
+	static readonly StartAutonomousDatabaseRefresh: string[] = [];
 	/** IAM actions required for the StartDbNode API call. */
 	static readonly StartDbNode: string[] = ["odb:StartDbNode"];
 	/** IAM actions required for the StopAutonomousDatabase API call. */

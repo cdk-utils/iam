@@ -686,6 +686,171 @@ export class ApiportalResources {
 }
 
 /**
+ * API operation to required IAM actions mapping for apiportal.
+ */
+export class ApiportalOperations {
+	/** IAM actions required for the AssociateManagedApis API call. */
+	static readonly AssociateManagedApis: string[] = [
+		"apiportal:AssociateManagedApis",
+	];
+	/** IAM actions required for the CreateManagedApi API call. */
+	static readonly CreateManagedApi: string[] = [
+		"apiportal:CreateManagedApi",
+		"apiportal:TagResource",
+	];
+	/** IAM actions required for the CreatePortal API call. */
+	static readonly CreatePortal: string[] = [
+		"apiportal:CreatePortal",
+		"apiportal:GetProduct",
+		"apiportal:TagResource",
+	];
+	/** IAM actions required for the CreatePortalPreview API call. */
+	static readonly CreatePortalPreview: string[] = [
+		"apiportal:CreatePortalPreview",
+	];
+	/** IAM actions required for the CreateProduct API call. */
+	static readonly CreateProduct: string[] = [
+		"apiportal:CreateProduct",
+		"apiportal:TagResource",
+	];
+	/** IAM actions required for the CreateProductApiPage API call. */
+	static readonly CreateProductApiPage: string[] = [
+		"apiportal:CreateProductApiPage",
+		"apiportal:TagResource",
+	];
+	/** IAM actions required for the CreateProductPage API call. */
+	static readonly CreateProductPage: string[] = [
+		"apiportal:CreateProductPage",
+		"apiportal:TagResource",
+	];
+	/** IAM actions required for the DeleteDiscoveryConfiguration API call. */
+	static readonly DeleteDiscoveryConfiguration: string[] = [
+		"apiportal:DeleteDiscoveryConfiguration",
+	];
+	/** IAM actions required for the DeleteManagedApi API call. */
+	static readonly DeleteManagedApi: string[] = ["apiportal:DeleteManagedApi"];
+	/** IAM actions required for the DeleteOrganizationDiscoveryConfiguration API call. */
+	static readonly DeleteOrganizationDiscoveryConfiguration: string[] = [
+		"apiportal:DeleteOrganizationDiscoveryConfiguration",
+	];
+	/** IAM actions required for the DeletePortal API call. */
+	static readonly DeletePortal: string[] = ["apiportal:DeletePortal"];
+	/** IAM actions required for the DeleteProduct API call. */
+	static readonly DeleteProduct: string[] = ["apiportal:DeleteProduct"];
+	/** IAM actions required for the DeleteProductApiPage API call. */
+	static readonly DeleteProductApiPage: string[] = [
+		"apiportal:DeleteProductApiPage",
+	];
+	/** IAM actions required for the DeleteProductPage API call. */
+	static readonly DeleteProductPage: string[] = ["apiportal:DeleteProductPage"];
+	/** IAM actions required for the DeleteProductSharingPolicy API call. */
+	static readonly DeleteProductSharingPolicy: string[] = [
+		"apiportal:DeleteProductSharingPolicy",
+	];
+	/** IAM actions required for the DisassociateManagedApis API call. */
+	static readonly DisassociateManagedApis: string[] = [
+		"apiportal:DisassociateManagedApis",
+	];
+	/** IAM actions required for the GetApiInventoryItem API call. */
+	static readonly opGetApiInventoryItem: string[] = [
+		"apiportal:GetApiInventoryItem",
+	];
+	/** IAM actions required for the GetDiscoveryConfiguration API call. */
+	static readonly opGetDiscoveryConfiguration: string[] = [
+		"apiportal:GetDiscoveryConfiguration",
+	];
+	/** IAM actions required for the GetManagedApi API call. */
+	static readonly opGetManagedApi: string[] = ["apiportal:GetManagedApi"];
+	/** IAM actions required for the GetOrganizationDiscoveryConfiguration API call. */
+	static readonly opGetOrganizationDiscoveryConfiguration: string[] = [
+		"apiportal:GetOrganizationDiscoveryConfiguration",
+	];
+	/** IAM actions required for the GetPortal API call. */
+	static readonly opGetPortal: string[] = ["apiportal:GetPortal"];
+	/** IAM actions required for the GetProduct API call. */
+	static readonly opGetProduct: string[] = ["apiportal:GetProduct"];
+	/** IAM actions required for the GetProductApiPage API call. */
+	static readonly opGetProductApiPage: string[] = [
+		"apiportal:GetProductApiPage",
+	];
+	/** IAM actions required for the GetProductPage API call. */
+	static readonly opGetProductPage: string[] = ["apiportal:GetProductPage"];
+	/** IAM actions required for the GetProductSharingPolicy API call. */
+	static readonly opGetProductSharingPolicy: string[] = [
+		"apiportal:GetProductSharingPolicy",
+	];
+	/** IAM actions required for the ListApiInventoryItems API call. */
+	static readonly ListApiInventoryItems: string[] = [
+		"apiportal:ListApiInventoryItems",
+	];
+	/** IAM actions required for the ListDiscoveryStatuses API call. */
+	static readonly ListDiscoveryStatuses: string[] = [
+		"apiportal:ListDiscoveryStatuses",
+	];
+	/** IAM actions required for the ListManagedApiEvents API call. */
+	static readonly ListManagedApiEvents: string[] = [
+		"apiportal:ListManagedApiEvents",
+	];
+	/** IAM actions required for the ListManagedApis API call. */
+	static readonly ListManagedApis: string[] = ["apiportal:ListManagedApis"];
+	/** IAM actions required for the ListPortals API call. */
+	static readonly ListPortals: string[] = ["apiportal:ListPortals"];
+	/** IAM actions required for the ListProductApiPages API call. */
+	static readonly ListProductApiPages: string[] = [
+		"apiportal:ListProductApiPages",
+	];
+	/** IAM actions required for the ListProductPages API call. */
+	static readonly ListProductPages: string[] = ["apiportal:ListProductPages"];
+	/** IAM actions required for the ListProducts API call. */
+	static readonly ListProducts: string[] = ["apiportal:ListProducts"];
+	/** IAM actions required for the ListTagsForResource API call. */
+	static readonly ListTagsForResource: string[] = [
+		"apiportal:ListTagsForResource",
+	];
+	/** IAM actions required for the PutDiscoveryConfiguration API call. */
+	static readonly PutDiscoveryConfiguration: string[] = [
+		"apiportal:PutDiscoveryConfiguration",
+		"apiportal:TagResource",
+	];
+	/** IAM actions required for the PutOrganizationDiscoveryConfiguration API call. */
+	static readonly PutOrganizationDiscoveryConfiguration: string[] = [
+		"apiportal:PutOrganizationDiscoveryConfiguration",
+		"apiportal:TagResource",
+	];
+	/** IAM actions required for the PutProductSharingPolicy API call. */
+	static readonly PutProductSharingPolicy: string[] = [
+		"apiportal:PutProductSharingPolicy",
+		"apiportal:TagResource",
+	];
+	/** IAM actions required for the StartDiscovery API call. */
+	static readonly StartDiscovery: string[] = ["apiportal:StartDiscovery"];
+	/** IAM actions required for the StopDiscovery API call. */
+	static readonly StopDiscovery: string[] = ["apiportal:StopDiscovery"];
+	/** IAM actions required for the TagResource API call. */
+	static readonly TagResource: string[] = ["apiportal:TagResource"];
+	/** IAM actions required for the UntagResource API call. */
+	static readonly UntagResource: string[] = ["apiportal:UntagResource"];
+	/** IAM actions required for the UpdatePortal API call. */
+	static readonly UpdatePortal: string[] = [
+		"apiportal:GetProduct",
+		"apiportal:UpdatePortal",
+	];
+	/** IAM actions required for the UpdatePortalPublishStatus API call. */
+	static readonly UpdatePortalPublishStatus: string[] = [
+		"apiportal:GetProduct",
+		"apiportal:UpdatePortalPublishStatus",
+	];
+	/** IAM actions required for the UpdateProduct API call. */
+	static readonly UpdateProduct: string[] = ["apiportal:UpdateProduct"];
+	/** IAM actions required for the UpdateProductApiPage API call. */
+	static readonly UpdateProductApiPage: string[] = [
+		"apiportal:UpdateProductApiPage",
+	];
+	/** IAM actions required for the UpdateProductPage API call. */
+	static readonly UpdateProductPage: string[] = ["apiportal:UpdateProductPage"];
+}
+
+/**
  * Condition key constants and builders for apiportal.
  */
 export class ApiportalConditions {

@@ -2900,6 +2900,16 @@
       ]
     },
     {
+      "Name": "ListAutonomousDatabaseRefreshableClones",
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "list_autonomous_database_refreshable_clones",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListAutonomousDatabaseVersions",
       "AuthorizedActions": [
         {
@@ -3263,6 +3273,16 @@
         {
           "Name": "odb",
           "Method": "start_autonomous_database",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartAutonomousDatabaseRefresh",
+      "SDK": [
+        {
+          "Name": "odb",
+          "Method": "start_autonomous_database_refresh",
           "Package": "Boto3"
         }
       ]

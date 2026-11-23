@@ -621,6 +621,27 @@
       }
     },
     {
+      "Name": "ListEntityCoverages",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "policy"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListPolicies",
       "Annotations": {
         "Properties": {
@@ -652,6 +673,25 @@
           "Name": "policy"
         }
       ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListProtectedResourceCoverages",
+      "ActionConditionKeys": [
+        "network-security-manager:ProtectedResourceArn"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -1172,6 +1212,12 @@
       "Types": [
         "ArrayOfString"
       ]
+    },
+    {
+      "Name": "network-security-manager:ProtectedResourceArn",
+      "Types": [
+        "ARN"
+      ]
     }
   ],
   "Operations": [
@@ -1648,6 +1694,22 @@
       ]
     },
     {
+      "Name": "ListEntityCoverages",
+      "AuthorizedActions": [
+        {
+          "Name": "ListEntityCoverages",
+          "Service": "network-security-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-security-manager",
+          "Method": "list_entity_coverages",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListPolicies",
       "AuthorizedActions": [
         {
@@ -1675,6 +1737,22 @@
         {
           "Name": "network-security-manager",
           "Method": "list_policy_snapshots",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListProtectedResourceCoverages",
+      "AuthorizedActions": [
+        {
+          "Name": "ListProtectedResourceCoverages",
+          "Service": "network-security-manager"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "network-security-manager",
+          "Method": "list_protected_resource_coverages",
           "Package": "Boto3"
         }
       ]

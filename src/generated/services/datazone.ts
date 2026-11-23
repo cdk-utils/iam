@@ -1533,6 +1533,8 @@ export class DatazoneOperations {
 	];
 	/** IAM actions required for the UpdateAssetFilter API call. */
 	static readonly UpdateAssetFilter: string[] = ["datazone:UpdateAssetFilter"];
+	/** IAM actions required for the UpdateAssetOwner API call. */
+	static readonly UpdateAssetOwner: string[] = ["datazone:UpdateAssetOwner"];
 	/** IAM actions required for the UpdateConnection API call. */
 	static readonly UpdateConnection: string[] = [
 		"iam:PassRole",

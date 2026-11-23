@@ -12,22 +12,33 @@ export class AgentRegistryActions {
 	/** The IAM service prefix. */
 	static readonly SERVICE_PREFIX = "agent-registry";
 
+	/** [Write] agent-registry:AssociatePublisher */
+	static readonly AssociatePublisher = "agent-registry:AssociatePublisher";
 	/** [Write] agent-registry:CompleteRegistryRecordTokenAuth */
 	static readonly CompleteRegistryRecordTokenAuth =
 		"agent-registry:CompleteRegistryRecordTokenAuth";
+	/** [Write] agent-registry:CreatePublisher */
+	static readonly CreatePublisher = "agent-registry:CreatePublisher";
 	/** [Write] agent-registry:CreateRegistry */
 	static readonly CreateRegistry = "agent-registry:CreateRegistry";
 	/** [Write] agent-registry:CreateRegistryRecord */
 	static readonly CreateRegistryRecord = "agent-registry:CreateRegistryRecord";
+	/** [Write] agent-registry:DeletePublisher */
+	static readonly DeletePublisher = "agent-registry:DeletePublisher";
 	/** [Write] agent-registry:DeleteRegistry */
 	static readonly DeleteRegistry = "agent-registry:DeleteRegistry";
 	/** [Write] agent-registry:DeleteRegistryRecord */
 	static readonly DeleteRegistryRecord = "agent-registry:DeleteRegistryRecord";
 	/** [Write] agent-registry:DeleteResourcePolicy */
 	static readonly DeleteResourcePolicy = "agent-registry:DeleteResourcePolicy";
+	/** [Write] agent-registry:DisassociatePublisher */
+	static readonly DisassociatePublisher =
+		"agent-registry:DisassociatePublisher";
 	/** [Read] agent-registry:GetDiscoverableRegistryRecord */
 	static readonly actionGetDiscoverableRegistryRecord =
 		"agent-registry:GetDiscoverableRegistryRecord";
+	/** [Read] agent-registry:GetPublisher */
+	static readonly actionGetPublisher = "agent-registry:GetPublisher";
 	/** [Read] agent-registry:GetRegistry */
 	static readonly actionGetRegistry = "agent-registry:GetRegistry";
 	/** [Read] agent-registry:GetRegistryRecord */
@@ -39,6 +50,11 @@ export class AgentRegistryActions {
 	/** [List] agent-registry:ListDiscoverableRegistryRecords */
 	static readonly ListDiscoverableRegistryRecords =
 		"agent-registry:ListDiscoverableRegistryRecords";
+	/** [List] agent-registry:ListPublisherAssociations */
+	static readonly ListPublisherAssociations =
+		"agent-registry:ListPublisherAssociations";
+	/** [List] agent-registry:ListPublishers */
+	static readonly ListPublishers = "agent-registry:ListPublishers";
 	/** [List] agent-registry:ListRegistries */
 	static readonly ListRegistries = "agent-registry:ListRegistries";
 	/** [List] agent-registry:ListRegistryRecords */
@@ -57,6 +73,9 @@ export class AgentRegistryActions {
 	static readonly TagResource = "agent-registry:TagResource";
 	/** [Tagging] agent-registry:UntagResource */
 	static readonly UntagResource = "agent-registry:UntagResource";
+	/** [Write] agent-registry:UpdatePublisherAssociationApprovalStatus */
+	static readonly UpdatePublisherAssociationApprovalStatus =
+		"agent-registry:UpdatePublisherAssociationApprovalStatus";
 	/** [Write] agent-registry:UpdateRegistry */
 	static readonly UpdateRegistry = "agent-registry:UpdateRegistry";
 	/** [Write] agent-registry:UpdateRegistryRecord */
@@ -64,10 +83,13 @@ export class AgentRegistryActions {
 	/** [Write] agent-registry:UpdateRegistryRecordStatus */
 	static readonly UpdateRegistryRecordStatus =
 		"agent-registry:UpdateRegistryRecordStatus";
+	/** [Write] agent-registry:ValidatePublisher */
+	static readonly ValidatePublisher = "agent-registry:ValidatePublisher";
 
 	/** All read-level actions. */
 	static readonly AllReadActions: string[] = [
 		AgentRegistryActions.actionGetDiscoverableRegistryRecord,
+		AgentRegistryActions.actionGetPublisher,
 		AgentRegistryActions.actionGetRegistry,
 		AgentRegistryActions.actionGetRegistryRecord,
 		AgentRegistryActions.actionGetResourcePolicy,
@@ -76,21 +98,29 @@ export class AgentRegistryActions {
 	];
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
+		AgentRegistryActions.AssociatePublisher,
 		AgentRegistryActions.CompleteRegistryRecordTokenAuth,
+		AgentRegistryActions.CreatePublisher,
 		AgentRegistryActions.CreateRegistry,
 		AgentRegistryActions.CreateRegistryRecord,
+		AgentRegistryActions.DeletePublisher,
 		AgentRegistryActions.DeleteRegistry,
 		AgentRegistryActions.DeleteRegistryRecord,
 		AgentRegistryActions.DeleteResourcePolicy,
+		AgentRegistryActions.DisassociatePublisher,
 		AgentRegistryActions.PutResourcePolicy,
 		AgentRegistryActions.SubmitRegistryRecordForApproval,
+		AgentRegistryActions.UpdatePublisherAssociationApprovalStatus,
 		AgentRegistryActions.UpdateRegistry,
 		AgentRegistryActions.UpdateRegistryRecord,
 		AgentRegistryActions.UpdateRegistryRecordStatus,
+		AgentRegistryActions.ValidatePublisher,
 	];
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [
 		AgentRegistryActions.ListDiscoverableRegistryRecords,
+		AgentRegistryActions.ListPublisherAssociations,
+		AgentRegistryActions.ListPublishers,
 		AgentRegistryActions.ListRegistries,
 		AgentRegistryActions.ListRegistryRecords,
 		AgentRegistryActions.ListTagsForResource,
@@ -102,6 +132,38 @@ export class AgentRegistryActions {
 		AgentRegistryActions.TagResource,
 		AgentRegistryActions.UntagResource,
 	];
+}
+
+/**
+ * Properties for building a publisher ARN.
+ */
+export interface AgentRegistryPublisherArnProps {
+	/** The PublisherType component of the ARN. */
+	readonly publisherType: string;
+	/** The PublisherValue component of the ARN. */
+	readonly publisherValue: string;
+	/** The PublisherId component of the ARN. */
+	readonly publisherId: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a publisher ARN.
+ */
+export interface AgentRegistryPublisherArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The PublisherType component. */
+	readonly publisherType: string;
+	/** The PublisherValue component. */
+	readonly publisherValue: string;
+	/** The PublisherId component. */
+	readonly publisherId: string;
 }
 
 /**
@@ -164,6 +226,8 @@ export interface AgentRegistryRegistryRecordArnComponents {
 	readonly recordId: string;
 }
 
+const PublisherArnRegex =
+	/^arn:(?<partition>[^:]+):agent-registry::(?<account>[^:]*):publisher\/(?<publisherType>[^:/?]+)\/(?<publisherValue>[^:/?]+)\/(?<publisherId>[^:/?]+)$/;
 const RegistryArnRegex =
 	/^arn:(?<partition>[^:]+):agent-registry:(?<region>[^:]*):(?<account>[^:]*):registry\/(?<registryId>[^:/?]+)$/;
 const RegistryRecordArnRegex =
@@ -173,6 +237,38 @@ const RegistryRecordArnRegex =
  * ARN builders, validators, and parsers for agent-registry resources.
  */
 export class AgentRegistryResources {
+	/**
+	 * Builds an ARN for the publisher resource.
+	 */
+	static publisher(props: AgentRegistryPublisherArnProps): string {
+		return `arn:${props.partition ?? "aws"}:agent-registry::${props.account ?? "*"}:publisher/${props.publisherType}/${props.publisherValue}/${props.publisherId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the publisher resource.
+	 */
+	static isValidPublisherArn(arn: string): boolean {
+		return PublisherArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a publisher ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parsePublisherArn(arn: string): AgentRegistryPublisherArnComponents {
+		const match = PublisherArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid publisher ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			account: match.groups.account,
+			publisherType: match.groups!.publisherType,
+			publisherValue: match.groups!.publisherValue,
+			publisherId: match.groups!.publisherId,
+		};
+	}
+
 	/**
 	 * Builds an ARN for the registry resource.
 	 */
@@ -243,9 +339,18 @@ export class AgentRegistryResources {
  * API operation to required IAM actions mapping for agent-registry.
  */
 export class AgentRegistryOperations {
+	/** IAM actions required for the AssociatePublisher API call. */
+	static readonly AssociatePublisher: string[] = [
+		"agent-registry:AssociatePublisher",
+	];
 	/** IAM actions required for the BatchGetDiscoverableRegistryRecord API call. */
 	static readonly BatchGetDiscoverableRegistryRecord: string[] = [
 		"agent-registry:GetDiscoverableRegistryRecord",
+	];
+	/** IAM actions required for the CreatePublisher API call. */
+	static readonly CreatePublisher: string[] = [
+		"agent-registry:CreatePublisher",
+		"agent-registry:TagResource",
 	];
 	/** IAM actions required for the CreateRegistry API call. */
 	static readonly CreateRegistry: string[] = [
@@ -260,12 +365,22 @@ export class AgentRegistryOperations {
 		"iam:PassRole",
 		"agent-registry:TagResource",
 	];
+	/** IAM actions required for the DeletePublisher API call. */
+	static readonly DeletePublisher: string[] = [
+		"agent-registry:DeletePublisher",
+	];
 	/** IAM actions required for the DeleteRegistry API call. */
 	static readonly DeleteRegistry: string[] = ["agent-registry:DeleteRegistry"];
 	/** IAM actions required for the DeleteRegistryRecord API call. */
 	static readonly DeleteRegistryRecord: string[] = [
 		"agent-registry:DeleteRegistryRecord",
 	];
+	/** IAM actions required for the DisassociatePublisher API call. */
+	static readonly DisassociatePublisher: string[] = [
+		"agent-registry:DisassociatePublisher",
+	];
+	/** IAM actions required for the GetPublisher API call. */
+	static readonly opGetPublisher: string[] = ["agent-registry:GetPublisher"];
 	/** IAM actions required for the GetRegistry API call. */
 	static readonly opGetRegistry: string[] = ["agent-registry:GetRegistry"];
 	/** IAM actions required for the GetRegistryRecord API call. */
@@ -276,6 +391,12 @@ export class AgentRegistryOperations {
 	static readonly ListDiscoverableRegistryRecords: string[] = [
 		"agent-registry:ListDiscoverableRegistryRecords",
 	];
+	/** IAM actions required for the ListPublisherAssociations API call. */
+	static readonly ListPublisherAssociations: string[] = [
+		"agent-registry:ListPublisherAssociations",
+	];
+	/** IAM actions required for the ListPublishers API call. */
+	static readonly ListPublishers: string[] = ["agent-registry:ListPublishers"];
 	/** IAM actions required for the ListRegistries API call. */
 	static readonly ListRegistries: string[] = ["agent-registry:ListRegistries"];
 	/** IAM actions required for the ListRegistryRecords API call. */
@@ -298,6 +419,10 @@ export class AgentRegistryOperations {
 	static readonly TagResource: string[] = ["agent-registry:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
 	static readonly UntagResource: string[] = ["agent-registry:UntagResource"];
+	/** IAM actions required for the UpdatePublisherAssociationApprovalStatus API call. */
+	static readonly UpdatePublisherAssociationApprovalStatus: string[] = [
+		"agent-registry:UpdatePublisherAssociationApprovalStatus",
+	];
 	/** IAM actions required for the UpdateRegistry API call. */
 	static readonly UpdateRegistry: string[] = ["agent-registry:UpdateRegistry"];
 	/** IAM actions required for the UpdateRegistryRecord API call. */
@@ -311,12 +436,21 @@ export class AgentRegistryOperations {
 	static readonly UpdateRegistryRecordStatus: string[] = [
 		"agent-registry:UpdateRegistryRecordStatus",
 	];
+	/** IAM actions required for the ValidatePublisher API call. */
+	static readonly ValidatePublisher: string[] = [
+		"agent-registry:ValidatePublisher",
+	];
 }
 
 /**
  * Condition key constants and builders for agent-registry.
  */
 export class AgentRegistryConditions {
+	/** Condition keys applicable to the CreatePublisher action. */
+	static readonly CreatePublisherConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateRegistry action. */
 	static readonly CreateRegistryConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",

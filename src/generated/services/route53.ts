@@ -114,6 +114,9 @@ export class Route53Actions {
 	static readonly actionGetHealthCheckStatus = "route53:GetHealthCheckStatus";
 	/** [List] route53:GetHostedZone */
 	static readonly actionGetHostedZone = "route53:GetHostedZone";
+	/** [List] route53:GetHostedZoneChangeBatch */
+	static readonly actionGetHostedZoneChangeBatch =
+		"route53:GetHostedZoneChangeBatch";
 	/** [List] route53:GetHostedZoneCount */
 	static readonly actionGetHostedZoneCount = "route53:GetHostedZoneCount";
 	/** [Read] route53:GetHostedZoneLimit */
@@ -150,6 +153,9 @@ export class Route53Actions {
 	static readonly ListHealthChecks = "route53:ListHealthChecks";
 	/** [List] route53:ListHealthChecksBySource */
 	static readonly ListHealthChecksBySource = "route53:ListHealthChecksBySource";
+	/** [List] route53:ListHostedZoneChangeBatches */
+	static readonly ListHostedZoneChangeBatches =
+		"route53:ListHostedZoneChangeBatches";
 	/** [List] route53:ListHostedZones */
 	static readonly ListHostedZones = "route53:ListHostedZones";
 	/** [List] route53:ListHostedZonesByName */
@@ -197,6 +203,8 @@ export class Route53Actions {
 	static readonly UpdateHostedZoneComment = "route53:UpdateHostedZoneComment";
 	/** [Write] route53:UpdateHostedZoneFeatures */
 	static readonly UpdateHostedZoneFeatures = "route53:UpdateHostedZoneFeatures";
+	/** [Write] route53:UpdateHostedZoneTier */
+	static readonly UpdateHostedZoneTier = "route53:UpdateHostedZoneTier";
 	/** [Write] route53:UpdateIpGuardrailPolicy */
 	static readonly UpdateIpGuardrailPolicy = "route53:UpdateIpGuardrailPolicy";
 	/** [Write] route53:UpdateTrafficPolicyComment */
@@ -265,6 +273,7 @@ export class Route53Actions {
 		Route53Actions.UpdateHealthCheck,
 		Route53Actions.UpdateHostedZoneComment,
 		Route53Actions.UpdateHostedZoneFeatures,
+		Route53Actions.UpdateHostedZoneTier,
 		Route53Actions.UpdateIpGuardrailPolicy,
 		Route53Actions.UpdateTrafficPolicyComment,
 		Route53Actions.UpdateTrafficPolicyInstance,
@@ -278,6 +287,7 @@ export class Route53Actions {
 		Route53Actions.actionGetHealthCheckLastFailureReason,
 		Route53Actions.actionGetHealthCheckStatus,
 		Route53Actions.actionGetHostedZone,
+		Route53Actions.actionGetHostedZoneChangeBatch,
 		Route53Actions.actionGetHostedZoneCount,
 		Route53Actions.actionGetReusableDelegationSet,
 		Route53Actions.ListCidrBlocks,
@@ -285,6 +295,7 @@ export class Route53Actions {
 		Route53Actions.ListCidrLocations,
 		Route53Actions.ListHealthCheckSources,
 		Route53Actions.ListHealthChecksBySource,
+		Route53Actions.ListHostedZoneChangeBatches,
 		Route53Actions.ListHostedZones,
 		Route53Actions.ListHostedZonesByName,
 		Route53Actions.ListHostedZonesByVPC,
@@ -1089,6 +1100,11 @@ export class Route53Operations {
 	];
 	/** IAM actions required for the GetHostedZone API call. */
 	static readonly opGetHostedZone: string[] = ["route53:GetHostedZone"];
+	/** IAM actions required for the GetHostedZoneChangeBatch API call. */
+	static readonly opGetHostedZoneChangeBatch: string[] = [
+		"route53:GetHostedZoneChangeBatch",
+		"route53:ListResourceRecordSets",
+	];
 	/** IAM actions required for the GetHostedZoneCount API call. */
 	static readonly opGetHostedZoneCount: string[] = [
 		"route53:GetHostedZoneCount",
@@ -1139,6 +1155,10 @@ export class Route53Operations {
 	static readonly ListHealthChecksBySource: string[] = [
 		"route53:ListHealthChecksBySource",
 	];
+	/** IAM actions required for the ListHostedZoneChangeBatches API call. */
+	static readonly ListHostedZoneChangeBatches: string[] = [
+		"route53:ListHostedZoneChangeBatches",
+	];
 	/** IAM actions required for the ListHostedZones API call. */
 	static readonly ListHostedZones: string[] = ["route53:ListHostedZones"];
 	/** IAM actions required for the ListHostedZonesByName API call. */
@@ -1152,6 +1172,11 @@ export class Route53Operations {
 	/** IAM actions required for the ListQueryLoggingConfigs API call. */
 	static readonly ListQueryLoggingConfigs: string[] = [
 		"route53:ListQueryLoggingConfigs",
+	];
+	/** IAM actions required for the ListResourceRecordSetChanges API call. */
+	static readonly ListResourceRecordSetChanges: string[] = [
+		"route53:GetHostedZoneChangeBatch",
+		"route53:ListResourceRecordSets",
 	];
 	/** IAM actions required for the ListResourceRecordSetProtections API call. */
 	static readonly ListResourceRecordSetProtections: string[] = [
@@ -1208,6 +1233,10 @@ export class Route53Operations {
 	/** IAM actions required for the UpdateHostedZoneFeatures API call. */
 	static readonly UpdateHostedZoneFeatures: string[] = [
 		"route53:UpdateHostedZoneFeatures",
+	];
+	/** IAM actions required for the UpdateHostedZoneTier API call. */
+	static readonly UpdateHostedZoneTier: string[] = [
+		"route53:UpdateHostedZoneTier",
 	];
 	/** IAM actions required for the UpdateTrafficPolicyComment API call. */
 	static readonly UpdateTrafficPolicyComment: string[] = [

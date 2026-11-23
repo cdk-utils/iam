@@ -883,6 +883,30 @@
       }
     },
     {
+      "Name": "TranscribeAudio",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "vocabulary"
+        },
+        {
+          "Name": "vocabularyfilter"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "UntagResource",
       "ActionConditionKeys": [
         "aws:TagKeys"
@@ -1746,6 +1770,22 @@
         {
           "Name": "transcribe",
           "Method": "tag_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "TranscribeAudio",
+      "AuthorizedActions": [
+        {
+          "Name": "TranscribeAudio",
+          "Service": "transcribe"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "transcribe",
+          "Method": "transcribe_audio",
           "Package": "Boto3"
         }
       ]

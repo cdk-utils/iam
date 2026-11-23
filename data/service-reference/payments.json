@@ -18,6 +18,21 @@
       }
     },
     {
+      "Name": "BatchGetFinancialRecord",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "CreateConnectedAccount",
       "ActionConditionKeys": [
         "aws:RequestTag/${TagKey}",
@@ -106,6 +121,21 @@
       }
     },
     {
+      "Name": "GetAccountBalance",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GetConnectedAccount",
       "Annotations": {
         "Properties": {
@@ -120,6 +150,21 @@
           "Name": "connectedaccount"
         }
       ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "GetFinancialRecord",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -189,7 +234,8 @@
       "Name": "GetPaymentInstrument",
       "Annotations": {
         "Properties": {
-          "IsList": true,
+          "IsDataPlane": false,
+          "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
           "IsWrite": false
@@ -209,6 +255,7 @@
       "Name": "GetPaymentStatus",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -224,6 +271,22 @@
       "Name": "ListConnectedAccounts",
       "Annotations": {
         "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListFinancialRecords",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -494,6 +557,102 @@
       "Name": "aws:TagKeys",
       "Types": [
         "ArrayOfString"
+      ]
+    }
+  ],
+  "Operations": [
+    {
+      "Name": "BatchGetFinancialRecord",
+      "SDK": [
+        {
+          "Name": "payments",
+          "Method": "batch_get_financial_record",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetAccountBalance",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPaymentStatus",
+          "Service": "payments"
+        },
+        {
+          "Name": "ViewBilling",
+          "Service": "aws-portal"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "payments",
+          "Method": "get_account_balance",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetFinancialRecord",
+      "SDK": [
+        {
+          "Name": "payments",
+          "Method": "get_financial_record",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetPaymentInstrument",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPaymentInstrument",
+          "Service": "payments"
+        },
+        {
+          "Name": "ViewPaymentMethods",
+          "Service": "aws-portal"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "payments",
+          "Method": "get_payment_instrument",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListFinancialRecords",
+      "AuthorizedActions": [
+        {
+          "Name": "GetPaymentStatus",
+          "Service": "payments"
+        },
+        {
+          "Name": "ListFinancialRecords",
+          "Service": "payments"
+        },
+        {
+          "Name": "ViewBilling",
+          "Service": "aws-portal"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "payments",
+          "Method": "list_financial_records",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListPaymentInstruments",
+      "SDK": [
+        {
+          "Name": "payments",
+          "Method": "list_payment_instruments",
+          "Package": "Boto3"
+        }
       ]
     }
   ],

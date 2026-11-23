@@ -63,6 +63,22 @@
       }
     },
     {
+      "Name": "DeleteOrganizationEnrollmentConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "DisassociateAccounts",
       "Annotations": {
         "Properties": {
@@ -247,6 +263,38 @@
       }
     },
     {
+      "Name": "ListOrganizationEnrollmentConfigurations",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListOrganizationalUnits",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListRecommendedActionSummaries",
       "Annotations": {
         "Properties": {
@@ -297,6 +345,22 @@
           ]
         }
       ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "PutOrganizationEnrollmentConfiguration",
+      "Annotations": {
+        "Properties": {
+          "IsDataPlane": false,
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -504,6 +568,22 @@
       ]
     },
     {
+      "Name": "DeleteOrganizationEnrollmentConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteOrganizationEnrollmentConfiguration",
+          "Service": "aco-automation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer-automation",
+          "Method": "delete_organization_enrollment_configuration",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DisassociateAccounts",
       "AuthorizedActions": [
         {
@@ -684,6 +764,38 @@
       ]
     },
     {
+      "Name": "ListOrganizationEnrollmentConfigurations",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOrganizationEnrollmentConfigurations",
+          "Service": "aco-automation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer-automation",
+          "Method": "list_organization_enrollment_configurations",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListOrganizationalUnits",
+      "AuthorizedActions": [
+        {
+          "Name": "ListOrganizationalUnits",
+          "Service": "aco-automation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer-automation",
+          "Method": "list_organizational_units",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListRecommendedActionSummaries",
       "AuthorizedActions": [
         {
@@ -731,6 +843,22 @@
         {
           "Name": "compute-optimizer-automation",
           "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "PutOrganizationEnrollmentConfiguration",
+      "AuthorizedActions": [
+        {
+          "Name": "PutOrganizationEnrollmentConfiguration",
+          "Service": "aco-automation"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "compute-optimizer-automation",
+          "Method": "put_organization_enrollment_configuration",
           "Package": "Boto3"
         }
       ]

@@ -22,18 +22,32 @@ export class TextractActions {
 	static readonly CreateAdapter = "textract:CreateAdapter";
 	/** [Write] textract:CreateAdapterVersion */
 	static readonly CreateAdapterVersion = "textract:CreateAdapterVersion";
+	/** [Write] textract:CreateBlueprint */
+	static readonly CreateBlueprint = "textract:CreateBlueprint";
+	/** [Write] textract:CreateBlueprintVersion */
+	static readonly CreateBlueprintVersion = "textract:CreateBlueprintVersion";
+	/** [Write] textract:CreateProject */
+	static readonly CreateProject = "textract:CreateProject";
 	/** [Write] textract:DeleteAdapter */
 	static readonly DeleteAdapter = "textract:DeleteAdapter";
 	/** [Write] textract:DeleteAdapterVersion */
 	static readonly DeleteAdapterVersion = "textract:DeleteAdapterVersion";
+	/** [Write] textract:DeleteBlueprint */
+	static readonly DeleteBlueprint = "textract:DeleteBlueprint";
+	/** [Write] textract:DeleteProject */
+	static readonly DeleteProject = "textract:DeleteProject";
 	/** [Read] textract:DetectDocumentText */
 	static readonly DetectDocumentText = "textract:DetectDocumentText";
 	/** [Read] textract:GetAdapter */
 	static readonly actionGetAdapter = "textract:GetAdapter";
 	/** [Read] textract:GetAdapterVersion */
 	static readonly actionGetAdapterVersion = "textract:GetAdapterVersion";
+	/** [Read] textract:GetBlueprint */
+	static readonly actionGetBlueprint = "textract:GetBlueprint";
 	/** [Read] textract:GetDocumentAnalysis */
 	static readonly actionGetDocumentAnalysis = "textract:GetDocumentAnalysis";
+	/** [Read] textract:GetDocumentInsights */
+	static readonly actionGetDocumentInsights = "textract:GetDocumentInsights";
 	/** [Read] textract:GetDocumentTextDetection */
 	static readonly actionGetDocumentTextDetection =
 		"textract:GetDocumentTextDetection";
@@ -44,14 +58,22 @@ export class TextractActions {
 	/** [Read] textract:GetLendingAnalysisSummary */
 	static readonly actionGetLendingAnalysisSummary =
 		"textract:GetLendingAnalysisSummary";
+	/** [Read] textract:GetProject */
+	static readonly actionGetProject = "textract:GetProject";
 	/** [Read] textract:ListAdapterVersions */
 	static readonly ListAdapterVersions = "textract:ListAdapterVersions";
 	/** [Read] textract:ListAdapters */
 	static readonly ListAdapters = "textract:ListAdapters";
+	/** [List] textract:ListBlueprints */
+	static readonly ListBlueprints = "textract:ListBlueprints";
+	/** [List] textract:ListProjects */
+	static readonly ListProjects = "textract:ListProjects";
 	/** [Read] textract:ListTagsForResource */
 	static readonly ListTagsForResource = "textract:ListTagsForResource";
 	/** [Write] textract:StartDocumentAnalysis */
 	static readonly StartDocumentAnalysis = "textract:StartDocumentAnalysis";
+	/** [Write] textract:StartDocumentInsights */
+	static readonly StartDocumentInsights = "textract:StartDocumentInsights";
 	/** [Write] textract:StartDocumentTextDetection */
 	static readonly StartDocumentTextDetection =
 		"textract:StartDocumentTextDetection";
@@ -65,6 +87,10 @@ export class TextractActions {
 	static readonly UntagResource = "textract:UntagResource";
 	/** [Write] textract:UpdateAdapter */
 	static readonly UpdateAdapter = "textract:UpdateAdapter";
+	/** [Write] textract:UpdateBlueprint */
+	static readonly UpdateBlueprint = "textract:UpdateBlueprint";
+	/** [Write] textract:UpdateProject */
+	static readonly UpdateProject = "textract:UpdateProject";
 
 	/** All read-level actions. */
 	static readonly AllReadActions: string[] = [
@@ -74,11 +100,14 @@ export class TextractActions {
 		TextractActions.DetectDocumentText,
 		TextractActions.actionGetAdapter,
 		TextractActions.actionGetAdapterVersion,
+		TextractActions.actionGetBlueprint,
 		TextractActions.actionGetDocumentAnalysis,
+		TextractActions.actionGetDocumentInsights,
 		TextractActions.actionGetDocumentTextDetection,
 		TextractActions.actionGetExpenseAnalysis,
 		TextractActions.actionGetLendingAnalysis,
 		TextractActions.actionGetLendingAnalysisSummary,
+		TextractActions.actionGetProject,
 		TextractActions.ListAdapterVersions,
 		TextractActions.ListAdapters,
 		TextractActions.ListTagsForResource,
@@ -87,16 +116,27 @@ export class TextractActions {
 	static readonly AllWriteActions: string[] = [
 		TextractActions.CreateAdapter,
 		TextractActions.CreateAdapterVersion,
+		TextractActions.CreateBlueprint,
+		TextractActions.CreateBlueprintVersion,
+		TextractActions.CreateProject,
 		TextractActions.DeleteAdapter,
 		TextractActions.DeleteAdapterVersion,
+		TextractActions.DeleteBlueprint,
+		TextractActions.DeleteProject,
 		TextractActions.StartDocumentAnalysis,
+		TextractActions.StartDocumentInsights,
 		TextractActions.StartDocumentTextDetection,
 		TextractActions.StartExpenseAnalysis,
 		TextractActions.StartLendingAnalysis,
 		TextractActions.UpdateAdapter,
+		TextractActions.UpdateBlueprint,
+		TextractActions.UpdateProject,
 	];
 	/** All list-level actions. */
-	static readonly AllListActions: string[] = [];
+	static readonly AllListActions: string[] = [
+		TextractActions.ListBlueprints,
+		TextractActions.ListProjects,
+	];
 	/** All permission-management-level actions. */
 	static readonly AllPermissionManagementActions: string[] = [];
 	/** All tagging-level actions. */
@@ -166,10 +206,100 @@ export interface TextractAdapterversionArnComponents {
 	readonly adapterVersion: string;
 }
 
+/**
+ * Properties for building a blueprint ARN.
+ */
+export interface TextractBlueprintArnProps {
+	/** The BlueprintId component of the ARN. */
+	readonly blueprintId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a blueprint ARN.
+ */
+export interface TextractBlueprintArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The BlueprintId component. */
+	readonly blueprintId: string;
+}
+
+/**
+ * Properties for building a job ARN.
+ */
+export interface TextractJobArnProps {
+	/** The JobId component of the ARN. */
+	readonly jobId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a job ARN.
+ */
+export interface TextractJobArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The JobId component. */
+	readonly jobId: string;
+}
+
+/**
+ * Properties for building a project ARN.
+ */
+export interface TextractProjectArnProps {
+	/** The ProjectId component of the ARN. */
+	readonly projectId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a project ARN.
+ */
+export interface TextractProjectArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ProjectId component. */
+	readonly projectId: string;
+}
+
 const AdapterArnRegex =
 	/^arn:(?<partition>[^:]+):textract:(?<region>[^:]*):(?<account>[^:]*):\/adapters\/(?<adapterId>[^:/?]+)$/;
 const AdapterversionArnRegex =
 	/^arn:(?<partition>[^:]+):textract:(?<region>[^:]*):(?<account>[^:]*):\/adapters\/(?<adapterId>[^:/?]+)\/versions\/(?<adapterVersion>[^:/?]+)$/;
+const BlueprintArnRegex =
+	/^arn:(?<partition>[^:]+):textract:(?<region>[^:]*):(?<account>[^:]*):blueprint\/(?<blueprintId>[^:/?]+)$/;
+const JobArnRegex =
+	/^arn:(?<partition>[^:]+):textract:(?<region>[^:]*):(?<account>[^:]*):job\/(?<jobId>[^:/?]+)$/;
+const ProjectArnRegex =
+	/^arn:(?<partition>[^:]+):textract:(?<region>[^:]*):(?<account>[^:]*):project\/(?<projectId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for textract resources.
@@ -239,6 +369,99 @@ export class TextractResources {
 			adapterVersion: match.groups!.adapterVersion,
 		};
 	}
+
+	/**
+	 * Builds an ARN for the blueprint resource.
+	 */
+	static blueprint(props: TextractBlueprintArnProps): string {
+		return `arn:${props.partition ?? "aws"}:textract:${props.region ?? "*"}:${props.account ?? "*"}:blueprint/${props.blueprintId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the blueprint resource.
+	 */
+	static isValidBlueprintArn(arn: string): boolean {
+		return BlueprintArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a blueprint ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseBlueprintArn(arn: string): TextractBlueprintArnComponents {
+		const match = BlueprintArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid blueprint ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			blueprintId: match.groups!.blueprintId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the job resource.
+	 */
+	static job(props: TextractJobArnProps): string {
+		return `arn:${props.partition ?? "aws"}:textract:${props.region ?? "*"}:${props.account ?? "*"}:job/${props.jobId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the job resource.
+	 */
+	static isValidJobArn(arn: string): boolean {
+		return JobArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a job ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseJobArn(arn: string): TextractJobArnComponents {
+		const match = JobArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid job ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			jobId: match.groups!.jobId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the project resource.
+	 */
+	static project(props: TextractProjectArnProps): string {
+		return `arn:${props.partition ?? "aws"}:textract:${props.region ?? "*"}:${props.account ?? "*"}:project/${props.projectId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the project resource.
+	 */
+	static isValidProjectArn(arn: string): boolean {
+		return ProjectArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a project ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseProjectArn(arn: string): TextractProjectArnComponents {
+		const match = ProjectArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid project ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			projectId: match.groups!.projectId,
+		};
+	}
 }
 
 /**
@@ -261,12 +484,30 @@ export class TextractOperations {
 		"textract:CreateAdapterVersion",
 		"textract:TagResource",
 	];
+	/** IAM actions required for the CreateBlueprint API call. */
+	static readonly CreateBlueprint: string[] = [
+		"textract:CreateBlueprint",
+		"textract:TagResource",
+	];
+	/** IAM actions required for the CreateBlueprintVersion API call. */
+	static readonly CreateBlueprintVersion: string[] = [
+		"textract:CreateBlueprintVersion",
+	];
+	/** IAM actions required for the CreateProject API call. */
+	static readonly CreateProject: string[] = [
+		"textract:CreateProject",
+		"textract:TagResource",
+	];
 	/** IAM actions required for the DeleteAdapter API call. */
 	static readonly DeleteAdapter: string[] = ["textract:DeleteAdapter"];
 	/** IAM actions required for the DeleteAdapterVersion API call. */
 	static readonly DeleteAdapterVersion: string[] = [
 		"textract:DeleteAdapterVersion",
 	];
+	/** IAM actions required for the DeleteBlueprint API call. */
+	static readonly DeleteBlueprint: string[] = ["textract:DeleteBlueprint"];
+	/** IAM actions required for the DeleteProject API call. */
+	static readonly DeleteProject: string[] = ["textract:DeleteProject"];
 	/** IAM actions required for the DetectDocumentText API call. */
 	static readonly DetectDocumentText: string[] = [
 		"textract:DetectDocumentText",
@@ -277,9 +518,15 @@ export class TextractOperations {
 	static readonly opGetAdapterVersion: string[] = [
 		"textract:GetAdapterVersion",
 	];
+	/** IAM actions required for the GetBlueprint API call. */
+	static readonly opGetBlueprint: string[] = ["textract:GetBlueprint"];
 	/** IAM actions required for the GetDocumentAnalysis API call. */
 	static readonly opGetDocumentAnalysis: string[] = [
 		"textract:GetDocumentAnalysis",
+	];
+	/** IAM actions required for the GetDocumentInsights API call. */
+	static readonly opGetDocumentInsights: string[] = [
+		"textract:GetDocumentInsights",
 	];
 	/** IAM actions required for the GetDocumentTextDetection API call. */
 	static readonly opGetDocumentTextDetection: string[] = [
@@ -297,12 +544,18 @@ export class TextractOperations {
 	static readonly opGetLendingAnalysisSummary: string[] = [
 		"textract:GetLendingAnalysisSummary",
 	];
+	/** IAM actions required for the GetProject API call. */
+	static readonly opGetProject: string[] = ["textract:GetProject"];
 	/** IAM actions required for the ListAdapterVersions API call. */
 	static readonly ListAdapterVersions: string[] = [
 		"textract:ListAdapterVersions",
 	];
 	/** IAM actions required for the ListAdapters API call. */
 	static readonly ListAdapters: string[] = ["textract:ListAdapters"];
+	/** IAM actions required for the ListBlueprints API call. */
+	static readonly ListBlueprints: string[] = ["textract:ListBlueprints"];
+	/** IAM actions required for the ListProjects API call. */
+	static readonly ListProjects: string[] = ["textract:ListProjects"];
 	/** IAM actions required for the ListTagsForResource API call. */
 	static readonly ListTagsForResource: string[] = [
 		"textract:ListTagsForResource",
@@ -311,6 +564,11 @@ export class TextractOperations {
 	static readonly StartDocumentAnalysis: string[] = [
 		"iam:PassRole",
 		"textract:StartDocumentAnalysis",
+	];
+	/** IAM actions required for the StartDocumentInsights API call. */
+	static readonly StartDocumentInsights: string[] = [
+		"textract:StartDocumentInsights",
+		"textract:TagResource",
 	];
 	/** IAM actions required for the StartDocumentTextDetection API call. */
 	static readonly StartDocumentTextDetection: string[] = [
@@ -333,6 +591,10 @@ export class TextractOperations {
 	static readonly UntagResource: string[] = ["textract:UntagResource"];
 	/** IAM actions required for the UpdateAdapter API call. */
 	static readonly UpdateAdapter: string[] = ["textract:UpdateAdapter"];
+	/** IAM actions required for the UpdateBlueprint API call. */
+	static readonly UpdateBlueprint: string[] = ["textract:UpdateBlueprint"];
+	/** IAM actions required for the UpdateProject API call. */
+	static readonly UpdateProject: string[] = ["textract:UpdateProject"];
 }
 
 /**
@@ -346,6 +608,21 @@ export class TextractConditions {
 	];
 	/** Condition keys applicable to the CreateAdapterVersion action. */
 	static readonly CreateAdapterVersionConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the CreateBlueprint action. */
+	static readonly CreateBlueprintConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the CreateProject action. */
+	static readonly CreateProjectConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the StartDocumentInsights action. */
+	static readonly StartDocumentInsightsConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];

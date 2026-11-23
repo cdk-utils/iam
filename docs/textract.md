@@ -325,6 +325,450 @@ Defaults to "*".
 
 ---
 
+### TextractBlueprintArnComponents <a name="TextractBlueprintArnComponents" id="@cdk_utils/iam.textract.TextractBlueprintArnComponents"></a>
+
+Parsed components of a blueprint ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.textract.TextractBlueprintArnComponents.Initializer"></a>
+
+```typescript
+import { textract } from '@cdk_utils/iam'
+
+const textractBlueprintArnComponents: textract.TextractBlueprintArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.textract.TextractBlueprintArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.textract.TextractBlueprintArnComponents.property.blueprintId">blueprintId</a></code> | <code>string</code> | The BlueprintId component. |
+| <code><a href="#@cdk_utils/iam.textract.TextractBlueprintArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.textract.TextractBlueprintArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.textract.TextractBlueprintArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `blueprintId`<sup>Required</sup> <a name="blueprintId" id="@cdk_utils/iam.textract.TextractBlueprintArnComponents.property.blueprintId"></a>
+
+```typescript
+public readonly blueprintId: string;
+```
+
+- *Type:* string
+
+The BlueprintId component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.textract.TextractBlueprintArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.textract.TextractBlueprintArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### TextractBlueprintArnProps <a name="TextractBlueprintArnProps" id="@cdk_utils/iam.textract.TextractBlueprintArnProps"></a>
+
+Properties for building a blueprint ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.textract.TextractBlueprintArnProps.Initializer"></a>
+
+```typescript
+import { textract } from '@cdk_utils/iam'
+
+const textractBlueprintArnProps: textract.TextractBlueprintArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.textract.TextractBlueprintArnProps.property.blueprintId">blueprintId</a></code> | <code>string</code> | The BlueprintId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.textract.TextractBlueprintArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.textract.TextractBlueprintArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.textract.TextractBlueprintArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `blueprintId`<sup>Required</sup> <a name="blueprintId" id="@cdk_utils/iam.textract.TextractBlueprintArnProps.property.blueprintId"></a>
+
+```typescript
+public readonly blueprintId: string;
+```
+
+- *Type:* string
+
+The BlueprintId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.textract.TextractBlueprintArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.textract.TextractBlueprintArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.textract.TextractBlueprintArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
+### TextractJobArnComponents <a name="TextractJobArnComponents" id="@cdk_utils/iam.textract.TextractJobArnComponents"></a>
+
+Parsed components of a job ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.textract.TextractJobArnComponents.Initializer"></a>
+
+```typescript
+import { textract } from '@cdk_utils/iam'
+
+const textractJobArnComponents: textract.TextractJobArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.textract.TextractJobArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.textract.TextractJobArnComponents.property.jobId">jobId</a></code> | <code>string</code> | The JobId component. |
+| <code><a href="#@cdk_utils/iam.textract.TextractJobArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.textract.TextractJobArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.textract.TextractJobArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `jobId`<sup>Required</sup> <a name="jobId" id="@cdk_utils/iam.textract.TextractJobArnComponents.property.jobId"></a>
+
+```typescript
+public readonly jobId: string;
+```
+
+- *Type:* string
+
+The JobId component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.textract.TextractJobArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.textract.TextractJobArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### TextractJobArnProps <a name="TextractJobArnProps" id="@cdk_utils/iam.textract.TextractJobArnProps"></a>
+
+Properties for building a job ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.textract.TextractJobArnProps.Initializer"></a>
+
+```typescript
+import { textract } from '@cdk_utils/iam'
+
+const textractJobArnProps: textract.TextractJobArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.textract.TextractJobArnProps.property.jobId">jobId</a></code> | <code>string</code> | The JobId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.textract.TextractJobArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.textract.TextractJobArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.textract.TextractJobArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `jobId`<sup>Required</sup> <a name="jobId" id="@cdk_utils/iam.textract.TextractJobArnProps.property.jobId"></a>
+
+```typescript
+public readonly jobId: string;
+```
+
+- *Type:* string
+
+The JobId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.textract.TextractJobArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.textract.TextractJobArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.textract.TextractJobArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
+### TextractProjectArnComponents <a name="TextractProjectArnComponents" id="@cdk_utils/iam.textract.TextractProjectArnComponents"></a>
+
+Parsed components of a project ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.textract.TextractProjectArnComponents.Initializer"></a>
+
+```typescript
+import { textract } from '@cdk_utils/iam'
+
+const textractProjectArnComponents: textract.TextractProjectArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.textract.TextractProjectArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.textract.TextractProjectArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.textract.TextractProjectArnComponents.property.projectId">projectId</a></code> | <code>string</code> | The ProjectId component. |
+| <code><a href="#@cdk_utils/iam.textract.TextractProjectArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.textract.TextractProjectArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.textract.TextractProjectArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `projectId`<sup>Required</sup> <a name="projectId" id="@cdk_utils/iam.textract.TextractProjectArnComponents.property.projectId"></a>
+
+```typescript
+public readonly projectId: string;
+```
+
+- *Type:* string
+
+The ProjectId component.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.textract.TextractProjectArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### TextractProjectArnProps <a name="TextractProjectArnProps" id="@cdk_utils/iam.textract.TextractProjectArnProps"></a>
+
+Properties for building a project ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.textract.TextractProjectArnProps.Initializer"></a>
+
+```typescript
+import { textract } from '@cdk_utils/iam'
+
+const textractProjectArnProps: textract.TextractProjectArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.textract.TextractProjectArnProps.property.projectId">projectId</a></code> | <code>string</code> | The ProjectId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.textract.TextractProjectArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.textract.TextractProjectArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.textract.TextractProjectArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `projectId`<sup>Required</sup> <a name="projectId" id="@cdk_utils/iam.textract.TextractProjectArnProps.property.projectId"></a>
+
+```typescript
+public readonly projectId: string;
+```
+
+- *Type:* string
+
+The ProjectId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.textract.TextractProjectArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.textract.TextractProjectArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.textract.TextractProjectArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ## Classes <a name="Classes" id="Classes"></a>
 
 ### TextractActions <a name="TextractActions" id="@cdk_utils/iam.textract.TextractActions"></a>
@@ -353,11 +797,14 @@ new textract.TextractActions()
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.textract.TextractActions.property.actionGetAdapter">actionGetAdapter</a></code> | <code>string</code> | [Read] textract:GetAdapter. |
 | <code><a href="#@cdk_utils/iam.textract.TextractActions.property.actionGetAdapterVersion">actionGetAdapterVersion</a></code> | <code>string</code> | [Read] textract:GetAdapterVersion. |
+| <code><a href="#@cdk_utils/iam.textract.TextractActions.property.actionGetBlueprint">actionGetBlueprint</a></code> | <code>string</code> | [Read] textract:GetBlueprint. |
 | <code><a href="#@cdk_utils/iam.textract.TextractActions.property.actionGetDocumentAnalysis">actionGetDocumentAnalysis</a></code> | <code>string</code> | [Read] textract:GetDocumentAnalysis. |
+| <code><a href="#@cdk_utils/iam.textract.TextractActions.property.actionGetDocumentInsights">actionGetDocumentInsights</a></code> | <code>string</code> | [Read] textract:GetDocumentInsights. |
 | <code><a href="#@cdk_utils/iam.textract.TextractActions.property.actionGetDocumentTextDetection">actionGetDocumentTextDetection</a></code> | <code>string</code> | [Read] textract:GetDocumentTextDetection. |
 | <code><a href="#@cdk_utils/iam.textract.TextractActions.property.actionGetExpenseAnalysis">actionGetExpenseAnalysis</a></code> | <code>string</code> | [Read] textract:GetExpenseAnalysis. |
 | <code><a href="#@cdk_utils/iam.textract.TextractActions.property.actionGetLendingAnalysis">actionGetLendingAnalysis</a></code> | <code>string</code> | [Read] textract:GetLendingAnalysis. |
 | <code><a href="#@cdk_utils/iam.textract.TextractActions.property.actionGetLendingAnalysisSummary">actionGetLendingAnalysisSummary</a></code> | <code>string</code> | [Read] textract:GetLendingAnalysisSummary. |
+| <code><a href="#@cdk_utils/iam.textract.TextractActions.property.actionGetProject">actionGetProject</a></code> | <code>string</code> | [Read] textract:GetProject. |
 | <code><a href="#@cdk_utils/iam.textract.TextractActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
 | <code><a href="#@cdk_utils/iam.textract.TextractActions.property.AllPermissionManagementActions">AllPermissionManagementActions</a></code> | <code>string[]</code> | All permission-management-level actions. |
 | <code><a href="#@cdk_utils/iam.textract.TextractActions.property.AllReadActions">AllReadActions</a></code> | <code>string[]</code> | All read-level actions. |
@@ -368,20 +815,30 @@ new textract.TextractActions()
 | <code><a href="#@cdk_utils/iam.textract.TextractActions.property.AnalyzeID">AnalyzeID</a></code> | <code>string</code> | [Read] textract:AnalyzeID. |
 | <code><a href="#@cdk_utils/iam.textract.TextractActions.property.CreateAdapter">CreateAdapter</a></code> | <code>string</code> | [Write] textract:CreateAdapter. |
 | <code><a href="#@cdk_utils/iam.textract.TextractActions.property.CreateAdapterVersion">CreateAdapterVersion</a></code> | <code>string</code> | [Write] textract:CreateAdapterVersion. |
+| <code><a href="#@cdk_utils/iam.textract.TextractActions.property.CreateBlueprint">CreateBlueprint</a></code> | <code>string</code> | [Write] textract:CreateBlueprint. |
+| <code><a href="#@cdk_utils/iam.textract.TextractActions.property.CreateBlueprintVersion">CreateBlueprintVersion</a></code> | <code>string</code> | [Write] textract:CreateBlueprintVersion. |
+| <code><a href="#@cdk_utils/iam.textract.TextractActions.property.CreateProject">CreateProject</a></code> | <code>string</code> | [Write] textract:CreateProject. |
 | <code><a href="#@cdk_utils/iam.textract.TextractActions.property.DeleteAdapter">DeleteAdapter</a></code> | <code>string</code> | [Write] textract:DeleteAdapter. |
 | <code><a href="#@cdk_utils/iam.textract.TextractActions.property.DeleteAdapterVersion">DeleteAdapterVersion</a></code> | <code>string</code> | [Write] textract:DeleteAdapterVersion. |
+| <code><a href="#@cdk_utils/iam.textract.TextractActions.property.DeleteBlueprint">DeleteBlueprint</a></code> | <code>string</code> | [Write] textract:DeleteBlueprint. |
+| <code><a href="#@cdk_utils/iam.textract.TextractActions.property.DeleteProject">DeleteProject</a></code> | <code>string</code> | [Write] textract:DeleteProject. |
 | <code><a href="#@cdk_utils/iam.textract.TextractActions.property.DetectDocumentText">DetectDocumentText</a></code> | <code>string</code> | [Read] textract:DetectDocumentText. |
 | <code><a href="#@cdk_utils/iam.textract.TextractActions.property.ListAdapters">ListAdapters</a></code> | <code>string</code> | [Read] textract:ListAdapters. |
 | <code><a href="#@cdk_utils/iam.textract.TextractActions.property.ListAdapterVersions">ListAdapterVersions</a></code> | <code>string</code> | [Read] textract:ListAdapterVersions. |
+| <code><a href="#@cdk_utils/iam.textract.TextractActions.property.ListBlueprints">ListBlueprints</a></code> | <code>string</code> | [List] textract:ListBlueprints. |
+| <code><a href="#@cdk_utils/iam.textract.TextractActions.property.ListProjects">ListProjects</a></code> | <code>string</code> | [List] textract:ListProjects. |
 | <code><a href="#@cdk_utils/iam.textract.TextractActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Read] textract:ListTagsForResource. |
 | <code><a href="#@cdk_utils/iam.textract.TextractActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.textract.TextractActions.property.StartDocumentAnalysis">StartDocumentAnalysis</a></code> | <code>string</code> | [Write] textract:StartDocumentAnalysis. |
+| <code><a href="#@cdk_utils/iam.textract.TextractActions.property.StartDocumentInsights">StartDocumentInsights</a></code> | <code>string</code> | [Write] textract:StartDocumentInsights. |
 | <code><a href="#@cdk_utils/iam.textract.TextractActions.property.StartDocumentTextDetection">StartDocumentTextDetection</a></code> | <code>string</code> | [Write] textract:StartDocumentTextDetection. |
 | <code><a href="#@cdk_utils/iam.textract.TextractActions.property.StartExpenseAnalysis">StartExpenseAnalysis</a></code> | <code>string</code> | [Write] textract:StartExpenseAnalysis. |
 | <code><a href="#@cdk_utils/iam.textract.TextractActions.property.StartLendingAnalysis">StartLendingAnalysis</a></code> | <code>string</code> | [Write] textract:StartLendingAnalysis. |
 | <code><a href="#@cdk_utils/iam.textract.TextractActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] textract:TagResource. |
 | <code><a href="#@cdk_utils/iam.textract.TextractActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] textract:UntagResource. |
 | <code><a href="#@cdk_utils/iam.textract.TextractActions.property.UpdateAdapter">UpdateAdapter</a></code> | <code>string</code> | [Write] textract:UpdateAdapter. |
+| <code><a href="#@cdk_utils/iam.textract.TextractActions.property.UpdateBlueprint">UpdateBlueprint</a></code> | <code>string</code> | [Write] textract:UpdateBlueprint. |
+| <code><a href="#@cdk_utils/iam.textract.TextractActions.property.UpdateProject">UpdateProject</a></code> | <code>string</code> | [Write] textract:UpdateProject. |
 
 ---
 
@@ -409,6 +866,18 @@ public readonly actionGetAdapterVersion: string;
 
 ---
 
+##### `actionGetBlueprint`<sup>Required</sup> <a name="actionGetBlueprint" id="@cdk_utils/iam.textract.TextractActions.property.actionGetBlueprint"></a>
+
+```typescript
+public readonly actionGetBlueprint: string;
+```
+
+- *Type:* string
+
+[Read] textract:GetBlueprint.
+
+---
+
 ##### `actionGetDocumentAnalysis`<sup>Required</sup> <a name="actionGetDocumentAnalysis" id="@cdk_utils/iam.textract.TextractActions.property.actionGetDocumentAnalysis"></a>
 
 ```typescript
@@ -418,6 +887,18 @@ public readonly actionGetDocumentAnalysis: string;
 - *Type:* string
 
 [Read] textract:GetDocumentAnalysis.
+
+---
+
+##### `actionGetDocumentInsights`<sup>Required</sup> <a name="actionGetDocumentInsights" id="@cdk_utils/iam.textract.TextractActions.property.actionGetDocumentInsights"></a>
+
+```typescript
+public readonly actionGetDocumentInsights: string;
+```
+
+- *Type:* string
+
+[Read] textract:GetDocumentInsights.
 
 ---
 
@@ -466,6 +947,18 @@ public readonly actionGetLendingAnalysisSummary: string;
 - *Type:* string
 
 [Read] textract:GetLendingAnalysisSummary.
+
+---
+
+##### `actionGetProject`<sup>Required</sup> <a name="actionGetProject" id="@cdk_utils/iam.textract.TextractActions.property.actionGetProject"></a>
+
+```typescript
+public readonly actionGetProject: string;
+```
+
+- *Type:* string
+
+[Read] textract:GetProject.
 
 ---
 
@@ -589,6 +1082,42 @@ public readonly CreateAdapterVersion: string;
 
 ---
 
+##### `CreateBlueprint`<sup>Required</sup> <a name="CreateBlueprint" id="@cdk_utils/iam.textract.TextractActions.property.CreateBlueprint"></a>
+
+```typescript
+public readonly CreateBlueprint: string;
+```
+
+- *Type:* string
+
+[Write] textract:CreateBlueprint.
+
+---
+
+##### `CreateBlueprintVersion`<sup>Required</sup> <a name="CreateBlueprintVersion" id="@cdk_utils/iam.textract.TextractActions.property.CreateBlueprintVersion"></a>
+
+```typescript
+public readonly CreateBlueprintVersion: string;
+```
+
+- *Type:* string
+
+[Write] textract:CreateBlueprintVersion.
+
+---
+
+##### `CreateProject`<sup>Required</sup> <a name="CreateProject" id="@cdk_utils/iam.textract.TextractActions.property.CreateProject"></a>
+
+```typescript
+public readonly CreateProject: string;
+```
+
+- *Type:* string
+
+[Write] textract:CreateProject.
+
+---
+
 ##### `DeleteAdapter`<sup>Required</sup> <a name="DeleteAdapter" id="@cdk_utils/iam.textract.TextractActions.property.DeleteAdapter"></a>
 
 ```typescript
@@ -610,6 +1139,30 @@ public readonly DeleteAdapterVersion: string;
 - *Type:* string
 
 [Write] textract:DeleteAdapterVersion.
+
+---
+
+##### `DeleteBlueprint`<sup>Required</sup> <a name="DeleteBlueprint" id="@cdk_utils/iam.textract.TextractActions.property.DeleteBlueprint"></a>
+
+```typescript
+public readonly DeleteBlueprint: string;
+```
+
+- *Type:* string
+
+[Write] textract:DeleteBlueprint.
+
+---
+
+##### `DeleteProject`<sup>Required</sup> <a name="DeleteProject" id="@cdk_utils/iam.textract.TextractActions.property.DeleteProject"></a>
+
+```typescript
+public readonly DeleteProject: string;
+```
+
+- *Type:* string
+
+[Write] textract:DeleteProject.
 
 ---
 
@@ -649,6 +1202,30 @@ public readonly ListAdapterVersions: string;
 
 ---
 
+##### `ListBlueprints`<sup>Required</sup> <a name="ListBlueprints" id="@cdk_utils/iam.textract.TextractActions.property.ListBlueprints"></a>
+
+```typescript
+public readonly ListBlueprints: string;
+```
+
+- *Type:* string
+
+[List] textract:ListBlueprints.
+
+---
+
+##### `ListProjects`<sup>Required</sup> <a name="ListProjects" id="@cdk_utils/iam.textract.TextractActions.property.ListProjects"></a>
+
+```typescript
+public readonly ListProjects: string;
+```
+
+- *Type:* string
+
+[List] textract:ListProjects.
+
+---
+
 ##### `ListTagsForResource`<sup>Required</sup> <a name="ListTagsForResource" id="@cdk_utils/iam.textract.TextractActions.property.ListTagsForResource"></a>
 
 ```typescript
@@ -682,6 +1259,18 @@ public readonly StartDocumentAnalysis: string;
 - *Type:* string
 
 [Write] textract:StartDocumentAnalysis.
+
+---
+
+##### `StartDocumentInsights`<sup>Required</sup> <a name="StartDocumentInsights" id="@cdk_utils/iam.textract.TextractActions.property.StartDocumentInsights"></a>
+
+```typescript
+public readonly StartDocumentInsights: string;
+```
+
+- *Type:* string
+
+[Write] textract:StartDocumentInsights.
 
 ---
 
@@ -754,6 +1343,30 @@ public readonly UpdateAdapter: string;
 - *Type:* string
 
 [Write] textract:UpdateAdapter.
+
+---
+
+##### `UpdateBlueprint`<sup>Required</sup> <a name="UpdateBlueprint" id="@cdk_utils/iam.textract.TextractActions.property.UpdateBlueprint"></a>
+
+```typescript
+public readonly UpdateBlueprint: string;
+```
+
+- *Type:* string
+
+[Write] textract:UpdateBlueprint.
+
+---
+
+##### `UpdateProject`<sup>Required</sup> <a name="UpdateProject" id="@cdk_utils/iam.textract.TextractActions.property.UpdateProject"></a>
+
+```typescript
+public readonly UpdateProject: string;
+```
+
+- *Type:* string
+
+[Write] textract:UpdateProject.
 
 ---
 
@@ -843,6 +1456,9 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.textract.TextractConditions.property.AWS_TAG_KEYS">AWS_TAG_KEYS</a></code> | <code>string</code> | Condition key: aws:TagKeys (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.textract.TextractConditions.property.CreateAdapterConditionKeys">CreateAdapterConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateAdapter action. |
 | <code><a href="#@cdk_utils/iam.textract.TextractConditions.property.CreateAdapterVersionConditionKeys">CreateAdapterVersionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateAdapterVersion action. |
+| <code><a href="#@cdk_utils/iam.textract.TextractConditions.property.CreateBlueprintConditionKeys">CreateBlueprintConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateBlueprint action. |
+| <code><a href="#@cdk_utils/iam.textract.TextractConditions.property.CreateProjectConditionKeys">CreateProjectConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateProject action. |
+| <code><a href="#@cdk_utils/iam.textract.TextractConditions.property.StartDocumentInsightsConditionKeys">StartDocumentInsightsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartDocumentInsights action. |
 | <code><a href="#@cdk_utils/iam.textract.TextractConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
 | <code><a href="#@cdk_utils/iam.textract.TextractConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
 
@@ -908,6 +1524,42 @@ Condition keys applicable to the CreateAdapterVersion action.
 
 ---
 
+##### `CreateBlueprintConditionKeys`<sup>Required</sup> <a name="CreateBlueprintConditionKeys" id="@cdk_utils/iam.textract.TextractConditions.property.CreateBlueprintConditionKeys"></a>
+
+```typescript
+public readonly CreateBlueprintConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateBlueprint action.
+
+---
+
+##### `CreateProjectConditionKeys`<sup>Required</sup> <a name="CreateProjectConditionKeys" id="@cdk_utils/iam.textract.TextractConditions.property.CreateProjectConditionKeys"></a>
+
+```typescript
+public readonly CreateProjectConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateProject action.
+
+---
+
+##### `StartDocumentInsightsConditionKeys`<sup>Required</sup> <a name="StartDocumentInsightsConditionKeys" id="@cdk_utils/iam.textract.TextractConditions.property.StartDocumentInsightsConditionKeys"></a>
+
+```typescript
+public readonly StartDocumentInsightsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the StartDocumentInsights action.
+
+---
+
 ##### `TagResourceConditionKeys`<sup>Required</sup> <a name="TagResourceConditionKeys" id="@cdk_utils/iam.textract.TextractConditions.property.TagResourceConditionKeys"></a>
 
 ```typescript
@@ -961,26 +1613,39 @@ new textract.TextractOperations()
 | <code><a href="#@cdk_utils/iam.textract.TextractOperations.property.AnalyzeID">AnalyzeID</a></code> | <code>string[]</code> | IAM actions required for the AnalyzeID API call. |
 | <code><a href="#@cdk_utils/iam.textract.TextractOperations.property.CreateAdapter">CreateAdapter</a></code> | <code>string[]</code> | IAM actions required for the CreateAdapter API call. |
 | <code><a href="#@cdk_utils/iam.textract.TextractOperations.property.CreateAdapterVersion">CreateAdapterVersion</a></code> | <code>string[]</code> | IAM actions required for the CreateAdapterVersion API call. |
+| <code><a href="#@cdk_utils/iam.textract.TextractOperations.property.CreateBlueprint">CreateBlueprint</a></code> | <code>string[]</code> | IAM actions required for the CreateBlueprint API call. |
+| <code><a href="#@cdk_utils/iam.textract.TextractOperations.property.CreateBlueprintVersion">CreateBlueprintVersion</a></code> | <code>string[]</code> | IAM actions required for the CreateBlueprintVersion API call. |
+| <code><a href="#@cdk_utils/iam.textract.TextractOperations.property.CreateProject">CreateProject</a></code> | <code>string[]</code> | IAM actions required for the CreateProject API call. |
 | <code><a href="#@cdk_utils/iam.textract.TextractOperations.property.DeleteAdapter">DeleteAdapter</a></code> | <code>string[]</code> | IAM actions required for the DeleteAdapter API call. |
 | <code><a href="#@cdk_utils/iam.textract.TextractOperations.property.DeleteAdapterVersion">DeleteAdapterVersion</a></code> | <code>string[]</code> | IAM actions required for the DeleteAdapterVersion API call. |
+| <code><a href="#@cdk_utils/iam.textract.TextractOperations.property.DeleteBlueprint">DeleteBlueprint</a></code> | <code>string[]</code> | IAM actions required for the DeleteBlueprint API call. |
+| <code><a href="#@cdk_utils/iam.textract.TextractOperations.property.DeleteProject">DeleteProject</a></code> | <code>string[]</code> | IAM actions required for the DeleteProject API call. |
 | <code><a href="#@cdk_utils/iam.textract.TextractOperations.property.DetectDocumentText">DetectDocumentText</a></code> | <code>string[]</code> | IAM actions required for the DetectDocumentText API call. |
 | <code><a href="#@cdk_utils/iam.textract.TextractOperations.property.ListAdapters">ListAdapters</a></code> | <code>string[]</code> | IAM actions required for the ListAdapters API call. |
 | <code><a href="#@cdk_utils/iam.textract.TextractOperations.property.ListAdapterVersions">ListAdapterVersions</a></code> | <code>string[]</code> | IAM actions required for the ListAdapterVersions API call. |
+| <code><a href="#@cdk_utils/iam.textract.TextractOperations.property.ListBlueprints">ListBlueprints</a></code> | <code>string[]</code> | IAM actions required for the ListBlueprints API call. |
+| <code><a href="#@cdk_utils/iam.textract.TextractOperations.property.ListProjects">ListProjects</a></code> | <code>string[]</code> | IAM actions required for the ListProjects API call. |
 | <code><a href="#@cdk_utils/iam.textract.TextractOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.textract.TextractOperations.property.opGetAdapter">opGetAdapter</a></code> | <code>string[]</code> | IAM actions required for the GetAdapter API call. |
 | <code><a href="#@cdk_utils/iam.textract.TextractOperations.property.opGetAdapterVersion">opGetAdapterVersion</a></code> | <code>string[]</code> | IAM actions required for the GetAdapterVersion API call. |
+| <code><a href="#@cdk_utils/iam.textract.TextractOperations.property.opGetBlueprint">opGetBlueprint</a></code> | <code>string[]</code> | IAM actions required for the GetBlueprint API call. |
 | <code><a href="#@cdk_utils/iam.textract.TextractOperations.property.opGetDocumentAnalysis">opGetDocumentAnalysis</a></code> | <code>string[]</code> | IAM actions required for the GetDocumentAnalysis API call. |
+| <code><a href="#@cdk_utils/iam.textract.TextractOperations.property.opGetDocumentInsights">opGetDocumentInsights</a></code> | <code>string[]</code> | IAM actions required for the GetDocumentInsights API call. |
 | <code><a href="#@cdk_utils/iam.textract.TextractOperations.property.opGetDocumentTextDetection">opGetDocumentTextDetection</a></code> | <code>string[]</code> | IAM actions required for the GetDocumentTextDetection API call. |
 | <code><a href="#@cdk_utils/iam.textract.TextractOperations.property.opGetExpenseAnalysis">opGetExpenseAnalysis</a></code> | <code>string[]</code> | IAM actions required for the GetExpenseAnalysis API call. |
 | <code><a href="#@cdk_utils/iam.textract.TextractOperations.property.opGetLendingAnalysis">opGetLendingAnalysis</a></code> | <code>string[]</code> | IAM actions required for the GetLendingAnalysis API call. |
 | <code><a href="#@cdk_utils/iam.textract.TextractOperations.property.opGetLendingAnalysisSummary">opGetLendingAnalysisSummary</a></code> | <code>string[]</code> | IAM actions required for the GetLendingAnalysisSummary API call. |
+| <code><a href="#@cdk_utils/iam.textract.TextractOperations.property.opGetProject">opGetProject</a></code> | <code>string[]</code> | IAM actions required for the GetProject API call. |
 | <code><a href="#@cdk_utils/iam.textract.TextractOperations.property.StartDocumentAnalysis">StartDocumentAnalysis</a></code> | <code>string[]</code> | IAM actions required for the StartDocumentAnalysis API call. |
+| <code><a href="#@cdk_utils/iam.textract.TextractOperations.property.StartDocumentInsights">StartDocumentInsights</a></code> | <code>string[]</code> | IAM actions required for the StartDocumentInsights API call. |
 | <code><a href="#@cdk_utils/iam.textract.TextractOperations.property.StartDocumentTextDetection">StartDocumentTextDetection</a></code> | <code>string[]</code> | IAM actions required for the StartDocumentTextDetection API call. |
 | <code><a href="#@cdk_utils/iam.textract.TextractOperations.property.StartExpenseAnalysis">StartExpenseAnalysis</a></code> | <code>string[]</code> | IAM actions required for the StartExpenseAnalysis API call. |
 | <code><a href="#@cdk_utils/iam.textract.TextractOperations.property.StartLendingAnalysis">StartLendingAnalysis</a></code> | <code>string[]</code> | IAM actions required for the StartLendingAnalysis API call. |
 | <code><a href="#@cdk_utils/iam.textract.TextractOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.textract.TextractOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 | <code><a href="#@cdk_utils/iam.textract.TextractOperations.property.UpdateAdapter">UpdateAdapter</a></code> | <code>string[]</code> | IAM actions required for the UpdateAdapter API call. |
+| <code><a href="#@cdk_utils/iam.textract.TextractOperations.property.UpdateBlueprint">UpdateBlueprint</a></code> | <code>string[]</code> | IAM actions required for the UpdateBlueprint API call. |
+| <code><a href="#@cdk_utils/iam.textract.TextractOperations.property.UpdateProject">UpdateProject</a></code> | <code>string[]</code> | IAM actions required for the UpdateProject API call. |
 
 ---
 
@@ -1044,6 +1709,42 @@ IAM actions required for the CreateAdapterVersion API call.
 
 ---
 
+##### `CreateBlueprint`<sup>Required</sup> <a name="CreateBlueprint" id="@cdk_utils/iam.textract.TextractOperations.property.CreateBlueprint"></a>
+
+```typescript
+public readonly CreateBlueprint: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateBlueprint API call.
+
+---
+
+##### `CreateBlueprintVersion`<sup>Required</sup> <a name="CreateBlueprintVersion" id="@cdk_utils/iam.textract.TextractOperations.property.CreateBlueprintVersion"></a>
+
+```typescript
+public readonly CreateBlueprintVersion: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateBlueprintVersion API call.
+
+---
+
+##### `CreateProject`<sup>Required</sup> <a name="CreateProject" id="@cdk_utils/iam.textract.TextractOperations.property.CreateProject"></a>
+
+```typescript
+public readonly CreateProject: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateProject API call.
+
+---
+
 ##### `DeleteAdapter`<sup>Required</sup> <a name="DeleteAdapter" id="@cdk_utils/iam.textract.TextractOperations.property.DeleteAdapter"></a>
 
 ```typescript
@@ -1065,6 +1766,30 @@ public readonly DeleteAdapterVersion: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteAdapterVersion API call.
+
+---
+
+##### `DeleteBlueprint`<sup>Required</sup> <a name="DeleteBlueprint" id="@cdk_utils/iam.textract.TextractOperations.property.DeleteBlueprint"></a>
+
+```typescript
+public readonly DeleteBlueprint: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteBlueprint API call.
+
+---
+
+##### `DeleteProject`<sup>Required</sup> <a name="DeleteProject" id="@cdk_utils/iam.textract.TextractOperations.property.DeleteProject"></a>
+
+```typescript
+public readonly DeleteProject: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteProject API call.
 
 ---
 
@@ -1104,6 +1829,30 @@ IAM actions required for the ListAdapterVersions API call.
 
 ---
 
+##### `ListBlueprints`<sup>Required</sup> <a name="ListBlueprints" id="@cdk_utils/iam.textract.TextractOperations.property.ListBlueprints"></a>
+
+```typescript
+public readonly ListBlueprints: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListBlueprints API call.
+
+---
+
+##### `ListProjects`<sup>Required</sup> <a name="ListProjects" id="@cdk_utils/iam.textract.TextractOperations.property.ListProjects"></a>
+
+```typescript
+public readonly ListProjects: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListProjects API call.
+
+---
+
 ##### `ListTagsForResource`<sup>Required</sup> <a name="ListTagsForResource" id="@cdk_utils/iam.textract.TextractOperations.property.ListTagsForResource"></a>
 
 ```typescript
@@ -1140,6 +1889,18 @@ IAM actions required for the GetAdapterVersion API call.
 
 ---
 
+##### `opGetBlueprint`<sup>Required</sup> <a name="opGetBlueprint" id="@cdk_utils/iam.textract.TextractOperations.property.opGetBlueprint"></a>
+
+```typescript
+public readonly opGetBlueprint: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetBlueprint API call.
+
+---
+
 ##### `opGetDocumentAnalysis`<sup>Required</sup> <a name="opGetDocumentAnalysis" id="@cdk_utils/iam.textract.TextractOperations.property.opGetDocumentAnalysis"></a>
 
 ```typescript
@@ -1149,6 +1910,18 @@ public readonly opGetDocumentAnalysis: string[];
 - *Type:* string[]
 
 IAM actions required for the GetDocumentAnalysis API call.
+
+---
+
+##### `opGetDocumentInsights`<sup>Required</sup> <a name="opGetDocumentInsights" id="@cdk_utils/iam.textract.TextractOperations.property.opGetDocumentInsights"></a>
+
+```typescript
+public readonly opGetDocumentInsights: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetDocumentInsights API call.
 
 ---
 
@@ -1200,6 +1973,18 @@ IAM actions required for the GetLendingAnalysisSummary API call.
 
 ---
 
+##### `opGetProject`<sup>Required</sup> <a name="opGetProject" id="@cdk_utils/iam.textract.TextractOperations.property.opGetProject"></a>
+
+```typescript
+public readonly opGetProject: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetProject API call.
+
+---
+
 ##### `StartDocumentAnalysis`<sup>Required</sup> <a name="StartDocumentAnalysis" id="@cdk_utils/iam.textract.TextractOperations.property.StartDocumentAnalysis"></a>
 
 ```typescript
@@ -1209,6 +1994,18 @@ public readonly StartDocumentAnalysis: string[];
 - *Type:* string[]
 
 IAM actions required for the StartDocumentAnalysis API call.
+
+---
+
+##### `StartDocumentInsights`<sup>Required</sup> <a name="StartDocumentInsights" id="@cdk_utils/iam.textract.TextractOperations.property.StartDocumentInsights"></a>
+
+```typescript
+public readonly StartDocumentInsights: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StartDocumentInsights API call.
 
 ---
 
@@ -1284,6 +2081,30 @@ IAM actions required for the UpdateAdapter API call.
 
 ---
 
+##### `UpdateBlueprint`<sup>Required</sup> <a name="UpdateBlueprint" id="@cdk_utils/iam.textract.TextractOperations.property.UpdateBlueprint"></a>
+
+```typescript
+public readonly UpdateBlueprint: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateBlueprint API call.
+
+---
+
+##### `UpdateProject`<sup>Required</sup> <a name="UpdateProject" id="@cdk_utils/iam.textract.TextractOperations.property.UpdateProject"></a>
+
+```typescript
+public readonly UpdateProject: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateProject API call.
+
+---
+
 ### TextractResources <a name="TextractResources" id="@cdk_utils/iam.textract.TextractResources"></a>
 
 ARN builders, validators, and parsers for textract resources.
@@ -1308,10 +2129,19 @@ new textract.TextractResources()
 | --- | --- |
 | <code><a href="#@cdk_utils/iam.textract.TextractResources.adapter">adapter</a></code> | Builds an ARN for the adapter resource. |
 | <code><a href="#@cdk_utils/iam.textract.TextractResources.adapterversion">adapterversion</a></code> | Builds an ARN for the adapterversion resource. |
+| <code><a href="#@cdk_utils/iam.textract.TextractResources.blueprint">blueprint</a></code> | Builds an ARN for the blueprint resource. |
 | <code><a href="#@cdk_utils/iam.textract.TextractResources.isValidAdapterArn">isValidAdapterArn</a></code> | Validates whether a string is a valid ARN for the adapter resource. |
 | <code><a href="#@cdk_utils/iam.textract.TextractResources.isValidAdapterversionArn">isValidAdapterversionArn</a></code> | Validates whether a string is a valid ARN for the adapterversion resource. |
+| <code><a href="#@cdk_utils/iam.textract.TextractResources.isValidBlueprintArn">isValidBlueprintArn</a></code> | Validates whether a string is a valid ARN for the blueprint resource. |
+| <code><a href="#@cdk_utils/iam.textract.TextractResources.isValidJobArn">isValidJobArn</a></code> | Validates whether a string is a valid ARN for the job resource. |
+| <code><a href="#@cdk_utils/iam.textract.TextractResources.isValidProjectArn">isValidProjectArn</a></code> | Validates whether a string is a valid ARN for the project resource. |
+| <code><a href="#@cdk_utils/iam.textract.TextractResources.job">job</a></code> | Builds an ARN for the job resource. |
 | <code><a href="#@cdk_utils/iam.textract.TextractResources.parseAdapterArn">parseAdapterArn</a></code> | Parses a adapter ARN into its components. |
 | <code><a href="#@cdk_utils/iam.textract.TextractResources.parseAdapterversionArn">parseAdapterversionArn</a></code> | Parses a adapterversion ARN into its components. |
+| <code><a href="#@cdk_utils/iam.textract.TextractResources.parseBlueprintArn">parseBlueprintArn</a></code> | Parses a blueprint ARN into its components. |
+| <code><a href="#@cdk_utils/iam.textract.TextractResources.parseJobArn">parseJobArn</a></code> | Parses a job ARN into its components. |
+| <code><a href="#@cdk_utils/iam.textract.TextractResources.parseProjectArn">parseProjectArn</a></code> | Parses a project ARN into its components. |
+| <code><a href="#@cdk_utils/iam.textract.TextractResources.project">project</a></code> | Builds an ARN for the project resource. |
 
 ---
 
@@ -1347,6 +2177,22 @@ Builds an ARN for the adapterversion resource.
 
 ---
 
+##### `blueprint` <a name="blueprint" id="@cdk_utils/iam.textract.TextractResources.blueprint"></a>
+
+```typescript
+import { textract } from '@cdk_utils/iam'
+
+textract.TextractResources.blueprint(props: TextractBlueprintArnProps)
+```
+
+Builds an ARN for the blueprint resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.textract.TextractResources.blueprint.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.textract.TextractBlueprintArnProps">TextractBlueprintArnProps</a>
+
+---
+
 ##### `isValidAdapterArn` <a name="isValidAdapterArn" id="@cdk_utils/iam.textract.TextractResources.isValidAdapterArn"></a>
 
 ```typescript
@@ -1379,6 +2225,70 @@ Validates whether a string is a valid ARN for the adapterversion resource.
 
 ---
 
+##### `isValidBlueprintArn` <a name="isValidBlueprintArn" id="@cdk_utils/iam.textract.TextractResources.isValidBlueprintArn"></a>
+
+```typescript
+import { textract } from '@cdk_utils/iam'
+
+textract.TextractResources.isValidBlueprintArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the blueprint resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.textract.TextractResources.isValidBlueprintArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidJobArn` <a name="isValidJobArn" id="@cdk_utils/iam.textract.TextractResources.isValidJobArn"></a>
+
+```typescript
+import { textract } from '@cdk_utils/iam'
+
+textract.TextractResources.isValidJobArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the job resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.textract.TextractResources.isValidJobArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidProjectArn` <a name="isValidProjectArn" id="@cdk_utils/iam.textract.TextractResources.isValidProjectArn"></a>
+
+```typescript
+import { textract } from '@cdk_utils/iam'
+
+textract.TextractResources.isValidProjectArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the project resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.textract.TextractResources.isValidProjectArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `job` <a name="job" id="@cdk_utils/iam.textract.TextractResources.job"></a>
+
+```typescript
+import { textract } from '@cdk_utils/iam'
+
+textract.TextractResources.job(props: TextractJobArnProps)
+```
+
+Builds an ARN for the job resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.textract.TextractResources.job.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.textract.TextractJobArnProps">TextractJobArnProps</a>
+
+---
+
 ##### `parseAdapterArn` <a name="parseAdapterArn" id="@cdk_utils/iam.textract.TextractResources.parseAdapterArn"></a>
 
 ```typescript
@@ -1408,6 +2318,70 @@ Parses a adapterversion ARN into its components.
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.textract.TextractResources.parseAdapterversionArn.parameter.arn"></a>
 
 - *Type:* string
+
+---
+
+##### `parseBlueprintArn` <a name="parseBlueprintArn" id="@cdk_utils/iam.textract.TextractResources.parseBlueprintArn"></a>
+
+```typescript
+import { textract } from '@cdk_utils/iam'
+
+textract.TextractResources.parseBlueprintArn(arn: string)
+```
+
+Parses a blueprint ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.textract.TextractResources.parseBlueprintArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseJobArn` <a name="parseJobArn" id="@cdk_utils/iam.textract.TextractResources.parseJobArn"></a>
+
+```typescript
+import { textract } from '@cdk_utils/iam'
+
+textract.TextractResources.parseJobArn(arn: string)
+```
+
+Parses a job ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.textract.TextractResources.parseJobArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseProjectArn` <a name="parseProjectArn" id="@cdk_utils/iam.textract.TextractResources.parseProjectArn"></a>
+
+```typescript
+import { textract } from '@cdk_utils/iam'
+
+textract.TextractResources.parseProjectArn(arn: string)
+```
+
+Parses a project ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.textract.TextractResources.parseProjectArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `project` <a name="project" id="@cdk_utils/iam.textract.TextractResources.project"></a>
+
+```typescript
+import { textract } from '@cdk_utils/iam'
+
+textract.TextractResources.project(props: TextractProjectArnProps)
+```
+
+Builds an ARN for the project resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.textract.TextractResources.project.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.textract.TextractProjectArnProps">TextractProjectArnProps</a>
 
 ---
 

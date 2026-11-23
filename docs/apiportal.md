@@ -2145,6 +2145,631 @@ Condition keys applicable to the UntagResource action.
 
 ---
 
+### ApiportalOperations <a name="ApiportalOperations" id="@cdk_utils/iam.apiportal.ApiportalOperations"></a>
+
+API operation to required IAM actions mapping for apiportal.
+
+#### Initializers <a name="Initializers" id="@cdk_utils/iam.apiportal.ApiportalOperations.Initializer"></a>
+
+```typescript
+import { apiportal } from '@cdk_utils/iam'
+
+new apiportal.ApiportalOperations()
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+
+---
+
+
+
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.AssociateManagedApis">AssociateManagedApis</a></code> | <code>string[]</code> | IAM actions required for the AssociateManagedApis API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.CreateManagedApi">CreateManagedApi</a></code> | <code>string[]</code> | IAM actions required for the CreateManagedApi API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.CreatePortal">CreatePortal</a></code> | <code>string[]</code> | IAM actions required for the CreatePortal API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.CreatePortalPreview">CreatePortalPreview</a></code> | <code>string[]</code> | IAM actions required for the CreatePortalPreview API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.CreateProduct">CreateProduct</a></code> | <code>string[]</code> | IAM actions required for the CreateProduct API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.CreateProductApiPage">CreateProductApiPage</a></code> | <code>string[]</code> | IAM actions required for the CreateProductApiPage API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.CreateProductPage">CreateProductPage</a></code> | <code>string[]</code> | IAM actions required for the CreateProductPage API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.DeleteDiscoveryConfiguration">DeleteDiscoveryConfiguration</a></code> | <code>string[]</code> | IAM actions required for the DeleteDiscoveryConfiguration API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.DeleteManagedApi">DeleteManagedApi</a></code> | <code>string[]</code> | IAM actions required for the DeleteManagedApi API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.DeleteOrganizationDiscoveryConfiguration">DeleteOrganizationDiscoveryConfiguration</a></code> | <code>string[]</code> | IAM actions required for the DeleteOrganizationDiscoveryConfiguration API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.DeletePortal">DeletePortal</a></code> | <code>string[]</code> | IAM actions required for the DeletePortal API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.DeleteProduct">DeleteProduct</a></code> | <code>string[]</code> | IAM actions required for the DeleteProduct API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.DeleteProductApiPage">DeleteProductApiPage</a></code> | <code>string[]</code> | IAM actions required for the DeleteProductApiPage API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.DeleteProductPage">DeleteProductPage</a></code> | <code>string[]</code> | IAM actions required for the DeleteProductPage API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.DeleteProductSharingPolicy">DeleteProductSharingPolicy</a></code> | <code>string[]</code> | IAM actions required for the DeleteProductSharingPolicy API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.DisassociateManagedApis">DisassociateManagedApis</a></code> | <code>string[]</code> | IAM actions required for the DisassociateManagedApis API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.ListApiInventoryItems">ListApiInventoryItems</a></code> | <code>string[]</code> | IAM actions required for the ListApiInventoryItems API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.ListDiscoveryStatuses">ListDiscoveryStatuses</a></code> | <code>string[]</code> | IAM actions required for the ListDiscoveryStatuses API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.ListManagedApiEvents">ListManagedApiEvents</a></code> | <code>string[]</code> | IAM actions required for the ListManagedApiEvents API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.ListManagedApis">ListManagedApis</a></code> | <code>string[]</code> | IAM actions required for the ListManagedApis API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.ListPortals">ListPortals</a></code> | <code>string[]</code> | IAM actions required for the ListPortals API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.ListProductApiPages">ListProductApiPages</a></code> | <code>string[]</code> | IAM actions required for the ListProductApiPages API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.ListProductPages">ListProductPages</a></code> | <code>string[]</code> | IAM actions required for the ListProductPages API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.ListProducts">ListProducts</a></code> | <code>string[]</code> | IAM actions required for the ListProducts API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.opGetApiInventoryItem">opGetApiInventoryItem</a></code> | <code>string[]</code> | IAM actions required for the GetApiInventoryItem API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.opGetDiscoveryConfiguration">opGetDiscoveryConfiguration</a></code> | <code>string[]</code> | IAM actions required for the GetDiscoveryConfiguration API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.opGetManagedApi">opGetManagedApi</a></code> | <code>string[]</code> | IAM actions required for the GetManagedApi API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.opGetOrganizationDiscoveryConfiguration">opGetOrganizationDiscoveryConfiguration</a></code> | <code>string[]</code> | IAM actions required for the GetOrganizationDiscoveryConfiguration API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.opGetPortal">opGetPortal</a></code> | <code>string[]</code> | IAM actions required for the GetPortal API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.opGetProduct">opGetProduct</a></code> | <code>string[]</code> | IAM actions required for the GetProduct API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.opGetProductApiPage">opGetProductApiPage</a></code> | <code>string[]</code> | IAM actions required for the GetProductApiPage API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.opGetProductPage">opGetProductPage</a></code> | <code>string[]</code> | IAM actions required for the GetProductPage API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.opGetProductSharingPolicy">opGetProductSharingPolicy</a></code> | <code>string[]</code> | IAM actions required for the GetProductSharingPolicy API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.PutDiscoveryConfiguration">PutDiscoveryConfiguration</a></code> | <code>string[]</code> | IAM actions required for the PutDiscoveryConfiguration API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.PutOrganizationDiscoveryConfiguration">PutOrganizationDiscoveryConfiguration</a></code> | <code>string[]</code> | IAM actions required for the PutOrganizationDiscoveryConfiguration API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.PutProductSharingPolicy">PutProductSharingPolicy</a></code> | <code>string[]</code> | IAM actions required for the PutProductSharingPolicy API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.StartDiscovery">StartDiscovery</a></code> | <code>string[]</code> | IAM actions required for the StartDiscovery API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.StopDiscovery">StopDiscovery</a></code> | <code>string[]</code> | IAM actions required for the StopDiscovery API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.UpdatePortal">UpdatePortal</a></code> | <code>string[]</code> | IAM actions required for the UpdatePortal API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.UpdatePortalPublishStatus">UpdatePortalPublishStatus</a></code> | <code>string[]</code> | IAM actions required for the UpdatePortalPublishStatus API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.UpdateProduct">UpdateProduct</a></code> | <code>string[]</code> | IAM actions required for the UpdateProduct API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.UpdateProductApiPage">UpdateProductApiPage</a></code> | <code>string[]</code> | IAM actions required for the UpdateProductApiPage API call. |
+| <code><a href="#@cdk_utils/iam.apiportal.ApiportalOperations.property.UpdateProductPage">UpdateProductPage</a></code> | <code>string[]</code> | IAM actions required for the UpdateProductPage API call. |
+
+---
+
+##### `AssociateManagedApis`<sup>Required</sup> <a name="AssociateManagedApis" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.AssociateManagedApis"></a>
+
+```typescript
+public readonly AssociateManagedApis: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the AssociateManagedApis API call.
+
+---
+
+##### `CreateManagedApi`<sup>Required</sup> <a name="CreateManagedApi" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.CreateManagedApi"></a>
+
+```typescript
+public readonly CreateManagedApi: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateManagedApi API call.
+
+---
+
+##### `CreatePortal`<sup>Required</sup> <a name="CreatePortal" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.CreatePortal"></a>
+
+```typescript
+public readonly CreatePortal: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreatePortal API call.
+
+---
+
+##### `CreatePortalPreview`<sup>Required</sup> <a name="CreatePortalPreview" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.CreatePortalPreview"></a>
+
+```typescript
+public readonly CreatePortalPreview: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreatePortalPreview API call.
+
+---
+
+##### `CreateProduct`<sup>Required</sup> <a name="CreateProduct" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.CreateProduct"></a>
+
+```typescript
+public readonly CreateProduct: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateProduct API call.
+
+---
+
+##### `CreateProductApiPage`<sup>Required</sup> <a name="CreateProductApiPage" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.CreateProductApiPage"></a>
+
+```typescript
+public readonly CreateProductApiPage: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateProductApiPage API call.
+
+---
+
+##### `CreateProductPage`<sup>Required</sup> <a name="CreateProductPage" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.CreateProductPage"></a>
+
+```typescript
+public readonly CreateProductPage: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateProductPage API call.
+
+---
+
+##### `DeleteDiscoveryConfiguration`<sup>Required</sup> <a name="DeleteDiscoveryConfiguration" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.DeleteDiscoveryConfiguration"></a>
+
+```typescript
+public readonly DeleteDiscoveryConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteDiscoveryConfiguration API call.
+
+---
+
+##### `DeleteManagedApi`<sup>Required</sup> <a name="DeleteManagedApi" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.DeleteManagedApi"></a>
+
+```typescript
+public readonly DeleteManagedApi: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteManagedApi API call.
+
+---
+
+##### `DeleteOrganizationDiscoveryConfiguration`<sup>Required</sup> <a name="DeleteOrganizationDiscoveryConfiguration" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.DeleteOrganizationDiscoveryConfiguration"></a>
+
+```typescript
+public readonly DeleteOrganizationDiscoveryConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteOrganizationDiscoveryConfiguration API call.
+
+---
+
+##### `DeletePortal`<sup>Required</sup> <a name="DeletePortal" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.DeletePortal"></a>
+
+```typescript
+public readonly DeletePortal: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeletePortal API call.
+
+---
+
+##### `DeleteProduct`<sup>Required</sup> <a name="DeleteProduct" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.DeleteProduct"></a>
+
+```typescript
+public readonly DeleteProduct: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteProduct API call.
+
+---
+
+##### `DeleteProductApiPage`<sup>Required</sup> <a name="DeleteProductApiPage" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.DeleteProductApiPage"></a>
+
+```typescript
+public readonly DeleteProductApiPage: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteProductApiPage API call.
+
+---
+
+##### `DeleteProductPage`<sup>Required</sup> <a name="DeleteProductPage" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.DeleteProductPage"></a>
+
+```typescript
+public readonly DeleteProductPage: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteProductPage API call.
+
+---
+
+##### `DeleteProductSharingPolicy`<sup>Required</sup> <a name="DeleteProductSharingPolicy" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.DeleteProductSharingPolicy"></a>
+
+```typescript
+public readonly DeleteProductSharingPolicy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteProductSharingPolicy API call.
+
+---
+
+##### `DisassociateManagedApis`<sup>Required</sup> <a name="DisassociateManagedApis" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.DisassociateManagedApis"></a>
+
+```typescript
+public readonly DisassociateManagedApis: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DisassociateManagedApis API call.
+
+---
+
+##### `ListApiInventoryItems`<sup>Required</sup> <a name="ListApiInventoryItems" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.ListApiInventoryItems"></a>
+
+```typescript
+public readonly ListApiInventoryItems: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListApiInventoryItems API call.
+
+---
+
+##### `ListDiscoveryStatuses`<sup>Required</sup> <a name="ListDiscoveryStatuses" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.ListDiscoveryStatuses"></a>
+
+```typescript
+public readonly ListDiscoveryStatuses: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListDiscoveryStatuses API call.
+
+---
+
+##### `ListManagedApiEvents`<sup>Required</sup> <a name="ListManagedApiEvents" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.ListManagedApiEvents"></a>
+
+```typescript
+public readonly ListManagedApiEvents: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListManagedApiEvents API call.
+
+---
+
+##### `ListManagedApis`<sup>Required</sup> <a name="ListManagedApis" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.ListManagedApis"></a>
+
+```typescript
+public readonly ListManagedApis: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListManagedApis API call.
+
+---
+
+##### `ListPortals`<sup>Required</sup> <a name="ListPortals" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.ListPortals"></a>
+
+```typescript
+public readonly ListPortals: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListPortals API call.
+
+---
+
+##### `ListProductApiPages`<sup>Required</sup> <a name="ListProductApiPages" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.ListProductApiPages"></a>
+
+```typescript
+public readonly ListProductApiPages: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListProductApiPages API call.
+
+---
+
+##### `ListProductPages`<sup>Required</sup> <a name="ListProductPages" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.ListProductPages"></a>
+
+```typescript
+public readonly ListProductPages: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListProductPages API call.
+
+---
+
+##### `ListProducts`<sup>Required</sup> <a name="ListProducts" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.ListProducts"></a>
+
+```typescript
+public readonly ListProducts: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListProducts API call.
+
+---
+
+##### `ListTagsForResource`<sup>Required</sup> <a name="ListTagsForResource" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.ListTagsForResource"></a>
+
+```typescript
+public readonly ListTagsForResource: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListTagsForResource API call.
+
+---
+
+##### `opGetApiInventoryItem`<sup>Required</sup> <a name="opGetApiInventoryItem" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.opGetApiInventoryItem"></a>
+
+```typescript
+public readonly opGetApiInventoryItem: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetApiInventoryItem API call.
+
+---
+
+##### `opGetDiscoveryConfiguration`<sup>Required</sup> <a name="opGetDiscoveryConfiguration" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.opGetDiscoveryConfiguration"></a>
+
+```typescript
+public readonly opGetDiscoveryConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetDiscoveryConfiguration API call.
+
+---
+
+##### `opGetManagedApi`<sup>Required</sup> <a name="opGetManagedApi" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.opGetManagedApi"></a>
+
+```typescript
+public readonly opGetManagedApi: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetManagedApi API call.
+
+---
+
+##### `opGetOrganizationDiscoveryConfiguration`<sup>Required</sup> <a name="opGetOrganizationDiscoveryConfiguration" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.opGetOrganizationDiscoveryConfiguration"></a>
+
+```typescript
+public readonly opGetOrganizationDiscoveryConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetOrganizationDiscoveryConfiguration API call.
+
+---
+
+##### `opGetPortal`<sup>Required</sup> <a name="opGetPortal" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.opGetPortal"></a>
+
+```typescript
+public readonly opGetPortal: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetPortal API call.
+
+---
+
+##### `opGetProduct`<sup>Required</sup> <a name="opGetProduct" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.opGetProduct"></a>
+
+```typescript
+public readonly opGetProduct: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetProduct API call.
+
+---
+
+##### `opGetProductApiPage`<sup>Required</sup> <a name="opGetProductApiPage" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.opGetProductApiPage"></a>
+
+```typescript
+public readonly opGetProductApiPage: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetProductApiPage API call.
+
+---
+
+##### `opGetProductPage`<sup>Required</sup> <a name="opGetProductPage" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.opGetProductPage"></a>
+
+```typescript
+public readonly opGetProductPage: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetProductPage API call.
+
+---
+
+##### `opGetProductSharingPolicy`<sup>Required</sup> <a name="opGetProductSharingPolicy" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.opGetProductSharingPolicy"></a>
+
+```typescript
+public readonly opGetProductSharingPolicy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetProductSharingPolicy API call.
+
+---
+
+##### `PutDiscoveryConfiguration`<sup>Required</sup> <a name="PutDiscoveryConfiguration" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.PutDiscoveryConfiguration"></a>
+
+```typescript
+public readonly PutDiscoveryConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the PutDiscoveryConfiguration API call.
+
+---
+
+##### `PutOrganizationDiscoveryConfiguration`<sup>Required</sup> <a name="PutOrganizationDiscoveryConfiguration" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.PutOrganizationDiscoveryConfiguration"></a>
+
+```typescript
+public readonly PutOrganizationDiscoveryConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the PutOrganizationDiscoveryConfiguration API call.
+
+---
+
+##### `PutProductSharingPolicy`<sup>Required</sup> <a name="PutProductSharingPolicy" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.PutProductSharingPolicy"></a>
+
+```typescript
+public readonly PutProductSharingPolicy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the PutProductSharingPolicy API call.
+
+---
+
+##### `StartDiscovery`<sup>Required</sup> <a name="StartDiscovery" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.StartDiscovery"></a>
+
+```typescript
+public readonly StartDiscovery: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StartDiscovery API call.
+
+---
+
+##### `StopDiscovery`<sup>Required</sup> <a name="StopDiscovery" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.StopDiscovery"></a>
+
+```typescript
+public readonly StopDiscovery: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StopDiscovery API call.
+
+---
+
+##### `TagResource`<sup>Required</sup> <a name="TagResource" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.TagResource"></a>
+
+```typescript
+public readonly TagResource: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the TagResource API call.
+
+---
+
+##### `UntagResource`<sup>Required</sup> <a name="UntagResource" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.UntagResource"></a>
+
+```typescript
+public readonly UntagResource: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UntagResource API call.
+
+---
+
+##### `UpdatePortal`<sup>Required</sup> <a name="UpdatePortal" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.UpdatePortal"></a>
+
+```typescript
+public readonly UpdatePortal: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdatePortal API call.
+
+---
+
+##### `UpdatePortalPublishStatus`<sup>Required</sup> <a name="UpdatePortalPublishStatus" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.UpdatePortalPublishStatus"></a>
+
+```typescript
+public readonly UpdatePortalPublishStatus: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdatePortalPublishStatus API call.
+
+---
+
+##### `UpdateProduct`<sup>Required</sup> <a name="UpdateProduct" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.UpdateProduct"></a>
+
+```typescript
+public readonly UpdateProduct: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateProduct API call.
+
+---
+
+##### `UpdateProductApiPage`<sup>Required</sup> <a name="UpdateProductApiPage" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.UpdateProductApiPage"></a>
+
+```typescript
+public readonly UpdateProductApiPage: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateProductApiPage API call.
+
+---
+
+##### `UpdateProductPage`<sup>Required</sup> <a name="UpdateProductPage" id="@cdk_utils/iam.apiportal.ApiportalOperations.property.UpdateProductPage"></a>
+
+```typescript
+public readonly UpdateProductPage: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateProductPage API call.
+
+---
+
 ### ApiportalResources <a name="ApiportalResources" id="@cdk_utils/iam.apiportal.ApiportalResources"></a>
 
 ARN builders, validators, and parsers for apiportal resources.

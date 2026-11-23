@@ -923,6 +923,7 @@ new securityagent.SecurityagentActions()
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.actionGetDesignReviewArtifact">actionGetDesignReviewArtifact</a></code> | <code>string</code> | [Read] securityagent:GetDesignReviewArtifact. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.actionGetDesignReviewFeedback">actionGetDesignReviewFeedback</a></code> | <code>string</code> | [Read] securityagent:GetDesignReviewFeedback. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.actionGetIntegration">actionGetIntegration</a></code> | <code>string</code> | [Read] securityagent:GetIntegration. |
+| <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.actionGetPentestEstimate">actionGetPentestEstimate</a></code> | <code>string</code> | [Read] securityagent:GetPentestEstimate. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.actionGetProviderRegistrationManifest">actionGetProviderRegistrationManifest</a></code> | <code>string</code> | [Read] securityagent:GetProviderRegistrationManifest. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.actionGetSecurityRequirement">actionGetSecurityRequirement</a></code> | <code>string</code> | [Read] securityagent:GetSecurityRequirement. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.actionGetSecurityRequirementPack">actionGetSecurityRequirementPack</a></code> | <code>string</code> | [Read] securityagent:GetSecurityRequirementPack. |
@@ -1019,10 +1020,12 @@ new securityagent.SecurityagentActions()
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.StartCodeRemediation">StartCodeRemediation</a></code> | <code>string</code> | [Write] securityagent:StartCodeRemediation. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.StartCodeReviewJob">StartCodeReviewJob</a></code> | <code>string</code> | [Write] securityagent:StartCodeReviewJob. |
+| <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.StartPentestEstimationRun">StartPentestEstimationRun</a></code> | <code>string</code> | [Write] securityagent:StartPentestEstimationRun. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.StartPentestJob">StartPentestJob</a></code> | <code>string</code> | [Write] securityagent:StartPentestJob. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.StartThreatModelJob">StartThreatModelJob</a></code> | <code>string</code> | [Write] securityagent:StartThreatModelJob. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.StartValidationRun">StartValidationRun</a></code> | <code>string</code> | [Write] securityagent:StartValidationRun. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.StopCodeReviewJob">StopCodeReviewJob</a></code> | <code>string</code> | [Write] securityagent:StopCodeReviewJob. |
+| <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.StopPentestEstimationRun">StopPentestEstimationRun</a></code> | <code>string</code> | [Write] securityagent:StopPentestEstimationRun. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.StopPentestJob">StopPentestJob</a></code> | <code>string</code> | [Write] securityagent:StopPentestJob. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.StopThreatModelJob">StopThreatModelJob</a></code> | <code>string</code> | [Write] securityagent:StopThreatModelJob. |
 | <code><a href="#@cdk_utils/iam.securityagent.SecurityagentActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] securityagent:TagResource. |
@@ -1115,6 +1118,18 @@ public readonly actionGetIntegration: string;
 - *Type:* string
 
 [Read] securityagent:GetIntegration.
+
+---
+
+##### `actionGetPentestEstimate`<sup>Required</sup> <a name="actionGetPentestEstimate" id="@cdk_utils/iam.securityagent.SecurityagentActions.property.actionGetPentestEstimate"></a>
+
+```typescript
+public readonly actionGetPentestEstimate: string;
+```
+
+- *Type:* string
+
+[Read] securityagent:GetPentestEstimate.
 
 ---
 
@@ -2270,6 +2285,18 @@ public readonly StartCodeReviewJob: string;
 
 ---
 
+##### `StartPentestEstimationRun`<sup>Required</sup> <a name="StartPentestEstimationRun" id="@cdk_utils/iam.securityagent.SecurityagentActions.property.StartPentestEstimationRun"></a>
+
+```typescript
+public readonly StartPentestEstimationRun: string;
+```
+
+- *Type:* string
+
+[Write] securityagent:StartPentestEstimationRun.
+
+---
+
 ##### `StartPentestJob`<sup>Required</sup> <a name="StartPentestJob" id="@cdk_utils/iam.securityagent.SecurityagentActions.property.StartPentestJob"></a>
 
 ```typescript
@@ -2315,6 +2342,18 @@ public readonly StopCodeReviewJob: string;
 - *Type:* string
 
 [Write] securityagent:StopCodeReviewJob.
+
+---
+
+##### `StopPentestEstimationRun`<sup>Required</sup> <a name="StopPentestEstimationRun" id="@cdk_utils/iam.securityagent.SecurityagentActions.property.StopPentestEstimationRun"></a>
+
+```typescript
+public readonly StopPentestEstimationRun: string;
+```
+
+- *Type:* string
+
+[Write] securityagent:StopPentestEstimationRun.
 
 ---
 

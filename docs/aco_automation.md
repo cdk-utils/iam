@@ -160,6 +160,7 @@ new aco_automation.AcoAutomationActions()
 | <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationActions.property.AssociateAccounts">AssociateAccounts</a></code> | <code>string</code> | [Write] aco-automation:AssociateAccounts. |
 | <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationActions.property.CreateAutomationRule">CreateAutomationRule</a></code> | <code>string</code> | [Write] aco-automation:CreateAutomationRule. |
 | <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationActions.property.DeleteAutomationRule">DeleteAutomationRule</a></code> | <code>string</code> | [Write] aco-automation:DeleteAutomationRule. |
+| <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationActions.property.DeleteOrganizationEnrollmentConfiguration">DeleteOrganizationEnrollmentConfiguration</a></code> | <code>string</code> | [Write] aco-automation:DeleteOrganizationEnrollmentConfiguration. |
 | <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationActions.property.DisassociateAccounts">DisassociateAccounts</a></code> | <code>string</code> | [Write] aco-automation:DisassociateAccounts. |
 | <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationActions.property.ListAccounts">ListAccounts</a></code> | <code>string</code> | [List] aco-automation:ListAccounts. |
 | <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationActions.property.ListAutomationEvents">ListAutomationEvents</a></code> | <code>string</code> | [List] aco-automation:ListAutomationEvents. |
@@ -168,9 +169,12 @@ new aco_automation.AcoAutomationActions()
 | <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationActions.property.ListAutomationRulePreview">ListAutomationRulePreview</a></code> | <code>string</code> | [List] aco-automation:ListAutomationRulePreview. |
 | <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationActions.property.ListAutomationRulePreviewSummaries">ListAutomationRulePreviewSummaries</a></code> | <code>string</code> | [List] aco-automation:ListAutomationRulePreviewSummaries. |
 | <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationActions.property.ListAutomationRules">ListAutomationRules</a></code> | <code>string</code> | [List] aco-automation:ListAutomationRules. |
+| <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationActions.property.ListOrganizationalUnits">ListOrganizationalUnits</a></code> | <code>string</code> | [List] aco-automation:ListOrganizationalUnits. |
+| <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationActions.property.ListOrganizationEnrollmentConfigurations">ListOrganizationEnrollmentConfigurations</a></code> | <code>string</code> | [List] aco-automation:ListOrganizationEnrollmentConfigurations. |
 | <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationActions.property.ListRecommendedActions">ListRecommendedActions</a></code> | <code>string</code> | [List] aco-automation:ListRecommendedActions. |
 | <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationActions.property.ListRecommendedActionSummaries">ListRecommendedActionSummaries</a></code> | <code>string</code> | [List] aco-automation:ListRecommendedActionSummaries. |
 | <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [List] aco-automation:ListTagsForResource. |
+| <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationActions.property.PutOrganizationEnrollmentConfiguration">PutOrganizationEnrollmentConfiguration</a></code> | <code>string</code> | [Write] aco-automation:PutOrganizationEnrollmentConfiguration. |
 | <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationActions.property.RollbackAutomationEvent">RollbackAutomationEvent</a></code> | <code>string</code> | [Write] aco-automation:RollbackAutomationEvent. |
 | <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
 | <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationActions.property.StartAutomationEvent">StartAutomationEvent</a></code> | <code>string</code> | [Write] aco-automation:StartAutomationEvent. |
@@ -313,6 +317,18 @@ public readonly DeleteAutomationRule: string;
 
 ---
 
+##### `DeleteOrganizationEnrollmentConfiguration`<sup>Required</sup> <a name="DeleteOrganizationEnrollmentConfiguration" id="@cdk_utils/iam.aco_automation.AcoAutomationActions.property.DeleteOrganizationEnrollmentConfiguration"></a>
+
+```typescript
+public readonly DeleteOrganizationEnrollmentConfiguration: string;
+```
+
+- *Type:* string
+
+[Write] aco-automation:DeleteOrganizationEnrollmentConfiguration.
+
+---
+
 ##### `DisassociateAccounts`<sup>Required</sup> <a name="DisassociateAccounts" id="@cdk_utils/iam.aco_automation.AcoAutomationActions.property.DisassociateAccounts"></a>
 
 ```typescript
@@ -409,6 +425,30 @@ public readonly ListAutomationRules: string;
 
 ---
 
+##### `ListOrganizationalUnits`<sup>Required</sup> <a name="ListOrganizationalUnits" id="@cdk_utils/iam.aco_automation.AcoAutomationActions.property.ListOrganizationalUnits"></a>
+
+```typescript
+public readonly ListOrganizationalUnits: string;
+```
+
+- *Type:* string
+
+[List] aco-automation:ListOrganizationalUnits.
+
+---
+
+##### `ListOrganizationEnrollmentConfigurations`<sup>Required</sup> <a name="ListOrganizationEnrollmentConfigurations" id="@cdk_utils/iam.aco_automation.AcoAutomationActions.property.ListOrganizationEnrollmentConfigurations"></a>
+
+```typescript
+public readonly ListOrganizationEnrollmentConfigurations: string;
+```
+
+- *Type:* string
+
+[List] aco-automation:ListOrganizationEnrollmentConfigurations.
+
+---
+
 ##### `ListRecommendedActions`<sup>Required</sup> <a name="ListRecommendedActions" id="@cdk_utils/iam.aco_automation.AcoAutomationActions.property.ListRecommendedActions"></a>
 
 ```typescript
@@ -442,6 +482,18 @@ public readonly ListTagsForResource: string;
 - *Type:* string
 
 [List] aco-automation:ListTagsForResource.
+
+---
+
+##### `PutOrganizationEnrollmentConfiguration`<sup>Required</sup> <a name="PutOrganizationEnrollmentConfiguration" id="@cdk_utils/iam.aco_automation.AcoAutomationActions.property.PutOrganizationEnrollmentConfiguration"></a>
+
+```typescript
+public readonly PutOrganizationEnrollmentConfiguration: string;
+```
+
+- *Type:* string
+
+[Write] aco-automation:PutOrganizationEnrollmentConfiguration.
 
 ---
 
@@ -718,6 +770,7 @@ new aco_automation.AcoAutomationOperations()
 | <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationOperations.property.AssociateAccounts">AssociateAccounts</a></code> | <code>string[]</code> | IAM actions required for the AssociateAccounts API call. |
 | <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationOperations.property.CreateAutomationRule">CreateAutomationRule</a></code> | <code>string[]</code> | IAM actions required for the CreateAutomationRule API call. |
 | <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationOperations.property.DeleteAutomationRule">DeleteAutomationRule</a></code> | <code>string[]</code> | IAM actions required for the DeleteAutomationRule API call. |
+| <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationOperations.property.DeleteOrganizationEnrollmentConfiguration">DeleteOrganizationEnrollmentConfiguration</a></code> | <code>string[]</code> | IAM actions required for the DeleteOrganizationEnrollmentConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationOperations.property.DisassociateAccounts">DisassociateAccounts</a></code> | <code>string[]</code> | IAM actions required for the DisassociateAccounts API call. |
 | <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationOperations.property.ListAccounts">ListAccounts</a></code> | <code>string[]</code> | IAM actions required for the ListAccounts API call. |
 | <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationOperations.property.ListAutomationEvents">ListAutomationEvents</a></code> | <code>string[]</code> | IAM actions required for the ListAutomationEvents API call. |
@@ -726,12 +779,15 @@ new aco_automation.AcoAutomationOperations()
 | <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationOperations.property.ListAutomationRulePreview">ListAutomationRulePreview</a></code> | <code>string[]</code> | IAM actions required for the ListAutomationRulePreview API call. |
 | <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationOperations.property.ListAutomationRulePreviewSummaries">ListAutomationRulePreviewSummaries</a></code> | <code>string[]</code> | IAM actions required for the ListAutomationRulePreviewSummaries API call. |
 | <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationOperations.property.ListAutomationRules">ListAutomationRules</a></code> | <code>string[]</code> | IAM actions required for the ListAutomationRules API call. |
+| <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationOperations.property.ListOrganizationalUnits">ListOrganizationalUnits</a></code> | <code>string[]</code> | IAM actions required for the ListOrganizationalUnits API call. |
+| <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationOperations.property.ListOrganizationEnrollmentConfigurations">ListOrganizationEnrollmentConfigurations</a></code> | <code>string[]</code> | IAM actions required for the ListOrganizationEnrollmentConfigurations API call. |
 | <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationOperations.property.ListRecommendedActions">ListRecommendedActions</a></code> | <code>string[]</code> | IAM actions required for the ListRecommendedActions API call. |
 | <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationOperations.property.ListRecommendedActionSummaries">ListRecommendedActionSummaries</a></code> | <code>string[]</code> | IAM actions required for the ListRecommendedActionSummaries API call. |
 | <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationOperations.property.opGetAutomationEvent">opGetAutomationEvent</a></code> | <code>string[]</code> | IAM actions required for the GetAutomationEvent API call. |
 | <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationOperations.property.opGetAutomationRule">opGetAutomationRule</a></code> | <code>string[]</code> | IAM actions required for the GetAutomationRule API call. |
 | <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationOperations.property.opGetEnrollmentConfiguration">opGetEnrollmentConfiguration</a></code> | <code>string[]</code> | IAM actions required for the GetEnrollmentConfiguration API call. |
+| <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationOperations.property.PutOrganizationEnrollmentConfiguration">PutOrganizationEnrollmentConfiguration</a></code> | <code>string[]</code> | IAM actions required for the PutOrganizationEnrollmentConfiguration API call. |
 | <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationOperations.property.RollbackAutomationEvent">RollbackAutomationEvent</a></code> | <code>string[]</code> | IAM actions required for the RollbackAutomationEvent API call. |
 | <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationOperations.property.StartAutomationEvent">StartAutomationEvent</a></code> | <code>string[]</code> | IAM actions required for the StartAutomationEvent API call. |
 | <code><a href="#@cdk_utils/iam.aco_automation.AcoAutomationOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
@@ -774,6 +830,18 @@ public readonly DeleteAutomationRule: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteAutomationRule API call.
+
+---
+
+##### `DeleteOrganizationEnrollmentConfiguration`<sup>Required</sup> <a name="DeleteOrganizationEnrollmentConfiguration" id="@cdk_utils/iam.aco_automation.AcoAutomationOperations.property.DeleteOrganizationEnrollmentConfiguration"></a>
+
+```typescript
+public readonly DeleteOrganizationEnrollmentConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteOrganizationEnrollmentConfiguration API call.
 
 ---
 
@@ -873,6 +941,30 @@ IAM actions required for the ListAutomationRules API call.
 
 ---
 
+##### `ListOrganizationalUnits`<sup>Required</sup> <a name="ListOrganizationalUnits" id="@cdk_utils/iam.aco_automation.AcoAutomationOperations.property.ListOrganizationalUnits"></a>
+
+```typescript
+public readonly ListOrganizationalUnits: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListOrganizationalUnits API call.
+
+---
+
+##### `ListOrganizationEnrollmentConfigurations`<sup>Required</sup> <a name="ListOrganizationEnrollmentConfigurations" id="@cdk_utils/iam.aco_automation.AcoAutomationOperations.property.ListOrganizationEnrollmentConfigurations"></a>
+
+```typescript
+public readonly ListOrganizationEnrollmentConfigurations: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListOrganizationEnrollmentConfigurations API call.
+
+---
+
 ##### `ListRecommendedActions`<sup>Required</sup> <a name="ListRecommendedActions" id="@cdk_utils/iam.aco_automation.AcoAutomationOperations.property.ListRecommendedActions"></a>
 
 ```typescript
@@ -942,6 +1034,18 @@ public readonly opGetEnrollmentConfiguration: string[];
 - *Type:* string[]
 
 IAM actions required for the GetEnrollmentConfiguration API call.
+
+---
+
+##### `PutOrganizationEnrollmentConfiguration`<sup>Required</sup> <a name="PutOrganizationEnrollmentConfiguration" id="@cdk_utils/iam.aco_automation.AcoAutomationOperations.property.PutOrganizationEnrollmentConfiguration"></a>
+
+```typescript
+public readonly PutOrganizationEnrollmentConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the PutOrganizationEnrollmentConfiguration API call.
 
 ---
 

@@ -15,6 +15,8 @@ export class PaymentsActions {
 	/** [Write] payments:AcceptFinancingApplicationTerms */
 	static readonly AcceptFinancingApplicationTerms =
 		"payments:AcceptFinancingApplicationTerms";
+	/** [Read] payments:BatchGetFinancialRecord */
+	static readonly BatchGetFinancialRecord = "payments:BatchGetFinancialRecord";
 	/** [Write] payments:CreateConnectedAccount */
 	static readonly CreateConnectedAccount = "payments:CreateConnectedAccount";
 	/** [Write] payments:CreateFinancingApplication */
@@ -26,8 +28,12 @@ export class PaymentsActions {
 	static readonly DeleteConnectedAccount = "payments:DeleteConnectedAccount";
 	/** [Write] payments:DeletePaymentInstrument */
 	static readonly DeletePaymentInstrument = "payments:DeletePaymentInstrument";
+	/** [Read] payments:GetAccountBalance */
+	static readonly actionGetAccountBalance = "payments:GetAccountBalance";
 	/** [Read] payments:GetConnectedAccount */
 	static readonly actionGetConnectedAccount = "payments:GetConnectedAccount";
+	/** [Read] payments:GetFinancialRecord */
+	static readonly actionGetFinancialRecord = "payments:GetFinancialRecord";
 	/** [Read] payments:GetFinancingApplication */
 	static readonly actionGetFinancingApplication =
 		"payments:GetFinancingApplication";
@@ -38,12 +44,14 @@ export class PaymentsActions {
 		"payments:GetFinancingLineWithdrawal";
 	/** [Read] payments:GetFinancingOption */
 	static readonly actionGetFinancingOption = "payments:GetFinancingOption";
-	/** [List] payments:GetPaymentInstrument */
+	/** [Read] payments:GetPaymentInstrument */
 	static readonly actionGetPaymentInstrument = "payments:GetPaymentInstrument";
 	/** [Read] payments:GetPaymentStatus */
 	static readonly actionGetPaymentStatus = "payments:GetPaymentStatus";
 	/** [List] payments:ListConnectedAccounts */
 	static readonly ListConnectedAccounts = "payments:ListConnectedAccounts";
+	/** [List] payments:ListFinancialRecords */
+	static readonly ListFinancialRecords = "payments:ListFinancialRecords";
 	/** [List] payments:ListFinancingApplications */
 	static readonly ListFinancingApplications =
 		"payments:ListFinancingApplications";
@@ -81,11 +89,15 @@ export class PaymentsActions {
 
 	/** All read-level actions. */
 	static readonly AllReadActions: string[] = [
+		PaymentsActions.BatchGetFinancialRecord,
+		PaymentsActions.actionGetAccountBalance,
 		PaymentsActions.actionGetConnectedAccount,
+		PaymentsActions.actionGetFinancialRecord,
 		PaymentsActions.actionGetFinancingApplication,
 		PaymentsActions.actionGetFinancingLine,
 		PaymentsActions.actionGetFinancingLineWithdrawal,
 		PaymentsActions.actionGetFinancingOption,
+		PaymentsActions.actionGetPaymentInstrument,
 		PaymentsActions.actionGetPaymentStatus,
 	];
 	/** All write-level actions. */
@@ -103,8 +115,8 @@ export class PaymentsActions {
 	];
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [
-		PaymentsActions.actionGetPaymentInstrument,
 		PaymentsActions.ListConnectedAccounts,
+		PaymentsActions.ListFinancialRecords,
 		PaymentsActions.ListFinancingApplications,
 		PaymentsActions.ListFinancingLineWithdrawals,
 		PaymentsActions.ListFinancingLines,
@@ -243,6 +255,34 @@ export class PaymentsResources {
 			resourceId: match.groups!.resourceId,
 		};
 	}
+}
+
+/**
+ * API operation to required IAM actions mapping for payments.
+ */
+export class PaymentsOperations {
+	/** IAM actions required for the BatchGetFinancialRecord API call. */
+	static readonly BatchGetFinancialRecord: string[] = [];
+	/** IAM actions required for the GetAccountBalance API call. */
+	static readonly opGetAccountBalance: string[] = [
+		"payments:GetPaymentStatus",
+		"aws-portal:ViewBilling",
+	];
+	/** IAM actions required for the GetFinancialRecord API call. */
+	static readonly opGetFinancialRecord: string[] = [];
+	/** IAM actions required for the GetPaymentInstrument API call. */
+	static readonly opGetPaymentInstrument: string[] = [
+		"payments:GetPaymentInstrument",
+		"aws-portal:ViewPaymentMethods",
+	];
+	/** IAM actions required for the ListFinancialRecords API call. */
+	static readonly ListFinancialRecords: string[] = [
+		"payments:GetPaymentStatus",
+		"payments:ListFinancialRecords",
+		"aws-portal:ViewBilling",
+	];
+	/** IAM actions required for the ListPaymentInstruments API call. */
+	static readonly ListPaymentInstruments: string[] = [];
 }
 
 /**

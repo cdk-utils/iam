@@ -124,6 +124,8 @@ export class TranscribeActions {
 	static readonly StartTranscriptionJob = "transcribe:StartTranscriptionJob";
 	/** [Tagging] transcribe:TagResource */
 	static readonly TagResource = "transcribe:TagResource";
+	/** [Write] transcribe:TranscribeAudio */
+	static readonly TranscribeAudio = "transcribe:TranscribeAudio";
 	/** [Tagging] transcribe:UntagResource */
 	static readonly UntagResource = "transcribe:UntagResource";
 	/** [Write] transcribe:UpdateCallAnalyticsCategory */
@@ -180,6 +182,7 @@ export class TranscribeActions {
 		TranscribeActions.StartStreamTranscription,
 		TranscribeActions.StartStreamTranscriptionWebSocket,
 		TranscribeActions.StartTranscriptionJob,
+		TranscribeActions.TranscribeAudio,
 		TranscribeActions.UpdateCallAnalyticsCategory,
 		TranscribeActions.UpdateLanguageModel,
 		TranscribeActions.UpdateMedicalVocabulary,
@@ -945,6 +948,8 @@ export class TranscribeOperations {
 	];
 	/** IAM actions required for the TagResource API call. */
 	static readonly TagResource: string[] = ["transcribe:TagResource"];
+	/** IAM actions required for the TranscribeAudio API call. */
+	static readonly TranscribeAudio: string[] = ["transcribe:TranscribeAudio"];
 	/** IAM actions required for the UntagResource API call. */
 	static readonly UntagResource: string[] = ["transcribe:UntagResource"];
 	/** IAM actions required for the UpdateCallAnalyticsCategory API call. */

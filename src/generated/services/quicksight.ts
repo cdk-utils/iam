@@ -25,6 +25,9 @@ export class QuickSightActions {
 	/** [Write] quicksight:BatchDeleteKnowledgeBase */
 	static readonly BatchDeleteKnowledgeBase =
 		"quicksight:BatchDeleteKnowledgeBase";
+	/** [Write] quicksight:BatchDeletePolicyAssignmentByPolicy */
+	static readonly BatchDeletePolicyAssignmentByPolicy =
+		"quicksight:BatchDeletePolicyAssignmentByPolicy";
 	/** [Write] quicksight:BatchDeleteTopicReviewedAnswer */
 	static readonly BatchDeleteTopicReviewedAnswer =
 		"quicksight:BatchDeleteTopicReviewedAnswer";
@@ -33,6 +36,9 @@ export class QuickSightActions {
 		"quicksight:BatchDescribeUserLimits";
 	/** [Read] quicksight:BatchGetPreferences */
 	static readonly BatchGetPreferences = "quicksight:BatchGetPreferences";
+	/** [Write] quicksight:BatchPutPolicyAssignmentByPolicy */
+	static readonly BatchPutPolicyAssignmentByPolicy =
+		"quicksight:BatchPutPolicyAssignmentByPolicy";
 	/** [Write] quicksight:BatchUpdatePreferences */
 	static readonly BatchUpdatePreferences = "quicksight:BatchUpdatePreferences";
 	/** [Write] quicksight:CancelIngestion */
@@ -98,6 +104,9 @@ export class QuickSightActions {
 	static readonly CreateIngestion = "quicksight:CreateIngestion";
 	/** [Write] quicksight:CreateKnowledgeBase */
 	static readonly CreateKnowledgeBase = "quicksight:CreateKnowledgeBase";
+	/** [Write] quicksight:CreateKnowledgeBaseRefreshSchedule */
+	static readonly CreateKnowledgeBaseRefreshSchedule =
+		"quicksight:CreateKnowledgeBaseRefreshSchedule";
 	/** [Write] quicksight:CreateLimitsProfile */
 	static readonly CreateLimitsProfile = "quicksight:CreateLimitsProfile";
 	/** [Write] quicksight:CreateNamespace */
@@ -205,6 +214,9 @@ export class QuickSightActions {
 	static readonly DeleteInboundConnector = "quicksight:DeleteInboundConnector";
 	/** [Write] quicksight:DeleteKnowledgeBase */
 	static readonly DeleteKnowledgeBase = "quicksight:DeleteKnowledgeBase";
+	/** [Write] quicksight:DeleteKnowledgeBaseRefreshSchedule */
+	static readonly DeleteKnowledgeBaseRefreshSchedule =
+		"quicksight:DeleteKnowledgeBaseRefreshSchedule";
 	/** [Write] quicksight:DeleteLimitsProfile */
 	static readonly DeleteLimitsProfile = "quicksight:DeleteLimitsProfile";
 	/** [Write] quicksight:DeleteNamespace */
@@ -212,6 +224,8 @@ export class QuickSightActions {
 	/** [Write] quicksight:DeleteOAuthClientApplication */
 	static readonly DeleteOAuthClientApplication =
 		"quicksight:DeleteOAuthClientApplication";
+	/** [Write] quicksight:DeletePolicyAssignment */
+	static readonly DeletePolicyAssignment = "quicksight:DeletePolicyAssignment";
 	/** [Write] quicksight:DeleteRefreshSchedule */
 	static readonly DeleteRefreshSchedule = "quicksight:DeleteRefreshSchedule";
 	/** [Write] quicksight:DeleteRoleCustomPermission */
@@ -381,6 +395,9 @@ export class QuickSightActions {
 	/** [PermissionManagement] quicksight:DescribeKnowledgeBasePermissions */
 	static readonly DescribeKnowledgeBasePermissions =
 		"quicksight:DescribeKnowledgeBasePermissions";
+	/** [Read] quicksight:DescribeKnowledgeBaseRefreshSchedule */
+	static readonly DescribeKnowledgeBaseRefreshSchedule =
+		"quicksight:DescribeKnowledgeBaseRefreshSchedule";
 	/** [Read] quicksight:DescribeLimitsProfile */
 	static readonly DescribeLimitsProfile = "quicksight:DescribeLimitsProfile";
 	/** [Read] quicksight:DescribeNamespace */
@@ -462,6 +479,9 @@ export class QuickSightActions {
 	/** [Read] quicksight:GetDashboardEmbedUrl */
 	static readonly actionGetDashboardEmbedUrl =
 		"quicksight:GetDashboardEmbedUrl";
+	/** [Read] quicksight:GetEffectiveCustomPermissions */
+	static readonly actionGetEffectiveCustomPermissions =
+		"quicksight:GetEffectiveCustomPermissions";
 	/** [Read] quicksight:GetFlowMetadata */
 	static readonly actionGetFlowMetadata = "quicksight:GetFlowMetadata";
 	/** [Read] quicksight:GetFlowPermissions */
@@ -470,6 +490,8 @@ export class QuickSightActions {
 	static readonly actionGetGroupMapping = "quicksight:GetGroupMapping";
 	/** [Read] quicksight:GetIdentityContext */
 	static readonly actionGetIdentityContext = "quicksight:GetIdentityContext";
+	/** [Read] quicksight:GetPolicyAssignment */
+	static readonly actionGetPolicyAssignment = "quicksight:GetPolicyAssignment";
 	/** [Read] quicksight:GetSessionEmbedUrl */
 	static readonly actionGetSessionEmbedUrl = "quicksight:GetSessionEmbedUrl";
 	/** [List] quicksight:ListAccessControlApplications */
@@ -547,6 +569,9 @@ export class QuickSightActions {
 	static readonly ListIngestions = "quicksight:ListIngestions";
 	/** [List] quicksight:ListKMSKeysForUser */
 	static readonly ListKMSKeysForUser = "quicksight:ListKMSKeysForUser";
+	/** [List] quicksight:ListKnowledgeBaseRefreshSchedules */
+	static readonly ListKnowledgeBaseRefreshSchedules =
+		"quicksight:ListKnowledgeBaseRefreshSchedules";
 	/** [List] quicksight:ListKnowledgeBases */
 	static readonly ListKnowledgeBases = "quicksight:ListKnowledgeBases";
 	/** [List] quicksight:ListLimitsProfiles */
@@ -556,6 +581,9 @@ export class QuickSightActions {
 	/** [List] quicksight:ListOAuthClientApplications */
 	static readonly ListOAuthClientApplications =
 		"quicksight:ListOAuthClientApplications";
+	/** [List] quicksight:ListPrincipalsForPolicy */
+	static readonly ListPrincipalsForPolicy =
+		"quicksight:ListPrincipalsForPolicy";
 	/** [List] quicksight:ListRefreshSchedules */
 	static readonly ListRefreshSchedules = "quicksight:ListRefreshSchedules";
 	/** [List] quicksight:ListRoleMemberships */
@@ -607,6 +635,8 @@ export class QuickSightActions {
 	/** [Write] quicksight:PutDataSetRefreshProperties */
 	static readonly PutDataSetRefreshProperties =
 		"quicksight:PutDataSetRefreshProperties";
+	/** [Write] quicksight:PutPolicyAssignment */
+	static readonly PutPolicyAssignment = "quicksight:PutPolicyAssignment";
 	/** [Read] quicksight:QuickSuiteUsageMetrics */
 	static readonly QuickSuiteUsageMetrics = "quicksight:QuickSuiteUsageMetrics";
 	/** [Write] quicksight:RegisterCustomerManagedKey */
@@ -801,6 +831,9 @@ export class QuickSightActions {
 	/** [PermissionManagement] quicksight:UpdateKnowledgeBasePermissions */
 	static readonly UpdateKnowledgeBasePermissions =
 		"quicksight:UpdateKnowledgeBasePermissions";
+	/** [Write] quicksight:UpdateKnowledgeBaseRefreshSchedule */
+	static readonly UpdateKnowledgeBaseRefreshSchedule =
+		"quicksight:UpdateKnowledgeBaseRefreshSchedule";
 	/** [Write] quicksight:UpdateLimitsProfile */
 	static readonly UpdateLimitsProfile = "quicksight:UpdateLimitsProfile";
 	/** [Write] quicksight:UpdateOAuthClientApplication */
@@ -923,6 +956,7 @@ export class QuickSightActions {
 		QuickSightActions.DescribeIpRestriction,
 		QuickSightActions.DescribeKeyRegistration,
 		QuickSightActions.DescribeKnowledgeBase,
+		QuickSightActions.DescribeKnowledgeBaseRefreshSchedule,
 		QuickSightActions.DescribeLimitsProfile,
 		QuickSightActions.DescribeNamespace,
 		QuickSightActions.DescribeOAuthClientApplication,
@@ -949,10 +983,12 @@ export class QuickSightActions {
 		QuickSightActions.actionGetAuthCode,
 		QuickSightActions.actionGetCustomPermissionsSummary,
 		QuickSightActions.actionGetDashboardEmbedUrl,
+		QuickSightActions.actionGetEffectiveCustomPermissions,
 		QuickSightActions.actionGetFlowMetadata,
 		QuickSightActions.actionGetFlowPermissions,
 		QuickSightActions.actionGetGroupMapping,
 		QuickSightActions.actionGetIdentityContext,
+		QuickSightActions.actionGetPolicyAssignment,
 		QuickSightActions.actionGetSessionEmbedUrl,
 		QuickSightActions.ListFolderMembers,
 		QuickSightActions.ListTagsForResource,
@@ -969,7 +1005,9 @@ export class QuickSightActions {
 		QuickSightActions.AuthorizeOAuthAccess,
 		QuickSightActions.BatchCreateTopicReviewedAnswer,
 		QuickSightActions.BatchDeleteKnowledgeBase,
+		QuickSightActions.BatchDeletePolicyAssignmentByPolicy,
 		QuickSightActions.BatchDeleteTopicReviewedAnswer,
+		QuickSightActions.BatchPutPolicyAssignmentByPolicy,
 		QuickSightActions.BatchUpdatePreferences,
 		QuickSightActions.CancelIngestion,
 		QuickSightActions.CreateAccessControlApplication,
@@ -999,6 +1037,7 @@ export class QuickSightActions {
 		QuickSightActions.CreateInboundConnector,
 		QuickSightActions.CreateIngestion,
 		QuickSightActions.CreateKnowledgeBase,
+		QuickSightActions.CreateKnowledgeBaseRefreshSchedule,
 		QuickSightActions.CreateLimitsProfile,
 		QuickSightActions.CreateNamespace,
 		QuickSightActions.CreateOAuthClientApplication,
@@ -1046,9 +1085,11 @@ export class QuickSightActions {
 		QuickSightActions.DeleteIdentityPropagationConfig,
 		QuickSightActions.DeleteInboundConnector,
 		QuickSightActions.DeleteKnowledgeBase,
+		QuickSightActions.DeleteKnowledgeBaseRefreshSchedule,
 		QuickSightActions.DeleteLimitsProfile,
 		QuickSightActions.DeleteNamespace,
 		QuickSightActions.DeleteOAuthClientApplication,
+		QuickSightActions.DeletePolicyAssignment,
 		QuickSightActions.DeleteRefreshSchedule,
 		QuickSightActions.DeleteRoleCustomPermission,
 		QuickSightActions.DeleteRoleMembership,
@@ -1067,6 +1108,7 @@ export class QuickSightActions {
 		QuickSightActions.GenerateEmbedUrlForRegisteredUser,
 		QuickSightActions.GenerateEmbedUrlForRegisteredUserWithIdentity,
 		QuickSightActions.PutDataSetRefreshProperties,
+		QuickSightActions.PutPolicyAssignment,
 		QuickSightActions.RegisterCustomerManagedKey,
 		QuickSightActions.RegisterUser,
 		QuickSightActions.RemoveCustomerManagedKey,
@@ -1120,6 +1162,7 @@ export class QuickSightActions {
 		QuickSightActions.UpdateIpRestriction,
 		QuickSightActions.UpdateKeyRegistration,
 		QuickSightActions.UpdateKnowledgeBase,
+		QuickSightActions.UpdateKnowledgeBaseRefreshSchedule,
 		QuickSightActions.UpdateLimitsProfile,
 		QuickSightActions.UpdateOAuthClientApplication,
 		QuickSightActions.UpdatePublicSharingSettings,
@@ -1178,10 +1221,12 @@ export class QuickSightActions {
 		QuickSightActions.ListInboundConnectors,
 		QuickSightActions.ListIngestions,
 		QuickSightActions.ListKMSKeysForUser,
+		QuickSightActions.ListKnowledgeBaseRefreshSchedules,
 		QuickSightActions.ListKnowledgeBases,
 		QuickSightActions.ListLimitsProfiles,
 		QuickSightActions.ListNamespaces,
 		QuickSightActions.ListOAuthClientApplications,
+		QuickSightActions.ListPrincipalsForPolicy,
 		QuickSightActions.ListRefreshSchedules,
 		QuickSightActions.ListRoleMemberships,
 		QuickSightActions.ListSelfUpgrades,
@@ -3776,6 +3821,10 @@ export class QuickSightOperations {
 		"quicksight:BatchDeleteKnowledgeBase",
 		"quicksight:DeleteKnowledgeBase",
 	];
+	/** IAM actions required for the BatchDeletePolicyAssignmentByPolicy API call. */
+	static readonly BatchDeletePolicyAssignmentByPolicy: string[] = [
+		"quicksight:BatchDeletePolicyAssignmentByPolicy",
+	];
 	/** IAM actions required for the BatchDeleteTopicReviewedAnswer API call. */
 	static readonly BatchDeleteTopicReviewedAnswer: string[] = [
 		"quicksight:BatchDeleteTopicReviewedAnswer",
@@ -3784,8 +3833,22 @@ export class QuickSightOperations {
 	static readonly BatchDescribeUserLimits: string[] = [
 		"quicksight:BatchDescribeUserLimits",
 	];
+	/** IAM actions required for the BatchPutPolicyAssignmentByPolicy API call. */
+	static readonly BatchPutPolicyAssignmentByPolicy: string[] = [
+		"quicksight:BatchPutPolicyAssignmentByPolicy",
+	];
 	/** IAM actions required for the CancelIngestion API call. */
 	static readonly CancelIngestion: string[] = ["quicksight:CancelIngestion"];
+	/** IAM actions required for the CreateAccessControlApplication API call. */
+	static readonly CreateAccessControlApplication: string[] = [
+		"quicksight:CreateAccessControlApplication",
+		"iam:PassRole",
+		"quicksight:TagResource",
+	];
+	/** IAM actions required for the CreateAccessControlApplicationSecret API call. */
+	static readonly CreateAccessControlApplicationSecret: string[] = [
+		"quicksight:CreateAccessControlApplicationSecret",
+	];
 	/** IAM actions required for the CreateAccountCustomization API call. */
 	static readonly CreateAccountCustomization: string[] = [
 		"quicksight:CreateAccountCustomization",
@@ -3891,6 +3954,11 @@ export class QuickSightOperations {
 	static readonly CreateIAMPolicyAssignment: string[] = [
 		"quicksight:CreateIAMPolicyAssignment",
 	];
+	/** IAM actions required for the CreateInboundConnector API call. */
+	static readonly CreateInboundConnector: string[] = [
+		"quicksight:CreateInboundConnector",
+		"quicksight:TagResource",
+	];
 	/** IAM actions required for the CreateIngestion API call. */
 	static readonly CreateIngestion: string[] = ["quicksight:CreateIngestion"];
 	/** IAM actions required for the CreateKnowledgeBase API call. */
@@ -3898,6 +3966,11 @@ export class QuickSightOperations {
 		"quicksight:CreateKnowledgeBase",
 		"quicksight:PassDataSource",
 		"quicksight:TagResource",
+	];
+	/** IAM actions required for the CreateKnowledgeBaseRefreshSchedule API call. */
+	static readonly CreateKnowledgeBaseRefreshSchedule: string[] = [
+		"quicksight:CreateKnowledgeBaseRefreshSchedule",
+		"quicksight:PassDataSource",
 	];
 	/** IAM actions required for the CreateLimitsProfile API call. */
 	static readonly CreateLimitsProfile: string[] = [
@@ -3968,6 +4041,14 @@ export class QuickSightOperations {
 		"quicksight:CreateVPCConnection",
 		"iam:PassRole",
 		"quicksight:TagResource",
+	];
+	/** IAM actions required for the DeleteAccessControlApplication API call. */
+	static readonly DeleteAccessControlApplication: string[] = [
+		"quicksight:DeleteAccessControlApplication",
+	];
+	/** IAM actions required for the DeleteAccessControlApplicationSecret API call. */
+	static readonly DeleteAccessControlApplicationSecret: string[] = [
+		"quicksight:DeleteAccessControlApplicationSecret",
 	];
 	/** IAM actions required for the DeleteAccountCustomPermission API call. */
 	static readonly DeleteAccountCustomPermission: string[] = [
@@ -4049,9 +4130,17 @@ export class QuickSightOperations {
 	static readonly DeleteIdentityPropagationConfig: string[] = [
 		"quicksight:DeleteIdentityPropagationConfig",
 	];
+	/** IAM actions required for the DeleteInboundConnector API call. */
+	static readonly DeleteInboundConnector: string[] = [
+		"quicksight:DeleteInboundConnector",
+	];
 	/** IAM actions required for the DeleteKnowledgeBase API call. */
 	static readonly DeleteKnowledgeBase: string[] = [
 		"quicksight:DeleteKnowledgeBase",
+	];
+	/** IAM actions required for the DeleteKnowledgeBaseRefreshSchedule API call. */
+	static readonly DeleteKnowledgeBaseRefreshSchedule: string[] = [
+		"quicksight:DeleteKnowledgeBaseRefreshSchedule",
 	];
 	/** IAM actions required for the DeleteLimitsProfile API call. */
 	static readonly DeleteLimitsProfile: string[] = [
@@ -4062,6 +4151,10 @@ export class QuickSightOperations {
 	/** IAM actions required for the DeleteOAuthClientApplication API call. */
 	static readonly DeleteOAuthClientApplication: string[] = [
 		"quicksight:DeleteOAuthClientApplication",
+	];
+	/** IAM actions required for the DeletePolicyAssignment API call. */
+	static readonly DeletePolicyAssignment: string[] = [
+		"quicksight:DeletePolicyAssignment",
 	];
 	/** IAM actions required for the DeleteRefreshSchedule API call. */
 	static readonly DeleteRefreshSchedule: string[] = [
@@ -4111,6 +4204,10 @@ export class QuickSightOperations {
 	static readonly DeleteVPCConnection: string[] = [
 		"quicksight:DeleteVPCConnection",
 		"iam:PassRole",
+	];
+	/** IAM actions required for the DescribeAccessControlApplication API call. */
+	static readonly DescribeAccessControlApplication: string[] = [
+		"quicksight:DescribeAccessControlApplication",
 	];
 	/** IAM actions required for the DescribeAccountCustomPermission API call. */
 	static readonly DescribeAccountCustomPermission: string[] = [
@@ -4260,6 +4357,10 @@ export class QuickSightOperations {
 	static readonly DescribeIAMPolicyAssignment: string[] = [
 		"quicksight:DescribeIAMPolicyAssignment",
 	];
+	/** IAM actions required for the DescribeInboundConnector API call. */
+	static readonly DescribeInboundConnector: string[] = [
+		"quicksight:DescribeInboundConnector",
+	];
 	/** IAM actions required for the DescribeIngestion API call. */
 	static readonly DescribeIngestion: string[] = [
 		"quicksight:DescribeIngestion",
@@ -4280,6 +4381,10 @@ export class QuickSightOperations {
 	/** IAM actions required for the DescribeKnowledgeBasePermissions API call. */
 	static readonly DescribeKnowledgeBasePermissions: string[] = [
 		"quicksight:DescribeKnowledgeBasePermissions",
+	];
+	/** IAM actions required for the DescribeKnowledgeBaseRefreshSchedule API call. */
+	static readonly DescribeKnowledgeBaseRefreshSchedule: string[] = [
+		"quicksight:DescribeKnowledgeBaseRefreshSchedule",
 	];
 	/** IAM actions required for the DescribeLimitsProfile API call. */
 	static readonly DescribeLimitsProfile: string[] = [
@@ -4399,10 +4504,18 @@ export class QuickSightOperations {
 	static readonly opGetIdentityContext: string[] = [
 		"quicksight:GetIdentityContext",
 	];
+	/** IAM actions required for the GetPolicyAssignment API call. */
+	static readonly opGetPolicyAssignment: string[] = [
+		"quicksight:GetPolicyAssignment",
+	];
 	/** IAM actions required for the GetSessionEmbedUrl API call. */
 	static readonly opGetSessionEmbedUrl: string[] = [
 		"quicksight:GetAuthCode",
 		"quicksight:GetSessionEmbedUrl",
+	];
+	/** IAM actions required for the ListAccessControlApplications API call. */
+	static readonly ListAccessControlApplications: string[] = [
+		"quicksight:ListAccessControlApplications",
 	];
 	/** IAM actions required for the ListActionConnectors API call. */
 	static readonly ListActionConnectors: string[] = [
@@ -4474,8 +4587,20 @@ export class QuickSightOperations {
 	static readonly ListIdentityPropagationConfigs: string[] = [
 		"quicksight:ListIdentityPropagationConfigs",
 	];
+	/** IAM actions required for the ListInboundConnectorApplicationAssociations API call. */
+	static readonly ListInboundConnectorApplicationAssociations: string[] = [
+		"quicksight:ListInboundConnectorApplicationAssociations",
+	];
+	/** IAM actions required for the ListInboundConnectors API call. */
+	static readonly ListInboundConnectors: string[] = [
+		"quicksight:ListInboundConnectors",
+	];
 	/** IAM actions required for the ListIngestions API call. */
 	static readonly ListIngestions: string[] = ["quicksight:ListIngestions"];
+	/** IAM actions required for the ListKnowledgeBaseRefreshSchedules API call. */
+	static readonly ListKnowledgeBaseRefreshSchedules: string[] = [
+		"quicksight:ListKnowledgeBaseRefreshSchedules",
+	];
 	/** IAM actions required for the ListKnowledgeBases API call. */
 	static readonly ListKnowledgeBases: string[] = [
 		"quicksight:ListKnowledgeBases",
@@ -4489,6 +4614,10 @@ export class QuickSightOperations {
 	/** IAM actions required for the ListOAuthClientApplications API call. */
 	static readonly ListOAuthClientApplications: string[] = [
 		"quicksight:ListOAuthClientApplications",
+	];
+	/** IAM actions required for the ListPrincipalsForPolicy API call. */
+	static readonly ListPrincipalsForPolicy: string[] = [
+		"quicksight:ListPrincipalsForPolicy",
 	];
 	/** IAM actions required for the ListRefreshSchedules API call. */
 	static readonly ListRefreshSchedules: string[] = [
@@ -4559,6 +4688,10 @@ export class QuickSightOperations {
 	static readonly PutDataSetRefreshProperties: string[] = [
 		"quicksight:PutDataSetRefreshProperties",
 	];
+	/** IAM actions required for the PutPolicyAssignment API call. */
+	static readonly PutPolicyAssignment: string[] = [
+		"quicksight:PutPolicyAssignment",
+	];
 	/** IAM actions required for the RegisterUser API call. */
 	static readonly RegisterUser: string[] = [
 		"quicksight:RegisterUser",
@@ -4628,6 +4761,14 @@ export class QuickSightOperations {
 	static readonly TagResource: string[] = ["quicksight:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
 	static readonly UntagResource: string[] = ["quicksight:UntagResource"];
+	/** IAM actions required for the UpdateAccessControlApplication API call. */
+	static readonly UpdateAccessControlApplication: string[] = [
+		"quicksight:UpdateAccessControlApplication",
+	];
+	/** IAM actions required for the UpdateAccessControlApplicationSecret API call. */
+	static readonly UpdateAccessControlApplicationSecret: string[] = [
+		"quicksight:UpdateAccessControlApplicationSecret",
+	];
 	/** IAM actions required for the UpdateAccountCustomPermission API call. */
 	static readonly UpdateAccountCustomPermission: string[] = [
 		"quicksight:UpdateAccountCustomPermission",
@@ -4764,6 +4905,14 @@ export class QuickSightOperations {
 	static readonly UpdateIdentityPropagationConfig: string[] = [
 		"quicksight:UpdateIdentityPropagationConfig",
 	];
+	/** IAM actions required for the UpdateInboundConnector API call. */
+	static readonly UpdateInboundConnector: string[] = [
+		"quicksight:UpdateInboundConnector",
+	];
+	/** IAM actions required for the UpdateInboundConnectorApplicationAssociations API call. */
+	static readonly UpdateInboundConnectorApplicationAssociations: string[] = [
+		"quicksight:UpdateInboundConnectorApplicationAssociations",
+	];
 	/** IAM actions required for the UpdateIpRestriction API call. */
 	static readonly UpdateIpRestriction: string[] = [
 		"quicksight:UpdateIpRestriction",
@@ -4781,6 +4930,11 @@ export class QuickSightOperations {
 	/** IAM actions required for the UpdateKnowledgeBasePermissions API call. */
 	static readonly UpdateKnowledgeBasePermissions: string[] = [
 		"quicksight:UpdateKnowledgeBasePermissions",
+	];
+	/** IAM actions required for the UpdateKnowledgeBaseRefreshSchedule API call. */
+	static readonly UpdateKnowledgeBaseRefreshSchedule: string[] = [
+		"quicksight:PassDataSource",
+		"quicksight:UpdateKnowledgeBaseRefreshSchedule",
 	];
 	/** IAM actions required for the UpdateLimitsProfile API call. */
 	static readonly UpdateLimitsProfile: string[] = [
