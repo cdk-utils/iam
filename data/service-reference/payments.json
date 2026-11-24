@@ -21,6 +21,7 @@
       "Name": "BatchGetFinancialRecord",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -347,6 +348,7 @@
       "Name": "ListPaymentInstruments",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -563,6 +565,20 @@
   "Operations": [
     {
       "Name": "BatchGetFinancialRecord",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchGetFinancialRecord",
+          "Service": "payments"
+        },
+        {
+          "Name": "GetPaymentStatus",
+          "Service": "payments"
+        },
+        {
+          "Name": "ViewBilling",
+          "Service": "aws-portal"
+        }
+      ],
       "SDK": [
         {
           "Name": "payments",
@@ -647,6 +663,16 @@
     },
     {
       "Name": "ListPaymentInstruments",
+      "AuthorizedActions": [
+        {
+          "Name": "ListPaymentInstruments",
+          "Service": "payments"
+        },
+        {
+          "Name": "ViewPaymentMethods",
+          "Service": "aws-portal"
+        }
+      ],
       "SDK": [
         {
           "Name": "payments",

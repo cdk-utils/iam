@@ -3150,6 +3150,10 @@ export class PartnercentralOperations {
 	static readonly AssociateOpportunity: string[] = [
 		"partnercentral:AssociateOpportunity",
 	];
+	/** IAM actions required for the BatchCreateCampaignAsset API call. */
+	static readonly BatchCreateCampaignAsset: string[] = [
+		"partnercentral:BatchCreateCampaignAsset",
+	];
 	/** IAM actions required for the CancelBenefitApplication API call. */
 	static readonly CancelBenefitApplication: string[] = [
 		"partnercentral:CancelBenefitApplication",
@@ -3175,6 +3179,11 @@ export class PartnercentralOperations {
 	/** IAM actions required for the CreateBenefitApplication API call. */
 	static readonly CreateBenefitApplication: string[] = [
 		"partnercentral:CreateBenefitApplication",
+		"partnercentral:TagResource",
+	];
+	/** IAM actions required for the CreateCampaign API call. */
+	static readonly CreateCampaign: string[] = [
+		"partnercentral:CreateCampaign",
 		"partnercentral:TagResource",
 	];
 	/** IAM actions required for the CreateChannelContract API call. */
@@ -3256,6 +3265,20 @@ export class PartnercentralOperations {
 		"partnercentral:CreateRevenueAttribution",
 		"partnercentral:TagResource",
 	];
+	/** IAM actions required for the CreateSocialConnectionAuthorizationUrl API call. */
+	static readonly CreateSocialConnectionAuthorizationUrl: string[] = [
+		"partnercentral:CreateSocialConnectionAuthorizationUrl",
+	];
+	/** IAM actions required for the DeactivateCampaignAsset API call. */
+	static readonly DeactivateCampaignAsset: string[] = [
+		"partnercentral:DeactivateCampaignAsset",
+	];
+	/** IAM actions required for the DeleteCampaign API call. */
+	static readonly DeleteCampaign: string[] = ["partnercentral:DeleteCampaign"];
+	/** IAM actions required for the DeleteCampaignAsset API call. */
+	static readonly DeleteCampaignAsset: string[] = [
+		"partnercentral:DeleteCampaignAsset",
+	];
 	/** IAM actions required for the DeleteCustomerAccount API call. */
 	static readonly DeleteCustomerAccount: string[] = [
 		"partnercentral:DeleteCustomerAccount",
@@ -3271,6 +3294,10 @@ export class PartnercentralOperations {
 	/** IAM actions required for the DeleteResourceSnapshotJob API call. */
 	static readonly DeleteResourceSnapshotJob: string[] = [
 		"partnercentral:DeleteResourceSnapshotJob",
+	];
+	/** IAM actions required for the DeleteSocialConnection API call. */
+	static readonly DeleteSocialConnection: string[] = [
+		"partnercentral:DeleteSocialConnection",
 	];
 	/** IAM actions required for the DisassociateAwsTrainingCertificationEmailDomain API call. */
 	static readonly DisassociateAwsTrainingCertificationEmailDomain: string[] = [
@@ -3301,6 +3328,24 @@ export class PartnercentralOperations {
 	/** IAM actions required for the GetBenefitApplication API call. */
 	static readonly opGetBenefitApplication: string[] = [
 		"partnercentral:GetBenefitApplication",
+	];
+	/** IAM actions required for the GetCampaign API call. */
+	static readonly opGetCampaign: string[] = ["partnercentral:GetCampaign"];
+	/** IAM actions required for the GetCampaignAsset API call. */
+	static readonly opGetCampaignAsset: string[] = [
+		"partnercentral:GetCampaignAsset",
+	];
+	/** IAM actions required for the GetCampaignAssetActivationTask API call. */
+	static readonly opGetCampaignAssetActivationTask: string[] = [
+		"partnercentral:GetCampaignAssetActivationTask",
+	];
+	/** IAM actions required for the GetCampaignAssetExportTask API call. */
+	static readonly opGetCampaignAssetExportTask: string[] = [
+		"partnercentral:GetCampaignAssetExportTask",
+	];
+	/** IAM actions required for the GetCampaignTemplate API call. */
+	static readonly opGetCampaignTemplate: string[] = [
+		"partnercentral:GetCampaignTemplate",
 	];
 	/** IAM actions required for the GetChannelContract API call. */
 	static readonly opGetChannelContract: string[] = [
@@ -3422,6 +3467,12 @@ export class PartnercentralOperations {
 	];
 	/** IAM actions required for the ListBenefits API call. */
 	static readonly ListBenefits: string[] = ["partnercentral:ListBenefits"];
+	/** IAM actions required for the ListCampaignAssets API call. */
+	static readonly ListCampaignAssets: string[] = [
+		"partnercentral:ListCampaignAssets",
+	];
+	/** IAM actions required for the ListCampaigns API call. */
+	static readonly ListCampaigns: string[] = ["partnercentral:ListCampaigns"];
 	/** IAM actions required for the ListChannelContracts API call. */
 	static readonly ListChannelContracts: string[] = [
 		"partnercentral:ListChannelContracts",
@@ -3528,6 +3579,10 @@ export class PartnercentralOperations {
 	static readonly ListRevenueAttributions: string[] = [
 		"partnercentral:ListRevenueAttributions",
 	];
+	/** IAM actions required for the ListSocialConnections API call. */
+	static readonly ListSocialConnections: string[] = [
+		"partnercentral:ListSocialConnections",
+	];
 	/** IAM actions required for the ListSolutions API call. */
 	static readonly ListSolutions: string[] = ["partnercentral:ListSolutions"];
 	/** IAM actions required for the ListTagsForResource API call. */
@@ -3563,6 +3618,10 @@ export class PartnercentralOperations {
 	static readonly RejectEngagementInvitation: string[] = [
 		"partnercentral:RejectEngagementInvitation",
 	];
+	/** IAM actions required for the SearchCampaignTemplates API call. */
+	static readonly SearchCampaignTemplates: string[] = [
+		"partnercentral:SearchCampaignTemplates",
+	];
 	/** IAM actions required for the SearchCustomerAccounts API call. */
 	static readonly SearchCustomerAccounts: string[] = [
 		"partnercentral:SearchCustomerAccounts",
@@ -3578,6 +3637,14 @@ export class PartnercentralOperations {
 	/** IAM actions required for the SendEmailVerificationCode API call. */
 	static readonly SendEmailVerificationCode: string[] = [
 		"partnercentral:SendEmailVerificationCode",
+	];
+	/** IAM actions required for the StartCampaignAssetActivationTask API call. */
+	static readonly StartCampaignAssetActivationTask: string[] = [
+		"partnercentral:StartCampaignAssetActivationTask",
+	];
+	/** IAM actions required for the StartCampaignAssetExportTask API call. */
+	static readonly StartCampaignAssetExportTask: string[] = [
+		"partnercentral:StartCampaignAssetExportTask",
 	];
 	/** IAM actions required for the StartCustomerAccountBulkJob API call. */
 	static readonly StartCustomerAccountBulkJob: string[] = [
@@ -3670,6 +3737,12 @@ export class PartnercentralOperations {
 	/** IAM actions required for the UpdateBenefitApplication API call. */
 	static readonly UpdateBenefitApplication: string[] = [
 		"partnercentral:UpdateBenefitApplication",
+	];
+	/** IAM actions required for the UpdateCampaign API call. */
+	static readonly UpdateCampaign: string[] = ["partnercentral:UpdateCampaign"];
+	/** IAM actions required for the UpdateCampaignAsset API call. */
+	static readonly UpdateCampaignAsset: string[] = [
+		"partnercentral:UpdateCampaignAsset",
 	];
 	/** IAM actions required for the UpdateConnectionPreferences API call. */
 	static readonly UpdateConnectionPreferences: string[] = [

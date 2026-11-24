@@ -842,7 +842,9 @@ export class AppstreamOperations {
 		"appstream:CreateStreamingURL",
 	];
 	/** IAM actions required for the CreateThemeForStack API call. */
-	static readonly CreateThemeForStack: string[] = [];
+	static readonly CreateThemeForStack: string[] = [
+		"appstream:CreateThemeForStack",
+	];
 	/** IAM actions required for the CreateUpdatedImage API call. */
 	static readonly CreateUpdatedImage: string[] = [
 		"appstream:CreateUpdatedImage",

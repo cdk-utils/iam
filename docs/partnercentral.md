@@ -11748,6 +11748,7 @@ new partnercentral.PartnercentralOperations()
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.AssociateAwsTrainingCertificationEmailDomain">AssociateAwsTrainingCertificationEmailDomain</a></code> | <code>string[]</code> | IAM actions required for the AssociateAwsTrainingCertificationEmailDomain API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.AssociateBenefitApplicationResource">AssociateBenefitApplicationResource</a></code> | <code>string[]</code> | IAM actions required for the AssociateBenefitApplicationResource API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.AssociateOpportunity">AssociateOpportunity</a></code> | <code>string[]</code> | IAM actions required for the AssociateOpportunity API call. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.BatchCreateCampaignAsset">BatchCreateCampaignAsset</a></code> | <code>string[]</code> | IAM actions required for the BatchCreateCampaignAsset API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.CancelBenefitApplication">CancelBenefitApplication</a></code> | <code>string[]</code> | IAM actions required for the CancelBenefitApplication API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.CancelChannelContract">CancelChannelContract</a></code> | <code>string[]</code> | IAM actions required for the CancelChannelContract API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.CancelChannelHandshake">CancelChannelHandshake</a></code> | <code>string[]</code> | IAM actions required for the CancelChannelHandshake API call. |
@@ -11755,6 +11756,7 @@ new partnercentral.PartnercentralOperations()
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.CancelConnectionInvitation">CancelConnectionInvitation</a></code> | <code>string[]</code> | IAM actions required for the CancelConnectionInvitation API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.CancelProfileUpdateTask">CancelProfileUpdateTask</a></code> | <code>string[]</code> | IAM actions required for the CancelProfileUpdateTask API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.CreateBenefitApplication">CreateBenefitApplication</a></code> | <code>string[]</code> | IAM actions required for the CreateBenefitApplication API call. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.CreateCampaign">CreateCampaign</a></code> | <code>string[]</code> | IAM actions required for the CreateCampaign API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.CreateChannelContract">CreateChannelContract</a></code> | <code>string[]</code> | IAM actions required for the CreateChannelContract API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.CreateChannelHandshake">CreateChannelHandshake</a></code> | <code>string[]</code> | IAM actions required for the CreateChannelHandshake API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.CreateConnectionInvitation">CreateConnectionInvitation</a></code> | <code>string[]</code> | IAM actions required for the CreateConnectionInvitation API call. |
@@ -11771,16 +11773,23 @@ new partnercentral.PartnercentralOperations()
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.CreateResourceSnapshot">CreateResourceSnapshot</a></code> | <code>string[]</code> | IAM actions required for the CreateResourceSnapshot API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.CreateResourceSnapshotJob">CreateResourceSnapshotJob</a></code> | <code>string[]</code> | IAM actions required for the CreateResourceSnapshotJob API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.CreateRevenueAttribution">CreateRevenueAttribution</a></code> | <code>string[]</code> | IAM actions required for the CreateRevenueAttribution API call. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.CreateSocialConnectionAuthorizationUrl">CreateSocialConnectionAuthorizationUrl</a></code> | <code>string[]</code> | IAM actions required for the CreateSocialConnectionAuthorizationUrl API call. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.DeactivateCampaignAsset">DeactivateCampaignAsset</a></code> | <code>string[]</code> | IAM actions required for the DeactivateCampaignAsset API call. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.DeleteCampaign">DeleteCampaign</a></code> | <code>string[]</code> | IAM actions required for the DeleteCampaign API call. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.DeleteCampaignAsset">DeleteCampaignAsset</a></code> | <code>string[]</code> | IAM actions required for the DeleteCampaignAsset API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.DeleteCustomerAccount">DeleteCustomerAccount</a></code> | <code>string[]</code> | IAM actions required for the DeleteCustomerAccount API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.DeleteProgramManagementAccount">DeleteProgramManagementAccount</a></code> | <code>string[]</code> | IAM actions required for the DeleteProgramManagementAccount API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.DeleteRelationship">DeleteRelationship</a></code> | <code>string[]</code> | IAM actions required for the DeleteRelationship API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.DeleteResourceSnapshotJob">DeleteResourceSnapshotJob</a></code> | <code>string[]</code> | IAM actions required for the DeleteResourceSnapshotJob API call. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.DeleteSocialConnection">DeleteSocialConnection</a></code> | <code>string[]</code> | IAM actions required for the DeleteSocialConnection API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.DisassociateAwsTrainingCertificationEmailDomain">DisassociateAwsTrainingCertificationEmailDomain</a></code> | <code>string[]</code> | IAM actions required for the DisassociateAwsTrainingCertificationEmailDomain API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.DisassociateBenefitApplicationResource">DisassociateBenefitApplicationResource</a></code> | <code>string[]</code> | IAM actions required for the DisassociateBenefitApplicationResource API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.DisassociateOpportunity">DisassociateOpportunity</a></code> | <code>string[]</code> | IAM actions required for the DisassociateOpportunity API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.ListBenefitAllocations">ListBenefitAllocations</a></code> | <code>string[]</code> | IAM actions required for the ListBenefitAllocations API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.ListBenefitApplications">ListBenefitApplications</a></code> | <code>string[]</code> | IAM actions required for the ListBenefitApplications API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.ListBenefits">ListBenefits</a></code> | <code>string[]</code> | IAM actions required for the ListBenefits API call. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.ListCampaignAssets">ListCampaignAssets</a></code> | <code>string[]</code> | IAM actions required for the ListCampaignAssets API call. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.ListCampaigns">ListCampaigns</a></code> | <code>string[]</code> | IAM actions required for the ListCampaigns API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.ListChannelContracts">ListChannelContracts</a></code> | <code>string[]</code> | IAM actions required for the ListChannelContracts API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.ListChannelHandshakes">ListChannelHandshakes</a></code> | <code>string[]</code> | IAM actions required for the ListChannelHandshakes API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.ListConnectionInvitations">ListConnectionInvitations</a></code> | <code>string[]</code> | IAM actions required for the ListConnectionInvitations API call. |
@@ -11808,6 +11817,7 @@ new partnercentral.PartnercentralOperations()
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.ListResourceSnapshots">ListResourceSnapshots</a></code> | <code>string[]</code> | IAM actions required for the ListResourceSnapshots API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.ListRevenueAttributionAllocations">ListRevenueAttributionAllocations</a></code> | <code>string[]</code> | IAM actions required for the ListRevenueAttributionAllocations API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.ListRevenueAttributions">ListRevenueAttributions</a></code> | <code>string[]</code> | IAM actions required for the ListRevenueAttributions API call. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.ListSocialConnections">ListSocialConnections</a></code> | <code>string[]</code> | IAM actions required for the ListSocialConnections API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.ListSolutions">ListSolutions</a></code> | <code>string[]</code> | IAM actions required for the ListSolutions API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.opGetAllianceLeadContact">opGetAllianceLeadContact</a></code> | <code>string[]</code> | IAM actions required for the GetAllianceLeadContact API call. |
@@ -11815,6 +11825,11 @@ new partnercentral.PartnercentralOperations()
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.opGetBenefit">opGetBenefit</a></code> | <code>string[]</code> | IAM actions required for the GetBenefit API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.opGetBenefitAllocation">opGetBenefitAllocation</a></code> | <code>string[]</code> | IAM actions required for the GetBenefitAllocation API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.opGetBenefitApplication">opGetBenefitApplication</a></code> | <code>string[]</code> | IAM actions required for the GetBenefitApplication API call. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.opGetCampaign">opGetCampaign</a></code> | <code>string[]</code> | IAM actions required for the GetCampaign API call. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.opGetCampaignAsset">opGetCampaignAsset</a></code> | <code>string[]</code> | IAM actions required for the GetCampaignAsset API call. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.opGetCampaignAssetActivationTask">opGetCampaignAssetActivationTask</a></code> | <code>string[]</code> | IAM actions required for the GetCampaignAssetActivationTask API call. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.opGetCampaignAssetExportTask">opGetCampaignAssetExportTask</a></code> | <code>string[]</code> | IAM actions required for the GetCampaignAssetExportTask API call. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.opGetCampaignTemplate">opGetCampaignTemplate</a></code> | <code>string[]</code> | IAM actions required for the GetCampaignTemplate API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.opGetChannelContract">opGetChannelContract</a></code> | <code>string[]</code> | IAM actions required for the GetChannelContract API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.opGetConnection">opGetConnection</a></code> | <code>string[]</code> | IAM actions required for the GetConnection API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.opGetConnectionInvitation">opGetConnectionInvitation</a></code> | <code>string[]</code> | IAM actions required for the GetConnectionInvitation API call. |
@@ -11851,10 +11866,13 @@ new partnercentral.PartnercentralOperations()
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.RejectChannelHandshake">RejectChannelHandshake</a></code> | <code>string[]</code> | IAM actions required for the RejectChannelHandshake API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.RejectConnectionInvitation">RejectConnectionInvitation</a></code> | <code>string[]</code> | IAM actions required for the RejectConnectionInvitation API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.RejectEngagementInvitation">RejectEngagementInvitation</a></code> | <code>string[]</code> | IAM actions required for the RejectEngagementInvitation API call. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.SearchCampaignTemplates">SearchCampaignTemplates</a></code> | <code>string[]</code> | IAM actions required for the SearchCampaignTemplates API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.SearchCustomerAccounts">SearchCustomerAccounts</a></code> | <code>string[]</code> | IAM actions required for the SearchCustomerAccounts API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.SearchEngagements">SearchEngagements</a></code> | <code>string[]</code> | IAM actions required for the SearchEngagements API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.SearchOpportunities">SearchOpportunities</a></code> | <code>string[]</code> | IAM actions required for the SearchOpportunities API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.SendEmailVerificationCode">SendEmailVerificationCode</a></code> | <code>string[]</code> | IAM actions required for the SendEmailVerificationCode API call. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.StartCampaignAssetActivationTask">StartCampaignAssetActivationTask</a></code> | <code>string[]</code> | IAM actions required for the StartCampaignAssetActivationTask API call. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.StartCampaignAssetExportTask">StartCampaignAssetExportTask</a></code> | <code>string[]</code> | IAM actions required for the StartCampaignAssetExportTask API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.StartCustomerAccountBulkJob">StartCustomerAccountBulkJob</a></code> | <code>string[]</code> | IAM actions required for the StartCustomerAccountBulkJob API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.StartEngagementByAcceptingInvitationTask">StartEngagementByAcceptingInvitationTask</a></code> | <code>string[]</code> | IAM actions required for the StartEngagementByAcceptingInvitationTask API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.StartEngagementFromOpportunityTask">StartEngagementFromOpportunityTask</a></code> | <code>string[]</code> | IAM actions required for the StartEngagementFromOpportunityTask API call. |
@@ -11873,6 +11891,8 @@ new partnercentral.PartnercentralOperations()
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.UpdateBenefitApplication">UpdateBenefitApplication</a></code> | <code>string[]</code> | IAM actions required for the UpdateBenefitApplication API call. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.UpdateCampaign">UpdateCampaign</a></code> | <code>string[]</code> | IAM actions required for the UpdateCampaign API call. |
+| <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.UpdateCampaignAsset">UpdateCampaignAsset</a></code> | <code>string[]</code> | IAM actions required for the UpdateCampaignAsset API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.UpdateConnectionPreferences">UpdateConnectionPreferences</a></code> | <code>string[]</code> | IAM actions required for the UpdateConnectionPreferences API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.UpdateCustomerAccount">UpdateCustomerAccount</a></code> | <code>string[]</code> | IAM actions required for the UpdateCustomerAccount API call. |
 | <code><a href="#@cdk_utils/iam.partnercentral.PartnercentralOperations.property.UpdateEngagementContext">UpdateEngagementContext</a></code> | <code>string[]</code> | IAM actions required for the UpdateEngagementContext API call. |
@@ -11981,6 +12001,18 @@ IAM actions required for the AssociateOpportunity API call.
 
 ---
 
+##### `BatchCreateCampaignAsset`<sup>Required</sup> <a name="BatchCreateCampaignAsset" id="@cdk_utils/iam.partnercentral.PartnercentralOperations.property.BatchCreateCampaignAsset"></a>
+
+```typescript
+public readonly BatchCreateCampaignAsset: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the BatchCreateCampaignAsset API call.
+
+---
+
 ##### `CancelBenefitApplication`<sup>Required</sup> <a name="CancelBenefitApplication" id="@cdk_utils/iam.partnercentral.PartnercentralOperations.property.CancelBenefitApplication"></a>
 
 ```typescript
@@ -12062,6 +12094,18 @@ public readonly CreateBenefitApplication: string[];
 - *Type:* string[]
 
 IAM actions required for the CreateBenefitApplication API call.
+
+---
+
+##### `CreateCampaign`<sup>Required</sup> <a name="CreateCampaign" id="@cdk_utils/iam.partnercentral.PartnercentralOperations.property.CreateCampaign"></a>
+
+```typescript
+public readonly CreateCampaign: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateCampaign API call.
 
 ---
 
@@ -12257,6 +12301,54 @@ IAM actions required for the CreateRevenueAttribution API call.
 
 ---
 
+##### `CreateSocialConnectionAuthorizationUrl`<sup>Required</sup> <a name="CreateSocialConnectionAuthorizationUrl" id="@cdk_utils/iam.partnercentral.PartnercentralOperations.property.CreateSocialConnectionAuthorizationUrl"></a>
+
+```typescript
+public readonly CreateSocialConnectionAuthorizationUrl: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateSocialConnectionAuthorizationUrl API call.
+
+---
+
+##### `DeactivateCampaignAsset`<sup>Required</sup> <a name="DeactivateCampaignAsset" id="@cdk_utils/iam.partnercentral.PartnercentralOperations.property.DeactivateCampaignAsset"></a>
+
+```typescript
+public readonly DeactivateCampaignAsset: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeactivateCampaignAsset API call.
+
+---
+
+##### `DeleteCampaign`<sup>Required</sup> <a name="DeleteCampaign" id="@cdk_utils/iam.partnercentral.PartnercentralOperations.property.DeleteCampaign"></a>
+
+```typescript
+public readonly DeleteCampaign: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteCampaign API call.
+
+---
+
+##### `DeleteCampaignAsset`<sup>Required</sup> <a name="DeleteCampaignAsset" id="@cdk_utils/iam.partnercentral.PartnercentralOperations.property.DeleteCampaignAsset"></a>
+
+```typescript
+public readonly DeleteCampaignAsset: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteCampaignAsset API call.
+
+---
+
 ##### `DeleteCustomerAccount`<sup>Required</sup> <a name="DeleteCustomerAccount" id="@cdk_utils/iam.partnercentral.PartnercentralOperations.property.DeleteCustomerAccount"></a>
 
 ```typescript
@@ -12302,6 +12394,18 @@ public readonly DeleteResourceSnapshotJob: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteResourceSnapshotJob API call.
+
+---
+
+##### `DeleteSocialConnection`<sup>Required</sup> <a name="DeleteSocialConnection" id="@cdk_utils/iam.partnercentral.PartnercentralOperations.property.DeleteSocialConnection"></a>
+
+```typescript
+public readonly DeleteSocialConnection: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteSocialConnection API call.
 
 ---
 
@@ -12374,6 +12478,30 @@ public readonly ListBenefits: string[];
 - *Type:* string[]
 
 IAM actions required for the ListBenefits API call.
+
+---
+
+##### `ListCampaignAssets`<sup>Required</sup> <a name="ListCampaignAssets" id="@cdk_utils/iam.partnercentral.PartnercentralOperations.property.ListCampaignAssets"></a>
+
+```typescript
+public readonly ListCampaignAssets: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListCampaignAssets API call.
+
+---
+
+##### `ListCampaigns`<sup>Required</sup> <a name="ListCampaigns" id="@cdk_utils/iam.partnercentral.PartnercentralOperations.property.ListCampaigns"></a>
+
+```typescript
+public readonly ListCampaigns: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListCampaigns API call.
 
 ---
 
@@ -12701,6 +12829,18 @@ IAM actions required for the ListRevenueAttributions API call.
 
 ---
 
+##### `ListSocialConnections`<sup>Required</sup> <a name="ListSocialConnections" id="@cdk_utils/iam.partnercentral.PartnercentralOperations.property.ListSocialConnections"></a>
+
+```typescript
+public readonly ListSocialConnections: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListSocialConnections API call.
+
+---
+
 ##### `ListSolutions`<sup>Required</sup> <a name="ListSolutions" id="@cdk_utils/iam.partnercentral.PartnercentralOperations.property.ListSolutions"></a>
 
 ```typescript
@@ -12782,6 +12922,66 @@ public readonly opGetBenefitApplication: string[];
 - *Type:* string[]
 
 IAM actions required for the GetBenefitApplication API call.
+
+---
+
+##### `opGetCampaign`<sup>Required</sup> <a name="opGetCampaign" id="@cdk_utils/iam.partnercentral.PartnercentralOperations.property.opGetCampaign"></a>
+
+```typescript
+public readonly opGetCampaign: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetCampaign API call.
+
+---
+
+##### `opGetCampaignAsset`<sup>Required</sup> <a name="opGetCampaignAsset" id="@cdk_utils/iam.partnercentral.PartnercentralOperations.property.opGetCampaignAsset"></a>
+
+```typescript
+public readonly opGetCampaignAsset: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetCampaignAsset API call.
+
+---
+
+##### `opGetCampaignAssetActivationTask`<sup>Required</sup> <a name="opGetCampaignAssetActivationTask" id="@cdk_utils/iam.partnercentral.PartnercentralOperations.property.opGetCampaignAssetActivationTask"></a>
+
+```typescript
+public readonly opGetCampaignAssetActivationTask: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetCampaignAssetActivationTask API call.
+
+---
+
+##### `opGetCampaignAssetExportTask`<sup>Required</sup> <a name="opGetCampaignAssetExportTask" id="@cdk_utils/iam.partnercentral.PartnercentralOperations.property.opGetCampaignAssetExportTask"></a>
+
+```typescript
+public readonly opGetCampaignAssetExportTask: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetCampaignAssetExportTask API call.
+
+---
+
+##### `opGetCampaignTemplate`<sup>Required</sup> <a name="opGetCampaignTemplate" id="@cdk_utils/iam.partnercentral.PartnercentralOperations.property.opGetCampaignTemplate"></a>
+
+```typescript
+public readonly opGetCampaignTemplate: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetCampaignTemplate API call.
 
 ---
 
@@ -13217,6 +13417,18 @@ IAM actions required for the RejectEngagementInvitation API call.
 
 ---
 
+##### `SearchCampaignTemplates`<sup>Required</sup> <a name="SearchCampaignTemplates" id="@cdk_utils/iam.partnercentral.PartnercentralOperations.property.SearchCampaignTemplates"></a>
+
+```typescript
+public readonly SearchCampaignTemplates: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the SearchCampaignTemplates API call.
+
+---
+
 ##### `SearchCustomerAccounts`<sup>Required</sup> <a name="SearchCustomerAccounts" id="@cdk_utils/iam.partnercentral.PartnercentralOperations.property.SearchCustomerAccounts"></a>
 
 ```typescript
@@ -13262,6 +13474,30 @@ public readonly SendEmailVerificationCode: string[];
 - *Type:* string[]
 
 IAM actions required for the SendEmailVerificationCode API call.
+
+---
+
+##### `StartCampaignAssetActivationTask`<sup>Required</sup> <a name="StartCampaignAssetActivationTask" id="@cdk_utils/iam.partnercentral.PartnercentralOperations.property.StartCampaignAssetActivationTask"></a>
+
+```typescript
+public readonly StartCampaignAssetActivationTask: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StartCampaignAssetActivationTask API call.
+
+---
+
+##### `StartCampaignAssetExportTask`<sup>Required</sup> <a name="StartCampaignAssetExportTask" id="@cdk_utils/iam.partnercentral.PartnercentralOperations.property.StartCampaignAssetExportTask"></a>
+
+```typescript
+public readonly StartCampaignAssetExportTask: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the StartCampaignAssetExportTask API call.
 
 ---
 
@@ -13478,6 +13714,30 @@ public readonly UpdateBenefitApplication: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateBenefitApplication API call.
+
+---
+
+##### `UpdateCampaign`<sup>Required</sup> <a name="UpdateCampaign" id="@cdk_utils/iam.partnercentral.PartnercentralOperations.property.UpdateCampaign"></a>
+
+```typescript
+public readonly UpdateCampaign: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateCampaign API call.
+
+---
+
+##### `UpdateCampaignAsset`<sup>Required</sup> <a name="UpdateCampaignAsset" id="@cdk_utils/iam.partnercentral.PartnercentralOperations.property.UpdateCampaignAsset"></a>
+
+```typescript
+public readonly UpdateCampaignAsset: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateCampaignAsset API call.
 
 ---
 

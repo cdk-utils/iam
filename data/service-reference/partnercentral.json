@@ -240,6 +240,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -539,6 +540,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1005,6 +1007,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1023,6 +1026,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1098,6 +1102,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1121,6 +1126,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1266,6 +1272,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1698,6 +1705,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1721,6 +1729,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1744,6 +1753,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1767,6 +1777,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1790,6 +1801,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2882,6 +2894,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2905,6 +2918,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3554,6 +3568,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3816,6 +3831,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -3993,6 +4009,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4016,6 +4033,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4614,6 +4632,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4637,6 +4656,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5095,6 +5115,22 @@
       ]
     },
     {
+      "Name": "BatchCreateCampaignAsset",
+      "AuthorizedActions": [
+        {
+          "Name": "BatchCreateCampaignAsset",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-marketing",
+          "Method": "batch_create_campaign_asset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "CancelBenefitApplication",
       "AuthorizedActions": [
         {
@@ -5200,6 +5236,26 @@
         {
           "Name": "partnercentral-benefits",
           "Method": "create_benefit_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateCampaign",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateCampaign",
+          "Service": "partnercentral"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-marketing",
+          "Method": "create_campaign",
           "Package": "Boto3"
         }
       ]
@@ -5523,6 +5579,70 @@
       ]
     },
     {
+      "Name": "CreateSocialConnectionAuthorizationUrl",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSocialConnectionAuthorizationUrl",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-marketing",
+          "Method": "create_social_connection_authorization_url",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeactivateCampaignAsset",
+      "AuthorizedActions": [
+        {
+          "Name": "DeactivateCampaignAsset",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-marketing",
+          "Method": "deactivate_campaign_asset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCampaign",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCampaign",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-marketing",
+          "Method": "delete_campaign",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteCampaignAsset",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteCampaignAsset",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-marketing",
+          "Method": "delete_campaign_asset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DeleteCustomerAccount",
       "AuthorizedActions": [
         {
@@ -5582,6 +5702,22 @@
         {
           "Name": "partnercentral-selling",
           "Method": "delete_resource_snapshot_job",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSocialConnection",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSocialConnection",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-marketing",
+          "Method": "delete_social_connection",
           "Package": "Boto3"
         }
       ]
@@ -5710,6 +5846,86 @@
         {
           "Name": "partnercentral-benefits",
           "Method": "get_benefit_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCampaign",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCampaign",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-marketing",
+          "Method": "get_campaign",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCampaignAsset",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCampaignAsset",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-marketing",
+          "Method": "get_campaign_asset",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCampaignAssetActivationTask",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCampaignAssetActivationTask",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-marketing",
+          "Method": "get_campaign_asset_activation_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCampaignAssetExportTask",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCampaignAssetExportTask",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-marketing",
+          "Method": "get_campaign_asset_export_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "GetCampaignTemplate",
+      "AuthorizedActions": [
+        {
+          "Name": "GetCampaignTemplate",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-marketing",
+          "Method": "get_campaign_template",
           "Package": "Boto3"
         }
       ]
@@ -6227,6 +6443,38 @@
       ]
     },
     {
+      "Name": "ListCampaignAssets",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCampaignAssets",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-marketing",
+          "Method": "list_campaign_assets",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "ListCampaigns",
+      "AuthorizedActions": [
+        {
+          "Name": "ListCampaigns",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-marketing",
+          "Method": "list_campaigns",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListChannelContracts",
       "AuthorizedActions": [
         {
@@ -6659,6 +6907,22 @@
       ]
     },
     {
+      "Name": "ListSocialConnections",
+      "AuthorizedActions": [
+        {
+          "Name": "ListSocialConnections",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-marketing",
+          "Method": "list_social_connections",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "ListSolutions",
       "AuthorizedActions": [
         {
@@ -6695,6 +6959,11 @@
         },
         {
           "Name": "partnercentral-channel",
+          "Method": "list_tags_for_resource",
+          "Package": "Boto3"
+        },
+        {
+          "Name": "partnercentral-marketing",
           "Method": "list_tags_for_resource",
           "Package": "Boto3"
         },
@@ -6832,6 +7101,22 @@
       ]
     },
     {
+      "Name": "SearchCampaignTemplates",
+      "AuthorizedActions": [
+        {
+          "Name": "SearchCampaignTemplates",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-marketing",
+          "Method": "search_campaign_templates",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "SearchCustomerAccounts",
       "AuthorizedActions": [
         {
@@ -6891,6 +7176,38 @@
         {
           "Name": "partnercentral-account",
           "Method": "send_email_verification_code",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartCampaignAssetActivationTask",
+      "AuthorizedActions": [
+        {
+          "Name": "StartCampaignAssetActivationTask",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-marketing",
+          "Method": "start_campaign_asset_activation_task",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "StartCampaignAssetExportTask",
+      "AuthorizedActions": [
+        {
+          "Name": "StartCampaignAssetExportTask",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-marketing",
+          "Method": "start_campaign_asset_export_task",
           "Package": "Boto3"
         }
       ]
@@ -7256,6 +7573,11 @@
           "Package": "Boto3"
         },
         {
+          "Name": "partnercentral-marketing",
+          "Method": "tag_resource",
+          "Package": "Boto3"
+        },
+        {
           "Name": "partnercentral-revenue-measurement",
           "Method": "tag_resource",
           "Package": "Boto3"
@@ -7292,6 +7614,11 @@
           "Package": "Boto3"
         },
         {
+          "Name": "partnercentral-marketing",
+          "Method": "untag_resource",
+          "Package": "Boto3"
+        },
+        {
           "Name": "partnercentral-revenue-measurement",
           "Method": "untag_resource",
           "Package": "Boto3"
@@ -7315,6 +7642,38 @@
         {
           "Name": "partnercentral-benefits",
           "Method": "update_benefit_application",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCampaign",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCampaign",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-marketing",
+          "Method": "update_campaign",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateCampaignAsset",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateCampaignAsset",
+          "Service": "partnercentral"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "partnercentral-marketing",
+          "Method": "update_campaign_asset",
           "Package": "Boto3"
         }
       ]

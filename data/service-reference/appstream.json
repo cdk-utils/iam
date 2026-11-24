@@ -507,6 +507,7 @@
       "Name": "CreateThemeForStack",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2377,6 +2378,12 @@
     },
     {
       "Name": "CreateThemeForStack",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateThemeForStack",
+          "Service": "appstream"
+        }
+      ],
       "SDK": [
         {
           "Name": "appstream",

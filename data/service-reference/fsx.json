@@ -194,6 +194,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -366,6 +367,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -396,6 +398,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -457,6 +460,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -515,6 +519,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -624,6 +629,7 @@
       "Name": "DeleteClusterPeer",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -737,6 +743,7 @@
       "Name": "DeleteSnapmirrorPolicy",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -757,6 +764,7 @@
       "Name": "DeleteSnapmirrorRelationship",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -798,6 +806,7 @@
       "Name": "DeleteSnapshotPolicy",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -839,6 +848,7 @@
       "Name": "DeleteStorageVirtualMachinePeer",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -927,6 +937,7 @@
       "Name": "DescribeClusterPeers",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1059,6 +1070,7 @@
       "Name": "DescribeSnapmirrorPolicies",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1074,6 +1086,7 @@
       "Name": "DescribeSnapmirrorRelationships",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1089,6 +1102,7 @@
       "Name": "DescribeSnapshotPolicies",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1120,6 +1134,7 @@
       "Name": "DescribeStorageVirtualMachinePeers",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1541,6 +1556,7 @@
       "Name": "UpdateClusterPeer",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1640,6 +1656,7 @@
       "Name": "UpdateSnapmirrorPolicy",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1660,6 +1677,7 @@
       "Name": "UpdateSnapmirrorRelationship",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1704,6 +1722,7 @@
       "Name": "UpdateSnapshotPolicy",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1745,6 +1764,7 @@
       "Name": "UpdateStorageVirtualMachinePeer",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -1955,6 +1975,26 @@
       ]
     },
     {
+      "Name": "CreateClusterPeer",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateClusterPeer",
+          "Service": "fsx"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "create_cluster_peer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "CreateDataRepositoryAssociation",
       "AuthorizedActions": [
         {
@@ -2059,6 +2099,46 @@
       ]
     },
     {
+      "Name": "CreateSnapmirrorPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSnapmirrorPolicy",
+          "Service": "fsx"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "create_snapmirror_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateSnapmirrorRelationship",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSnapmirrorRelationship",
+          "Service": "fsx"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "create_snapmirror_relationship",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "CreateSnapshot",
       "AuthorizedActions": [
         {
@@ -2079,6 +2159,26 @@
       ]
     },
     {
+      "Name": "CreateSnapshotPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateSnapshotPolicy",
+          "Service": "fsx"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "create_snapshot_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "CreateStorageVirtualMachine",
       "AuthorizedActions": [
         {
@@ -2094,6 +2194,26 @@
         {
           "Name": "fsx",
           "Method": "create_storage_virtual_machine",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "CreateStorageVirtualMachinePeer",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateStorageVirtualMachinePeer",
+          "Service": "fsx"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "create_storage_virtual_machine_peer",
           "Package": "Boto3"
         }
       ]
@@ -2150,6 +2270,22 @@
         {
           "Name": "fsx",
           "Method": "delete_backup",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteClusterPeer",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteClusterPeer",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "delete_cluster_peer",
           "Package": "Boto3"
         }
       ]
@@ -2215,6 +2351,38 @@
       ]
     },
     {
+      "Name": "DeleteSnapmirrorPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSnapmirrorPolicy",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "delete_snapmirror_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSnapmirrorRelationship",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSnapmirrorRelationship",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "delete_snapmirror_relationship",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DeleteSnapshot",
       "AuthorizedActions": [
         {
@@ -2231,6 +2399,22 @@
       ]
     },
     {
+      "Name": "DeleteSnapshotPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteSnapshotPolicy",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "delete_snapshot_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DeleteStorageVirtualMachine",
       "AuthorizedActions": [
         {
@@ -2242,6 +2426,22 @@
         {
           "Name": "fsx",
           "Method": "delete_storage_virtual_machine",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DeleteStorageVirtualMachinePeer",
+      "AuthorizedActions": [
+        {
+          "Name": "DeleteStorageVirtualMachinePeer",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "delete_storage_virtual_machine_peer",
           "Package": "Boto3"
         }
       ]
@@ -2282,6 +2482,22 @@
         {
           "Name": "fsx",
           "Method": "describe_backups",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeClusterPeers",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeClusterPeers",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "describe_cluster_peers",
           "Package": "Boto3"
         }
       ]
@@ -2399,6 +2615,54 @@
       ]
     },
     {
+      "Name": "DescribeSnapmirrorPolicies",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSnapmirrorPolicies",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "describe_snapmirror_policies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSnapmirrorRelationships",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSnapmirrorRelationships",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "describe_snapmirror_relationships",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeSnapshotPolicies",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeSnapshotPolicies",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "describe_snapshot_policies",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "DescribeSnapshots",
       "AuthorizedActions": [
         {
@@ -2410,6 +2674,22 @@
         {
           "Name": "fsx",
           "Method": "describe_snapshots",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "DescribeStorageVirtualMachinePeers",
+      "AuthorizedActions": [
+        {
+          "Name": "DescribeStorageVirtualMachinePeers",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "describe_storage_virtual_machine_peers",
           "Package": "Boto3"
         }
       ]
@@ -2575,6 +2855,22 @@
       ]
     },
     {
+      "Name": "UpdateClusterPeer",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateClusterPeer",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "update_cluster_peer",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "UpdateDataRepositoryAssociation",
       "AuthorizedActions": [
         {
@@ -2639,6 +2935,38 @@
       ]
     },
     {
+      "Name": "UpdateSnapmirrorPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSnapmirrorPolicy",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "update_snapmirror_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateSnapmirrorRelationship",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSnapmirrorRelationship",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "update_snapmirror_relationship",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "UpdateSnapshot",
       "AuthorizedActions": [
         {
@@ -2655,6 +2983,22 @@
       ]
     },
     {
+      "Name": "UpdateSnapshotPolicy",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateSnapshotPolicy",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "update_snapshot_policy",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
       "Name": "UpdateStorageVirtualMachine",
       "AuthorizedActions": [
         {
@@ -2666,6 +3010,22 @@
         {
           "Name": "fsx",
           "Method": "update_storage_virtual_machine",
+          "Package": "Boto3"
+        }
+      ]
+    },
+    {
+      "Name": "UpdateStorageVirtualMachinePeer",
+      "AuthorizedActions": [
+        {
+          "Name": "UpdateStorageVirtualMachinePeer",
+          "Service": "fsx"
+        }
+      ],
+      "SDK": [
+        {
+          "Name": "fsx",
+          "Method": "update_storage_virtual_machine_peer",
           "Package": "Boto3"
         }
       ]

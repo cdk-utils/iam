@@ -262,7 +262,11 @@ export class PaymentsResources {
  */
 export class PaymentsOperations {
 	/** IAM actions required for the BatchGetFinancialRecord API call. */
-	static readonly BatchGetFinancialRecord: string[] = [];
+	static readonly BatchGetFinancialRecord: string[] = [
+		"payments:BatchGetFinancialRecord",
+		"payments:GetPaymentStatus",
+		"aws-portal:ViewBilling",
+	];
 	/** IAM actions required for the GetAccountBalance API call. */
 	static readonly opGetAccountBalance: string[] = [
 		"payments:GetPaymentStatus",
@@ -282,7 +286,10 @@ export class PaymentsOperations {
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the ListPaymentInstruments API call. */
-	static readonly ListPaymentInstruments: string[] = [];
+	static readonly ListPaymentInstruments: string[] = [
+		"payments:ListPaymentInstruments",
+		"aws-portal:ViewPaymentMethods",
+	];
 }
 
 /**

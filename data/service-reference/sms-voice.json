@@ -2314,7 +2314,6 @@
       "Name": "UpdateConfigurationSetEventDestination",
       "Annotations": {
         "Properties": {
-          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -4340,12 +4339,6 @@
     },
     {
       "Name": "UpdateConfigurationSetEventDestination",
-      "AuthorizedActions": [
-        {
-          "Name": "UpdateConfigurationSetEventDestination",
-          "Service": "sms-voice"
-        }
-      ],
       "SDK": [
         {
           "Name": "pinpoint-sms-voice",
