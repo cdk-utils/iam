@@ -3905,23 +3905,34 @@ new fsx.FsxOperations()
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.CopySnapshotAndUpdateVolume">CopySnapshotAndUpdateVolume</a></code> | <code>string[]</code> | IAM actions required for the CopySnapshotAndUpdateVolume API call. |
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.CreateAndAttachS3AccessPoint">CreateAndAttachS3AccessPoint</a></code> | <code>string[]</code> | IAM actions required for the CreateAndAttachS3AccessPoint API call. |
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.CreateBackup">CreateBackup</a></code> | <code>string[]</code> | IAM actions required for the CreateBackup API call. |
+| <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.CreateClusterPeer">CreateClusterPeer</a></code> | <code>string[]</code> | IAM actions required for the CreateClusterPeer API call. |
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.CreateDataRepositoryAssociation">CreateDataRepositoryAssociation</a></code> | <code>string[]</code> | IAM actions required for the CreateDataRepositoryAssociation API call. |
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.CreateDataRepositoryTask">CreateDataRepositoryTask</a></code> | <code>string[]</code> | IAM actions required for the CreateDataRepositoryTask API call. |
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.CreateFileCache">CreateFileCache</a></code> | <code>string[]</code> | IAM actions required for the CreateFileCache API call. |
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.CreateFileSystem">CreateFileSystem</a></code> | <code>string[]</code> | IAM actions required for the CreateFileSystem API call. |
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.CreateFileSystemFromBackup">CreateFileSystemFromBackup</a></code> | <code>string[]</code> | IAM actions required for the CreateFileSystemFromBackup API call. |
+| <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.CreateSnapmirrorPolicy">CreateSnapmirrorPolicy</a></code> | <code>string[]</code> | IAM actions required for the CreateSnapmirrorPolicy API call. |
+| <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.CreateSnapmirrorRelationship">CreateSnapmirrorRelationship</a></code> | <code>string[]</code> | IAM actions required for the CreateSnapmirrorRelationship API call. |
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.CreateSnapshot">CreateSnapshot</a></code> | <code>string[]</code> | IAM actions required for the CreateSnapshot API call. |
+| <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.CreateSnapshotPolicy">CreateSnapshotPolicy</a></code> | <code>string[]</code> | IAM actions required for the CreateSnapshotPolicy API call. |
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.CreateStorageVirtualMachine">CreateStorageVirtualMachine</a></code> | <code>string[]</code> | IAM actions required for the CreateStorageVirtualMachine API call. |
+| <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.CreateStorageVirtualMachinePeer">CreateStorageVirtualMachinePeer</a></code> | <code>string[]</code> | IAM actions required for the CreateStorageVirtualMachinePeer API call. |
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.CreateVolume">CreateVolume</a></code> | <code>string[]</code> | IAM actions required for the CreateVolume API call. |
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.CreateVolumeFromBackup">CreateVolumeFromBackup</a></code> | <code>string[]</code> | IAM actions required for the CreateVolumeFromBackup API call. |
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.DeleteBackup">DeleteBackup</a></code> | <code>string[]</code> | IAM actions required for the DeleteBackup API call. |
+| <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.DeleteClusterPeer">DeleteClusterPeer</a></code> | <code>string[]</code> | IAM actions required for the DeleteClusterPeer API call. |
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.DeleteDataRepositoryAssociation">DeleteDataRepositoryAssociation</a></code> | <code>string[]</code> | IAM actions required for the DeleteDataRepositoryAssociation API call. |
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.DeleteFileCache">DeleteFileCache</a></code> | <code>string[]</code> | IAM actions required for the DeleteFileCache API call. |
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.DeleteFileSystem">DeleteFileSystem</a></code> | <code>string[]</code> | IAM actions required for the DeleteFileSystem API call. |
+| <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.DeleteSnapmirrorPolicy">DeleteSnapmirrorPolicy</a></code> | <code>string[]</code> | IAM actions required for the DeleteSnapmirrorPolicy API call. |
+| <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.DeleteSnapmirrorRelationship">DeleteSnapmirrorRelationship</a></code> | <code>string[]</code> | IAM actions required for the DeleteSnapmirrorRelationship API call. |
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.DeleteSnapshot">DeleteSnapshot</a></code> | <code>string[]</code> | IAM actions required for the DeleteSnapshot API call. |
+| <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.DeleteSnapshotPolicy">DeleteSnapshotPolicy</a></code> | <code>string[]</code> | IAM actions required for the DeleteSnapshotPolicy API call. |
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.DeleteStorageVirtualMachine">DeleteStorageVirtualMachine</a></code> | <code>string[]</code> | IAM actions required for the DeleteStorageVirtualMachine API call. |
+| <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.DeleteStorageVirtualMachinePeer">DeleteStorageVirtualMachinePeer</a></code> | <code>string[]</code> | IAM actions required for the DeleteStorageVirtualMachinePeer API call. |
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.DeleteVolume">DeleteVolume</a></code> | <code>string[]</code> | IAM actions required for the DeleteVolume API call. |
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.DescribeBackups">DescribeBackups</a></code> | <code>string[]</code> | IAM actions required for the DescribeBackups API call. |
+| <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.DescribeClusterPeers">DescribeClusterPeers</a></code> | <code>string[]</code> | IAM actions required for the DescribeClusterPeers API call. |
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.DescribeDataRepositoryAssociations">DescribeDataRepositoryAssociations</a></code> | <code>string[]</code> | IAM actions required for the DescribeDataRepositoryAssociations API call. |
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.DescribeDataRepositoryTasks">DescribeDataRepositoryTasks</a></code> | <code>string[]</code> | IAM actions required for the DescribeDataRepositoryTasks API call. |
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.DescribeFileCaches">DescribeFileCaches</a></code> | <code>string[]</code> | IAM actions required for the DescribeFileCaches API call. |
@@ -3929,7 +3940,11 @@ new fsx.FsxOperations()
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.DescribeFileSystems">DescribeFileSystems</a></code> | <code>string[]</code> | IAM actions required for the DescribeFileSystems API call. |
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.DescribeS3AccessPointAttachments">DescribeS3AccessPointAttachments</a></code> | <code>string[]</code> | IAM actions required for the DescribeS3AccessPointAttachments API call. |
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.DescribeSharedVpcConfiguration">DescribeSharedVpcConfiguration</a></code> | <code>string[]</code> | IAM actions required for the DescribeSharedVpcConfiguration API call. |
+| <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.DescribeSnapmirrorPolicies">DescribeSnapmirrorPolicies</a></code> | <code>string[]</code> | IAM actions required for the DescribeSnapmirrorPolicies API call. |
+| <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.DescribeSnapmirrorRelationships">DescribeSnapmirrorRelationships</a></code> | <code>string[]</code> | IAM actions required for the DescribeSnapmirrorRelationships API call. |
+| <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.DescribeSnapshotPolicies">DescribeSnapshotPolicies</a></code> | <code>string[]</code> | IAM actions required for the DescribeSnapshotPolicies API call. |
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.DescribeSnapshots">DescribeSnapshots</a></code> | <code>string[]</code> | IAM actions required for the DescribeSnapshots API call. |
+| <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.DescribeStorageVirtualMachinePeers">DescribeStorageVirtualMachinePeers</a></code> | <code>string[]</code> | IAM actions required for the DescribeStorageVirtualMachinePeers API call. |
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.DescribeStorageVirtualMachines">DescribeStorageVirtualMachines</a></code> | <code>string[]</code> | IAM actions required for the DescribeStorageVirtualMachines API call. |
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.DescribeVolumes">DescribeVolumes</a></code> | <code>string[]</code> | IAM actions required for the DescribeVolumes API call. |
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.DetachAndDeleteS3AccessPoint">DetachAndDeleteS3AccessPoint</a></code> | <code>string[]</code> | IAM actions required for the DetachAndDeleteS3AccessPoint API call. |
@@ -3940,12 +3955,17 @@ new fsx.FsxOperations()
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.StartMisconfiguredStateRecovery">StartMisconfiguredStateRecovery</a></code> | <code>string[]</code> | IAM actions required for the StartMisconfiguredStateRecovery API call. |
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
+| <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.UpdateClusterPeer">UpdateClusterPeer</a></code> | <code>string[]</code> | IAM actions required for the UpdateClusterPeer API call. |
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.UpdateDataRepositoryAssociation">UpdateDataRepositoryAssociation</a></code> | <code>string[]</code> | IAM actions required for the UpdateDataRepositoryAssociation API call. |
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.UpdateFileCache">UpdateFileCache</a></code> | <code>string[]</code> | IAM actions required for the UpdateFileCache API call. |
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.UpdateFileSystem">UpdateFileSystem</a></code> | <code>string[]</code> | IAM actions required for the UpdateFileSystem API call. |
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.UpdateSharedVpcConfiguration">UpdateSharedVpcConfiguration</a></code> | <code>string[]</code> | IAM actions required for the UpdateSharedVpcConfiguration API call. |
+| <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.UpdateSnapmirrorPolicy">UpdateSnapmirrorPolicy</a></code> | <code>string[]</code> | IAM actions required for the UpdateSnapmirrorPolicy API call. |
+| <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.UpdateSnapmirrorRelationship">UpdateSnapmirrorRelationship</a></code> | <code>string[]</code> | IAM actions required for the UpdateSnapmirrorRelationship API call. |
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.UpdateSnapshot">UpdateSnapshot</a></code> | <code>string[]</code> | IAM actions required for the UpdateSnapshot API call. |
+| <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.UpdateSnapshotPolicy">UpdateSnapshotPolicy</a></code> | <code>string[]</code> | IAM actions required for the UpdateSnapshotPolicy API call. |
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.UpdateStorageVirtualMachine">UpdateStorageVirtualMachine</a></code> | <code>string[]</code> | IAM actions required for the UpdateStorageVirtualMachine API call. |
+| <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.UpdateStorageVirtualMachinePeer">UpdateStorageVirtualMachinePeer</a></code> | <code>string[]</code> | IAM actions required for the UpdateStorageVirtualMachinePeer API call. |
 | <code><a href="#@cdk_utils/iam.fsx.FsxOperations.property.UpdateVolume">UpdateVolume</a></code> | <code>string[]</code> | IAM actions required for the UpdateVolume API call. |
 
 ---
@@ -4022,6 +4042,18 @@ IAM actions required for the CreateBackup API call.
 
 ---
 
+##### `CreateClusterPeer`<sup>Required</sup> <a name="CreateClusterPeer" id="@cdk_utils/iam.fsx.FsxOperations.property.CreateClusterPeer"></a>
+
+```typescript
+public readonly CreateClusterPeer: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateClusterPeer API call.
+
+---
+
 ##### `CreateDataRepositoryAssociation`<sup>Required</sup> <a name="CreateDataRepositoryAssociation" id="@cdk_utils/iam.fsx.FsxOperations.property.CreateDataRepositoryAssociation"></a>
 
 ```typescript
@@ -4082,6 +4114,30 @@ IAM actions required for the CreateFileSystemFromBackup API call.
 
 ---
 
+##### `CreateSnapmirrorPolicy`<sup>Required</sup> <a name="CreateSnapmirrorPolicy" id="@cdk_utils/iam.fsx.FsxOperations.property.CreateSnapmirrorPolicy"></a>
+
+```typescript
+public readonly CreateSnapmirrorPolicy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateSnapmirrorPolicy API call.
+
+---
+
+##### `CreateSnapmirrorRelationship`<sup>Required</sup> <a name="CreateSnapmirrorRelationship" id="@cdk_utils/iam.fsx.FsxOperations.property.CreateSnapmirrorRelationship"></a>
+
+```typescript
+public readonly CreateSnapmirrorRelationship: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateSnapmirrorRelationship API call.
+
+---
+
 ##### `CreateSnapshot`<sup>Required</sup> <a name="CreateSnapshot" id="@cdk_utils/iam.fsx.FsxOperations.property.CreateSnapshot"></a>
 
 ```typescript
@@ -4094,6 +4150,18 @@ IAM actions required for the CreateSnapshot API call.
 
 ---
 
+##### `CreateSnapshotPolicy`<sup>Required</sup> <a name="CreateSnapshotPolicy" id="@cdk_utils/iam.fsx.FsxOperations.property.CreateSnapshotPolicy"></a>
+
+```typescript
+public readonly CreateSnapshotPolicy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateSnapshotPolicy API call.
+
+---
+
 ##### `CreateStorageVirtualMachine`<sup>Required</sup> <a name="CreateStorageVirtualMachine" id="@cdk_utils/iam.fsx.FsxOperations.property.CreateStorageVirtualMachine"></a>
 
 ```typescript
@@ -4103,6 +4171,18 @@ public readonly CreateStorageVirtualMachine: string[];
 - *Type:* string[]
 
 IAM actions required for the CreateStorageVirtualMachine API call.
+
+---
+
+##### `CreateStorageVirtualMachinePeer`<sup>Required</sup> <a name="CreateStorageVirtualMachinePeer" id="@cdk_utils/iam.fsx.FsxOperations.property.CreateStorageVirtualMachinePeer"></a>
+
+```typescript
+public readonly CreateStorageVirtualMachinePeer: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateStorageVirtualMachinePeer API call.
 
 ---
 
@@ -4142,6 +4222,18 @@ IAM actions required for the DeleteBackup API call.
 
 ---
 
+##### `DeleteClusterPeer`<sup>Required</sup> <a name="DeleteClusterPeer" id="@cdk_utils/iam.fsx.FsxOperations.property.DeleteClusterPeer"></a>
+
+```typescript
+public readonly DeleteClusterPeer: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteClusterPeer API call.
+
+---
+
 ##### `DeleteDataRepositoryAssociation`<sup>Required</sup> <a name="DeleteDataRepositoryAssociation" id="@cdk_utils/iam.fsx.FsxOperations.property.DeleteDataRepositoryAssociation"></a>
 
 ```typescript
@@ -4178,6 +4270,30 @@ IAM actions required for the DeleteFileSystem API call.
 
 ---
 
+##### `DeleteSnapmirrorPolicy`<sup>Required</sup> <a name="DeleteSnapmirrorPolicy" id="@cdk_utils/iam.fsx.FsxOperations.property.DeleteSnapmirrorPolicy"></a>
+
+```typescript
+public readonly DeleteSnapmirrorPolicy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteSnapmirrorPolicy API call.
+
+---
+
+##### `DeleteSnapmirrorRelationship`<sup>Required</sup> <a name="DeleteSnapmirrorRelationship" id="@cdk_utils/iam.fsx.FsxOperations.property.DeleteSnapmirrorRelationship"></a>
+
+```typescript
+public readonly DeleteSnapmirrorRelationship: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteSnapmirrorRelationship API call.
+
+---
+
 ##### `DeleteSnapshot`<sup>Required</sup> <a name="DeleteSnapshot" id="@cdk_utils/iam.fsx.FsxOperations.property.DeleteSnapshot"></a>
 
 ```typescript
@@ -4190,6 +4306,18 @@ IAM actions required for the DeleteSnapshot API call.
 
 ---
 
+##### `DeleteSnapshotPolicy`<sup>Required</sup> <a name="DeleteSnapshotPolicy" id="@cdk_utils/iam.fsx.FsxOperations.property.DeleteSnapshotPolicy"></a>
+
+```typescript
+public readonly DeleteSnapshotPolicy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteSnapshotPolicy API call.
+
+---
+
 ##### `DeleteStorageVirtualMachine`<sup>Required</sup> <a name="DeleteStorageVirtualMachine" id="@cdk_utils/iam.fsx.FsxOperations.property.DeleteStorageVirtualMachine"></a>
 
 ```typescript
@@ -4199,6 +4327,18 @@ public readonly DeleteStorageVirtualMachine: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteStorageVirtualMachine API call.
+
+---
+
+##### `DeleteStorageVirtualMachinePeer`<sup>Required</sup> <a name="DeleteStorageVirtualMachinePeer" id="@cdk_utils/iam.fsx.FsxOperations.property.DeleteStorageVirtualMachinePeer"></a>
+
+```typescript
+public readonly DeleteStorageVirtualMachinePeer: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteStorageVirtualMachinePeer API call.
 
 ---
 
@@ -4223,6 +4363,18 @@ public readonly DescribeBackups: string[];
 - *Type:* string[]
 
 IAM actions required for the DescribeBackups API call.
+
+---
+
+##### `DescribeClusterPeers`<sup>Required</sup> <a name="DescribeClusterPeers" id="@cdk_utils/iam.fsx.FsxOperations.property.DescribeClusterPeers"></a>
+
+```typescript
+public readonly DescribeClusterPeers: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeClusterPeers API call.
 
 ---
 
@@ -4310,6 +4462,42 @@ IAM actions required for the DescribeSharedVpcConfiguration API call.
 
 ---
 
+##### `DescribeSnapmirrorPolicies`<sup>Required</sup> <a name="DescribeSnapmirrorPolicies" id="@cdk_utils/iam.fsx.FsxOperations.property.DescribeSnapmirrorPolicies"></a>
+
+```typescript
+public readonly DescribeSnapmirrorPolicies: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeSnapmirrorPolicies API call.
+
+---
+
+##### `DescribeSnapmirrorRelationships`<sup>Required</sup> <a name="DescribeSnapmirrorRelationships" id="@cdk_utils/iam.fsx.FsxOperations.property.DescribeSnapmirrorRelationships"></a>
+
+```typescript
+public readonly DescribeSnapmirrorRelationships: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeSnapmirrorRelationships API call.
+
+---
+
+##### `DescribeSnapshotPolicies`<sup>Required</sup> <a name="DescribeSnapshotPolicies" id="@cdk_utils/iam.fsx.FsxOperations.property.DescribeSnapshotPolicies"></a>
+
+```typescript
+public readonly DescribeSnapshotPolicies: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeSnapshotPolicies API call.
+
+---
+
 ##### `DescribeSnapshots`<sup>Required</sup> <a name="DescribeSnapshots" id="@cdk_utils/iam.fsx.FsxOperations.property.DescribeSnapshots"></a>
 
 ```typescript
@@ -4319,6 +4507,18 @@ public readonly DescribeSnapshots: string[];
 - *Type:* string[]
 
 IAM actions required for the DescribeSnapshots API call.
+
+---
+
+##### `DescribeStorageVirtualMachinePeers`<sup>Required</sup> <a name="DescribeStorageVirtualMachinePeers" id="@cdk_utils/iam.fsx.FsxOperations.property.DescribeStorageVirtualMachinePeers"></a>
+
+```typescript
+public readonly DescribeStorageVirtualMachinePeers: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DescribeStorageVirtualMachinePeers API call.
 
 ---
 
@@ -4442,6 +4642,18 @@ IAM actions required for the UntagResource API call.
 
 ---
 
+##### `UpdateClusterPeer`<sup>Required</sup> <a name="UpdateClusterPeer" id="@cdk_utils/iam.fsx.FsxOperations.property.UpdateClusterPeer"></a>
+
+```typescript
+public readonly UpdateClusterPeer: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateClusterPeer API call.
+
+---
+
 ##### `UpdateDataRepositoryAssociation`<sup>Required</sup> <a name="UpdateDataRepositoryAssociation" id="@cdk_utils/iam.fsx.FsxOperations.property.UpdateDataRepositoryAssociation"></a>
 
 ```typescript
@@ -4490,6 +4702,30 @@ IAM actions required for the UpdateSharedVpcConfiguration API call.
 
 ---
 
+##### `UpdateSnapmirrorPolicy`<sup>Required</sup> <a name="UpdateSnapmirrorPolicy" id="@cdk_utils/iam.fsx.FsxOperations.property.UpdateSnapmirrorPolicy"></a>
+
+```typescript
+public readonly UpdateSnapmirrorPolicy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateSnapmirrorPolicy API call.
+
+---
+
+##### `UpdateSnapmirrorRelationship`<sup>Required</sup> <a name="UpdateSnapmirrorRelationship" id="@cdk_utils/iam.fsx.FsxOperations.property.UpdateSnapmirrorRelationship"></a>
+
+```typescript
+public readonly UpdateSnapmirrorRelationship: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateSnapmirrorRelationship API call.
+
+---
+
 ##### `UpdateSnapshot`<sup>Required</sup> <a name="UpdateSnapshot" id="@cdk_utils/iam.fsx.FsxOperations.property.UpdateSnapshot"></a>
 
 ```typescript
@@ -4502,6 +4738,18 @@ IAM actions required for the UpdateSnapshot API call.
 
 ---
 
+##### `UpdateSnapshotPolicy`<sup>Required</sup> <a name="UpdateSnapshotPolicy" id="@cdk_utils/iam.fsx.FsxOperations.property.UpdateSnapshotPolicy"></a>
+
+```typescript
+public readonly UpdateSnapshotPolicy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateSnapshotPolicy API call.
+
+---
+
 ##### `UpdateStorageVirtualMachine`<sup>Required</sup> <a name="UpdateStorageVirtualMachine" id="@cdk_utils/iam.fsx.FsxOperations.property.UpdateStorageVirtualMachine"></a>
 
 ```typescript
@@ -4511,6 +4759,18 @@ public readonly UpdateStorageVirtualMachine: string[];
 - *Type:* string[]
 
 IAM actions required for the UpdateStorageVirtualMachine API call.
+
+---
+
+##### `UpdateStorageVirtualMachinePeer`<sup>Required</sup> <a name="UpdateStorageVirtualMachinePeer" id="@cdk_utils/iam.fsx.FsxOperations.property.UpdateStorageVirtualMachinePeer"></a>
+
+```typescript
+public readonly UpdateStorageVirtualMachinePeer: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateStorageVirtualMachinePeer API call.
 
 ---
 

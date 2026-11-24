@@ -1597,9 +1597,7 @@ export class SMSVoiceOperations {
 	/** IAM actions required for the UntagResource API call. */
 	static readonly UntagResource: string[] = ["sms-voice:UntagResource"];
 	/** IAM actions required for the UpdateConfigurationSetEventDestination API call. */
-	static readonly UpdateConfigurationSetEventDestination: string[] = [
-		"sms-voice:UpdateConfigurationSetEventDestination",
-	];
+	static readonly UpdateConfigurationSetEventDestination: string[] = [];
 	/** IAM actions required for the UpdateEventDestination API call. */
 	static readonly UpdateEventDestination: string[] = [
 		"iam:PassRole",

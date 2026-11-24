@@ -6173,6 +6173,154 @@ Defaults to "aws".
 
 ---
 
+### BedrockTrustedAccessProgramArnComponents <a name="BedrockTrustedAccessProgramArnComponents" id="@cdk_utils/iam.bedrock.BedrockTrustedAccessProgramArnComponents"></a>
+
+Parsed components of a trusted-access-program ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.bedrock.BedrockTrustedAccessProgramArnComponents.Initializer"></a>
+
+```typescript
+import { bedrock } from '@cdk_utils/iam'
+
+const bedrockTrustedAccessProgramArnComponents: bedrock.BedrockTrustedAccessProgramArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockTrustedAccessProgramArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockTrustedAccessProgramArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockTrustedAccessProgramArnComponents.property.programId">programId</a></code> | <code>string</code> | The ProgramId component. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockTrustedAccessProgramArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.bedrock.BedrockTrustedAccessProgramArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.bedrock.BedrockTrustedAccessProgramArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `programId`<sup>Required</sup> <a name="programId" id="@cdk_utils/iam.bedrock.BedrockTrustedAccessProgramArnComponents.property.programId"></a>
+
+```typescript
+public readonly programId: string;
+```
+
+- *Type:* string
+
+The ProgramId component.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.bedrock.BedrockTrustedAccessProgramArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### BedrockTrustedAccessProgramArnProps <a name="BedrockTrustedAccessProgramArnProps" id="@cdk_utils/iam.bedrock.BedrockTrustedAccessProgramArnProps"></a>
+
+Properties for building a trusted-access-program ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.bedrock.BedrockTrustedAccessProgramArnProps.Initializer"></a>
+
+```typescript
+import { bedrock } from '@cdk_utils/iam'
+
+const bedrockTrustedAccessProgramArnProps: bedrock.BedrockTrustedAccessProgramArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockTrustedAccessProgramArnProps.property.programId">programId</a></code> | <code>string</code> | The ProgramId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockTrustedAccessProgramArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockTrustedAccessProgramArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockTrustedAccessProgramArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `programId`<sup>Required</sup> <a name="programId" id="@cdk_utils/iam.bedrock.BedrockTrustedAccessProgramArnProps.property.programId"></a>
+
+```typescript
+public readonly programId: string;
+```
+
+- *Type:* string
+
+The ProgramId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.bedrock.BedrockTrustedAccessProgramArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.bedrock.BedrockTrustedAccessProgramArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.bedrock.BedrockTrustedAccessProgramArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ## Classes <a name="Classes" id="Classes"></a>
 
 ### BedrockActions <a name="BedrockActions" id="@cdk_utils/iam.bedrock.BedrockActions"></a>
@@ -6200,6 +6348,7 @@ new bedrock.BedrockActions()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetAccountDataRetention">actionGetAccountDataRetention</a></code> | <code>string</code> | [Read] bedrock:GetAccountDataRetention. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetAccountDataRetentionStorage">actionGetAccountDataRetentionStorage</a></code> | <code>string</code> | [Read] bedrock:GetAccountDataRetentionStorage. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetAdvancedPromptOptimizationJob">actionGetAdvancedPromptOptimizationJob</a></code> | <code>string</code> | [Read] bedrock:GetAdvancedPromptOptimizationJob. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetAgent">actionGetAgent</a></code> | <code>string</code> | [Read] bedrock:GetAgent. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetAgentActionGroup">actionGetAgentActionGroup</a></code> | <code>string</code> | [Read] bedrock:GetAgentActionGroup. |
@@ -6253,12 +6402,19 @@ new bedrock.BedrockActions()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetModelImportJob">actionGetModelImportJob</a></code> | <code>string</code> | [Read] bedrock:GetModelImportJob. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetModelInvocationJob">actionGetModelInvocationJob</a></code> | <code>string</code> | [Read] bedrock:GetModelInvocationJob. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetModelInvocationLoggingConfiguration">actionGetModelInvocationLoggingConfiguration</a></code> | <code>string</code> | [Read] bedrock:GetModelInvocationLoggingConfiguration. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetOrganizationDataRetentionStorage">actionGetOrganizationDataRetentionStorage</a></code> | <code>string</code> | [Read] bedrock:GetOrganizationDataRetentionStorage. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetProject">actionGetProject</a></code> | <code>string</code> | [Read] bedrock:GetProject. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetProjectDataRetentionStorage">actionGetProjectDataRetentionStorage</a></code> | <code>string</code> | [Read] bedrock:GetProjectDataRetentionStorage. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetPrompt">actionGetPrompt</a></code> | <code>string</code> | [Read] bedrock:GetPrompt. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetPromptRouter">actionGetPromptRouter</a></code> | <code>string</code> | [Read] bedrock:GetPromptRouter. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetProvisionedModelThroughput">actionGetProvisionedModelThroughput</a></code> | <code>string</code> | [Read] bedrock:GetProvisionedModelThroughput. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetResourcePolicy">actionGetResourcePolicy</a></code> | <code>string</code> | [Read] bedrock:GetResourcePolicy. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetRetrievalInstruction">actionGetRetrievalInstruction</a></code> | <code>string</code> | [Read] bedrock:GetRetrievalInstruction. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetSession">actionGetSession</a></code> | <code>string</code> | [Read] bedrock:GetSession. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetTrustedAccessProgram">actionGetTrustedAccessProgram</a></code> | <code>string</code> | [Read] bedrock:GetTrustedAccessProgram. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetTrustedAccessProgramAccountEnrollment">actionGetTrustedAccessProgramAccountEnrollment</a></code> | <code>string</code> | [Read] bedrock:GetTrustedAccessProgramAccountEnrollment. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetTrustedAccessProgramOrganizationEnrollment">actionGetTrustedAccessProgramOrganizationEnrollment</a></code> | <code>string</code> | [Read] bedrock:GetTrustedAccessProgramOrganizationEnrollment. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetTrustedAccessProgramProjectEnrollment">actionGetTrustedAccessProgramProjectEnrollment</a></code> | <code>string</code> | [Read] bedrock:GetTrustedAccessProgramProjectEnrollment. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.actionGetUseCaseForModelAccess">actionGetUseCaseForModelAccess</a></code> | <code>string</code> | [Read] bedrock:GetUseCaseForModelAccess. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.AgenticRetrieveStream">AgenticRetrieveStream</a></code> | <code>string</code> | [Read] bedrock:AgenticRetrieveStream. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.AllListActions">AllListActions</a></code> | <code>string[]</code> | All list-level actions. |
@@ -6268,6 +6424,7 @@ new bedrock.BedrockActions()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.ApplyGuardrail">ApplyGuardrail</a></code> | <code>string</code> | [Read] bedrock:ApplyGuardrail. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.ArchiveProject">ArchiveProject</a></code> | <code>string</code> | [Write] bedrock:ArchiveProject. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.AssociateAgentCollaborator">AssociateAgentCollaborator</a></code> | <code>string</code> | [Write] bedrock:AssociateAgentCollaborator. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.AssociateAgentKnowledgeBase">AssociateAgentKnowledgeBase</a></code> | <code>string</code> | [Write] bedrock:AssociateAgentKnowledgeBase. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.AssociateThirdPartyKnowledgeBase">AssociateThirdPartyKnowledgeBase</a></code> | <code>string</code> | [Write] bedrock:AssociateThirdPartyKnowledgeBase. |
@@ -6310,6 +6467,7 @@ new bedrock.BedrockActions()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.CreateModelEvaluationJob">CreateModelEvaluationJob</a></code> | <code>string</code> | [Write] bedrock:CreateModelEvaluationJob. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.CreateModelImportJob">CreateModelImportJob</a></code> | <code>string</code> | [Write] bedrock:CreateModelImportJob. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.CreateModelInvocationJob">CreateModelInvocationJob</a></code> | <code>string</code> | [Write] bedrock:CreateModelInvocationJob. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.CreateProject">CreateProject</a></code> | <code>string</code> | [Write] bedrock:CreateProject. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.CreatePrompt">CreatePrompt</a></code> | <code>string</code> | [Write] bedrock:CreatePrompt. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.CreatePromptRouter">CreatePromptRouter</a></code> | <code>string</code> | [Write] bedrock:CreatePromptRouter. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.CreatePromptVersion">CreatePromptVersion</a></code> | <code>string</code> | [Write] bedrock:CreatePromptVersion. |
@@ -6317,6 +6475,7 @@ new bedrock.BedrockActions()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.CreateRetrievalInstruction">CreateRetrievalInstruction</a></code> | <code>string</code> | [Write] bedrock:CreateRetrievalInstruction. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.CreateRetrievalInstructionVersion">CreateRetrievalInstructionVersion</a></code> | <code>string</code> | [Write] bedrock:CreateRetrievalInstructionVersion. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.CreateSession">CreateSession</a></code> | <code>string</code> | [Write] bedrock:CreateSession. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.DeleteAccountDataRetentionStorage">DeleteAccountDataRetentionStorage</a></code> | <code>string</code> | [Write] bedrock:DeleteAccountDataRetentionStorage. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.DeleteAgent">DeleteAgent</a></code> | <code>string</code> | [Write] bedrock:DeleteAgent. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.DeleteAgentActionGroup">DeleteAgentActionGroup</a></code> | <code>string</code> | [Write] bedrock:DeleteAgentActionGroup. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.DeleteAgentAlias">DeleteAgentAlias</a></code> | <code>string</code> | [Write] bedrock:DeleteAgentAlias. |
@@ -6345,6 +6504,8 @@ new bedrock.BedrockActions()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.DeleteMarketplaceModelAgreement">DeleteMarketplaceModelAgreement</a></code> | <code>string</code> | [Write] bedrock:DeleteMarketplaceModelAgreement. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.DeleteMarketplaceModelEndpoint">DeleteMarketplaceModelEndpoint</a></code> | <code>string</code> | [Write] bedrock:DeleteMarketplaceModelEndpoint. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.DeleteModelInvocationLoggingConfiguration">DeleteModelInvocationLoggingConfiguration</a></code> | <code>string</code> | [Write] bedrock:DeleteModelInvocationLoggingConfiguration. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.DeleteOrganizationDataRetentionStorage">DeleteOrganizationDataRetentionStorage</a></code> | <code>string</code> | [Write] bedrock:DeleteOrganizationDataRetentionStorage. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.DeleteProjectDataRetentionStorage">DeleteProjectDataRetentionStorage</a></code> | <code>string</code> | [Write] bedrock:DeleteProjectDataRetentionStorage. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.DeletePrompt">DeletePrompt</a></code> | <code>string</code> | [Write] bedrock:DeletePrompt. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.DeletePromptRouter">DeletePromptRouter</a></code> | <code>string</code> | [Write] bedrock:DeletePromptRouter. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.DeleteProvisionedModelThroughput">DeleteProvisionedModelThroughput</a></code> | <code>string</code> | [Write] bedrock:DeleteProvisionedModelThroughput. |
@@ -6416,6 +6577,7 @@ new bedrock.BedrockActions()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.ListModelEvaluationJobs">ListModelEvaluationJobs</a></code> | <code>string</code> | [List] bedrock:ListModelEvaluationJobs. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.ListModelImportJobs">ListModelImportJobs</a></code> | <code>string</code> | [List] bedrock:ListModelImportJobs. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.ListModelInvocationJobs">ListModelInvocationJobs</a></code> | <code>string</code> | [List] bedrock:ListModelInvocationJobs. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.ListProjects">ListProjects</a></code> | <code>string</code> | [List] bedrock:ListProjects. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.ListPromptRouters">ListPromptRouters</a></code> | <code>string</code> | [List] bedrock:ListPromptRouters. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.ListPrompts">ListPrompts</a></code> | <code>string</code> | [List] bedrock:ListPrompts. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.ListProvisionedModelThroughputs">ListProvisionedModelThroughputs</a></code> | <code>string</code> | [List] bedrock:ListProvisionedModelThroughputs. |
@@ -6423,15 +6585,22 @@ new bedrock.BedrockActions()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.ListRetrievalInstructionVersions">ListRetrievalInstructionVersions</a></code> | <code>string</code> | [List] bedrock:ListRetrievalInstructionVersions. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.ListSessions">ListSessions</a></code> | <code>string</code> | [List] bedrock:ListSessions. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Read] bedrock:ListTagsForResource. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.ListTrustedAccessPrograms">ListTrustedAccessPrograms</a></code> | <code>string</code> | [List] bedrock:ListTrustedAccessPrograms. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.OptimizePrompt">OptimizePrompt</a></code> | <code>string</code> | [Read] bedrock:OptimizePrompt. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.PrepareAgent">PrepareAgent</a></code> | <code>string</code> | [Write] bedrock:PrepareAgent. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.PrepareFlow">PrepareFlow</a></code> | <code>string</code> | [Write] bedrock:PrepareFlow. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.PutAccountDataRetention">PutAccountDataRetention</a></code> | <code>string</code> | [Write] bedrock:PutAccountDataRetention. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.PutAccountDataRetentionStorage">PutAccountDataRetentionStorage</a></code> | <code>string</code> | [Write] bedrock:PutAccountDataRetentionStorage. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.PutEnforcedGuardrailConfiguration">PutEnforcedGuardrailConfiguration</a></code> | <code>string</code> | [Write] bedrock:PutEnforcedGuardrailConfiguration. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.PutFoundationModelEntitlement">PutFoundationModelEntitlement</a></code> | <code>string</code> | [Write] bedrock:PutFoundationModelEntitlement. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.PutInvocationStep">PutInvocationStep</a></code> | <code>string</code> | [Write] bedrock:PutInvocationStep. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.PutModelInvocationLoggingConfiguration">PutModelInvocationLoggingConfiguration</a></code> | <code>string</code> | [Write] bedrock:PutModelInvocationLoggingConfiguration. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.PutOrganizationDataRetentionStorage">PutOrganizationDataRetentionStorage</a></code> | <code>string</code> | [Write] bedrock:PutOrganizationDataRetentionStorage. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.PutProjectDataRetentionStorage">PutProjectDataRetentionStorage</a></code> | <code>string</code> | [Write] bedrock:PutProjectDataRetentionStorage. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.PutResourcePolicy">PutResourcePolicy</a></code> | <code>string</code> | [Write] bedrock:PutResourcePolicy. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.PutTrustedAccessProgramAccountEnrollment">PutTrustedAccessProgramAccountEnrollment</a></code> | <code>string</code> | [Write] bedrock:PutTrustedAccessProgramAccountEnrollment. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.PutTrustedAccessProgramOrganizationEnrollment">PutTrustedAccessProgramOrganizationEnrollment</a></code> | <code>string</code> | [Write] bedrock:PutTrustedAccessProgramOrganizationEnrollment. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.PutTrustedAccessProgramProjectEnrollment">PutTrustedAccessProgramProjectEnrollment</a></code> | <code>string</code> | [Write] bedrock:PutTrustedAccessProgramProjectEnrollment. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.PutUseCaseForModelAccess">PutUseCaseForModelAccess</a></code> | <code>string</code> | [Write] bedrock:PutUseCaseForModelAccess. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.RegisterMarketplaceModelEndpoint">RegisterMarketplaceModelEndpoint</a></code> | <code>string</code> | [Write] bedrock:RegisterMarketplaceModelEndpoint. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.RenderPrompt">RenderPrompt</a></code> | <code>string</code> | [Read] bedrock:RenderPrompt. |
@@ -6443,6 +6612,9 @@ new bedrock.BedrockActions()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.StartAutomatedReasoningPolicyTestWorkflow">StartAutomatedReasoningPolicyTestWorkflow</a></code> | <code>string</code> | [Write] bedrock:StartAutomatedReasoningPolicyTestWorkflow. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.StartFlowExecution">StartFlowExecution</a></code> | <code>string</code> | [Write] bedrock:StartFlowExecution. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.StartIngestionJob">StartIngestionJob</a></code> | <code>string</code> | [Write] bedrock:StartIngestionJob. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.StartTrustedAccessProgramAccountApplication">StartTrustedAccessProgramAccountApplication</a></code> | <code>string</code> | [Write] bedrock:StartTrustedAccessProgramAccountApplication. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.StartTrustedAccessProgramOrganizationApplication">StartTrustedAccessProgramOrganizationApplication</a></code> | <code>string</code> | [Write] bedrock:StartTrustedAccessProgramOrganizationApplication. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.StartTrustedAccessProgramProjectApplication">StartTrustedAccessProgramProjectApplication</a></code> | <code>string</code> | [Write] bedrock:StartTrustedAccessProgramProjectApplication. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.StopAdvancedPromptOptimizationJob">StopAdvancedPromptOptimizationJob</a></code> | <code>string</code> | [Write] bedrock:StopAdvancedPromptOptimizationJob. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.StopEvaluationJob">StopEvaluationJob</a></code> | <code>string</code> | [Write] bedrock:StopEvaluationJob. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.StopFlowExecution">StopFlowExecution</a></code> | <code>string</code> | [Write] bedrock:StopFlowExecution. |
@@ -6469,6 +6641,7 @@ new bedrock.BedrockActions()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.UpdateGuardrail">UpdateGuardrail</a></code> | <code>string</code> | [Write] bedrock:UpdateGuardrail. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.UpdateKnowledgeBase">UpdateKnowledgeBase</a></code> | <code>string</code> | [Write] bedrock:UpdateKnowledgeBase. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.UpdateMarketplaceModelEndpoint">UpdateMarketplaceModelEndpoint</a></code> | <code>string</code> | [Write] bedrock:UpdateMarketplaceModelEndpoint. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.UpdateProject">UpdateProject</a></code> | <code>string</code> | [Write] bedrock:UpdateProject. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.UpdatePrompt">UpdatePrompt</a></code> | <code>string</code> | [Write] bedrock:UpdatePrompt. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.UpdateProvisionedModelThroughput">UpdateProvisionedModelThroughput</a></code> | <code>string</code> | [Write] bedrock:UpdateProvisionedModelThroughput. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockActions.property.UpdateRetrievalInstruction">UpdateRetrievalInstruction</a></code> | <code>string</code> | [Write] bedrock:UpdateRetrievalInstruction. |
@@ -6486,6 +6659,18 @@ public readonly actionGetAccountDataRetention: string;
 - *Type:* string
 
 [Read] bedrock:GetAccountDataRetention.
+
+---
+
+##### `actionGetAccountDataRetentionStorage`<sup>Required</sup> <a name="actionGetAccountDataRetentionStorage" id="@cdk_utils/iam.bedrock.BedrockActions.property.actionGetAccountDataRetentionStorage"></a>
+
+```typescript
+public readonly actionGetAccountDataRetentionStorage: string;
+```
+
+- *Type:* string
+
+[Read] bedrock:GetAccountDataRetentionStorage.
 
 ---
 
@@ -7125,6 +7310,42 @@ public readonly actionGetModelInvocationLoggingConfiguration: string;
 
 ---
 
+##### `actionGetOrganizationDataRetentionStorage`<sup>Required</sup> <a name="actionGetOrganizationDataRetentionStorage" id="@cdk_utils/iam.bedrock.BedrockActions.property.actionGetOrganizationDataRetentionStorage"></a>
+
+```typescript
+public readonly actionGetOrganizationDataRetentionStorage: string;
+```
+
+- *Type:* string
+
+[Read] bedrock:GetOrganizationDataRetentionStorage.
+
+---
+
+##### `actionGetProject`<sup>Required</sup> <a name="actionGetProject" id="@cdk_utils/iam.bedrock.BedrockActions.property.actionGetProject"></a>
+
+```typescript
+public readonly actionGetProject: string;
+```
+
+- *Type:* string
+
+[Read] bedrock:GetProject.
+
+---
+
+##### `actionGetProjectDataRetentionStorage`<sup>Required</sup> <a name="actionGetProjectDataRetentionStorage" id="@cdk_utils/iam.bedrock.BedrockActions.property.actionGetProjectDataRetentionStorage"></a>
+
+```typescript
+public readonly actionGetProjectDataRetentionStorage: string;
+```
+
+- *Type:* string
+
+[Read] bedrock:GetProjectDataRetentionStorage.
+
+---
+
 ##### `actionGetPrompt`<sup>Required</sup> <a name="actionGetPrompt" id="@cdk_utils/iam.bedrock.BedrockActions.property.actionGetPrompt"></a>
 
 ```typescript
@@ -7194,6 +7415,54 @@ public readonly actionGetSession: string;
 - *Type:* string
 
 [Read] bedrock:GetSession.
+
+---
+
+##### `actionGetTrustedAccessProgram`<sup>Required</sup> <a name="actionGetTrustedAccessProgram" id="@cdk_utils/iam.bedrock.BedrockActions.property.actionGetTrustedAccessProgram"></a>
+
+```typescript
+public readonly actionGetTrustedAccessProgram: string;
+```
+
+- *Type:* string
+
+[Read] bedrock:GetTrustedAccessProgram.
+
+---
+
+##### `actionGetTrustedAccessProgramAccountEnrollment`<sup>Required</sup> <a name="actionGetTrustedAccessProgramAccountEnrollment" id="@cdk_utils/iam.bedrock.BedrockActions.property.actionGetTrustedAccessProgramAccountEnrollment"></a>
+
+```typescript
+public readonly actionGetTrustedAccessProgramAccountEnrollment: string;
+```
+
+- *Type:* string
+
+[Read] bedrock:GetTrustedAccessProgramAccountEnrollment.
+
+---
+
+##### `actionGetTrustedAccessProgramOrganizationEnrollment`<sup>Required</sup> <a name="actionGetTrustedAccessProgramOrganizationEnrollment" id="@cdk_utils/iam.bedrock.BedrockActions.property.actionGetTrustedAccessProgramOrganizationEnrollment"></a>
+
+```typescript
+public readonly actionGetTrustedAccessProgramOrganizationEnrollment: string;
+```
+
+- *Type:* string
+
+[Read] bedrock:GetTrustedAccessProgramOrganizationEnrollment.
+
+---
+
+##### `actionGetTrustedAccessProgramProjectEnrollment`<sup>Required</sup> <a name="actionGetTrustedAccessProgramProjectEnrollment" id="@cdk_utils/iam.bedrock.BedrockActions.property.actionGetTrustedAccessProgramProjectEnrollment"></a>
+
+```typescript
+public readonly actionGetTrustedAccessProgramProjectEnrollment: string;
+```
+
+- *Type:* string
+
+[Read] bedrock:GetTrustedAccessProgramProjectEnrollment.
 
 ---
 
@@ -7302,6 +7571,18 @@ public readonly ApplyGuardrail: string;
 - *Type:* string
 
 [Read] bedrock:ApplyGuardrail.
+
+---
+
+##### `ArchiveProject`<sup>Required</sup> <a name="ArchiveProject" id="@cdk_utils/iam.bedrock.BedrockActions.property.ArchiveProject"></a>
+
+```typescript
+public readonly ArchiveProject: string;
+```
+
+- *Type:* string
+
+[Write] bedrock:ArchiveProject.
 
 ---
 
@@ -7809,6 +8090,18 @@ public readonly CreateModelInvocationJob: string;
 
 ---
 
+##### `CreateProject`<sup>Required</sup> <a name="CreateProject" id="@cdk_utils/iam.bedrock.BedrockActions.property.CreateProject"></a>
+
+```typescript
+public readonly CreateProject: string;
+```
+
+- *Type:* string
+
+[Write] bedrock:CreateProject.
+
+---
+
 ##### `CreatePrompt`<sup>Required</sup> <a name="CreatePrompt" id="@cdk_utils/iam.bedrock.BedrockActions.property.CreatePrompt"></a>
 
 ```typescript
@@ -7890,6 +8183,18 @@ public readonly CreateSession: string;
 - *Type:* string
 
 [Write] bedrock:CreateSession.
+
+---
+
+##### `DeleteAccountDataRetentionStorage`<sup>Required</sup> <a name="DeleteAccountDataRetentionStorage" id="@cdk_utils/iam.bedrock.BedrockActions.property.DeleteAccountDataRetentionStorage"></a>
+
+```typescript
+public readonly DeleteAccountDataRetentionStorage: string;
+```
+
+- *Type:* string
+
+[Write] bedrock:DeleteAccountDataRetentionStorage.
 
 ---
 
@@ -8226,6 +8531,30 @@ public readonly DeleteModelInvocationLoggingConfiguration: string;
 - *Type:* string
 
 [Write] bedrock:DeleteModelInvocationLoggingConfiguration.
+
+---
+
+##### `DeleteOrganizationDataRetentionStorage`<sup>Required</sup> <a name="DeleteOrganizationDataRetentionStorage" id="@cdk_utils/iam.bedrock.BedrockActions.property.DeleteOrganizationDataRetentionStorage"></a>
+
+```typescript
+public readonly DeleteOrganizationDataRetentionStorage: string;
+```
+
+- *Type:* string
+
+[Write] bedrock:DeleteOrganizationDataRetentionStorage.
+
+---
+
+##### `DeleteProjectDataRetentionStorage`<sup>Required</sup> <a name="DeleteProjectDataRetentionStorage" id="@cdk_utils/iam.bedrock.BedrockActions.property.DeleteProjectDataRetentionStorage"></a>
+
+```typescript
+public readonly DeleteProjectDataRetentionStorage: string;
+```
+
+- *Type:* string
+
+[Write] bedrock:DeleteProjectDataRetentionStorage.
 
 ---
 
@@ -9081,6 +9410,18 @@ public readonly ListModelInvocationJobs: string;
 
 ---
 
+##### `ListProjects`<sup>Required</sup> <a name="ListProjects" id="@cdk_utils/iam.bedrock.BedrockActions.property.ListProjects"></a>
+
+```typescript
+public readonly ListProjects: string;
+```
+
+- *Type:* string
+
+[List] bedrock:ListProjects.
+
+---
+
 ##### `ListPromptRouters`<sup>Required</sup> <a name="ListPromptRouters" id="@cdk_utils/iam.bedrock.BedrockActions.property.ListPromptRouters"></a>
 
 ```typescript
@@ -9165,6 +9506,18 @@ public readonly ListTagsForResource: string;
 
 ---
 
+##### `ListTrustedAccessPrograms`<sup>Required</sup> <a name="ListTrustedAccessPrograms" id="@cdk_utils/iam.bedrock.BedrockActions.property.ListTrustedAccessPrograms"></a>
+
+```typescript
+public readonly ListTrustedAccessPrograms: string;
+```
+
+- *Type:* string
+
+[List] bedrock:ListTrustedAccessPrograms.
+
+---
+
 ##### `OptimizePrompt`<sup>Required</sup> <a name="OptimizePrompt" id="@cdk_utils/iam.bedrock.BedrockActions.property.OptimizePrompt"></a>
 
 ```typescript
@@ -9210,6 +9563,18 @@ public readonly PutAccountDataRetention: string;
 - *Type:* string
 
 [Write] bedrock:PutAccountDataRetention.
+
+---
+
+##### `PutAccountDataRetentionStorage`<sup>Required</sup> <a name="PutAccountDataRetentionStorage" id="@cdk_utils/iam.bedrock.BedrockActions.property.PutAccountDataRetentionStorage"></a>
+
+```typescript
+public readonly PutAccountDataRetentionStorage: string;
+```
+
+- *Type:* string
+
+[Write] bedrock:PutAccountDataRetentionStorage.
 
 ---
 
@@ -9261,6 +9626,30 @@ public readonly PutModelInvocationLoggingConfiguration: string;
 
 ---
 
+##### `PutOrganizationDataRetentionStorage`<sup>Required</sup> <a name="PutOrganizationDataRetentionStorage" id="@cdk_utils/iam.bedrock.BedrockActions.property.PutOrganizationDataRetentionStorage"></a>
+
+```typescript
+public readonly PutOrganizationDataRetentionStorage: string;
+```
+
+- *Type:* string
+
+[Write] bedrock:PutOrganizationDataRetentionStorage.
+
+---
+
+##### `PutProjectDataRetentionStorage`<sup>Required</sup> <a name="PutProjectDataRetentionStorage" id="@cdk_utils/iam.bedrock.BedrockActions.property.PutProjectDataRetentionStorage"></a>
+
+```typescript
+public readonly PutProjectDataRetentionStorage: string;
+```
+
+- *Type:* string
+
+[Write] bedrock:PutProjectDataRetentionStorage.
+
+---
+
 ##### `PutResourcePolicy`<sup>Required</sup> <a name="PutResourcePolicy" id="@cdk_utils/iam.bedrock.BedrockActions.property.PutResourcePolicy"></a>
 
 ```typescript
@@ -9270,6 +9659,42 @@ public readonly PutResourcePolicy: string;
 - *Type:* string
 
 [Write] bedrock:PutResourcePolicy.
+
+---
+
+##### `PutTrustedAccessProgramAccountEnrollment`<sup>Required</sup> <a name="PutTrustedAccessProgramAccountEnrollment" id="@cdk_utils/iam.bedrock.BedrockActions.property.PutTrustedAccessProgramAccountEnrollment"></a>
+
+```typescript
+public readonly PutTrustedAccessProgramAccountEnrollment: string;
+```
+
+- *Type:* string
+
+[Write] bedrock:PutTrustedAccessProgramAccountEnrollment.
+
+---
+
+##### `PutTrustedAccessProgramOrganizationEnrollment`<sup>Required</sup> <a name="PutTrustedAccessProgramOrganizationEnrollment" id="@cdk_utils/iam.bedrock.BedrockActions.property.PutTrustedAccessProgramOrganizationEnrollment"></a>
+
+```typescript
+public readonly PutTrustedAccessProgramOrganizationEnrollment: string;
+```
+
+- *Type:* string
+
+[Write] bedrock:PutTrustedAccessProgramOrganizationEnrollment.
+
+---
+
+##### `PutTrustedAccessProgramProjectEnrollment`<sup>Required</sup> <a name="PutTrustedAccessProgramProjectEnrollment" id="@cdk_utils/iam.bedrock.BedrockActions.property.PutTrustedAccessProgramProjectEnrollment"></a>
+
+```typescript
+public readonly PutTrustedAccessProgramProjectEnrollment: string;
+```
+
+- *Type:* string
+
+[Write] bedrock:PutTrustedAccessProgramProjectEnrollment.
 
 ---
 
@@ -9402,6 +9827,42 @@ public readonly StartIngestionJob: string;
 - *Type:* string
 
 [Write] bedrock:StartIngestionJob.
+
+---
+
+##### `StartTrustedAccessProgramAccountApplication`<sup>Required</sup> <a name="StartTrustedAccessProgramAccountApplication" id="@cdk_utils/iam.bedrock.BedrockActions.property.StartTrustedAccessProgramAccountApplication"></a>
+
+```typescript
+public readonly StartTrustedAccessProgramAccountApplication: string;
+```
+
+- *Type:* string
+
+[Write] bedrock:StartTrustedAccessProgramAccountApplication.
+
+---
+
+##### `StartTrustedAccessProgramOrganizationApplication`<sup>Required</sup> <a name="StartTrustedAccessProgramOrganizationApplication" id="@cdk_utils/iam.bedrock.BedrockActions.property.StartTrustedAccessProgramOrganizationApplication"></a>
+
+```typescript
+public readonly StartTrustedAccessProgramOrganizationApplication: string;
+```
+
+- *Type:* string
+
+[Write] bedrock:StartTrustedAccessProgramOrganizationApplication.
+
+---
+
+##### `StartTrustedAccessProgramProjectApplication`<sup>Required</sup> <a name="StartTrustedAccessProgramProjectApplication" id="@cdk_utils/iam.bedrock.BedrockActions.property.StartTrustedAccessProgramProjectApplication"></a>
+
+```typescript
+public readonly StartTrustedAccessProgramProjectApplication: string;
+```
+
+- *Type:* string
+
+[Write] bedrock:StartTrustedAccessProgramProjectApplication.
 
 ---
 
@@ -9717,6 +10178,18 @@ public readonly UpdateMarketplaceModelEndpoint: string;
 
 ---
 
+##### `UpdateProject`<sup>Required</sup> <a name="UpdateProject" id="@cdk_utils/iam.bedrock.BedrockActions.property.UpdateProject"></a>
+
+```typescript
+public readonly UpdateProject: string;
+```
+
+- *Type:* string
+
+[Write] bedrock:UpdateProject.
+
+---
+
 ##### `UpdatePrompt`<sup>Required</sup> <a name="UpdatePrompt" id="@cdk_utils/iam.bedrock.BedrockActions.property.UpdatePrompt"></a>
 
 ```typescript
@@ -9807,11 +10280,13 @@ new bedrock.BedrockConditions()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.modelARN">modelARN</a></code> | Generates a condition block for `bedrock:ModelArn`. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.projectARN">projectARN</a></code> | Generates a condition block for `bedrock:ProjectArn`. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.promptRouterARN">promptRouterARN</a></code> | Generates a condition block for `bedrock:PromptRouterArn`. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.provider">provider</a></code> | Generates a condition block for `bedrock:Provider`. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.requestTag">requestTag</a></code> | Generates a condition block for `aws:RequestTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.resourceTag">resourceTag</a></code> | Generates a condition block for `aws:ResourceTag/${TagKey}`. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.serviceTier">serviceTier</a></code> | Generates a condition block for `bedrock:ServiceTier`. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.tagKeys">tagKeys</a></code> | Generates a condition block for `aws:TagKeys`. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.thirdPartyKnowledgeBaseCredentialsSecretARN">thirdPartyKnowledgeBaseCredentialsSecretARN</a></code> | Generates a condition block for `bedrock:ThirdPartyKnowledgeBaseCredentialsSecretArn`. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.trustedAccessProgramOptIn">trustedAccessProgramOptIn</a></code> | Generates a condition block for `bedrock:TrustedAccessProgramOptIn`. |
 
 ---
 
@@ -9943,6 +10418,22 @@ Generates a condition block for `bedrock:PromptRouterArn`.
 
 ---
 
+##### `provider` <a name="provider" id="@cdk_utils/iam.bedrock.BedrockConditions.provider"></a>
+
+```typescript
+import { bedrock } from '@cdk_utils/iam'
+
+bedrock.BedrockConditions.provider(value: string)
+```
+
+Generates a condition block for `bedrock:Provider`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.bedrock.BedrockConditions.provider.parameter.value"></a>
+
+- *Type:* string
+
+---
+
 ##### `requestTag` <a name="requestTag" id="@cdk_utils/iam.bedrock.BedrockConditions.requestTag"></a>
 
 ```typescript
@@ -10023,11 +10514,33 @@ Generates a condition block for `bedrock:ThirdPartyKnowledgeBaseCredentialsSecre
 
 ---
 
+##### `trustedAccessProgramOptIn` <a name="trustedAccessProgramOptIn" id="@cdk_utils/iam.bedrock.BedrockConditions.trustedAccessProgramOptIn"></a>
+
+```typescript
+import { bedrock } from '@cdk_utils/iam'
+
+bedrock.BedrockConditions.trustedAccessProgramOptIn(value: string)
+```
+
+Generates a condition block for `bedrock:TrustedAccessProgramOptIn`.
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdk_utils/iam.bedrock.BedrockConditions.trustedAccessProgramOptIn.parameter.value"></a>
+
+- *Type:* string
+
+---
+
 
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.actionGetFoundationModelConditionKeys">actionGetFoundationModelConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetFoundationModel action. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.actionGetInferenceProfileConditionKeys">actionGetInferenceProfileConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetInferenceProfile action. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.actionGetTrustedAccessProgramAccountEnrollmentConditionKeys">actionGetTrustedAccessProgramAccountEnrollmentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetTrustedAccessProgramAccountEnrollment action. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.actionGetTrustedAccessProgramConditionKeys">actionGetTrustedAccessProgramConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetTrustedAccessProgram action. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.actionGetTrustedAccessProgramOrganizationEnrollmentConditionKeys">actionGetTrustedAccessProgramOrganizationEnrollmentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetTrustedAccessProgramOrganizationEnrollment action. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.actionGetTrustedAccessProgramProjectEnrollmentConditionKeys">actionGetTrustedAccessProgramProjectEnrollmentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetTrustedAccessProgramProjectEnrollment action. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.AssociateThirdPartyKnowledgeBaseConditionKeys">AssociateThirdPartyKnowledgeBaseConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the AssociateThirdPartyKnowledgeBase action. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.AWS_REQUEST_TAG">AWS_REQUEST_TAG</a></code> | <code>string</code> | Condition key: aws:RequestTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.AWS_RESOURCE_TAG">AWS_RESOURCE_TAG</a></code> | <code>string</code> | Condition key: aws:ResourceTag/${TagKey} (String). |
@@ -10056,6 +10569,7 @@ Generates a condition block for `bedrock:ThirdPartyKnowledgeBaseCredentialsSecre
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.CreateModelEvaluationJobConditionKeys">CreateModelEvaluationJobConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateModelEvaluationJob action. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.CreateModelImportJobConditionKeys">CreateModelImportJobConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateModelImportJob action. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.CreateModelInvocationJobConditionKeys">CreateModelInvocationJobConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateModelInvocationJob action. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.CreateProjectConditionKeys">CreateProjectConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateProject action. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.CreatePromptConditionKeys">CreatePromptConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreatePrompt action. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.CreatePromptRouterConditionKeys">CreatePromptRouterConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreatePromptRouter action. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.CreatePromptVersionConditionKeys">CreatePromptVersionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreatePromptVersion action. |
@@ -10072,15 +10586,98 @@ Generates a condition block for `bedrock:ThirdPartyKnowledgeBaseCredentialsSecre
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.InvokeInlineAgentConditionKeys">InvokeInlineAgentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the InvokeInlineAgent action. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.InvokeModelConditionKeys">InvokeModelConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the InvokeModel action. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.InvokeModelWithResponseStreamConditionKeys">InvokeModelWithResponseStreamConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the InvokeModelWithResponseStream action. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.ListFoundationModelsConditionKeys">ListFoundationModelsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListFoundationModels action. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.ListInferenceProfilesConditionKeys">ListInferenceProfilesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListInferenceProfiles action. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.MODEL_ARN">MODEL_ARN</a></code> | <code>string</code> | Condition key: bedrock:ModelArn (ARN). |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.PROJECT_ARN">PROJECT_ARN</a></code> | <code>string</code> | Condition key: bedrock:ProjectArn (ARN). |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.PROMPT_ROUTER_ARN">PROMPT_ROUTER_ARN</a></code> | <code>string</code> | Condition key: bedrock:PromptRouterArn (ARN). |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.PROVIDER">PROVIDER</a></code> | <code>string</code> | Condition key: bedrock:Provider (String). |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.PutAccountDataRetentionConditionKeys">PutAccountDataRetentionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutAccountDataRetention action. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.PutResourcePolicyConditionKeys">PutResourcePolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutResourcePolicy action. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.PutTrustedAccessProgramAccountEnrollmentConditionKeys">PutTrustedAccessProgramAccountEnrollmentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutTrustedAccessProgramAccountEnrollment action. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.PutTrustedAccessProgramOrganizationEnrollmentConditionKeys">PutTrustedAccessProgramOrganizationEnrollmentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutTrustedAccessProgramOrganizationEnrollment action. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.PutTrustedAccessProgramProjectEnrollmentConditionKeys">PutTrustedAccessProgramProjectEnrollmentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutTrustedAccessProgramProjectEnrollment action. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.SERVICE_TIER">SERVICE_TIER</a></code> | <code>string</code> | Condition key: bedrock:ServiceTier (String). |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.StartTrustedAccessProgramAccountApplicationConditionKeys">StartTrustedAccessProgramAccountApplicationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartTrustedAccessProgramAccountApplication action. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.StartTrustedAccessProgramOrganizationApplicationConditionKeys">StartTrustedAccessProgramOrganizationApplicationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartTrustedAccessProgramOrganizationApplication action. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.StartTrustedAccessProgramProjectApplicationConditionKeys">StartTrustedAccessProgramProjectApplicationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartTrustedAccessProgramProjectApplication action. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.THIRD_PARTY_KNOWLEDGE_BASE_CREDENTIALS_SECRET_ARN">THIRD_PARTY_KNOWLEDGE_BASE_CREDENTIALS_SECRET_ARN</a></code> | <code>string</code> | Condition key: bedrock:ThirdPartyKnowledgeBaseCredentialsSecretArn (ARN). |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.TRUSTED_ACCESS_PROGRAM_OPT_IN">TRUSTED_ACCESS_PROGRAM_OPT_IN</a></code> | <code>string</code> | Condition key: bedrock:TrustedAccessProgramOptIn (String). |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockConditions.property.UpdateProjectConditionKeys">UpdateProjectConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateProject action. |
+
+---
+
+##### `actionGetFoundationModelConditionKeys`<sup>Required</sup> <a name="actionGetFoundationModelConditionKeys" id="@cdk_utils/iam.bedrock.BedrockConditions.property.actionGetFoundationModelConditionKeys"></a>
+
+```typescript
+public readonly actionGetFoundationModelConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetFoundationModel action.
+
+---
+
+##### `actionGetInferenceProfileConditionKeys`<sup>Required</sup> <a name="actionGetInferenceProfileConditionKeys" id="@cdk_utils/iam.bedrock.BedrockConditions.property.actionGetInferenceProfileConditionKeys"></a>
+
+```typescript
+public readonly actionGetInferenceProfileConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetInferenceProfile action.
+
+---
+
+##### `actionGetTrustedAccessProgramAccountEnrollmentConditionKeys`<sup>Required</sup> <a name="actionGetTrustedAccessProgramAccountEnrollmentConditionKeys" id="@cdk_utils/iam.bedrock.BedrockConditions.property.actionGetTrustedAccessProgramAccountEnrollmentConditionKeys"></a>
+
+```typescript
+public readonly actionGetTrustedAccessProgramAccountEnrollmentConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetTrustedAccessProgramAccountEnrollment action.
+
+---
+
+##### `actionGetTrustedAccessProgramConditionKeys`<sup>Required</sup> <a name="actionGetTrustedAccessProgramConditionKeys" id="@cdk_utils/iam.bedrock.BedrockConditions.property.actionGetTrustedAccessProgramConditionKeys"></a>
+
+```typescript
+public readonly actionGetTrustedAccessProgramConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetTrustedAccessProgram action.
+
+---
+
+##### `actionGetTrustedAccessProgramOrganizationEnrollmentConditionKeys`<sup>Required</sup> <a name="actionGetTrustedAccessProgramOrganizationEnrollmentConditionKeys" id="@cdk_utils/iam.bedrock.BedrockConditions.property.actionGetTrustedAccessProgramOrganizationEnrollmentConditionKeys"></a>
+
+```typescript
+public readonly actionGetTrustedAccessProgramOrganizationEnrollmentConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetTrustedAccessProgramOrganizationEnrollment action.
+
+---
+
+##### `actionGetTrustedAccessProgramProjectEnrollmentConditionKeys`<sup>Required</sup> <a name="actionGetTrustedAccessProgramProjectEnrollmentConditionKeys" id="@cdk_utils/iam.bedrock.BedrockConditions.property.actionGetTrustedAccessProgramProjectEnrollmentConditionKeys"></a>
+
+```typescript
+public readonly actionGetTrustedAccessProgramProjectEnrollmentConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetTrustedAccessProgramProjectEnrollment action.
 
 ---
 
@@ -10420,6 +11017,18 @@ Condition keys applicable to the CreateModelInvocationJob action.
 
 ---
 
+##### `CreateProjectConditionKeys`<sup>Required</sup> <a name="CreateProjectConditionKeys" id="@cdk_utils/iam.bedrock.BedrockConditions.property.CreateProjectConditionKeys"></a>
+
+```typescript
+public readonly CreateProjectConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateProject action.
+
+---
+
 ##### `CreatePromptConditionKeys`<sup>Required</sup> <a name="CreatePromptConditionKeys" id="@cdk_utils/iam.bedrock.BedrockConditions.property.CreatePromptConditionKeys"></a>
 
 ```typescript
@@ -10612,6 +11221,30 @@ Condition keys applicable to the InvokeModelWithResponseStream action.
 
 ---
 
+##### `ListFoundationModelsConditionKeys`<sup>Required</sup> <a name="ListFoundationModelsConditionKeys" id="@cdk_utils/iam.bedrock.BedrockConditions.property.ListFoundationModelsConditionKeys"></a>
+
+```typescript
+public readonly ListFoundationModelsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ListFoundationModels action.
+
+---
+
+##### `ListInferenceProfilesConditionKeys`<sup>Required</sup> <a name="ListInferenceProfilesConditionKeys" id="@cdk_utils/iam.bedrock.BedrockConditions.property.ListInferenceProfilesConditionKeys"></a>
+
+```typescript
+public readonly ListInferenceProfilesConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ListInferenceProfiles action.
+
+---
+
 ##### `MODEL_ARN`<sup>Required</sup> <a name="MODEL_ARN" id="@cdk_utils/iam.bedrock.BedrockConditions.property.MODEL_ARN"></a>
 
 ```typescript
@@ -10648,6 +11281,18 @@ Condition key: bedrock:PromptRouterArn (ARN).
 
 ---
 
+##### `PROVIDER`<sup>Required</sup> <a name="PROVIDER" id="@cdk_utils/iam.bedrock.BedrockConditions.property.PROVIDER"></a>
+
+```typescript
+public readonly PROVIDER: string;
+```
+
+- *Type:* string
+
+Condition key: bedrock:Provider (String).
+
+---
+
 ##### `PutAccountDataRetentionConditionKeys`<sup>Required</sup> <a name="PutAccountDataRetentionConditionKeys" id="@cdk_utils/iam.bedrock.BedrockConditions.property.PutAccountDataRetentionConditionKeys"></a>
 
 ```typescript
@@ -10672,6 +11317,42 @@ Condition keys applicable to the PutResourcePolicy action.
 
 ---
 
+##### `PutTrustedAccessProgramAccountEnrollmentConditionKeys`<sup>Required</sup> <a name="PutTrustedAccessProgramAccountEnrollmentConditionKeys" id="@cdk_utils/iam.bedrock.BedrockConditions.property.PutTrustedAccessProgramAccountEnrollmentConditionKeys"></a>
+
+```typescript
+public readonly PutTrustedAccessProgramAccountEnrollmentConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the PutTrustedAccessProgramAccountEnrollment action.
+
+---
+
+##### `PutTrustedAccessProgramOrganizationEnrollmentConditionKeys`<sup>Required</sup> <a name="PutTrustedAccessProgramOrganizationEnrollmentConditionKeys" id="@cdk_utils/iam.bedrock.BedrockConditions.property.PutTrustedAccessProgramOrganizationEnrollmentConditionKeys"></a>
+
+```typescript
+public readonly PutTrustedAccessProgramOrganizationEnrollmentConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the PutTrustedAccessProgramOrganizationEnrollment action.
+
+---
+
+##### `PutTrustedAccessProgramProjectEnrollmentConditionKeys`<sup>Required</sup> <a name="PutTrustedAccessProgramProjectEnrollmentConditionKeys" id="@cdk_utils/iam.bedrock.BedrockConditions.property.PutTrustedAccessProgramProjectEnrollmentConditionKeys"></a>
+
+```typescript
+public readonly PutTrustedAccessProgramProjectEnrollmentConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the PutTrustedAccessProgramProjectEnrollment action.
+
+---
+
 ##### `SERVICE_TIER`<sup>Required</sup> <a name="SERVICE_TIER" id="@cdk_utils/iam.bedrock.BedrockConditions.property.SERVICE_TIER"></a>
 
 ```typescript
@@ -10681,6 +11362,42 @@ public readonly SERVICE_TIER: string;
 - *Type:* string
 
 Condition key: bedrock:ServiceTier (String).
+
+---
+
+##### `StartTrustedAccessProgramAccountApplicationConditionKeys`<sup>Required</sup> <a name="StartTrustedAccessProgramAccountApplicationConditionKeys" id="@cdk_utils/iam.bedrock.BedrockConditions.property.StartTrustedAccessProgramAccountApplicationConditionKeys"></a>
+
+```typescript
+public readonly StartTrustedAccessProgramAccountApplicationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the StartTrustedAccessProgramAccountApplication action.
+
+---
+
+##### `StartTrustedAccessProgramOrganizationApplicationConditionKeys`<sup>Required</sup> <a name="StartTrustedAccessProgramOrganizationApplicationConditionKeys" id="@cdk_utils/iam.bedrock.BedrockConditions.property.StartTrustedAccessProgramOrganizationApplicationConditionKeys"></a>
+
+```typescript
+public readonly StartTrustedAccessProgramOrganizationApplicationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the StartTrustedAccessProgramOrganizationApplication action.
+
+---
+
+##### `StartTrustedAccessProgramProjectApplicationConditionKeys`<sup>Required</sup> <a name="StartTrustedAccessProgramProjectApplicationConditionKeys" id="@cdk_utils/iam.bedrock.BedrockConditions.property.StartTrustedAccessProgramProjectApplicationConditionKeys"></a>
+
+```typescript
+public readonly StartTrustedAccessProgramProjectApplicationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the StartTrustedAccessProgramProjectApplication action.
 
 ---
 
@@ -10708,6 +11425,18 @@ Condition key: bedrock:ThirdPartyKnowledgeBaseCredentialsSecretArn (ARN).
 
 ---
 
+##### `TRUSTED_ACCESS_PROGRAM_OPT_IN`<sup>Required</sup> <a name="TRUSTED_ACCESS_PROGRAM_OPT_IN" id="@cdk_utils/iam.bedrock.BedrockConditions.property.TRUSTED_ACCESS_PROGRAM_OPT_IN"></a>
+
+```typescript
+public readonly TRUSTED_ACCESS_PROGRAM_OPT_IN: string;
+```
+
+- *Type:* string
+
+Condition key: bedrock:TrustedAccessProgramOptIn (String).
+
+---
+
 ##### `UntagResourceConditionKeys`<sup>Required</sup> <a name="UntagResourceConditionKeys" id="@cdk_utils/iam.bedrock.BedrockConditions.property.UntagResourceConditionKeys"></a>
 
 ```typescript
@@ -10717,6 +11446,18 @@ public readonly UntagResourceConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the UntagResource action.
+
+---
+
+##### `UpdateProjectConditionKeys`<sup>Required</sup> <a name="UpdateProjectConditionKeys" id="@cdk_utils/iam.bedrock.BedrockConditions.property.UpdateProjectConditionKeys"></a>
+
+```typescript
+public readonly UpdateProjectConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateProject action.
 
 ---
 
@@ -14516,6 +15257,7 @@ new bedrock.BedrockResources()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.isValidRetrievalInstructionArn">isValidRetrievalInstructionArn</a></code> | Validates whether a string is a valid ARN for the retrieval-instruction resource. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.isValidSessionArn">isValidSessionArn</a></code> | Validates whether a string is a valid ARN for the session resource. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.isValidSystemToolArn">isValidSystemToolArn</a></code> | Validates whether a string is a valid ARN for the system-tool resource. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.isValidTrustedAccessProgramArn">isValidTrustedAccessProgramArn</a></code> | Validates whether a string is a valid ARN for the trusted-access-program resource. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.knowledgeBase">knowledgeBase</a></code> | Builds an ARN for the knowledge-base resource. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.modelCopyJob">modelCopyJob</a></code> | Builds an ARN for the model-copy-job resource. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.modelCustomizationJob">modelCustomizationJob</a></code> | Builds an ARN for the model-customization-job resource. |
@@ -14563,6 +15305,7 @@ new bedrock.BedrockResources()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.parseRetrievalInstructionArn">parseRetrievalInstructionArn</a></code> | Parses a retrieval-instruction ARN into its components. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.parseSessionArn">parseSessionArn</a></code> | Parses a session ARN into its components. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.parseSystemToolArn">parseSystemToolArn</a></code> | Parses a system-tool ARN into its components. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.parseTrustedAccessProgramArn">parseTrustedAccessProgramArn</a></code> | Parses a trusted-access-program ARN into its components. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.project">project</a></code> | Builds an ARN for the project resource. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.prompt">prompt</a></code> | Builds an ARN for the prompt resource. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.promptRouter">promptRouter</a></code> | Builds an ARN for the prompt-router resource. |
@@ -14571,6 +15314,7 @@ new bedrock.BedrockResources()
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.retrievalInstruction">retrievalInstruction</a></code> | Builds an ARN for the retrieval-instruction resource. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.session">session</a></code> | Builds an ARN for the session resource. |
 | <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.systemTool">systemTool</a></code> | Builds an ARN for the system-tool resource. |
+| <code><a href="#@cdk_utils/iam.bedrock.BedrockResources.trustedAccessProgram">trustedAccessProgram</a></code> | Builds an ARN for the trusted-access-program resource. |
 
 ---
 
@@ -15662,6 +16406,22 @@ Validates whether a string is a valid ARN for the system-tool resource.
 
 ---
 
+##### `isValidTrustedAccessProgramArn` <a name="isValidTrustedAccessProgramArn" id="@cdk_utils/iam.bedrock.BedrockResources.isValidTrustedAccessProgramArn"></a>
+
+```typescript
+import { bedrock } from '@cdk_utils/iam'
+
+bedrock.BedrockResources.isValidTrustedAccessProgramArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the trusted-access-program resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.bedrock.BedrockResources.isValidTrustedAccessProgramArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `knowledgeBase` <a name="knowledgeBase" id="@cdk_utils/iam.bedrock.BedrockResources.knowledgeBase"></a>
 
 ```typescript
@@ -16414,6 +17174,22 @@ Parses a system-tool ARN into its components.
 
 ---
 
+##### `parseTrustedAccessProgramArn` <a name="parseTrustedAccessProgramArn" id="@cdk_utils/iam.bedrock.BedrockResources.parseTrustedAccessProgramArn"></a>
+
+```typescript
+import { bedrock } from '@cdk_utils/iam'
+
+bedrock.BedrockResources.parseTrustedAccessProgramArn(arn: string)
+```
+
+Parses a trusted-access-program ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.bedrock.BedrockResources.parseTrustedAccessProgramArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `project` <a name="project" id="@cdk_utils/iam.bedrock.BedrockResources.project"></a>
 
 ```typescript
@@ -16539,6 +17315,22 @@ Builds an ARN for the system-tool resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.bedrock.BedrockResources.systemTool.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.bedrock.BedrockSystemToolArnProps">BedrockSystemToolArnProps</a>
+
+---
+
+##### `trustedAccessProgram` <a name="trustedAccessProgram" id="@cdk_utils/iam.bedrock.BedrockResources.trustedAccessProgram"></a>
+
+```typescript
+import { bedrock } from '@cdk_utils/iam'
+
+bedrock.BedrockResources.trustedAccessProgram(props: BedrockTrustedAccessProgramArnProps)
+```
+
+Builds an ARN for the trusted-access-program resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.bedrock.BedrockResources.trustedAccessProgram.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.bedrock.BedrockTrustedAccessProgramArnProps">BedrockTrustedAccessProgramArnProps</a>
 
 ---
 

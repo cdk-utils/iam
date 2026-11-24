@@ -1,6 +1,825 @@
 # `finops_agent` Submodule <a name="`finops_agent` Submodule" id="@cdk_utils/iam.finops_agent"></a>
 
 
+## Structs <a name="Structs" id="Structs"></a>
+
+### FinopsAgentAgentspaceArnComponents <a name="FinopsAgentAgentspaceArnComponents" id="@cdk_utils/iam.finops_agent.FinopsAgentAgentspaceArnComponents"></a>
+
+Parsed components of a agentspace ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.finops_agent.FinopsAgentAgentspaceArnComponents.Initializer"></a>
+
+```typescript
+import { finops_agent } from '@cdk_utils/iam'
+
+const finopsAgentAgentspaceArnComponents: finops_agent.FinopsAgentAgentspaceArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentAgentspaceArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentAgentspaceArnComponents.property.agentSpaceId">agentSpaceId</a></code> | <code>string</code> | The AgentSpaceId component. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentAgentspaceArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentAgentspaceArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.finops_agent.FinopsAgentAgentspaceArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `agentSpaceId`<sup>Required</sup> <a name="agentSpaceId" id="@cdk_utils/iam.finops_agent.FinopsAgentAgentspaceArnComponents.property.agentSpaceId"></a>
+
+```typescript
+public readonly agentSpaceId: string;
+```
+
+- *Type:* string
+
+The AgentSpaceId component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.finops_agent.FinopsAgentAgentspaceArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.finops_agent.FinopsAgentAgentspaceArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### FinopsAgentAgentspaceArnProps <a name="FinopsAgentAgentspaceArnProps" id="@cdk_utils/iam.finops_agent.FinopsAgentAgentspaceArnProps"></a>
+
+Properties for building a agentspace ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.finops_agent.FinopsAgentAgentspaceArnProps.Initializer"></a>
+
+```typescript
+import { finops_agent } from '@cdk_utils/iam'
+
+const finopsAgentAgentspaceArnProps: finops_agent.FinopsAgentAgentspaceArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentAgentspaceArnProps.property.agentSpaceId">agentSpaceId</a></code> | <code>string</code> | The AgentSpaceId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentAgentspaceArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentAgentspaceArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentAgentspaceArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `agentSpaceId`<sup>Required</sup> <a name="agentSpaceId" id="@cdk_utils/iam.finops_agent.FinopsAgentAgentspaceArnProps.property.agentSpaceId"></a>
+
+```typescript
+public readonly agentSpaceId: string;
+```
+
+- *Type:* string
+
+The AgentSpaceId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.finops_agent.FinopsAgentAgentspaceArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.finops_agent.FinopsAgentAgentspaceArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.finops_agent.FinopsAgentAgentspaceArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
+### FinopsAgentAutomationArnComponents <a name="FinopsAgentAutomationArnComponents" id="@cdk_utils/iam.finops_agent.FinopsAgentAutomationArnComponents"></a>
+
+Parsed components of a automation ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.finops_agent.FinopsAgentAutomationArnComponents.Initializer"></a>
+
+```typescript
+import { finops_agent } from '@cdk_utils/iam'
+
+const finopsAgentAutomationArnComponents: finops_agent.FinopsAgentAutomationArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentAutomationArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentAutomationArnComponents.property.agentSpaceId">agentSpaceId</a></code> | <code>string</code> | The AgentSpaceId component. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentAutomationArnComponents.property.automationId">automationId</a></code> | <code>string</code> | The AutomationId component. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentAutomationArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentAutomationArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.finops_agent.FinopsAgentAutomationArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `agentSpaceId`<sup>Required</sup> <a name="agentSpaceId" id="@cdk_utils/iam.finops_agent.FinopsAgentAutomationArnComponents.property.agentSpaceId"></a>
+
+```typescript
+public readonly agentSpaceId: string;
+```
+
+- *Type:* string
+
+The AgentSpaceId component.
+
+---
+
+##### `automationId`<sup>Required</sup> <a name="automationId" id="@cdk_utils/iam.finops_agent.FinopsAgentAutomationArnComponents.property.automationId"></a>
+
+```typescript
+public readonly automationId: string;
+```
+
+- *Type:* string
+
+The AutomationId component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.finops_agent.FinopsAgentAutomationArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.finops_agent.FinopsAgentAutomationArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### FinopsAgentAutomationArnProps <a name="FinopsAgentAutomationArnProps" id="@cdk_utils/iam.finops_agent.FinopsAgentAutomationArnProps"></a>
+
+Properties for building a automation ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.finops_agent.FinopsAgentAutomationArnProps.Initializer"></a>
+
+```typescript
+import { finops_agent } from '@cdk_utils/iam'
+
+const finopsAgentAutomationArnProps: finops_agent.FinopsAgentAutomationArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentAutomationArnProps.property.agentSpaceId">agentSpaceId</a></code> | <code>string</code> | The AgentSpaceId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentAutomationArnProps.property.automationId">automationId</a></code> | <code>string</code> | The AutomationId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentAutomationArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentAutomationArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentAutomationArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `agentSpaceId`<sup>Required</sup> <a name="agentSpaceId" id="@cdk_utils/iam.finops_agent.FinopsAgentAutomationArnProps.property.agentSpaceId"></a>
+
+```typescript
+public readonly agentSpaceId: string;
+```
+
+- *Type:* string
+
+The AgentSpaceId component of the ARN.
+
+---
+
+##### `automationId`<sup>Required</sup> <a name="automationId" id="@cdk_utils/iam.finops_agent.FinopsAgentAutomationArnProps.property.automationId"></a>
+
+```typescript
+public readonly automationId: string;
+```
+
+- *Type:* string
+
+The AutomationId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.finops_agent.FinopsAgentAutomationArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.finops_agent.FinopsAgentAutomationArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.finops_agent.FinopsAgentAutomationArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
+### FinopsAgentConnectionArnComponents <a name="FinopsAgentConnectionArnComponents" id="@cdk_utils/iam.finops_agent.FinopsAgentConnectionArnComponents"></a>
+
+Parsed components of a connection ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.finops_agent.FinopsAgentConnectionArnComponents.Initializer"></a>
+
+```typescript
+import { finops_agent } from '@cdk_utils/iam'
+
+const finopsAgentConnectionArnComponents: finops_agent.FinopsAgentConnectionArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentConnectionArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentConnectionArnComponents.property.agentSpaceId">agentSpaceId</a></code> | <code>string</code> | The AgentSpaceId component. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentConnectionArnComponents.property.connectionId">connectionId</a></code> | <code>string</code> | The ConnectionId component. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentConnectionArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentConnectionArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.finops_agent.FinopsAgentConnectionArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `agentSpaceId`<sup>Required</sup> <a name="agentSpaceId" id="@cdk_utils/iam.finops_agent.FinopsAgentConnectionArnComponents.property.agentSpaceId"></a>
+
+```typescript
+public readonly agentSpaceId: string;
+```
+
+- *Type:* string
+
+The AgentSpaceId component.
+
+---
+
+##### `connectionId`<sup>Required</sup> <a name="connectionId" id="@cdk_utils/iam.finops_agent.FinopsAgentConnectionArnComponents.property.connectionId"></a>
+
+```typescript
+public readonly connectionId: string;
+```
+
+- *Type:* string
+
+The ConnectionId component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.finops_agent.FinopsAgentConnectionArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.finops_agent.FinopsAgentConnectionArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### FinopsAgentConnectionArnProps <a name="FinopsAgentConnectionArnProps" id="@cdk_utils/iam.finops_agent.FinopsAgentConnectionArnProps"></a>
+
+Properties for building a connection ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.finops_agent.FinopsAgentConnectionArnProps.Initializer"></a>
+
+```typescript
+import { finops_agent } from '@cdk_utils/iam'
+
+const finopsAgentConnectionArnProps: finops_agent.FinopsAgentConnectionArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentConnectionArnProps.property.agentSpaceId">agentSpaceId</a></code> | <code>string</code> | The AgentSpaceId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentConnectionArnProps.property.connectionId">connectionId</a></code> | <code>string</code> | The ConnectionId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentConnectionArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentConnectionArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentConnectionArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `agentSpaceId`<sup>Required</sup> <a name="agentSpaceId" id="@cdk_utils/iam.finops_agent.FinopsAgentConnectionArnProps.property.agentSpaceId"></a>
+
+```typescript
+public readonly agentSpaceId: string;
+```
+
+- *Type:* string
+
+The AgentSpaceId component of the ARN.
+
+---
+
+##### `connectionId`<sup>Required</sup> <a name="connectionId" id="@cdk_utils/iam.finops_agent.FinopsAgentConnectionArnProps.property.connectionId"></a>
+
+```typescript
+public readonly connectionId: string;
+```
+
+- *Type:* string
+
+The ConnectionId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.finops_agent.FinopsAgentConnectionArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.finops_agent.FinopsAgentConnectionArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.finops_agent.FinopsAgentConnectionArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
+### FinopsAgentDocumentArnComponents <a name="FinopsAgentDocumentArnComponents" id="@cdk_utils/iam.finops_agent.FinopsAgentDocumentArnComponents"></a>
+
+Parsed components of a document ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.finops_agent.FinopsAgentDocumentArnComponents.Initializer"></a>
+
+```typescript
+import { finops_agent } from '@cdk_utils/iam'
+
+const finopsAgentDocumentArnComponents: finops_agent.FinopsAgentDocumentArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentDocumentArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentDocumentArnComponents.property.agentSpaceId">agentSpaceId</a></code> | <code>string</code> | The AgentSpaceId component. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentDocumentArnComponents.property.documentId">documentId</a></code> | <code>string</code> | The DocumentId component. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentDocumentArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentDocumentArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.finops_agent.FinopsAgentDocumentArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `agentSpaceId`<sup>Required</sup> <a name="agentSpaceId" id="@cdk_utils/iam.finops_agent.FinopsAgentDocumentArnComponents.property.agentSpaceId"></a>
+
+```typescript
+public readonly agentSpaceId: string;
+```
+
+- *Type:* string
+
+The AgentSpaceId component.
+
+---
+
+##### `documentId`<sup>Required</sup> <a name="documentId" id="@cdk_utils/iam.finops_agent.FinopsAgentDocumentArnComponents.property.documentId"></a>
+
+```typescript
+public readonly documentId: string;
+```
+
+- *Type:* string
+
+The DocumentId component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.finops_agent.FinopsAgentDocumentArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.finops_agent.FinopsAgentDocumentArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### FinopsAgentDocumentArnProps <a name="FinopsAgentDocumentArnProps" id="@cdk_utils/iam.finops_agent.FinopsAgentDocumentArnProps"></a>
+
+Properties for building a document ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.finops_agent.FinopsAgentDocumentArnProps.Initializer"></a>
+
+```typescript
+import { finops_agent } from '@cdk_utils/iam'
+
+const finopsAgentDocumentArnProps: finops_agent.FinopsAgentDocumentArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentDocumentArnProps.property.agentSpaceId">agentSpaceId</a></code> | <code>string</code> | The AgentSpaceId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentDocumentArnProps.property.documentId">documentId</a></code> | <code>string</code> | The DocumentId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentDocumentArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentDocumentArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentDocumentArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `agentSpaceId`<sup>Required</sup> <a name="agentSpaceId" id="@cdk_utils/iam.finops_agent.FinopsAgentDocumentArnProps.property.agentSpaceId"></a>
+
+```typescript
+public readonly agentSpaceId: string;
+```
+
+- *Type:* string
+
+The AgentSpaceId component of the ARN.
+
+---
+
+##### `documentId`<sup>Required</sup> <a name="documentId" id="@cdk_utils/iam.finops_agent.FinopsAgentDocumentArnProps.property.documentId"></a>
+
+```typescript
+public readonly documentId: string;
+```
+
+- *Type:* string
+
+The DocumentId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.finops_agent.FinopsAgentDocumentArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.finops_agent.FinopsAgentDocumentArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.finops_agent.FinopsAgentDocumentArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
+### FinopsAgentIntegrationArnComponents <a name="FinopsAgentIntegrationArnComponents" id="@cdk_utils/iam.finops_agent.FinopsAgentIntegrationArnComponents"></a>
+
+Parsed components of a integration ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.finops_agent.FinopsAgentIntegrationArnComponents.Initializer"></a>
+
+```typescript
+import { finops_agent } from '@cdk_utils/iam'
+
+const finopsAgentIntegrationArnComponents: finops_agent.FinopsAgentIntegrationArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentIntegrationArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentIntegrationArnComponents.property.integrationId">integrationId</a></code> | <code>string</code> | The IntegrationId component. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentIntegrationArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentIntegrationArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.finops_agent.FinopsAgentIntegrationArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `integrationId`<sup>Required</sup> <a name="integrationId" id="@cdk_utils/iam.finops_agent.FinopsAgentIntegrationArnComponents.property.integrationId"></a>
+
+```typescript
+public readonly integrationId: string;
+```
+
+- *Type:* string
+
+The IntegrationId component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.finops_agent.FinopsAgentIntegrationArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.finops_agent.FinopsAgentIntegrationArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### FinopsAgentIntegrationArnProps <a name="FinopsAgentIntegrationArnProps" id="@cdk_utils/iam.finops_agent.FinopsAgentIntegrationArnProps"></a>
+
+Properties for building a integration ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.finops_agent.FinopsAgentIntegrationArnProps.Initializer"></a>
+
+```typescript
+import { finops_agent } from '@cdk_utils/iam'
+
+const finopsAgentIntegrationArnProps: finops_agent.FinopsAgentIntegrationArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentIntegrationArnProps.property.integrationId">integrationId</a></code> | <code>string</code> | The IntegrationId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentIntegrationArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentIntegrationArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentIntegrationArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `integrationId`<sup>Required</sup> <a name="integrationId" id="@cdk_utils/iam.finops_agent.FinopsAgentIntegrationArnProps.property.integrationId"></a>
+
+```typescript
+public readonly integrationId: string;
+```
+
+- *Type:* string
+
+The IntegrationId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.finops_agent.FinopsAgentIntegrationArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.finops_agent.FinopsAgentIntegrationArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.finops_agent.FinopsAgentIntegrationArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
@@ -732,5 +1551,287 @@ public readonly UpdateOrganizationAccess: string;
 [Write] finops-agent:UpdateOrganizationAccess.
 
 ---
+
+### FinopsAgentResources <a name="FinopsAgentResources" id="@cdk_utils/iam.finops_agent.FinopsAgentResources"></a>
+
+ARN builders, validators, and parsers for finops-agent resources.
+
+#### Initializers <a name="Initializers" id="@cdk_utils/iam.finops_agent.FinopsAgentResources.Initializer"></a>
+
+```typescript
+import { finops_agent } from '@cdk_utils/iam'
+
+new finops_agent.FinopsAgentResources()
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+
+---
+
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentResources.agentspace">agentspace</a></code> | Builds an ARN for the agentspace resource. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentResources.automation">automation</a></code> | Builds an ARN for the automation resource. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentResources.connection">connection</a></code> | Builds an ARN for the connection resource. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentResources.document">document</a></code> | Builds an ARN for the document resource. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentResources.integration">integration</a></code> | Builds an ARN for the integration resource. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentResources.isValidAgentspaceArn">isValidAgentspaceArn</a></code> | Validates whether a string is a valid ARN for the agentspace resource. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentResources.isValidAutomationArn">isValidAutomationArn</a></code> | Validates whether a string is a valid ARN for the automation resource. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentResources.isValidConnectionArn">isValidConnectionArn</a></code> | Validates whether a string is a valid ARN for the connection resource. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentResources.isValidDocumentArn">isValidDocumentArn</a></code> | Validates whether a string is a valid ARN for the document resource. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentResources.isValidIntegrationArn">isValidIntegrationArn</a></code> | Validates whether a string is a valid ARN for the integration resource. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentResources.parseAgentspaceArn">parseAgentspaceArn</a></code> | Parses a agentspace ARN into its components. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentResources.parseAutomationArn">parseAutomationArn</a></code> | Parses a automation ARN into its components. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentResources.parseConnectionArn">parseConnectionArn</a></code> | Parses a connection ARN into its components. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentResources.parseDocumentArn">parseDocumentArn</a></code> | Parses a document ARN into its components. |
+| <code><a href="#@cdk_utils/iam.finops_agent.FinopsAgentResources.parseIntegrationArn">parseIntegrationArn</a></code> | Parses a integration ARN into its components. |
+
+---
+
+##### `agentspace` <a name="agentspace" id="@cdk_utils/iam.finops_agent.FinopsAgentResources.agentspace"></a>
+
+```typescript
+import { finops_agent } from '@cdk_utils/iam'
+
+finops_agent.FinopsAgentResources.agentspace(props: FinopsAgentAgentspaceArnProps)
+```
+
+Builds an ARN for the agentspace resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.finops_agent.FinopsAgentResources.agentspace.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.finops_agent.FinopsAgentAgentspaceArnProps">FinopsAgentAgentspaceArnProps</a>
+
+---
+
+##### `automation` <a name="automation" id="@cdk_utils/iam.finops_agent.FinopsAgentResources.automation"></a>
+
+```typescript
+import { finops_agent } from '@cdk_utils/iam'
+
+finops_agent.FinopsAgentResources.automation(props: FinopsAgentAutomationArnProps)
+```
+
+Builds an ARN for the automation resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.finops_agent.FinopsAgentResources.automation.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.finops_agent.FinopsAgentAutomationArnProps">FinopsAgentAutomationArnProps</a>
+
+---
+
+##### `connection` <a name="connection" id="@cdk_utils/iam.finops_agent.FinopsAgentResources.connection"></a>
+
+```typescript
+import { finops_agent } from '@cdk_utils/iam'
+
+finops_agent.FinopsAgentResources.connection(props: FinopsAgentConnectionArnProps)
+```
+
+Builds an ARN for the connection resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.finops_agent.FinopsAgentResources.connection.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.finops_agent.FinopsAgentConnectionArnProps">FinopsAgentConnectionArnProps</a>
+
+---
+
+##### `document` <a name="document" id="@cdk_utils/iam.finops_agent.FinopsAgentResources.document"></a>
+
+```typescript
+import { finops_agent } from '@cdk_utils/iam'
+
+finops_agent.FinopsAgentResources.document(props: FinopsAgentDocumentArnProps)
+```
+
+Builds an ARN for the document resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.finops_agent.FinopsAgentResources.document.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.finops_agent.FinopsAgentDocumentArnProps">FinopsAgentDocumentArnProps</a>
+
+---
+
+##### `integration` <a name="integration" id="@cdk_utils/iam.finops_agent.FinopsAgentResources.integration"></a>
+
+```typescript
+import { finops_agent } from '@cdk_utils/iam'
+
+finops_agent.FinopsAgentResources.integration(props: FinopsAgentIntegrationArnProps)
+```
+
+Builds an ARN for the integration resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.finops_agent.FinopsAgentResources.integration.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.finops_agent.FinopsAgentIntegrationArnProps">FinopsAgentIntegrationArnProps</a>
+
+---
+
+##### `isValidAgentspaceArn` <a name="isValidAgentspaceArn" id="@cdk_utils/iam.finops_agent.FinopsAgentResources.isValidAgentspaceArn"></a>
+
+```typescript
+import { finops_agent } from '@cdk_utils/iam'
+
+finops_agent.FinopsAgentResources.isValidAgentspaceArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the agentspace resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.finops_agent.FinopsAgentResources.isValidAgentspaceArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidAutomationArn` <a name="isValidAutomationArn" id="@cdk_utils/iam.finops_agent.FinopsAgentResources.isValidAutomationArn"></a>
+
+```typescript
+import { finops_agent } from '@cdk_utils/iam'
+
+finops_agent.FinopsAgentResources.isValidAutomationArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the automation resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.finops_agent.FinopsAgentResources.isValidAutomationArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidConnectionArn` <a name="isValidConnectionArn" id="@cdk_utils/iam.finops_agent.FinopsAgentResources.isValidConnectionArn"></a>
+
+```typescript
+import { finops_agent } from '@cdk_utils/iam'
+
+finops_agent.FinopsAgentResources.isValidConnectionArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the connection resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.finops_agent.FinopsAgentResources.isValidConnectionArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidDocumentArn` <a name="isValidDocumentArn" id="@cdk_utils/iam.finops_agent.FinopsAgentResources.isValidDocumentArn"></a>
+
+```typescript
+import { finops_agent } from '@cdk_utils/iam'
+
+finops_agent.FinopsAgentResources.isValidDocumentArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the document resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.finops_agent.FinopsAgentResources.isValidDocumentArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidIntegrationArn` <a name="isValidIntegrationArn" id="@cdk_utils/iam.finops_agent.FinopsAgentResources.isValidIntegrationArn"></a>
+
+```typescript
+import { finops_agent } from '@cdk_utils/iam'
+
+finops_agent.FinopsAgentResources.isValidIntegrationArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the integration resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.finops_agent.FinopsAgentResources.isValidIntegrationArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseAgentspaceArn` <a name="parseAgentspaceArn" id="@cdk_utils/iam.finops_agent.FinopsAgentResources.parseAgentspaceArn"></a>
+
+```typescript
+import { finops_agent } from '@cdk_utils/iam'
+
+finops_agent.FinopsAgentResources.parseAgentspaceArn(arn: string)
+```
+
+Parses a agentspace ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.finops_agent.FinopsAgentResources.parseAgentspaceArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseAutomationArn` <a name="parseAutomationArn" id="@cdk_utils/iam.finops_agent.FinopsAgentResources.parseAutomationArn"></a>
+
+```typescript
+import { finops_agent } from '@cdk_utils/iam'
+
+finops_agent.FinopsAgentResources.parseAutomationArn(arn: string)
+```
+
+Parses a automation ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.finops_agent.FinopsAgentResources.parseAutomationArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseConnectionArn` <a name="parseConnectionArn" id="@cdk_utils/iam.finops_agent.FinopsAgentResources.parseConnectionArn"></a>
+
+```typescript
+import { finops_agent } from '@cdk_utils/iam'
+
+finops_agent.FinopsAgentResources.parseConnectionArn(arn: string)
+```
+
+Parses a connection ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.finops_agent.FinopsAgentResources.parseConnectionArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseDocumentArn` <a name="parseDocumentArn" id="@cdk_utils/iam.finops_agent.FinopsAgentResources.parseDocumentArn"></a>
+
+```typescript
+import { finops_agent } from '@cdk_utils/iam'
+
+finops_agent.FinopsAgentResources.parseDocumentArn(arn: string)
+```
+
+Parses a document ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.finops_agent.FinopsAgentResources.parseDocumentArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseIntegrationArn` <a name="parseIntegrationArn" id="@cdk_utils/iam.finops_agent.FinopsAgentResources.parseIntegrationArn"></a>
+
+```typescript
+import { finops_agent } from '@cdk_utils/iam'
+
+finops_agent.FinopsAgentResources.parseIntegrationArn(arn: string)
+```
+
+Parses a integration ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.finops_agent.FinopsAgentResources.parseIntegrationArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+
 
 

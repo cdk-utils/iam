@@ -176,3 +176,329 @@ export class FinopsAgentActions {
 	/** All tagging-level actions. */
 	static readonly AllTaggingActions: string[] = [];
 }
+
+/**
+ * Properties for building a agentspace ARN.
+ */
+export interface FinopsAgentAgentspaceArnProps {
+	/** The AgentSpaceId component of the ARN. */
+	readonly agentSpaceId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a agentspace ARN.
+ */
+export interface FinopsAgentAgentspaceArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AgentSpaceId component. */
+	readonly agentSpaceId: string;
+}
+
+/**
+ * Properties for building a automation ARN.
+ */
+export interface FinopsAgentAutomationArnProps {
+	/** The AgentSpaceId component of the ARN. */
+	readonly agentSpaceId: string;
+	/** The AutomationId component of the ARN. */
+	readonly automationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a automation ARN.
+ */
+export interface FinopsAgentAutomationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AgentSpaceId component. */
+	readonly agentSpaceId: string;
+	/** The AutomationId component. */
+	readonly automationId: string;
+}
+
+/**
+ * Properties for building a connection ARN.
+ */
+export interface FinopsAgentConnectionArnProps {
+	/** The AgentSpaceId component of the ARN. */
+	readonly agentSpaceId: string;
+	/** The ConnectionId component of the ARN. */
+	readonly connectionId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a connection ARN.
+ */
+export interface FinopsAgentConnectionArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AgentSpaceId component. */
+	readonly agentSpaceId: string;
+	/** The ConnectionId component. */
+	readonly connectionId: string;
+}
+
+/**
+ * Properties for building a document ARN.
+ */
+export interface FinopsAgentDocumentArnProps {
+	/** The AgentSpaceId component of the ARN. */
+	readonly agentSpaceId: string;
+	/** The DocumentId component of the ARN. */
+	readonly documentId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a document ARN.
+ */
+export interface FinopsAgentDocumentArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AgentSpaceId component. */
+	readonly agentSpaceId: string;
+	/** The DocumentId component. */
+	readonly documentId: string;
+}
+
+/**
+ * Properties for building a integration ARN.
+ */
+export interface FinopsAgentIntegrationArnProps {
+	/** The IntegrationId component of the ARN. */
+	readonly integrationId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a integration ARN.
+ */
+export interface FinopsAgentIntegrationArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The IntegrationId component. */
+	readonly integrationId: string;
+}
+
+const AgentspaceArnRegex =
+	/^arn:(?<partition>[^:]+):finops-agent:(?<region>[^:]*):(?<account>[^:]*):agentspace\/(?<agentSpaceId>[^:/?]+)$/;
+const AutomationArnRegex =
+	/^arn:(?<partition>[^:]+):finops-agent:(?<region>[^:]*):(?<account>[^:]*):agentspace\/(?<agentSpaceId>[^:/?]+)\/automation\/(?<automationId>[^:/?]+)$/;
+const ConnectionArnRegex =
+	/^arn:(?<partition>[^:]+):finops-agent:(?<region>[^:]*):(?<account>[^:]*):agentspace\/(?<agentSpaceId>[^:/?]+)\/connection\/(?<connectionId>[^:/?]+)$/;
+const DocumentArnRegex =
+	/^arn:(?<partition>[^:]+):finops-agent:(?<region>[^:]*):(?<account>[^:]*):agentspace\/(?<agentSpaceId>[^:/?]+)\/document\/(?<documentId>[^:/?]+)$/;
+const IntegrationArnRegex =
+	/^arn:(?<partition>[^:]+):finops-agent:(?<region>[^:]*):(?<account>[^:]*):integration\/(?<integrationId>[^:/?]+)$/;
+
+/**
+ * ARN builders, validators, and parsers for finops-agent resources.
+ */
+export class FinopsAgentResources {
+	/**
+	 * Builds an ARN for the agentspace resource.
+	 */
+	static agentspace(props: FinopsAgentAgentspaceArnProps): string {
+		return `arn:${props.partition ?? "aws"}:finops-agent:${props.region ?? "*"}:${props.account ?? "*"}:agentspace/${props.agentSpaceId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the agentspace resource.
+	 */
+	static isValidAgentspaceArn(arn: string): boolean {
+		return AgentspaceArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a agentspace ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseAgentspaceArn(arn: string): FinopsAgentAgentspaceArnComponents {
+		const match = AgentspaceArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid agentspace ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			agentSpaceId: match.groups!.agentSpaceId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the automation resource.
+	 */
+	static automation(props: FinopsAgentAutomationArnProps): string {
+		return `arn:${props.partition ?? "aws"}:finops-agent:${props.region ?? "*"}:${props.account ?? "*"}:agentspace/${props.agentSpaceId}/automation/${props.automationId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the automation resource.
+	 */
+	static isValidAutomationArn(arn: string): boolean {
+		return AutomationArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a automation ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseAutomationArn(arn: string): FinopsAgentAutomationArnComponents {
+		const match = AutomationArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid automation ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			agentSpaceId: match.groups!.agentSpaceId,
+			automationId: match.groups!.automationId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the connection resource.
+	 */
+	static connection(props: FinopsAgentConnectionArnProps): string {
+		return `arn:${props.partition ?? "aws"}:finops-agent:${props.region ?? "*"}:${props.account ?? "*"}:agentspace/${props.agentSpaceId}/connection/${props.connectionId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the connection resource.
+	 */
+	static isValidConnectionArn(arn: string): boolean {
+		return ConnectionArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a connection ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseConnectionArn(arn: string): FinopsAgentConnectionArnComponents {
+		const match = ConnectionArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid connection ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			agentSpaceId: match.groups!.agentSpaceId,
+			connectionId: match.groups!.connectionId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the document resource.
+	 */
+	static document(props: FinopsAgentDocumentArnProps): string {
+		return `arn:${props.partition ?? "aws"}:finops-agent:${props.region ?? "*"}:${props.account ?? "*"}:agentspace/${props.agentSpaceId}/document/${props.documentId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the document resource.
+	 */
+	static isValidDocumentArn(arn: string): boolean {
+		return DocumentArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a document ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseDocumentArn(arn: string): FinopsAgentDocumentArnComponents {
+		const match = DocumentArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid document ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			agentSpaceId: match.groups!.agentSpaceId,
+			documentId: match.groups!.documentId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the integration resource.
+	 */
+	static integration(props: FinopsAgentIntegrationArnProps): string {
+		return `arn:${props.partition ?? "aws"}:finops-agent:${props.region ?? "*"}:${props.account ?? "*"}:integration/${props.integrationId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the integration resource.
+	 */
+	static isValidIntegrationArn(arn: string): boolean {
+		return IntegrationArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a integration ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseIntegrationArn(arn: string): FinopsAgentIntegrationArnComponents {
+		const match = IntegrationArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid integration ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			integrationId: match.groups!.integrationId,
+		};
+	}
+}

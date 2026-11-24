@@ -1179,6 +1179,11 @@ export class FsxOperations {
 		"fsx:CreateBackup",
 		"fsx:TagResource",
 	];
+	/** IAM actions required for the CreateClusterPeer API call. */
+	static readonly CreateClusterPeer: string[] = [
+		"fsx:CreateClusterPeer",
+		"fsx:TagResource",
+	];
 	/** IAM actions required for the CreateDataRepositoryAssociation API call. */
 	static readonly CreateDataRepositoryAssociation: string[] = [
 		"fsx:CreateDataRepositoryAssociation",
@@ -1205,14 +1210,34 @@ export class FsxOperations {
 		"fsx:CreateFileSystemFromBackup",
 		"fsx:TagResource",
 	];
+	/** IAM actions required for the CreateSnapmirrorPolicy API call. */
+	static readonly CreateSnapmirrorPolicy: string[] = [
+		"fsx:CreateSnapmirrorPolicy",
+		"fsx:TagResource",
+	];
+	/** IAM actions required for the CreateSnapmirrorRelationship API call. */
+	static readonly CreateSnapmirrorRelationship: string[] = [
+		"fsx:CreateSnapmirrorRelationship",
+		"fsx:TagResource",
+	];
 	/** IAM actions required for the CreateSnapshot API call. */
 	static readonly CreateSnapshot: string[] = [
 		"fsx:CreateSnapshot",
 		"fsx:TagResource",
 	];
+	/** IAM actions required for the CreateSnapshotPolicy API call. */
+	static readonly CreateSnapshotPolicy: string[] = [
+		"fsx:CreateSnapshotPolicy",
+		"fsx:TagResource",
+	];
 	/** IAM actions required for the CreateStorageVirtualMachine API call. */
 	static readonly CreateStorageVirtualMachine: string[] = [
 		"fsx:CreateStorageVirtualMachine",
+		"fsx:TagResource",
+	];
+	/** IAM actions required for the CreateStorageVirtualMachinePeer API call. */
+	static readonly CreateStorageVirtualMachinePeer: string[] = [
+		"fsx:CreateStorageVirtualMachinePeer",
 		"fsx:TagResource",
 	];
 	/** IAM actions required for the CreateVolume API call. */
@@ -1227,6 +1252,8 @@ export class FsxOperations {
 	];
 	/** IAM actions required for the DeleteBackup API call. */
 	static readonly DeleteBackup: string[] = ["fsx:DeleteBackup"];
+	/** IAM actions required for the DeleteClusterPeer API call. */
+	static readonly DeleteClusterPeer: string[] = ["fsx:DeleteClusterPeer"];
 	/** IAM actions required for the DeleteDataRepositoryAssociation API call. */
 	static readonly DeleteDataRepositoryAssociation: string[] = [
 		"fsx:DeleteDataRepositoryAssociation",
@@ -1242,11 +1269,25 @@ export class FsxOperations {
 		"fsx:DeleteFileSystem",
 		"fsx:TagResource",
 	];
+	/** IAM actions required for the DeleteSnapmirrorPolicy API call. */
+	static readonly DeleteSnapmirrorPolicy: string[] = [
+		"fsx:DeleteSnapmirrorPolicy",
+	];
+	/** IAM actions required for the DeleteSnapmirrorRelationship API call. */
+	static readonly DeleteSnapmirrorRelationship: string[] = [
+		"fsx:DeleteSnapmirrorRelationship",
+	];
 	/** IAM actions required for the DeleteSnapshot API call. */
 	static readonly DeleteSnapshot: string[] = ["fsx:DeleteSnapshot"];
+	/** IAM actions required for the DeleteSnapshotPolicy API call. */
+	static readonly DeleteSnapshotPolicy: string[] = ["fsx:DeleteSnapshotPolicy"];
 	/** IAM actions required for the DeleteStorageVirtualMachine API call. */
 	static readonly DeleteStorageVirtualMachine: string[] = [
 		"fsx:DeleteStorageVirtualMachine",
+	];
+	/** IAM actions required for the DeleteStorageVirtualMachinePeer API call. */
+	static readonly DeleteStorageVirtualMachinePeer: string[] = [
+		"fsx:DeleteStorageVirtualMachinePeer",
 	];
 	/** IAM actions required for the DeleteVolume API call. */
 	static readonly DeleteVolume: string[] = [
@@ -1256,6 +1297,8 @@ export class FsxOperations {
 	];
 	/** IAM actions required for the DescribeBackups API call. */
 	static readonly DescribeBackups: string[] = ["fsx:DescribeBackups"];
+	/** IAM actions required for the DescribeClusterPeers API call. */
+	static readonly DescribeClusterPeers: string[] = ["fsx:DescribeClusterPeers"];
 	/** IAM actions required for the DescribeDataRepositoryAssociations API call. */
 	static readonly DescribeDataRepositoryAssociations: string[] = [
 		"fsx:DescribeDataRepositoryAssociations",
@@ -1280,8 +1323,24 @@ export class FsxOperations {
 	static readonly DescribeSharedVpcConfiguration: string[] = [
 		"fsx:DescribeSharedVpcConfiguration",
 	];
+	/** IAM actions required for the DescribeSnapmirrorPolicies API call. */
+	static readonly DescribeSnapmirrorPolicies: string[] = [
+		"fsx:DescribeSnapmirrorPolicies",
+	];
+	/** IAM actions required for the DescribeSnapmirrorRelationships API call. */
+	static readonly DescribeSnapmirrorRelationships: string[] = [
+		"fsx:DescribeSnapmirrorRelationships",
+	];
+	/** IAM actions required for the DescribeSnapshotPolicies API call. */
+	static readonly DescribeSnapshotPolicies: string[] = [
+		"fsx:DescribeSnapshotPolicies",
+	];
 	/** IAM actions required for the DescribeSnapshots API call. */
 	static readonly DescribeSnapshots: string[] = ["fsx:DescribeSnapshots"];
+	/** IAM actions required for the DescribeStorageVirtualMachinePeers API call. */
+	static readonly DescribeStorageVirtualMachinePeers: string[] = [
+		"fsx:DescribeStorageVirtualMachinePeers",
+	];
 	/** IAM actions required for the DescribeStorageVirtualMachines API call. */
 	static readonly DescribeStorageVirtualMachines: string[] = [
 		"fsx:DescribeStorageVirtualMachines",
@@ -1314,6 +1373,8 @@ export class FsxOperations {
 	static readonly TagResource: string[] = ["fsx:TagResource"];
 	/** IAM actions required for the UntagResource API call. */
 	static readonly UntagResource: string[] = ["fsx:UntagResource"];
+	/** IAM actions required for the UpdateClusterPeer API call. */
+	static readonly UpdateClusterPeer: string[] = ["fsx:UpdateClusterPeer"];
 	/** IAM actions required for the UpdateDataRepositoryAssociation API call. */
 	static readonly UpdateDataRepositoryAssociation: string[] = [
 		"fsx:UpdateDataRepositoryAssociation",
@@ -1326,11 +1387,25 @@ export class FsxOperations {
 	static readonly UpdateSharedVpcConfiguration: string[] = [
 		"fsx:UpdateSharedVpcConfiguration",
 	];
+	/** IAM actions required for the UpdateSnapmirrorPolicy API call. */
+	static readonly UpdateSnapmirrorPolicy: string[] = [
+		"fsx:UpdateSnapmirrorPolicy",
+	];
+	/** IAM actions required for the UpdateSnapmirrorRelationship API call. */
+	static readonly UpdateSnapmirrorRelationship: string[] = [
+		"fsx:UpdateSnapmirrorRelationship",
+	];
 	/** IAM actions required for the UpdateSnapshot API call. */
 	static readonly UpdateSnapshot: string[] = ["fsx:UpdateSnapshot"];
+	/** IAM actions required for the UpdateSnapshotPolicy API call. */
+	static readonly UpdateSnapshotPolicy: string[] = ["fsx:UpdateSnapshotPolicy"];
 	/** IAM actions required for the UpdateStorageVirtualMachine API call. */
 	static readonly UpdateStorageVirtualMachine: string[] = [
 		"fsx:UpdateStorageVirtualMachine",
+	];
+	/** IAM actions required for the UpdateStorageVirtualMachinePeer API call. */
+	static readonly UpdateStorageVirtualMachinePeer: string[] = [
+		"fsx:UpdateStorageVirtualMachinePeer",
 	];
 	/** IAM actions required for the UpdateVolume API call. */
 	static readonly UpdateVolume: string[] = ["fsx:UpdateVolume"];

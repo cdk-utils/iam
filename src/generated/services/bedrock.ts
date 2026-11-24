@@ -19,6 +19,8 @@ export class BedrockActions {
 		"bedrock:AllowVendedLogDeliveryForResource";
 	/** [Read] bedrock:ApplyGuardrail */
 	static readonly ApplyGuardrail = "bedrock:ApplyGuardrail";
+	/** [Write] bedrock:ArchiveProject */
+	static readonly ArchiveProject = "bedrock:ArchiveProject";
 	/** [Write] bedrock:AssociateAgentCollaborator */
 	static readonly AssociateAgentCollaborator =
 		"bedrock:AssociateAgentCollaborator";
@@ -118,6 +120,8 @@ export class BedrockActions {
 	static readonly CreateModelImportJob = "bedrock:CreateModelImportJob";
 	/** [Write] bedrock:CreateModelInvocationJob */
 	static readonly CreateModelInvocationJob = "bedrock:CreateModelInvocationJob";
+	/** [Write] bedrock:CreateProject */
+	static readonly CreateProject = "bedrock:CreateProject";
 	/** [Write] bedrock:CreatePrompt */
 	static readonly CreatePrompt = "bedrock:CreatePrompt";
 	/** [Write] bedrock:CreatePromptRouter */
@@ -135,6 +139,9 @@ export class BedrockActions {
 		"bedrock:CreateRetrievalInstructionVersion";
 	/** [Write] bedrock:CreateSession */
 	static readonly CreateSession = "bedrock:CreateSession";
+	/** [Write] bedrock:DeleteAccountDataRetentionStorage */
+	static readonly DeleteAccountDataRetentionStorage =
+		"bedrock:DeleteAccountDataRetentionStorage";
 	/** [Write] bedrock:DeleteAgent */
 	static readonly DeleteAgent = "bedrock:DeleteAgent";
 	/** [Write] bedrock:DeleteAgentActionGroup */
@@ -203,6 +210,12 @@ export class BedrockActions {
 	/** [Write] bedrock:DeleteModelInvocationLoggingConfiguration */
 	static readonly DeleteModelInvocationLoggingConfiguration =
 		"bedrock:DeleteModelInvocationLoggingConfiguration";
+	/** [Write] bedrock:DeleteOrganizationDataRetentionStorage */
+	static readonly DeleteOrganizationDataRetentionStorage =
+		"bedrock:DeleteOrganizationDataRetentionStorage";
+	/** [Write] bedrock:DeleteProjectDataRetentionStorage */
+	static readonly DeleteProjectDataRetentionStorage =
+		"bedrock:DeleteProjectDataRetentionStorage";
 	/** [Write] bedrock:DeletePrompt */
 	static readonly DeletePrompt = "bedrock:DeletePrompt";
 	/** [Write] bedrock:DeletePromptRouter */
@@ -238,6 +251,9 @@ export class BedrockActions {
 	/** [Read] bedrock:GetAccountDataRetention */
 	static readonly actionGetAccountDataRetention =
 		"bedrock:GetAccountDataRetention";
+	/** [Read] bedrock:GetAccountDataRetentionStorage */
+	static readonly actionGetAccountDataRetentionStorage =
+		"bedrock:GetAccountDataRetentionStorage";
 	/** [Read] bedrock:GetAdvancedPromptOptimizationJob */
 	static readonly actionGetAdvancedPromptOptimizationJob =
 		"bedrock:GetAdvancedPromptOptimizationJob";
@@ -368,6 +384,14 @@ export class BedrockActions {
 	/** [Read] bedrock:GetModelInvocationLoggingConfiguration */
 	static readonly actionGetModelInvocationLoggingConfiguration =
 		"bedrock:GetModelInvocationLoggingConfiguration";
+	/** [Read] bedrock:GetOrganizationDataRetentionStorage */
+	static readonly actionGetOrganizationDataRetentionStorage =
+		"bedrock:GetOrganizationDataRetentionStorage";
+	/** [Read] bedrock:GetProject */
+	static readonly actionGetProject = "bedrock:GetProject";
+	/** [Read] bedrock:GetProjectDataRetentionStorage */
+	static readonly actionGetProjectDataRetentionStorage =
+		"bedrock:GetProjectDataRetentionStorage";
 	/** [Read] bedrock:GetPrompt */
 	static readonly actionGetPrompt = "bedrock:GetPrompt";
 	/** [Read] bedrock:GetPromptRouter */
@@ -382,6 +406,18 @@ export class BedrockActions {
 		"bedrock:GetRetrievalInstruction";
 	/** [Read] bedrock:GetSession */
 	static readonly actionGetSession = "bedrock:GetSession";
+	/** [Read] bedrock:GetTrustedAccessProgram */
+	static readonly actionGetTrustedAccessProgram =
+		"bedrock:GetTrustedAccessProgram";
+	/** [Read] bedrock:GetTrustedAccessProgramAccountEnrollment */
+	static readonly actionGetTrustedAccessProgramAccountEnrollment =
+		"bedrock:GetTrustedAccessProgramAccountEnrollment";
+	/** [Read] bedrock:GetTrustedAccessProgramOrganizationEnrollment */
+	static readonly actionGetTrustedAccessProgramOrganizationEnrollment =
+		"bedrock:GetTrustedAccessProgramOrganizationEnrollment";
+	/** [Read] bedrock:GetTrustedAccessProgramProjectEnrollment */
+	static readonly actionGetTrustedAccessProgramProjectEnrollment =
+		"bedrock:GetTrustedAccessProgramProjectEnrollment";
 	/** [Read] bedrock:GetUseCaseForModelAccess */
 	static readonly actionGetUseCaseForModelAccess =
 		"bedrock:GetUseCaseForModelAccess";
@@ -523,6 +559,8 @@ export class BedrockActions {
 	static readonly ListModelImportJobs = "bedrock:ListModelImportJobs";
 	/** [List] bedrock:ListModelInvocationJobs */
 	static readonly ListModelInvocationJobs = "bedrock:ListModelInvocationJobs";
+	/** [List] bedrock:ListProjects */
+	static readonly ListProjects = "bedrock:ListProjects";
 	/** [List] bedrock:ListPromptRouters */
 	static readonly ListPromptRouters = "bedrock:ListPromptRouters";
 	/** [List] bedrock:ListPrompts */
@@ -540,6 +578,9 @@ export class BedrockActions {
 	static readonly ListSessions = "bedrock:ListSessions";
 	/** [Read] bedrock:ListTagsForResource */
 	static readonly ListTagsForResource = "bedrock:ListTagsForResource";
+	/** [List] bedrock:ListTrustedAccessPrograms */
+	static readonly ListTrustedAccessPrograms =
+		"bedrock:ListTrustedAccessPrograms";
 	/** [Read] bedrock:OptimizePrompt */
 	static readonly OptimizePrompt = "bedrock:OptimizePrompt";
 	/** [Write] bedrock:PrepareAgent */
@@ -548,6 +589,9 @@ export class BedrockActions {
 	static readonly PrepareFlow = "bedrock:PrepareFlow";
 	/** [Write] bedrock:PutAccountDataRetention */
 	static readonly PutAccountDataRetention = "bedrock:PutAccountDataRetention";
+	/** [Write] bedrock:PutAccountDataRetentionStorage */
+	static readonly PutAccountDataRetentionStorage =
+		"bedrock:PutAccountDataRetentionStorage";
 	/** [Write] bedrock:PutEnforcedGuardrailConfiguration */
 	static readonly PutEnforcedGuardrailConfiguration =
 		"bedrock:PutEnforcedGuardrailConfiguration";
@@ -559,8 +603,23 @@ export class BedrockActions {
 	/** [Write] bedrock:PutModelInvocationLoggingConfiguration */
 	static readonly PutModelInvocationLoggingConfiguration =
 		"bedrock:PutModelInvocationLoggingConfiguration";
+	/** [Write] bedrock:PutOrganizationDataRetentionStorage */
+	static readonly PutOrganizationDataRetentionStorage =
+		"bedrock:PutOrganizationDataRetentionStorage";
+	/** [Write] bedrock:PutProjectDataRetentionStorage */
+	static readonly PutProjectDataRetentionStorage =
+		"bedrock:PutProjectDataRetentionStorage";
 	/** [Write] bedrock:PutResourcePolicy */
 	static readonly PutResourcePolicy = "bedrock:PutResourcePolicy";
+	/** [Write] bedrock:PutTrustedAccessProgramAccountEnrollment */
+	static readonly PutTrustedAccessProgramAccountEnrollment =
+		"bedrock:PutTrustedAccessProgramAccountEnrollment";
+	/** [Write] bedrock:PutTrustedAccessProgramOrganizationEnrollment */
+	static readonly PutTrustedAccessProgramOrganizationEnrollment =
+		"bedrock:PutTrustedAccessProgramOrganizationEnrollment";
+	/** [Write] bedrock:PutTrustedAccessProgramProjectEnrollment */
+	static readonly PutTrustedAccessProgramProjectEnrollment =
+		"bedrock:PutTrustedAccessProgramProjectEnrollment";
 	/** [Write] bedrock:PutUseCaseForModelAccess */
 	static readonly PutUseCaseForModelAccess = "bedrock:PutUseCaseForModelAccess";
 	/** [Write] bedrock:RegisterMarketplaceModelEndpoint */
@@ -584,6 +643,15 @@ export class BedrockActions {
 	static readonly StartFlowExecution = "bedrock:StartFlowExecution";
 	/** [Write] bedrock:StartIngestionJob */
 	static readonly StartIngestionJob = "bedrock:StartIngestionJob";
+	/** [Write] bedrock:StartTrustedAccessProgramAccountApplication */
+	static readonly StartTrustedAccessProgramAccountApplication =
+		"bedrock:StartTrustedAccessProgramAccountApplication";
+	/** [Write] bedrock:StartTrustedAccessProgramOrganizationApplication */
+	static readonly StartTrustedAccessProgramOrganizationApplication =
+		"bedrock:StartTrustedAccessProgramOrganizationApplication";
+	/** [Write] bedrock:StartTrustedAccessProgramProjectApplication */
+	static readonly StartTrustedAccessProgramProjectApplication =
+		"bedrock:StartTrustedAccessProgramProjectApplication";
 	/** [Write] bedrock:StopAdvancedPromptOptimizationJob */
 	static readonly StopAdvancedPromptOptimizationJob =
 		"bedrock:StopAdvancedPromptOptimizationJob";
@@ -645,6 +713,8 @@ export class BedrockActions {
 	/** [Write] bedrock:UpdateMarketplaceModelEndpoint */
 	static readonly UpdateMarketplaceModelEndpoint =
 		"bedrock:UpdateMarketplaceModelEndpoint";
+	/** [Write] bedrock:UpdateProject */
+	static readonly UpdateProject = "bedrock:UpdateProject";
 	/** [Write] bedrock:UpdatePrompt */
 	static readonly UpdatePrompt = "bedrock:UpdatePrompt";
 	/** [Write] bedrock:UpdateProvisionedModelThroughput */
@@ -669,6 +739,7 @@ export class BedrockActions {
 		BedrockActions.ExportAutomatedReasoningPolicyVersion,
 		BedrockActions.GenerateQuery,
 		BedrockActions.actionGetAccountDataRetention,
+		BedrockActions.actionGetAccountDataRetentionStorage,
 		BedrockActions.actionGetAdvancedPromptOptimizationJob,
 		BedrockActions.actionGetAgent,
 		BedrockActions.actionGetAgentActionGroup,
@@ -722,12 +793,19 @@ export class BedrockActions {
 		BedrockActions.actionGetModelImportJob,
 		BedrockActions.actionGetModelInvocationJob,
 		BedrockActions.actionGetModelInvocationLoggingConfiguration,
+		BedrockActions.actionGetOrganizationDataRetentionStorage,
+		BedrockActions.actionGetProject,
+		BedrockActions.actionGetProjectDataRetentionStorage,
 		BedrockActions.actionGetPrompt,
 		BedrockActions.actionGetPromptRouter,
 		BedrockActions.actionGetProvisionedModelThroughput,
 		BedrockActions.actionGetResourcePolicy,
 		BedrockActions.actionGetRetrievalInstruction,
 		BedrockActions.actionGetSession,
+		BedrockActions.actionGetTrustedAccessProgram,
+		BedrockActions.actionGetTrustedAccessProgramAccountEnrollment,
+		BedrockActions.actionGetTrustedAccessProgramOrganizationEnrollment,
+		BedrockActions.actionGetTrustedAccessProgramProjectEnrollment,
 		BedrockActions.actionGetUseCaseForModelAccess,
 		BedrockActions.InvokeAgent,
 		BedrockActions.InvokeAutomatedReasoningPolicy,
@@ -746,6 +824,7 @@ export class BedrockActions {
 	];
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
+		BedrockActions.ArchiveProject,
 		BedrockActions.AssociateAgentCollaborator,
 		BedrockActions.AssociateAgentKnowledgeBase,
 		BedrockActions.AssociateThirdPartyKnowledgeBase,
@@ -785,6 +864,7 @@ export class BedrockActions {
 		BedrockActions.CreateModelEvaluationJob,
 		BedrockActions.CreateModelImportJob,
 		BedrockActions.CreateModelInvocationJob,
+		BedrockActions.CreateProject,
 		BedrockActions.CreatePrompt,
 		BedrockActions.CreatePromptRouter,
 		BedrockActions.CreatePromptVersion,
@@ -792,6 +872,7 @@ export class BedrockActions {
 		BedrockActions.CreateRetrievalInstruction,
 		BedrockActions.CreateRetrievalInstructionVersion,
 		BedrockActions.CreateSession,
+		BedrockActions.DeleteAccountDataRetentionStorage,
 		BedrockActions.DeleteAgent,
 		BedrockActions.DeleteAgentActionGroup,
 		BedrockActions.DeleteAgentAlias,
@@ -820,6 +901,8 @@ export class BedrockActions {
 		BedrockActions.DeleteMarketplaceModelAgreement,
 		BedrockActions.DeleteMarketplaceModelEndpoint,
 		BedrockActions.DeleteModelInvocationLoggingConfiguration,
+		BedrockActions.DeleteOrganizationDataRetentionStorage,
+		BedrockActions.DeleteProjectDataRetentionStorage,
 		BedrockActions.DeletePrompt,
 		BedrockActions.DeletePromptRouter,
 		BedrockActions.DeleteProvisionedModelThroughput,
@@ -840,11 +923,17 @@ export class BedrockActions {
 		BedrockActions.PrepareAgent,
 		BedrockActions.PrepareFlow,
 		BedrockActions.PutAccountDataRetention,
+		BedrockActions.PutAccountDataRetentionStorage,
 		BedrockActions.PutEnforcedGuardrailConfiguration,
 		BedrockActions.PutFoundationModelEntitlement,
 		BedrockActions.PutInvocationStep,
 		BedrockActions.PutModelInvocationLoggingConfiguration,
+		BedrockActions.PutOrganizationDataRetentionStorage,
+		BedrockActions.PutProjectDataRetentionStorage,
 		BedrockActions.PutResourcePolicy,
+		BedrockActions.PutTrustedAccessProgramAccountEnrollment,
+		BedrockActions.PutTrustedAccessProgramOrganizationEnrollment,
+		BedrockActions.PutTrustedAccessProgramProjectEnrollment,
 		BedrockActions.PutUseCaseForModelAccess,
 		BedrockActions.RegisterMarketplaceModelEndpoint,
 		BedrockActions.Rerank,
@@ -853,6 +942,9 @@ export class BedrockActions {
 		BedrockActions.StartAutomatedReasoningPolicyTestWorkflow,
 		BedrockActions.StartFlowExecution,
 		BedrockActions.StartIngestionJob,
+		BedrockActions.StartTrustedAccessProgramAccountApplication,
+		BedrockActions.StartTrustedAccessProgramOrganizationApplication,
+		BedrockActions.StartTrustedAccessProgramProjectApplication,
 		BedrockActions.StopAdvancedPromptOptimizationJob,
 		BedrockActions.StopEvaluationJob,
 		BedrockActions.StopFlowExecution,
@@ -877,6 +969,7 @@ export class BedrockActions {
 		BedrockActions.UpdateGuardrail,
 		BedrockActions.UpdateKnowledgeBase,
 		BedrockActions.UpdateMarketplaceModelEndpoint,
+		BedrockActions.UpdateProject,
 		BedrockActions.UpdatePrompt,
 		BedrockActions.UpdateProvisionedModelThroughput,
 		BedrockActions.UpdateRetrievalInstruction,
@@ -926,12 +1019,14 @@ export class BedrockActions {
 		BedrockActions.ListModelEvaluationJobs,
 		BedrockActions.ListModelImportJobs,
 		BedrockActions.ListModelInvocationJobs,
+		BedrockActions.ListProjects,
 		BedrockActions.ListPromptRouters,
 		BedrockActions.ListPrompts,
 		BedrockActions.ListProvisionedModelThroughputs,
 		BedrockActions.ListRetrievalInstructionVersions,
 		BedrockActions.ListRetrievalInstructions,
 		BedrockActions.ListSessions,
+		BedrockActions.ListTrustedAccessPrograms,
 	];
 	/** All permission-management-level actions. */
 	static readonly AllPermissionManagementActions: string[] = [
@@ -2108,6 +2203,34 @@ export interface BedrockSystemToolArnComponents {
 	readonly resourceId: string;
 }
 
+/**
+ * Properties for building a trusted-access-program ARN.
+ */
+export interface BedrockTrustedAccessProgramArnProps {
+	/** The ProgramId component of the ARN. */
+	readonly programId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a trusted-access-program ARN.
+ */
+export interface BedrockTrustedAccessProgramArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ProgramId component. */
+	readonly programId: string;
+}
+
 const AdvancedPromptOptimizationJobArnRegex =
 	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):advanced-prompt-optimization-job\/(?<resourceId>[^:/?]+)$/;
 const AgentArnRegex =
@@ -2190,6 +2313,8 @@ const SessionArnRegex =
 	/^arn:(?<partition>[^:]+):bedrock:(?<region>[^:]*):(?<account>[^:]*):session\/(?<sessionId>[^:/?]+)$/;
 const SystemToolArnRegex =
 	/^arn:(?<partition>[^:]+):bedrock::(?<account>[^:]*):system-tool\/(?<resourceId>[^:/?]+)$/;
+const TrustedAccessProgramArnRegex =
+	/^arn:(?<partition>[^:]+):bedrock::aws:trusted-access-program\/(?<programId>[^:/?]+)$/;
 
 /**
  * ARN builders, validators, and parsers for bedrock resources.
@@ -3546,6 +3671,41 @@ export class BedrockResources {
 			resourceId: match.groups!.resourceId,
 		};
 	}
+
+	/**
+	 * Builds an ARN for the trusted-access-program resource.
+	 */
+	static trustedAccessProgram(
+		props: BedrockTrustedAccessProgramArnProps,
+	): string {
+		return `arn:${props.partition ?? "aws"}:bedrock::aws:trusted-access-program/${props.programId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the trusted-access-program resource.
+	 */
+	static isValidTrustedAccessProgramArn(arn: string): boolean {
+		return TrustedAccessProgramArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a trusted-access-program ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseTrustedAccessProgramArn(
+		arn: string,
+	): BedrockTrustedAccessProgramArnComponents {
+		const match = TrustedAccessProgramArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid trusted-access-program ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			programId: match.groups!.programId,
+		};
+	}
 }
 
 /**
@@ -3564,7 +3724,7 @@ export class BedrockOperations {
 		"bedrock:InvokeAutomatedReasoningPolicy",
 	];
 	/** IAM actions required for the ArchiveProject API call. */
-	static readonly ArchiveProject: string[] = [];
+	static readonly ArchiveProject: string[] = ["bedrock:ArchiveProject"];
 	/** IAM actions required for the AssociateAgentCollaborator API call. */
 	static readonly AssociateAgentCollaborator: string[] = [
 		"bedrock:AssociateAgentCollaborator",
@@ -3684,7 +3844,6 @@ export class BedrockOperations {
 	static readonly CreateDataSource: string[] = ["bedrock:CreateDataSource"];
 	/** IAM actions required for the CreateEvaluationJob API call. */
 	static readonly CreateEvaluationJob: string[] = [
-		"bedrock:CallWithBearerToken",
 		"bedrock:CreateEvaluationJob",
 		"iam:PassRole",
 		"bedrock:TagResource",
@@ -3767,7 +3926,11 @@ export class BedrockOperations {
 		"bedrock:TagResource",
 	];
 	/** IAM actions required for the CreateProject API call. */
-	static readonly CreateProject: string[] = ["bedrock:TagResource"];
+	static readonly CreateProject: string[] = [
+		"bedrock:CallWithBearerToken",
+		"bedrock:CreateProject",
+		"bedrock:TagResource",
+	];
 	/** IAM actions required for the CreatePrompt API call. */
 	static readonly CreatePrompt: string[] = [
 		"bedrock:CreatePrompt",
@@ -3807,7 +3970,9 @@ export class BedrockOperations {
 	/** IAM actions required for the CreateVpcConfiguration API call. */
 	static readonly CreateVpcConfiguration: string[] = [];
 	/** IAM actions required for the DeleteAccountDataRetentionStorage API call. */
-	static readonly DeleteAccountDataRetentionStorage: string[] = [];
+	static readonly DeleteAccountDataRetentionStorage: string[] = [
+		"bedrock:DeleteAccountDataRetentionStorage",
+	];
 	/** IAM actions required for the DeleteAgent API call. */
 	static readonly DeleteAgent: string[] = ["bedrock:DeleteAgent"];
 	/** IAM actions required for the DeleteAgentActionGroup API call. */
@@ -3904,9 +4069,13 @@ export class BedrockOperations {
 		"bedrock:DeleteModelInvocationLoggingConfiguration",
 	];
 	/** IAM actions required for the DeleteOrganizationDataRetentionStorage API call. */
-	static readonly DeleteOrganizationDataRetentionStorage: string[] = [];
+	static readonly DeleteOrganizationDataRetentionStorage: string[] = [
+		"bedrock:DeleteOrganizationDataRetentionStorage",
+	];
 	/** IAM actions required for the DeleteProjectDataRetentionStorage API call. */
-	static readonly DeleteProjectDataRetentionStorage: string[] = [];
+	static readonly DeleteProjectDataRetentionStorage: string[] = [
+		"bedrock:DeleteProjectDataRetentionStorage",
+	];
 	/** IAM actions required for the DeletePrompt API call. */
 	static readonly DeletePrompt: string[] = ["bedrock:DeletePrompt"];
 	/** IAM actions required for the DeletePromptRouter API call. */
@@ -3963,7 +4132,10 @@ export class BedrockOperations {
 		"bedrock:GetAccountDataRetention",
 	];
 	/** IAM actions required for the GetAccountDataRetentionStorage API call. */
-	static readonly opGetAccountDataRetentionStorage: string[] = [];
+	static readonly opGetAccountDataRetentionStorage: string[] = [
+		"bedrock:CallWithBearerToken",
+		"bedrock:GetAccountDataRetentionStorage",
+	];
 	/** IAM actions required for the GetAdvancedPromptOptimizationJob API call. */
 	static readonly opGetAdvancedPromptOptimizationJob: string[] = [
 		"bedrock:CallWithBearerToken",
@@ -4149,11 +4321,15 @@ export class BedrockOperations {
 		"bedrock:GetModelInvocationLoggingConfiguration",
 	];
 	/** IAM actions required for the GetOrganizationDataRetentionStorage API call. */
-	static readonly opGetOrganizationDataRetentionStorage: string[] = [];
+	static readonly opGetOrganizationDataRetentionStorage: string[] = [
+		"bedrock:GetOrganizationDataRetentionStorage",
+	];
 	/** IAM actions required for the GetProject API call. */
-	static readonly opGetProject: string[] = [];
+	static readonly opGetProject: string[] = ["bedrock:GetProject"];
 	/** IAM actions required for the GetProjectDataRetentionStorage API call. */
-	static readonly opGetProjectDataRetentionStorage: string[] = [];
+	static readonly opGetProjectDataRetentionStorage: string[] = [
+		"bedrock:GetProjectDataRetentionStorage",
+	];
 	/** IAM actions required for the GetPrompt API call. */
 	static readonly opGetPrompt: string[] = ["bedrock:GetPrompt"];
 	/** IAM actions required for the GetPromptRouter API call. */
@@ -4175,12 +4351,17 @@ export class BedrockOperations {
 	/** IAM actions required for the GetSession API call. */
 	static readonly opGetSession: string[] = ["bedrock:GetSession"];
 	/** IAM actions required for the GetTrustedAccessProgram API call. */
-	static readonly opGetTrustedAccessProgram: string[] = [];
+	static readonly opGetTrustedAccessProgram: string[] = [
+		"bedrock:GetTrustedAccessProgram",
+	];
 	/** IAM actions required for the GetTrustedAccessProgramAccountEnrollment API call. */
-	static readonly opGetTrustedAccessProgramAccountEnrollment: string[] = [];
+	static readonly opGetTrustedAccessProgramAccountEnrollment: string[] = [
+		"bedrock:GetTrustedAccessProgramAccountEnrollment",
+	];
 	/** IAM actions required for the GetTrustedAccessProgramOrganizationEnrollment API call. */
-	static readonly opGetTrustedAccessProgramOrganizationEnrollment: string[] =
-		[];
+	static readonly opGetTrustedAccessProgramOrganizationEnrollment: string[] = [
+		"bedrock:GetTrustedAccessProgramOrganizationEnrollment",
+	];
 	/** IAM actions required for the GetTrustedAccessProgramProjectEnrollment API call. */
 	static readonly opGetTrustedAccessProgramProjectEnrollment: string[] = [];
 	/** IAM actions required for the GetUseCaseForModelAccess API call. */
@@ -4400,7 +4581,7 @@ export class BedrockOperations {
 		"bedrock:ListModelInvocationJobs",
 	];
 	/** IAM actions required for the ListProjects API call. */
-	static readonly ListProjects: string[] = [];
+	static readonly ListProjects: string[] = ["bedrock:ListProjects"];
 	/** IAM actions required for the ListPromptRouters API call. */
 	static readonly ListPromptRouters: string[] = [
 		"bedrock:CallWithBearerToken",
@@ -4431,6 +4612,7 @@ export class BedrockOperations {
 	/** IAM actions required for the ListTrustedAccessPrograms API call. */
 	static readonly ListTrustedAccessPrograms: string[] = [
 		"bedrock:CallWithBearerToken",
+		"bedrock:ListTrustedAccessPrograms",
 	];
 	/** IAM actions required for the ListVpcConfigurations API call. */
 	static readonly ListVpcConfigurations: string[] = [];
@@ -4446,7 +4628,9 @@ export class BedrockOperations {
 		"bedrock:PutAccountDataRetention",
 	];
 	/** IAM actions required for the PutAccountDataRetentionStorage API call. */
-	static readonly PutAccountDataRetentionStorage: string[] = [];
+	static readonly PutAccountDataRetentionStorage: string[] = [
+		"bedrock:PutAccountDataRetentionStorage",
+	];
 	/** IAM actions required for the PutEnforcedGuardrailConfiguration API call. */
 	static readonly PutEnforcedGuardrailConfiguration: string[] = [
 		"bedrock:PutEnforcedGuardrailConfiguration",
@@ -4460,9 +4644,13 @@ export class BedrockOperations {
 		"bedrock:PutModelInvocationLoggingConfiguration",
 	];
 	/** IAM actions required for the PutOrganizationDataRetentionStorage API call. */
-	static readonly PutOrganizationDataRetentionStorage: string[] = [];
+	static readonly PutOrganizationDataRetentionStorage: string[] = [
+		"bedrock:PutOrganizationDataRetentionStorage",
+	];
 	/** IAM actions required for the PutProjectDataRetentionStorage API call. */
-	static readonly PutProjectDataRetentionStorage: string[] = [];
+	static readonly PutProjectDataRetentionStorage: string[] = [
+		"bedrock:PutProjectDataRetentionStorage",
+	];
 	/** IAM actions required for the PutResourcePolicy API call. */
 	static readonly PutResourcePolicy: string[] = ["bedrock:PutResourcePolicy"];
 	/** IAM actions required for the PutTrustedAccessProgramAccountEnrollment API call. */
@@ -4521,7 +4709,9 @@ export class BedrockOperations {
 	static readonly StartTrustedAccessProgramOrganizationApplication: string[] =
 		[];
 	/** IAM actions required for the StartTrustedAccessProgramProjectApplication API call. */
-	static readonly StartTrustedAccessProgramProjectApplication: string[] = [];
+	static readonly StartTrustedAccessProgramProjectApplication: string[] = [
+		"bedrock:StartTrustedAccessProgramProjectApplication",
+	];
 	/** IAM actions required for the StopAdvancedPromptOptimizationJob API call. */
 	static readonly StopAdvancedPromptOptimizationJob: string[] = [
 		"bedrock:StopAdvancedPromptOptimizationJob",
@@ -4623,7 +4813,7 @@ export class BedrockOperations {
 		"bedrock:UpdateMarketplaceModelEndpoint",
 	];
 	/** IAM actions required for the UpdateProject API call. */
-	static readonly UpdateProject: string[] = [];
+	static readonly UpdateProject: string[] = ["bedrock:UpdateProject"];
 	/** IAM actions required for the UpdatePrompt API call. */
 	static readonly UpdatePrompt: string[] = ["bedrock:UpdatePrompt"];
 	/** IAM actions required for the UpdateProvisionedModelThroughput API call. */
@@ -4763,6 +4953,12 @@ export class BedrockConditions {
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
+	/** Condition keys applicable to the CreateProject action. */
+	static readonly CreateProjectConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+		"bedrock:DataRetentionMode",
+	];
 	/** Condition keys applicable to the CreatePrompt action. */
 	static readonly CreatePromptConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
@@ -4793,6 +4989,27 @@ export class BedrockConditions {
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
+	/** Condition keys applicable to the GetFoundationModel action. */
+	static readonly actionGetFoundationModelConditionKeys: string[] = [
+		"bedrock:ProjectArn",
+	];
+	/** Condition keys applicable to the GetInferenceProfile action. */
+	static readonly actionGetInferenceProfileConditionKeys: string[] = [
+		"bedrock:ProjectArn",
+	];
+	/** Condition keys applicable to the GetTrustedAccessProgram action. */
+	static readonly actionGetTrustedAccessProgramConditionKeys: string[] = [
+		"bedrock:Provider",
+	];
+	/** Condition keys applicable to the GetTrustedAccessProgramAccountEnrollment action. */
+	static readonly actionGetTrustedAccessProgramAccountEnrollmentConditionKeys: string[] =
+		["bedrock:Provider"];
+	/** Condition keys applicable to the GetTrustedAccessProgramOrganizationEnrollment action. */
+	static readonly actionGetTrustedAccessProgramOrganizationEnrollmentConditionKeys: string[] =
+		["bedrock:Provider"];
+	/** Condition keys applicable to the GetTrustedAccessProgramProjectEnrollment action. */
+	static readonly actionGetTrustedAccessProgramProjectEnrollmentConditionKeys: string[] =
+		["bedrock:Provider"];
 	/** Condition keys applicable to the InvokeBlueprintOptimizationAsync action. */
 	static readonly InvokeBlueprintOptimizationAsyncConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
@@ -4825,8 +5042,18 @@ export class BedrockConditions {
 	static readonly InvokeModelWithResponseStreamConditionKeys: string[] = [
 		"bedrock:GuardrailIdentifier",
 		"bedrock:InferenceProfileArn",
+		"bedrock:ModelArn",
+		"bedrock:ProjectArn",
 		"bedrock:PromptRouterArn",
 		"bedrock:ServiceTier",
+	];
+	/** Condition keys applicable to the ListFoundationModels action. */
+	static readonly ListFoundationModelsConditionKeys: string[] = [
+		"bedrock:ProjectArn",
+	];
+	/** Condition keys applicable to the ListInferenceProfiles action. */
+	static readonly ListInferenceProfilesConditionKeys: string[] = [
+		"bedrock:ProjectArn",
 	];
 	/** Condition keys applicable to the PutAccountDataRetention action. */
 	static readonly PutAccountDataRetentionConditionKeys: string[] = [
@@ -4837,6 +5064,24 @@ export class BedrockConditions {
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
+	/** Condition keys applicable to the PutTrustedAccessProgramAccountEnrollment action. */
+	static readonly PutTrustedAccessProgramAccountEnrollmentConditionKeys: string[] =
+		["bedrock:Provider", "bedrock:TrustedAccessProgramOptIn"];
+	/** Condition keys applicable to the PutTrustedAccessProgramOrganizationEnrollment action. */
+	static readonly PutTrustedAccessProgramOrganizationEnrollmentConditionKeys: string[] =
+		["bedrock:Provider", "bedrock:TrustedAccessProgramOptIn"];
+	/** Condition keys applicable to the PutTrustedAccessProgramProjectEnrollment action. */
+	static readonly PutTrustedAccessProgramProjectEnrollmentConditionKeys: string[] =
+		["bedrock:Provider", "bedrock:TrustedAccessProgramOptIn"];
+	/** Condition keys applicable to the StartTrustedAccessProgramAccountApplication action. */
+	static readonly StartTrustedAccessProgramAccountApplicationConditionKeys: string[] =
+		["bedrock:Provider"];
+	/** Condition keys applicable to the StartTrustedAccessProgramOrganizationApplication action. */
+	static readonly StartTrustedAccessProgramOrganizationApplicationConditionKeys: string[] =
+		["bedrock:Provider"];
+	/** Condition keys applicable to the StartTrustedAccessProgramProjectApplication action. */
+	static readonly StartTrustedAccessProgramProjectApplicationConditionKeys: string[] =
+		["bedrock:Provider"];
 	/** Condition keys applicable to the TagResource action. */
 	static readonly TagResourceConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
@@ -4844,6 +5089,10 @@ export class BedrockConditions {
 	];
 	/** Condition keys applicable to the UntagResource action. */
 	static readonly UntagResourceConditionKeys: string[] = ["aws:TagKeys"];
+	/** Condition keys applicable to the UpdateProject action. */
+	static readonly UpdateProjectConditionKeys: string[] = [
+		"bedrock:DataRetentionMode",
+	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */
 	static readonly AWS_REQUEST_TAG = "aws:RequestTag/${TagKey}";
@@ -4867,11 +5116,16 @@ export class BedrockConditions {
 	static readonly PROJECT_ARN = "bedrock:ProjectArn";
 	/** Condition key: bedrock:PromptRouterArn (ARN) */
 	static readonly PROMPT_ROUTER_ARN = "bedrock:PromptRouterArn";
+	/** Condition key: bedrock:Provider (String) */
+	static readonly PROVIDER = "bedrock:Provider";
 	/** Condition key: bedrock:ServiceTier (String) */
 	static readonly SERVICE_TIER = "bedrock:ServiceTier";
 	/** Condition key: bedrock:ThirdPartyKnowledgeBaseCredentialsSecretArn (ARN) */
 	static readonly THIRD_PARTY_KNOWLEDGE_BASE_CREDENTIALS_SECRET_ARN =
 		"bedrock:ThirdPartyKnowledgeBaseCredentialsSecretArn";
+	/** Condition key: bedrock:TrustedAccessProgramOptIn (String) */
+	static readonly TRUSTED_ACCESS_PROGRAM_OPT_IN =
+		"bedrock:TrustedAccessProgramOptIn";
 
 	/**
 	 * Generates a condition block for `aws:RequestTag/${TagKey}`.
@@ -4963,6 +5217,13 @@ export class BedrockConditions {
 	}
 
 	/**
+	 * Generates a condition block for `bedrock:Provider`.
+	 */
+	static provider(value: string): Record<string, Record<string, string>> {
+		return { StringEquals: { "bedrock:Provider": value } };
+	}
+
+	/**
 	 * Generates a condition block for `bedrock:ServiceTier`.
 	 */
 	static serviceTier(value: string): Record<string, Record<string, string>> {
@@ -4980,5 +5241,14 @@ export class BedrockConditions {
 				"bedrock:ThirdPartyKnowledgeBaseCredentialsSecretArn": value,
 			},
 		};
+	}
+
+	/**
+	 * Generates a condition block for `bedrock:TrustedAccessProgramOptIn`.
+	 */
+	static trustedAccessProgramOptIn(
+		value: string,
+	): Record<string, Record<string, string>> {
+		return { StringEquals: { "bedrock:TrustedAccessProgramOptIn": value } };
 	}
 }
