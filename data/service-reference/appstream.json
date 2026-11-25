@@ -253,6 +253,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2128,6 +2129,10 @@
         {
           "Name": "CreateAppBlock",
           "Service": "appstream"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "appstream"
         }
       ],
       "SDK": [
@@ -2160,6 +2165,12 @@
     },
     {
       "Name": "CreateAppBlockBuilderStreamingURL",
+      "AuthorizedActions": [
+        {
+          "Name": "CreateAppBlockBuilderStreamingURL",
+          "Service": "appstream"
+        }
+      ],
       "SDK": [
         {
           "Name": "appstream",

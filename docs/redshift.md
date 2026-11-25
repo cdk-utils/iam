@@ -3528,6 +3528,7 @@ new redshift.RedshiftActions()
 | <code><a href="#@cdk_utils/iam.redshift.RedshiftActions.property.ListSavedQueries">ListSavedQueries</a></code> | <code>string</code> | [List] redshift:ListSavedQueries. |
 | <code><a href="#@cdk_utils/iam.redshift.RedshiftActions.property.ListSchemas">ListSchemas</a></code> | <code>string</code> | [List] redshift:ListSchemas. |
 | <code><a href="#@cdk_utils/iam.redshift.RedshiftActions.property.ListTables">ListTables</a></code> | <code>string</code> | [List] redshift:ListTables. |
+| <code><a href="#@cdk_utils/iam.redshift.RedshiftActions.property.ModifyAccountAttributes">ModifyAccountAttributes</a></code> | <code>string</code> | [PermissionManagement] redshift:ModifyAccountAttributes. |
 | <code><a href="#@cdk_utils/iam.redshift.RedshiftActions.property.ModifyAquaConfiguration">ModifyAquaConfiguration</a></code> | <code>string</code> | [Write] redshift:ModifyAquaConfiguration. |
 | <code><a href="#@cdk_utils/iam.redshift.RedshiftActions.property.ModifyAuthenticationProfile">ModifyAuthenticationProfile</a></code> | <code>string</code> | [Write] redshift:ModifyAuthenticationProfile. |
 | <code><a href="#@cdk_utils/iam.redshift.RedshiftActions.property.ModifyAutonomicsDenylist">ModifyAutonomicsDenylist</a></code> | <code>string</code> | [Write] redshift:ModifyAutonomicsDenylist. |
@@ -5145,6 +5146,18 @@ public readonly ListTables: string;
 
 ---
 
+##### `ModifyAccountAttributes`<sup>Required</sup> <a name="ModifyAccountAttributes" id="@cdk_utils/iam.redshift.RedshiftActions.property.ModifyAccountAttributes"></a>
+
+```typescript
+public readonly ModifyAccountAttributes: string;
+```
+
+- *Type:* string
+
+[PermissionManagement] redshift:ModifyAccountAttributes.
+
+---
+
 ##### `ModifyAquaConfiguration`<sup>Required</sup> <a name="ModifyAquaConfiguration" id="@cdk_utils/iam.redshift.RedshiftActions.property.ModifyAquaConfiguration"></a>
 
 ```typescript
@@ -5904,6 +5917,8 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.redshift.RedshiftConditions.property.CreateHsmClientCertificateConditionKeys">CreateHsmClientCertificateConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateHsmClientCertificate action. |
 | <code><a href="#@cdk_utils/iam.redshift.RedshiftConditions.property.CreateHsmConfigurationConditionKeys">CreateHsmConfigurationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateHsmConfiguration action. |
 | <code><a href="#@cdk_utils/iam.redshift.RedshiftConditions.property.CreateIntegrationConditionKeys">CreateIntegrationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateIntegration action. |
+| <code><a href="#@cdk_utils/iam.redshift.RedshiftConditions.property.CreateQev2IdcApplicationConditionKeys">CreateQev2IdcApplicationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateQev2IdcApplication action. |
+| <code><a href="#@cdk_utils/iam.redshift.RedshiftConditions.property.CreateRedshiftIdcApplicationConditionKeys">CreateRedshiftIdcApplicationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateRedshiftIdcApplication action. |
 | <code><a href="#@cdk_utils/iam.redshift.RedshiftConditions.property.CreateSnapshotCopyGrantConditionKeys">CreateSnapshotCopyGrantConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateSnapshotCopyGrant action. |
 | <code><a href="#@cdk_utils/iam.redshift.RedshiftConditions.property.CreateSnapshotScheduleConditionKeys">CreateSnapshotScheduleConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateSnapshotSchedule action. |
 | <code><a href="#@cdk_utils/iam.redshift.RedshiftConditions.property.CreateTagsConditionKeys">CreateTagsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateTags action. |
@@ -6174,6 +6189,30 @@ public readonly CreateIntegrationConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CreateIntegration action.
+
+---
+
+##### `CreateQev2IdcApplicationConditionKeys`<sup>Required</sup> <a name="CreateQev2IdcApplicationConditionKeys" id="@cdk_utils/iam.redshift.RedshiftConditions.property.CreateQev2IdcApplicationConditionKeys"></a>
+
+```typescript
+public readonly CreateQev2IdcApplicationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateQev2IdcApplication action.
+
+---
+
+##### `CreateRedshiftIdcApplicationConditionKeys`<sup>Required</sup> <a name="CreateRedshiftIdcApplicationConditionKeys" id="@cdk_utils/iam.redshift.RedshiftConditions.property.CreateRedshiftIdcApplicationConditionKeys"></a>
+
+```typescript
+public readonly CreateRedshiftIdcApplicationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateRedshiftIdcApplication action.
 
 ---
 

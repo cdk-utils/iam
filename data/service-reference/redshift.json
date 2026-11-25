@@ -633,6 +633,10 @@
     },
     {
       "Name": "CreateQev2IdcApplication",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
@@ -649,6 +653,10 @@
     },
     {
       "Name": "CreateRedshiftIdcApplication",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys"
+      ],
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
@@ -777,6 +785,12 @@
         },
         {
           "Name": "parametergroup"
+        },
+        {
+          "Name": "qev2idcapplication"
+        },
+        {
+          "Name": "redshiftidcapplication"
         },
         {
           "Name": "securitygroup"
@@ -1297,6 +1311,12 @@
         },
         {
           "Name": "parametergroup"
+        },
+        {
+          "Name": "qev2idcapplication"
+        },
+        {
+          "Name": "redshiftidcapplication"
         },
         {
           "Name": "securitygroup"
@@ -2170,6 +2190,12 @@
           "Name": "parametergroup"
         },
         {
+          "Name": "qev2idcapplication"
+        },
+        {
+          "Name": "redshiftidcapplication"
+        },
+        {
           "Name": "securitygroup"
         },
         {
@@ -2610,6 +2636,21 @@
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
           "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ModifyAccountAttributes",
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": true,
+          "IsTaggingOnly": false,
+          "IsWrite": true
         }
       },
       "SupportedBy": {
@@ -6133,12 +6174,18 @@
       "Name": "qev2idcapplication",
       "ARNFormats": [
         "arn:${Partition}:redshift:${Region}:${Account}:qev2idcapplication:${Qev2IdcApplicationId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
       ]
     },
     {
       "Name": "redshiftidcapplication",
       "ARNFormats": [
         "arn:${Partition}:redshift:${Region}:${Account}:redshiftidcapplication:${RedshiftIdcApplicationId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
       ]
     },
     {

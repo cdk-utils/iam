@@ -2221,6 +2221,154 @@ Defaults to "*".
 
 ---
 
+### CloudWatchOmniSloArnComponents <a name="CloudWatchOmniSloArnComponents" id="@cdk_utils/iam.cloudwatch.CloudWatchOmniSloArnComponents"></a>
+
+Parsed components of a omni-slo ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.cloudwatch.CloudWatchOmniSloArnComponents.Initializer"></a>
+
+```typescript
+import { cloudwatch } from '@cdk_utils/iam'
+
+const cloudWatchOmniSloArnComponents: cloudwatch.CloudWatchOmniSloArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOmniSloArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOmniSloArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOmniSloArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOmniSloArnComponents.property.sloId">sloId</a></code> | <code>string</code> | The SloId component. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.cloudwatch.CloudWatchOmniSloArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.cloudwatch.CloudWatchOmniSloArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.cloudwatch.CloudWatchOmniSloArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+##### `sloId`<sup>Required</sup> <a name="sloId" id="@cdk_utils/iam.cloudwatch.CloudWatchOmniSloArnComponents.property.sloId"></a>
+
+```typescript
+public readonly sloId: string;
+```
+
+- *Type:* string
+
+The SloId component.
+
+---
+
+### CloudWatchOmniSloArnProps <a name="CloudWatchOmniSloArnProps" id="@cdk_utils/iam.cloudwatch.CloudWatchOmniSloArnProps"></a>
+
+Properties for building a omni-slo ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.cloudwatch.CloudWatchOmniSloArnProps.Initializer"></a>
+
+```typescript
+import { cloudwatch } from '@cdk_utils/iam'
+
+const cloudWatchOmniSloArnProps: cloudwatch.CloudWatchOmniSloArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOmniSloArnProps.property.sloId">sloId</a></code> | <code>string</code> | The SloId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOmniSloArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOmniSloArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchOmniSloArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `sloId`<sup>Required</sup> <a name="sloId" id="@cdk_utils/iam.cloudwatch.CloudWatchOmniSloArnProps.property.sloId"></a>
+
+```typescript
+public readonly sloId: string;
+```
+
+- *Type:* string
+
+The SloId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.cloudwatch.CloudWatchOmniSloArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.cloudwatch.CloudWatchOmniSloArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.cloudwatch.CloudWatchOmniSloArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### CloudWatchOrganizationAccessGrantArnComponents <a name="CloudWatchOrganizationAccessGrantArnComponents" id="@cdk_utils/iam.cloudwatch.CloudWatchOrganizationAccessGrantArnComponents"></a>
 
 Parsed components of a organization-access-grant ARN.
@@ -3210,6 +3358,7 @@ new cloudwatch.CloudWatchActions()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetMonitoringAssessment">actionGetMonitoringAssessment</a></code> | <code>string</code> | [Read] cloudwatch:GetMonitoringAssessment. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetOmniAgentAsset">actionGetOmniAgentAsset</a></code> | <code>string</code> | [Read] cloudwatch:GetOmniAgentAsset. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetOmniDashboard">actionGetOmniDashboard</a></code> | <code>string</code> | [Read] cloudwatch:GetOmniDashboard. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetOmniSlo">actionGetOmniSlo</a></code> | <code>string</code> | [Read] cloudwatch:GetOmniSlo. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetOmniThread">actionGetOmniThread</a></code> | <code>string</code> | [Read] cloudwatch:GetOmniThread. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetOTelEnrichment">actionGetOTelEnrichment</a></code> | <code>string</code> | [Read] cloudwatch:GetOTelEnrichment. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetPreferences">actionGetPreferences</a></code> | <code>string</code> | [Read] cloudwatch:GetPreferences. |
@@ -3234,6 +3383,7 @@ new cloudwatch.CloudWatchActions()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.AssumeAccessProfile">AssumeAccessProfile</a></code> | <code>string</code> | [PermissionManagement] cloudwatch:AssumeAccessProfile. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.BatchGetOmniSloReport">BatchGetOmniSloReport</a></code> | <code>string</code> | [Read] cloudwatch:BatchGetOmniSloReport. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.BatchGetServiceLevelIndicatorReport">BatchGetServiceLevelIndicatorReport</a></code> | <code>string</code> | [Read] cloudwatch:BatchGetServiceLevelIndicatorReport. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.BatchGetServiceLevelObjectiveBudgetReport">BatchGetServiceLevelObjectiveBudgetReport</a></code> | <code>string</code> | [Read] cloudwatch:BatchGetServiceLevelObjectiveBudgetReport. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CallWithBearerToken">CallWithBearerToken</a></code> | <code>string</code> | [Write] cloudwatch:CallWithBearerToken. |
@@ -3247,6 +3397,7 @@ new cloudwatch.CloudWatchActions()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateIntegration">CreateIntegration</a></code> | <code>string</code> | [Write] cloudwatch:CreateIntegration. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateOmniAgentAsset">CreateOmniAgentAsset</a></code> | <code>string</code> | [Write] cloudwatch:CreateOmniAgentAsset. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateOmniDashboard">CreateOmniDashboard</a></code> | <code>string</code> | [Write] cloudwatch:CreateOmniDashboard. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateOmniSlo">CreateOmniSlo</a></code> | <code>string</code> | [Write] cloudwatch:CreateOmniSlo. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateOmniThread">CreateOmniThread</a></code> | <code>string</code> | [Write] cloudwatch:CreateOmniThread. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateOneTimeDeepLinkCode">CreateOneTimeDeepLinkCode</a></code> | <code>string</code> | [Write] cloudwatch:CreateOneTimeDeepLinkCode. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateResourceMetricsConfiguration">CreateResourceMetricsConfiguration</a></code> | <code>string</code> | [Write] cloudwatch:CreateResourceMetricsConfiguration. |
@@ -3270,6 +3421,7 @@ new cloudwatch.CloudWatchActions()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteMetricStream">DeleteMetricStream</a></code> | <code>string</code> | [Write] cloudwatch:DeleteMetricStream. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteOmniAgentAsset">DeleteOmniAgentAsset</a></code> | <code>string</code> | [Write] cloudwatch:DeleteOmniAgentAsset. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteOmniDashboard">DeleteOmniDashboard</a></code> | <code>string</code> | [Write] cloudwatch:DeleteOmniDashboard. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteOmniSlo">DeleteOmniSlo</a></code> | <code>string</code> | [Write] cloudwatch:DeleteOmniSlo. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteOmniThread">DeleteOmniThread</a></code> | <code>string</code> | [Write] cloudwatch:DeleteOmniThread. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeletePipelineRule">DeletePipelineRule</a></code> | <code>string</code> | [Write] cloudwatch:DeletePipelineRule. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteResourceMetricsConfiguration">DeleteResourceMetricsConfiguration</a></code> | <code>string</code> | [Write] cloudwatch:DeleteResourceMetricsConfiguration. |
@@ -3302,6 +3454,7 @@ new cloudwatch.CloudWatchActions()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListEntitiesForMetric">ListEntitiesForMetric</a></code> | <code>string</code> | [List] cloudwatch:ListEntitiesForMetric. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListIngestionEndpoints">ListIngestionEndpoints</a></code> | <code>string</code> | [List] cloudwatch:ListIngestionEndpoints. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListIntegrations">ListIntegrations</a></code> | <code>string</code> | [List] cloudwatch:ListIntegrations. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListIntegrationTargets">ListIntegrationTargets</a></code> | <code>string</code> | [List] cloudwatch:ListIntegrationTargets. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListManagedInsightRules">ListManagedInsightRules</a></code> | <code>string</code> | [Read] cloudwatch:ListManagedInsightRules. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListMetricDataQueryDefinitions">ListMetricDataQueryDefinitions</a></code> | <code>string</code> | [List] cloudwatch:ListMetricDataQueryDefinitions. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListMetrics">ListMetrics</a></code> | <code>string</code> | [List] cloudwatch:ListMetrics. |
@@ -3310,6 +3463,7 @@ new cloudwatch.CloudWatchActions()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListMonitoringAssessments">ListMonitoringAssessments</a></code> | <code>string</code> | [List] cloudwatch:ListMonitoringAssessments. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListOmniAgentAssets">ListOmniAgentAssets</a></code> | <code>string</code> | [List] cloudwatch:ListOmniAgentAssets. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListOmniDashboards">ListOmniDashboards</a></code> | <code>string</code> | [List] cloudwatch:ListOmniDashboards. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListOmniSlos">ListOmniSlos</a></code> | <code>string</code> | [List] cloudwatch:ListOmniSlos. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListOmniThreads">ListOmniThreads</a></code> | <code>string</code> | [List] cloudwatch:ListOmniThreads. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListServiceLevelObjectives">ListServiceLevelObjectives</a></code> | <code>string</code> | [List] cloudwatch:ListServiceLevelObjectives. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListServices">ListServices</a></code> | <code>string</code> | [List] cloudwatch:ListServices. |
@@ -3360,6 +3514,7 @@ new cloudwatch.CloudWatchActions()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.UpdateIntegration">UpdateIntegration</a></code> | <code>string</code> | [Write] cloudwatch:UpdateIntegration. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.UpdateOmniAgentAsset">UpdateOmniAgentAsset</a></code> | <code>string</code> | [Write] cloudwatch:UpdateOmniAgentAsset. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.UpdateOmniDashboard">UpdateOmniDashboard</a></code> | <code>string</code> | [Write] cloudwatch:UpdateOmniDashboard. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.UpdateOmniSlo">UpdateOmniSlo</a></code> | <code>string</code> | [Write] cloudwatch:UpdateOmniSlo. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.UpdateOmniThread">UpdateOmniThread</a></code> | <code>string</code> | [Write] cloudwatch:UpdateOmniThread. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.UpdateOTelEnrichment">UpdateOTelEnrichment</a></code> | <code>string</code> | [Write] cloudwatch:UpdateOTelEnrichment. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.UpdatePreferences">UpdatePreferences</a></code> | <code>string</code> | [Write] cloudwatch:UpdatePreferences. |
@@ -3643,6 +3798,18 @@ public readonly actionGetOmniDashboard: string;
 - *Type:* string
 
 [Read] cloudwatch:GetOmniDashboard.
+
+---
+
+##### `actionGetOmniSlo`<sup>Required</sup> <a name="actionGetOmniSlo" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetOmniSlo"></a>
+
+```typescript
+public readonly actionGetOmniSlo: string;
+```
+
+- *Type:* string
+
+[Read] cloudwatch:GetOmniSlo.
 
 ---
 
@@ -3934,6 +4101,18 @@ public readonly AssumeAccessProfile: string;
 
 ---
 
+##### `BatchGetOmniSloReport`<sup>Required</sup> <a name="BatchGetOmniSloReport" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.BatchGetOmniSloReport"></a>
+
+```typescript
+public readonly BatchGetOmniSloReport: string;
+```
+
+- *Type:* string
+
+[Read] cloudwatch:BatchGetOmniSloReport.
+
+---
+
 ##### `BatchGetServiceLevelIndicatorReport`<sup>Required</sup> <a name="BatchGetServiceLevelIndicatorReport" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.BatchGetServiceLevelIndicatorReport"></a>
 
 ```typescript
@@ -4087,6 +4266,18 @@ public readonly CreateOmniDashboard: string;
 - *Type:* string
 
 [Write] cloudwatch:CreateOmniDashboard.
+
+---
+
+##### `CreateOmniSlo`<sup>Required</sup> <a name="CreateOmniSlo" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateOmniSlo"></a>
+
+```typescript
+public readonly CreateOmniSlo: string;
+```
+
+- *Type:* string
+
+[Write] cloudwatch:CreateOmniSlo.
 
 ---
 
@@ -4363,6 +4554,18 @@ public readonly DeleteOmniDashboard: string;
 - *Type:* string
 
 [Write] cloudwatch:DeleteOmniDashboard.
+
+---
+
+##### `DeleteOmniSlo`<sup>Required</sup> <a name="DeleteOmniSlo" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteOmniSlo"></a>
+
+```typescript
+public readonly DeleteOmniSlo: string;
+```
+
+- *Type:* string
+
+[Write] cloudwatch:DeleteOmniSlo.
 
 ---
 
@@ -4750,6 +4953,18 @@ public readonly ListIntegrations: string;
 
 ---
 
+##### `ListIntegrationTargets`<sup>Required</sup> <a name="ListIntegrationTargets" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListIntegrationTargets"></a>
+
+```typescript
+public readonly ListIntegrationTargets: string;
+```
+
+- *Type:* string
+
+[List] cloudwatch:ListIntegrationTargets.
+
+---
+
 ##### `ListManagedInsightRules`<sup>Required</sup> <a name="ListManagedInsightRules" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListManagedInsightRules"></a>
 
 ```typescript
@@ -4843,6 +5058,18 @@ public readonly ListOmniDashboards: string;
 - *Type:* string
 
 [List] cloudwatch:ListOmniDashboards.
+
+---
+
+##### `ListOmniSlos`<sup>Required</sup> <a name="ListOmniSlos" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListOmniSlos"></a>
+
+```typescript
+public readonly ListOmniSlos: string;
+```
+
+- *Type:* string
+
+[List] cloudwatch:ListOmniSlos.
 
 ---
 
@@ -5446,6 +5673,18 @@ public readonly UpdateOmniDashboard: string;
 
 ---
 
+##### `UpdateOmniSlo`<sup>Required</sup> <a name="UpdateOmniSlo" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.UpdateOmniSlo"></a>
+
+```typescript
+public readonly UpdateOmniSlo: string;
+```
+
+- *Type:* string
+
+[Write] cloudwatch:UpdateOmniSlo.
+
+---
+
 ##### `UpdateOmniThread`<sup>Required</sup> <a name="UpdateOmniThread" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.UpdateOmniThread"></a>
 
 ```typescript
@@ -5742,6 +5981,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetMetricDataConditionKeys">actionGetMetricDataConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetMetricData action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetOmniAgentAssetConditionKeys">actionGetOmniAgentAssetConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetOmniAgentAsset action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetOmniDashboardConditionKeys">actionGetOmniDashboardConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetOmniDashboard action. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetOmniSloConditionKeys">actionGetOmniSloConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetOmniSlo action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetOmniThreadConditionKeys">actionGetOmniThreadConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetOmniThread action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetPreferencesConditionKeys">actionGetPreferencesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetPreferences action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetProfileRecordsConditionKeys">actionGetProfileRecordsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetProfileRecords action. |
@@ -5757,6 +5997,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.AWS_REQUEST_TAG">AWS_REQUEST_TAG</a></code> | <code>string</code> | Condition key: aws:RequestTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.AWS_RESOURCE_TAG">AWS_RESOURCE_TAG</a></code> | <code>string</code> | Condition key: aws:ResourceTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.AWS_TAG_KEYS">AWS_TAG_KEYS</a></code> | <code>string</code> | Condition key: aws:TagKeys (ArrayOfString). |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.BatchGetOmniSloReportConditionKeys">BatchGetOmniSloReportConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the BatchGetOmniSloReport action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.CreateAccessGrantConditionKeys">CreateAccessGrantConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateAccessGrant action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.CreateAccessProfileConditionKeys">CreateAccessProfileConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateAccessProfile action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.CreateAlertConditionKeys">CreateAlertConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateAlert action. |
@@ -5764,6 +6005,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.CreateIntegrationConditionKeys">CreateIntegrationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateIntegration action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.CreateOmniAgentAssetConditionKeys">CreateOmniAgentAssetConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateOmniAgentAsset action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.CreateOmniDashboardConditionKeys">CreateOmniDashboardConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateOmniDashboard action. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.CreateOmniSloConditionKeys">CreateOmniSloConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateOmniSlo action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.CreateOmniThreadConditionKeys">CreateOmniThreadConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateOmniThread action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.CreateResourceMetricsConfigurationConditionKeys">CreateResourceMetricsConfigurationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateResourceMetricsConfiguration action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.CreateServiceLevelObjectiveConditionKeys">CreateServiceLevelObjectiveConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateServiceLevelObjective action. |
@@ -5775,6 +6017,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.DeleteIntegrationConditionKeys">DeleteIntegrationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteIntegration action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.DeleteOmniAgentAssetConditionKeys">DeleteOmniAgentAssetConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteOmniAgentAsset action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.DeleteOmniDashboardConditionKeys">DeleteOmniDashboardConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteOmniDashboard action. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.DeleteOmniSloConditionKeys">DeleteOmniSloConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteOmniSlo action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.DeleteOmniThreadConditionKeys">DeleteOmniThreadConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteOmniThread action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.DeleteResourceMetricsConfigurationConditionKeys">DeleteResourceMetricsConfigurationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteResourceMetricsConfiguration action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.DeleteViewConditionKeys">DeleteViewConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteView action. |
@@ -5786,10 +6029,12 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListAlertsConditionKeys">ListAlertsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListAlerts action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListDomainAccessGrantsForOrganizationConditionKeys">ListDomainAccessGrantsForOrganizationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListDomainAccessGrantsForOrganization action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListIntegrationsConditionKeys">ListIntegrationsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListIntegrations action. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListIntegrationTargetsConditionKeys">ListIntegrationTargetsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListIntegrationTargets action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListManagedInsightRulesConditionKeys">ListManagedInsightRulesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListManagedInsightRules action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListMetricsConditionKeys">ListMetricsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListMetrics action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListOmniAgentAssetsConditionKeys">ListOmniAgentAssetsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListOmniAgentAssets action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListOmniDashboardsConditionKeys">ListOmniDashboardsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListOmniDashboards action. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListOmniSlosConditionKeys">ListOmniSlosConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListOmniSlos action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListOmniThreadsConditionKeys">ListOmniThreadsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListOmniThreads action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListSpaceAccessConditionKeys">ListSpaceAccessConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListSpaceAccess action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListSpacesConditionKeys">ListSpacesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListSpaces action. |
@@ -5828,6 +6073,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.UpdateIntegrationConditionKeys">UpdateIntegrationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateIntegration action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.UpdateOmniAgentAssetConditionKeys">UpdateOmniAgentAssetConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateOmniAgentAsset action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.UpdateOmniDashboardConditionKeys">UpdateOmniDashboardConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateOmniDashboard action. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.UpdateOmniSloConditionKeys">UpdateOmniSloConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateOmniSlo action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.UpdateOmniThreadConditionKeys">UpdateOmniThreadConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateOmniThread action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.UpdatePreferencesConditionKeys">UpdatePreferencesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdatePreferences action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.UpdateResourceMetricsConfigurationConditionKeys">UpdateResourceMetricsConfigurationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateResourceMetricsConfiguration action. |
@@ -5977,6 +6223,18 @@ public readonly actionGetOmniDashboardConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the GetOmniDashboard action.
+
+---
+
+##### `actionGetOmniSloConditionKeys`<sup>Required</sup> <a name="actionGetOmniSloConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetOmniSloConditionKeys"></a>
+
+```typescript
+public readonly actionGetOmniSloConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetOmniSlo action.
 
 ---
 
@@ -6160,6 +6418,18 @@ Condition key: aws:TagKeys (ArrayOfString).
 
 ---
 
+##### `BatchGetOmniSloReportConditionKeys`<sup>Required</sup> <a name="BatchGetOmniSloReportConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.BatchGetOmniSloReportConditionKeys"></a>
+
+```typescript
+public readonly BatchGetOmniSloReportConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the BatchGetOmniSloReport action.
+
+---
+
 ##### `CreateAccessGrantConditionKeys`<sup>Required</sup> <a name="CreateAccessGrantConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.CreateAccessGrantConditionKeys"></a>
 
 ```typescript
@@ -6241,6 +6511,18 @@ public readonly CreateOmniDashboardConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CreateOmniDashboard action.
+
+---
+
+##### `CreateOmniSloConditionKeys`<sup>Required</sup> <a name="CreateOmniSloConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.CreateOmniSloConditionKeys"></a>
+
+```typescript
+public readonly CreateOmniSloConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateOmniSlo action.
 
 ---
 
@@ -6376,6 +6658,18 @@ Condition keys applicable to the DeleteOmniDashboard action.
 
 ---
 
+##### `DeleteOmniSloConditionKeys`<sup>Required</sup> <a name="DeleteOmniSloConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.DeleteOmniSloConditionKeys"></a>
+
+```typescript
+public readonly DeleteOmniSloConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DeleteOmniSlo action.
+
+---
+
 ##### `DeleteOmniThreadConditionKeys`<sup>Required</sup> <a name="DeleteOmniThreadConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.DeleteOmniThreadConditionKeys"></a>
 
 ```typescript
@@ -6508,6 +6802,18 @@ Condition keys applicable to the ListIntegrations action.
 
 ---
 
+##### `ListIntegrationTargetsConditionKeys`<sup>Required</sup> <a name="ListIntegrationTargetsConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListIntegrationTargetsConditionKeys"></a>
+
+```typescript
+public readonly ListIntegrationTargetsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ListIntegrationTargets action.
+
+---
+
 ##### `ListManagedInsightRulesConditionKeys`<sup>Required</sup> <a name="ListManagedInsightRulesConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListManagedInsightRulesConditionKeys"></a>
 
 ```typescript
@@ -6553,6 +6859,18 @@ public readonly ListOmniDashboardsConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the ListOmniDashboards action.
+
+---
+
+##### `ListOmniSlosConditionKeys`<sup>Required</sup> <a name="ListOmniSlosConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListOmniSlosConditionKeys"></a>
+
+```typescript
+public readonly ListOmniSlosConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ListOmniSlos action.
 
 ---
 
@@ -7009,6 +7327,18 @@ public readonly UpdateOmniDashboardConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the UpdateOmniDashboard action.
+
+---
+
+##### `UpdateOmniSloConditionKeys`<sup>Required</sup> <a name="UpdateOmniSloConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.UpdateOmniSloConditionKeys"></a>
+
+```typescript
+public readonly UpdateOmniSloConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateOmniSlo action.
 
 ---
 
@@ -8720,6 +9050,7 @@ new cloudwatch.CloudWatchResources()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidMetricStreamArn">isValidMetricStreamArn</a></code> | Validates whether a string is a valid ARN for the metric-stream resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidOmniAgentAssetArn">isValidOmniAgentAssetArn</a></code> | Validates whether a string is a valid ARN for the omni-agent-asset resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidOmniDashboardArn">isValidOmniDashboardArn</a></code> | Validates whether a string is a valid ARN for the omni-dashboard resource. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidOmniSloArn">isValidOmniSloArn</a></code> | Validates whether a string is a valid ARN for the omni-slo resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidOrganizationAccessGrantArn">isValidOrganizationAccessGrantArn</a></code> | Validates whether a string is a valid ARN for the organization-access-grant resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidOrganizationDomainArn">isValidOrganizationDomainArn</a></code> | Validates whether a string is a valid ARN for the organization-domain resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidServiceArn">isValidServiceArn</a></code> | Validates whether a string is a valid ARN for the service resource. |
@@ -8730,6 +9061,7 @@ new cloudwatch.CloudWatchResources()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.metricStream">metricStream</a></code> | Builds an ARN for the metric-stream resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.omniAgentAsset">omniAgentAsset</a></code> | Builds an ARN for the omni-agent-asset resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.omniDashboard">omniDashboard</a></code> | Builds an ARN for the omni-dashboard resource. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.omniSlo">omniSlo</a></code> | Builds an ARN for the omni-slo resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.organizationAccessGrant">organizationAccessGrant</a></code> | Builds an ARN for the organization-access-grant resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.organizationDomain">organizationDomain</a></code> | Builds an ARN for the organization-domain resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.parseAccessGrantArn">parseAccessGrantArn</a></code> | Parses a access-grant ARN into its components. |
@@ -8747,6 +9079,7 @@ new cloudwatch.CloudWatchResources()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.parseMetricStreamArn">parseMetricStreamArn</a></code> | Parses a metric-stream ARN into its components. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.parseOmniAgentAssetArn">parseOmniAgentAssetArn</a></code> | Parses a omni-agent-asset ARN into its components. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.parseOmniDashboardArn">parseOmniDashboardArn</a></code> | Parses a omni-dashboard ARN into its components. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.parseOmniSloArn">parseOmniSloArn</a></code> | Parses a omni-slo ARN into its components. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.parseOrganizationAccessGrantArn">parseOrganizationAccessGrantArn</a></code> | Parses a organization-access-grant ARN into its components. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.parseOrganizationDomainArn">parseOrganizationDomainArn</a></code> | Parses a organization-domain ARN into its components. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.parseServiceArn">parseServiceArn</a></code> | Parses a service ARN into its components. |
@@ -9176,6 +9509,22 @@ Validates whether a string is a valid ARN for the omni-dashboard resource.
 
 ---
 
+##### `isValidOmniSloArn` <a name="isValidOmniSloArn" id="@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidOmniSloArn"></a>
+
+```typescript
+import { cloudwatch } from '@cdk_utils/iam'
+
+cloudwatch.CloudWatchResources.isValidOmniSloArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the omni-slo resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidOmniSloArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `isValidOrganizationAccessGrantArn` <a name="isValidOrganizationAccessGrantArn" id="@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidOrganizationAccessGrantArn"></a>
 
 ```typescript
@@ -9333,6 +9682,22 @@ Builds an ARN for the omni-dashboard resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.cloudwatch.CloudWatchResources.omniDashboard.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.cloudwatch.CloudWatchOmniDashboardArnProps">CloudWatchOmniDashboardArnProps</a>
+
+---
+
+##### `omniSlo` <a name="omniSlo" id="@cdk_utils/iam.cloudwatch.CloudWatchResources.omniSlo"></a>
+
+```typescript
+import { cloudwatch } from '@cdk_utils/iam'
+
+cloudwatch.CloudWatchResources.omniSlo(props: CloudWatchOmniSloArnProps)
+```
+
+Builds an ARN for the omni-slo resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.cloudwatch.CloudWatchResources.omniSlo.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.cloudwatch.CloudWatchOmniSloArnProps">CloudWatchOmniSloArnProps</a>
 
 ---
 
@@ -9603,6 +9968,22 @@ cloudwatch.CloudWatchResources.parseOmniDashboardArn(arn: string)
 Parses a omni-dashboard ARN into its components.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.cloudwatch.CloudWatchResources.parseOmniDashboardArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseOmniSloArn` <a name="parseOmniSloArn" id="@cdk_utils/iam.cloudwatch.CloudWatchResources.parseOmniSloArn"></a>
+
+```typescript
+import { cloudwatch } from '@cdk_utils/iam'
+
+cloudwatch.CloudWatchResources.parseOmniSloArn(arn: string)
+```
+
+Parses a omni-slo ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.cloudwatch.CloudWatchResources.parseOmniSloArn.parameter.arn"></a>
 
 - *Type:* string
 

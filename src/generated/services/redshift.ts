@@ -321,6 +321,8 @@ export class RedshiftActions {
 	static readonly ListSchemas = "redshift:ListSchemas";
 	/** [List] redshift:ListTables */
 	static readonly ListTables = "redshift:ListTables";
+	/** [PermissionManagement] redshift:ModifyAccountAttributes */
+	static readonly ModifyAccountAttributes = "redshift:ModifyAccountAttributes";
 	/** [Write] redshift:ModifyAquaConfiguration */
 	static readonly ModifyAquaConfiguration = "redshift:ModifyAquaConfiguration";
 	/** [Write] redshift:ModifyAuthenticationProfile */
@@ -591,6 +593,7 @@ export class RedshiftActions {
 		RedshiftActions.DeauthorizeDataShare,
 		RedshiftActions.DeleteResourcePolicy,
 		RedshiftActions.JoinGroup,
+		RedshiftActions.ModifyAccountAttributes,
 		RedshiftActions.ModifyClusterIamRoles,
 		RedshiftActions.PutResourcePolicy,
 		RedshiftActions.RejectDataShare,
@@ -2621,6 +2624,16 @@ export class RedshiftConditions {
 		"aws:TagKeys",
 		"redshift:IntegrationSourceArn",
 		"redshift:IntegrationTargetArn",
+	];
+	/** Condition keys applicable to the CreateQev2IdcApplication action. */
+	static readonly CreateQev2IdcApplicationConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the CreateRedshiftIdcApplication action. */
+	static readonly CreateRedshiftIdcApplicationConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
 	];
 	/** Condition keys applicable to the CreateSnapshotCopyGrant action. */
 	static readonly CreateSnapshotCopyGrantConditionKeys: string[] = [

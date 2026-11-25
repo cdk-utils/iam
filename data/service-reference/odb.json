@@ -2208,6 +2208,10 @@
         {
           "Name": "CreateAutonomousDatabaseBackup",
           "Service": "odb"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "odb"
         }
       ],
       "SDK": [

@@ -1015,6 +1015,7 @@ export class OdbOperations {
 	/** IAM actions required for the CreateAutonomousDatabaseBackup API call. */
 	static readonly CreateAutonomousDatabaseBackup: string[] = [
 		"odb:CreateAutonomousDatabaseBackup",
+		"odb:TagResource",
 	];
 	/** IAM actions required for the CreateAutonomousDatabaseWallet API call. */
 	static readonly CreateAutonomousDatabaseWallet: string[] = [
