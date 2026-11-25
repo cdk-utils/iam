@@ -790,14 +790,19 @@ export class AppstreamOperations {
 	/** IAM actions required for the CopyImage API call. */
 	static readonly CopyImage: string[] = ["appstream:CopyImage"];
 	/** IAM actions required for the CreateAppBlock API call. */
-	static readonly CreateAppBlock: string[] = ["appstream:CreateAppBlock"];
+	static readonly CreateAppBlock: string[] = [
+		"appstream:CreateAppBlock",
+		"appstream:TagResource",
+	];
 	/** IAM actions required for the CreateAppBlockBuilder API call. */
 	static readonly CreateAppBlockBuilder: string[] = [
 		"appstream:CreateAppBlockBuilder",
 		"appstream:TagResource",
 	];
 	/** IAM actions required for the CreateAppBlockBuilderStreamingURL API call. */
-	static readonly CreateAppBlockBuilderStreamingURL: string[] = [];
+	static readonly CreateAppBlockBuilderStreamingURL: string[] = [
+		"appstream:CreateAppBlockBuilderStreamingURL",
+	];
 	/** IAM actions required for the CreateApplication API call. */
 	static readonly CreateApplication: string[] = ["appstream:CreateApplication"];
 	/** IAM actions required for the CreateDirectoryConfig API call. */

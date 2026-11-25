@@ -14,6 +14,8 @@ export class CloudWatchActions {
 
 	/** [PermissionManagement] cloudwatch:AssumeAccessProfile */
 	static readonly AssumeAccessProfile = "cloudwatch:AssumeAccessProfile";
+	/** [Read] cloudwatch:BatchGetOmniSloReport */
+	static readonly BatchGetOmniSloReport = "cloudwatch:BatchGetOmniSloReport";
 	/** [Read] cloudwatch:BatchGetServiceLevelIndicatorReport */
 	static readonly BatchGetServiceLevelIndicatorReport =
 		"cloudwatch:BatchGetServiceLevelIndicatorReport";
@@ -45,6 +47,8 @@ export class CloudWatchActions {
 	static readonly CreateOmniAgentAsset = "cloudwatch:CreateOmniAgentAsset";
 	/** [Write] cloudwatch:CreateOmniDashboard */
 	static readonly CreateOmniDashboard = "cloudwatch:CreateOmniDashboard";
+	/** [Write] cloudwatch:CreateOmniSlo */
+	static readonly CreateOmniSlo = "cloudwatch:CreateOmniSlo";
 	/** [Write] cloudwatch:CreateOmniThread */
 	static readonly CreateOmniThread = "cloudwatch:CreateOmniThread";
 	/** [Write] cloudwatch:CreateOneTimeDeepLinkCode */
@@ -98,6 +102,8 @@ export class CloudWatchActions {
 	static readonly DeleteOmniAgentAsset = "cloudwatch:DeleteOmniAgentAsset";
 	/** [Write] cloudwatch:DeleteOmniDashboard */
 	static readonly DeleteOmniDashboard = "cloudwatch:DeleteOmniDashboard";
+	/** [Write] cloudwatch:DeleteOmniSlo */
+	static readonly DeleteOmniSlo = "cloudwatch:DeleteOmniSlo";
 	/** [Write] cloudwatch:DeleteOmniThread */
 	static readonly DeleteOmniThread = "cloudwatch:DeleteOmniThread";
 	/** [Write] cloudwatch:DeletePipelineRule */
@@ -198,6 +204,8 @@ export class CloudWatchActions {
 	static readonly actionGetOmniAgentAsset = "cloudwatch:GetOmniAgentAsset";
 	/** [Read] cloudwatch:GetOmniDashboard */
 	static readonly actionGetOmniDashboard = "cloudwatch:GetOmniDashboard";
+	/** [Read] cloudwatch:GetOmniSlo */
+	static readonly actionGetOmniSlo = "cloudwatch:GetOmniSlo";
 	/** [Read] cloudwatch:GetOmniThread */
 	static readonly actionGetOmniThread = "cloudwatch:GetOmniThread";
 	/** [Read] cloudwatch:GetPreferences */
@@ -260,6 +268,8 @@ export class CloudWatchActions {
 	static readonly ListEntitiesForMetric = "cloudwatch:ListEntitiesForMetric";
 	/** [List] cloudwatch:ListIngestionEndpoints */
 	static readonly ListIngestionEndpoints = "cloudwatch:ListIngestionEndpoints";
+	/** [List] cloudwatch:ListIntegrationTargets */
+	static readonly ListIntegrationTargets = "cloudwatch:ListIntegrationTargets";
 	/** [List] cloudwatch:ListIntegrations */
 	static readonly ListIntegrations = "cloudwatch:ListIntegrations";
 	/** [Read] cloudwatch:ListManagedInsightRules */
@@ -282,6 +292,8 @@ export class CloudWatchActions {
 	static readonly ListOmniAgentAssets = "cloudwatch:ListOmniAgentAssets";
 	/** [List] cloudwatch:ListOmniDashboards */
 	static readonly ListOmniDashboards = "cloudwatch:ListOmniDashboards";
+	/** [List] cloudwatch:ListOmniSlos */
+	static readonly ListOmniSlos = "cloudwatch:ListOmniSlos";
 	/** [List] cloudwatch:ListOmniThreads */
 	static readonly ListOmniThreads = "cloudwatch:ListOmniThreads";
 	/** [List] cloudwatch:ListServiceLevelObjectives */
@@ -394,6 +406,8 @@ export class CloudWatchActions {
 	static readonly UpdateOmniAgentAsset = "cloudwatch:UpdateOmniAgentAsset";
 	/** [Write] cloudwatch:UpdateOmniDashboard */
 	static readonly UpdateOmniDashboard = "cloudwatch:UpdateOmniDashboard";
+	/** [Write] cloudwatch:UpdateOmniSlo */
+	static readonly UpdateOmniSlo = "cloudwatch:UpdateOmniSlo";
 	/** [Write] cloudwatch:UpdateOmniThread */
 	static readonly UpdateOmniThread = "cloudwatch:UpdateOmniThread";
 	/** [Write] cloudwatch:UpdatePreferences */
@@ -411,6 +425,7 @@ export class CloudWatchActions {
 
 	/** All read-level actions. */
 	static readonly AllReadActions: string[] = [
+		CloudWatchActions.BatchGetOmniSloReport,
 		CloudWatchActions.BatchGetServiceLevelIndicatorReport,
 		CloudWatchActions.BatchGetServiceLevelObjectiveBudgetReport,
 		CloudWatchActions.DescribeAlarmHistory,
@@ -445,6 +460,7 @@ export class CloudWatchActions {
 		CloudWatchActions.actionGetOTelEnrichment,
 		CloudWatchActions.actionGetOmniAgentAsset,
 		CloudWatchActions.actionGetOmniDashboard,
+		CloudWatchActions.actionGetOmniSlo,
 		CloudWatchActions.actionGetOmniThread,
 		CloudWatchActions.actionGetPreferences,
 		CloudWatchActions.actionGetProfileRecords,
@@ -474,6 +490,7 @@ export class CloudWatchActions {
 		CloudWatchActions.CreateIntegration,
 		CloudWatchActions.CreateOmniAgentAsset,
 		CloudWatchActions.CreateOmniDashboard,
+		CloudWatchActions.CreateOmniSlo,
 		CloudWatchActions.CreateOmniThread,
 		CloudWatchActions.CreateOneTimeDeepLinkCode,
 		CloudWatchActions.CreateResourceMetricsConfiguration,
@@ -494,6 +511,7 @@ export class CloudWatchActions {
 		CloudWatchActions.DeleteMetricStream,
 		CloudWatchActions.DeleteOmniAgentAsset,
 		CloudWatchActions.DeleteOmniDashboard,
+		CloudWatchActions.DeleteOmniSlo,
 		CloudWatchActions.DeleteOmniThread,
 		CloudWatchActions.DeletePipelineRule,
 		CloudWatchActions.DeleteResourceMetricsConfiguration,
@@ -544,6 +562,7 @@ export class CloudWatchActions {
 		CloudWatchActions.UpdateOTelEnrichment,
 		CloudWatchActions.UpdateOmniAgentAsset,
 		CloudWatchActions.UpdateOmniDashboard,
+		CloudWatchActions.UpdateOmniSlo,
 		CloudWatchActions.UpdateOmniThread,
 		CloudWatchActions.UpdatePreferences,
 		CloudWatchActions.UpdateResourceMetricsConfiguration,
@@ -563,6 +582,7 @@ export class CloudWatchActions {
 		CloudWatchActions.ListDomains,
 		CloudWatchActions.ListEntitiesForMetric,
 		CloudWatchActions.ListIngestionEndpoints,
+		CloudWatchActions.ListIntegrationTargets,
 		CloudWatchActions.ListIntegrations,
 		CloudWatchActions.ListMetricDataQueryDefinitions,
 		CloudWatchActions.ListMetricStreams,
@@ -571,6 +591,7 @@ export class CloudWatchActions {
 		CloudWatchActions.ListMonitoringAssessments,
 		CloudWatchActions.ListOmniAgentAssets,
 		CloudWatchActions.ListOmniDashboards,
+		CloudWatchActions.ListOmniSlos,
 		CloudWatchActions.ListOmniThreads,
 		CloudWatchActions.ListServiceLevelObjectives,
 		CloudWatchActions.ListServices,
@@ -1021,6 +1042,34 @@ export interface CloudWatchOmniDashboardArnComponents {
 }
 
 /**
+ * Properties for building a omni-slo ARN.
+ */
+export interface CloudWatchOmniSloArnProps {
+	/** The SloId component of the ARN. */
+	readonly sloId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a omni-slo ARN.
+ */
+export interface CloudWatchOmniSloArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The SloId component. */
+	readonly sloId: string;
+}
+
+/**
  * Properties for building a organization-access-grant ARN.
  */
 export interface CloudWatchOrganizationAccessGrantArnProps {
@@ -1226,6 +1275,8 @@ const OmniAgentAssetArnRegex =
 	/^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):omni-agent-asset\/(?<assetId>[^:/?]+)$/;
 const OmniDashboardArnRegex =
 	/^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):omni-dashboard\/(?<dashboardId>[^:/?]+)$/;
+const OmniSloArnRegex =
+	/^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):omni-slo\/(?<sloId>[^:/?]+)$/;
 const OrganizationAccessGrantArnRegex =
 	/^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):organization-access-grant\/(?<grantId>[^:/?]+)$/;
 const OrganizationDomainArnRegex =
@@ -1721,6 +1772,37 @@ export class CloudWatchResources {
 			region: match.groups.region,
 			account: match.groups.account,
 			dashboardId: match.groups!.dashboardId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the omni-slo resource.
+	 */
+	static omniSlo(props: CloudWatchOmniSloArnProps): string {
+		return `arn:${props.partition ?? "aws"}:cloudwatch:${props.region ?? "*"}:${props.account ?? "*"}:omni-slo/${props.sloId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the omni-slo resource.
+	 */
+	static isValidOmniSloArn(arn: string): boolean {
+		return OmniSloArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a omni-slo ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseOmniSloArn(arn: string): CloudWatchOmniSloArnComponents {
+		const match = OmniSloArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid omni-slo ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			sloId: match.groups!.sloId,
 		};
 	}
 
@@ -2381,6 +2463,10 @@ export class CloudWatchConditions {
 	static readonly AssumeAccessProfileConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
 	];
+	/** Condition keys applicable to the BatchGetOmniSloReport action. */
+	static readonly BatchGetOmniSloReportConditionKeys: string[] = [
+		"cloudwatch:HasAccessGrant",
+	];
 	/** Condition keys applicable to the CreateAccessGrant action. */
 	static readonly CreateAccessGrantConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
@@ -2406,6 +2492,12 @@ export class CloudWatchConditions {
 	];
 	/** Condition keys applicable to the CreateOmniDashboard action. */
 	static readonly CreateOmniDashboardConditionKeys: string[] = [
+		"cloudwatch:HasAccessGrant",
+	];
+	/** Condition keys applicable to the CreateOmniSlo action. */
+	static readonly CreateOmniSloConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
 		"cloudwatch:HasAccessGrant",
 	];
 	/** Condition keys applicable to the CreateOmniThread action. */
@@ -2450,6 +2542,10 @@ export class CloudWatchConditions {
 	];
 	/** Condition keys applicable to the DeleteOmniDashboard action. */
 	static readonly DeleteOmniDashboardConditionKeys: string[] = [
+		"cloudwatch:HasAccessGrant",
+	];
+	/** Condition keys applicable to the DeleteOmniSlo action. */
+	static readonly DeleteOmniSloConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
 	];
 	/** Condition keys applicable to the DeleteOmniThread action. */
@@ -2511,6 +2607,10 @@ export class CloudWatchConditions {
 	static readonly actionGetOmniDashboardConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
 	];
+	/** Condition keys applicable to the GetOmniSlo action. */
+	static readonly actionGetOmniSloConditionKeys: string[] = [
+		"cloudwatch:HasAccessGrant",
+	];
 	/** Condition keys applicable to the GetOmniThread action. */
 	static readonly actionGetOmniThreadConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
@@ -2569,6 +2669,10 @@ export class CloudWatchConditions {
 	/** Condition keys applicable to the ListDomainAccessGrantsForOrganization action. */
 	static readonly ListDomainAccessGrantsForOrganizationConditionKeys: string[] =
 		["cloudwatch:HasAccessGrant"];
+	/** Condition keys applicable to the ListIntegrationTargets action. */
+	static readonly ListIntegrationTargetsConditionKeys: string[] = [
+		"cloudwatch:HasAccessGrant",
+	];
 	/** Condition keys applicable to the ListIntegrations action. */
 	static readonly ListIntegrationsConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
@@ -2589,6 +2693,10 @@ export class CloudWatchConditions {
 	];
 	/** Condition keys applicable to the ListOmniDashboards action. */
 	static readonly ListOmniDashboardsConditionKeys: string[] = [
+		"cloudwatch:HasAccessGrant",
+	];
+	/** Condition keys applicable to the ListOmniSlos action. */
+	static readonly ListOmniSlosConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
 	];
 	/** Condition keys applicable to the ListOmniThreads action. */
@@ -2745,6 +2853,10 @@ export class CloudWatchConditions {
 	];
 	/** Condition keys applicable to the UpdateOmniDashboard action. */
 	static readonly UpdateOmniDashboardConditionKeys: string[] = [
+		"cloudwatch:HasAccessGrant",
+	];
+	/** Condition keys applicable to the UpdateOmniSlo action. */
+	static readonly UpdateOmniSloConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
 	];
 	/** Condition keys applicable to the UpdateOmniThread action. */

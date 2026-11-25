@@ -4704,7 +4704,9 @@ export class BedrockOperations {
 		"bedrock:StartIngestionJob",
 	];
 	/** IAM actions required for the StartTrustedAccessProgramAccountApplication API call. */
-	static readonly StartTrustedAccessProgramAccountApplication: string[] = [];
+	static readonly StartTrustedAccessProgramAccountApplication: string[] = [
+		"bedrock:StartTrustedAccessProgramAccountApplication",
+	];
 	/** IAM actions required for the StartTrustedAccessProgramOrganizationApplication API call. */
 	static readonly StartTrustedAccessProgramOrganizationApplication: string[] =
 		[];

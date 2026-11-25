@@ -1561,7 +1561,9 @@ export class MgnOperations {
 		"mgn:ListNetworkMigrationExecutions",
 	];
 	/** IAM actions required for the ListNetworkMigrationInsights API call. */
-	static readonly ListNetworkMigrationInsights: string[] = [];
+	static readonly ListNetworkMigrationInsights: string[] = [
+		"mgn:ListNetworkMigrationInsights",
+	];
 	/** IAM actions required for the ListNetworkMigrationMapperSegmentConstructs API call. */
 	static readonly ListNetworkMigrationMapperSegmentConstructs: string[] = [
 		"mgn:ListNetworkMigrationMapperSegmentConstructs",
@@ -1666,6 +1668,7 @@ export class MgnOperations {
 	/** IAM actions required for the StartRemoteSourceActionJob API call. */
 	static readonly StartRemoteSourceActionJob: string[] = [
 		"mgn:StartRemoteSourceActionJob",
+		"mgn:TagResource",
 	];
 	/** IAM actions required for the StartReplication API call. */
 	static readonly StartReplication: string[] = ["mgn:StartReplication"];

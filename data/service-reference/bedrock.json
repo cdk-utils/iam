@@ -5616,6 +5616,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -11253,6 +11254,12 @@
     },
     {
       "Name": "StartTrustedAccessProgramAccountApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "StartTrustedAccessProgramAccountApplication",
+          "Service": "bedrock"
+        }
+      ],
       "SDK": [
         {
           "Name": "bedrock",

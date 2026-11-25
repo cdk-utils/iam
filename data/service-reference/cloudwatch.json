@@ -21,6 +21,29 @@
       }
     },
     {
+      "Name": "BatchGetOmniSloReport",
+      "ActionConditionKeys": [
+        "cloudwatch:HasAccessGrant"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "omni-slo"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "BatchGetServiceLevelIndicatorReport",
       "Annotations": {
         "Properties": {
@@ -243,6 +266,31 @@
           "IsWrite": true
         }
       },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "CreateOmniSlo",
+      "ActionConditionKeys": [
+        "aws:RequestTag/${TagKey}",
+        "aws:TagKeys",
+        "cloudwatch:HasAccessGrant"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "omni-slo"
+        }
+      ],
       "SupportedBy": {
         "IAM Access Analyzer Policy Generation": false,
         "IAM Action Last Accessed": false
@@ -719,6 +767,29 @@
       "Resources": [
         {
           "Name": "omni-dashboard"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "DeleteOmniSlo",
+      "ActionConditionKeys": [
+        "cloudwatch:HasAccessGrant"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "omni-slo"
         }
       ],
       "SupportedBy": {
@@ -1587,6 +1658,29 @@
       }
     },
     {
+      "Name": "GetOmniSlo",
+      "ActionConditionKeys": [
+        "cloudwatch:HasAccessGrant"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "omni-slo"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "GetOmniThread",
       "ActionConditionKeys": [
         "cloudwatch:HasAccessGrant"
@@ -2104,6 +2198,29 @@
       }
     },
     {
+      "Name": "ListIntegrationTargets",
+      "ActionConditionKeys": [
+        "cloudwatch:HasAccessGrant"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "Resources": [
+        {
+          "Name": "integration"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
       "Name": "ListIntegrations",
       "ActionConditionKeys": [
         "cloudwatch:HasAccessGrant"
@@ -2258,6 +2375,24 @@
       "Annotations": {
         "Properties": {
           "IsDataPlane": false,
+          "IsList": true,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": false
+        }
+      },
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "ListOmniSlos",
+      "ActionConditionKeys": [
+        "cloudwatch:HasAccessGrant"
+      ],
+      "Annotations": {
+        "Properties": {
           "IsList": true,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -2426,6 +2561,12 @@
         },
         {
           "Name": "metric-stream",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "omni-slo",
           "ConditionKeys": [
             "aws:ResourceTag/${TagKey}"
           ]
@@ -3195,6 +3336,12 @@
           ]
         },
         {
+          "Name": "omni-slo",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
           "Name": "service",
           "ConditionKeys": [
             "aws:ResourceTag/${TagKey}"
@@ -3266,6 +3413,12 @@
         },
         {
           "Name": "metric-stream",
+          "ConditionKeys": [
+            "aws:ResourceTag/${TagKey}"
+          ]
+        },
+        {
+          "Name": "omni-slo",
           "ConditionKeys": [
             "aws:ResourceTag/${TagKey}"
           ]
@@ -3478,6 +3631,29 @@
       "Resources": [
         {
           "Name": "omni-dashboard"
+        }
+      ],
+      "SupportedBy": {
+        "IAM Access Analyzer Policy Generation": false,
+        "IAM Action Last Accessed": false
+      }
+    },
+    {
+      "Name": "UpdateOmniSlo",
+      "ActionConditionKeys": [
+        "cloudwatch:HasAccessGrant"
+      ],
+      "Annotations": {
+        "Properties": {
+          "IsList": false,
+          "IsPermissionManagement": false,
+          "IsTaggingOnly": false,
+          "IsWrite": true
+        }
+      },
+      "Resources": [
+        {
+          "Name": "omni-slo"
         }
       ],
       "SupportedBy": {
@@ -5887,6 +6063,15 @@
       "Name": "omni-dashboard",
       "ARNFormats": [
         "arn:${Partition}:cloudwatch:${Region}:${Account}:omni-dashboard/${DashboardId}"
+      ],
+      "ConditionKeys": [
+        "aws:ResourceTag/${TagKey}"
+      ]
+    },
+    {
+      "Name": "omni-slo",
+      "ARNFormats": [
+        "arn:${Partition}:cloudwatch:${Region}:${Account}:omni-slo/${SloId}"
       ],
       "ConditionKeys": [
         "aws:ResourceTag/${TagKey}"
