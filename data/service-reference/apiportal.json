@@ -1134,6 +1134,10 @@
         {
           "Name": "CreatePortalPreview",
           "Service": "apiportal"
+        },
+        {
+          "Name": "GetProduct",
+          "Service": "apiportal"
         }
       ],
       "SDK": [

@@ -1293,6 +1293,15 @@
       "Name": "UpdateEnvironment",
       "AuthorizedActions": [
         {
+          "Name": "PassRole",
+          "Context": {
+            "iam:PassedToService": [
+              "continuum.amazonaws.com"
+            ]
+          },
+          "Service": "iam"
+        },
+        {
           "Name": "UpdateEnvironment",
           "Service": "continuum"
         }

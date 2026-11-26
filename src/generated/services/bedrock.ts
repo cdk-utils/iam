@@ -4325,7 +4325,10 @@ export class BedrockOperations {
 		"bedrock:GetOrganizationDataRetentionStorage",
 	];
 	/** IAM actions required for the GetProject API call. */
-	static readonly opGetProject: string[] = ["bedrock:GetProject"];
+	static readonly opGetProject: string[] = [
+		"bedrock:CallWithBearerToken",
+		"bedrock:GetProject",
+	];
 	/** IAM actions required for the GetProjectDataRetentionStorage API call. */
 	static readonly opGetProjectDataRetentionStorage: string[] = [
 		"bedrock:GetProjectDataRetentionStorage",
@@ -4363,7 +4366,9 @@ export class BedrockOperations {
 		"bedrock:GetTrustedAccessProgramOrganizationEnrollment",
 	];
 	/** IAM actions required for the GetTrustedAccessProgramProjectEnrollment API call. */
-	static readonly opGetTrustedAccessProgramProjectEnrollment: string[] = [];
+	static readonly opGetTrustedAccessProgramProjectEnrollment: string[] = [
+		"bedrock:GetTrustedAccessProgramProjectEnrollment",
+	];
 	/** IAM actions required for the GetUseCaseForModelAccess API call. */
 	static readonly opGetUseCaseForModelAccess: string[] = [
 		"bedrock:CallWithBearerToken",
@@ -4654,11 +4659,17 @@ export class BedrockOperations {
 	/** IAM actions required for the PutResourcePolicy API call. */
 	static readonly PutResourcePolicy: string[] = ["bedrock:PutResourcePolicy"];
 	/** IAM actions required for the PutTrustedAccessProgramAccountEnrollment API call. */
-	static readonly PutTrustedAccessProgramAccountEnrollment: string[] = [];
+	static readonly PutTrustedAccessProgramAccountEnrollment: string[] = [
+		"bedrock:PutTrustedAccessProgramAccountEnrollment",
+	];
 	/** IAM actions required for the PutTrustedAccessProgramOrganizationEnrollment API call. */
-	static readonly PutTrustedAccessProgramOrganizationEnrollment: string[] = [];
+	static readonly PutTrustedAccessProgramOrganizationEnrollment: string[] = [
+		"bedrock:PutTrustedAccessProgramOrganizationEnrollment",
+	];
 	/** IAM actions required for the PutTrustedAccessProgramProjectEnrollment API call. */
-	static readonly PutTrustedAccessProgramProjectEnrollment: string[] = [];
+	static readonly PutTrustedAccessProgramProjectEnrollment: string[] = [
+		"bedrock:PutTrustedAccessProgramProjectEnrollment",
+	];
 	/** IAM actions required for the PutUseCaseForModelAccess API call. */
 	static readonly PutUseCaseForModelAccess: string[] = [
 		"bedrock:CallWithBearerToken",
@@ -4708,8 +4719,9 @@ export class BedrockOperations {
 		"bedrock:StartTrustedAccessProgramAccountApplication",
 	];
 	/** IAM actions required for the StartTrustedAccessProgramOrganizationApplication API call. */
-	static readonly StartTrustedAccessProgramOrganizationApplication: string[] =
-		[];
+	static readonly StartTrustedAccessProgramOrganizationApplication: string[] = [
+		"bedrock:StartTrustedAccessProgramOrganizationApplication",
+	];
 	/** IAM actions required for the StartTrustedAccessProgramProjectApplication API call. */
 	static readonly StartTrustedAccessProgramProjectApplication: string[] = [
 		"bedrock:StartTrustedAccessProgramProjectApplication",

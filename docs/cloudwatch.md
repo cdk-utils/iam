@@ -1159,6 +1159,154 @@ Defaults to "*".
 
 ---
 
+### CloudWatchExperimentArnComponents <a name="CloudWatchExperimentArnComponents" id="@cdk_utils/iam.cloudwatch.CloudWatchExperimentArnComponents"></a>
+
+Parsed components of a experiment ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.cloudwatch.CloudWatchExperimentArnComponents.Initializer"></a>
+
+```typescript
+import { cloudwatch } from '@cdk_utils/iam'
+
+const cloudWatchExperimentArnComponents: cloudwatch.CloudWatchExperimentArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchExperimentArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchExperimentArnComponents.property.experimentId">experimentId</a></code> | <code>string</code> | The ExperimentId component. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchExperimentArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchExperimentArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.cloudwatch.CloudWatchExperimentArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `experimentId`<sup>Required</sup> <a name="experimentId" id="@cdk_utils/iam.cloudwatch.CloudWatchExperimentArnComponents.property.experimentId"></a>
+
+```typescript
+public readonly experimentId: string;
+```
+
+- *Type:* string
+
+The ExperimentId component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.cloudwatch.CloudWatchExperimentArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.cloudwatch.CloudWatchExperimentArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### CloudWatchExperimentArnProps <a name="CloudWatchExperimentArnProps" id="@cdk_utils/iam.cloudwatch.CloudWatchExperimentArnProps"></a>
+
+Properties for building a experiment ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.cloudwatch.CloudWatchExperimentArnProps.Initializer"></a>
+
+```typescript
+import { cloudwatch } from '@cdk_utils/iam'
+
+const cloudWatchExperimentArnProps: cloudwatch.CloudWatchExperimentArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchExperimentArnProps.property.experimentId">experimentId</a></code> | <code>string</code> | The ExperimentId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchExperimentArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchExperimentArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchExperimentArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `experimentId`<sup>Required</sup> <a name="experimentId" id="@cdk_utils/iam.cloudwatch.CloudWatchExperimentArnProps.property.experimentId"></a>
+
+```typescript
+public readonly experimentId: string;
+```
+
+- *Type:* string
+
+The ExperimentId component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.cloudwatch.CloudWatchExperimentArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.cloudwatch.CloudWatchExperimentArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.cloudwatch.CloudWatchExperimentArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### CloudWatchIngestionEndpointArnComponents <a name="CloudWatchIngestionEndpointArnComponents" id="@cdk_utils/iam.cloudwatch.CloudWatchIngestionEndpointArnComponents"></a>
 
 Parsed components of a ingestion-endpoint ARN.
@@ -1616,6 +1764,180 @@ Defaults to "aws".
 ---
 
 ##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.cloudwatch.CloudWatchIntegrationArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
+### CloudWatchLookupArnComponents <a name="CloudWatchLookupArnComponents" id="@cdk_utils/iam.cloudwatch.CloudWatchLookupArnComponents"></a>
+
+Parsed components of a lookup ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.cloudwatch.CloudWatchLookupArnComponents.Initializer"></a>
+
+```typescript
+import { cloudwatch } from '@cdk_utils/iam'
+
+const cloudWatchLookupArnComponents: cloudwatch.CloudWatchLookupArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchLookupArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchLookupArnComponents.property.lookupId">lookupId</a></code> | <code>string</code> | The LookupId component. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchLookupArnComponents.property.lookupName">lookupName</a></code> | <code>string</code> | The LookupName component. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchLookupArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchLookupArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.cloudwatch.CloudWatchLookupArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `lookupId`<sup>Required</sup> <a name="lookupId" id="@cdk_utils/iam.cloudwatch.CloudWatchLookupArnComponents.property.lookupId"></a>
+
+```typescript
+public readonly lookupId: string;
+```
+
+- *Type:* string
+
+The LookupId component.
+
+---
+
+##### `lookupName`<sup>Required</sup> <a name="lookupName" id="@cdk_utils/iam.cloudwatch.CloudWatchLookupArnComponents.property.lookupName"></a>
+
+```typescript
+public readonly lookupName: string;
+```
+
+- *Type:* string
+
+The LookupName component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.cloudwatch.CloudWatchLookupArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.cloudwatch.CloudWatchLookupArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### CloudWatchLookupArnProps <a name="CloudWatchLookupArnProps" id="@cdk_utils/iam.cloudwatch.CloudWatchLookupArnProps"></a>
+
+Properties for building a lookup ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.cloudwatch.CloudWatchLookupArnProps.Initializer"></a>
+
+```typescript
+import { cloudwatch } from '@cdk_utils/iam'
+
+const cloudWatchLookupArnProps: cloudwatch.CloudWatchLookupArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchLookupArnProps.property.lookupId">lookupId</a></code> | <code>string</code> | The LookupId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchLookupArnProps.property.lookupName">lookupName</a></code> | <code>string</code> | The LookupName component of the ARN. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchLookupArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchLookupArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchLookupArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `lookupId`<sup>Required</sup> <a name="lookupId" id="@cdk_utils/iam.cloudwatch.CloudWatchLookupArnProps.property.lookupId"></a>
+
+```typescript
+public readonly lookupId: string;
+```
+
+- *Type:* string
+
+The LookupId component of the ARN.
+
+---
+
+##### `lookupName`<sup>Required</sup> <a name="lookupName" id="@cdk_utils/iam.cloudwatch.CloudWatchLookupArnProps.property.lookupName"></a>
+
+```typescript
+public readonly lookupName: string;
+```
+
+- *Type:* string
+
+The LookupName component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.cloudwatch.CloudWatchLookupArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.cloudwatch.CloudWatchLookupArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.cloudwatch.CloudWatchLookupArnProps.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -3346,10 +3668,13 @@ new cloudwatch.CloudWatchActions()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetDomain">actionGetDomain</a></code> | <code>string</code> | [Read] cloudwatch:GetDomain. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetDomainAccessGrantForOrganization">actionGetDomainAccessGrantForOrganization</a></code> | <code>string</code> | [Read] cloudwatch:GetDomainAccessGrantForOrganization. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetDomainForOrganization">actionGetDomainForOrganization</a></code> | <code>string</code> | [Read] cloudwatch:GetDomainForOrganization. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetExperiment">actionGetExperiment</a></code> | <code>string</code> | [Read] cloudwatch:GetExperiment. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetExperimentRun">actionGetExperimentRun</a></code> | <code>string</code> | [Read] cloudwatch:GetExperimentRun. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetIngestionEndpoint">actionGetIngestionEndpoint</a></code> | <code>string</code> | [Read] cloudwatch:GetIngestionEndpoint. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetInsightRuleReport">actionGetInsightRuleReport</a></code> | <code>string</code> | [Read] cloudwatch:GetInsightRuleReport. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetIntegration">actionGetIntegration</a></code> | <code>string</code> | [Read] cloudwatch:GetIntegration. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetIntelligenceConfiguration">actionGetIntelligenceConfiguration</a></code> | <code>string</code> | [Read] cloudwatch:GetIntelligenceConfiguration. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetLookup">actionGetLookup</a></code> | <code>string</code> | [Read] cloudwatch:GetLookup. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetMetricData">actionGetMetricData</a></code> | <code>string</code> | [Read] cloudwatch:GetMetricData. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetMetricDataQueryDefinition">actionGetMetricDataQueryDefinition</a></code> | <code>string</code> | [Read] cloudwatch:GetMetricDataQueryDefinition. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetMetricStatistics">actionGetMetricStatistics</a></code> | <code>string</code> | [Read] cloudwatch:GetMetricStatistics. |
@@ -3387,19 +3712,23 @@ new cloudwatch.CloudWatchActions()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.BatchGetServiceLevelIndicatorReport">BatchGetServiceLevelIndicatorReport</a></code> | <code>string</code> | [Read] cloudwatch:BatchGetServiceLevelIndicatorReport. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.BatchGetServiceLevelObjectiveBudgetReport">BatchGetServiceLevelObjectiveBudgetReport</a></code> | <code>string</code> | [Read] cloudwatch:BatchGetServiceLevelObjectiveBudgetReport. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CallWithBearerToken">CallWithBearerToken</a></code> | <code>string</code> | [Write] cloudwatch:CallWithBearerToken. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CompleteExperimentRun">CompleteExperimentRun</a></code> | <code>string</code> | [Write] cloudwatch:CompleteExperimentRun. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateAccessGrant">CreateAccessGrant</a></code> | <code>string</code> | [PermissionManagement] cloudwatch:CreateAccessGrant. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateAccessProfile">CreateAccessProfile</a></code> | <code>string</code> | [PermissionManagement] cloudwatch:CreateAccessProfile. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateAlert">CreateAlert</a></code> | <code>string</code> | [Write] cloudwatch:CreateAlert. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateDomain">CreateDomain</a></code> | <code>string</code> | [Write] cloudwatch:CreateDomain. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateDomainAccessGrantForOrganization">CreateDomainAccessGrantForOrganization</a></code> | <code>string</code> | [PermissionManagement] cloudwatch:CreateDomainAccessGrantForOrganization. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateDomainForOrganization">CreateDomainForOrganization</a></code> | <code>string</code> | [Write] cloudwatch:CreateDomainForOrganization. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateExperiment">CreateExperiment</a></code> | <code>string</code> | [Write] cloudwatch:CreateExperiment. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateIngestionEndpoint">CreateIngestionEndpoint</a></code> | <code>string</code> | [Write] cloudwatch:CreateIngestionEndpoint. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateIntegration">CreateIntegration</a></code> | <code>string</code> | [Write] cloudwatch:CreateIntegration. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateLookup">CreateLookup</a></code> | <code>string</code> | [Write] cloudwatch:CreateLookup. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateOmniAgentAsset">CreateOmniAgentAsset</a></code> | <code>string</code> | [Write] cloudwatch:CreateOmniAgentAsset. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateOmniDashboard">CreateOmniDashboard</a></code> | <code>string</code> | [Write] cloudwatch:CreateOmniDashboard. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateOmniSlo">CreateOmniSlo</a></code> | <code>string</code> | [Write] cloudwatch:CreateOmniSlo. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateOmniThread">CreateOmniThread</a></code> | <code>string</code> | [Write] cloudwatch:CreateOmniThread. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateOneTimeDeepLinkCode">CreateOneTimeDeepLinkCode</a></code> | <code>string</code> | [Write] cloudwatch:CreateOneTimeDeepLinkCode. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateProvisioningRolesForOrganization">CreateProvisioningRolesForOrganization</a></code> | <code>string</code> | [Write] cloudwatch:CreateProvisioningRolesForOrganization. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateResourceMetricsConfiguration">CreateResourceMetricsConfiguration</a></code> | <code>string</code> | [Write] cloudwatch:CreateResourceMetricsConfiguration. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateServiceLevelObjective">CreateServiceLevelObjective</a></code> | <code>string</code> | [Write] cloudwatch:CreateServiceLevelObjective. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateSpace">CreateSpace</a></code> | <code>string</code> | [Write] cloudwatch:CreateSpace. |
@@ -3414,9 +3743,12 @@ new cloudwatch.CloudWatchActions()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteDomain">DeleteDomain</a></code> | <code>string</code> | [Write] cloudwatch:DeleteDomain. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteDomainAccessGrantForOrganization">DeleteDomainAccessGrantForOrganization</a></code> | <code>string</code> | [PermissionManagement] cloudwatch:DeleteDomainAccessGrantForOrganization. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteDomainForOrganization">DeleteDomainForOrganization</a></code> | <code>string</code> | [Write] cloudwatch:DeleteDomainForOrganization. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteExperiment">DeleteExperiment</a></code> | <code>string</code> | [Write] cloudwatch:DeleteExperiment. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteExperimentRun">DeleteExperimentRun</a></code> | <code>string</code> | [Write] cloudwatch:DeleteExperimentRun. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteIngestionEndpoint">DeleteIngestionEndpoint</a></code> | <code>string</code> | [Write] cloudwatch:DeleteIngestionEndpoint. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteInsightRules">DeleteInsightRules</a></code> | <code>string</code> | [Write] cloudwatch:DeleteInsightRules. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteIntegration">DeleteIntegration</a></code> | <code>string</code> | [Write] cloudwatch:DeleteIntegration. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteLookup">DeleteLookup</a></code> | <code>string</code> | [Write] cloudwatch:DeleteLookup. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteMetricDataQueryDefinition">DeleteMetricDataQueryDefinition</a></code> | <code>string</code> | [Write] cloudwatch:DeleteMetricDataQueryDefinition. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteMetricStream">DeleteMetricStream</a></code> | <code>string</code> | [Write] cloudwatch:DeleteMetricStream. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteOmniAgentAsset">DeleteOmniAgentAsset</a></code> | <code>string</code> | [Write] cloudwatch:DeleteOmniAgentAsset. |
@@ -3448,19 +3780,24 @@ new cloudwatch.CloudWatchActions()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListAlarmMuteRules">ListAlarmMuteRules</a></code> | <code>string</code> | [List] cloudwatch:ListAlarmMuteRules. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListAlertContributors">ListAlertContributors</a></code> | <code>string</code> | [List] cloudwatch:ListAlertContributors. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListAlerts">ListAlerts</a></code> | <code>string</code> | [List] cloudwatch:ListAlerts. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListAnomalies">ListAnomalies</a></code> | <code>string</code> | [List] cloudwatch:ListAnomalies. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListDashboards">ListDashboards</a></code> | <code>string</code> | [List] cloudwatch:ListDashboards. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListDomainAccessGrantsForOrganization">ListDomainAccessGrantsForOrganization</a></code> | <code>string</code> | [List] cloudwatch:ListDomainAccessGrantsForOrganization. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListDomains">ListDomains</a></code> | <code>string</code> | [List] cloudwatch:ListDomains. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListEntitiesForMetric">ListEntitiesForMetric</a></code> | <code>string</code> | [List] cloudwatch:ListEntitiesForMetric. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListExperimentRuns">ListExperimentRuns</a></code> | <code>string</code> | [List] cloudwatch:ListExperimentRuns. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListExperiments">ListExperiments</a></code> | <code>string</code> | [List] cloudwatch:ListExperiments. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListIngestionEndpoints">ListIngestionEndpoints</a></code> | <code>string</code> | [List] cloudwatch:ListIngestionEndpoints. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListIntegrations">ListIntegrations</a></code> | <code>string</code> | [List] cloudwatch:ListIntegrations. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListIntegrationTargets">ListIntegrationTargets</a></code> | <code>string</code> | [List] cloudwatch:ListIntegrationTargets. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListLookups">ListLookups</a></code> | <code>string</code> | [List] cloudwatch:ListLookups. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListManagedInsightRules">ListManagedInsightRules</a></code> | <code>string</code> | [Read] cloudwatch:ListManagedInsightRules. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListMetricDataQueryDefinitions">ListMetricDataQueryDefinitions</a></code> | <code>string</code> | [List] cloudwatch:ListMetricDataQueryDefinitions. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListMetrics">ListMetrics</a></code> | <code>string</code> | [List] cloudwatch:ListMetrics. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListMetricStreams">ListMetricStreams</a></code> | <code>string</code> | [List] cloudwatch:ListMetricStreams. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListMonitoringAssessmentResults">ListMonitoringAssessmentResults</a></code> | <code>string</code> | [List] cloudwatch:ListMonitoringAssessmentResults. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListMonitoringAssessments">ListMonitoringAssessments</a></code> | <code>string</code> | [List] cloudwatch:ListMonitoringAssessments. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListObservations">ListObservations</a></code> | <code>string</code> | [List] cloudwatch:ListObservations. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListOmniAgentAssets">ListOmniAgentAssets</a></code> | <code>string</code> | [List] cloudwatch:ListOmniAgentAssets. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListOmniDashboards">ListOmniDashboards</a></code> | <code>string</code> | [List] cloudwatch:ListOmniDashboards. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListOmniSlos">ListOmniSlos</a></code> | <code>string</code> | [List] cloudwatch:ListOmniSlos. |
@@ -3478,6 +3815,7 @@ new cloudwatch.CloudWatchActions()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.PutAnomalyDetector">PutAnomalyDetector</a></code> | <code>string</code> | [Write] cloudwatch:PutAnomalyDetector. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.PutCompositeAlarm">PutCompositeAlarm</a></code> | <code>string</code> | [Write] cloudwatch:PutCompositeAlarm. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.PutDashboard">PutDashboard</a></code> | <code>string</code> | [Write] cloudwatch:PutDashboard. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.PutExperimentRunResults">PutExperimentRunResults</a></code> | <code>string</code> | [Write] cloudwatch:PutExperimentRunResults. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.PutInsightRule">PutInsightRule</a></code> | <code>string</code> | [Write] cloudwatch:PutInsightRule. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.PutIntelligenceConfiguration">PutIntelligenceConfiguration</a></code> | <code>string</code> | [Write] cloudwatch:PutIntelligenceConfiguration. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.PutLogAlarm">PutLogAlarm</a></code> | <code>string</code> | [Write] cloudwatch:PutLogAlarm. |
@@ -3492,12 +3830,14 @@ new cloudwatch.CloudWatchActions()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.QueryTraces">QueryTraces</a></code> | <code>string</code> | [Write] cloudwatch:QueryTraces. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.SearchPrincipals">SearchPrincipals</a></code> | <code>string</code> | [Write] cloudwatch:SearchPrincipals. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.StartExperimentRun">StartExperimentRun</a></code> | <code>string</code> | [Write] cloudwatch:StartExperimentRun. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.StartMetricStreams">StartMetricStreams</a></code> | <code>string</code> | [Write] cloudwatch:StartMetricStreams. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.StartMonitoringAssessment">StartMonitoringAssessment</a></code> | <code>string</code> | [Read] cloudwatch:StartMonitoringAssessment. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.StartOmniThreadSession">StartOmniThreadSession</a></code> | <code>string</code> | [Write] cloudwatch:StartOmniThreadSession. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.StartOTelEnrichment">StartOTelEnrichment</a></code> | <code>string</code> | [Write] cloudwatch:StartOTelEnrichment. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.StartTelemetryQuery">StartTelemetryQuery</a></code> | <code>string</code> | [Write] cloudwatch:StartTelemetryQuery. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.StartTelemetryQuerySession">StartTelemetryQuerySession</a></code> | <code>string</code> | [Write] cloudwatch:StartTelemetryQuerySession. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.StopExperimentRun">StopExperimentRun</a></code> | <code>string</code> | [Write] cloudwatch:StopExperimentRun. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.StopMetricStreams">StopMetricStreams</a></code> | <code>string</code> | [Write] cloudwatch:StopMetricStreams. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.StopOTelEnrichment">StopOTelEnrichment</a></code> | <code>string</code> | [Write] cloudwatch:StopOTelEnrichment. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.StopTelemetryQuery">StopTelemetryQuery</a></code> | <code>string</code> | [Write] cloudwatch:StopTelemetryQuery. |
@@ -3510,8 +3850,10 @@ new cloudwatch.CloudWatchActions()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.UpdateAlert">UpdateAlert</a></code> | <code>string</code> | [Write] cloudwatch:UpdateAlert. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.UpdateDomain">UpdateDomain</a></code> | <code>string</code> | [Write] cloudwatch:UpdateDomain. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.UpdateDomainForOrganization">UpdateDomainForOrganization</a></code> | <code>string</code> | [Write] cloudwatch:UpdateDomainForOrganization. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.UpdateExperiment">UpdateExperiment</a></code> | <code>string</code> | [Write] cloudwatch:UpdateExperiment. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.UpdateIngestionEndpoint">UpdateIngestionEndpoint</a></code> | <code>string</code> | [Write] cloudwatch:UpdateIngestionEndpoint. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.UpdateIntegration">UpdateIntegration</a></code> | <code>string</code> | [Write] cloudwatch:UpdateIntegration. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.UpdateLookup">UpdateLookup</a></code> | <code>string</code> | [Write] cloudwatch:UpdateLookup. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.UpdateOmniAgentAsset">UpdateOmniAgentAsset</a></code> | <code>string</code> | [Write] cloudwatch:UpdateOmniAgentAsset. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.UpdateOmniDashboard">UpdateOmniDashboard</a></code> | <code>string</code> | [Write] cloudwatch:UpdateOmniDashboard. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchActions.property.UpdateOmniSlo">UpdateOmniSlo</a></code> | <code>string</code> | [Write] cloudwatch:UpdateOmniSlo. |
@@ -3657,6 +3999,30 @@ public readonly actionGetDomainForOrganization: string;
 
 ---
 
+##### `actionGetExperiment`<sup>Required</sup> <a name="actionGetExperiment" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetExperiment"></a>
+
+```typescript
+public readonly actionGetExperiment: string;
+```
+
+- *Type:* string
+
+[Read] cloudwatch:GetExperiment.
+
+---
+
+##### `actionGetExperimentRun`<sup>Required</sup> <a name="actionGetExperimentRun" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetExperimentRun"></a>
+
+```typescript
+public readonly actionGetExperimentRun: string;
+```
+
+- *Type:* string
+
+[Read] cloudwatch:GetExperimentRun.
+
+---
+
 ##### `actionGetIngestionEndpoint`<sup>Required</sup> <a name="actionGetIngestionEndpoint" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetIngestionEndpoint"></a>
 
 ```typescript
@@ -3702,6 +4068,18 @@ public readonly actionGetIntelligenceConfiguration: string;
 - *Type:* string
 
 [Read] cloudwatch:GetIntelligenceConfiguration.
+
+---
+
+##### `actionGetLookup`<sup>Required</sup> <a name="actionGetLookup" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.actionGetLookup"></a>
+
+```typescript
+public readonly actionGetLookup: string;
+```
+
+- *Type:* string
+
+[Read] cloudwatch:GetLookup.
 
 ---
 
@@ -4149,6 +4527,18 @@ public readonly CallWithBearerToken: string;
 
 ---
 
+##### `CompleteExperimentRun`<sup>Required</sup> <a name="CompleteExperimentRun" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CompleteExperimentRun"></a>
+
+```typescript
+public readonly CompleteExperimentRun: string;
+```
+
+- *Type:* string
+
+[Write] cloudwatch:CompleteExperimentRun.
+
+---
+
 ##### `CreateAccessGrant`<sup>Required</sup> <a name="CreateAccessGrant" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateAccessGrant"></a>
 
 ```typescript
@@ -4221,6 +4611,18 @@ public readonly CreateDomainForOrganization: string;
 
 ---
 
+##### `CreateExperiment`<sup>Required</sup> <a name="CreateExperiment" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateExperiment"></a>
+
+```typescript
+public readonly CreateExperiment: string;
+```
+
+- *Type:* string
+
+[Write] cloudwatch:CreateExperiment.
+
+---
+
 ##### `CreateIngestionEndpoint`<sup>Required</sup> <a name="CreateIngestionEndpoint" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateIngestionEndpoint"></a>
 
 ```typescript
@@ -4242,6 +4644,18 @@ public readonly CreateIntegration: string;
 - *Type:* string
 
 [Write] cloudwatch:CreateIntegration.
+
+---
+
+##### `CreateLookup`<sup>Required</sup> <a name="CreateLookup" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateLookup"></a>
+
+```typescript
+public readonly CreateLookup: string;
+```
+
+- *Type:* string
+
+[Write] cloudwatch:CreateLookup.
 
 ---
 
@@ -4302,6 +4716,18 @@ public readonly CreateOneTimeDeepLinkCode: string;
 - *Type:* string
 
 [Write] cloudwatch:CreateOneTimeDeepLinkCode.
+
+---
+
+##### `CreateProvisioningRolesForOrganization`<sup>Required</sup> <a name="CreateProvisioningRolesForOrganization" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.CreateProvisioningRolesForOrganization"></a>
+
+```typescript
+public readonly CreateProvisioningRolesForOrganization: string;
+```
+
+- *Type:* string
+
+[Write] cloudwatch:CreateProvisioningRolesForOrganization.
 
 ---
 
@@ -4473,6 +4899,30 @@ public readonly DeleteDomainForOrganization: string;
 
 ---
 
+##### `DeleteExperiment`<sup>Required</sup> <a name="DeleteExperiment" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteExperiment"></a>
+
+```typescript
+public readonly DeleteExperiment: string;
+```
+
+- *Type:* string
+
+[Write] cloudwatch:DeleteExperiment.
+
+---
+
+##### `DeleteExperimentRun`<sup>Required</sup> <a name="DeleteExperimentRun" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteExperimentRun"></a>
+
+```typescript
+public readonly DeleteExperimentRun: string;
+```
+
+- *Type:* string
+
+[Write] cloudwatch:DeleteExperimentRun.
+
+---
+
 ##### `DeleteIngestionEndpoint`<sup>Required</sup> <a name="DeleteIngestionEndpoint" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteIngestionEndpoint"></a>
 
 ```typescript
@@ -4506,6 +4956,18 @@ public readonly DeleteIntegration: string;
 - *Type:* string
 
 [Write] cloudwatch:DeleteIntegration.
+
+---
+
+##### `DeleteLookup`<sup>Required</sup> <a name="DeleteLookup" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.DeleteLookup"></a>
+
+```typescript
+public readonly DeleteLookup: string;
+```
+
+- *Type:* string
+
+[Write] cloudwatch:DeleteLookup.
 
 ---
 
@@ -4881,6 +5343,18 @@ public readonly ListAlerts: string;
 
 ---
 
+##### `ListAnomalies`<sup>Required</sup> <a name="ListAnomalies" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListAnomalies"></a>
+
+```typescript
+public readonly ListAnomalies: string;
+```
+
+- *Type:* string
+
+[List] cloudwatch:ListAnomalies.
+
+---
+
 ##### `ListDashboards`<sup>Required</sup> <a name="ListDashboards" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListDashboards"></a>
 
 ```typescript
@@ -4929,6 +5403,30 @@ public readonly ListEntitiesForMetric: string;
 
 ---
 
+##### `ListExperimentRuns`<sup>Required</sup> <a name="ListExperimentRuns" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListExperimentRuns"></a>
+
+```typescript
+public readonly ListExperimentRuns: string;
+```
+
+- *Type:* string
+
+[List] cloudwatch:ListExperimentRuns.
+
+---
+
+##### `ListExperiments`<sup>Required</sup> <a name="ListExperiments" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListExperiments"></a>
+
+```typescript
+public readonly ListExperiments: string;
+```
+
+- *Type:* string
+
+[List] cloudwatch:ListExperiments.
+
+---
+
 ##### `ListIngestionEndpoints`<sup>Required</sup> <a name="ListIngestionEndpoints" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListIngestionEndpoints"></a>
 
 ```typescript
@@ -4962,6 +5460,18 @@ public readonly ListIntegrationTargets: string;
 - *Type:* string
 
 [List] cloudwatch:ListIntegrationTargets.
+
+---
+
+##### `ListLookups`<sup>Required</sup> <a name="ListLookups" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListLookups"></a>
+
+```typescript
+public readonly ListLookups: string;
+```
+
+- *Type:* string
+
+[List] cloudwatch:ListLookups.
 
 ---
 
@@ -5034,6 +5544,18 @@ public readonly ListMonitoringAssessments: string;
 - *Type:* string
 
 [List] cloudwatch:ListMonitoringAssessments.
+
+---
+
+##### `ListObservations`<sup>Required</sup> <a name="ListObservations" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.ListObservations"></a>
+
+```typescript
+public readonly ListObservations: string;
+```
+
+- *Type:* string
+
+[List] cloudwatch:ListObservations.
 
 ---
 
@@ -5241,6 +5763,18 @@ public readonly PutDashboard: string;
 
 ---
 
+##### `PutExperimentRunResults`<sup>Required</sup> <a name="PutExperimentRunResults" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.PutExperimentRunResults"></a>
+
+```typescript
+public readonly PutExperimentRunResults: string;
+```
+
+- *Type:* string
+
+[Write] cloudwatch:PutExperimentRunResults.
+
+---
+
 ##### `PutInsightRule`<sup>Required</sup> <a name="PutInsightRule" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.PutInsightRule"></a>
 
 ```typescript
@@ -5409,6 +5943,18 @@ The IAM service prefix.
 
 ---
 
+##### `StartExperimentRun`<sup>Required</sup> <a name="StartExperimentRun" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.StartExperimentRun"></a>
+
+```typescript
+public readonly StartExperimentRun: string;
+```
+
+- *Type:* string
+
+[Write] cloudwatch:StartExperimentRun.
+
+---
+
 ##### `StartMetricStreams`<sup>Required</sup> <a name="StartMetricStreams" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.StartMetricStreams"></a>
 
 ```typescript
@@ -5478,6 +6024,18 @@ public readonly StartTelemetryQuerySession: string;
 - *Type:* string
 
 [Write] cloudwatch:StartTelemetryQuerySession.
+
+---
+
+##### `StopExperimentRun`<sup>Required</sup> <a name="StopExperimentRun" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.StopExperimentRun"></a>
+
+```typescript
+public readonly StopExperimentRun: string;
+```
+
+- *Type:* string
+
+[Write] cloudwatch:StopExperimentRun.
 
 ---
 
@@ -5625,6 +6183,18 @@ public readonly UpdateDomainForOrganization: string;
 
 ---
 
+##### `UpdateExperiment`<sup>Required</sup> <a name="UpdateExperiment" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.UpdateExperiment"></a>
+
+```typescript
+public readonly UpdateExperiment: string;
+```
+
+- *Type:* string
+
+[Write] cloudwatch:UpdateExperiment.
+
+---
+
 ##### `UpdateIngestionEndpoint`<sup>Required</sup> <a name="UpdateIngestionEndpoint" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.UpdateIngestionEndpoint"></a>
 
 ```typescript
@@ -5646,6 +6216,18 @@ public readonly UpdateIntegration: string;
 - *Type:* string
 
 [Write] cloudwatch:UpdateIntegration.
+
+---
+
+##### `UpdateLookup`<sup>Required</sup> <a name="UpdateLookup" id="@cdk_utils/iam.cloudwatch.CloudWatchActions.property.UpdateLookup"></a>
+
+```typescript
+public readonly UpdateLookup: string;
+```
+
+- *Type:* string
+
+[Write] cloudwatch:UpdateLookup.
 
 ---
 
@@ -5976,8 +6558,11 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetDatasetConditionKeys">actionGetDatasetConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetDataset action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetDomainAccessGrantForOrganizationConditionKeys">actionGetDomainAccessGrantForOrganizationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetDomainAccessGrantForOrganization action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetDomainConditionKeys">actionGetDomainConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetDomain action. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetExperimentConditionKeys">actionGetExperimentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetExperiment action. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetExperimentRunConditionKeys">actionGetExperimentRunConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetExperimentRun action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetIntegrationConditionKeys">actionGetIntegrationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetIntegration action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetIntelligenceConfigurationConditionKeys">actionGetIntelligenceConfigurationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetIntelligenceConfiguration action. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetLookupConditionKeys">actionGetLookupConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetLookup action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetMetricDataConditionKeys">actionGetMetricDataConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetMetricData action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetOmniAgentAssetConditionKeys">actionGetOmniAgentAssetConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetOmniAgentAsset action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetOmniDashboardConditionKeys">actionGetOmniDashboardConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetOmniDashboard action. |
@@ -5998,11 +6583,14 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.AWS_RESOURCE_TAG">AWS_RESOURCE_TAG</a></code> | <code>string</code> | Condition key: aws:ResourceTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.AWS_TAG_KEYS">AWS_TAG_KEYS</a></code> | <code>string</code> | Condition key: aws:TagKeys (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.BatchGetOmniSloReportConditionKeys">BatchGetOmniSloReportConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the BatchGetOmniSloReport action. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.CompleteExperimentRunConditionKeys">CompleteExperimentRunConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CompleteExperimentRun action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.CreateAccessGrantConditionKeys">CreateAccessGrantConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateAccessGrant action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.CreateAccessProfileConditionKeys">CreateAccessProfileConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateAccessProfile action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.CreateAlertConditionKeys">CreateAlertConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateAlert action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.CreateDomainAccessGrantForOrganizationConditionKeys">CreateDomainAccessGrantForOrganizationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateDomainAccessGrantForOrganization action. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.CreateExperimentConditionKeys">CreateExperimentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateExperiment action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.CreateIntegrationConditionKeys">CreateIntegrationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateIntegration action. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.CreateLookupConditionKeys">CreateLookupConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateLookup action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.CreateOmniAgentAssetConditionKeys">CreateOmniAgentAssetConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateOmniAgentAsset action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.CreateOmniDashboardConditionKeys">CreateOmniDashboardConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateOmniDashboard action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.CreateOmniSloConditionKeys">CreateOmniSloConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateOmniSlo action. |
@@ -6014,7 +6602,10 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.DeleteAccessProfileConditionKeys">DeleteAccessProfileConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteAccessProfile action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.DeleteAlertConditionKeys">DeleteAlertConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteAlert action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.DeleteDomainAccessGrantForOrganizationConditionKeys">DeleteDomainAccessGrantForOrganizationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteDomainAccessGrantForOrganization action. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.DeleteExperimentConditionKeys">DeleteExperimentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteExperiment action. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.DeleteExperimentRunConditionKeys">DeleteExperimentRunConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteExperimentRun action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.DeleteIntegrationConditionKeys">DeleteIntegrationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteIntegration action. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.DeleteLookupConditionKeys">DeleteLookupConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteLookup action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.DeleteOmniAgentAssetConditionKeys">DeleteOmniAgentAssetConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteOmniAgentAsset action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.DeleteOmniDashboardConditionKeys">DeleteOmniDashboardConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteOmniDashboard action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.DeleteOmniSloConditionKeys">DeleteOmniSloConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteOmniSlo action. |
@@ -6027,11 +6618,16 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListAccessProfilesConditionKeys">ListAccessProfilesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListAccessProfiles action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListAlertContributorsConditionKeys">ListAlertContributorsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListAlertContributors action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListAlertsConditionKeys">ListAlertsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListAlerts action. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListAnomaliesConditionKeys">ListAnomaliesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListAnomalies action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListDomainAccessGrantsForOrganizationConditionKeys">ListDomainAccessGrantsForOrganizationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListDomainAccessGrantsForOrganization action. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListExperimentRunsConditionKeys">ListExperimentRunsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListExperimentRuns action. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListExperimentsConditionKeys">ListExperimentsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListExperiments action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListIntegrationsConditionKeys">ListIntegrationsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListIntegrations action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListIntegrationTargetsConditionKeys">ListIntegrationTargetsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListIntegrationTargets action. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListLookupsConditionKeys">ListLookupsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListLookups action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListManagedInsightRulesConditionKeys">ListManagedInsightRulesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListManagedInsightRules action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListMetricsConditionKeys">ListMetricsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListMetrics action. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListObservationsConditionKeys">ListObservationsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListObservations action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListOmniAgentAssetsConditionKeys">ListOmniAgentAssetsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListOmniAgentAssets action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListOmniDashboardsConditionKeys">ListOmniDashboardsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListOmniDashboards action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListOmniSlosConditionKeys">ListOmniSlosConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListOmniSlos action. |
@@ -6047,6 +6643,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.PutAlarmMuteRuleConditionKeys">PutAlarmMuteRuleConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutAlarmMuteRule action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.PutCompositeAlarmConditionKeys">PutCompositeAlarmConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutCompositeAlarm action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.PutDashboardConditionKeys">PutDashboardConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutDashboard action. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.PutExperimentRunResultsConditionKeys">PutExperimentRunResultsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutExperimentRunResults action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.PutInsightRuleConditionKeys">PutInsightRuleConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutInsightRule action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.PutIntelligenceConfigurationConditionKeys">PutIntelligenceConfigurationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutIntelligenceConfiguration action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.PutLogAlarmConditionKeys">PutLogAlarmConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the PutLogAlarm action. |
@@ -6060,9 +6657,11 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.REQUEST_MANAGED_RESOURCE_AR_NS">REQUEST_MANAGED_RESOURCE_AR_NS</a></code> | <code>string</code> | Condition key: cloudwatch:requestManagedResourceARNs (ArrayOfARN). |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.RESOURCE_ARN">RESOURCE_ARN</a></code> | <code>string</code> | Condition key: cloudwatch:ResourceArn (ARN). |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.SearchPrincipalsConditionKeys">SearchPrincipalsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the SearchPrincipals action. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.StartExperimentRunConditionKeys">StartExperimentRunConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartExperimentRun action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.StartOmniThreadSessionConditionKeys">StartOmniThreadSessionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartOmniThreadSession action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.StartTelemetryQueryConditionKeys">StartTelemetryQueryConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartTelemetryQuery action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.StartTelemetryQuerySessionConditionKeys">StartTelemetryQuerySessionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StartTelemetryQuerySession action. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.StopExperimentRunConditionKeys">StopExperimentRunConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StopExperimentRun action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.StopTelemetryQueryConditionKeys">StopTelemetryQueryConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StopTelemetryQuery action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.StopTelemetryQuerySessionConditionKeys">StopTelemetryQuerySessionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the StopTelemetryQuerySession action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.SubmitFeedbackConditionKeys">SubmitFeedbackConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the SubmitFeedback action. |
@@ -6070,7 +6669,9 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.UpdateAccessProfileConditionKeys">UpdateAccessProfileConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateAccessProfile action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.UpdateAlertConditionKeys">UpdateAlertConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateAlert action. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.UpdateExperimentConditionKeys">UpdateExperimentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateExperiment action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.UpdateIntegrationConditionKeys">UpdateIntegrationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateIntegration action. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.UpdateLookupConditionKeys">UpdateLookupConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateLookup action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.UpdateOmniAgentAssetConditionKeys">UpdateOmniAgentAssetConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateOmniAgentAsset action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.UpdateOmniDashboardConditionKeys">UpdateOmniDashboardConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateOmniDashboard action. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.UpdateOmniSloConditionKeys">UpdateOmniSloConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateOmniSlo action. |
@@ -6166,6 +6767,30 @@ Condition keys applicable to the GetDomain action.
 
 ---
 
+##### `actionGetExperimentConditionKeys`<sup>Required</sup> <a name="actionGetExperimentConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetExperimentConditionKeys"></a>
+
+```typescript
+public readonly actionGetExperimentConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetExperiment action.
+
+---
+
+##### `actionGetExperimentRunConditionKeys`<sup>Required</sup> <a name="actionGetExperimentRunConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetExperimentRunConditionKeys"></a>
+
+```typescript
+public readonly actionGetExperimentRunConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetExperimentRun action.
+
+---
+
 ##### `actionGetIntegrationConditionKeys`<sup>Required</sup> <a name="actionGetIntegrationConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetIntegrationConditionKeys"></a>
 
 ```typescript
@@ -6187,6 +6812,18 @@ public readonly actionGetIntelligenceConfigurationConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the GetIntelligenceConfiguration action.
+
+---
+
+##### `actionGetLookupConditionKeys`<sup>Required</sup> <a name="actionGetLookupConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.actionGetLookupConditionKeys"></a>
+
+```typescript
+public readonly actionGetLookupConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetLookup action.
 
 ---
 
@@ -6430,6 +7067,18 @@ Condition keys applicable to the BatchGetOmniSloReport action.
 
 ---
 
+##### `CompleteExperimentRunConditionKeys`<sup>Required</sup> <a name="CompleteExperimentRunConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.CompleteExperimentRunConditionKeys"></a>
+
+```typescript
+public readonly CompleteExperimentRunConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CompleteExperimentRun action.
+
+---
+
 ##### `CreateAccessGrantConditionKeys`<sup>Required</sup> <a name="CreateAccessGrantConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.CreateAccessGrantConditionKeys"></a>
 
 ```typescript
@@ -6478,6 +7127,18 @@ Condition keys applicable to the CreateDomainAccessGrantForOrganization action.
 
 ---
 
+##### `CreateExperimentConditionKeys`<sup>Required</sup> <a name="CreateExperimentConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.CreateExperimentConditionKeys"></a>
+
+```typescript
+public readonly CreateExperimentConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateExperiment action.
+
+---
+
 ##### `CreateIntegrationConditionKeys`<sup>Required</sup> <a name="CreateIntegrationConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.CreateIntegrationConditionKeys"></a>
 
 ```typescript
@@ -6487,6 +7148,18 @@ public readonly CreateIntegrationConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the CreateIntegration action.
+
+---
+
+##### `CreateLookupConditionKeys`<sup>Required</sup> <a name="CreateLookupConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.CreateLookupConditionKeys"></a>
+
+```typescript
+public readonly CreateLookupConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateLookup action.
 
 ---
 
@@ -6622,6 +7295,30 @@ Condition keys applicable to the DeleteDomainAccessGrantForOrganization action.
 
 ---
 
+##### `DeleteExperimentConditionKeys`<sup>Required</sup> <a name="DeleteExperimentConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.DeleteExperimentConditionKeys"></a>
+
+```typescript
+public readonly DeleteExperimentConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DeleteExperiment action.
+
+---
+
+##### `DeleteExperimentRunConditionKeys`<sup>Required</sup> <a name="DeleteExperimentRunConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.DeleteExperimentRunConditionKeys"></a>
+
+```typescript
+public readonly DeleteExperimentRunConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DeleteExperimentRun action.
+
+---
+
 ##### `DeleteIntegrationConditionKeys`<sup>Required</sup> <a name="DeleteIntegrationConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.DeleteIntegrationConditionKeys"></a>
 
 ```typescript
@@ -6631,6 +7328,18 @@ public readonly DeleteIntegrationConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the DeleteIntegration action.
+
+---
+
+##### `DeleteLookupConditionKeys`<sup>Required</sup> <a name="DeleteLookupConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.DeleteLookupConditionKeys"></a>
+
+```typescript
+public readonly DeleteLookupConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DeleteLookup action.
 
 ---
 
@@ -6778,6 +7487,18 @@ Condition keys applicable to the ListAlerts action.
 
 ---
 
+##### `ListAnomaliesConditionKeys`<sup>Required</sup> <a name="ListAnomaliesConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListAnomaliesConditionKeys"></a>
+
+```typescript
+public readonly ListAnomaliesConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ListAnomalies action.
+
+---
+
 ##### `ListDomainAccessGrantsForOrganizationConditionKeys`<sup>Required</sup> <a name="ListDomainAccessGrantsForOrganizationConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListDomainAccessGrantsForOrganizationConditionKeys"></a>
 
 ```typescript
@@ -6787,6 +7508,30 @@ public readonly ListDomainAccessGrantsForOrganizationConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the ListDomainAccessGrantsForOrganization action.
+
+---
+
+##### `ListExperimentRunsConditionKeys`<sup>Required</sup> <a name="ListExperimentRunsConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListExperimentRunsConditionKeys"></a>
+
+```typescript
+public readonly ListExperimentRunsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ListExperimentRuns action.
+
+---
+
+##### `ListExperimentsConditionKeys`<sup>Required</sup> <a name="ListExperimentsConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListExperimentsConditionKeys"></a>
+
+```typescript
+public readonly ListExperimentsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ListExperiments action.
 
 ---
 
@@ -6814,6 +7559,18 @@ Condition keys applicable to the ListIntegrationTargets action.
 
 ---
 
+##### `ListLookupsConditionKeys`<sup>Required</sup> <a name="ListLookupsConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListLookupsConditionKeys"></a>
+
+```typescript
+public readonly ListLookupsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ListLookups action.
+
+---
+
 ##### `ListManagedInsightRulesConditionKeys`<sup>Required</sup> <a name="ListManagedInsightRulesConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListManagedInsightRulesConditionKeys"></a>
 
 ```typescript
@@ -6835,6 +7592,18 @@ public readonly ListMetricsConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the ListMetrics action.
+
+---
+
+##### `ListObservationsConditionKeys`<sup>Required</sup> <a name="ListObservationsConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.ListObservationsConditionKeys"></a>
+
+```typescript
+public readonly ListObservationsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ListObservations action.
 
 ---
 
@@ -7018,6 +7787,18 @@ Condition keys applicable to the PutDashboard action.
 
 ---
 
+##### `PutExperimentRunResultsConditionKeys`<sup>Required</sup> <a name="PutExperimentRunResultsConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.PutExperimentRunResultsConditionKeys"></a>
+
+```typescript
+public readonly PutExperimentRunResultsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the PutExperimentRunResults action.
+
+---
+
 ##### `PutInsightRuleConditionKeys`<sup>Required</sup> <a name="PutInsightRuleConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.PutInsightRuleConditionKeys"></a>
 
 ```typescript
@@ -7174,6 +7955,18 @@ Condition keys applicable to the SearchPrincipals action.
 
 ---
 
+##### `StartExperimentRunConditionKeys`<sup>Required</sup> <a name="StartExperimentRunConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.StartExperimentRunConditionKeys"></a>
+
+```typescript
+public readonly StartExperimentRunConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the StartExperimentRun action.
+
+---
+
 ##### `StartOmniThreadSessionConditionKeys`<sup>Required</sup> <a name="StartOmniThreadSessionConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.StartOmniThreadSessionConditionKeys"></a>
 
 ```typescript
@@ -7207,6 +8000,18 @@ public readonly StartTelemetryQuerySessionConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the StartTelemetryQuerySession action.
+
+---
+
+##### `StopExperimentRunConditionKeys`<sup>Required</sup> <a name="StopExperimentRunConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.StopExperimentRunConditionKeys"></a>
+
+```typescript
+public readonly StopExperimentRunConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the StopExperimentRun action.
 
 ---
 
@@ -7294,6 +8099,18 @@ Condition keys applicable to the UpdateAlert action.
 
 ---
 
+##### `UpdateExperimentConditionKeys`<sup>Required</sup> <a name="UpdateExperimentConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.UpdateExperimentConditionKeys"></a>
+
+```typescript
+public readonly UpdateExperimentConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateExperiment action.
+
+---
+
 ##### `UpdateIntegrationConditionKeys`<sup>Required</sup> <a name="UpdateIntegrationConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.UpdateIntegrationConditionKeys"></a>
 
 ```typescript
@@ -7303,6 +8120,18 @@ public readonly UpdateIntegrationConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the UpdateIntegration action.
+
+---
+
+##### `UpdateLookupConditionKeys`<sup>Required</sup> <a name="UpdateLookupConditionKeys" id="@cdk_utils/iam.cloudwatch.CloudWatchConditions.property.UpdateLookupConditionKeys"></a>
+
+```typescript
+public readonly UpdateLookupConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateLookup action.
 
 ---
 
@@ -9032,6 +9861,7 @@ new cloudwatch.CloudWatchResources()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.dashboard">dashboard</a></code> | Builds an ARN for the dashboard resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.dataset">dataset</a></code> | Builds an ARN for the dataset resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.domain">domain</a></code> | Builds an ARN for the domain resource. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.experiment">experiment</a></code> | Builds an ARN for the experiment resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.ingestionEndpoint">ingestionEndpoint</a></code> | Builds an ARN for the ingestion-endpoint resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.insightRule">insightRule</a></code> | Builds an ARN for the insight-rule resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.integration">integration</a></code> | Builds an ARN for the integration resource. |
@@ -9043,9 +9873,11 @@ new cloudwatch.CloudWatchResources()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidDashboardArn">isValidDashboardArn</a></code> | Validates whether a string is a valid ARN for the dashboard resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidDatasetArn">isValidDatasetArn</a></code> | Validates whether a string is a valid ARN for the dataset resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidDomainArn">isValidDomainArn</a></code> | Validates whether a string is a valid ARN for the domain resource. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidExperimentArn">isValidExperimentArn</a></code> | Validates whether a string is a valid ARN for the experiment resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidIngestionEndpointArn">isValidIngestionEndpointArn</a></code> | Validates whether a string is a valid ARN for the ingestion-endpoint resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidInsightRuleArn">isValidInsightRuleArn</a></code> | Validates whether a string is a valid ARN for the insight-rule resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidIntegrationArn">isValidIntegrationArn</a></code> | Validates whether a string is a valid ARN for the integration resource. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidLookupArn">isValidLookupArn</a></code> | Validates whether a string is a valid ARN for the lookup resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidMetricQueryDefinitionArn">isValidMetricQueryDefinitionArn</a></code> | Validates whether a string is a valid ARN for the metric-query-definition resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidMetricStreamArn">isValidMetricStreamArn</a></code> | Validates whether a string is a valid ARN for the metric-stream resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidOmniAgentAssetArn">isValidOmniAgentAssetArn</a></code> | Validates whether a string is a valid ARN for the omni-agent-asset resource. |
@@ -9057,6 +9889,7 @@ new cloudwatch.CloudWatchResources()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidSloArn">isValidSloArn</a></code> | Validates whether a string is a valid ARN for the slo resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidSpaceArn">isValidSpaceArn</a></code> | Validates whether a string is a valid ARN for the space resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidViewArn">isValidViewArn</a></code> | Validates whether a string is a valid ARN for the view resource. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.lookup">lookup</a></code> | Builds an ARN for the lookup resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.metricQueryDefinition">metricQueryDefinition</a></code> | Builds an ARN for the metric-query-definition resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.metricStream">metricStream</a></code> | Builds an ARN for the metric-stream resource. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.omniAgentAsset">omniAgentAsset</a></code> | Builds an ARN for the omni-agent-asset resource. |
@@ -9072,9 +9905,11 @@ new cloudwatch.CloudWatchResources()
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.parseDashboardArn">parseDashboardArn</a></code> | Parses a dashboard ARN into its components. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.parseDatasetArn">parseDatasetArn</a></code> | Parses a dataset ARN into its components. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.parseDomainArn">parseDomainArn</a></code> | Parses a domain ARN into its components. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.parseExperimentArn">parseExperimentArn</a></code> | Parses a experiment ARN into its components. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.parseIngestionEndpointArn">parseIngestionEndpointArn</a></code> | Parses a ingestion-endpoint ARN into its components. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.parseInsightRuleArn">parseInsightRuleArn</a></code> | Parses a insight-rule ARN into its components. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.parseIntegrationArn">parseIntegrationArn</a></code> | Parses a integration ARN into its components. |
+| <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.parseLookupArn">parseLookupArn</a></code> | Parses a lookup ARN into its components. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.parseMetricQueryDefinitionArn">parseMetricQueryDefinitionArn</a></code> | Parses a metric-query-definition ARN into its components. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.parseMetricStreamArn">parseMetricStreamArn</a></code> | Parses a metric-stream ARN into its components. |
 | <code><a href="#@cdk_utils/iam.cloudwatch.CloudWatchResources.parseOmniAgentAssetArn">parseOmniAgentAssetArn</a></code> | Parses a omni-agent-asset ARN into its components. |
@@ -9218,6 +10053,22 @@ Builds an ARN for the domain resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.cloudwatch.CloudWatchResources.domain.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.cloudwatch.CloudWatchDomainArnProps">CloudWatchDomainArnProps</a>
+
+---
+
+##### `experiment` <a name="experiment" id="@cdk_utils/iam.cloudwatch.CloudWatchResources.experiment"></a>
+
+```typescript
+import { cloudwatch } from '@cdk_utils/iam'
+
+cloudwatch.CloudWatchResources.experiment(props: CloudWatchExperimentArnProps)
+```
+
+Builds an ARN for the experiment resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.cloudwatch.CloudWatchResources.experiment.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.cloudwatch.CloudWatchExperimentArnProps">CloudWatchExperimentArnProps</a>
 
 ---
 
@@ -9397,6 +10248,22 @@ Validates whether a string is a valid ARN for the domain resource.
 
 ---
 
+##### `isValidExperimentArn` <a name="isValidExperimentArn" id="@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidExperimentArn"></a>
+
+```typescript
+import { cloudwatch } from '@cdk_utils/iam'
+
+cloudwatch.CloudWatchResources.isValidExperimentArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the experiment resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidExperimentArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `isValidIngestionEndpointArn` <a name="isValidIngestionEndpointArn" id="@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidIngestionEndpointArn"></a>
 
 ```typescript
@@ -9440,6 +10307,22 @@ cloudwatch.CloudWatchResources.isValidIntegrationArn(arn: string)
 Validates whether a string is a valid ARN for the integration resource.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidIntegrationArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidLookupArn` <a name="isValidLookupArn" id="@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidLookupArn"></a>
+
+```typescript
+import { cloudwatch } from '@cdk_utils/iam'
+
+cloudwatch.CloudWatchResources.isValidLookupArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the lookup resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidLookupArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -9618,6 +10501,22 @@ Validates whether a string is a valid ARN for the view resource.
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.cloudwatch.CloudWatchResources.isValidViewArn.parameter.arn"></a>
 
 - *Type:* string
+
+---
+
+##### `lookup` <a name="lookup" id="@cdk_utils/iam.cloudwatch.CloudWatchResources.lookup"></a>
+
+```typescript
+import { cloudwatch } from '@cdk_utils/iam'
+
+cloudwatch.CloudWatchResources.lookup(props: CloudWatchLookupArnProps)
+```
+
+Builds an ARN for the lookup resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.cloudwatch.CloudWatchResources.lookup.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.cloudwatch.CloudWatchLookupArnProps">CloudWatchLookupArnProps</a>
 
 ---
 
@@ -9861,6 +10760,22 @@ Parses a domain ARN into its components.
 
 ---
 
+##### `parseExperimentArn` <a name="parseExperimentArn" id="@cdk_utils/iam.cloudwatch.CloudWatchResources.parseExperimentArn"></a>
+
+```typescript
+import { cloudwatch } from '@cdk_utils/iam'
+
+cloudwatch.CloudWatchResources.parseExperimentArn(arn: string)
+```
+
+Parses a experiment ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.cloudwatch.CloudWatchResources.parseExperimentArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `parseIngestionEndpointArn` <a name="parseIngestionEndpointArn" id="@cdk_utils/iam.cloudwatch.CloudWatchResources.parseIngestionEndpointArn"></a>
 
 ```typescript
@@ -9904,6 +10819,22 @@ cloudwatch.CloudWatchResources.parseIntegrationArn(arn: string)
 Parses a integration ARN into its components.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.cloudwatch.CloudWatchResources.parseIntegrationArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseLookupArn` <a name="parseLookupArn" id="@cdk_utils/iam.cloudwatch.CloudWatchResources.parseLookupArn"></a>
+
+```typescript
+import { cloudwatch } from '@cdk_utils/iam'
+
+cloudwatch.CloudWatchResources.parseLookupArn(arn: string)
+```
+
+Parses a lookup ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.cloudwatch.CloudWatchResources.parseLookupArn.parameter.arn"></a>
 
 - *Type:* string
 

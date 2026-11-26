@@ -1120,10 +1120,6 @@
         {
           "Name": "ContinueDeployment",
           "Service": "codedeploy"
-        },
-        {
-          "Name": "CreateCloudFormationDeployment",
-          "Service": "codedeploy"
         }
       ],
       "SDK": [
@@ -1686,10 +1682,6 @@
     {
       "Name": "SkipWaitTimeForInstanceTermination",
       "AuthorizedActions": [
-        {
-          "Name": "CreateCloudFormationDeployment",
-          "Service": "codedeploy"
-        },
         {
           "Name": "SkipWaitTimeForInstanceTermination",
           "Service": "codedeploy"

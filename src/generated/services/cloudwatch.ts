@@ -24,6 +24,8 @@ export class CloudWatchActions {
 		"cloudwatch:BatchGetServiceLevelObjectiveBudgetReport";
 	/** [Write] cloudwatch:CallWithBearerToken */
 	static readonly CallWithBearerToken = "cloudwatch:CallWithBearerToken";
+	/** [Write] cloudwatch:CompleteExperimentRun */
+	static readonly CompleteExperimentRun = "cloudwatch:CompleteExperimentRun";
 	/** [PermissionManagement] cloudwatch:CreateAccessGrant */
 	static readonly CreateAccessGrant = "cloudwatch:CreateAccessGrant";
 	/** [PermissionManagement] cloudwatch:CreateAccessProfile */
@@ -38,11 +40,15 @@ export class CloudWatchActions {
 	/** [Write] cloudwatch:CreateDomainForOrganization */
 	static readonly CreateDomainForOrganization =
 		"cloudwatch:CreateDomainForOrganization";
+	/** [Write] cloudwatch:CreateExperiment */
+	static readonly CreateExperiment = "cloudwatch:CreateExperiment";
 	/** [Write] cloudwatch:CreateIngestionEndpoint */
 	static readonly CreateIngestionEndpoint =
 		"cloudwatch:CreateIngestionEndpoint";
 	/** [Write] cloudwatch:CreateIntegration */
 	static readonly CreateIntegration = "cloudwatch:CreateIntegration";
+	/** [Write] cloudwatch:CreateLookup */
+	static readonly CreateLookup = "cloudwatch:CreateLookup";
 	/** [Write] cloudwatch:CreateOmniAgentAsset */
 	static readonly CreateOmniAgentAsset = "cloudwatch:CreateOmniAgentAsset";
 	/** [Write] cloudwatch:CreateOmniDashboard */
@@ -54,6 +60,9 @@ export class CloudWatchActions {
 	/** [Write] cloudwatch:CreateOneTimeDeepLinkCode */
 	static readonly CreateOneTimeDeepLinkCode =
 		"cloudwatch:CreateOneTimeDeepLinkCode";
+	/** [Write] cloudwatch:CreateProvisioningRolesForOrganization */
+	static readonly CreateProvisioningRolesForOrganization =
+		"cloudwatch:CreateProvisioningRolesForOrganization";
 	/** [Write] cloudwatch:CreateResourceMetricsConfiguration */
 	static readonly CreateResourceMetricsConfiguration =
 		"cloudwatch:CreateResourceMetricsConfiguration";
@@ -86,6 +95,10 @@ export class CloudWatchActions {
 	/** [Write] cloudwatch:DeleteDomainForOrganization */
 	static readonly DeleteDomainForOrganization =
 		"cloudwatch:DeleteDomainForOrganization";
+	/** [Write] cloudwatch:DeleteExperiment */
+	static readonly DeleteExperiment = "cloudwatch:DeleteExperiment";
+	/** [Write] cloudwatch:DeleteExperimentRun */
+	static readonly DeleteExperimentRun = "cloudwatch:DeleteExperimentRun";
 	/** [Write] cloudwatch:DeleteIngestionEndpoint */
 	static readonly DeleteIngestionEndpoint =
 		"cloudwatch:DeleteIngestionEndpoint";
@@ -93,6 +106,8 @@ export class CloudWatchActions {
 	static readonly DeleteInsightRules = "cloudwatch:DeleteInsightRules";
 	/** [Write] cloudwatch:DeleteIntegration */
 	static readonly DeleteIntegration = "cloudwatch:DeleteIntegration";
+	/** [Write] cloudwatch:DeleteLookup */
+	static readonly DeleteLookup = "cloudwatch:DeleteLookup";
 	/** [Write] cloudwatch:DeleteMetricDataQueryDefinition */
 	static readonly DeleteMetricDataQueryDefinition =
 		"cloudwatch:DeleteMetricDataQueryDefinition";
@@ -172,6 +187,10 @@ export class CloudWatchActions {
 	/** [Read] cloudwatch:GetDomainForOrganization */
 	static readonly actionGetDomainForOrganization =
 		"cloudwatch:GetDomainForOrganization";
+	/** [Read] cloudwatch:GetExperiment */
+	static readonly actionGetExperiment = "cloudwatch:GetExperiment";
+	/** [Read] cloudwatch:GetExperimentRun */
+	static readonly actionGetExperimentRun = "cloudwatch:GetExperimentRun";
 	/** [Read] cloudwatch:GetIngestionEndpoint */
 	static readonly actionGetIngestionEndpoint =
 		"cloudwatch:GetIngestionEndpoint";
@@ -183,6 +202,8 @@ export class CloudWatchActions {
 	/** [Read] cloudwatch:GetIntelligenceConfiguration */
 	static readonly actionGetIntelligenceConfiguration =
 		"cloudwatch:GetIntelligenceConfiguration";
+	/** [Read] cloudwatch:GetLookup */
+	static readonly actionGetLookup = "cloudwatch:GetLookup";
 	/** [Read] cloudwatch:GetMetricData */
 	static readonly actionGetMetricData = "cloudwatch:GetMetricData";
 	/** [Read] cloudwatch:GetMetricDataQueryDefinition */
@@ -257,6 +278,8 @@ export class CloudWatchActions {
 	static readonly ListAlertContributors = "cloudwatch:ListAlertContributors";
 	/** [List] cloudwatch:ListAlerts */
 	static readonly ListAlerts = "cloudwatch:ListAlerts";
+	/** [List] cloudwatch:ListAnomalies */
+	static readonly ListAnomalies = "cloudwatch:ListAnomalies";
 	/** [List] cloudwatch:ListDashboards */
 	static readonly ListDashboards = "cloudwatch:ListDashboards";
 	/** [List] cloudwatch:ListDomainAccessGrantsForOrganization */
@@ -266,12 +289,18 @@ export class CloudWatchActions {
 	static readonly ListDomains = "cloudwatch:ListDomains";
 	/** [List] cloudwatch:ListEntitiesForMetric */
 	static readonly ListEntitiesForMetric = "cloudwatch:ListEntitiesForMetric";
+	/** [List] cloudwatch:ListExperimentRuns */
+	static readonly ListExperimentRuns = "cloudwatch:ListExperimentRuns";
+	/** [List] cloudwatch:ListExperiments */
+	static readonly ListExperiments = "cloudwatch:ListExperiments";
 	/** [List] cloudwatch:ListIngestionEndpoints */
 	static readonly ListIngestionEndpoints = "cloudwatch:ListIngestionEndpoints";
 	/** [List] cloudwatch:ListIntegrationTargets */
 	static readonly ListIntegrationTargets = "cloudwatch:ListIntegrationTargets";
 	/** [List] cloudwatch:ListIntegrations */
 	static readonly ListIntegrations = "cloudwatch:ListIntegrations";
+	/** [List] cloudwatch:ListLookups */
+	static readonly ListLookups = "cloudwatch:ListLookups";
 	/** [Read] cloudwatch:ListManagedInsightRules */
 	static readonly ListManagedInsightRules =
 		"cloudwatch:ListManagedInsightRules";
@@ -288,6 +317,8 @@ export class CloudWatchActions {
 	/** [List] cloudwatch:ListMonitoringAssessments */
 	static readonly ListMonitoringAssessments =
 		"cloudwatch:ListMonitoringAssessments";
+	/** [List] cloudwatch:ListObservations */
+	static readonly ListObservations = "cloudwatch:ListObservations";
 	/** [List] cloudwatch:ListOmniAgentAssets */
 	static readonly ListOmniAgentAssets = "cloudwatch:ListOmniAgentAssets";
 	/** [List] cloudwatch:ListOmniDashboards */
@@ -325,6 +356,9 @@ export class CloudWatchActions {
 	static readonly PutCompositeAlarm = "cloudwatch:PutCompositeAlarm";
 	/** [Write] cloudwatch:PutDashboard */
 	static readonly PutDashboard = "cloudwatch:PutDashboard";
+	/** [Write] cloudwatch:PutExperimentRunResults */
+	static readonly PutExperimentRunResults =
+		"cloudwatch:PutExperimentRunResults";
 	/** [Write] cloudwatch:PutInsightRule */
 	static readonly PutInsightRule = "cloudwatch:PutInsightRule";
 	/** [Write] cloudwatch:PutIntelligenceConfiguration */
@@ -355,6 +389,8 @@ export class CloudWatchActions {
 	static readonly SearchPrincipals = "cloudwatch:SearchPrincipals";
 	/** [Write] cloudwatch:SetAlarmState */
 	static readonly actionSetAlarmState = "cloudwatch:SetAlarmState";
+	/** [Write] cloudwatch:StartExperimentRun */
+	static readonly StartExperimentRun = "cloudwatch:StartExperimentRun";
 	/** [Write] cloudwatch:StartMetricStreams */
 	static readonly StartMetricStreams = "cloudwatch:StartMetricStreams";
 	/** [Read] cloudwatch:StartMonitoringAssessment */
@@ -369,6 +405,8 @@ export class CloudWatchActions {
 	/** [Write] cloudwatch:StartTelemetryQuerySession */
 	static readonly StartTelemetryQuerySession =
 		"cloudwatch:StartTelemetryQuerySession";
+	/** [Write] cloudwatch:StopExperimentRun */
+	static readonly StopExperimentRun = "cloudwatch:StopExperimentRun";
 	/** [Write] cloudwatch:StopMetricStreams */
 	static readonly StopMetricStreams = "cloudwatch:StopMetricStreams";
 	/** [Write] cloudwatch:StopOTelEnrichment */
@@ -395,11 +433,15 @@ export class CloudWatchActions {
 	/** [Write] cloudwatch:UpdateDomainForOrganization */
 	static readonly UpdateDomainForOrganization =
 		"cloudwatch:UpdateDomainForOrganization";
+	/** [Write] cloudwatch:UpdateExperiment */
+	static readonly UpdateExperiment = "cloudwatch:UpdateExperiment";
 	/** [Write] cloudwatch:UpdateIngestionEndpoint */
 	static readonly UpdateIngestionEndpoint =
 		"cloudwatch:UpdateIngestionEndpoint";
 	/** [Write] cloudwatch:UpdateIntegration */
 	static readonly UpdateIntegration = "cloudwatch:UpdateIntegration";
+	/** [Write] cloudwatch:UpdateLookup */
+	static readonly UpdateLookup = "cloudwatch:UpdateLookup";
 	/** [Write] cloudwatch:UpdateOTelEnrichment */
 	static readonly UpdateOTelEnrichment = "cloudwatch:UpdateOTelEnrichment";
 	/** [Write] cloudwatch:UpdateOmniAgentAsset */
@@ -447,10 +489,13 @@ export class CloudWatchActions {
 		CloudWatchActions.actionGetDomain,
 		CloudWatchActions.actionGetDomainAccessGrantForOrganization,
 		CloudWatchActions.actionGetDomainForOrganization,
+		CloudWatchActions.actionGetExperiment,
+		CloudWatchActions.actionGetExperimentRun,
 		CloudWatchActions.actionGetIngestionEndpoint,
 		CloudWatchActions.actionGetInsightRuleReport,
 		CloudWatchActions.actionGetIntegration,
 		CloudWatchActions.actionGetIntelligenceConfiguration,
+		CloudWatchActions.actionGetLookup,
 		CloudWatchActions.actionGetMetricData,
 		CloudWatchActions.actionGetMetricDataQueryDefinition,
 		CloudWatchActions.actionGetMetricStatistics,
@@ -483,16 +528,20 @@ export class CloudWatchActions {
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
 		CloudWatchActions.CallWithBearerToken,
+		CloudWatchActions.CompleteExperimentRun,
 		CloudWatchActions.CreateAlert,
 		CloudWatchActions.CreateDomain,
 		CloudWatchActions.CreateDomainForOrganization,
+		CloudWatchActions.CreateExperiment,
 		CloudWatchActions.CreateIngestionEndpoint,
 		CloudWatchActions.CreateIntegration,
+		CloudWatchActions.CreateLookup,
 		CloudWatchActions.CreateOmniAgentAsset,
 		CloudWatchActions.CreateOmniDashboard,
 		CloudWatchActions.CreateOmniSlo,
 		CloudWatchActions.CreateOmniThread,
 		CloudWatchActions.CreateOneTimeDeepLinkCode,
+		CloudWatchActions.CreateProvisioningRolesForOrganization,
 		CloudWatchActions.CreateResourceMetricsConfiguration,
 		CloudWatchActions.CreateServiceLevelObjective,
 		CloudWatchActions.CreateSpace,
@@ -504,9 +553,12 @@ export class CloudWatchActions {
 		CloudWatchActions.DeleteDashboards,
 		CloudWatchActions.DeleteDomain,
 		CloudWatchActions.DeleteDomainForOrganization,
+		CloudWatchActions.DeleteExperiment,
+		CloudWatchActions.DeleteExperimentRun,
 		CloudWatchActions.DeleteIngestionEndpoint,
 		CloudWatchActions.DeleteInsightRules,
 		CloudWatchActions.DeleteIntegration,
+		CloudWatchActions.DeleteLookup,
 		CloudWatchActions.DeleteMetricDataQueryDefinition,
 		CloudWatchActions.DeleteMetricStream,
 		CloudWatchActions.DeleteOmniAgentAsset,
@@ -529,6 +581,7 @@ export class CloudWatchActions {
 		CloudWatchActions.PutAnomalyDetector,
 		CloudWatchActions.PutCompositeAlarm,
 		CloudWatchActions.PutDashboard,
+		CloudWatchActions.PutExperimentRunResults,
 		CloudWatchActions.PutInsightRule,
 		CloudWatchActions.PutIntelligenceConfiguration,
 		CloudWatchActions.PutLogAlarm,
@@ -543,11 +596,13 @@ export class CloudWatchActions {
 		CloudWatchActions.QueryTraces,
 		CloudWatchActions.SearchPrincipals,
 		CloudWatchActions.actionSetAlarmState,
+		CloudWatchActions.StartExperimentRun,
 		CloudWatchActions.StartMetricStreams,
 		CloudWatchActions.StartOTelEnrichment,
 		CloudWatchActions.StartOmniThreadSession,
 		CloudWatchActions.StartTelemetryQuery,
 		CloudWatchActions.StartTelemetryQuerySession,
+		CloudWatchActions.StopExperimentRun,
 		CloudWatchActions.StopMetricStreams,
 		CloudWatchActions.StopOTelEnrichment,
 		CloudWatchActions.StopTelemetryQuery,
@@ -557,8 +612,10 @@ export class CloudWatchActions {
 		CloudWatchActions.UpdateAlert,
 		CloudWatchActions.UpdateDomain,
 		CloudWatchActions.UpdateDomainForOrganization,
+		CloudWatchActions.UpdateExperiment,
 		CloudWatchActions.UpdateIngestionEndpoint,
 		CloudWatchActions.UpdateIntegration,
+		CloudWatchActions.UpdateLookup,
 		CloudWatchActions.UpdateOTelEnrichment,
 		CloudWatchActions.UpdateOmniAgentAsset,
 		CloudWatchActions.UpdateOmniDashboard,
@@ -577,18 +634,23 @@ export class CloudWatchActions {
 		CloudWatchActions.ListAlarmMuteRules,
 		CloudWatchActions.ListAlertContributors,
 		CloudWatchActions.ListAlerts,
+		CloudWatchActions.ListAnomalies,
 		CloudWatchActions.ListDashboards,
 		CloudWatchActions.ListDomainAccessGrantsForOrganization,
 		CloudWatchActions.ListDomains,
 		CloudWatchActions.ListEntitiesForMetric,
+		CloudWatchActions.ListExperimentRuns,
+		CloudWatchActions.ListExperiments,
 		CloudWatchActions.ListIngestionEndpoints,
 		CloudWatchActions.ListIntegrationTargets,
 		CloudWatchActions.ListIntegrations,
+		CloudWatchActions.ListLookups,
 		CloudWatchActions.ListMetricDataQueryDefinitions,
 		CloudWatchActions.ListMetricStreams,
 		CloudWatchActions.ListMetrics,
 		CloudWatchActions.ListMonitoringAssessmentResults,
 		CloudWatchActions.ListMonitoringAssessments,
+		CloudWatchActions.ListObservations,
 		CloudWatchActions.ListOmniAgentAssets,
 		CloudWatchActions.ListOmniDashboards,
 		CloudWatchActions.ListOmniSlos,
@@ -842,6 +904,34 @@ export interface CloudWatchDomainArnComponents {
 }
 
 /**
+ * Properties for building a experiment ARN.
+ */
+export interface CloudWatchExperimentArnProps {
+	/** The ExperimentId component of the ARN. */
+	readonly experimentId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a experiment ARN.
+ */
+export interface CloudWatchExperimentArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ExperimentId component. */
+	readonly experimentId: string;
+}
+
+/**
  * Properties for building a ingestion-endpoint ARN.
  */
 export interface CloudWatchIngestionEndpointArnProps {
@@ -927,6 +1017,38 @@ export interface CloudWatchIntegrationArnComponents {
 	readonly account: string;
 	/** The IntegrationId component. */
 	readonly integrationId: string;
+}
+
+/**
+ * Properties for building a lookup ARN.
+ */
+export interface CloudWatchLookupArnProps {
+	/** The LookupName component of the ARN. */
+	readonly lookupName: string;
+	/** The LookupId component of the ARN. */
+	readonly lookupId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a lookup ARN.
+ */
+export interface CloudWatchLookupArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The LookupName component. */
+	readonly lookupName: string;
+	/** The LookupId component. */
+	readonly lookupId: string;
 }
 
 /**
@@ -1261,12 +1383,16 @@ const DatasetArnRegex =
 	/^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):dataset\/(?<datasetId>[^:/?]+)$/;
 const DomainArnRegex =
 	/^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):domain\/(?<domainId>[^:/?]+)$/;
+const ExperimentArnRegex =
+	/^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):experiment\/(?<experimentId>[^:/?]+)$/;
 const IngestionEndpointArnRegex =
 	/^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):ingestion-endpoint\/(?<ingestionEndpointName>[^:/?]+)\/(?<ingestionEndpointId>[^:/?]+)$/;
 const InsightRuleArnRegex =
 	/^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):insight-rule\/(?<insightRuleName>[^:/?]+)$/;
 const IntegrationArnRegex =
 	/^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):integration\/(?<integrationId>[^:/?]+)$/;
+const LookupArnRegex =
+	/^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):lookup\/(?<lookupName>[^:/?]+)\/(?<lookupId>[^:/?]+)$/;
 const MetricQueryDefinitionArnRegex =
 	/^arn:(?<partition>[^:]+):cloudwatch:(?<region>[^:]*):(?<account>[^:]*):metric-query-definition\/(?<metricDataQueryDefinitionId>[^:/?]+)$/;
 const MetricStreamArnRegex =
@@ -1546,6 +1672,37 @@ export class CloudWatchResources {
 	}
 
 	/**
+	 * Builds an ARN for the experiment resource.
+	 */
+	static experiment(props: CloudWatchExperimentArnProps): string {
+		return `arn:${props.partition ?? "aws"}:cloudwatch:${props.region ?? "*"}:${props.account ?? "*"}:experiment/${props.experimentId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the experiment resource.
+	 */
+	static isValidExperimentArn(arn: string): boolean {
+		return ExperimentArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a experiment ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseExperimentArn(arn: string): CloudWatchExperimentArnComponents {
+		const match = ExperimentArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid experiment ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			experimentId: match.groups!.experimentId,
+		};
+	}
+
+	/**
 	 * Builds an ARN for the ingestion-endpoint resource.
 	 */
 	static ingestionEndpoint(props: CloudWatchIngestionEndpointArnProps): string {
@@ -1638,6 +1795,38 @@ export class CloudWatchResources {
 			region: match.groups.region,
 			account: match.groups.account,
 			integrationId: match.groups!.integrationId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the lookup resource.
+	 */
+	static lookup(props: CloudWatchLookupArnProps): string {
+		return `arn:${props.partition ?? "aws"}:cloudwatch:${props.region ?? "*"}:${props.account ?? "*"}:lookup/${props.lookupName}/${props.lookupId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the lookup resource.
+	 */
+	static isValidLookupArn(arn: string): boolean {
+		return LookupArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a lookup ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseLookupArn(arn: string): CloudWatchLookupArnComponents {
+		const match = LookupArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid lookup ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			lookupName: match.groups!.lookupName,
+			lookupId: match.groups!.lookupId,
 		};
 	}
 
@@ -2467,6 +2656,10 @@ export class CloudWatchConditions {
 	static readonly BatchGetOmniSloReportConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
 	];
+	/** Condition keys applicable to the CompleteExperimentRun action. */
+	static readonly CompleteExperimentRunConditionKeys: string[] = [
+		"cloudwatch:HasAccessGrant",
+	];
 	/** Condition keys applicable to the CreateAccessGrant action. */
 	static readonly CreateAccessGrantConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
@@ -2482,8 +2675,20 @@ export class CloudWatchConditions {
 	/** Condition keys applicable to the CreateDomainAccessGrantForOrganization action. */
 	static readonly CreateDomainAccessGrantForOrganizationConditionKeys: string[] =
 		["cloudwatch:HasAccessGrant"];
+	/** Condition keys applicable to the CreateExperiment action. */
+	static readonly CreateExperimentConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
+		"cloudwatch:HasAccessGrant",
+	];
 	/** Condition keys applicable to the CreateIntegration action. */
 	static readonly CreateIntegrationConditionKeys: string[] = [
+		"cloudwatch:HasAccessGrant",
+	];
+	/** Condition keys applicable to the CreateLookup action. */
+	static readonly CreateLookupConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:TagKeys",
 		"cloudwatch:HasAccessGrant",
 	];
 	/** Condition keys applicable to the CreateOmniAgentAsset action. */
@@ -2532,8 +2737,20 @@ export class CloudWatchConditions {
 	/** Condition keys applicable to the DeleteDomainAccessGrantForOrganization action. */
 	static readonly DeleteDomainAccessGrantForOrganizationConditionKeys: string[] =
 		["cloudwatch:HasAccessGrant"];
+	/** Condition keys applicable to the DeleteExperiment action. */
+	static readonly DeleteExperimentConditionKeys: string[] = [
+		"cloudwatch:HasAccessGrant",
+	];
+	/** Condition keys applicable to the DeleteExperimentRun action. */
+	static readonly DeleteExperimentRunConditionKeys: string[] = [
+		"cloudwatch:HasAccessGrant",
+	];
 	/** Condition keys applicable to the DeleteIntegration action. */
 	static readonly DeleteIntegrationConditionKeys: string[] = [
+		"cloudwatch:HasAccessGrant",
+	];
+	/** Condition keys applicable to the DeleteLookup action. */
+	static readonly DeleteLookupConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
 	];
 	/** Condition keys applicable to the DeleteOmniAgentAsset action. */
@@ -2587,12 +2804,24 @@ export class CloudWatchConditions {
 	/** Condition keys applicable to the GetDomainAccessGrantForOrganization action. */
 	static readonly actionGetDomainAccessGrantForOrganizationConditionKeys: string[] =
 		["cloudwatch:HasAccessGrant"];
+	/** Condition keys applicable to the GetExperiment action. */
+	static readonly actionGetExperimentConditionKeys: string[] = [
+		"cloudwatch:HasAccessGrant",
+	];
+	/** Condition keys applicable to the GetExperimentRun action. */
+	static readonly actionGetExperimentRunConditionKeys: string[] = [
+		"cloudwatch:HasAccessGrant",
+	];
 	/** Condition keys applicable to the GetIntegration action. */
 	static readonly actionGetIntegrationConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
 	];
 	/** Condition keys applicable to the GetIntelligenceConfiguration action. */
 	static readonly actionGetIntelligenceConfigurationConditionKeys: string[] = [
+		"cloudwatch:HasAccessGrant",
+	];
+	/** Condition keys applicable to the GetLookup action. */
+	static readonly actionGetLookupConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
 	];
 	/** Condition keys applicable to the GetMetricData action. */
@@ -2666,15 +2895,31 @@ export class CloudWatchConditions {
 	static readonly ListAlertsConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
 	];
+	/** Condition keys applicable to the ListAnomalies action. */
+	static readonly ListAnomaliesConditionKeys: string[] = [
+		"cloudwatch:HasAccessGrant",
+	];
 	/** Condition keys applicable to the ListDomainAccessGrantsForOrganization action. */
 	static readonly ListDomainAccessGrantsForOrganizationConditionKeys: string[] =
 		["cloudwatch:HasAccessGrant"];
+	/** Condition keys applicable to the ListExperimentRuns action. */
+	static readonly ListExperimentRunsConditionKeys: string[] = [
+		"cloudwatch:HasAccessGrant",
+	];
+	/** Condition keys applicable to the ListExperiments action. */
+	static readonly ListExperimentsConditionKeys: string[] = [
+		"cloudwatch:HasAccessGrant",
+	];
 	/** Condition keys applicable to the ListIntegrationTargets action. */
 	static readonly ListIntegrationTargetsConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
 	];
 	/** Condition keys applicable to the ListIntegrations action. */
 	static readonly ListIntegrationsConditionKeys: string[] = [
+		"cloudwatch:HasAccessGrant",
+	];
+	/** Condition keys applicable to the ListLookups action. */
+	static readonly ListLookupsConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
 	];
 	/** Condition keys applicable to the ListManagedInsightRules action. */
@@ -2685,6 +2930,10 @@ export class CloudWatchConditions {
 	];
 	/** Condition keys applicable to the ListMetrics action. */
 	static readonly ListMetricsConditionKeys: string[] = [
+		"cloudwatch:HasAccessGrant",
+	];
+	/** Condition keys applicable to the ListObservations action. */
+	static readonly ListObservationsConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
 	];
 	/** Condition keys applicable to the ListOmniAgentAssets action. */
@@ -2748,6 +2997,10 @@ export class CloudWatchConditions {
 		"aws:RequestTag/${TagKey}",
 		"aws:TagKeys",
 	];
+	/** Condition keys applicable to the PutExperimentRunResults action. */
+	static readonly PutExperimentRunResultsConditionKeys: string[] = [
+		"cloudwatch:HasAccessGrant",
+	];
 	/** Condition keys applicable to the PutInsightRule action. */
 	static readonly PutInsightRuleConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
@@ -2800,6 +3053,10 @@ export class CloudWatchConditions {
 	static readonly SearchPrincipalsConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
 	];
+	/** Condition keys applicable to the StartExperimentRun action. */
+	static readonly StartExperimentRunConditionKeys: string[] = [
+		"cloudwatch:HasAccessGrant",
+	];
 	/** Condition keys applicable to the StartOmniThreadSession action. */
 	static readonly StartOmniThreadSessionConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
@@ -2810,6 +3067,10 @@ export class CloudWatchConditions {
 	];
 	/** Condition keys applicable to the StartTelemetryQuerySession action. */
 	static readonly StartTelemetryQuerySessionConditionKeys: string[] = [
+		"cloudwatch:HasAccessGrant",
+	];
+	/** Condition keys applicable to the StopExperimentRun action. */
+	static readonly StopExperimentRunConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
 	];
 	/** Condition keys applicable to the StopTelemetryQuery action. */
@@ -2843,8 +3104,16 @@ export class CloudWatchConditions {
 	static readonly UpdateAlertConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
 	];
+	/** Condition keys applicable to the UpdateExperiment action. */
+	static readonly UpdateExperimentConditionKeys: string[] = [
+		"cloudwatch:HasAccessGrant",
+	];
 	/** Condition keys applicable to the UpdateIntegration action. */
 	static readonly UpdateIntegrationConditionKeys: string[] = [
+		"cloudwatch:HasAccessGrant",
+	];
+	/** Condition keys applicable to the UpdateLookup action. */
+	static readonly UpdateLookupConditionKeys: string[] = [
 		"cloudwatch:HasAccessGrant",
 	];
 	/** Condition keys applicable to the UpdateOmniAgentAsset action. */

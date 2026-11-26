@@ -493,7 +493,6 @@ export class CodeDeployOperations {
 	/** IAM actions required for the ContinueDeployment API call. */
 	static readonly ContinueDeployment: string[] = [
 		"codedeploy:ContinueDeployment",
-		"codedeploy:CreateCloudFormationDeployment",
 	];
 	/** IAM actions required for the CreateApplication API call. */
 	static readonly CreateApplication: string[] = [
@@ -625,7 +624,6 @@ export class CodeDeployOperations {
 	];
 	/** IAM actions required for the SkipWaitTimeForInstanceTermination API call. */
 	static readonly SkipWaitTimeForInstanceTermination: string[] = [
-		"codedeploy:CreateCloudFormationDeployment",
 		"codedeploy:SkipWaitTimeForInstanceTermination",
 	];
 	/** IAM actions required for the StopDeployment API call. */

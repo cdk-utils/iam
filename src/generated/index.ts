@@ -25,6 +25,7 @@ export * as airflow from "./services/airflow";
 export * as airflow_serverless from "./services/airflow-serverless";
 export * as amplify from "./services/amplify";
 export * as amplifybackend from "./services/amplifybackend";
+export * as amplifygen3 from "./services/amplifygen3";
 export * as amplifyuibuilder from "./services/amplifyuibuilder";
 export * as aoss from "./services/aoss";
 export * as apex from "./services/apex";

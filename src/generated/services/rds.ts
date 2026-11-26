@@ -254,6 +254,8 @@ export class RDSActions {
 	/** [List] rds:DescribeReservedDBInstancesOfferings */
 	static readonly DescribeReservedDBInstancesOfferings =
 		"rds:DescribeReservedDBInstancesOfferings";
+	/** [Read] rds:DescribeSchemas */
+	static readonly DescribeSchemas = "rds:DescribeSchemas";
 	/** [List] rds:DescribeSourceRegions */
 	static readonly DescribeSourceRegions = "rds:DescribeSourceRegions";
 	/** [List] rds:DescribeTenantDatabases */
@@ -423,6 +425,7 @@ export class RDSActions {
 	static readonly AllReadActions: string[] = [
 		RDSActions.DescribeRecommendationGroups,
 		RDSActions.DescribeRecommendations,
+		RDSActions.DescribeSchemas,
 		RDSActions.DownloadCompleteDBLogFile,
 		RDSActions.DownloadDBLogFilePortion,
 		RDSActions.ListTagsForResource,

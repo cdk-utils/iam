@@ -3554,6 +3554,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5342,6 +5343,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5366,6 +5368,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5390,6 +5393,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -5640,6 +5644,7 @@
       ],
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -9437,6 +9442,10 @@
       "Name": "GetProject",
       "AuthorizedActions": [
         {
+          "Name": "CallWithBearerToken",
+          "Service": "bedrock"
+        },
+        {
           "Name": "GetProject",
           "Service": "bedrock"
         }
@@ -9624,6 +9633,12 @@
     },
     {
       "Name": "GetTrustedAccessProgramProjectEnrollment",
+      "AuthorizedActions": [
+        {
+          "Name": "GetTrustedAccessProgramProjectEnrollment",
+          "Service": "bedrock"
+        }
+      ],
       "SDK": [
         {
           "Name": "bedrock",
@@ -11024,6 +11039,12 @@
     },
     {
       "Name": "PutTrustedAccessProgramAccountEnrollment",
+      "AuthorizedActions": [
+        {
+          "Name": "PutTrustedAccessProgramAccountEnrollment",
+          "Service": "bedrock"
+        }
+      ],
       "SDK": [
         {
           "Name": "bedrock",
@@ -11034,6 +11055,12 @@
     },
     {
       "Name": "PutTrustedAccessProgramOrganizationEnrollment",
+      "AuthorizedActions": [
+        {
+          "Name": "PutTrustedAccessProgramOrganizationEnrollment",
+          "Service": "bedrock"
+        }
+      ],
       "SDK": [
         {
           "Name": "bedrock",
@@ -11044,6 +11071,12 @@
     },
     {
       "Name": "PutTrustedAccessProgramProjectEnrollment",
+      "AuthorizedActions": [
+        {
+          "Name": "PutTrustedAccessProgramProjectEnrollment",
+          "Service": "bedrock"
+        }
+      ],
       "SDK": [
         {
           "Name": "bedrock",
@@ -11270,6 +11303,12 @@
     },
     {
       "Name": "StartTrustedAccessProgramOrganizationApplication",
+      "AuthorizedActions": [
+        {
+          "Name": "StartTrustedAccessProgramOrganizationApplication",
+          "Service": "bedrock"
+        }
+      ],
       "SDK": [
         {
           "Name": "bedrock",

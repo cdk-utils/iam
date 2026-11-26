@@ -312,6 +312,34 @@ export interface Wafv2AmplifyAppArnComponents {
 }
 
 /**
+ * Properties for building a amplifygen3-app ARN.
+ */
+export interface Wafv2Amplifygen3AppArnProps {
+	/** The AppName component of the ARN. */
+	readonly appName: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a amplifygen3-app ARN.
+ */
+export interface Wafv2Amplifygen3AppArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The AppName component. */
+	readonly appName: string;
+}
+
+/**
  * Properties for building a apigateway ARN.
  */
 export interface Wafv2ApigatewayArnProps {
@@ -401,6 +429,38 @@ export interface Wafv2AppsyncArnComponents {
 	readonly account: string;
 	/** The GraphQLAPIId component. */
 	readonly graphQlapiId: string;
+}
+
+/**
+ * Properties for building a elb-proxy ARN.
+ */
+export interface Wafv2ElbProxyArnProps {
+	/** The ProxyName component of the ARN. */
+	readonly proxyName: string;
+	/** The ProxyId component of the ARN. */
+	readonly proxyId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a elb-proxy ARN.
+ */
+export interface Wafv2ElbProxyArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ProxyName component. */
+	readonly proxyName: string;
+	/** The ProxyId component. */
+	readonly proxyId: string;
 }
 
 /**
@@ -675,12 +735,16 @@ const AgentcoreGatewayArnRegex =
 	/^arn:(?<partition>[^:]+):bedrock-agentcore:(?<region>[^:]*):(?<account>[^:]*):gateway\/(?<gatewayId>[^:/?]+)$/;
 const AmplifyAppArnRegex =
 	/^arn:(?<partition>[^:]+):amplify:(?<region>[^:]*):(?<account>[^:]*):apps\/(?<appId>[^:/?]+)$/;
+const Amplifygen3AppArnRegex =
+	/^arn:(?<partition>[^:]+):amplifygen3:(?<region>[^:]*):(?<account>[^:]*):app\/(?<appName>[^:/?]+)$/;
 const ApigatewayArnRegex =
 	/^arn:(?<partition>[^:]+):apigateway:(?<region>[^:]*)::\/restapis\/(?<apiId>[^:/?]+)\/stages\/(?<stageName>[^:/?]+)$/;
 const ApprunnerArnRegex =
 	/^arn:(?<partition>[^:]+):apprunner:(?<region>[^:]*):(?<account>[^:]*):service\/(?<serviceName>[^:/?]+)\/(?<serviceId>[^:/?]+)$/;
 const AppsyncArnRegex =
 	/^arn:(?<partition>[^:]+):appsync:(?<region>[^:]*):(?<account>[^:]*):apis\/(?<graphQlapiId>[^:/?]+)$/;
+const ElbProxyArnRegex =
+	/^arn:(?<partition>[^:]+):elasticloadbalancing:(?<region>[^:]*):(?<account>[^:]*):proxy\/(?<proxyName>[^:/?]+):(?<proxyId>[^:/?]+)$/;
 const IpsetArnRegex =
 	/^arn:(?<partition>[^:]+):wafv2:(?<region>[^:]*):(?<account>[^:]*):(?<scope>[^:/?]+)\/ipset\/(?<name>[^:/?]+)\/(?<id>[^:/?]+)$/;
 const LoadbalancerAppArnRegex =
@@ -763,6 +827,37 @@ export class Wafv2Resources {
 			region: match.groups.region,
 			account: match.groups.account,
 			appId: match.groups!.appId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the amplifygen3-app resource.
+	 */
+	static amplifygen3App(props: Wafv2Amplifygen3AppArnProps): string {
+		return `arn:${props.partition ?? "aws"}:amplifygen3:${props.region ?? "*"}:${props.account ?? "*"}:app/${props.appName}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the amplifygen3-app resource.
+	 */
+	static isValidAmplifygen3AppArn(arn: string): boolean {
+		return Amplifygen3AppArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a amplifygen3-app ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseAmplifygen3AppArn(arn: string): Wafv2Amplifygen3AppArnComponents {
+		const match = Amplifygen3AppArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid amplifygen3-app ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			appName: match.groups!.appName,
 		};
 	}
 
@@ -858,6 +953,38 @@ export class Wafv2Resources {
 			region: match.groups.region,
 			account: match.groups.account,
 			graphQlapiId: match.groups!.graphQlapiId,
+		};
+	}
+
+	/**
+	 * Builds an ARN for the elb-proxy resource.
+	 */
+	static elbProxy(props: Wafv2ElbProxyArnProps): string {
+		return `arn:${props.partition ?? "aws"}:elasticloadbalancing:${props.region ?? "*"}:${props.account ?? "*"}:proxy/${props.proxyName}:${props.proxyId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the elb-proxy resource.
+	 */
+	static isValidElbProxyArn(arn: string): boolean {
+		return ElbProxyArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a elb-proxy ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseElbProxyArn(arn: string): Wafv2ElbProxyArnComponents {
+		const match = ElbProxyArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid elb-proxy ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			proxyName: match.groups!.proxyName,
+			proxyId: match.groups!.proxyId,
 		};
 	}
 
