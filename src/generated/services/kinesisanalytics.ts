@@ -434,6 +434,7 @@ export class KinesisanalyticsOperations {
 	static readonly ImportSnapshot: string[] = [
 		"kinesisanalytics:ImportSnapshot",
 		"iam:PassRole",
+		"kinesisanalytics:TagResource",
 	];
 	/** IAM actions required for the ListApplicationOperations API call. */
 	static readonly ListApplicationOperations: string[] = [

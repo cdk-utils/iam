@@ -707,6 +707,7 @@ export class ApiportalOperations {
 	/** IAM actions required for the CreatePortalPreview API call. */
 	static readonly CreatePortalPreview: string[] = [
 		"apiportal:CreatePortalPreview",
+		"apiportal:GetProduct",
 	];
 	/** IAM actions required for the CreateProduct API call. */
 	static readonly CreateProduct: string[] = [

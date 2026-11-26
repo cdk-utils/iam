@@ -26,9 +26,15 @@ export class ElasticloadbalancingActions {
 	/** [Write] elasticloadbalancing:ApplySecurityGroupsToLoadBalancer */
 	static readonly ApplySecurityGroupsToLoadBalancer =
 		"elasticloadbalancing:ApplySecurityGroupsToLoadBalancer";
+	/** [Write] elasticloadbalancing:AssociateCertificate */
+	static readonly AssociateCertificate =
+		"elasticloadbalancing:AssociateCertificate";
 	/** [Write] elasticloadbalancing:AttachLoadBalancerToSubnets */
 	static readonly AttachLoadBalancerToSubnets =
 		"elasticloadbalancing:AttachLoadBalancerToSubnets";
+	/** [Write] elasticloadbalancing:CancelProxyVersionUpdate */
+	static readonly CancelProxyVersionUpdate =
+		"elasticloadbalancing:CancelProxyVersionUpdate";
 	/** [Write] elasticloadbalancing:ConfigureHealthCheck */
 	static readonly ConfigureHealthCheck =
 		"elasticloadbalancing:ConfigureHealthCheck";
@@ -49,6 +55,11 @@ export class ElasticloadbalancingActions {
 	/** [Write] elasticloadbalancing:CreateLoadBalancerPolicy */
 	static readonly CreateLoadBalancerPolicy =
 		"elasticloadbalancing:CreateLoadBalancerPolicy";
+	/** [Write] elasticloadbalancing:CreateProxy */
+	static readonly CreateProxy = "elasticloadbalancing:CreateProxy";
+	/** [Write] elasticloadbalancing:CreateProxyWafAssociation */
+	static readonly CreateProxyWafAssociation =
+		"elasticloadbalancing:CreateProxyWafAssociation";
 	/** [Write] elasticloadbalancing:CreateRule */
 	static readonly CreateRule = "elasticloadbalancing:CreateRule";
 	/** [Write] elasticloadbalancing:CreateTargetGroup */
@@ -69,6 +80,11 @@ export class ElasticloadbalancingActions {
 	/** [Write] elasticloadbalancing:DeleteLoadBalancerPolicy */
 	static readonly DeleteLoadBalancerPolicy =
 		"elasticloadbalancing:DeleteLoadBalancerPolicy";
+	/** [Write] elasticloadbalancing:DeleteProxy */
+	static readonly DeleteProxy = "elasticloadbalancing:DeleteProxy";
+	/** [Write] elasticloadbalancing:DeleteProxyWafAssociation */
+	static readonly DeleteProxyWafAssociation =
+		"elasticloadbalancing:DeleteProxyWafAssociation";
 	/** [Write] elasticloadbalancing:DeleteRule */
 	static readonly DeleteRule = "elasticloadbalancing:DeleteRule";
 	/** [Write] elasticloadbalancing:DeleteSharedTrustStoreAssociation */
@@ -149,12 +165,28 @@ export class ElasticloadbalancingActions {
 	/** [Write] elasticloadbalancing:DisableAvailabilityZonesForLoadBalancer */
 	static readonly DisableAvailabilityZonesForLoadBalancer =
 		"elasticloadbalancing:DisableAvailabilityZonesForLoadBalancer";
+	/** [Write] elasticloadbalancing:DisassociateCertificate */
+	static readonly DisassociateCertificate =
+		"elasticloadbalancing:DisassociateCertificate";
 	/** [Write] elasticloadbalancing:EnableAvailabilityZonesForLoadBalancer */
 	static readonly EnableAvailabilityZonesForLoadBalancer =
 		"elasticloadbalancing:EnableAvailabilityZonesForLoadBalancer";
 	/** [Read] elasticloadbalancing:GetLoadBalancerWebACL */
 	static readonly actionGetLoadBalancerWebACL =
 		"elasticloadbalancing:GetLoadBalancerWebACL";
+	/** [Read] elasticloadbalancing:GetProxy */
+	static readonly actionGetProxy = "elasticloadbalancing:GetProxy";
+	/** [Read] elasticloadbalancing:GetProxyAttributes */
+	static readonly actionGetProxyAttributes =
+		"elasticloadbalancing:GetProxyAttributes";
+	/** [Read] elasticloadbalancing:GetProxyConfigurationContents */
+	static readonly actionGetProxyConfigurationContents =
+		"elasticloadbalancing:GetProxyConfigurationContents";
+	/** [Read] elasticloadbalancing:GetProxyUpdate */
+	static readonly actionGetProxyUpdate = "elasticloadbalancing:GetProxyUpdate";
+	/** [Read] elasticloadbalancing:GetProxyWafAssociation */
+	static readonly actionGetProxyWafAssociation =
+		"elasticloadbalancing:GetProxyWafAssociation";
 	/** [Read] elasticloadbalancing:GetResourcePolicy */
 	static readonly actionGetResourcePolicy =
 		"elasticloadbalancing:GetResourcePolicy";
@@ -164,6 +196,21 @@ export class ElasticloadbalancingActions {
 	/** [Read] elasticloadbalancing:GetTrustStoreRevocationContent */
 	static readonly actionGetTrustStoreRevocationContent =
 		"elasticloadbalancing:GetTrustStoreRevocationContent";
+	/** [List] elasticloadbalancing:ListCertificateAssociations */
+	static readonly ListCertificateAssociations =
+		"elasticloadbalancing:ListCertificateAssociations";
+	/** [List] elasticloadbalancing:ListProxies */
+	static readonly ListProxies = "elasticloadbalancing:ListProxies";
+	/** [List] elasticloadbalancing:ListProxyUpdates */
+	static readonly ListProxyUpdates = "elasticloadbalancing:ListProxyUpdates";
+	/** [List] elasticloadbalancing:ListProxyVersions */
+	static readonly ListProxyVersions = "elasticloadbalancing:ListProxyVersions";
+	/** [List] elasticloadbalancing:ListProxyWafAssociations */
+	static readonly ListProxyWafAssociations =
+		"elasticloadbalancing:ListProxyWafAssociations";
+	/** [Read] elasticloadbalancing:ListTagsForResource */
+	static readonly ListTagsForResource =
+		"elasticloadbalancing:ListTagsForResource";
 	/** [Write] elasticloadbalancing:ModifyCapacityReservation */
 	static readonly ModifyCapacityReservation =
 		"elasticloadbalancing:ModifyCapacityReservation";
@@ -221,6 +268,22 @@ export class ElasticloadbalancingActions {
 	static readonly actionSetSubnets = "elasticloadbalancing:SetSubnets";
 	/** [Write] elasticloadbalancing:SetWebAcl */
 	static readonly actionSetWebAcl = "elasticloadbalancing:SetWebAcl";
+	/** [Tagging] elasticloadbalancing:TagResource */
+	static readonly TagResource = "elasticloadbalancing:TagResource";
+	/** [Tagging] elasticloadbalancing:UntagResource */
+	static readonly UntagResource = "elasticloadbalancing:UntagResource";
+	/** [Write] elasticloadbalancing:UpdateProxyAttributes */
+	static readonly UpdateProxyAttributes =
+		"elasticloadbalancing:UpdateProxyAttributes";
+	/** [Write] elasticloadbalancing:UpdateProxyConfiguration */
+	static readonly UpdateProxyConfiguration =
+		"elasticloadbalancing:UpdateProxyConfiguration";
+	/** [Write] elasticloadbalancing:UpdateProxyNetworkConfiguration */
+	static readonly UpdateProxyNetworkConfiguration =
+		"elasticloadbalancing:UpdateProxyNetworkConfiguration";
+	/** [Write] elasticloadbalancing:UpdateProxyVersion */
+	static readonly UpdateProxyVersion =
+		"elasticloadbalancing:UpdateProxyVersion";
 
 	/** All read-level actions. */
 	static readonly AllReadActions: string[] = [
@@ -243,16 +306,24 @@ export class ElasticloadbalancingActions {
 		ElasticloadbalancingActions.DescribeTrustStoreRevocations,
 		ElasticloadbalancingActions.DescribeTrustStores,
 		ElasticloadbalancingActions.actionGetLoadBalancerWebACL,
+		ElasticloadbalancingActions.actionGetProxy,
+		ElasticloadbalancingActions.actionGetProxyAttributes,
+		ElasticloadbalancingActions.actionGetProxyConfigurationContents,
+		ElasticloadbalancingActions.actionGetProxyUpdate,
+		ElasticloadbalancingActions.actionGetProxyWafAssociation,
 		ElasticloadbalancingActions.actionGetResourcePolicy,
 		ElasticloadbalancingActions.actionGetTrustStoreCaCertificatesBundle,
 		ElasticloadbalancingActions.actionGetTrustStoreRevocationContent,
+		ElasticloadbalancingActions.ListTagsForResource,
 	];
 	/** All write-level actions. */
 	static readonly AllWriteActions: string[] = [
 		ElasticloadbalancingActions.AddListenerCertificates,
 		ElasticloadbalancingActions.AddTrustStoreRevocations,
 		ElasticloadbalancingActions.ApplySecurityGroupsToLoadBalancer,
+		ElasticloadbalancingActions.AssociateCertificate,
 		ElasticloadbalancingActions.AttachLoadBalancerToSubnets,
+		ElasticloadbalancingActions.CancelProxyVersionUpdate,
 		ElasticloadbalancingActions.ConfigureHealthCheck,
 		ElasticloadbalancingActions.CreateAppCookieStickinessPolicy,
 		ElasticloadbalancingActions.CreateLBCookieStickinessPolicy,
@@ -260,6 +331,8 @@ export class ElasticloadbalancingActions {
 		ElasticloadbalancingActions.CreateLoadBalancer,
 		ElasticloadbalancingActions.CreateLoadBalancerListeners,
 		ElasticloadbalancingActions.CreateLoadBalancerPolicy,
+		ElasticloadbalancingActions.CreateProxy,
+		ElasticloadbalancingActions.CreateProxyWafAssociation,
 		ElasticloadbalancingActions.CreateRule,
 		ElasticloadbalancingActions.CreateTargetGroup,
 		ElasticloadbalancingActions.CreateTrustStore,
@@ -268,6 +341,8 @@ export class ElasticloadbalancingActions {
 		ElasticloadbalancingActions.DeleteLoadBalancer,
 		ElasticloadbalancingActions.DeleteLoadBalancerListeners,
 		ElasticloadbalancingActions.DeleteLoadBalancerPolicy,
+		ElasticloadbalancingActions.DeleteProxy,
+		ElasticloadbalancingActions.DeleteProxyWafAssociation,
 		ElasticloadbalancingActions.DeleteRule,
 		ElasticloadbalancingActions.DeleteSharedTrustStoreAssociation,
 		ElasticloadbalancingActions.DeleteTargetGroup,
@@ -277,6 +352,7 @@ export class ElasticloadbalancingActions {
 		ElasticloadbalancingActions.DeregisterTargets,
 		ElasticloadbalancingActions.DetachLoadBalancerFromSubnets,
 		ElasticloadbalancingActions.DisableAvailabilityZonesForLoadBalancer,
+		ElasticloadbalancingActions.DisassociateCertificate,
 		ElasticloadbalancingActions.EnableAvailabilityZonesForLoadBalancer,
 		ElasticloadbalancingActions.ModifyCapacityReservation,
 		ElasticloadbalancingActions.ModifyIpPools,
@@ -299,11 +375,20 @@ export class ElasticloadbalancingActions {
 		ElasticloadbalancingActions.actionSetSecurityGroups,
 		ElasticloadbalancingActions.actionSetSubnets,
 		ElasticloadbalancingActions.actionSetWebAcl,
+		ElasticloadbalancingActions.UpdateProxyAttributes,
+		ElasticloadbalancingActions.UpdateProxyConfiguration,
+		ElasticloadbalancingActions.UpdateProxyNetworkConfiguration,
+		ElasticloadbalancingActions.UpdateProxyVersion,
 	];
 	/** All list-level actions. */
 	static readonly AllListActions: string[] = [
 		ElasticloadbalancingActions.DescribeLoadBalancers,
 		ElasticloadbalancingActions.DescribeWebACLAssociation,
+		ElasticloadbalancingActions.ListCertificateAssociations,
+		ElasticloadbalancingActions.ListProxies,
+		ElasticloadbalancingActions.ListProxyUpdates,
+		ElasticloadbalancingActions.ListProxyVersions,
+		ElasticloadbalancingActions.ListProxyWafAssociations,
 	];
 	/** All permission-management-level actions. */
 	static readonly AllPermissionManagementActions: string[] = [
@@ -313,6 +398,8 @@ export class ElasticloadbalancingActions {
 	static readonly AllTaggingActions: string[] = [
 		ElasticloadbalancingActions.AddTags,
 		ElasticloadbalancingActions.RemoveTags,
+		ElasticloadbalancingActions.TagResource,
+		ElasticloadbalancingActions.UntagResource,
 	];
 }
 
@@ -629,6 +716,38 @@ export interface ElasticloadbalancingLoadbalancerNetArnComponents {
 }
 
 /**
+ * Properties for building a proxy ARN.
+ */
+export interface ElasticloadbalancingProxyArnProps {
+	/** The ProxyName component of the ARN. */
+	readonly proxyName: string;
+	/** The ProxyId component of the ARN. */
+	readonly proxyId: string;
+	/** AWS region. Defaults to "*". */
+	readonly region?: string;
+	/** AWS account ID. Defaults to "*". */
+	readonly account?: string;
+	/** AWS partition. Defaults to "aws". */
+	readonly partition?: string;
+}
+
+/**
+ * Parsed components of a proxy ARN.
+ */
+export interface ElasticloadbalancingProxyArnComponents {
+	/** AWS partition. */
+	readonly partition: string;
+	/** AWS region. */
+	readonly region: string;
+	/** AWS account ID. */
+	readonly account: string;
+	/** The ProxyName component. */
+	readonly proxyName: string;
+	/** The ProxyId component. */
+	readonly proxyId: string;
+}
+
+/**
  * Properties for building a targetgroup ARN.
  */
 export interface ElasticloadbalancingTargetgroupArnProps {
@@ -710,6 +829,8 @@ const LoadbalancerGwyArnRegex =
 	/^arn:(?<partition>[^:]+):elasticloadbalancing:(?<region>[^:]*):(?<account>[^:]*):loadbalancer\/gwy\/(?<loadBalancerName>[^:/?]+)\/(?<loadBalancerId>[^:/?]+)$/;
 const LoadbalancerNetArnRegex =
 	/^arn:(?<partition>[^:]+):elasticloadbalancing:(?<region>[^:]*):(?<account>[^:]*):loadbalancer\/net\/(?<loadBalancerName>[^:/?]+)\/(?<loadBalancerId>[^:/?]+)$/;
+const ProxyArnRegex =
+	/^arn:(?<partition>[^:]+):elasticloadbalancing:(?<region>[^:]*):(?<account>[^:]*):proxy\/(?<proxyName>[^:/?]+):(?<proxyId>[^:/?]+)$/;
 const TargetgroupArnRegex =
 	/^arn:(?<partition>[^:]+):elasticloadbalancing:(?<region>[^:]*):(?<account>[^:]*):targetgroup\/(?<targetGroupName>[^:/?]+)\/(?<targetGroupId>[^:/?]+)$/;
 const TruststoreArnRegex =
@@ -1042,6 +1163,38 @@ export class ElasticloadbalancingResources {
 	}
 
 	/**
+	 * Builds an ARN for the proxy resource.
+	 */
+	static proxy(props: ElasticloadbalancingProxyArnProps): string {
+		return `arn:${props.partition ?? "aws"}:elasticloadbalancing:${props.region ?? "*"}:${props.account ?? "*"}:proxy/${props.proxyName}:${props.proxyId}`;
+	}
+
+	/**
+	 * Validates whether a string is a valid ARN for the proxy resource.
+	 */
+	static isValidProxyArn(arn: string): boolean {
+		return ProxyArnRegex.test(arn);
+	}
+
+	/**
+	 * Parses a proxy ARN into its components.
+	 * @throws Error if the ARN does not match the expected format.
+	 */
+	static parseProxyArn(arn: string): ElasticloadbalancingProxyArnComponents {
+		const match = ProxyArnRegex.exec(arn);
+		if (!match?.groups) {
+			throw new Error(`Invalid proxy ARN: ${arn}`);
+		}
+		return {
+			partition: match.groups.partition,
+			region: match.groups.region,
+			account: match.groups.account,
+			proxyName: match.groups!.proxyName,
+			proxyId: match.groups!.proxyId,
+		};
+	}
+
+	/**
 	 * Builds an ARN for the targetgroup resource.
 	 */
 	static targetgroup(props: ElasticloadbalancingTargetgroupArnProps): string {
@@ -1128,6 +1281,10 @@ export class ElasticloadbalancingOperations {
 	static readonly ApplySecurityGroupsToLoadBalancer: string[] = [
 		"elasticloadbalancing:ApplySecurityGroupsToLoadBalancer",
 	];
+	/** IAM actions required for the AssociateCertificate API call. */
+	static readonly AssociateCertificate: string[] = [
+		"elasticloadbalancing:AssociateCertificate",
+	];
 	/** IAM actions required for the AttachLoadBalancerToSubnets API call. */
 	static readonly AttachLoadBalancerToSubnets: string[] = [
 		"elasticloadbalancing:AttachLoadBalancerToSubnets",
@@ -1162,6 +1319,12 @@ export class ElasticloadbalancingOperations {
 	static readonly CreateLoadBalancerPolicy: string[] = [
 		"elasticloadbalancing:CreateLoadBalancerPolicy",
 	];
+	/** IAM actions required for the CreateProxy API call. */
+	static readonly CreateProxy: string[] = [
+		"elasticloadbalancing:CreateProxy",
+		"iam:PassRole",
+		"elasticloadbalancing:TagResource",
+	];
 	/** IAM actions required for the CreateRule API call. */
 	static readonly CreateRule: string[] = [
 		"elasticloadbalancing:AddTags",
@@ -1193,6 +1356,8 @@ export class ElasticloadbalancingOperations {
 	static readonly DeleteLoadBalancerPolicy: string[] = [
 		"elasticloadbalancing:DeleteLoadBalancerPolicy",
 	];
+	/** IAM actions required for the DeleteProxy API call. */
+	static readonly DeleteProxy: string[] = ["elasticloadbalancing:DeleteProxy"];
 	/** IAM actions required for the DeleteRule API call. */
 	static readonly DeleteRule: string[] = ["elasticloadbalancing:DeleteRule"];
 	/** IAM actions required for the DeleteSharedTrustStoreAssociation API call. */
@@ -1299,9 +1464,27 @@ export class ElasticloadbalancingOperations {
 	static readonly DisableAvailabilityZonesForLoadBalancer: string[] = [
 		"elasticloadbalancing:DisableAvailabilityZonesForLoadBalancer",
 	];
+	/** IAM actions required for the DisassociateCertificate API call. */
+	static readonly DisassociateCertificate: string[] = [
+		"elasticloadbalancing:DisassociateCertificate",
+	];
 	/** IAM actions required for the EnableAvailabilityZonesForLoadBalancer API call. */
 	static readonly EnableAvailabilityZonesForLoadBalancer: string[] = [
 		"elasticloadbalancing:EnableAvailabilityZonesForLoadBalancer",
+	];
+	/** IAM actions required for the GetProxy API call. */
+	static readonly opGetProxy: string[] = ["elasticloadbalancing:GetProxy"];
+	/** IAM actions required for the GetProxyAttributes API call. */
+	static readonly opGetProxyAttributes: string[] = [
+		"elasticloadbalancing:GetProxyAttributes",
+	];
+	/** IAM actions required for the GetProxyConfigurationContents API call. */
+	static readonly opGetProxyConfigurationContents: string[] = [
+		"elasticloadbalancing:GetProxyConfigurationContents",
+	];
+	/** IAM actions required for the GetProxyUpdate API call. */
+	static readonly opGetProxyUpdate: string[] = [
+		"elasticloadbalancing:GetProxyUpdate",
 	];
 	/** IAM actions required for the GetResourcePolicy API call. */
 	static readonly opGetResourcePolicy: string[] = [
@@ -1314,6 +1497,24 @@ export class ElasticloadbalancingOperations {
 	/** IAM actions required for the GetTrustStoreRevocationContent API call. */
 	static readonly opGetTrustStoreRevocationContent: string[] = [
 		"elasticloadbalancing:GetTrustStoreRevocationContent",
+	];
+	/** IAM actions required for the ListCertificateAssociations API call. */
+	static readonly ListCertificateAssociations: string[] = [
+		"elasticloadbalancing:ListCertificateAssociations",
+	];
+	/** IAM actions required for the ListProxies API call. */
+	static readonly ListProxies: string[] = ["elasticloadbalancing:ListProxies"];
+	/** IAM actions required for the ListProxyUpdates API call. */
+	static readonly ListProxyUpdates: string[] = [
+		"elasticloadbalancing:ListProxyUpdates",
+	];
+	/** IAM actions required for the ListProxyVersions API call. */
+	static readonly ListProxyVersions: string[] = [
+		"elasticloadbalancing:ListProxyVersions",
+	];
+	/** IAM actions required for the ListTagsForResource API call. */
+	static readonly ListTagsForResource: string[] = [
+		"elasticloadbalancing:ListTagsForResource",
 	];
 	/** IAM actions required for the ModifyCapacityReservation API call. */
 	static readonly ModifyCapacityReservation: string[] = [
@@ -1393,6 +1594,24 @@ export class ElasticloadbalancingOperations {
 	];
 	/** IAM actions required for the SetSubnets API call. */
 	static readonly opSetSubnets: string[] = ["elasticloadbalancing:SetSubnets"];
+	/** IAM actions required for the TagResource API call. */
+	static readonly TagResource: string[] = ["elasticloadbalancing:TagResource"];
+	/** IAM actions required for the UntagResource API call. */
+	static readonly UntagResource: string[] = [
+		"elasticloadbalancing:UntagResource",
+	];
+	/** IAM actions required for the UpdateProxyAttributes API call. */
+	static readonly UpdateProxyAttributes: string[] = [
+		"elasticloadbalancing:UpdateProxyAttributes",
+	];
+	/** IAM actions required for the UpdateProxyConfiguration API call. */
+	static readonly UpdateProxyConfiguration: string[] = [
+		"elasticloadbalancing:UpdateProxyConfiguration",
+	];
+	/** IAM actions required for the UpdateProxyNetworkConfiguration API call. */
+	static readonly UpdateProxyNetworkConfiguration: string[] = [
+		"elasticloadbalancing:UpdateProxyNetworkConfiguration",
+	];
 }
 
 /**
@@ -1423,11 +1642,19 @@ export class ElasticloadbalancingConditions {
 		"elasticloadbalancing:ResourceTag/${TagKey}",
 		"elasticloadbalancing:SecurityGroup",
 	];
+	/** Condition keys applicable to the AssociateCertificate action. */
+	static readonly AssociateCertificateConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the AttachLoadBalancerToSubnets action. */
 	static readonly AttachLoadBalancerToSubnetsConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"elasticloadbalancing:ResourceTag/${TagKey}",
 		"elasticloadbalancing:Subnet",
+	];
+	/** Condition keys applicable to the CancelProxyVersionUpdate action. */
+	static readonly CancelProxyVersionUpdateConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the ConfigureHealthCheck action. */
 	static readonly ConfigureHealthCheckConditionKeys: string[] = [
@@ -1475,6 +1702,12 @@ export class ElasticloadbalancingConditions {
 		"elasticloadbalancing:ResourceTag/${TagKey}",
 		"elasticloadbalancing:SecurityPolicy",
 	];
+	/** Condition keys applicable to the CreateProxy action. */
+	static readonly CreateProxyConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:ResourceTag/${TagKey}",
+		"aws:TagKeys",
+	];
 	/** Condition keys applicable to the CreateRule action. */
 	static readonly CreateRuleConditionKeys: string[] = [
 		"aws:RequestTag/${TagKey}",
@@ -1521,6 +1754,10 @@ export class ElasticloadbalancingConditions {
 		"aws:ResourceTag/${TagKey}",
 		"elasticloadbalancing:ResourceTag/${TagKey}",
 	];
+	/** Condition keys applicable to the DeleteProxy action. */
+	static readonly DeleteProxyConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the DeleteRule action. */
 	static readonly DeleteRuleConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
@@ -1564,6 +1801,10 @@ export class ElasticloadbalancingConditions {
 	/** Condition keys applicable to the DisableAvailabilityZonesForLoadBalancer action. */
 	static readonly DisableAvailabilityZonesForLoadBalancerConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}", "elasticloadbalancing:ResourceTag/${TagKey}"];
+	/** Condition keys applicable to the DisassociateCertificate action. */
+	static readonly DisassociateCertificateConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the EnableAvailabilityZonesForLoadBalancer action. */
 	static readonly EnableAvailabilityZonesForLoadBalancerConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}", "elasticloadbalancing:ResourceTag/${TagKey}"];
@@ -1571,6 +1812,22 @@ export class ElasticloadbalancingConditions {
 	static readonly actionGetLoadBalancerWebACLConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
 		"elasticloadbalancing:ResourceTag/${TagKey}",
+	];
+	/** Condition keys applicable to the GetProxy action. */
+	static readonly actionGetProxyConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
+	/** Condition keys applicable to the GetProxyAttributes action. */
+	static readonly actionGetProxyAttributesConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
+	/** Condition keys applicable to the GetProxyConfigurationContents action. */
+	static readonly actionGetProxyConfigurationContentsConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
+	/** Condition keys applicable to the GetProxyUpdate action. */
+	static readonly actionGetProxyUpdateConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
 	];
 	/** Condition keys applicable to the GetResourcePolicy action. */
 	static readonly actionGetResourcePolicyConditionKeys: string[] = [
@@ -1583,6 +1840,18 @@ export class ElasticloadbalancingConditions {
 	/** Condition keys applicable to the GetTrustStoreRevocationContent action. */
 	static readonly actionGetTrustStoreRevocationContentConditionKeys: string[] =
 		["aws:ResourceTag/${TagKey}", "elasticloadbalancing:ResourceTag/${TagKey}"];
+	/** Condition keys applicable to the ListCertificateAssociations action. */
+	static readonly ListCertificateAssociationsConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
+	/** Condition keys applicable to the ListProxyUpdates action. */
+	static readonly ListProxyUpdatesConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
+	/** Condition keys applicable to the ListTagsForResource action. */
+	static readonly ListTagsForResourceConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
 	/** Condition keys applicable to the ModifyCapacityReservation action. */
 	static readonly ModifyCapacityReservationConditionKeys: string[] = [
 		"aws:ResourceTag/${TagKey}",
@@ -1686,6 +1955,33 @@ export class ElasticloadbalancingConditions {
 		"aws:ResourceTag/${TagKey}",
 		"elasticloadbalancing:ResourceTag/${TagKey}",
 		"elasticloadbalancing:Subnet",
+	];
+	/** Condition keys applicable to the TagResource action. */
+	static readonly TagResourceConditionKeys: string[] = [
+		"aws:RequestTag/${TagKey}",
+		"aws:ResourceTag/${TagKey}",
+		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the UntagResource action. */
+	static readonly UntagResourceConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+		"aws:TagKeys",
+	];
+	/** Condition keys applicable to the UpdateProxyAttributes action. */
+	static readonly UpdateProxyAttributesConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
+	/** Condition keys applicable to the UpdateProxyConfiguration action. */
+	static readonly UpdateProxyConfigurationConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
+	/** Condition keys applicable to the UpdateProxyNetworkConfiguration action. */
+	static readonly UpdateProxyNetworkConfigurationConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
+	];
+	/** Condition keys applicable to the UpdateProxyVersion action. */
+	static readonly UpdateProxyVersionConditionKeys: string[] = [
+		"aws:ResourceTag/${TagKey}",
 	];
 
 	/** Condition key: aws:RequestTag/${TagKey} (String) */

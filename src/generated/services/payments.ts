@@ -269,11 +269,16 @@ export class PaymentsOperations {
 	];
 	/** IAM actions required for the GetAccountBalance API call. */
 	static readonly opGetAccountBalance: string[] = [
+		"payments:GetAccountBalance",
 		"payments:GetPaymentStatus",
 		"aws-portal:ViewBilling",
 	];
 	/** IAM actions required for the GetFinancialRecord API call. */
-	static readonly opGetFinancialRecord: string[] = [];
+	static readonly opGetFinancialRecord: string[] = [
+		"payments:GetFinancialRecord",
+		"payments:GetPaymentStatus",
+		"aws-portal:ViewBilling",
+	];
 	/** IAM actions required for the GetPaymentInstrument API call. */
 	static readonly opGetPaymentInstrument: string[] = [
 		"payments:GetPaymentInstrument",

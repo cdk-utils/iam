@@ -804,7 +804,10 @@ export class AppstreamOperations {
 		"appstream:CreateAppBlockBuilderStreamingURL",
 	];
 	/** IAM actions required for the CreateApplication API call. */
-	static readonly CreateApplication: string[] = ["appstream:CreateApplication"];
+	static readonly CreateApplication: string[] = [
+		"appstream:CreateApplication",
+		"appstream:TagResource",
+	];
 	/** IAM actions required for the CreateDirectoryConfig API call. */
 	static readonly CreateDirectoryConfig: string[] = [
 		"appstream:CreateDirectoryConfig",

@@ -814,6 +814,7 @@ export class WellArchitectedOperations {
 	/** IAM actions required for the CreateAgentOrganizationalProfile API call. */
 	static readonly CreateAgentOrganizationalProfile: string[] = [
 		"wellarchitected:CreateAgentOrganizationalProfile",
+		"wellarchitected:TagResource",
 	];
 	/** IAM actions required for the CreateAgentOrganizationalReport API call. */
 	static readonly CreateAgentOrganizationalReport: string[] = [

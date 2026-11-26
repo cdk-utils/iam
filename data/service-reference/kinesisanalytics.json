@@ -1518,6 +1518,10 @@
             ]
           },
           "Service": "iam"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "kinesisanalytics"
         }
       ],
       "SDK": [

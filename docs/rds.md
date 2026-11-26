@@ -3889,6 +3889,7 @@ new rds.RDSActions()
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.DescribeRecommendations">DescribeRecommendations</a></code> | <code>string</code> | [Read] rds:DescribeRecommendations. |
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.DescribeReservedDBInstances">DescribeReservedDBInstances</a></code> | <code>string</code> | [List] rds:DescribeReservedDBInstances. |
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.DescribeReservedDBInstancesOfferings">DescribeReservedDBInstancesOfferings</a></code> | <code>string</code> | [List] rds:DescribeReservedDBInstancesOfferings. |
+| <code><a href="#@cdk_utils/iam.rds.RDSActions.property.DescribeSchemas">DescribeSchemas</a></code> | <code>string</code> | [Read] rds:DescribeSchemas. |
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.DescribeSourceRegions">DescribeSourceRegions</a></code> | <code>string</code> | [List] rds:DescribeSourceRegions. |
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.DescribeTenantDatabases">DescribeTenantDatabases</a></code> | <code>string</code> | [List] rds:DescribeTenantDatabases. |
 | <code><a href="#@cdk_utils/iam.rds.RDSActions.property.DescribeValidDBInstanceModifications">DescribeValidDBInstanceModifications</a></code> | <code>string</code> | [List] rds:DescribeValidDBInstanceModifications. |
@@ -5282,6 +5283,18 @@ public readonly DescribeReservedDBInstancesOfferings: string;
 - *Type:* string
 
 [List] rds:DescribeReservedDBInstancesOfferings.
+
+---
+
+##### `DescribeSchemas`<sup>Required</sup> <a name="DescribeSchemas" id="@cdk_utils/iam.rds.RDSActions.property.DescribeSchemas"></a>
+
+```typescript
+public readonly DescribeSchemas: string;
+```
+
+- *Type:* string
+
+[Read] rds:DescribeSchemas.
 
 ---
 

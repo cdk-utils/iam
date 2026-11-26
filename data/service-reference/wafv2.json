@@ -21,6 +21,9 @@
           "Name": "amplify-app"
         },
         {
+          "Name": "amplifygen3-app"
+        },
+        {
           "Name": "apigateway"
         },
         {
@@ -28,6 +31,9 @@
         },
         {
           "Name": "appsync"
+        },
+        {
+          "Name": "elb-proxy"
         },
         {
           "Name": "loadbalancer/app/"
@@ -465,6 +471,9 @@
           "Name": "amplify-app"
         },
         {
+          "Name": "amplifygen3-app"
+        },
+        {
           "Name": "apigateway"
         },
         {
@@ -472,6 +481,9 @@
         },
         {
           "Name": "appsync"
+        },
+        {
+          "Name": "elb-proxy"
         },
         {
           "Name": "loadbalancer/app/"
@@ -869,6 +881,9 @@
           "Name": "amplify-app"
         },
         {
+          "Name": "amplifygen3-app"
+        },
+        {
           "Name": "apigateway"
         },
         {
@@ -876,6 +891,9 @@
         },
         {
           "Name": "appsync"
+        },
+        {
+          "Name": "elb-proxy"
         },
         {
           "Name": "loadbalancer/app/"
@@ -1098,7 +1116,13 @@
           "Name": "amplify-app"
         },
         {
+          "Name": "amplifygen3-app"
+        },
+        {
           "Name": "apprunner"
+        },
+        {
+          "Name": "elb-proxy"
         },
         {
           "Name": "userpool"
@@ -2682,6 +2706,12 @@
       ]
     },
     {
+      "Name": "amplifygen3-app",
+      "ARNFormats": [
+        "arn:${Partition}:amplifygen3:${Region}:${Account}:app/${AppName}"
+      ]
+    },
+    {
       "Name": "apigateway",
       "ARNFormats": [
         "arn:${Partition}:apigateway:${Region}::/restapis/${ApiId}/stages/${StageName}"
@@ -2697,6 +2727,12 @@
       "Name": "appsync",
       "ARNFormats": [
         "arn:${Partition}:appsync:${Region}:${Account}:apis/${GraphQLAPIId}"
+      ]
+    },
+    {
+      "Name": "elb-proxy",
+      "ARNFormats": [
+        "arn:${Partition}:elasticloadbalancing:${Region}:${Account}:proxy/${ProxyName}:${ProxyId}"
       ]
     },
     {

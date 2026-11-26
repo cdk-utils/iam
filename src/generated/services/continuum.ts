@@ -616,7 +616,10 @@ export class ContinuumOperations {
 		"continuum:UpdateCollector",
 	];
 	/** IAM actions required for the UpdateEnvironment API call. */
-	static readonly UpdateEnvironment: string[] = ["continuum:UpdateEnvironment"];
+	static readonly UpdateEnvironment: string[] = [
+		"iam:PassRole",
+		"continuum:UpdateEnvironment",
+	];
 	/** IAM actions required for the UpdateIntegration API call. */
 	static readonly UpdateIntegration: string[] = [
 		"iam:PassRole",

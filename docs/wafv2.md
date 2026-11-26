@@ -299,6 +299,154 @@ Defaults to "*".
 
 ---
 
+### Wafv2Amplifygen3AppArnComponents <a name="Wafv2Amplifygen3AppArnComponents" id="@cdk_utils/iam.wafv2.Wafv2Amplifygen3AppArnComponents"></a>
+
+Parsed components of a amplifygen3-app ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.wafv2.Wafv2Amplifygen3AppArnComponents.Initializer"></a>
+
+```typescript
+import { wafv2 } from '@cdk_utils/iam'
+
+const wafv2Amplifygen3AppArnComponents: wafv2.Wafv2Amplifygen3AppArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.wafv2.Wafv2Amplifygen3AppArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.wafv2.Wafv2Amplifygen3AppArnComponents.property.appName">appName</a></code> | <code>string</code> | The AppName component. |
+| <code><a href="#@cdk_utils/iam.wafv2.Wafv2Amplifygen3AppArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.wafv2.Wafv2Amplifygen3AppArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.wafv2.Wafv2Amplifygen3AppArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `appName`<sup>Required</sup> <a name="appName" id="@cdk_utils/iam.wafv2.Wafv2Amplifygen3AppArnComponents.property.appName"></a>
+
+```typescript
+public readonly appName: string;
+```
+
+- *Type:* string
+
+The AppName component.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.wafv2.Wafv2Amplifygen3AppArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.wafv2.Wafv2Amplifygen3AppArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### Wafv2Amplifygen3AppArnProps <a name="Wafv2Amplifygen3AppArnProps" id="@cdk_utils/iam.wafv2.Wafv2Amplifygen3AppArnProps"></a>
+
+Properties for building a amplifygen3-app ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.wafv2.Wafv2Amplifygen3AppArnProps.Initializer"></a>
+
+```typescript
+import { wafv2 } from '@cdk_utils/iam'
+
+const wafv2Amplifygen3AppArnProps: wafv2.Wafv2Amplifygen3AppArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.wafv2.Wafv2Amplifygen3AppArnProps.property.appName">appName</a></code> | <code>string</code> | The AppName component of the ARN. |
+| <code><a href="#@cdk_utils/iam.wafv2.Wafv2Amplifygen3AppArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.wafv2.Wafv2Amplifygen3AppArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.wafv2.Wafv2Amplifygen3AppArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `appName`<sup>Required</sup> <a name="appName" id="@cdk_utils/iam.wafv2.Wafv2Amplifygen3AppArnProps.property.appName"></a>
+
+```typescript
+public readonly appName: string;
+```
+
+- *Type:* string
+
+The AppName component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.wafv2.Wafv2Amplifygen3AppArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.wafv2.Wafv2Amplifygen3AppArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.wafv2.Wafv2Amplifygen3AppArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### Wafv2ApigatewayArnComponents <a name="Wafv2ApigatewayArnComponents" id="@cdk_utils/iam.wafv2.Wafv2ApigatewayArnComponents"></a>
 
 Parsed components of a apigateway ARN.
@@ -782,6 +930,180 @@ Defaults to "aws".
 ---
 
 ##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.wafv2.Wafv2AppsyncArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
+### Wafv2ElbProxyArnComponents <a name="Wafv2ElbProxyArnComponents" id="@cdk_utils/iam.wafv2.Wafv2ElbProxyArnComponents"></a>
+
+Parsed components of a elb-proxy ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.wafv2.Wafv2ElbProxyArnComponents.Initializer"></a>
+
+```typescript
+import { wafv2 } from '@cdk_utils/iam'
+
+const wafv2ElbProxyArnComponents: wafv2.Wafv2ElbProxyArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.wafv2.Wafv2ElbProxyArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.wafv2.Wafv2ElbProxyArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.wafv2.Wafv2ElbProxyArnComponents.property.proxyId">proxyId</a></code> | <code>string</code> | The ProxyId component. |
+| <code><a href="#@cdk_utils/iam.wafv2.Wafv2ElbProxyArnComponents.property.proxyName">proxyName</a></code> | <code>string</code> | The ProxyName component. |
+| <code><a href="#@cdk_utils/iam.wafv2.Wafv2ElbProxyArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.wafv2.Wafv2ElbProxyArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.wafv2.Wafv2ElbProxyArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `proxyId`<sup>Required</sup> <a name="proxyId" id="@cdk_utils/iam.wafv2.Wafv2ElbProxyArnComponents.property.proxyId"></a>
+
+```typescript
+public readonly proxyId: string;
+```
+
+- *Type:* string
+
+The ProxyId component.
+
+---
+
+##### `proxyName`<sup>Required</sup> <a name="proxyName" id="@cdk_utils/iam.wafv2.Wafv2ElbProxyArnComponents.property.proxyName"></a>
+
+```typescript
+public readonly proxyName: string;
+```
+
+- *Type:* string
+
+The ProxyName component.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.wafv2.Wafv2ElbProxyArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### Wafv2ElbProxyArnProps <a name="Wafv2ElbProxyArnProps" id="@cdk_utils/iam.wafv2.Wafv2ElbProxyArnProps"></a>
+
+Properties for building a elb-proxy ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.wafv2.Wafv2ElbProxyArnProps.Initializer"></a>
+
+```typescript
+import { wafv2 } from '@cdk_utils/iam'
+
+const wafv2ElbProxyArnProps: wafv2.Wafv2ElbProxyArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.wafv2.Wafv2ElbProxyArnProps.property.proxyId">proxyId</a></code> | <code>string</code> | The ProxyId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.wafv2.Wafv2ElbProxyArnProps.property.proxyName">proxyName</a></code> | <code>string</code> | The ProxyName component of the ARN. |
+| <code><a href="#@cdk_utils/iam.wafv2.Wafv2ElbProxyArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.wafv2.Wafv2ElbProxyArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.wafv2.Wafv2ElbProxyArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `proxyId`<sup>Required</sup> <a name="proxyId" id="@cdk_utils/iam.wafv2.Wafv2ElbProxyArnProps.property.proxyId"></a>
+
+```typescript
+public readonly proxyId: string;
+```
+
+- *Type:* string
+
+The ProxyId component of the ARN.
+
+---
+
+##### `proxyName`<sup>Required</sup> <a name="proxyName" id="@cdk_utils/iam.wafv2.Wafv2ElbProxyArnProps.property.proxyName"></a>
+
+```typescript
+public readonly proxyName: string;
+```
+
+- *Type:* string
+
+The ProxyName component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.wafv2.Wafv2ElbProxyArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.wafv2.Wafv2ElbProxyArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.wafv2.Wafv2ElbProxyArnProps.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -4595,15 +4917,19 @@ new wafv2.Wafv2Resources()
 | --- | --- |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Resources.agentcoreGateway">agentcoreGateway</a></code> | Builds an ARN for the agentcore-gateway resource. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Resources.amplifyApp">amplifyApp</a></code> | Builds an ARN for the amplify-app resource. |
+| <code><a href="#@cdk_utils/iam.wafv2.Wafv2Resources.amplifygen3App">amplifygen3App</a></code> | Builds an ARN for the amplifygen3-app resource. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Resources.apigateway">apigateway</a></code> | Builds an ARN for the apigateway resource. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Resources.apprunner">apprunner</a></code> | Builds an ARN for the apprunner resource. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Resources.appsync">appsync</a></code> | Builds an ARN for the appsync resource. |
+| <code><a href="#@cdk_utils/iam.wafv2.Wafv2Resources.elbProxy">elbProxy</a></code> | Builds an ARN for the elb-proxy resource. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Resources.ipset">ipset</a></code> | Builds an ARN for the ipset resource. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Resources.isValidAgentcoreGatewayArn">isValidAgentcoreGatewayArn</a></code> | Validates whether a string is a valid ARN for the agentcore-gateway resource. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Resources.isValidAmplifyAppArn">isValidAmplifyAppArn</a></code> | Validates whether a string is a valid ARN for the amplify-app resource. |
+| <code><a href="#@cdk_utils/iam.wafv2.Wafv2Resources.isValidAmplifygen3AppArn">isValidAmplifygen3AppArn</a></code> | Validates whether a string is a valid ARN for the amplifygen3-app resource. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Resources.isValidApigatewayArn">isValidApigatewayArn</a></code> | Validates whether a string is a valid ARN for the apigateway resource. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Resources.isValidApprunnerArn">isValidApprunnerArn</a></code> | Validates whether a string is a valid ARN for the apprunner resource. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Resources.isValidAppsyncArn">isValidAppsyncArn</a></code> | Validates whether a string is a valid ARN for the appsync resource. |
+| <code><a href="#@cdk_utils/iam.wafv2.Wafv2Resources.isValidElbProxyArn">isValidElbProxyArn</a></code> | Validates whether a string is a valid ARN for the elb-proxy resource. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Resources.isValidIpsetArn">isValidIpsetArn</a></code> | Validates whether a string is a valid ARN for the ipset resource. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Resources.isValidLoadbalancerAppArn">isValidLoadbalancerAppArn</a></code> | Validates whether a string is a valid ARN for the loadbalancer/app/ resource. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Resources.isValidManagedrulesetArn">isValidManagedrulesetArn</a></code> | Validates whether a string is a valid ARN for the managedruleset resource. |
@@ -4616,9 +4942,11 @@ new wafv2.Wafv2Resources()
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Resources.managedruleset">managedruleset</a></code> | Builds an ARN for the managedruleset resource. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Resources.parseAgentcoreGatewayArn">parseAgentcoreGatewayArn</a></code> | Parses a agentcore-gateway ARN into its components. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Resources.parseAmplifyAppArn">parseAmplifyAppArn</a></code> | Parses a amplify-app ARN into its components. |
+| <code><a href="#@cdk_utils/iam.wafv2.Wafv2Resources.parseAmplifygen3AppArn">parseAmplifygen3AppArn</a></code> | Parses a amplifygen3-app ARN into its components. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Resources.parseApigatewayArn">parseApigatewayArn</a></code> | Parses a apigateway ARN into its components. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Resources.parseApprunnerArn">parseApprunnerArn</a></code> | Parses a apprunner ARN into its components. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Resources.parseAppsyncArn">parseAppsyncArn</a></code> | Parses a appsync ARN into its components. |
+| <code><a href="#@cdk_utils/iam.wafv2.Wafv2Resources.parseElbProxyArn">parseElbProxyArn</a></code> | Parses a elb-proxy ARN into its components. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Resources.parseIpsetArn">parseIpsetArn</a></code> | Parses a ipset ARN into its components. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Resources.parseLoadbalancerAppArn">parseLoadbalancerAppArn</a></code> | Parses a loadbalancer/app/ ARN into its components. |
 | <code><a href="#@cdk_utils/iam.wafv2.Wafv2Resources.parseManagedrulesetArn">parseManagedrulesetArn</a></code> | Parses a managedruleset ARN into its components. |
@@ -4664,6 +4992,22 @@ Builds an ARN for the amplify-app resource.
 ###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.wafv2.Wafv2Resources.amplifyApp.parameter.props"></a>
 
 - *Type:* <a href="#@cdk_utils/iam.wafv2.Wafv2AmplifyAppArnProps">Wafv2AmplifyAppArnProps</a>
+
+---
+
+##### `amplifygen3App` <a name="amplifygen3App" id="@cdk_utils/iam.wafv2.Wafv2Resources.amplifygen3App"></a>
+
+```typescript
+import { wafv2 } from '@cdk_utils/iam'
+
+wafv2.Wafv2Resources.amplifygen3App(props: Wafv2Amplifygen3AppArnProps)
+```
+
+Builds an ARN for the amplifygen3-app resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.wafv2.Wafv2Resources.amplifygen3App.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.wafv2.Wafv2Amplifygen3AppArnProps">Wafv2Amplifygen3AppArnProps</a>
 
 ---
 
@@ -4715,6 +5059,22 @@ Builds an ARN for the appsync resource.
 
 ---
 
+##### `elbProxy` <a name="elbProxy" id="@cdk_utils/iam.wafv2.Wafv2Resources.elbProxy"></a>
+
+```typescript
+import { wafv2 } from '@cdk_utils/iam'
+
+wafv2.Wafv2Resources.elbProxy(props: Wafv2ElbProxyArnProps)
+```
+
+Builds an ARN for the elb-proxy resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.wafv2.Wafv2Resources.elbProxy.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.wafv2.Wafv2ElbProxyArnProps">Wafv2ElbProxyArnProps</a>
+
+---
+
 ##### `ipset` <a name="ipset" id="@cdk_utils/iam.wafv2.Wafv2Resources.ipset"></a>
 
 ```typescript
@@ -4763,6 +5123,22 @@ Validates whether a string is a valid ARN for the amplify-app resource.
 
 ---
 
+##### `isValidAmplifygen3AppArn` <a name="isValidAmplifygen3AppArn" id="@cdk_utils/iam.wafv2.Wafv2Resources.isValidAmplifygen3AppArn"></a>
+
+```typescript
+import { wafv2 } from '@cdk_utils/iam'
+
+wafv2.Wafv2Resources.isValidAmplifygen3AppArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the amplifygen3-app resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.wafv2.Wafv2Resources.isValidAmplifygen3AppArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `isValidApigatewayArn` <a name="isValidApigatewayArn" id="@cdk_utils/iam.wafv2.Wafv2Resources.isValidApigatewayArn"></a>
 
 ```typescript
@@ -4806,6 +5182,22 @@ wafv2.Wafv2Resources.isValidAppsyncArn(arn: string)
 Validates whether a string is a valid ARN for the appsync resource.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.wafv2.Wafv2Resources.isValidAppsyncArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidElbProxyArn` <a name="isValidElbProxyArn" id="@cdk_utils/iam.wafv2.Wafv2Resources.isValidElbProxyArn"></a>
+
+```typescript
+import { wafv2 } from '@cdk_utils/iam'
+
+wafv2.Wafv2Resources.isValidElbProxyArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the elb-proxy resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.wafv2.Wafv2Resources.isValidElbProxyArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -5003,6 +5395,22 @@ Parses a amplify-app ARN into its components.
 
 ---
 
+##### `parseAmplifygen3AppArn` <a name="parseAmplifygen3AppArn" id="@cdk_utils/iam.wafv2.Wafv2Resources.parseAmplifygen3AppArn"></a>
+
+```typescript
+import { wafv2 } from '@cdk_utils/iam'
+
+wafv2.Wafv2Resources.parseAmplifygen3AppArn(arn: string)
+```
+
+Parses a amplifygen3-app ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.wafv2.Wafv2Resources.parseAmplifygen3AppArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `parseApigatewayArn` <a name="parseApigatewayArn" id="@cdk_utils/iam.wafv2.Wafv2Resources.parseApigatewayArn"></a>
 
 ```typescript
@@ -5046,6 +5454,22 @@ wafv2.Wafv2Resources.parseAppsyncArn(arn: string)
 Parses a appsync ARN into its components.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.wafv2.Wafv2Resources.parseAppsyncArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `parseElbProxyArn` <a name="parseElbProxyArn" id="@cdk_utils/iam.wafv2.Wafv2Resources.parseElbProxyArn"></a>
+
+```typescript
+import { wafv2 } from '@cdk_utils/iam'
+
+wafv2.Wafv2Resources.parseElbProxyArn(arn: string)
+```
+
+Parses a elb-proxy ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.wafv2.Wafv2Resources.parseElbProxyArn.parameter.arn"></a>
 
 - *Type:* string
 

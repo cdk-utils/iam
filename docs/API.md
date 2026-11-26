@@ -24,6 +24,7 @@ The following submodules are available:
 - [airflow_serverless](./airflow_serverless.md)
 - [amplify](./amplify.md)
 - [amplifybackend](./amplifybackend.md)
+- [amplifygen3](./amplifygen3.md)
 - [amplifyuibuilder](./amplifyuibuilder.md)
 - [aoss](./aoss.md)
 - [apex](./apex.md)

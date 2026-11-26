@@ -1725,6 +1725,180 @@ Defaults to "*".
 
 ---
 
+### ElasticloadbalancingProxyArnComponents <a name="ElasticloadbalancingProxyArnComponents" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingProxyArnComponents"></a>
+
+Parsed components of a proxy ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingProxyArnComponents.Initializer"></a>
+
+```typescript
+import { elasticloadbalancing } from '@cdk_utils/iam'
+
+const elasticloadbalancingProxyArnComponents: elasticloadbalancing.ElasticloadbalancingProxyArnComponents = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingProxyArnComponents.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingProxyArnComponents.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingProxyArnComponents.property.proxyId">proxyId</a></code> | <code>string</code> | The ProxyId component. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingProxyArnComponents.property.proxyName">proxyName</a></code> | <code>string</code> | The ProxyName component. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingProxyArnComponents.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingProxyArnComponents.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+---
+
+##### `partition`<sup>Required</sup> <a name="partition" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingProxyArnComponents.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+---
+
+##### `proxyId`<sup>Required</sup> <a name="proxyId" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingProxyArnComponents.property.proxyId"></a>
+
+```typescript
+public readonly proxyId: string;
+```
+
+- *Type:* string
+
+The ProxyId component.
+
+---
+
+##### `proxyName`<sup>Required</sup> <a name="proxyName" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingProxyArnComponents.property.proxyName"></a>
+
+```typescript
+public readonly proxyName: string;
+```
+
+- *Type:* string
+
+The ProxyName component.
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingProxyArnComponents.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+---
+
+### ElasticloadbalancingProxyArnProps <a name="ElasticloadbalancingProxyArnProps" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingProxyArnProps"></a>
+
+Properties for building a proxy ARN.
+
+#### Initializer <a name="Initializer" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingProxyArnProps.Initializer"></a>
+
+```typescript
+import { elasticloadbalancing } from '@cdk_utils/iam'
+
+const elasticloadbalancingProxyArnProps: elasticloadbalancing.ElasticloadbalancingProxyArnProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingProxyArnProps.property.proxyId">proxyId</a></code> | <code>string</code> | The ProxyId component of the ARN. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingProxyArnProps.property.proxyName">proxyName</a></code> | <code>string</code> | The ProxyName component of the ARN. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingProxyArnProps.property.account">account</a></code> | <code>string</code> | AWS account ID. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingProxyArnProps.property.partition">partition</a></code> | <code>string</code> | AWS partition. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingProxyArnProps.property.region">region</a></code> | <code>string</code> | AWS region. |
+
+---
+
+##### `proxyId`<sup>Required</sup> <a name="proxyId" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingProxyArnProps.property.proxyId"></a>
+
+```typescript
+public readonly proxyId: string;
+```
+
+- *Type:* string
+
+The ProxyId component of the ARN.
+
+---
+
+##### `proxyName`<sup>Required</sup> <a name="proxyName" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingProxyArnProps.property.proxyName"></a>
+
+```typescript
+public readonly proxyName: string;
+```
+
+- *Type:* string
+
+The ProxyName component of the ARN.
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingProxyArnProps.property.account"></a>
+
+```typescript
+public readonly account: string;
+```
+
+- *Type:* string
+
+AWS account ID.
+
+Defaults to "*".
+
+---
+
+##### `partition`<sup>Optional</sup> <a name="partition" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingProxyArnProps.property.partition"></a>
+
+```typescript
+public readonly partition: string;
+```
+
+- *Type:* string
+
+AWS partition.
+
+Defaults to "aws".
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingProxyArnProps.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+AWS region.
+
+Defaults to "*".
+
+---
+
 ### ElasticloadbalancingTargetgroupArnComponents <a name="ElasticloadbalancingTargetgroupArnComponents" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingTargetgroupArnComponents"></a>
 
 Parsed components of a targetgroup ARN.
@@ -2100,6 +2274,11 @@ new elasticloadbalancing.ElasticloadbalancingActions()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.actionGetLoadBalancerWebACL">actionGetLoadBalancerWebACL</a></code> | <code>string</code> | [Read] elasticloadbalancing:GetLoadBalancerWebACL. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.actionGetProxy">actionGetProxy</a></code> | <code>string</code> | [Read] elasticloadbalancing:GetProxy. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.actionGetProxyAttributes">actionGetProxyAttributes</a></code> | <code>string</code> | [Read] elasticloadbalancing:GetProxyAttributes. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.actionGetProxyConfigurationContents">actionGetProxyConfigurationContents</a></code> | <code>string</code> | [Read] elasticloadbalancing:GetProxyConfigurationContents. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.actionGetProxyUpdate">actionGetProxyUpdate</a></code> | <code>string</code> | [Read] elasticloadbalancing:GetProxyUpdate. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.actionGetProxyWafAssociation">actionGetProxyWafAssociation</a></code> | <code>string</code> | [Read] elasticloadbalancing:GetProxyWafAssociation. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.actionGetResourcePolicy">actionGetResourcePolicy</a></code> | <code>string</code> | [Read] elasticloadbalancing:GetResourcePolicy. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.actionGetTrustStoreCaCertificatesBundle">actionGetTrustStoreCaCertificatesBundle</a></code> | <code>string</code> | [Read] elasticloadbalancing:GetTrustStoreCaCertificatesBundle. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.actionGetTrustStoreRevocationContent">actionGetTrustStoreRevocationContent</a></code> | <code>string</code> | [Read] elasticloadbalancing:GetTrustStoreRevocationContent. |
@@ -2121,7 +2300,9 @@ new elasticloadbalancing.ElasticloadbalancingActions()
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.AllTaggingActions">AllTaggingActions</a></code> | <code>string[]</code> | All tagging-level actions. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.AllWriteActions">AllWriteActions</a></code> | <code>string[]</code> | All write-level actions. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.ApplySecurityGroupsToLoadBalancer">ApplySecurityGroupsToLoadBalancer</a></code> | <code>string</code> | [Write] elasticloadbalancing:ApplySecurityGroupsToLoadBalancer. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.AssociateCertificate">AssociateCertificate</a></code> | <code>string</code> | [Write] elasticloadbalancing:AssociateCertificate. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.AttachLoadBalancerToSubnets">AttachLoadBalancerToSubnets</a></code> | <code>string</code> | [Write] elasticloadbalancing:AttachLoadBalancerToSubnets. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.CancelProxyVersionUpdate">CancelProxyVersionUpdate</a></code> | <code>string</code> | [Write] elasticloadbalancing:CancelProxyVersionUpdate. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.ConfigureHealthCheck">ConfigureHealthCheck</a></code> | <code>string</code> | [Write] elasticloadbalancing:ConfigureHealthCheck. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.CreateAppCookieStickinessPolicy">CreateAppCookieStickinessPolicy</a></code> | <code>string</code> | [Write] elasticloadbalancing:CreateAppCookieStickinessPolicy. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.CreateLBCookieStickinessPolicy">CreateLBCookieStickinessPolicy</a></code> | <code>string</code> | [Write] elasticloadbalancing:CreateLBCookieStickinessPolicy. |
@@ -2129,6 +2310,8 @@ new elasticloadbalancing.ElasticloadbalancingActions()
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.CreateLoadBalancer">CreateLoadBalancer</a></code> | <code>string</code> | [Write] elasticloadbalancing:CreateLoadBalancer. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.CreateLoadBalancerListeners">CreateLoadBalancerListeners</a></code> | <code>string</code> | [Write] elasticloadbalancing:CreateLoadBalancerListeners. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.CreateLoadBalancerPolicy">CreateLoadBalancerPolicy</a></code> | <code>string</code> | [Write] elasticloadbalancing:CreateLoadBalancerPolicy. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.CreateProxy">CreateProxy</a></code> | <code>string</code> | [Write] elasticloadbalancing:CreateProxy. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.CreateProxyWafAssociation">CreateProxyWafAssociation</a></code> | <code>string</code> | [Write] elasticloadbalancing:CreateProxyWafAssociation. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.CreateRule">CreateRule</a></code> | <code>string</code> | [Write] elasticloadbalancing:CreateRule. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.CreateTargetGroup">CreateTargetGroup</a></code> | <code>string</code> | [Write] elasticloadbalancing:CreateTargetGroup. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.CreateTrustStore">CreateTrustStore</a></code> | <code>string</code> | [Write] elasticloadbalancing:CreateTrustStore. |
@@ -2137,6 +2320,8 @@ new elasticloadbalancing.ElasticloadbalancingActions()
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.DeleteLoadBalancer">DeleteLoadBalancer</a></code> | <code>string</code> | [Write] elasticloadbalancing:DeleteLoadBalancer. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.DeleteLoadBalancerListeners">DeleteLoadBalancerListeners</a></code> | <code>string</code> | [Write] elasticloadbalancing:DeleteLoadBalancerListeners. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.DeleteLoadBalancerPolicy">DeleteLoadBalancerPolicy</a></code> | <code>string</code> | [Write] elasticloadbalancing:DeleteLoadBalancerPolicy. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.DeleteProxy">DeleteProxy</a></code> | <code>string</code> | [Write] elasticloadbalancing:DeleteProxy. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.DeleteProxyWafAssociation">DeleteProxyWafAssociation</a></code> | <code>string</code> | [Write] elasticloadbalancing:DeleteProxyWafAssociation. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.DeleteRule">DeleteRule</a></code> | <code>string</code> | [Write] elasticloadbalancing:DeleteRule. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.DeleteSharedTrustStoreAssociation">DeleteSharedTrustStoreAssociation</a></code> | <code>string</code> | [Write] elasticloadbalancing:DeleteSharedTrustStoreAssociation. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.DeleteTargetGroup">DeleteTargetGroup</a></code> | <code>string</code> | [Write] elasticloadbalancing:DeleteTargetGroup. |
@@ -2166,7 +2351,14 @@ new elasticloadbalancing.ElasticloadbalancingActions()
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.DescribeWebACLAssociation">DescribeWebACLAssociation</a></code> | <code>string</code> | [List] elasticloadbalancing:DescribeWebACLAssociation. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.DetachLoadBalancerFromSubnets">DetachLoadBalancerFromSubnets</a></code> | <code>string</code> | [Write] elasticloadbalancing:DetachLoadBalancerFromSubnets. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.DisableAvailabilityZonesForLoadBalancer">DisableAvailabilityZonesForLoadBalancer</a></code> | <code>string</code> | [Write] elasticloadbalancing:DisableAvailabilityZonesForLoadBalancer. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.DisassociateCertificate">DisassociateCertificate</a></code> | <code>string</code> | [Write] elasticloadbalancing:DisassociateCertificate. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.EnableAvailabilityZonesForLoadBalancer">EnableAvailabilityZonesForLoadBalancer</a></code> | <code>string</code> | [Write] elasticloadbalancing:EnableAvailabilityZonesForLoadBalancer. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.ListCertificateAssociations">ListCertificateAssociations</a></code> | <code>string</code> | [List] elasticloadbalancing:ListCertificateAssociations. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.ListProxies">ListProxies</a></code> | <code>string</code> | [List] elasticloadbalancing:ListProxies. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.ListProxyUpdates">ListProxyUpdates</a></code> | <code>string</code> | [List] elasticloadbalancing:ListProxyUpdates. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.ListProxyVersions">ListProxyVersions</a></code> | <code>string</code> | [List] elasticloadbalancing:ListProxyVersions. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.ListProxyWafAssociations">ListProxyWafAssociations</a></code> | <code>string</code> | [List] elasticloadbalancing:ListProxyWafAssociations. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string</code> | [Read] elasticloadbalancing:ListTagsForResource. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.ModifyCapacityReservation">ModifyCapacityReservation</a></code> | <code>string</code> | [Write] elasticloadbalancing:ModifyCapacityReservation. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.ModifyIpPools">ModifyIpPools</a></code> | <code>string</code> | [Write] elasticloadbalancing:ModifyIpPools. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.ModifyListener">ModifyListener</a></code> | <code>string</code> | [Write] elasticloadbalancing:ModifyListener. |
@@ -2182,6 +2374,12 @@ new elasticloadbalancing.ElasticloadbalancingActions()
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.RemoveTags">RemoveTags</a></code> | <code>string</code> | [Tagging] elasticloadbalancing:RemoveTags. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.RemoveTrustStoreRevocations">RemoveTrustStoreRevocations</a></code> | <code>string</code> | [Write] elasticloadbalancing:RemoveTrustStoreRevocations. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.SERVICE_PREFIX">SERVICE_PREFIX</a></code> | <code>string</code> | The IAM service prefix. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.TagResource">TagResource</a></code> | <code>string</code> | [Tagging] elasticloadbalancing:TagResource. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.UntagResource">UntagResource</a></code> | <code>string</code> | [Tagging] elasticloadbalancing:UntagResource. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.UpdateProxyAttributes">UpdateProxyAttributes</a></code> | <code>string</code> | [Write] elasticloadbalancing:UpdateProxyAttributes. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.UpdateProxyConfiguration">UpdateProxyConfiguration</a></code> | <code>string</code> | [Write] elasticloadbalancing:UpdateProxyConfiguration. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.UpdateProxyNetworkConfiguration">UpdateProxyNetworkConfiguration</a></code> | <code>string</code> | [Write] elasticloadbalancing:UpdateProxyNetworkConfiguration. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.UpdateProxyVersion">UpdateProxyVersion</a></code> | <code>string</code> | [Write] elasticloadbalancing:UpdateProxyVersion. |
 
 ---
 
@@ -2194,6 +2392,66 @@ public readonly actionGetLoadBalancerWebACL: string;
 - *Type:* string
 
 [Read] elasticloadbalancing:GetLoadBalancerWebACL.
+
+---
+
+##### `actionGetProxy`<sup>Required</sup> <a name="actionGetProxy" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.actionGetProxy"></a>
+
+```typescript
+public readonly actionGetProxy: string;
+```
+
+- *Type:* string
+
+[Read] elasticloadbalancing:GetProxy.
+
+---
+
+##### `actionGetProxyAttributes`<sup>Required</sup> <a name="actionGetProxyAttributes" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.actionGetProxyAttributes"></a>
+
+```typescript
+public readonly actionGetProxyAttributes: string;
+```
+
+- *Type:* string
+
+[Read] elasticloadbalancing:GetProxyAttributes.
+
+---
+
+##### `actionGetProxyConfigurationContents`<sup>Required</sup> <a name="actionGetProxyConfigurationContents" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.actionGetProxyConfigurationContents"></a>
+
+```typescript
+public readonly actionGetProxyConfigurationContents: string;
+```
+
+- *Type:* string
+
+[Read] elasticloadbalancing:GetProxyConfigurationContents.
+
+---
+
+##### `actionGetProxyUpdate`<sup>Required</sup> <a name="actionGetProxyUpdate" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.actionGetProxyUpdate"></a>
+
+```typescript
+public readonly actionGetProxyUpdate: string;
+```
+
+- *Type:* string
+
+[Read] elasticloadbalancing:GetProxyUpdate.
+
+---
+
+##### `actionGetProxyWafAssociation`<sup>Required</sup> <a name="actionGetProxyWafAssociation" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.actionGetProxyWafAssociation"></a>
+
+```typescript
+public readonly actionGetProxyWafAssociation: string;
+```
+
+- *Type:* string
+
+[Read] elasticloadbalancing:GetProxyWafAssociation.
 
 ---
 
@@ -2449,6 +2707,18 @@ public readonly ApplySecurityGroupsToLoadBalancer: string;
 
 ---
 
+##### `AssociateCertificate`<sup>Required</sup> <a name="AssociateCertificate" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.AssociateCertificate"></a>
+
+```typescript
+public readonly AssociateCertificate: string;
+```
+
+- *Type:* string
+
+[Write] elasticloadbalancing:AssociateCertificate.
+
+---
+
 ##### `AttachLoadBalancerToSubnets`<sup>Required</sup> <a name="AttachLoadBalancerToSubnets" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.AttachLoadBalancerToSubnets"></a>
 
 ```typescript
@@ -2458,6 +2728,18 @@ public readonly AttachLoadBalancerToSubnets: string;
 - *Type:* string
 
 [Write] elasticloadbalancing:AttachLoadBalancerToSubnets.
+
+---
+
+##### `CancelProxyVersionUpdate`<sup>Required</sup> <a name="CancelProxyVersionUpdate" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.CancelProxyVersionUpdate"></a>
+
+```typescript
+public readonly CancelProxyVersionUpdate: string;
+```
+
+- *Type:* string
+
+[Write] elasticloadbalancing:CancelProxyVersionUpdate.
 
 ---
 
@@ -2542,6 +2824,30 @@ public readonly CreateLoadBalancerPolicy: string;
 - *Type:* string
 
 [Write] elasticloadbalancing:CreateLoadBalancerPolicy.
+
+---
+
+##### `CreateProxy`<sup>Required</sup> <a name="CreateProxy" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.CreateProxy"></a>
+
+```typescript
+public readonly CreateProxy: string;
+```
+
+- *Type:* string
+
+[Write] elasticloadbalancing:CreateProxy.
+
+---
+
+##### `CreateProxyWafAssociation`<sup>Required</sup> <a name="CreateProxyWafAssociation" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.CreateProxyWafAssociation"></a>
+
+```typescript
+public readonly CreateProxyWafAssociation: string;
+```
+
+- *Type:* string
+
+[Write] elasticloadbalancing:CreateProxyWafAssociation.
 
 ---
 
@@ -2638,6 +2944,30 @@ public readonly DeleteLoadBalancerPolicy: string;
 - *Type:* string
 
 [Write] elasticloadbalancing:DeleteLoadBalancerPolicy.
+
+---
+
+##### `DeleteProxy`<sup>Required</sup> <a name="DeleteProxy" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.DeleteProxy"></a>
+
+```typescript
+public readonly DeleteProxy: string;
+```
+
+- *Type:* string
+
+[Write] elasticloadbalancing:DeleteProxy.
+
+---
+
+##### `DeleteProxyWafAssociation`<sup>Required</sup> <a name="DeleteProxyWafAssociation" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.DeleteProxyWafAssociation"></a>
+
+```typescript
+public readonly DeleteProxyWafAssociation: string;
+```
+
+- *Type:* string
+
+[Write] elasticloadbalancing:DeleteProxyWafAssociation.
 
 ---
 
@@ -2989,6 +3319,18 @@ public readonly DisableAvailabilityZonesForLoadBalancer: string;
 
 ---
 
+##### `DisassociateCertificate`<sup>Required</sup> <a name="DisassociateCertificate" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.DisassociateCertificate"></a>
+
+```typescript
+public readonly DisassociateCertificate: string;
+```
+
+- *Type:* string
+
+[Write] elasticloadbalancing:DisassociateCertificate.
+
+---
+
 ##### `EnableAvailabilityZonesForLoadBalancer`<sup>Required</sup> <a name="EnableAvailabilityZonesForLoadBalancer" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.EnableAvailabilityZonesForLoadBalancer"></a>
 
 ```typescript
@@ -2998,6 +3340,78 @@ public readonly EnableAvailabilityZonesForLoadBalancer: string;
 - *Type:* string
 
 [Write] elasticloadbalancing:EnableAvailabilityZonesForLoadBalancer.
+
+---
+
+##### `ListCertificateAssociations`<sup>Required</sup> <a name="ListCertificateAssociations" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.ListCertificateAssociations"></a>
+
+```typescript
+public readonly ListCertificateAssociations: string;
+```
+
+- *Type:* string
+
+[List] elasticloadbalancing:ListCertificateAssociations.
+
+---
+
+##### `ListProxies`<sup>Required</sup> <a name="ListProxies" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.ListProxies"></a>
+
+```typescript
+public readonly ListProxies: string;
+```
+
+- *Type:* string
+
+[List] elasticloadbalancing:ListProxies.
+
+---
+
+##### `ListProxyUpdates`<sup>Required</sup> <a name="ListProxyUpdates" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.ListProxyUpdates"></a>
+
+```typescript
+public readonly ListProxyUpdates: string;
+```
+
+- *Type:* string
+
+[List] elasticloadbalancing:ListProxyUpdates.
+
+---
+
+##### `ListProxyVersions`<sup>Required</sup> <a name="ListProxyVersions" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.ListProxyVersions"></a>
+
+```typescript
+public readonly ListProxyVersions: string;
+```
+
+- *Type:* string
+
+[List] elasticloadbalancing:ListProxyVersions.
+
+---
+
+##### `ListProxyWafAssociations`<sup>Required</sup> <a name="ListProxyWafAssociations" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.ListProxyWafAssociations"></a>
+
+```typescript
+public readonly ListProxyWafAssociations: string;
+```
+
+- *Type:* string
+
+[List] elasticloadbalancing:ListProxyWafAssociations.
+
+---
+
+##### `ListTagsForResource`<sup>Required</sup> <a name="ListTagsForResource" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.ListTagsForResource"></a>
+
+```typescript
+public readonly ListTagsForResource: string;
+```
+
+- *Type:* string
+
+[Read] elasticloadbalancing:ListTagsForResource.
 
 ---
 
@@ -3178,6 +3592,78 @@ public readonly SERVICE_PREFIX: string;
 - *Type:* string
 
 The IAM service prefix.
+
+---
+
+##### `TagResource`<sup>Required</sup> <a name="TagResource" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.TagResource"></a>
+
+```typescript
+public readonly TagResource: string;
+```
+
+- *Type:* string
+
+[Tagging] elasticloadbalancing:TagResource.
+
+---
+
+##### `UntagResource`<sup>Required</sup> <a name="UntagResource" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.UntagResource"></a>
+
+```typescript
+public readonly UntagResource: string;
+```
+
+- *Type:* string
+
+[Tagging] elasticloadbalancing:UntagResource.
+
+---
+
+##### `UpdateProxyAttributes`<sup>Required</sup> <a name="UpdateProxyAttributes" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.UpdateProxyAttributes"></a>
+
+```typescript
+public readonly UpdateProxyAttributes: string;
+```
+
+- *Type:* string
+
+[Write] elasticloadbalancing:UpdateProxyAttributes.
+
+---
+
+##### `UpdateProxyConfiguration`<sup>Required</sup> <a name="UpdateProxyConfiguration" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.UpdateProxyConfiguration"></a>
+
+```typescript
+public readonly UpdateProxyConfiguration: string;
+```
+
+- *Type:* string
+
+[Write] elasticloadbalancing:UpdateProxyConfiguration.
+
+---
+
+##### `UpdateProxyNetworkConfiguration`<sup>Required</sup> <a name="UpdateProxyNetworkConfiguration" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.UpdateProxyNetworkConfiguration"></a>
+
+```typescript
+public readonly UpdateProxyNetworkConfiguration: string;
+```
+
+- *Type:* string
+
+[Write] elasticloadbalancing:UpdateProxyNetworkConfiguration.
+
+---
+
+##### `UpdateProxyVersion`<sup>Required</sup> <a name="UpdateProxyVersion" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingActions.property.UpdateProxyVersion"></a>
+
+```typescript
+public readonly UpdateProxyVersion: string;
+```
+
+- *Type:* string
+
+[Write] elasticloadbalancing:UpdateProxyVersion.
 
 ---
 
@@ -3365,6 +3851,10 @@ Generates a condition block for `aws:TagKeys`.
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.actionGetLoadBalancerWebACLConditionKeys">actionGetLoadBalancerWebACLConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetLoadBalancerWebACL action. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.actionGetProxyAttributesConditionKeys">actionGetProxyAttributesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetProxyAttributes action. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.actionGetProxyConditionKeys">actionGetProxyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetProxy action. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.actionGetProxyConfigurationContentsConditionKeys">actionGetProxyConfigurationContentsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetProxyConfigurationContents action. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.actionGetProxyUpdateConditionKeys">actionGetProxyUpdateConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetProxyUpdate action. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.actionGetResourcePolicyConditionKeys">actionGetResourcePolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetResourcePolicy action. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.actionGetTrustStoreCaCertificatesBundleConditionKeys">actionGetTrustStoreCaCertificatesBundleConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetTrustStoreCaCertificatesBundle action. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.actionGetTrustStoreRevocationContentConditionKeys">actionGetTrustStoreRevocationContentConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the GetTrustStoreRevocationContent action. |
@@ -3378,10 +3868,12 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.AddTagsConditionKeys">AddTagsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the AddTags action. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.AddTrustStoreRevocationsConditionKeys">AddTrustStoreRevocationsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the AddTrustStoreRevocations action. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.ApplySecurityGroupsToLoadBalancerConditionKeys">ApplySecurityGroupsToLoadBalancerConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ApplySecurityGroupsToLoadBalancer action. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.AssociateCertificateConditionKeys">AssociateCertificateConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the AssociateCertificate action. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.AttachLoadBalancerToSubnetsConditionKeys">AttachLoadBalancerToSubnetsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the AttachLoadBalancerToSubnets action. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.AWS_REQUEST_TAG">AWS_REQUEST_TAG</a></code> | <code>string</code> | Condition key: aws:RequestTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.AWS_RESOURCE_TAG">AWS_RESOURCE_TAG</a></code> | <code>string</code> | Condition key: aws:ResourceTag/${TagKey} (String). |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.AWS_TAG_KEYS">AWS_TAG_KEYS</a></code> | <code>string</code> | Condition key: aws:TagKeys (ArrayOfString). |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.CancelProxyVersionUpdateConditionKeys">CancelProxyVersionUpdateConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CancelProxyVersionUpdate action. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.ConfigureHealthCheckConditionKeys">ConfigureHealthCheckConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ConfigureHealthCheck action. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.CREATE_ACTION">CREATE_ACTION</a></code> | <code>string</code> | Condition key: elasticloadbalancing:CreateAction (String). |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.CreateAppCookieStickinessPolicyConditionKeys">CreateAppCookieStickinessPolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateAppCookieStickinessPolicy action. |
@@ -3390,6 +3882,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.CreateLoadBalancerConditionKeys">CreateLoadBalancerConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateLoadBalancer action. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.CreateLoadBalancerListenersConditionKeys">CreateLoadBalancerListenersConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateLoadBalancerListeners action. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.CreateLoadBalancerPolicyConditionKeys">CreateLoadBalancerPolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateLoadBalancerPolicy action. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.CreateProxyConditionKeys">CreateProxyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateProxy action. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.CreateRuleConditionKeys">CreateRuleConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateRule action. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.CreateTargetGroupConditionKeys">CreateTargetGroupConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateTargetGroup action. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.CreateTrustStoreConditionKeys">CreateTrustStoreConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the CreateTrustStore action. |
@@ -3398,6 +3891,7 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.DeleteLoadBalancerConditionKeys">DeleteLoadBalancerConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteLoadBalancer action. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.DeleteLoadBalancerListenersConditionKeys">DeleteLoadBalancerListenersConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteLoadBalancerListeners action. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.DeleteLoadBalancerPolicyConditionKeys">DeleteLoadBalancerPolicyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteLoadBalancerPolicy action. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.DeleteProxyConditionKeys">DeleteProxyConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteProxy action. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.DeleteRuleConditionKeys">DeleteRuleConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteRule action. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.DeleteSharedTrustStoreAssociationConditionKeys">DeleteSharedTrustStoreAssociationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteSharedTrustStoreAssociation action. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.DeleteTargetGroupConditionKeys">DeleteTargetGroupConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeleteTargetGroup action. |
@@ -3407,8 +3901,12 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.DeregisterTargetsConditionKeys">DeregisterTargetsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DeregisterTargets action. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.DetachLoadBalancerFromSubnetsConditionKeys">DetachLoadBalancerFromSubnetsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DetachLoadBalancerFromSubnets action. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.DisableAvailabilityZonesForLoadBalancerConditionKeys">DisableAvailabilityZonesForLoadBalancerConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DisableAvailabilityZonesForLoadBalancer action. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.DisassociateCertificateConditionKeys">DisassociateCertificateConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the DisassociateCertificate action. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.EnableAvailabilityZonesForLoadBalancerConditionKeys">EnableAvailabilityZonesForLoadBalancerConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the EnableAvailabilityZonesForLoadBalancer action. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.ListCertificateAssociationsConditionKeys">ListCertificateAssociationsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListCertificateAssociations action. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.LISTENER_PROTOCOL">LISTENER_PROTOCOL</a></code> | <code>string</code> | Condition key: elasticloadbalancing:ListenerProtocol (ArrayOfString, String). |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.ListProxyUpdatesConditionKeys">ListProxyUpdatesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListProxyUpdates action. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.ListTagsForResourceConditionKeys">ListTagsForResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ListTagsForResource action. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.ModifyCapacityReservationConditionKeys">ModifyCapacityReservationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ModifyCapacityReservation action. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.ModifyIpPoolsConditionKeys">ModifyIpPoolsConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ModifyIpPools action. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.ModifyListenerAttributesConditionKeys">ModifyListenerAttributesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the ModifyListenerAttributes action. |
@@ -3428,6 +3926,12 @@ Generates a condition block for `aws:TagKeys`.
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.SECURITY_GROUP">SECURITY_GROUP</a></code> | <code>string</code> | Condition key: elasticloadbalancing:SecurityGroup (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.SECURITY_POLICY">SECURITY_POLICY</a></code> | <code>string</code> | Condition key: elasticloadbalancing:SecurityPolicy (ArrayOfString). |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.SUBNET">SUBNET</a></code> | <code>string</code> | Condition key: elasticloadbalancing:Subnet (ArrayOfString). |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.TagResourceConditionKeys">TagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the TagResource action. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.UntagResourceConditionKeys">UntagResourceConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UntagResource action. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.UpdateProxyAttributesConditionKeys">UpdateProxyAttributesConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateProxyAttributes action. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.UpdateProxyConfigurationConditionKeys">UpdateProxyConfigurationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateProxyConfiguration action. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.UpdateProxyNetworkConfigurationConditionKeys">UpdateProxyNetworkConfigurationConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateProxyNetworkConfiguration action. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.UpdateProxyVersionConditionKeys">UpdateProxyVersionConditionKeys</a></code> | <code>string[]</code> | Condition keys applicable to the UpdateProxyVersion action. |
 
 ---
 
@@ -3440,6 +3944,54 @@ public readonly actionGetLoadBalancerWebACLConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the GetLoadBalancerWebACL action.
+
+---
+
+##### `actionGetProxyAttributesConditionKeys`<sup>Required</sup> <a name="actionGetProxyAttributesConditionKeys" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.actionGetProxyAttributesConditionKeys"></a>
+
+```typescript
+public readonly actionGetProxyAttributesConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetProxyAttributes action.
+
+---
+
+##### `actionGetProxyConditionKeys`<sup>Required</sup> <a name="actionGetProxyConditionKeys" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.actionGetProxyConditionKeys"></a>
+
+```typescript
+public readonly actionGetProxyConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetProxy action.
+
+---
+
+##### `actionGetProxyConfigurationContentsConditionKeys`<sup>Required</sup> <a name="actionGetProxyConfigurationContentsConditionKeys" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.actionGetProxyConfigurationContentsConditionKeys"></a>
+
+```typescript
+public readonly actionGetProxyConfigurationContentsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetProxyConfigurationContents action.
+
+---
+
+##### `actionGetProxyUpdateConditionKeys`<sup>Required</sup> <a name="actionGetProxyUpdateConditionKeys" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.actionGetProxyUpdateConditionKeys"></a>
+
+```typescript
+public readonly actionGetProxyUpdateConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the GetProxyUpdate action.
 
 ---
 
@@ -3599,6 +4151,18 @@ Condition keys applicable to the ApplySecurityGroupsToLoadBalancer action.
 
 ---
 
+##### `AssociateCertificateConditionKeys`<sup>Required</sup> <a name="AssociateCertificateConditionKeys" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.AssociateCertificateConditionKeys"></a>
+
+```typescript
+public readonly AssociateCertificateConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the AssociateCertificate action.
+
+---
+
 ##### `AttachLoadBalancerToSubnetsConditionKeys`<sup>Required</sup> <a name="AttachLoadBalancerToSubnetsConditionKeys" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.AttachLoadBalancerToSubnetsConditionKeys"></a>
 
 ```typescript
@@ -3644,6 +4208,18 @@ public readonly AWS_TAG_KEYS: string;
 - *Type:* string
 
 Condition key: aws:TagKeys (ArrayOfString).
+
+---
+
+##### `CancelProxyVersionUpdateConditionKeys`<sup>Required</sup> <a name="CancelProxyVersionUpdateConditionKeys" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.CancelProxyVersionUpdateConditionKeys"></a>
+
+```typescript
+public readonly CancelProxyVersionUpdateConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CancelProxyVersionUpdate action.
 
 ---
 
@@ -3743,6 +4319,18 @@ Condition keys applicable to the CreateLoadBalancerPolicy action.
 
 ---
 
+##### `CreateProxyConditionKeys`<sup>Required</sup> <a name="CreateProxyConditionKeys" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.CreateProxyConditionKeys"></a>
+
+```typescript
+public readonly CreateProxyConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the CreateProxy action.
+
+---
+
 ##### `CreateRuleConditionKeys`<sup>Required</sup> <a name="CreateRuleConditionKeys" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.CreateRuleConditionKeys"></a>
 
 ```typescript
@@ -3836,6 +4424,18 @@ public readonly DeleteLoadBalancerPolicyConditionKeys: string[];
 - *Type:* string[]
 
 Condition keys applicable to the DeleteLoadBalancerPolicy action.
+
+---
+
+##### `DeleteProxyConditionKeys`<sup>Required</sup> <a name="DeleteProxyConditionKeys" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.DeleteProxyConditionKeys"></a>
+
+```typescript
+public readonly DeleteProxyConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DeleteProxy action.
 
 ---
 
@@ -3947,6 +4547,18 @@ Condition keys applicable to the DisableAvailabilityZonesForLoadBalancer action.
 
 ---
 
+##### `DisassociateCertificateConditionKeys`<sup>Required</sup> <a name="DisassociateCertificateConditionKeys" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.DisassociateCertificateConditionKeys"></a>
+
+```typescript
+public readonly DisassociateCertificateConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the DisassociateCertificate action.
+
+---
+
 ##### `EnableAvailabilityZonesForLoadBalancerConditionKeys`<sup>Required</sup> <a name="EnableAvailabilityZonesForLoadBalancerConditionKeys" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.EnableAvailabilityZonesForLoadBalancerConditionKeys"></a>
 
 ```typescript
@@ -3959,6 +4571,18 @@ Condition keys applicable to the EnableAvailabilityZonesForLoadBalancer action.
 
 ---
 
+##### `ListCertificateAssociationsConditionKeys`<sup>Required</sup> <a name="ListCertificateAssociationsConditionKeys" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.ListCertificateAssociationsConditionKeys"></a>
+
+```typescript
+public readonly ListCertificateAssociationsConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ListCertificateAssociations action.
+
+---
+
 ##### `LISTENER_PROTOCOL`<sup>Required</sup> <a name="LISTENER_PROTOCOL" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.LISTENER_PROTOCOL"></a>
 
 ```typescript
@@ -3968,6 +4592,30 @@ public readonly LISTENER_PROTOCOL: string;
 - *Type:* string
 
 Condition key: elasticloadbalancing:ListenerProtocol (ArrayOfString, String).
+
+---
+
+##### `ListProxyUpdatesConditionKeys`<sup>Required</sup> <a name="ListProxyUpdatesConditionKeys" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.ListProxyUpdatesConditionKeys"></a>
+
+```typescript
+public readonly ListProxyUpdatesConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ListProxyUpdates action.
+
+---
+
+##### `ListTagsForResourceConditionKeys`<sup>Required</sup> <a name="ListTagsForResourceConditionKeys" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.ListTagsForResourceConditionKeys"></a>
+
+```typescript
+public readonly ListTagsForResourceConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the ListTagsForResource action.
 
 ---
 
@@ -4199,6 +4847,78 @@ Condition key: elasticloadbalancing:Subnet (ArrayOfString).
 
 ---
 
+##### `TagResourceConditionKeys`<sup>Required</sup> <a name="TagResourceConditionKeys" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.TagResourceConditionKeys"></a>
+
+```typescript
+public readonly TagResourceConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the TagResource action.
+
+---
+
+##### `UntagResourceConditionKeys`<sup>Required</sup> <a name="UntagResourceConditionKeys" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.UntagResourceConditionKeys"></a>
+
+```typescript
+public readonly UntagResourceConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UntagResource action.
+
+---
+
+##### `UpdateProxyAttributesConditionKeys`<sup>Required</sup> <a name="UpdateProxyAttributesConditionKeys" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.UpdateProxyAttributesConditionKeys"></a>
+
+```typescript
+public readonly UpdateProxyAttributesConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateProxyAttributes action.
+
+---
+
+##### `UpdateProxyConfigurationConditionKeys`<sup>Required</sup> <a name="UpdateProxyConfigurationConditionKeys" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.UpdateProxyConfigurationConditionKeys"></a>
+
+```typescript
+public readonly UpdateProxyConfigurationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateProxyConfiguration action.
+
+---
+
+##### `UpdateProxyNetworkConfigurationConditionKeys`<sup>Required</sup> <a name="UpdateProxyNetworkConfigurationConditionKeys" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.UpdateProxyNetworkConfigurationConditionKeys"></a>
+
+```typescript
+public readonly UpdateProxyNetworkConfigurationConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateProxyNetworkConfiguration action.
+
+---
+
+##### `UpdateProxyVersionConditionKeys`<sup>Required</sup> <a name="UpdateProxyVersionConditionKeys" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingConditions.property.UpdateProxyVersionConditionKeys"></a>
+
+```typescript
+public readonly UpdateProxyVersionConditionKeys: string[];
+```
+
+- *Type:* string[]
+
+Condition keys applicable to the UpdateProxyVersion action.
+
+---
+
 ### ElasticloadbalancingOperations <a name="ElasticloadbalancingOperations" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations"></a>
 
 API operation to required IAM actions mapping for elasticloadbalancing.
@@ -4227,6 +4947,7 @@ new elasticloadbalancing.ElasticloadbalancingOperations()
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.AddTags">AddTags</a></code> | <code>string[]</code> | IAM actions required for the AddTags API call. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.AddTrustStoreRevocations">AddTrustStoreRevocations</a></code> | <code>string[]</code> | IAM actions required for the AddTrustStoreRevocations API call. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.ApplySecurityGroupsToLoadBalancer">ApplySecurityGroupsToLoadBalancer</a></code> | <code>string[]</code> | IAM actions required for the ApplySecurityGroupsToLoadBalancer API call. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.AssociateCertificate">AssociateCertificate</a></code> | <code>string[]</code> | IAM actions required for the AssociateCertificate API call. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.AttachLoadBalancerToSubnets">AttachLoadBalancerToSubnets</a></code> | <code>string[]</code> | IAM actions required for the AttachLoadBalancerToSubnets API call. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.ConfigureHealthCheck">ConfigureHealthCheck</a></code> | <code>string[]</code> | IAM actions required for the ConfigureHealthCheck API call. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.CreateAppCookieStickinessPolicy">CreateAppCookieStickinessPolicy</a></code> | <code>string[]</code> | IAM actions required for the CreateAppCookieStickinessPolicy API call. |
@@ -4235,6 +4956,7 @@ new elasticloadbalancing.ElasticloadbalancingOperations()
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.CreateLoadBalancer">CreateLoadBalancer</a></code> | <code>string[]</code> | IAM actions required for the CreateLoadBalancer API call. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.CreateLoadBalancerListeners">CreateLoadBalancerListeners</a></code> | <code>string[]</code> | IAM actions required for the CreateLoadBalancerListeners API call. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.CreateLoadBalancerPolicy">CreateLoadBalancerPolicy</a></code> | <code>string[]</code> | IAM actions required for the CreateLoadBalancerPolicy API call. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.CreateProxy">CreateProxy</a></code> | <code>string[]</code> | IAM actions required for the CreateProxy API call. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.CreateRule">CreateRule</a></code> | <code>string[]</code> | IAM actions required for the CreateRule API call. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.CreateTargetGroup">CreateTargetGroup</a></code> | <code>string[]</code> | IAM actions required for the CreateTargetGroup API call. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.CreateTrustStore">CreateTrustStore</a></code> | <code>string[]</code> | IAM actions required for the CreateTrustStore API call. |
@@ -4242,6 +4964,7 @@ new elasticloadbalancing.ElasticloadbalancingOperations()
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.DeleteLoadBalancer">DeleteLoadBalancer</a></code> | <code>string[]</code> | IAM actions required for the DeleteLoadBalancer API call. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.DeleteLoadBalancerListeners">DeleteLoadBalancerListeners</a></code> | <code>string[]</code> | IAM actions required for the DeleteLoadBalancerListeners API call. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.DeleteLoadBalancerPolicy">DeleteLoadBalancerPolicy</a></code> | <code>string[]</code> | IAM actions required for the DeleteLoadBalancerPolicy API call. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.DeleteProxy">DeleteProxy</a></code> | <code>string[]</code> | IAM actions required for the DeleteProxy API call. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.DeleteRule">DeleteRule</a></code> | <code>string[]</code> | IAM actions required for the DeleteRule API call. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.DeleteSharedTrustStoreAssociation">DeleteSharedTrustStoreAssociation</a></code> | <code>string[]</code> | IAM actions required for the DeleteSharedTrustStoreAssociation API call. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.DeleteTargetGroup">DeleteTargetGroup</a></code> | <code>string[]</code> | IAM actions required for the DeleteTargetGroup API call. |
@@ -4269,7 +4992,13 @@ new elasticloadbalancing.ElasticloadbalancingOperations()
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.DescribeTrustStores">DescribeTrustStores</a></code> | <code>string[]</code> | IAM actions required for the DescribeTrustStores API call. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.DetachLoadBalancerFromSubnets">DetachLoadBalancerFromSubnets</a></code> | <code>string[]</code> | IAM actions required for the DetachLoadBalancerFromSubnets API call. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.DisableAvailabilityZonesForLoadBalancer">DisableAvailabilityZonesForLoadBalancer</a></code> | <code>string[]</code> | IAM actions required for the DisableAvailabilityZonesForLoadBalancer API call. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.DisassociateCertificate">DisassociateCertificate</a></code> | <code>string[]</code> | IAM actions required for the DisassociateCertificate API call. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.EnableAvailabilityZonesForLoadBalancer">EnableAvailabilityZonesForLoadBalancer</a></code> | <code>string[]</code> | IAM actions required for the EnableAvailabilityZonesForLoadBalancer API call. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.ListCertificateAssociations">ListCertificateAssociations</a></code> | <code>string[]</code> | IAM actions required for the ListCertificateAssociations API call. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.ListProxies">ListProxies</a></code> | <code>string[]</code> | IAM actions required for the ListProxies API call. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.ListProxyUpdates">ListProxyUpdates</a></code> | <code>string[]</code> | IAM actions required for the ListProxyUpdates API call. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.ListProxyVersions">ListProxyVersions</a></code> | <code>string[]</code> | IAM actions required for the ListProxyVersions API call. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.ListTagsForResource">ListTagsForResource</a></code> | <code>string[]</code> | IAM actions required for the ListTagsForResource API call. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.ModifyCapacityReservation">ModifyCapacityReservation</a></code> | <code>string[]</code> | IAM actions required for the ModifyCapacityReservation API call. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.ModifyIpPools">ModifyIpPools</a></code> | <code>string[]</code> | IAM actions required for the ModifyIpPools API call. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.ModifyListener">ModifyListener</a></code> | <code>string[]</code> | IAM actions required for the ModifyListener API call. |
@@ -4279,6 +5008,10 @@ new elasticloadbalancing.ElasticloadbalancingOperations()
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.ModifyTargetGroup">ModifyTargetGroup</a></code> | <code>string[]</code> | IAM actions required for the ModifyTargetGroup API call. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.ModifyTargetGroupAttributes">ModifyTargetGroupAttributes</a></code> | <code>string[]</code> | IAM actions required for the ModifyTargetGroupAttributes API call. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.ModifyTrustStore">ModifyTrustStore</a></code> | <code>string[]</code> | IAM actions required for the ModifyTrustStore API call. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.opGetProxy">opGetProxy</a></code> | <code>string[]</code> | IAM actions required for the GetProxy API call. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.opGetProxyAttributes">opGetProxyAttributes</a></code> | <code>string[]</code> | IAM actions required for the GetProxyAttributes API call. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.opGetProxyConfigurationContents">opGetProxyConfigurationContents</a></code> | <code>string[]</code> | IAM actions required for the GetProxyConfigurationContents API call. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.opGetProxyUpdate">opGetProxyUpdate</a></code> | <code>string[]</code> | IAM actions required for the GetProxyUpdate API call. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.opGetResourcePolicy">opGetResourcePolicy</a></code> | <code>string[]</code> | IAM actions required for the GetResourcePolicy API call. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.opGetTrustStoreCaCertificatesBundle">opGetTrustStoreCaCertificatesBundle</a></code> | <code>string[]</code> | IAM actions required for the GetTrustStoreCaCertificatesBundle API call. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.opGetTrustStoreRevocationContent">opGetTrustStoreRevocationContent</a></code> | <code>string[]</code> | IAM actions required for the GetTrustStoreRevocationContent API call. |
@@ -4294,6 +5027,11 @@ new elasticloadbalancing.ElasticloadbalancingOperations()
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.RemoveListenerCertificates">RemoveListenerCertificates</a></code> | <code>string[]</code> | IAM actions required for the RemoveListenerCertificates API call. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.RemoveTags">RemoveTags</a></code> | <code>string[]</code> | IAM actions required for the RemoveTags API call. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.RemoveTrustStoreRevocations">RemoveTrustStoreRevocations</a></code> | <code>string[]</code> | IAM actions required for the RemoveTrustStoreRevocations API call. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.TagResource">TagResource</a></code> | <code>string[]</code> | IAM actions required for the TagResource API call. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.UntagResource">UntagResource</a></code> | <code>string[]</code> | IAM actions required for the UntagResource API call. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.UpdateProxyAttributes">UpdateProxyAttributes</a></code> | <code>string[]</code> | IAM actions required for the UpdateProxyAttributes API call. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.UpdateProxyConfiguration">UpdateProxyConfiguration</a></code> | <code>string[]</code> | IAM actions required for the UpdateProxyConfiguration API call. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.UpdateProxyNetworkConfiguration">UpdateProxyNetworkConfiguration</a></code> | <code>string[]</code> | IAM actions required for the UpdateProxyNetworkConfiguration API call. |
 
 ---
 
@@ -4342,6 +5080,18 @@ public readonly ApplySecurityGroupsToLoadBalancer: string[];
 - *Type:* string[]
 
 IAM actions required for the ApplySecurityGroupsToLoadBalancer API call.
+
+---
+
+##### `AssociateCertificate`<sup>Required</sup> <a name="AssociateCertificate" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.AssociateCertificate"></a>
+
+```typescript
+public readonly AssociateCertificate: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the AssociateCertificate API call.
 
 ---
 
@@ -4441,6 +5191,18 @@ IAM actions required for the CreateLoadBalancerPolicy API call.
 
 ---
 
+##### `CreateProxy`<sup>Required</sup> <a name="CreateProxy" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.CreateProxy"></a>
+
+```typescript
+public readonly CreateProxy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the CreateProxy API call.
+
+---
+
 ##### `CreateRule`<sup>Required</sup> <a name="CreateRule" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.CreateRule"></a>
 
 ```typescript
@@ -4522,6 +5284,18 @@ public readonly DeleteLoadBalancerPolicy: string[];
 - *Type:* string[]
 
 IAM actions required for the DeleteLoadBalancerPolicy API call.
+
+---
+
+##### `DeleteProxy`<sup>Required</sup> <a name="DeleteProxy" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.DeleteProxy"></a>
+
+```typescript
+public readonly DeleteProxy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DeleteProxy API call.
 
 ---
 
@@ -4849,6 +5623,18 @@ IAM actions required for the DisableAvailabilityZonesForLoadBalancer API call.
 
 ---
 
+##### `DisassociateCertificate`<sup>Required</sup> <a name="DisassociateCertificate" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.DisassociateCertificate"></a>
+
+```typescript
+public readonly DisassociateCertificate: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the DisassociateCertificate API call.
+
+---
+
 ##### `EnableAvailabilityZonesForLoadBalancer`<sup>Required</sup> <a name="EnableAvailabilityZonesForLoadBalancer" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.EnableAvailabilityZonesForLoadBalancer"></a>
 
 ```typescript
@@ -4858,6 +5644,66 @@ public readonly EnableAvailabilityZonesForLoadBalancer: string[];
 - *Type:* string[]
 
 IAM actions required for the EnableAvailabilityZonesForLoadBalancer API call.
+
+---
+
+##### `ListCertificateAssociations`<sup>Required</sup> <a name="ListCertificateAssociations" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.ListCertificateAssociations"></a>
+
+```typescript
+public readonly ListCertificateAssociations: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListCertificateAssociations API call.
+
+---
+
+##### `ListProxies`<sup>Required</sup> <a name="ListProxies" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.ListProxies"></a>
+
+```typescript
+public readonly ListProxies: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListProxies API call.
+
+---
+
+##### `ListProxyUpdates`<sup>Required</sup> <a name="ListProxyUpdates" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.ListProxyUpdates"></a>
+
+```typescript
+public readonly ListProxyUpdates: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListProxyUpdates API call.
+
+---
+
+##### `ListProxyVersions`<sup>Required</sup> <a name="ListProxyVersions" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.ListProxyVersions"></a>
+
+```typescript
+public readonly ListProxyVersions: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListProxyVersions API call.
+
+---
+
+##### `ListTagsForResource`<sup>Required</sup> <a name="ListTagsForResource" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.ListTagsForResource"></a>
+
+```typescript
+public readonly ListTagsForResource: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the ListTagsForResource API call.
 
 ---
 
@@ -4966,6 +5812,54 @@ public readonly ModifyTrustStore: string[];
 - *Type:* string[]
 
 IAM actions required for the ModifyTrustStore API call.
+
+---
+
+##### `opGetProxy`<sup>Required</sup> <a name="opGetProxy" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.opGetProxy"></a>
+
+```typescript
+public readonly opGetProxy: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetProxy API call.
+
+---
+
+##### `opGetProxyAttributes`<sup>Required</sup> <a name="opGetProxyAttributes" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.opGetProxyAttributes"></a>
+
+```typescript
+public readonly opGetProxyAttributes: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetProxyAttributes API call.
+
+---
+
+##### `opGetProxyConfigurationContents`<sup>Required</sup> <a name="opGetProxyConfigurationContents" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.opGetProxyConfigurationContents"></a>
+
+```typescript
+public readonly opGetProxyConfigurationContents: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetProxyConfigurationContents API call.
+
+---
+
+##### `opGetProxyUpdate`<sup>Required</sup> <a name="opGetProxyUpdate" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.opGetProxyUpdate"></a>
+
+```typescript
+public readonly opGetProxyUpdate: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the GetProxyUpdate API call.
 
 ---
 
@@ -5149,6 +6043,66 @@ IAM actions required for the RemoveTrustStoreRevocations API call.
 
 ---
 
+##### `TagResource`<sup>Required</sup> <a name="TagResource" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.TagResource"></a>
+
+```typescript
+public readonly TagResource: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the TagResource API call.
+
+---
+
+##### `UntagResource`<sup>Required</sup> <a name="UntagResource" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.UntagResource"></a>
+
+```typescript
+public readonly UntagResource: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UntagResource API call.
+
+---
+
+##### `UpdateProxyAttributes`<sup>Required</sup> <a name="UpdateProxyAttributes" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.UpdateProxyAttributes"></a>
+
+```typescript
+public readonly UpdateProxyAttributes: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateProxyAttributes API call.
+
+---
+
+##### `UpdateProxyConfiguration`<sup>Required</sup> <a name="UpdateProxyConfiguration" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.UpdateProxyConfiguration"></a>
+
+```typescript
+public readonly UpdateProxyConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateProxyConfiguration API call.
+
+---
+
+##### `UpdateProxyNetworkConfiguration`<sup>Required</sup> <a name="UpdateProxyNetworkConfiguration" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingOperations.property.UpdateProxyNetworkConfiguration"></a>
+
+```typescript
+public readonly UpdateProxyNetworkConfiguration: string[];
+```
+
+- *Type:* string[]
+
+IAM actions required for the UpdateProxyNetworkConfiguration API call.
+
+---
+
 ### ElasticloadbalancingResources <a name="ElasticloadbalancingResources" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingResources"></a>
 
 ARN builders, validators, and parsers for elasticloadbalancing resources.
@@ -5180,6 +6134,7 @@ new elasticloadbalancing.ElasticloadbalancingResources()
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingResources.isValidLoadbalancerArn">isValidLoadbalancerArn</a></code> | Validates whether a string is a valid ARN for the loadbalancer resource. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingResources.isValidLoadbalancerGwyArn">isValidLoadbalancerGwyArn</a></code> | Validates whether a string is a valid ARN for the loadbalancer/gwy/ resource. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingResources.isValidLoadbalancerNetArn">isValidLoadbalancerNetArn</a></code> | Validates whether a string is a valid ARN for the loadbalancer/net/ resource. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingResources.isValidProxyArn">isValidProxyArn</a></code> | Validates whether a string is a valid ARN for the proxy resource. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingResources.isValidTargetgroupArn">isValidTargetgroupArn</a></code> | Validates whether a string is a valid ARN for the targetgroup resource. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingResources.isValidTruststoreArn">isValidTruststoreArn</a></code> | Validates whether a string is a valid ARN for the truststore resource. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingResources.listenerApp">listenerApp</a></code> | Builds an ARN for the listener/app resource. |
@@ -5200,8 +6155,10 @@ new elasticloadbalancing.ElasticloadbalancingResources()
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingResources.parseLoadbalancerArn">parseLoadbalancerArn</a></code> | Parses a loadbalancer ARN into its components. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingResources.parseLoadbalancerGwyArn">parseLoadbalancerGwyArn</a></code> | Parses a loadbalancer/gwy/ ARN into its components. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingResources.parseLoadbalancerNetArn">parseLoadbalancerNetArn</a></code> | Parses a loadbalancer/net/ ARN into its components. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingResources.parseProxyArn">parseProxyArn</a></code> | Parses a proxy ARN into its components. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingResources.parseTargetgroupArn">parseTargetgroupArn</a></code> | Parses a targetgroup ARN into its components. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingResources.parseTruststoreArn">parseTruststoreArn</a></code> | Parses a truststore ARN into its components. |
+| <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingResources.proxy">proxy</a></code> | Builds an ARN for the proxy resource. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingResources.targetgroup">targetgroup</a></code> | Builds an ARN for the targetgroup resource. |
 | <code><a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingResources.truststore">truststore</a></code> | Builds an ARN for the truststore resource. |
 
@@ -5346,6 +6303,22 @@ elasticloadbalancing.ElasticloadbalancingResources.isValidLoadbalancerNetArn(arn
 Validates whether a string is a valid ARN for the loadbalancer/net/ resource.
 
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingResources.isValidLoadbalancerNetArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
+##### `isValidProxyArn` <a name="isValidProxyArn" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingResources.isValidProxyArn"></a>
+
+```typescript
+import { elasticloadbalancing } from '@cdk_utils/iam'
+
+elasticloadbalancing.ElasticloadbalancingResources.isValidProxyArn(arn: string)
+```
+
+Validates whether a string is a valid ARN for the proxy resource.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingResources.isValidProxyArn.parameter.arn"></a>
 
 - *Type:* string
 
@@ -5671,6 +6644,22 @@ Parses a loadbalancer/net/ ARN into its components.
 
 ---
 
+##### `parseProxyArn` <a name="parseProxyArn" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingResources.parseProxyArn"></a>
+
+```typescript
+import { elasticloadbalancing } from '@cdk_utils/iam'
+
+elasticloadbalancing.ElasticloadbalancingResources.parseProxyArn(arn: string)
+```
+
+Parses a proxy ARN into its components.
+
+###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingResources.parseProxyArn.parameter.arn"></a>
+
+- *Type:* string
+
+---
+
 ##### `parseTargetgroupArn` <a name="parseTargetgroupArn" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingResources.parseTargetgroupArn"></a>
 
 ```typescript
@@ -5700,6 +6689,22 @@ Parses a truststore ARN into its components.
 ###### `arn`<sup>Required</sup> <a name="arn" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingResources.parseTruststoreArn.parameter.arn"></a>
 
 - *Type:* string
+
+---
+
+##### `proxy` <a name="proxy" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingResources.proxy"></a>
+
+```typescript
+import { elasticloadbalancing } from '@cdk_utils/iam'
+
+elasticloadbalancing.ElasticloadbalancingResources.proxy(props: ElasticloadbalancingProxyArnProps)
+```
+
+Builds an ARN for the proxy resource.
+
+###### `props`<sup>Required</sup> <a name="props" id="@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingResources.proxy.parameter.props"></a>
+
+- *Type:* <a href="#@cdk_utils/iam.elasticloadbalancing.ElasticloadbalancingProxyArnProps">ElasticloadbalancingProxyArnProps</a>
 
 ---
 

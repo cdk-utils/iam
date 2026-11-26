@@ -125,6 +125,7 @@
       "Name": "GetAccountBalance",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -160,6 +161,7 @@
       "Name": "GetFinancialRecord",
       "Annotations": {
         "Properties": {
+          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -591,6 +593,10 @@
       "Name": "GetAccountBalance",
       "AuthorizedActions": [
         {
+          "Name": "GetAccountBalance",
+          "Service": "payments"
+        },
+        {
           "Name": "GetPaymentStatus",
           "Service": "payments"
         },
@@ -609,6 +615,20 @@
     },
     {
       "Name": "GetFinancialRecord",
+      "AuthorizedActions": [
+        {
+          "Name": "GetFinancialRecord",
+          "Service": "payments"
+        },
+        {
+          "Name": "GetPaymentStatus",
+          "Service": "payments"
+        },
+        {
+          "Name": "ViewBilling",
+          "Service": "aws-portal"
+        }
+      ],
       "SDK": [
         {
           "Name": "payments",

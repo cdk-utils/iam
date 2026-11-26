@@ -2185,6 +2185,10 @@
         {
           "Name": "CreateApplication",
           "Service": "appstream"
+        },
+        {
+          "Name": "TagResource",
+          "Service": "appstream"
         }
       ],
       "SDK": [
