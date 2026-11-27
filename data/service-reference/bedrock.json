@@ -6467,7 +6467,6 @@
       ],
       "Annotations": {
         "Properties": {
-          "IsDataPlane": false,
           "IsList": false,
           "IsPermissionManagement": false,
           "IsTaggingOnly": false,
@@ -11863,12 +11862,6 @@
     },
     {
       "Name": "UpdateProject",
-      "AuthorizedActions": [
-        {
-          "Name": "UpdateProject",
-          "Service": "bedrock"
-        }
-      ],
       "SDK": [
         {
           "Name": "bedrock",
