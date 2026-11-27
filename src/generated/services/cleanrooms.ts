@@ -1118,7 +1118,6 @@ export class CleanroomsOperations {
 	/** IAM actions required for the CreateConfiguredAudienceModelAssociation API call. */
 	static readonly CreateConfiguredAudienceModelAssociation: string[] = [
 		"cleanrooms:CreateConfiguredAudienceModelAssociation",
-		"cleanrooms:TagResource",
 	];
 	/** IAM actions required for the CreateConfiguredTable API call. */
 	static readonly CreateConfiguredTable: string[] = [

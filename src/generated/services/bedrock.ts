@@ -4827,7 +4827,7 @@ export class BedrockOperations {
 		"bedrock:UpdateMarketplaceModelEndpoint",
 	];
 	/** IAM actions required for the UpdateProject API call. */
-	static readonly UpdateProject: string[] = ["bedrock:UpdateProject"];
+	static readonly UpdateProject: string[] = [];
 	/** IAM actions required for the UpdatePrompt API call. */
 	static readonly UpdatePrompt: string[] = ["bedrock:UpdatePrompt"];
 	/** IAM actions required for the UpdateProvisionedModelThroughput API call. */
